@@ -1,0 +1,104 @@
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import styles from "./Header.module.css";
+import { useState } from "react";
+
+const LANGUAGES = [
+  { code: "kr", name: "한국어", label: "한국어", flag: "/flags/KR.svg" },
+  {
+    code: "en",
+    name: "English",
+    label: "English",
+    flag: "/flags/US.svg",
+  },
+  { code: "cn", name: "中文", label: "中文", flag: "/flags/CN.svg" },
+  { code: "jp", name: "日本語", label: "日本語", flag: "/flags/JP.svg" },
+  { code: "sa", name: "العربية", label: "العربية", flag: "/flags/SA.svg" },
+];
+
+export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedLang, setSelectedLang] = useState(LANGUAGES[0]);
+
+  const toggleDropDown = () => setIsOpen((prev) => !prev);
+
+  const handleSelect = (lang: (typeof LANGUAGES)[0]) => {
+    setSelectedLang(lang);
+    setIsOpen(false);
+  };
+
+  return (
+    <header className={styles.header}>
+      <div className={styles.container}>
+        <Link href="/">
+          <Image src="/logo.svg" alt="HanGyul Logo" width={151} height={32} />
+        </Link>
+
+        <nav className={styles.nav}>
+          <Link href="#intro" className={styles.navlink}>
+            서비스 소개
+          </Link>
+          <Link href="#features" className={styles.navlink}>
+            주요 기능
+          </Link>
+          <Link href="#pricing" className={styles.navlink}>
+            가격 안내
+          </Link>
+        </nav>
+
+        <div className={styles.dropdownWrapper}>
+          <button
+            className={`${styles.dropdownTrigger} ${
+              isOpen ? styles.active : ""
+            }`}
+            onClick={toggleDropDown}
+          >
+            <div className={styles.langInfo}>
+              <Image
+                src={selectedLang.flag}
+                alt={selectedLang.code}
+                width={20}
+                height={13}
+              />
+              <span className={styles.langCode}>{selectedLang.name}</span>
+            </div>
+
+            <Image
+              src={isOpen ? "/chevron-up.svg" : "/chevron-down.svg"}
+              alt="toggle arrow"
+              width={16}
+              height={16}
+            />
+          </button>
+
+          {isOpen && (
+            <ul className={styles.dropdownList}>
+              {LANGUAGES.map((lang) => (
+                <li key={lang.code}>
+                  <button
+                    className={`${styles.dropdownItem} ${
+                      selectedLang.code === lang.code ? styles.selected : ""
+                    }`}
+                    onClick={() => handleSelect(lang)}
+                  >
+                    <div className={styles.langInfo}>
+                      <Image
+                        src={lang.flag}
+                        alt={lang.code}
+                        width={20}
+                        height={13}
+                      />
+                      <span className={styles.langCode}>{lang.name}</span>
+                    </div>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </div>
+    </header>
+  );
+}
