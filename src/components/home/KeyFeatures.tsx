@@ -45,10 +45,12 @@ export default function KeyFeatures({ id }: Props) {
             alt="Hangyul Icon"
             width={28}
             height={28}
+            // style={{ width: "100%", height: "auto" }}
           />
           <h2 className={styles.title}>주요 기능</h2>
           <p className={styles.subtitle}>
-            한귤만의 특별한 기능으로 효과적인 한국어 학습을 경험하세요
+            한귤만의 특별한 기능으로 <br className={styles.mobileBr} />
+            효과적인 한국어 학습을 경험하세요
           </p>
         </div>
 
@@ -63,13 +65,15 @@ export default function KeyFeatures({ id }: Props) {
                 <h3 className={styles.featureTitle}>{feature.title}</h3>
                 <p className={styles.description}>{feature.description}</p>
               </div>
-
-              <Image
-                src={feature.imgSrc}
-                alt={feature.imgAlt}
-                width={640}
-                height={480}
-              />
+              <div className={styles.imageWrapper}>
+                <Image
+                  src={feature.imgSrc}
+                  alt={feature.imgAlt}
+                  width={640}
+                  height={480}
+                  style={{ width: "100%", height: "auto" }}
+                />
+              </div>
             </div>
           ))}
         </div>

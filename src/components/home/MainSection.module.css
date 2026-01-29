@@ -5,8 +5,8 @@
   background-position: top center;
   position: relative;
 
-  padding-top: 220px;
-  padding-bottom: 225px;
+  padding-top: clamp(48px, 12vw, 220px);
+  padding-bottom: clamp(48px, 12vw, 225px);
 }
 
 .container::before {
@@ -17,7 +17,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.85);
-  z-index: 1; /* 배경(0)보다는 위, 내용(2)보다는 아래 */
+  z-index: 1;
 }
 
 .content {
@@ -30,24 +30,36 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 94px;
+  gap: clamp(40px, 8vw, 94px);
+  padding: 0 clamp(20px, 5vw, 0px);
 }
 
 .leftSection {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: clamp(40px, 6vw, 80px);
+
+  flex: 1; /* 공간 유연하게 차지 */
+  min-width: 0; /* Flexbox 버그 방지 */
 }
 
 .textGroup {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: clamp(24px, 4vw, 40px);
+}
+
+.sloganDesktop {
+  max-width: 594px;
+}
+
+.sloganMobile {
+  display: none;
 }
 
 .description {
-  color: #222;
-  font-size: 24px;
+  color: var(--gray-800);
+  font-size: clamp(14px, 2.3vw, 24px);
   font-weight: 500;
   line-height: 160%;
 }
@@ -59,9 +71,10 @@
 
 .storeBtn {
   display: flex;
-  width: 180px;
-  height: 54px;
-  padding: 16px 32px;
+  width: clamp(140px, 20vw, 180px);
+  height: clamp(48px, 6.5vw, 54px);
+  padding-block: clamp(12px, 1.8vw, 16px);
+  padding-inline: clamp(20px, 3.2vw, 32px);
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -70,8 +83,67 @@
   border: 1px solid #d9d9d9;
   background: #fff;
 
-  font-size: 15px;
+  font-size: clamp(14px, 1.9vw, 15px);
   font-weight: 500;
+  color: #000;
 
   cursor: pointer;
+  transition: background-color 0.2s;
+
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
+.storeBtn:hover {
+  background-color: #f4f4f4;
+}
+
+.mockupWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  /* 목업 이미지가 너무 커지지 않도록 제한 */
+  max-width: 522px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    text-align: center;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .leftSection {
+    align-items: center;
+    width: 100%;
+    gap: 32px;
+  }
+
+  .sloganDesktop {
+    display: none;
+  }
+
+  .sloganMobile {
+    margin-top: 48px;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .textGroup {
+    align-items: center;
+  }
+
+  .buttonGroup {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .mockupWrapper {
+    width: 100%;
+    max-width: 320px;
+  }
 }

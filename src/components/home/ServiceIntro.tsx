@@ -31,7 +31,7 @@ const FEATURES = [
     decoAlt: "종이",
     decoClass: "paper",
     decoWidth: 48,
-    decoHeight: 62,
+    decoHeight: 56,
   },
   {
     title: "K-콘텐츠 연계",
@@ -39,8 +39,8 @@ const FEATURES = [
     decoImg: "/note.svg",
     decoAlt: "노트",
     decoClass: "note",
-    decoWidth: 45,
-    decoHeight: 48,
+    decoWidth: 48,
+    decoHeight: 50,
   },
 ];
 
@@ -51,8 +51,9 @@ export default function ServiceIntro({ id }: Props) {
         <div className={styles.header}>
           <h2 className={styles.title}>왜 한귤인가요?</h2>
           <p className={styles.subtitle}>
-            기존 한국어 교육의 한계를 뛰어넘어 스피킹 중심의 혁신적인 학습
-            경험을 제공합니다
+            기존 한국어 교육의 한계를 뛰어넘어{" "}
+            <br className={styles.mobileBr} />
+            스피킹 중심의 혁신적인 학습 경험을 제공합니다
           </p>
         </div>
 

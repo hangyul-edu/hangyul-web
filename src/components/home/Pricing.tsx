@@ -11,7 +11,16 @@ export default function Pricing({ id }: Props) {
       <div className={styles.content}>
         <div className={styles.featureList}>
           <div className={styles.featureRow}>
-            <Image src="/prcing.png" alt="구독 관리" width={640} height={480} />
+            <div className={styles.imageWrapper}>
+              <Image
+                src="/pricing.png"
+                alt="구독 관리"
+                width={640}
+                height={480}
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+
             <div className={styles.textGroup}>
               <span className={styles.category}>구독 관리</span>
               <h3 className={styles.featureTitle}>

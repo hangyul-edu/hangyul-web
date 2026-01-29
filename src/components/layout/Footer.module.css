@@ -1,9 +1,7 @@
 .footer {
   width: 100%;
-  background-color: #ffffff;
-
-  padding-top: 56px;
-  padding-bottom: 56px;
+  background-color: var(--white);
+  padding: 56px 0;
 }
 
 .container {
@@ -11,14 +9,12 @@
   max-width: 1180px;
 
   margin: 0 auto;
+  padding: 0 16px;
 
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   flex-wrap: wrap;
-
-  /* padding-left: 16px;
-  padding-right: 16px; */
 }
 
 .leftSection {
@@ -35,8 +31,7 @@
   font-style: normal;
   font-size: 13px;
   font-weight: 400;
-  line-height: 1;
-  color: #505050;
+  color: var(--gray-600);
 }
 
 .infoRow {
@@ -46,27 +41,61 @@
 
   font-size: 13px;
   font-weight: 400;
-  line-height: 1;
-  color: #505050;
+  color: var(--gray-600);
 }
 
 .divider {
   width: 1px;
   height: 11px;
   display: inline-block;
-  background-color: #dbdbdb;
+  background-color: var(--gray-200);
+}
+
+.desktopDivider {
+  width: 1px;
+  height: 11px;
+  display: inline-block;
+  background-color: var(--gray-200);
 }
 
 .copyright {
   font-style: normal;
   font-size: 13px;
   font-weight: 400;
-  line-height: 1;
-  color: #9b9b9b;
+  color: var(--gray-400);
 }
 
 .rightSection {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* 세로 배치로 변경 */
+    align-items: flex-start; /* 왼쪽 정렬로 변경 */
+    gap: 40px; /* 위쪽 정보와 아래쪽 약관 사이 간격 벌리기 */
+  }
+
+  .leftSection {
+    gap: 24px; /* 로고와 정보 사이 간격 약간 조정 */
+    width: 100%;
+  }
+
+  .desktopDivider {
+    display: none;
+  }
+
+  .mobileCol {
+    flex-direction: column; /* 세로 배치 */
+    align-items: flex-start; /* 왼쪽 정렬 */
+    gap: 8px;
+  }
+  /* 모바일 시안에 맞춰 약관/카피라이트 부분 스타일 조정 */
+  .rightSection {
+    align-items: flex-start; /* 왼쪽 정렬로 변경 */
+    gap: 12px; /* 간격 약간 넓힘 */
+    width: 100%;
+  }
 }
