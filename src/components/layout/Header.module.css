@@ -1,5 +1,5 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 50;
@@ -9,8 +9,12 @@
 
   padding-top: 14px;
   padding-bottom: 14px;
-
-  background-color: transparent;
+  /* 
+  background-color: transparent; */
+  background-color: rgba(255, 255, 255, 0.9);
+  /* 
+  border-bottom: 1px solid #fff;
+  background: #fff; */
 }
 
 .container {
@@ -164,12 +168,14 @@
     margin-top: 0;
     padding: 16px 0;
     padding-left: 16px;
+    border-radius: 0px;
   }
 
   .dropdownItem {
     height: 40px;
     display: flex;
     align-items: center;
+    padding: 4px;
   }
 
   .dropdownItem .langCode {
@@ -213,7 +219,7 @@
     top: 56px;
     left: 0;
     width: 100vw;
-    height: 136px;
+    /* height: 136px; */
     background-color: #fff;
     padding: 20px;
     z-index: 49;

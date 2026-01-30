@@ -28,12 +28,20 @@ const FEATURES = [
     category: "랭킹 시스템",
     title: "혼자가 아닌 경쟁!\n한국어 학습이 더 재밌어요",
     description:
-      "다른 학습자들과의 랭킹 경쟁을 통해 학습 동기를 높이고,\n친구들과 비교하며 더욱 재미있게 한국어를 배울 수 있습니다.\n소셜 학습으로 지속적인 참여를 유도합니다.",
+      "다른 학습자들과의 랭킹 경쟁을 통해\\m학습 동기를 높이고,\n친구들과 비교하며 더욱 재미있게\\m한국어를 배울 수 있습니다.\n소셜 학습으로 지속적인 참여를 유도합니다.",
     imgSrc: "/feature-ranking.png",
     imgAlt: "랭킹 시스템 화면",
     isReverse: false,
   },
 ];
+
+const renderDescription = (text: string) => {
+  return text.split(/(\\n|\\m)/).map((part, i) => {
+    if (part === "\\n") return <br key={i} />;
+    if (part === "\\m") return <br key={i} className={styles.mobileBr} />;
+    return part;
+  });
+};
 
 export default function KeyFeatures({ id }: Props) {
   return (
@@ -63,7 +71,9 @@ export default function KeyFeatures({ id }: Props) {
               <div className={styles.textGroup}>
                 <span className={styles.category}>{feature.category}</span>
                 <h3 className={styles.featureTitle}>{feature.title}</h3>
-                <p className={styles.description}>{feature.description}</p>
+                <p className={styles.description}>
+                  {renderDescription(feature.description)}
+                </p>
               </div>
               <div className={styles.imageWrapper}>
                 <Image

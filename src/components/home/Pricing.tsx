@@ -13,7 +13,7 @@ export default function Pricing({ id }: Props) {
           <div className={styles.featureRow}>
             <div className={styles.imageWrapper}>
               <Image
-                src="/pricing.png"
+                src="/pricing-v2.png"
                 alt="구독 관리"
                 width={640}
                 height={480}
