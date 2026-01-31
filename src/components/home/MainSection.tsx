@@ -9,7 +9,7 @@ export default function MainSection() {
           <div className={styles.textGroup}>
             <div className={styles.sloganDesktop}>
               <Image
-                src="/slogan-desktop.svg"
+                src="/icons/slogan-desktop.svg"
                 alt="HanGyul Slogan Desktop"
                 width={594}
                 height={240}
@@ -20,7 +20,7 @@ export default function MainSection() {
 
             <div className={styles.sloganMobile}>
               <Image
-                src="/slogan-mobile.svg"
+                src="/icons/slogan-mobile.svg"
                 alt="HanGyul Slogan Mobile"
                 width={262}
                 height={105}
@@ -37,12 +37,17 @@ export default function MainSection() {
 
           <div className={styles.buttonGroup}>
             <button className={styles.storeBtn}>
-              <Image src="/apple-logo.svg" alt="Apple" width={16} height={19} />
+              <Image
+                src="/icons/apple-logo.svg"
+                alt="Apple"
+                width={16}
+                height={19}
+              />
               App Store
             </button>
             <button className={styles.storeBtn}>
               <Image
-                src="/google-play.svg"
+                src="/icons/google-play.svg"
                 alt="Google Play"
                 width={16}
                 height={17}
@@ -54,7 +59,7 @@ export default function MainSection() {
 
         <div className={styles.mockupWrapper}>
           <Image
-            src="/mockup.png"
+            src="/images/mockup.png"
             alt="Mockup"
             width={522}
             height={628}

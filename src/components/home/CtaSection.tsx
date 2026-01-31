@@ -6,7 +6,7 @@ export default function CtaSection() {
     <section className={styles.container}>
       <div className={styles.bgDesktop}>
         <Image
-          src="/bg-wrap-desktop.svg"
+          src="/images/bg-wrap-desktop.svg"
           alt="Background Pattern Desktop"
           fill
           style={{ objectFit: "cover" }}
@@ -16,7 +16,7 @@ export default function CtaSection() {
 
       <div className={styles.bgMobile}>
         <Image
-          src="/bg-wrap-mobile.svg"
+          src="/images/bg-wrap-mobile.svg"
           alt="Background Pattern Mobile"
           fill
           priority
@@ -38,12 +38,17 @@ export default function CtaSection() {
 
         <div className={styles.buttonGroup}>
           <button className={styles.storeBtn}>
-            <Image src="/apple-logo.svg" alt="Apple" width={16} height={19} />
+            <Image
+              src="/icons/apple-logo.svg"
+              alt="Apple"
+              width={16}
+              height={19}
+            />
             App Store
           </button>
           <button className={styles.storeBtn}>
             <Image
-              src="/google-play.svg"
+              src="/icons/google-play.svg"
               alt="Google Play"
               width={16}
               height={17}

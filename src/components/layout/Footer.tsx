@@ -9,7 +9,7 @@ export default function Footer() {
         <div className={styles.leftSection}>
           <Image
             className={styles.logo}
-            src="/logo.svg"
+            src="/icons/logo.svg"
             alt="HanGyul Logo"
             width={133}
             height={28}

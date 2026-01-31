@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Header.module.css";
-import { useState, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const LANGUAGES = [
   { code: "kr", name: "한국어", label: "한국어", flag: "/flags/KR.svg" },
@@ -23,8 +23,17 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [selectedLang, setSelectedLang] = useState(LANGUAGES[0]);
 
-  const toggleLangDropDown = () => setIsLangOpen((prev) => !prev);
-  const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
+  const headerRef = useRef<HTMLDivElement>(null);
+
+  const toggleLangDropDown = () => {
+    setIsLangOpen((prev) => !prev);
+    setIsMobileMenuOpen(false);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen((prev) => !prev);
+    setIsLangOpen(false);
+  };
 
   const handleSelect = (lang: (typeof LANGUAGES)[0]) => {
     setSelectedLang(lang);
@@ -32,22 +41,31 @@ export default function Header() {
   };
 
   useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-    return () => {
-      document.body.style.overflow = "unset";
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        headerRef.current &&
+        !headerRef.current.contains(event.target as Node)
+      ) {
+        setIsLangOpen(false);
+        setIsMobileMenuOpen(false);
+      }
     };
-  }, [isMobileMenuOpen]);
+
+    if (isMobileMenuOpen || isLangOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMobileMenuOpen, isLangOpen]);
 
   return (
-    <header className={styles.header}>
+    <header className={styles.header} ref={headerRef}>
       <div className={styles.container}>
         <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
           <Image
-            src="/logo.svg"
+            src="/icons/logo.svg"
             alt="HanGyul Logo"
             width={151}
             height={32}
@@ -85,7 +103,11 @@ export default function Header() {
               </div>
 
               <Image
-                src={isLangOpen ? "/chevron-up.svg" : "/chevron-down.svg"}
+                src={
+                  isLangOpen
+                    ? "/icons/chevron-up.svg"
+                    : "/icons/chevron-down.svg"
+                }
                 alt="toggle arrow"
                 width={16}
                 height={16}
@@ -120,7 +142,7 @@ export default function Header() {
           </div>
 
           <button className={styles.hamburger} onClick={toggleMobileMenu}>
-            <Image src="/list.svg" alt="menu" width={24} height={24} />
+            <Image src="/icons/list.svg" alt="menu" width={24} height={24} />
           </button>
         </div>
       </div>

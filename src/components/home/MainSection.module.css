@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  background-image: url("/background.png");
+  background-image: url("/images/background.png");
   background-size: cover;
   background-position: top center;
   position: relative;

@@ -9,7 +9,7 @@ const FEATURES = [
   {
     title: "전 세계 1,000만 학습자",
     desc: "한국어에 대한 전 세계 관심\n증가에 발맞춘 글로벌 플랫폼",
-    decoImg: "/eraser.svg",
+    decoImg: "/icons/eraser.svg",
     decoAlt: "지우개",
     decoClass: "eraser",
     decoWidth: 48,
@@ -18,7 +18,7 @@ const FEATURES = [
   {
     title: "스피킹 중심 학습",
     desc: "실제 회화 능력 향상에 집중한\n실용적인 학습 방식",
-    decoImg: "/pencil.svg",
+    decoImg: "/icons/pencil.svg",
     decoAlt: "연필",
     decoClass: "pencil",
     decoWidth: 46,
@@ -27,7 +27,7 @@ const FEATURES = [
   {
     title: "AI 기반 발음 교정",
     desc: "실시간 음성 분석으로\n정확한 발음 피드백 제공",
-    decoImg: "/paper.svg",
+    decoImg: "/icons/paper.svg",
     decoAlt: "종이",
     decoClass: "paper",
     decoWidth: 48,
@@ -36,7 +36,7 @@ const FEATURES = [
   {
     title: "K-콘텐츠 연계",
     desc: "드라마, 영화 등\n한국 문화 콘텐츠와 연결된 학습 경험",
-    decoImg: "/note.svg",
+    decoImg: "/icons/note.svg",
     decoAlt: "노트",
     decoClass: "note",
     decoWidth: 48,
@@ -63,7 +63,7 @@ export default function ServiceIntro({ id }: Props) {
               <div className={styles.card}>
                 <div className={styles.ringPosition}>
                   <Image
-                    src="/spring.svg"
+                    src="/icons/spring.svg"
                     alt="spring"
                     width={10}
                     height={161}
