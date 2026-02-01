@@ -5,6 +5,7 @@
 .content {
   max-width: 1180px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .header {
@@ -16,7 +17,7 @@
 
 .title {
   color: #000;
-  font-size: 36px;
+  font-size: clamp(1.75rem, 1.6rem + 0.5vw, 2.25rem);
   font-weight: 700;
   line-height: 140%;
   margin-top: 12px;
@@ -25,7 +26,7 @@
 
 .subtitle {
   color: #595959;
-  font-size: 20px;
+  font-size: clamp(1rem, 0.9rem + 0.3vw, 1.25rem);
   font-weight: 500;
   line-height: 160%;
   margin-bottom: 100px;
@@ -47,6 +48,11 @@
   align-self: stretch;
 }
 
+.imageWrapper {
+  flex: 1;
+  width: 100%;
+}
+
 .reverse {
   flex-direction: row-reverse;
 }
@@ -59,16 +65,16 @@
 }
 
 .category {
-  color: #ff6700;
-  font-size: 16px;
+  color: var(--primary-color);
+  font-size: clamp(0.875rem, 0.8rem + 0.1vw, 1rem);
   font-weight: 600;
   line-height: 140%;
   margin-bottom: 8px;
 }
 
 .featureTitle {
-  color: #000;
-  font-size: 32px;
+  color: var(--black);
+  font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
   font-weight: 700;
   line-height: 140%;
   white-space: pre-wrap;
@@ -76,9 +82,43 @@
 }
 
 .description {
-  color: #202020;
-  font-size: 18px;
+  color: var(--gray-900);
+  font-size: clamp(1rem, 1rem + 0.1vw, 1.125rem);
   font-weight: 400;
   line-height: 160%;
   white-space: pre-wrap;
+}
+
+.mobileBr {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .featureRow,
+  .reverse {
+    /* [핵심] 가로 배치 -> 세로 배치 */
+    flex-direction: column;
+    /* 모바일에서는 이미지가 위로 올라감 */
+  }
+
+  .textGroup {
+    /* [핵심] 텍스트 중앙 정렬 */
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* 설명글이 너무 퍼지지 않게 폭 제한 (가독성) */
+  .description {
+    max-width: 400px;
+  }
+
+  .imageWrapper {
+    order: -1; /* Flex 아이템 순서를 0보다 작은 -1로 설정하여 맨 앞으로 이동 */
+    width: 100%;
+  }
+
+  .mobileBr {
+    display: block;
+  }
 }

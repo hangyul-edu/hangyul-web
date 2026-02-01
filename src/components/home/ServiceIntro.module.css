@@ -12,6 +12,8 @@
   justify-content: center;
   align-items: center;
   align-self: stretch;
+
+  /* padding: 0 16px; */
 }
 
 .header {
@@ -23,16 +25,18 @@
 }
 
 .title {
-  font-size: 36px;
+  font-size: clamp(28px, 5vw, 36px);
   font-weight: 700;
   line-height: 140%;
+  word-break: keep-all;
 }
 
 .subtitle {
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 20px);
   font-weight: 500;
   line-height: 160%;
   margin-bottom: 48px;
+  word-break: keep-all;
 }
 
 .grid {
@@ -60,6 +64,10 @@
   z-index: 1;
 }
 
+.mobileBr {
+  display: none;
+}
+
 .ringPosition {
   position: absolute;
   left: -4px;
@@ -79,6 +87,7 @@
   font-weight: 400;
   line-height: 140%;
   white-space: pre-wrap;
+  /* word-break: keep-all; */
 }
 
 .deco {
@@ -105,4 +114,78 @@
 .note {
   top: -20px;
   right: 10px;
+}
+
+@media (max-width: 1280px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    gap: 32px;
+  }
+
+  .content {
+    padding: 0 16px;
+  }
+
+  .pencil {
+    bottom: -20px;
+    right: 10px;
+    top: auto;
+    transform: rotate(80deg);
+  }
+
+  .note {
+    bottom: -18px;
+    right: 10px;
+    top: auto;
+    transform: rotate(70deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    /* 1열로 변경 */
+    grid-template-columns: 1fr;
+    /* 카드가 너무 넓어지지 않게 최대 너비 제한 (시안 느낌) */
+    max-width: 280px;
+    gap: 20px; /* 카드 사이 간격을 넓힘 (장식 요소 공간 확보) */
+  }
+
+  .mobileBr {
+    display: block;
+  }
+
+  /* .card {
+    padding: 47px 30px;
+  } */
+
+  /* 모바일 시안에 맞춘 장식 요소 위치 재정의 */
+
+  /* 1. 지우개: 우측 하단 유지 */
+  .eraser {
+    bottom: -15px;
+    right: 10px;
+  }
+
+  /* 2. 연필: 우상단 -> 좌측 하단으로 이동 (시안 반영) */
+  .pencil {
+    top: auto; /* 기존 top 해제 */
+    bottom: -15px; /* 아래로 이동 */
+    right: auto; /* 기존 right 해제 */
+    left: 15px; /* 왼쪽으로 이동 */
+  }
+
+  /* 3. 종이: 우측 하단 유지 */
+  .paper {
+    bottom: -15px;
+    right: 10px;
+  }
+
+  /* 4. 노트: 우상단 -> 좌측 하단으로 이동 (시안 반영) */
+  .note {
+    top: auto;
+    bottom: -15px;
+    right: auto;
+    left: 15px;
+  }
 }
