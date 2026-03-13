@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       "Learn Korean with AI. Hangyul helps you practice pronunciation, learn real Korean sentences, and build speaking confidence through personalized AI feedback.",
     images: [
       {
-        url: "/images/og-image.png",
+        url: "/og-image.png",
         width: 800,
         height: 400,
       },
