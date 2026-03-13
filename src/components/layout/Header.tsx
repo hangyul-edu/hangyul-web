@@ -1,27 +1,36 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import styles from "./Header.module.css";
 import { useEffect, useRef, useState } from "react";
 
+import { Link, useRouter, usePathname } from "@/i18n/navigation";
+import { useLocale, useTranslations } from "next-intl";
+
+import { KOFlag, USFlag } from "@/assets/flags";
+import {
+  chevronDownIcon,
+  chevronUpIcon,
+  listIcon,
+  logoIcon,
+} from "@/assets/icons";
+
 const LANGUAGES = [
-  { code: "kr", name: "한국어", label: "한국어", flag: "/flags/KR.svg" },
-  {
-    code: "en",
-    name: "English",
-    label: "English",
-    flag: "/flags/US.svg",
-  },
-  { code: "cn", name: "中文", label: "中文", flag: "/flags/CN.svg" },
-  { code: "jp", name: "日本語", label: "日本語", flag: "/flags/JP.svg" },
-  { code: "sa", name: "العربية", label: "العربية", flag: "/flags/SA.svg" },
+  { code: "en", name: "English", label: "English", flag: USFlag },
+  { code: "ko", name: "한국어", label: "한국어", flag: KOFlag },
 ];
 
 export default function Header() {
+  const t = useTranslations("Header.nav");
+
+  const router = useRouter();
+  const pathname = usePathname();
+  const locale = useLocale();
+
+  const selectedLang = LANGUAGES.find((l) => l.code === locale) ?? LANGUAGES[0];
+
   const [isLangOpen, setIsLangOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [selectedLang, setSelectedLang] = useState(LANGUAGES[0]);
 
   const headerRef = useRef<HTMLDivElement>(null);
 
@@ -36,7 +45,7 @@ export default function Header() {
   };
 
   const handleSelect = (lang: (typeof LANGUAGES)[0]) => {
-    setSelectedLang(lang);
+    router.replace(pathname, { locale: lang.code });
     setIsLangOpen(false);
   };
 
@@ -63,9 +72,29 @@ export default function Header() {
   return (
     <header className={styles.header} ref={headerRef}>
       <div className={styles.container}>
-        <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
+        <Link
+          href="/"
+          onClick={(e) => {
+            // 1. 모바일 메뉴 닫기
+            setIsMobileMenuOpen(false);
+
+            // 2. 현재 페이지가 홈('/')인 경우
+            if (pathname === "/") {
+              e.preventDefault(); // 기본 링크 이동 동작 방지
+
+              // 주소창에서 해시(#pricing 등) 제거 (페이지 새로고침 없이)
+              window.history.pushState({}, "", window.location.pathname);
+
+              // 최상단으로 부드럽게 이동
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }
+          }}
+        >
           <Image
-            src="/icons/logo.svg"
+            src={logoIcon}
             alt="HanGyul Logo"
             width={151}
             height={32}
@@ -74,14 +103,14 @@ export default function Header() {
         </Link>
 
         <nav className={styles.desktopNav}>
-          <Link href="#intro" className={styles.navlink}>
-            서비스 소개
+          <Link href="#intro" className={styles.navLink}>
+            {t("why")}
           </Link>
-          <Link href="#features" className={styles.navlink}>
-            주요 기능
+          <Link href="#features" className={styles.navLink}>
+            {t("learning")}
           </Link>
-          <Link href="#pricing" className={styles.navlink}>
-            가격 안내
+          <Link href="#pricing" className={styles.navLink}>
+            {t("membership")}
           </Link>
         </nav>
         <div className={styles.rightControls}>
@@ -103,11 +132,7 @@ export default function Header() {
               </div>
 
               <Image
-                src={
-                  isLangOpen
-                    ? "/icons/chevron-up.svg"
-                    : "/icons/chevron-down.svg"
-                }
+                src={isLangOpen ? chevronUpIcon : chevronDownIcon}
                 alt="toggle arrow"
                 width={16}
                 height={16}
@@ -142,7 +167,7 @@ export default function Header() {
           </div>
 
           <button className={styles.hamburger} onClick={toggleMobileMenu}>
-            <Image src="/icons/list.svg" alt="menu" width={24} height={24} />
+            <Image src={listIcon} alt="menu" width={24} height={24} />
           </button>
         </div>
       </div>
@@ -150,14 +175,26 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className={styles.mobileMenuOverlay}>
           <nav className={styles.mobileNav}>
-            <Link href="#intro" onClick={toggleMobileMenu}>
-              서비스 소개
+            <Link
+              href="#intro"
+              onClick={toggleMobileMenu}
+              className={styles.navLink}
+            >
+              {t("why")}
             </Link>
-            <Link href="#features" onClick={toggleMobileMenu}>
-              주요 기능
+            <Link
+              href="#features"
+              onClick={toggleMobileMenu}
+              className={styles.navLink}
+            >
+              {t("learning")}
             </Link>
-            <Link href="#pricing" onClick={toggleMobileMenu}>
-              가격 안내
+            <Link
+              href="#pricing"
+              onClick={toggleMobileMenu}
+              className={styles.navLink}
+            >
+              {t("membership")}
             </Link>
           </nav>
         </div>
