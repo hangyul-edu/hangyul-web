@@ -1,11 +1,18 @@
 import Image from "next/image";
 import styles from "./Pricing.module.css";
+import { useLocale, useTranslations } from "next-intl";
+import { IMAGES } from "@/constants/images";
 
 interface Props {
   id: string;
 }
 
 export default function Pricing({ id }: Props) {
+  const t = useTranslations("Pricing");
+  const locale = useLocale() as "en" | "ko";
+
+  const priceImg = IMAGES[locale].pricing;
+
   return (
     <section id={id} className={styles.container}>
       <div className={styles.content}>
@@ -13,8 +20,8 @@ export default function Pricing({ id }: Props) {
           <div className={styles.featureRow}>
             <div className={styles.imageWrapper}>
               <Image
-                src="/images/pricing-v2.png"
-                alt="구독 관리"
+                src={priceImg}
+                alt=""
                 width={640}
                 height={480}
                 style={{ width: "100%", height: "auto" }}
@@ -22,18 +29,12 @@ export default function Pricing({ id }: Props) {
             </div>
 
             <div className={styles.textGroup}>
-              <span className={styles.category}>구독 관리</span>
+              <span className={styles.category}>{t("category")}</span>
               <h3 className={styles.featureTitle}>
-                학습은 꾸준히,
-                <br />
-                구독은 간편하게
+                {t.rich("title", { br: () => <br /> })}
               </h3>
               <p className={styles.description}>
-                프리미엄 멤버십으로 더 많은 기능을 이용하세요.
-                <br />
-                구독 플랜을 쉽게 선택하고 관리할 수 있으며,
-                <br />
-                언제든지 변경이 가능합니다.
+                {t.rich("description", { br: () => <br /> })}
               </p>
             </div>
           </div>

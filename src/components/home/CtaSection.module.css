@@ -1,6 +1,10 @@
 .container {
   position: relative;
-  background-color: var(--black);
+  background: linear-gradient(
+    90deg,
+    rgba(246, 240, 186, 0.6) 0%,
+    rgba(255, 202, 167, 0.6) 100%
+  );
   padding: 120px 0;
 
   overflow: hidden; /* 배경 이미지가 튀어나가는 것 방지 */
@@ -50,7 +54,7 @@
 }
 
 .title {
-  color: var(--white);
+  color: var(--black);
   font-size: clamp(1.75rem, 1.6rem + 0.5vw, 2.25rem);
   font-weight: 700;
   line-height: 140%;
@@ -58,7 +62,7 @@
 }
 
 .description {
-  color: var(--white);
+  color: var(--black);
   font-size: clamp(1.125rem, 1rem + 0.1vw, 1.25rem);
   font-weight: 400;
   line-height: 160%;
@@ -84,12 +88,12 @@
   gap: 10px;
 
   border-radius: 8px;
-  border: 1px solid #d9d9d9;
-  background: var(--white);
+  border: 1px solid #ff6700;
+  background: #ff6700;
 
   font-size: clamp(14px, 1.9vw, 15px);
   font-weight: 500;
-  color: var(--black);
+  color: var(--white);
   cursor: pointer;
 
   white-space: nowrap;
@@ -97,7 +101,8 @@
 }
 
 .storeBtn:hover {
-  background-color: var(--gray-100);
+  background-color: #ff8533;
+  border-color: #ff8533;
 }
 
 .mobileBr {
