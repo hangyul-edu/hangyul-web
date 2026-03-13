@@ -1,0 +1,13 @@
+export { default as backgroundImg } from "./background.png";
+export { default as bgWrapDesktopImg } from "./bg-wrap-desktop.svg";
+export { default as bgWrapMobileImg } from "./bg-wrap-mobile.svg";
+export { default as mockupEnImg } from "./mockup-en.png";
+export { default as mockupKrImg } from "./mockup-kr.png";
+export { default as pricingEnImg } from "./pricing-en.png";
+export { default as pricingKrImg } from "./pricing-kr.png";
+export { default as feature1EnImg } from "./feature1-en.png";
+export { default as feature1KrImg } from "./feature1-kr.png";
+export { default as feature2EnImg } from "./feature2-en.png";
+export { default as feature2KrImg } from "./feature2-kr.png";
+export { default as feature3EnImg } from "./feature3-en.png";
+export { default as feature3KrImg } from "./feature3-kr.png";
