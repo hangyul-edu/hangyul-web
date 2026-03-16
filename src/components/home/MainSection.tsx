@@ -11,23 +11,18 @@ import {
 import { backgroundImg } from "@/assets/images";
 import { useLocale, useTranslations } from "next-intl";
 import { IMAGES } from "@/constants/images";
+import StoreButton from "@/components/common/StoreButton";
+
+const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 40 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.7, ease: "easeOut" as const, delay },
+});
 
 export default function MainSection() {
   const t = useTranslations("MainSection");
   const locale = useLocale() as "en" | "ko";
-
   const mockupImg = IMAGES[locale].mockup;
-
-  // 아래에서 위로 부드럽게 올라오는 설정 (타입 오류 해결)
-  const fadeInUp = {
-    initial: { opacity: 0, y: 40 },
-    whileInView: { opacity: 1, y: 0 },
-    viewport: { once: true },
-    transition: {
-      duration: 0.8,
-      ease: "easeOut",
-    } as const, // transition 속성에 as const를 붙여 타입을 고정합니다.
-  };
 
   return (
     <section className={styles.container}>
@@ -39,17 +34,11 @@ export default function MainSection() {
         className={styles.background}
       />
       <div className={styles.overlay} />
-      <div className={styles.content}>
+      <div key={locale} className={styles.content}>
         <div className={styles.leftSection}>
           <div className={styles.textGroup}>
             {/* 데스크탑 슬로건 */}
-            <motion.div
-              className={styles.sloganDesktop}
-              initial={fadeInUp.initial}
-              whileInView={fadeInUp.whileInView}
-              viewport={fadeInUp.viewport}
-              transition={fadeInUp.transition}
-            >
+            <motion.div className={styles.sloganDesktop} {...fadeUp(0)}>
               <Image
                 src={sloganDesktopIcon}
                 alt="HanGyul Slogan Desktop"
@@ -61,7 +50,7 @@ export default function MainSection() {
             </motion.div>
 
             {/* 모바일 슬로건 */}
-            <motion.div className={styles.sloganMobile} {...fadeInUp}>
+            <motion.div className={styles.sloganMobile} {...fadeUp(0)}>
               <Image
                 src={sloganMobileIcon}
                 alt="HanGyul Slogan Mobile"
@@ -73,32 +62,22 @@ export default function MainSection() {
             </motion.div>
 
             {/* 설명 텍스트 */}
-            <motion.p
-              className={styles.description}
-              {...fadeInUp}
-              transition={{ ...fadeInUp.transition, delay: 0.3 }}
-            >
-              {t.rich("description", { br: () => <br /> })}
+            <motion.p className={styles.description} {...fadeUp(0.3)}>
+              {t("description")}
             </motion.p>
           </div>
 
           {/* 버튼 */}
-          <motion.button
-            className={styles.storeBtn}
-            {...fadeInUp}
-            transition={{ ...fadeInUp.transition, delay: 0.6 }}
-          >
-            {t("button")}
-            <Image src={chevronRightIcon} alt="arrow" width={16} height={16} />
-          </motion.button>
+          <motion.div {...fadeUp(0.6)}>
+            <StoreButton className={styles.storeBtn}>
+              {t("button")}
+              <Image src={chevronRightIcon} alt="arrow" width={16} height={16} />
+            </StoreButton>
+          </motion.div>
         </div>
 
         {/* 오른쪽 목업 이미지 */}
-        <motion.div
-          className={styles.mockupWrapper}
-          {...fadeInUp}
-          transition={{ ...fadeInUp.transition, delay: 0.8 }}
-        >
+        <motion.div className={styles.mockupWrapper} {...fadeUp(0.8)}>
           <Image
             src={mockupImg}
             alt="Mockup"
