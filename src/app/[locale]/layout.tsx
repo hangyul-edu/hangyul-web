@@ -6,10 +6,66 @@ import { routing } from "@/i18n/routing";
 
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-import { setRequestLocale } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
+import type { Metadata } from "next";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
+}
+
+const META: Record<
+  string,
+  { title: string; description: string; keywords: string[]; ogTitle: string; ogDescription: string }
+> = {
+  ko: {
+    title: "한귤 | AI와 함께 자연스럽게 말하는 한국어",
+    description:
+      "한귤은 AI 발음 분석과 맞춤형 학습으로 한국어를 쉽고 재미있게 배울 수 있는 한국어 학습 플랫폼입니다. 실제 한국어 문장을 연습하며 자연스럽게 말하기 실력을 키워보세요.",
+    keywords: [
+      "AI 한국어 학습",
+      "한국어 회화 앱",
+      "한국어 말하기 연습",
+      "AI 발음 교정",
+      "한국어 공부 앱",
+      "한국어 학습 플랫폼",
+      "한국어 회화 연습",
+      "한국어 AI 튜터",
+      "한국어 공부 온라인",
+      "한귤 Hangyul",
+    ],
+    ogTitle: "AI와 함께 배우는 한국어 회화, 한귤",
+    ogDescription:
+      "AI 발음 분석과 개인 맞춤 학습으로 한국어를 자연스럽게 말해보세요. 실제 한국어 문장을 연습하며 말하기 자신감을 키울 수 있습니다.",
+  },
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  // en은 루트 layout.tsx의 메타데이터를 그대로 사용
+  if (locale === routing.defaultLocale) return {};
+
+  const meta = META[locale];
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    keywords: meta.keywords,
+    openGraph: {
+      title: meta.ogTitle,
+      description: meta.ogDescription,
+      type: "website",
+      locale: "ko_KR",
+    },
+    alternates: {
+      canonical: `/${locale}`,
+      languages: Object.fromEntries(routing.locales.map((l) => [l, `/${l}`])),
+    },
+  };
 }
 
 export default async function LocaleLayout({
@@ -27,7 +83,7 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
 
-  const messages = (await import(`../../../messages/${locale}.json`)).default;
+  const messages = await getMessages();
 
   return (
     <html lang={locale}>
