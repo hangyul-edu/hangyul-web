@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npx tsx scripts/validate-translations.ts && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "validate:i18n": "npx tsx scripts/validate-translations.ts"
   },
   "dependencies": {
     "framer-motion": "^12.35.2",
