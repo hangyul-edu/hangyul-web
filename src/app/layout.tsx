@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     title: "Hangyul - Speak Korean Naturally with AI",
     description:
       "Learn Korean with AI. Hangyul helps you practice pronunciation, learn real Korean sentences, and build speaking confidence through personalized AI feedback.",
+    url: process.env.NEXT_PUBLIC_SITE_URL,
     images: [
       {
         url: "/og-image.png",

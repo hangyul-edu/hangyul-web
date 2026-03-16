@@ -45,6 +45,7 @@ export default function Header() {
   };
 
   const handleSelect = (lang: (typeof LANGUAGES)[0]) => {
+    window.scrollTo({ top: 0, behavior: "instant" });
     router.replace(pathname, { locale: lang.code });
     setIsLangOpen(false);
   };

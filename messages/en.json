@@ -1,6 +1,6 @@
 {
   "MainSection": {
-    "description": "No more boring grammar!<br></br>Start speaking Korean from day one with Hangyul",
+    "description": "No more boring grammar!\nStart speaking Korean from day one with Hangyul",
     "button": "Start Now"
   },
   "ServiceIntro": {
@@ -8,19 +8,19 @@
     "subtitle": "Stop just listening. Start speaking. Instantly.",
     "feature1": {
       "title": "Speaking Approach",
-      "description": "Practice through real conversation.<br></br>Built for real life situations"
+      "description": "Practice through real conversation.\nBuilt for real life situations"
     },
     "feature2": {
       "title": "AI Based Feedback",
-      "description": "Smart level placement<br></br>Precise pronunciation correction"
+      "description": "Smart level placement\nPrecise pronunciation correction"
     },
     "feature3": {
       "title": "High TOPIK Scores",
-      "description": "Study the pattern.<br></br>Score higher"
+      "description": "Study the pattern.\nScore higher"
     },
     "feature4": {
       "title": "Collaboration Classes",
-      "description": "Exclusive global creators<br></br>only on Hangyul"
+      "description": "Exclusive global creators\nonly on Hangyul"
     }
   },
   "KeyFeatures": {
@@ -28,29 +28,37 @@
     "subtitle": "Learn it. Speak it. Own it.",
     "feature1": {
       "category": "Speak Korean Out Loud",
-      "title": "Do not just listen.<br></br>Start speaking now.",
-      "description": "Learn from global creators at your level.<br></br>Practice instantly with real time shadowing.<br></br>AI voice analysis corrects your pronunciation on the spot.<br></br>Ask questions anytime and get answers instantly."
+      "title": "Do not just listen.\nStart speaking now.",
+      "description": "Learn from global creators at your level.\nPractice instantly with real time shadowing.\nAI voice analysis corrects your pronunciation on the spot.\nAsk questions anytime and get answers instantly."
     },
     "feature2": {
       "category": "AI Recommended Sentences",
-      "title": "Review with what you saved.<br></br>Grow with what is made for you.",
-      "description": "AI analyzes your level and goals to recommend the right<br></br>sentences. Stay on track with daily targets.<br></br>Save the lines you love.<br></br>Turn your mistakes into your own study notes."
+      "title": "Review with what you saved.\nGrow with what is made for you.",
+      "description": "AI analyzes your level and goals to recommend the right\nsentences. Stay on track with daily targets.\nSave the lines you love.\nTurn your mistakes into your own study notes."
     },
     "feature3": {
       "category": "Learn Through Rankings",
-      "title": "Study together.<br></br>Compete together.<br></br>More fun. More growth.",
-      "description": "As your rank rises, so do your skills.<br></br>Stay motivated with rankings and friend leagues,<br></br>Turn your mistakes into your own study notes.<br></br>and enjoy the progress that keeps you going."
+      "title": "Study together.\nCompete together.\nMore fun. More growth.",
+      "description": "As your rank rises, so do your skills.\nStay motivated with rankings and friend leagues,\nTurn your mistakes into your own study notes.\nand enjoy the progress that keeps you going."
     }
   },
   "Pricing": {
     "category": "Premium Membership",
-    "title": "Stay consistent.<br></br>Subscribe with ease.",
-    "description": "Unlock full access to every learning feature.<br></br>Choose your plan easily and change it anytime."
+    "title": "Stay consistent.\nSubscribe with ease.",
+    "description": "Unlock full access to every learning feature.\nChoose your plan easily and change it anytime."
   },
   "CtaSection": {
     "title": "Start Speaking Korean Today",
-    "description": "Join millions worldwide where Korean doesn’t stay on paper, it comes alive in your voice.",
+    "description": "Join millions worldwide where Korean doesn't stay on paper, it comes alive in your voice.",
     "button": "Start Now"
+  },
+  "StoreButton": {
+    "comingSoon": "Launching on May 18, 2026."
+  },
+  "QrModal": {
+    "title": "Download the App",
+    "description": "Scan the QR code\nwith your mobile device",
+    "close": "Close"
   },
   "Header": {
     "nav": {

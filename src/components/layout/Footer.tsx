@@ -1,11 +1,27 @@
-import Link from "next/link";
+"use client";
+
+import { useState } from "react";
 import styles from "./Footer.module.css";
 import Image from "next/image";
 import { logoIcon } from "@/assets/icons";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import LegalModal from "@/components/common/LegalModal";
+import { termsKo } from "@/content/terms/ko";
+import { termsEn } from "@/content/terms/en";
+import { privacyKo } from "@/content/privacy/ko";
+import { privacyEn } from "@/content/privacy/en";
+
+type ModalType = "terms" | "privacy" | null;
 
 export default function Footer() {
   const t = useTranslations("Footer");
+  const locale = useLocale();
+  const [openModal, setOpenModal] = useState<ModalType>(null);
+
+  const terms = locale === "ko" ? termsKo : termsEn;
+  const privacy = locale === "ko" ? privacyKo : privacyEn;
+
+  const activeContent = openModal === "terms" ? terms : privacy;
 
   return (
     <footer className={styles.footer}>
@@ -29,15 +45,28 @@ export default function Footer() {
 
         <div className={styles.rightSection}>
           <div className={styles.infoRow}>
-            <Link href="">{t("terms")}</Link>
+            <button className={styles.legalLink} onClick={() => setOpenModal("terms")}>
+              {t("terms")}
+            </button>
             <span className={styles.divider} aria-hidden="true" />
-            <Link href="">{t("privacy")}</Link>
+            <button className={styles.legalLink} onClick={() => setOpenModal("privacy")}>
+              {t("privacy")}
+            </button>
           </div>
           <p className={styles.copyright}>
             Copyright © 2025 HanGyul. All Rights Reserved.
           </p>
         </div>
       </div>
+
+      {openModal && (
+        <LegalModal
+          title={activeContent.title}
+          lastUpdated={activeContent.lastUpdated}
+          body={activeContent.body}
+          onClose={() => setOpenModal(null)}
+        />
+      )}
     </footer>
   );
 }

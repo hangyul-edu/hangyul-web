@@ -65,6 +65,7 @@
   font-size: clamp(14px, 2.3vw, 24px);
   font-weight: 500;
   line-height: 160%;
+  white-space: pre-line;
 }
 
 .buttonGroup {

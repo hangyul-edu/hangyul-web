@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./ServiceIntro.module.css";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { springIcon } from "@/assets/icons";
 import { ICONS } from "@/constants/icons";
+import { motion } from "framer-motion";
+import { fadeInUpVariants, staggerContainer, staggerItem } from "@/constants/animations";
+import { useAnimateInView } from "@/hooks/useAnimateInView";
 
 interface Props {
   id: string;
@@ -19,55 +24,52 @@ type FeatureKey = keyof typeof FEATURE_CONFIG;
 
 export default function ServiceIntro({ id }: Props) {
   const t = useTranslations("ServiceIntro");
+  const locale = useLocale();
   const featureKeys = Object.keys(FEATURE_CONFIG) as FeatureKey[];
+
+  const { ref: headerRef, isInView: headerInView } = useAnimateInView();
+  const { ref: gridRef, isInView: gridInView } = useAnimateInView();
 
   return (
     <section id={id} className={styles.container}>
-      <div className={styles.content}>
-        <div className={styles.header}>
-          <h2 className={styles.title}>
-            {t.rich("title", { br: () => <br /> })}
-          </h2>
-          <p className={styles.subtitle}>
-            {t.rich("subtitle", { br: () => <br /> })}
-          </p>
-        </div>
+      <div key={locale} className={styles.content}>
+        <motion.div
+          ref={headerRef}
+          className={styles.header}
+          variants={fadeInUpVariants}
+          initial="hidden"
+          animate={headerInView ? "visible" : "hidden"}
+        >
+          <h2 className={styles.title}>{t("title")}</h2>
+          <p className={styles.subtitle}>{t("subtitle")}</p>
+        </motion.div>
 
-        <div className={styles.grid}>
+        <motion.div
+          ref={gridRef}
+          className={styles.grid}
+          variants={staggerContainer}
+          initial="hidden"
+          animate={gridInView ? "visible" : "hidden"}
+        >
           {featureKeys.map((key) => {
             const { icon, decoClass } = FEATURE_CONFIG[key];
 
             return (
-              <div key={key} className={styles.cardWrapper}>
+              <motion.div key={key} className={styles.cardWrapper} variants={staggerItem}>
                 <div className={styles.card}>
                   <div className={styles.ringPosition}>
-                    <Image
-                      src={springIcon}
-                      alt="spring"
-                      width={10}
-                      height={161}
-                    />
+                    <Image src={springIcon} alt="spring" width={10} height={161} />
                   </div>
-                  <h3 className={styles.cardTitle}>
-                    {t.rich(`${key}.title`, { br: () => <br /> })}
-                  </h3>
-                  <p className={styles.cardDesc}>
-                    {t.rich(`${key}.description`, { br: () => <br /> })}
-                  </p>
+                  <h3 className={styles.cardTitle}>{t(`${key}.title`)}</h3>
+                  <p className={styles.cardDesc}>{t(`${key}.description`)}</p>
                 </div>
-
                 <div className={`${styles.deco} ${styles[decoClass]}`}>
-                  <Image
-                    src={icon.src}
-                    alt=""
-                    width={icon.width}
-                    height={icon.height}
-                  />
+                  <Image src={icon.src} alt="" width={icon.width} height={icon.height} />
                 </div>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
