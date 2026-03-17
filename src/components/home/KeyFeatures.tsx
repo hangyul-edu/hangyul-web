@@ -6,7 +6,11 @@ import { hangyulIcon } from "@/assets/icons";
 import { IMAGES } from "@/constants/images";
 import { useLocale, useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { fadeInUpVariants, fadeInLeftVariants, fadeInRightVariants } from "@/constants/animations";
+import {
+  fadeInUpVariants,
+  fadeInLeftVariants,
+  fadeInRightVariants,
+} from "@/constants/animations";
 import { useAnimateInView } from "@/hooks/useAnimateInView";
 
 interface Props {
@@ -33,9 +37,24 @@ export default function KeyFeatures({ id }: Props) {
   const { ref: r2iRef, isInView: r2iInView } = useAnimateInView();
 
   const rowAnims = [
-    { textRef: r0tRef, textInView: r0tInView, imageRef: r0iRef, imageInView: r0iInView },
-    { textRef: r1tRef, textInView: r1tInView, imageRef: r1iRef, imageInView: r1iInView },
-    { textRef: r2tRef, textInView: r2tInView, imageRef: r2iRef, imageInView: r2iInView },
+    {
+      textRef: r0tRef,
+      textInView: r0tInView,
+      imageRef: r0iRef,
+      imageInView: r0iInView,
+    },
+    {
+      textRef: r1tRef,
+      textInView: r1tInView,
+      imageRef: r1iRef,
+      imageInView: r1iInView,
+    },
+    {
+      textRef: r2tRef,
+      textInView: r2tInView,
+      imageRef: r2iRef,
+      imageInView: r2iInView,
+    },
   ];
 
   return (
@@ -50,15 +69,24 @@ export default function KeyFeatures({ id }: Props) {
         >
           <Image src={hangyulIcon} alt="Hangyul Icon" width={28} height={28} />
           <h2 className={styles.title}>{t("title")}</h2>
-          <p className={styles.subtitle}>{t("subtitle")}</p>
+          <p className={styles.subtitle}>
+            {t.rich("subtitle", {
+              mobileBr: () => <br className={styles.mobileBr} />,
+            })}
+          </p>
         </motion.div>
 
         <div className={styles.featureList}>
           {featureKeys.map((key, index) => {
             const isReverse = index % 2 === 1;
-            const { textRef, textInView, imageRef, imageInView } = rowAnims[index];
-            const textVariants = isReverse ? fadeInRightVariants : fadeInLeftVariants;
-            const imageVariants = isReverse ? fadeInLeftVariants : fadeInRightVariants;
+            const { textRef, textInView, imageRef, imageInView } =
+              rowAnims[index];
+            const textVariants = isReverse
+              ? fadeInRightVariants
+              : fadeInLeftVariants;
+            const imageVariants = isReverse
+              ? fadeInLeftVariants
+              : fadeInRightVariants;
 
             return (
               <div
@@ -72,9 +100,15 @@ export default function KeyFeatures({ id }: Props) {
                   initial="hidden"
                   animate={textInView ? "visible" : "hidden"}
                 >
-                  <span className={styles.category}>{t(`${key}.category`)}</span>
+                  <span className={styles.category}>
+                    {t(`${key}.category`)}
+                  </span>
                   <h3 className={styles.featureTitle}>{t(`${key}.title`)}</h3>
-                  <p className={styles.description}>{t(`${key}.description`)}</p>
+                  <p className={styles.description}>
+                    {t.rich(`${key}.description`, {
+                      mobileBr: () => <br className={styles.mobileBr} />,
+                    })}
+                  </p>
                 </motion.div>
                 <motion.div
                   ref={imageRef}

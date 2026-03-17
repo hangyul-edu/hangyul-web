@@ -6,7 +6,11 @@ import { useLocale, useTranslations } from "next-intl";
 import { springIcon } from "@/assets/icons";
 import { ICONS } from "@/constants/icons";
 import { motion } from "framer-motion";
-import { fadeInUpVariants, staggerContainer, staggerItem } from "@/constants/animations";
+import {
+  fadeInUpVariants,
+  staggerContainer,
+  staggerItem,
+} from "@/constants/animations";
 import { useAnimateInView } from "@/hooks/useAnimateInView";
 
 interface Props {
@@ -41,7 +45,11 @@ export default function ServiceIntro({ id }: Props) {
           animate={headerInView ? "visible" : "hidden"}
         >
           <h2 className={styles.title}>{t("title")}</h2>
-          <p className={styles.subtitle}>{t("subtitle")}</p>
+          <p className={styles.subtitle}>
+            {t.rich("subtitle", {
+              mobileBr: () => <br className={styles.mobileBr} />,
+            })}
+          </p>
         </motion.div>
 
         <motion.div
@@ -55,16 +63,30 @@ export default function ServiceIntro({ id }: Props) {
             const { icon, decoClass } = FEATURE_CONFIG[key];
 
             return (
-              <motion.div key={key} className={styles.cardWrapper} variants={staggerItem}>
+              <motion.div
+                key={key}
+                className={styles.cardWrapper}
+                variants={staggerItem}
+              >
                 <div className={styles.card}>
                   <div className={styles.ringPosition}>
-                    <Image src={springIcon} alt="spring" width={10} height={161} />
+                    <Image
+                      src={springIcon}
+                      alt="spring"
+                      width={10}
+                      height={161}
+                    />
                   </div>
                   <h3 className={styles.cardTitle}>{t(`${key}.title`)}</h3>
                   <p className={styles.cardDesc}>{t(`${key}.description`)}</p>
                 </div>
                 <div className={`${styles.deco} ${styles[decoClass]}`}>
-                  <Image src={icon.src} alt="" width={icon.width} height={icon.height} />
+                  <Image
+                    src={icon.src}
+                    alt=""
+                    width={icon.width}
+                    height={icon.height}
+                  />
                 </div>
               </motion.div>
             );
