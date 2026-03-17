@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+    process.env.NEXT_PUBLIC_SITE_URL || "https://talkhangyul.com",
   ),
   title: "Hangyul - AI Korean Learning App | Speak Korean with AI",
   description:
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Hangyul - Speak Korean Naturally with AI",
     description:
       "Learn Korean with AI. Hangyul helps you practice pronunciation, learn real Korean sentences, and build speaking confidence through personalized AI feedback.",
-    url: process.env.NEXT_PUBLIC_SITE_URL,
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://talkhangyul.com",
     images: [
       {
         url: "/og-image.png",
