@@ -15,7 +15,13 @@ export function generateStaticParams() {
 
 const META: Record<
   string,
-  { title: string; description: string; keywords: string[]; ogTitle: string; ogDescription: string }
+  {
+    title: string;
+    description: string;
+    keywords: string[];
+    ogTitle: string;
+    ogDescription: string;
+  }
 > = {
   ko: {
     title: "한귤 | AI와 함께 자연스럽게 말하는 한국어",
@@ -60,6 +66,13 @@ export async function generateMetadata({
       description: meta.ogDescription,
       type: "website",
       locale: "ko_KR",
+      images: [
+        {
+          url: "https://talkhangyul.com/og-image.png",
+          width: 800,
+          height: 400,
+        },
+      ],
     },
     alternates: {
       canonical: `/${locale}`,
