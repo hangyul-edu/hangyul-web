@@ -13,6 +13,8 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+const baseUrl = "https://talkhangyul.com";
+
 const META: Record<
   string,
   {
@@ -21,8 +23,30 @@ const META: Record<
     keywords: string[];
     ogTitle: string;
     ogDescription: string;
+    ogLocale: string;
   }
 > = {
+  en: {
+    title: "Hangyul - AI Korean Learning App | Speak Korean with AI",
+    description:
+      "Hangyul is an AI-powered Korean learning platform designed to help you speak Korean naturally. Practice pronunciation, learn real Korean sentences, and improve your speaking skills with personalized AI feedback.",
+    keywords: [
+      "AI Korean learning",
+      "learn Korean",
+      "speak Korean",
+      "Korean language app",
+      "Korean speaking practice",
+      "AI pronunciation training",
+      "Korean learning app",
+      "Korean speaking AI",
+      "Korean study online",
+      "Talk Hangyul",
+    ],
+    ogTitle: "Hangyul - Speak Korean Naturally with AI",
+    ogDescription:
+      "Learn Korean with AI. Hangyul helps you practice pronunciation, learn real Korean sentences, and build speaking confidence through personalized AI feedback.",
+    ogLocale: "en_US",
+  },
   ko: {
     title: "한귤 | AI와 함께 자연스럽게 말하는 한국어",
     description:
@@ -42,6 +66,7 @@ const META: Record<
     ogTitle: "AI와 함께 배우는 한국어 회화, 한귤",
     ogDescription:
       "AI 발음 분석과 개인 맞춤 학습으로 한국어를 자연스럽게 말해보세요. 실제 한국어 문장을 연습하며 말하기 자신감을 키울 수 있습니다.",
+    ogLocale: "ko_KR",
   },
 };
 
@@ -51,28 +76,21 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-
-  // en은 루트 layout.tsx의 메타데이터를 그대로 사용
-  if (locale === routing.defaultLocale) return {};
-
-  const meta = META[locale];
+  const meta = META[locale] ?? META.en;
 
   return {
+    metadataBase: new URL(baseUrl),
     title: meta.title,
     description: meta.description,
     keywords: meta.keywords,
     openGraph: {
       title: meta.ogTitle,
       description: meta.ogDescription,
+      url: `${baseUrl}/${locale}`,
+      siteName: "Hangyul",
+      images: [{ url: "/og-image.png", width: 800, height: 400 }],
+      locale: meta.ogLocale,
       type: "website",
-      locale: "ko_KR",
-      images: [
-        {
-          url: "https://talkhangyul.com/og-image.png",
-          width: 800,
-          height: 400,
-        },
-      ],
     },
     alternates: {
       canonical: `/${locale}`,
