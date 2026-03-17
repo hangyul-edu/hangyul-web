@@ -104,15 +104,15 @@ export default function Header() {
         </Link>
 
         <nav className={styles.desktopNav}>
-          <Link href="#intro" className={styles.navLink}>
+          <a href="#intro" className={styles.navLink}>
             {t("why")}
-          </Link>
-          <Link href="#features" className={styles.navLink}>
+          </a>
+          <a href="#features" className={styles.navLink}>
             {t("learning")}
-          </Link>
-          <Link href="#pricing" className={styles.navLink}>
+          </a>
+          <a href="#pricing" className={styles.navLink}>
             {t("membership")}
-          </Link>
+          </a>
         </nav>
         <div className={styles.rightControls}>
           <div className={styles.dropdownWrapper}>
@@ -176,27 +176,15 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className={styles.mobileMenuOverlay}>
           <nav className={styles.mobileNav}>
-            <Link
-              href="#intro"
-              onClick={toggleMobileMenu}
-              className={styles.navLink}
-            >
+            <a href="#intro" onClick={toggleMobileMenu} className={styles.navLink}>
               {t("why")}
-            </Link>
-            <Link
-              href="#features"
-              onClick={toggleMobileMenu}
-              className={styles.navLink}
-            >
+            </a>
+            <a href="#features" onClick={toggleMobileMenu} className={styles.navLink}>
               {t("learning")}
-            </Link>
-            <Link
-              href="#pricing"
-              onClick={toggleMobileMenu}
-              className={styles.navLink}
-            >
+            </a>
+            <a href="#pricing" onClick={toggleMobileMenu} className={styles.navLink}>
               {t("membership")}
-            </Link>
+            </a>
           </nav>
         </div>
       )}
