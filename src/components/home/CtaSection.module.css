@@ -59,6 +59,7 @@
   font-weight: 700;
   line-height: 140%;
   margin-bottom: 12px;
+  white-space: pre-line;
 }
 
 .description {

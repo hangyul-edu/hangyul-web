@@ -1,6 +1,6 @@
 {
   "MainSection": {
-    "description": "No more boring grammar!\nStart speaking Korean from day one with Hangyul",
+    "description": "No more boring grammar!\nStart speaking Korean from day one with Hangyul.",
     "button": "Start Now"
   },
   "ServiceIntro": {
@@ -8,15 +8,15 @@
     "subtitle": "Stop just listening. Start speaking. Instantly.",
     "feature1": {
       "title": "Speaking Approach",
-      "description": "Practice through real conversation.\nBuilt for real life situations"
+      "description": "Practice through real conversation.\nBuilt for real life situations."
     },
     "feature2": {
       "title": "AI Based Feedback",
-      "description": "Smart level placement\nPrecise pronunciation correction"
+      "description": "Smart level placement.\nPrecise pronunciation correction."
     },
     "feature3": {
       "title": "High TOPIK Scores",
-      "description": "Study the pattern.\nScore higher"
+      "description": "Study the pattern.\nScore higher."
     },
     "feature4": {
       "title": "Collaboration Classes",
@@ -29,17 +29,17 @@
     "feature1": {
       "category": "Speak Korean Out Loud",
       "title": "Do not just listen.\nStart speaking now.",
-      "description": "Learn from global creators at your level.\nPractice instantly with real time shadowing.\nAI voice analysis corrects your pronunciation on the spot.\nAsk questions anytime and get answers instantly."
+      "description": "Learn from global creators at your level.\nPractice instantly with real time shadowing.\nAI voice analysis corrects <mobileBr></mobileBr>your pronunciation on the spot.\nAsk questions anytime and get answers instantly."
     },
     "feature2": {
       "category": "AI Recommended Sentences",
       "title": "Review with what you saved.\nGrow with what is made for you.",
-      "description": "AI analyzes your level and goals to recommend the right\nsentences. Stay on track with daily targets.\nSave the lines you love.\nTurn your mistakes into your own study notes."
+      "description": "AI analyzes your level and goals to <mobileBr></mobileBr>recommend the right sentences. <mobileBr></mobileBr>Stay on track with daily targets.\nSave the lines you love.\nTurn your mistakes into your own study notes."
     },
     "feature3": {
       "category": "Learn Through Rankings",
       "title": "Study together.\nCompete together.\nMore fun. More growth.",
-      "description": "As your rank rises, so do your skills.\nStay motivated with rankings and friend leagues,\nTurn your mistakes into your own study notes.\nand enjoy the progress that keeps you going."
+      "description": "As your rank rises, so do your skills.\nStay motivated with rankings and friend leagues,\nand enjoy the progress that keeps you going."
     }
   },
   "Pricing": {
@@ -48,8 +48,8 @@
     "description": "Unlock full access to every learning feature.\nChoose your plan easily and change it anytime."
   },
   "CtaSection": {
-    "title": "Start Speaking Korean Today",
-    "description": "Join millions worldwide where Korean doesn't stay on paper, it comes alive in your voice.",
+    "title": "Start Speaking <mobileBr></mobileBr>Korean Today",
+    "description": "Join millions worldwide where <mobileBr></mobileBr>Korean doesn't stay on paper, <mobileBr></mobileBr>it comes alive in your voice.",
     "button": "Start Now"
   },
   "StoreButton": {

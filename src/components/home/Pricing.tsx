@@ -5,7 +5,10 @@ import styles from "./Pricing.module.css";
 import { useLocale, useTranslations } from "next-intl";
 import { IMAGES } from "@/constants/images";
 import { motion } from "framer-motion";
-import { fadeInLeftVariants, fadeInRightVariants } from "@/constants/animations";
+import {
+  fadeInLeftVariants,
+  fadeInRightVariants,
+} from "@/constants/animations";
 import { useAnimateInView } from "@/hooks/useAnimateInView";
 
 interface Props {
@@ -50,7 +53,11 @@ export default function Pricing({ id }: Props) {
             >
               <span className={styles.category}>{t("category")}</span>
               <h3 className={styles.featureTitle}>{t("title")}</h3>
-              <p className={styles.description}>{t("description")}</p>
+              <p className={styles.description}>
+                {t.rich("description", {
+                  mobileBr: () => <br className={styles.mobileBr} />,
+                })}
+              </p>
             </motion.div>
           </div>
         </div>

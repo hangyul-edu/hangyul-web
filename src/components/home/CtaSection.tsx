@@ -46,10 +46,14 @@ export default function CtaSection() {
         animate={contentInView ? "visible" : "hidden"}
       >
         <motion.h2 className={styles.title} variants={staggerItem}>
-          {t("title")}
+          {t.rich("title", {
+            mobileBr: () => <br className={styles.mobileBr} />,
+          })}
         </motion.h2>
         <motion.p className={styles.description} variants={staggerItem}>
-          {t("description")}
+          {t.rich("description", {
+            mobileBr: () => <br className={styles.mobileBr} />,
+          })}
         </motion.p>
         <motion.div variants={staggerItem}>
           <StoreButton className={styles.storeBtn}>
