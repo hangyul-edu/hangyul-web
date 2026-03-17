@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     url: process.env.NEXT_PUBLIC_SITE_URL || "https://talkhangyul.com",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://talkhangyul.com/og-image.png",
         width: 800,
         height: 400,
       },
