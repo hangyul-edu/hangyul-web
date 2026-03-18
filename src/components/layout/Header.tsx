@@ -70,6 +70,17 @@ export default function Header() {
     };
   }, [isMobileMenuOpen, isLangOpen]);
 
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setIsLangOpen(false);
+        setIsMobileMenuOpen(false);
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
   return (
     <header className={styles.header} ref={headerRef}>
       <div className={styles.container}>
@@ -121,6 +132,9 @@ export default function Header() {
                 isLangOpen ? styles.active : ""
               }`}
               onClick={toggleLangDropDown}
+              aria-label="언어 선택"
+              aria-expanded={isLangOpen}
+              aria-haspopup="listbox"
             >
               <div className={styles.langInfo}>
                 <Image
@@ -134,7 +148,7 @@ export default function Header() {
 
               <Image
                 src={isLangOpen ? chevronUpIcon : chevronDownIcon}
-                alt="toggle arrow"
+                alt=""
                 width={16}
                 height={16}
                 className={styles.chevron}
@@ -167,8 +181,13 @@ export default function Header() {
             )}
           </div>
 
-          <button className={styles.hamburger} onClick={toggleMobileMenu}>
-            <Image src={listIcon} alt="menu" width={24} height={24} />
+          <button
+            className={styles.hamburger}
+            onClick={toggleMobileMenu}
+            aria-label="내비게이션 메뉴"
+            aria-expanded={isMobileMenuOpen}
+          >
+            <Image src={listIcon} alt="" width={24} height={24} />
           </button>
         </div>
       </div>
