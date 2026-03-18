@@ -7,7 +7,10 @@
     "build": "npx tsx scripts/validate-translations.ts && next build",
     "start": "next start",
     "lint": "eslint",
-    "validate:i18n": "npx tsx scripts/validate-translations.ts"
+    "validate:i18n": "npx tsx scripts/validate-translations.ts",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:report": "playwright show-report"
   },
   "dependencies": {
     "framer-motion": "^12.35.2",
@@ -17,7 +20,9 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.11.1",
     "@netlify/plugin-nextjs": "^5.15.7",
+    "@playwright/test": "^1.58.2",
     "@types/node": "^25.1.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
