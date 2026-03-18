@@ -5,6 +5,7 @@ import { createPortal } from "react-dom";
 import { useTranslations } from "next-intl";
 import styles from "./QrModal.module.css";
 import { useScrollLock } from "@/hooks/useScrollLock";
+import { useFocusTrap } from "@/hooks/useFocusTrap";
 
 interface Props {
   onClose: () => void;
@@ -12,6 +13,7 @@ interface Props {
 
 export default function QrModal({ onClose }: Props) {
   const t = useTranslations("QrModal");
+  const modalRef = useFocusTrap<HTMLDivElement>();
   useScrollLock();
 
   useEffect(() => {
@@ -24,14 +26,21 @@ export default function QrModal({ onClose }: Props) {
 
   return createPortal(
     <div className={styles.overlay} onClick={onClose}>
-      <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
-        <p className={styles.title}>{t("title")}</p>
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="qr-modal-title"
+        ref={modalRef}
+        className={styles.modal}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <p id="qr-modal-title" className={styles.title}>{t("title")}</p>
 
         {/* TODO: QR 코드 이미지로 교체하기 */}
         <div className={styles.qrPlaceholder}>QR Code</div>
 
         <p className={styles.description}>{t("description")}</p>
-        <button className={styles.closeBtn} onClick={onClose}>
+        <button className={styles.closeBtn} onClick={onClose} aria-label={t("close")}>
           {t("close")}
         </button>
       </div>
