@@ -15,21 +15,24 @@ test.describe("Header Navigation", () => {
     expect(scrollY).toBeLessThan(50);
   });
 
-  test("'Why 한귤?' 클릭 시 intro 섹션으로 스크롤", async ({ page }) => {
+  test("'Why 한귤?' 클릭 시 intro 섹션으로 스크롤", async ({ page, isMobile }) => {
+    test.skip(isMobile, "모바일에서는 햄버거 메뉴 사용 (데스크탑 nav 숨김)");
     await page.getByRole("link", { name: /why/i }).first().click();
     await page.waitForTimeout(500);
     const section = page.locator("#intro");
     await expect(section).toBeInViewport();
   });
 
-  test("'학습 소개' 클릭 시 features 섹션으로 스크롤", async ({ page }) => {
+  test("'학습 소개' 클릭 시 features 섹션으로 스크롤", async ({ page, isMobile }) => {
+    test.skip(isMobile, "모바일에서는 햄버거 메뉴 사용 (데스크탑 nav 숨김)");
     await page.getByRole("link", { name: /학습/i }).first().click();
     await page.waitForTimeout(500);
     const section = page.locator("#features");
     await expect(section).toBeInViewport();
   });
 
-  test("'멤버십' 클릭 시 pricing 섹션으로 스크롤", async ({ page }) => {
+  test("'멤버십' 클릭 시 pricing 섹션으로 스크롤", async ({ page, isMobile }) => {
+    test.skip(isMobile, "모바일에서는 햄버거 메뉴 사용 (데스크탑 nav 숨김)");
     await page.getByRole("link", { name: /멤버십/i }).first().click();
     await page.waitForTimeout(500);
     const section = page.locator("#pricing");
