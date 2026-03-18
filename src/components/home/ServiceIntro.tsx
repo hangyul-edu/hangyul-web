@@ -72,7 +72,7 @@ export default function ServiceIntro({ id }: Props) {
                   <div className={styles.ringPosition}>
                     <Image
                       src={springIcon}
-                      alt="spring"
+                      alt=""
                       width={10}
                       height={161}
                     />

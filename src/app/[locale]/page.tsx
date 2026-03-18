@@ -17,7 +17,7 @@ export default function Home({
   setRequestLocale(locale);
 
   return (
-    <main>
+    <main id="main-content">
       <MainSection />
       <ServiceIntro id="intro" />
       <KeyFeatures id="features" />
