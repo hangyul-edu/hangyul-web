@@ -34,7 +34,7 @@ export default function MainSection() {
         className={styles.background}
       />
       <div className={styles.overlay} />
-      <div key={locale} className={styles.content}>
+      <div className={styles.content}>
         <div className={styles.leftSection}>
           <div className={styles.textGroup}>
             {/* 데스크탑 슬로건 */}

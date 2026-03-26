@@ -59,7 +59,7 @@ export default function KeyFeatures({ id }: Props) {
 
   return (
     <section id={id} className={styles.container}>
-      <div key={locale} className={styles.content}>
+      <div className={styles.content}>
         <motion.div
           ref={headerRef}
           className={styles.header}

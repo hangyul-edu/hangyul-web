@@ -76,7 +76,7 @@
   font-style: normal;
   font-size: 13px;
   font-weight: 400;
-  color: var(--gray-400);
+  color: var(--gray-500); /* WCAG AA: #595959 on #ffffff = 7.14:1 contrast ratio */
 }
 
 .rightSection {

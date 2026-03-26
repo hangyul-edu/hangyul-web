@@ -45,11 +45,11 @@ export default function Footer() {
 
         <div className={styles.rightSection}>
           <div className={styles.infoRow}>
-            <button className={styles.legalLink} onClick={() => setOpenModal("terms")}>
+            <button className={styles.legalLink} aria-haspopup="dialog" onClick={() => setOpenModal("terms")}>
               {t("terms")}
             </button>
             <span className={styles.divider} aria-hidden="true" />
-            <button className={styles.legalLink} onClick={() => setOpenModal("privacy")}>
+            <button className={styles.legalLink} aria-haspopup="dialog" onClick={() => setOpenModal("privacy")}>
               {t("privacy")}
             </button>
           </div>

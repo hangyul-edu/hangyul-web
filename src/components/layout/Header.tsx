@@ -5,9 +5,10 @@ import styles from "./Header.module.css";
 import { useEffect, useRef, useState } from "react";
 
 import { Link, useRouter, usePathname } from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
 import { useLocale, useTranslations } from "next-intl";
 
-import { KOFlag, USFlag } from "@/assets/flags";
+import { LOCALE_CONFIG } from "@/constants/locales";
 import {
   chevronDownIcon,
   chevronUpIcon,
@@ -15,10 +16,10 @@ import {
   logoIcon,
 } from "@/assets/icons";
 
-const LANGUAGES = [
-  { code: "en", name: "English", label: "English", flag: USFlag },
-  { code: "ko", name: "한국어", label: "한국어", flag: KOFlag },
-];
+const LANGUAGES = routing.locales.map((code) => ({
+  code,
+  ...LOCALE_CONFIG[code],
+}));
 
 export default function Header() {
   const t = useTranslations("Header.nav");
@@ -31,10 +32,18 @@ export default function Header() {
 
   const [isLangOpen, setIsLangOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   const headerRef = useRef<HTMLDivElement>(null);
 
   const toggleLangDropDown = () => {
+    // 드롭다운을 열 때 다른 locale을 미리 프리페치
+    // routing.locales에서 자동으로 읽으므로 새 언어 추가 시 별도 수정 불필요
+    if (!isLangOpen) {
+      routing.locales
+        .filter((l) => l !== locale)
+        .forEach((otherLocale) => {
+          router.prefetch(pathname, { locale: otherLocale });
+        });
+    }
     setIsLangOpen((prev) => !prev);
     setIsMobileMenuOpen(false);
   };
@@ -69,6 +78,17 @@ export default function Header() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isMobileMenuOpen, isLangOpen]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setIsLangOpen(false);
+        setIsMobileMenuOpen(false);
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   return (
     <header className={styles.header} ref={headerRef}>
@@ -121,6 +141,9 @@ export default function Header() {
                 isLangOpen ? styles.active : ""
               }`}
               onClick={toggleLangDropDown}
+              aria-label="언어 선택"
+              aria-expanded={isLangOpen}
+              aria-haspopup="listbox"
             >
               <div className={styles.langInfo}>
                 <Image
@@ -134,7 +157,7 @@ export default function Header() {
 
               <Image
                 src={isLangOpen ? chevronUpIcon : chevronDownIcon}
-                alt="toggle arrow"
+                alt=""
                 width={16}
                 height={16}
                 className={styles.chevron}
@@ -157,6 +180,7 @@ export default function Header() {
                           alt={lang.code}
                           width={20}
                           height={13}
+                          loading="eager"
                         />
                         <span className={styles.langCode}>{lang.name}</span>
                       </div>
@@ -167,8 +191,13 @@ export default function Header() {
             )}
           </div>
 
-          <button className={styles.hamburger} onClick={toggleMobileMenu}>
-            <Image src={listIcon} alt="menu" width={24} height={24} />
+          <button
+            className={styles.hamburger}
+            onClick={toggleMobileMenu}
+            aria-label="내비게이션 메뉴"
+            aria-expanded={isMobileMenuOpen}
+          >
+            <Image src={listIcon} alt="" width={24} height={24} />
           </button>
         </div>
       </div>
@@ -176,13 +205,25 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className={styles.mobileMenuOverlay}>
           <nav className={styles.mobileNav}>
-            <a href="#intro" onClick={toggleMobileMenu} className={styles.navLink}>
+            <a
+              href="#intro"
+              onClick={toggleMobileMenu}
+              className={styles.navLink}
+            >
               {t("why")}
             </a>
-            <a href="#features" onClick={toggleMobileMenu} className={styles.navLink}>
+            <a
+              href="#features"
+              onClick={toggleMobileMenu}
+              className={styles.navLink}
+            >
               {t("learning")}
             </a>
-            <a href="#pricing" onClick={toggleMobileMenu} className={styles.navLink}>
+            <a
+              href="#pricing"
+              onClick={toggleMobileMenu}
+              className={styles.navLink}
+            >
               {t("membership")}
             </a>
           </nav>
