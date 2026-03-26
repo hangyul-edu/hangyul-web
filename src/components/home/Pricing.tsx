@@ -25,7 +25,7 @@ export default function Pricing({ id }: Props) {
 
   return (
     <section id={id} className={styles.container}>
-      <div key={locale} className={styles.content}>
+      <div className={styles.content}>
         <div className={styles.featureList}>
           <div className={styles.featureRow}>
             <motion.div

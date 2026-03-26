@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import styles from "./ServiceIntro.module.css";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { springIcon } from "@/assets/icons";
 import { ICONS } from "@/constants/icons";
 import { motion } from "framer-motion";
@@ -28,7 +28,7 @@ type FeatureKey = keyof typeof FEATURE_CONFIG;
 
 export default function ServiceIntro({ id }: Props) {
   const t = useTranslations("ServiceIntro");
-  const locale = useLocale();
+  // const locale = useLocale();
   const featureKeys = Object.keys(FEATURE_CONFIG) as FeatureKey[];
 
   const { ref: headerRef, isInView: headerInView } = useAnimateInView();
@@ -36,7 +36,7 @@ export default function ServiceIntro({ id }: Props) {
 
   return (
     <section id={id} className={styles.container}>
-      <div key={locale} className={styles.content}>
+      <div className={styles.content}>
         <motion.div
           ref={headerRef}
           className={styles.header}
