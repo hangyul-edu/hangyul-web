@@ -27,7 +27,8 @@ export default defineConfig({
   ],
 
   webServer: {
-    command: "pnpm build && pnpm start",
+    // CI에서는 별도 build 단계가 있으므로 start만 실행
+    command: process.env.CI ? "pnpm start" : "pnpm build && pnpm start",
     url: BASE_URL,
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,
