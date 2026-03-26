@@ -180,6 +180,7 @@ export default function Header() {
                           alt={lang.code}
                           width={20}
                           height={13}
+                          loading="eager"
                         />
                         <span className={styles.langCode}>{lang.name}</span>
                       </div>
