@@ -8,7 +8,7 @@ import { Link, useRouter, usePathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { useLocale, useTranslations } from "next-intl";
 
-import { KOFlag, USFlag } from "@/assets/flags";
+import { LOCALE_CONFIG } from "@/constants/locales";
 import {
   chevronDownIcon,
   chevronUpIcon,
@@ -16,10 +16,10 @@ import {
   logoIcon,
 } from "@/assets/icons";
 
-const LANGUAGES = [
-  { code: "en", name: "English", label: "English", flag: USFlag },
-  { code: "ko", name: "한국어", label: "한국어", flag: KOFlag },
-];
+const LANGUAGES = routing.locales.map((code) => ({
+  code,
+  ...LOCALE_CONFIG[code],
+}));
 
 export default function Header() {
   const t = useTranslations("Header.nav");
