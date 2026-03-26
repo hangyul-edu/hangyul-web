@@ -4,10 +4,13 @@ import AxeBuilder from "@axe-core/playwright";
 const axe = async (page: import("@playwright/test").Page) => {
   // Framer Motion 애니메이션이 완료되기 전에 axe가 스캔하면
   // 부분 opacity 상태의 색상이 측정되어 flaky한 결과가 나올 수 있음
+  // Framer Motion은 JS로 opacity를 제어하므로 animation-duration만으로는 부족
+  // opacity: 1 !important로 강제 고정해야 axe가 실제 색상을 측정할 수 있음
   await page.addStyleTag({
     content: `*, *::before, *::after {
       animation-duration: 0s !important;
       transition-duration: 0s !important;
+      opacity: 1 !important;
     }`,
   });
 
@@ -17,7 +20,8 @@ const axe = async (page: import("@playwright/test").Page) => {
     .exclude("#ch-plugin-entry")
     // storeBtn은 브랜드 디자인 제약(흰 텍스트 + #ff6700 배경)으로 인해
     // WCAG 대비율 미달(2.76:1)이 불가피한 known issue
-    .exclude(".storeBtn");
+    // CSS Modules가 클래스명을 변환하므로 substring 매칭 사용
+    .exclude('[class*="storeBtn"]');
 };
 
 test.describe("Accessibility (WCAG)", () => {
