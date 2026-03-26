@@ -5,6 +5,7 @@ import styles from "./Header.module.css";
 import { useEffect, useRef, useState } from "react";
 
 import { Link, useRouter, usePathname } from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
 import { useLocale, useTranslations } from "next-intl";
 
 import { KOFlag, USFlag } from "@/assets/flags";
@@ -31,10 +32,18 @@ export default function Header() {
 
   const [isLangOpen, setIsLangOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   const headerRef = useRef<HTMLDivElement>(null);
 
   const toggleLangDropDown = () => {
+    // 드롭다운을 열 때 다른 locale을 미리 프리페치
+    // routing.locales에서 자동으로 읽으므로 새 언어 추가 시 별도 수정 불필요
+    if (!isLangOpen) {
+      routing.locales
+        .filter((l) => l !== locale)
+        .forEach((otherLocale) => {
+          router.prefetch(pathname, { locale: otherLocale });
+        });
+    }
     setIsLangOpen((prev) => !prev);
     setIsMobileMenuOpen(false);
   };
@@ -195,13 +204,25 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className={styles.mobileMenuOverlay}>
           <nav className={styles.mobileNav}>
-            <a href="#intro" onClick={toggleMobileMenu} className={styles.navLink}>
+            <a
+              href="#intro"
+              onClick={toggleMobileMenu}
+              className={styles.navLink}
+            >
               {t("why")}
             </a>
-            <a href="#features" onClick={toggleMobileMenu} className={styles.navLink}>
+            <a
+              href="#features"
+              onClick={toggleMobileMenu}
+              className={styles.navLink}
+            >
               {t("learning")}
             </a>
-            <a href="#pricing" onClick={toggleMobileMenu} className={styles.navLink}>
+            <a
+              href="#pricing"
+              onClick={toggleMobileMenu}
+              className={styles.navLink}
+            >
               {t("membership")}
             </a>
           </nav>
