@@ -1,7 +1,7 @@
 .container {
   position: relative;
   width: 100%;
-  min-height: calc(100svh - 80px);
+  min-height: clamp(600px, calc(100svh - 80px), 940px);
   margin-top: 80px;
 
   padding-top: 100px;
