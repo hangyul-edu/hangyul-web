@@ -96,6 +96,11 @@ export async function generateMetadata({
       canonical: `/${locale}`,
       languages: Object.fromEntries(routing.locales.map((l) => [l, `/${l}`])),
     },
+    verification: {
+      other: {
+        "naver-site-verification": "24a1793e885cebe60e445152f81f0da70598918b",
+      },
+    },
   };
 }
 
