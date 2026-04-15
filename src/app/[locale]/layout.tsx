@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer";
 import Script from "next/script";
 
 import { routing } from "@/i18n/routing";
+import { BASE_URL } from "@/constants/site";
 
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
@@ -13,7 +14,6 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-const baseUrl = "https://talkhangyul.com";
 
 const META: Record<
   string,
@@ -79,14 +79,14 @@ export async function generateMetadata({
   const meta = META[locale] ?? META.en;
 
   return {
-    metadataBase: new URL(baseUrl),
+    metadataBase: new URL(BASE_URL),
     title: meta.title,
     description: meta.description,
     keywords: meta.keywords,
     openGraph: {
       title: meta.ogTitle,
       description: meta.ogDescription,
-      url: `${baseUrl}/${locale}`,
+      url: `${BASE_URL}/${locale}`,
       siteName: "Hangyul",
       images: [{ url: "/og-image.png", width: 800, height: 400 }],
       locale: meta.ogLocale,
