@@ -34,16 +34,17 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const headerRef = useRef<HTMLDivElement>(null);
 
+  // 페이지 로드 시 다른 locale을 미리 프리페치
+  // routing.locales에서 자동으로 읽으므로 새 언어 추가 시 별도 수정 불필요
+  useEffect(() => {
+    routing.locales
+      .filter((l) => l !== locale)
+      .forEach((otherLocale) => {
+        router.prefetch(pathname, { locale: otherLocale });
+      });
+  }, [locale, pathname, router]);
+
   const toggleLangDropDown = () => {
-    // 드롭다운을 열 때 다른 locale을 미리 프리페치
-    // routing.locales에서 자동으로 읽으므로 새 언어 추가 시 별도 수정 불필요
-    if (!isLangOpen) {
-      routing.locales
-        .filter((l) => l !== locale)
-        .forEach((otherLocale) => {
-          router.prefetch(pathname, { locale: otherLocale });
-        });
-    }
     setIsLangOpen((prev) => !prev);
     setIsMobileMenuOpen(false);
   };
