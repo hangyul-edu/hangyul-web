@@ -1,6 +1,0 @@
-[build]
-  command = "rm -rf .next .netlify && pnpm build"
-  publish = ".next"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
