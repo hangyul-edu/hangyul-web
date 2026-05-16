@@ -14,7 +14,6 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-
 const META: Record<
   string,
   {
@@ -29,7 +28,7 @@ const META: Record<
   en: {
     title: "Hangyul - AI Korean Learning App | Speak Korean with AI",
     description:
-      "Hangyul is an AI-powered Korean learning platform designed to help you speak Korean naturally. Practice pronunciation, learn real Korean sentences, and improve your speaking skills with personalized AI feedback.",
+      "Speak Korean naturally with fun, AI-powered lessons made for real conversations.",
     keywords: [
       "AI Korean learning",
       "learn Korean",
@@ -49,8 +48,7 @@ const META: Record<
   },
   ko: {
     title: "한귤 | AI와 함께 자연스럽게 말하는 한국어",
-    description:
-      "한귤은 AI 발음 분석과 맞춤형 학습으로 한국어를 쉽고 재미있게 배울 수 있는 한국어 학습 플랫폼입니다. 실제 한국어 문장을 연습하며 자연스럽게 말하기 실력을 키워보세요.",
+    description: "AI와 함께 말하면서 배우는 쉽고 재미있는 한국어 학습 플랫폼",
     keywords: [
       "AI 한국어 학습",
       "한국어 회화 앱",
@@ -123,7 +121,28 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
+      <head>
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K6QCG39T');`,
+          }}
+        />
+      </head>
       <body>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-K6QCG39T"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <a href="#main-content" className="skip-nav">
             Skip to main content
