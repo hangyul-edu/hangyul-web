@@ -33,7 +33,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: clamp(40px, 8vw, 94px);
+  gap: 70px;
   padding: 0 clamp(20px, 5vw, 0px);
 }
 
