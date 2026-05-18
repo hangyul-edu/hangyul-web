@@ -40,16 +40,25 @@ export default function Footer() {
             <p>{t("email")}</p>
             <p>{t("businessNumber")}</p>
             <p>{t("address")}</p>
+            <p>{t("contact")}</p>
           </address>
         </div>
 
         <div className={styles.rightSection}>
           <div className={styles.infoRow}>
-            <button className={styles.legalLink} aria-haspopup="dialog" onClick={() => setOpenModal("terms")}>
+            <button
+              className={styles.legalLink}
+              aria-haspopup="dialog"
+              onClick={() => setOpenModal("terms")}
+            >
               {t("terms")}
             </button>
             <span className={styles.divider} aria-hidden="true" />
-            <button className={styles.legalLink} aria-haspopup="dialog" onClick={() => setOpenModal("privacy")}>
+            <button
+              className={styles.legalLink}
+              aria-haspopup="dialog"
+              onClick={() => setOpenModal("privacy")}
+            >
               {t("privacy")}
             </button>
           </div>
