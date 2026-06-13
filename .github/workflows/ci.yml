@@ -55,7 +55,10 @@ jobs:
             ${{ runner.os }}-playwright-
 
       - name: Install Playwright browsers
-        run: pnpm exec playwright install chromium webkit --with-deps
+        run: pnpm exec playwright install chromium webkit
+
+      - name: Install Playwright system dependencies
+        run: pnpm exec playwright install-deps chromium webkit
 
       - name: Build
         run: pnpm build
