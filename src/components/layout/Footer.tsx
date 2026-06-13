@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import styles from "./Footer.module.css";
 import Image from "next/image";
 import { logoIcon } from "@/assets/icons";
@@ -13,10 +13,53 @@ import { privacyEn } from "@/content/privacy/en";
 
 type ModalType = "terms" | "privacy" | null;
 
+function getLegalModalType(value: string | null): ModalType {
+  if (value === "terms" || value === "privacy") return value;
+  return null;
+}
+
 export default function Footer() {
   const t = useTranslations("Footer");
   const locale = useLocale();
   const [openModal, setOpenModal] = useState<ModalType>(null);
+
+  const getModalTypeFromUrl = useCallback(() => {
+    return getLegalModalType(
+      new URLSearchParams(window.location.search).get("legal")
+    );
+  }, []);
+
+  const updateLegalParam = useCallback(
+    (modalType: ModalType, mode: "push" | "replace" = "push") => {
+      const url = new URL(window.location.href);
+
+      if (modalType) {
+        url.searchParams.set("legal", modalType);
+      } else {
+        url.searchParams.delete("legal");
+      }
+
+      const nextUrl = `${url.pathname}${url.search}${url.hash}`;
+      window.history[mode === "push" ? "pushState" : "replaceState"](
+        window.history.state,
+        "",
+        nextUrl
+      );
+      setOpenModal(modalType);
+    },
+    []
+  );
+
+  useEffect(() => {
+    const syncModalWithUrl = () => {
+      setOpenModal(getModalTypeFromUrl());
+    };
+
+    syncModalWithUrl();
+    window.addEventListener("popstate", syncModalWithUrl);
+
+    return () => window.removeEventListener("popstate", syncModalWithUrl);
+  }, [getModalTypeFromUrl]);
 
   const terms = locale === "ko" ? termsKo : termsEn;
   const privacy = locale === "ko" ? privacyKo : privacyEn;
@@ -49,7 +92,7 @@ export default function Footer() {
             <button
               className={styles.legalLink}
               aria-haspopup="dialog"
-              onClick={() => setOpenModal("terms")}
+              onClick={() => updateLegalParam("terms")}
             >
               {t("terms")}
             </button>
@@ -57,7 +100,7 @@ export default function Footer() {
             <button
               className={styles.legalLink}
               aria-haspopup="dialog"
-              onClick={() => setOpenModal("privacy")}
+              onClick={() => updateLegalParam("privacy")}
             >
               {t("privacy")}
             </button>
@@ -73,7 +116,7 @@ export default function Footer() {
           title={activeContent.title}
           lastUpdated={activeContent.lastUpdated}
           body={activeContent.body}
-          onClose={() => setOpenModal(null)}
+          onClose={() => updateLegalParam(null, "replace")}
         />
       )}
     </footer>

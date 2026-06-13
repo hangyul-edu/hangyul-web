@@ -10,9 +10,29 @@ test.describe("Legal Modals", () => {
     await expect(page.getByRole("dialog", { name: /이용약관/ })).toBeVisible();
   });
 
+  test("이용약관 버튼 클릭 시 legal 파라미터 반영", async ({ page }) => {
+    await page.getByRole("button", { name: /이용약관/i }).click();
+    await expect(page).toHaveURL(/\/ko\?legal=terms$/);
+  });
+
   test("개인정보처리방침 버튼 클릭 시 모달 열림", async ({ page }) => {
     await page.getByRole("button", { name: /개인정보/i }).click();
     await expect(page.getByRole("dialog", { name: /개인정보/ })).toBeVisible();
+  });
+
+  test("개인정보취급방침 URL 접속 시 모달 자동 열림", async ({ page }) => {
+    await page.goto("/ko?legal=privacy");
+    await expect(page.getByRole("dialog", { name: /개인정보/ })).toBeVisible();
+  });
+
+  test("이용약관 URL 접속 시 모달 자동 열림", async ({ page }) => {
+    await page.goto("/ko?legal=terms");
+    await expect(page.getByRole("dialog", { name: /이용약관/ })).toBeVisible();
+  });
+
+  test("잘못된 legal 파라미터는 모달을 열지 않음", async ({ page }) => {
+    await page.goto("/ko?legal=unknown");
+    await expect(page.getByRole("dialog")).not.toBeVisible();
   });
 
   test("모달 열릴 때 배경 스크롤 잠금", async ({ page }) => {
@@ -32,6 +52,12 @@ test.describe("Legal Modals", () => {
 
     await page.getByRole("button", { name: /닫기/i }).click();
     await expect(modal).not.toBeVisible();
+  });
+
+  test("닫기 버튼 클릭 시 legal 파라미터 제거", async ({ page }) => {
+    await page.goto("/ko?legal=terms");
+    await page.getByRole("button", { name: /닫기/i }).click();
+    await expect(page).toHaveURL(/\/ko$/);
   });
 
   test("모달 닫힌 후 배경 스크롤 복원", async ({ page }) => {
@@ -62,5 +88,15 @@ test.describe("Legal Modals - English", () => {
     const modal = page.getByRole("dialog", { name: /terms/i });
     await expect(modal).toBeVisible();
     await expect(modal).toContainText("Terms");
+  });
+
+  test("Privacy Policy URL 접속 시 모달 자동 열림", async ({ page }) => {
+    await page.goto("/en?legal=privacy");
+    await expect(page.getByRole("dialog", { name: /privacy/i })).toBeVisible();
+  });
+
+  test("Terms of Service URL 접속 시 모달 자동 열림", async ({ page }) => {
+    await page.goto("/en?legal=terms");
+    await expect(page.getByRole("dialog", { name: /terms/i })).toBeVisible();
   });
 });
