@@ -57,17 +57,17 @@ test.describe("OG Metadata", () => {
 
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
       "href",
-      "https://talkhangyul.com/ko"
+      "https://www.talkhangyul.com/ko"
     );
     await expect(
       page.locator('link[rel="alternate"][hreflang="ko"]')
-    ).toHaveAttribute("href", "https://talkhangyul.com/ko");
+    ).toHaveAttribute("href", "https://www.talkhangyul.com/ko");
     await expect(
       page.locator('link[rel="alternate"][hreflang="en"]')
-    ).toHaveAttribute("href", "https://talkhangyul.com/en");
+    ).toHaveAttribute("href", "https://www.talkhangyul.com/en");
     await expect(
       page.locator('link[rel="alternate"][hreflang="x-default"]')
-    ).toHaveAttribute("href", "https://talkhangyul.com/en");
+    ).toHaveAttribute("href", "https://www.talkhangyul.com/en");
   });
 
   test("보안 헤더 적용", async ({ page }) => {
@@ -86,19 +86,4 @@ test.describe("OG Metadata", () => {
     );
   });
 
-  test("www host는 non-www 대표 도메인으로 301 리다이렉트", async ({
-    request,
-  }) => {
-    const response = await request.get("/ko?legal=terms", {
-      headers: {
-        host: "www.talkhangyul.com",
-      },
-      maxRedirects: 0,
-    });
-
-    expect(response.status()).toBe(301);
-    expect(response.headers()["location"]).toBe(
-      "https://talkhangyul.com/ko?legal=terms"
-    );
-  });
 });
