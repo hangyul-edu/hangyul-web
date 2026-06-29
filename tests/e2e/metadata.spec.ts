@@ -51,4 +51,38 @@ test.describe("OG Metadata", () => {
     await page.goto("/en");
     await expect(page).toHaveTitle(/Hangyul/);
   });
+
+  test("canonical 및 hreflang은 absolute URL로 적용", async ({ page }) => {
+    await page.goto("/ko");
+
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+      "href",
+      "https://talkhangyul.com/ko"
+    );
+    await expect(
+      page.locator('link[rel="alternate"][hreflang="ko"]')
+    ).toHaveAttribute("href", "https://talkhangyul.com/ko");
+    await expect(
+      page.locator('link[rel="alternate"][hreflang="en"]')
+    ).toHaveAttribute("href", "https://talkhangyul.com/en");
+    await expect(
+      page.locator('link[rel="alternate"][hreflang="x-default"]')
+    ).toHaveAttribute("href", "https://talkhangyul.com/en");
+  });
+
+  test("www host는 non-www 대표 도메인으로 301 리다이렉트", async ({
+    request,
+  }) => {
+    const response = await request.get("/ko?legal=terms", {
+      headers: {
+        host: "www.talkhangyul.com",
+      },
+      maxRedirects: 0,
+    });
+
+    expect(response.status()).toBe(301);
+    expect(response.headers()["location"]).toBe(
+      "https://talkhangyul.com/ko?legal=terms"
+    );
+  });
 });

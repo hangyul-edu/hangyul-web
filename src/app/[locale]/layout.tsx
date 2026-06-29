@@ -91,8 +91,13 @@ export async function generateMetadata({
       type: "website",
     },
     alternates: {
-      canonical: `/${locale}`,
-      languages: Object.fromEntries(routing.locales.map((l) => [l, `/${l}`])),
+      canonical: `${BASE_URL}/${locale}`,
+      languages: {
+        ...Object.fromEntries(
+          routing.locales.map((l) => [l, `${BASE_URL}/${l}`])
+        ),
+        "x-default": `${BASE_URL}/${routing.defaultLocale}`,
+      },
     },
     verification: {
       other: {
