@@ -70,6 +70,22 @@ test.describe("OG Metadata", () => {
     ).toHaveAttribute("href", "https://talkhangyul.com/en");
   });
 
+  test("보안 헤더 적용", async ({ page }) => {
+    const response = await page.goto("/ko");
+    const headers = response?.headers() ?? {};
+
+    expect(headers["strict-transport-security"]).toBe(
+      "max-age=31536000; includeSubDomains"
+    );
+    expect(headers["x-frame-options"]).toBe("DENY");
+    expect(headers["x-content-type-options"]).toBe("nosniff");
+    expect(headers["referrer-policy"]).toBe("strict-origin-when-cross-origin");
+    expect(headers["cross-origin-opener-policy"]).toBe("same-origin");
+    expect(headers["permissions-policy"]).toBe(
+      "camera=(), microphone=(), geolocation=()"
+    );
+  });
+
   test("www host는 non-www 대표 도메인으로 301 리다이렉트", async ({
     request,
   }) => {
