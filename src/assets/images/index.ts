@@ -1,8 +1,8 @@
-export { default as backgroundImg } from "./background.png";
+export { default as backgroundHeroImg } from "./background-hero.webp";
 export { default as bgWrapDesktopImg } from "./bg-wrap-desktop.svg";
 export { default as bgWrapMobileImg } from "./bg-wrap-mobile.svg";
-export { default as mockupEnImg } from "./mockup-en.png";
-export { default as mockupKoImg } from "./mockup-ko.png";
+export { default as mockupEnImg } from "./mockup-en.webp";
+export { default as mockupKoImg } from "./mockup-ko.webp";
 export { default as pricingEnImg } from "./pricing-en.png";
 export { default as pricingKoImg } from "./pricing-ko.png";
 export { default as feature1EnImg } from "./feature1-en.png";

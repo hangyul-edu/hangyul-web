@@ -23,7 +23,6 @@ export default function CtaSection() {
           alt="Background Pattern Desktop"
           fill
           style={{ objectFit: "cover" }}
-          priority
         />
       </div>
 
@@ -32,7 +31,6 @@ export default function CtaSection() {
           src={bgWrapMobileImg}
           alt="Background Pattern Mobile"
           fill
-          priority
           style={{ objectFit: "cover", objectPosition: "center" }}
         />
       </div>
