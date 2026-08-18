@@ -83,6 +83,7 @@ export default function Footer() {
             <p>{t("email")}</p>
             <p>{t("businessNumber")}</p>
             <p>{t("address")}</p>
+            <p>{t("mailOrderNumber")}</p>
             <p>{t("contact")}</p>
           </address>
         </div>

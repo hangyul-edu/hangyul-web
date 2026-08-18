@@ -53,7 +53,7 @@
     "button": "지금 시작하기"
   },
   "StoreButton": {
-    "comingSoon": "2026년 6월 29일 런칭 예정입니다."
+    "comingSoon": "2026년 8월 31일 런칭 예정입니다."
   },
   "QrModal": {
     "title": "모바일 앱 다운로드",
@@ -72,6 +72,7 @@
     "email": "이메일: support@talkhangyul.com",
     "businessNumber": "사업자등록번호: 403-87-03380",
     "address": "주소: 서울특별시 도봉구 우이천로38길 39, 백운빌라 B03호",
+    "mailOrderNumber": "통신판매업 신고번호 : 제2026-서울도봉-0542호",
     "contact": "전화번호: 010-3560-8679",
     "terms": "이용약관",
     "privacy": "개인정보취급방침"
