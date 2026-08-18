@@ -3,7 +3,7 @@ import Footer from "@/components/layout/Footer";
 import Script from "next/script";
 
 import { routing } from "@/i18n/routing";
-import { BASE_URL } from "@/constants/site";
+import { BASE_URL, OG_IMAGE_VERSION } from "@/constants/site";
 
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
@@ -86,7 +86,13 @@ export async function generateMetadata({
       description: meta.ogDescription,
       url: `${BASE_URL}/${locale}`,
       siteName: "Hangyul",
-      images: [{ url: "/og-image.png", width: 800, height: 400 }],
+      images: [
+        {
+          url: `/og-image.png?v=${OG_IMAGE_VERSION}`,
+          width: 800,
+          height: 400,
+        },
+      ],
       locale: meta.ogLocale,
       type: "website",
     },
