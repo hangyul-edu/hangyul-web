@@ -5,7 +5,7 @@ test.describe("Store Button", () => {
     await page.goto("/ko");
 
     page.on("dialog", async (dialog) => {
-      expect(dialog.message()).toContain("2026년 6월 29일");
+      expect(dialog.message()).toContain("2026년 8월 31일");
       await dialog.accept();
     });
 
@@ -19,7 +19,7 @@ test.describe("Store Button", () => {
     await page.goto("/en");
 
     page.on("dialog", async (dialog) => {
-      expect(dialog.message()).toContain("June 29, 2026");
+      expect(dialog.message()).toContain("August 31, 2026");
       await dialog.accept();
     });
 
