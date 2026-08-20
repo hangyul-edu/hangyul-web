@@ -4,69 +4,17 @@ import Script from "next/script";
 
 import { routing } from "@/i18n/routing";
 import { BASE_URL, OG_IMAGE_VERSION } from "@/constants/site";
+import { getLocaleDirection } from "@/constants/locales";
+import { LOCALE_META } from "@/constants/metadata";
 
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-import { getMessages, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
-
-const META: Record<
-  string,
-  {
-    title: string;
-    description: string;
-    keywords: string[];
-    ogTitle: string;
-    ogDescription: string;
-    ogLocale: string;
-  }
-> = {
-  en: {
-    title: "Hangyul - AI Korean Learning App | Speak Korean with AI",
-    description:
-      "Speak Korean naturally with fun, AI-powered lessons made for real conversations.",
-    keywords: [
-      "AI Korean learning",
-      "learn Korean",
-      "speak Korean",
-      "Korean language app",
-      "Korean speaking practice",
-      "AI pronunciation training",
-      "Korean learning app",
-      "Korean speaking AI",
-      "Korean study online",
-      "Talk Hangyul",
-    ],
-    ogTitle: "Hangyul - Speak Korean Naturally with AI",
-    ogDescription:
-      "Learn Korean with AI. Hangyul helps you practice pronunciation, learn real Korean sentences, and build speaking confidence through personalized AI feedback.",
-    ogLocale: "en_US",
-  },
-  ko: {
-    title: "한귤 | AI와 함께 자연스럽게 말하는 한국어",
-    description: "AI와 함께 말하면서 배우는 쉽고 재미있는 한국어 학습 플랫폼",
-    keywords: [
-      "AI 한국어 학습",
-      "한국어 회화 앱",
-      "한국어 말하기 연습",
-      "AI 발음 교정",
-      "한국어 공부 앱",
-      "한국어 학습 플랫폼",
-      "한국어 회화 연습",
-      "한국어 AI 튜터",
-      "한국어 공부 온라인",
-      "한귤 Hangyul",
-    ],
-    ogTitle: "AI와 함께 배우는 한국어 회화, 한귤",
-    ogDescription:
-      "AI 발음 분석과 개인 맞춤 학습으로 한국어를 자연스럽게 말해보세요. 실제 한국어 문장을 연습하며 말하기 자신감을 키울 수 있습니다.",
-    ogLocale: "ko_KR",
-  },
-};
 
 export async function generateMetadata({
   params,
@@ -74,7 +22,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const meta = META[locale] ?? META.en;
+  const meta = LOCALE_META[locale] ?? LOCALE_META.en;
 
   return {
     metadataBase: new URL(BASE_URL),
@@ -129,9 +77,13 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   const messages = await getMessages();
+  const t = await getTranslations("A11y");
+
+  // 로컬 개발 환경처럼 키가 없을 때는 위젯을 붙이지 않는다 (운영에서는 키가 설정되어 동일하게 동작)
+  const channelIoKey = process.env.NEXT_PUBLIC_CHANNEL_IO_KEY;
 
   return (
-    <html lang={locale}>
+    <html lang={locale} dir={getLocaleDirection(locale)}>
       <head>
         <Script
           id="gtm-script"
@@ -156,18 +108,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </noscript>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <a href="#main-content" className="skip-nav">
-            Skip to main content
+            {t("skipToContent")}
           </a>
 
           <Header />
 
           {children}
 
-          <Script
-            id="channelTalk"
-            strategy="lazyOnload"
-            dangerouslySetInnerHTML={{
-              __html: `
+          {channelIoKey && (
+            <Script
+              id="channelTalk"
+              strategy="lazyOnload"
+              dangerouslySetInnerHTML={{
+                __html: `
 (function() {
   var w = window;
   if (w.ChannelIO) {
@@ -199,11 +152,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })();
 
 ChannelIO('boot', {
-  pluginKey: "${process.env.NEXT_PUBLIC_CHANNEL_IO_KEY}"
+  pluginKey: "${channelIoKey}"
 });
 `,
-            }}
-          />
+              }}
+            />
+          )}
 
           <Footer />
         </NextIntlClientProvider>

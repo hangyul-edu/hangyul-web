@@ -27,8 +27,9 @@ export default defineConfig({
   ],
 
   webServer: {
-    // CI에서는 별도 build 단계가 있으므로 start만 실행
-    command: process.env.CI ? "pnpm start" : "pnpm build && pnpm start",
+    // CI에서는 별도 build 단계가 있으므로 start만 실행 (CI는 pnpm 사용)
+    // 로컬은 패키지 매니저에 상관없이 동작하도록 npm 스크립트로 실행
+    command: process.env.CI ? "pnpm start" : "npm run build && npm run start",
     url: BASE_URL,
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,

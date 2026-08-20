@@ -1,0 +1,93 @@
+{
+  "MainSection": {
+    "description": "枯燥的语法背诵，到此为止！\n开口学韩语，从 Hangyul 开始。",
+    "button": "立即开始"
+  },
+  "ServiceIntro": {
+    "title": "为什么选择 Hangyul？",
+    "subtitle": "因为学习不止于听懂，<mobileBr></mobileBr>而是让学到的韩语真正说出口。",
+    "feature1": {
+      "title": "以口语为核心的学习",
+      "description": "为开口练习而设计的重复学习流程\n还原真实场景的对话式结构"
+    },
+    "feature2": {
+      "title": "AI 个性化反馈",
+      "description": "基于水平分析自动推荐学习等级\n精准分析并纠正发音与语调"
+    },
+    "feature3": {
+      "title": "TOPIK 高分 + 实战应对",
+      "description": "基于真题题型分析的策略课程\n分数与口语一起提升的备考体系"
+    },
+    "feature4": {
+      "title": "创作者合作课程",
+      "description": "只有在 Hangyul 才能遇见的\n全球创作者阵容"
+    }
+  },
+  "KeyFeatures": {
+    "title": "学习介绍",
+    "subtitle": "让学过的变成会说的，<mobileBr></mobileBr>让会说的变成真实力",
+    "feature1": {
+      "category": "开口就练的韩语会话课",
+      "title": "别让学习止步于听\n现在就开口说出来！",
+      "description": "跟随全球创作者的分级会话课程学习，\n用实时跟读立刻练习。\nAI 语音分析当场 <mobileBr></mobileBr>纠正你的发音。\n有疑问随时问生成式 AI，答案马上就来。"
+    },
+    "feature2": {
+      "category": "AI 定制句子推荐",
+      "title": "用收藏的句子复习\n用定制的句子成长",
+      "description": "AI 分析你的水平与目标， <mobileBr></mobileBr>自动推荐最适合的学习句子， <mobileBr></mobileBr>并按每日目标管理学习进度。\n喜欢的句子随手收藏、随时复习，\n说错的句子自动整理成专属学习笔记。"
+    },
+    "feature3": {
+      "category": "在联赛中持续学习",
+      "title": "一起学习，一起竞争\n更有趣，更长久，更坚持",
+      "description": "排名越往上，实力也跟着提升。\n常规联赛和好友联赛让学习动力持续在线，\n每天坚持下去，感受成长的乐趣。"
+    }
+  },
+  "Pricing": {
+    "category": "高级会员",
+    "title": "学习坚持不断，\n订阅轻松简单",
+    "description": "高级会员可以 <mobileBr></mobileBr>自由使用全部学习功能。\n方案选择与管理同样简单，\n随时都能自由更换。"
+  },
+  "CtaSection": {
+    "title": "现在就开始，<mobileBr></mobileBr>说得出口的韩语。",
+    "description": "和全球数百万韩语学习者一起，<mobileBr></mobileBr>体验学过的韩语能立刻 <mobileBr></mobileBr>脱口而出的学习方式。\n现在就能免费开始。",
+    "button": "立即开始"
+  },
+  "StoreButton": {
+    "comingSoon": "预计于 2026 年 8 月 31 日上线。"
+  },
+  "QrModal": {
+    "title": "下载手机应用",
+    "description": "请用手机设备\n扫描二维码",
+    "close": "关闭"
+  },
+  "LegalModal": {
+    "close": "关闭"
+  },
+  "A11y": {
+    "skipToContent": "跳到主要内容"
+  },
+  "Header": {
+    "nav": {
+      "why": "为什么选 Hangyul？",
+      "learning": "学习介绍",
+      "membership": "会员"
+    },
+    "aria": {
+      "language": "选择语言",
+      "menu": "导航菜单"
+    },
+    "search": {
+      "placeholder": "搜索语言",
+      "noResults": "未找到相关语言"
+    }
+  },
+  "Footer": {
+    "ceo": "首席执行官：JaeHee Lew",
+    "businessDivision": "事业部门：WooJun Nam",
+    "email": "电子邮箱：support@talkhangyul.com",
+    "businessNumber": "营业执照号码：403-87-03380",
+    "mailOrderNumber": "通信销售业申报号：2026-Seoul Dobong-0542",
+    "terms": "服务条款",
+    "privacy": "隐私政策"
+  }
+}

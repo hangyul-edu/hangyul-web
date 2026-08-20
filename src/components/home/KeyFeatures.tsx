@@ -3,7 +3,7 @@
 import Image from "next/image";
 import styles from "./KeyFeatures.module.css";
 import { hangyulIcon } from "@/assets/icons";
-import { IMAGES } from "@/constants/images";
+import { getLocaleImages } from "@/constants/images";
 import { useLocale, useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import {
@@ -19,11 +19,12 @@ interface Props {
 
 export default function KeyFeatures({ id }: Props) {
   const t = useTranslations("KeyFeatures");
-  const locale = useLocale() as "en" | "ko";
+  const locale = useLocale();
+  const images = getLocaleImages(locale);
 
-  const feature1Img = IMAGES[locale].feature1;
-  const feature2Img = IMAGES[locale].feature2;
-  const feature3Img = IMAGES[locale].feature3;
+  const feature1Img = images.feature1;
+  const feature2Img = images.feature2;
+  const feature3Img = images.feature3;
 
   const featureImages = [feature1Img, feature2Img, feature3Img];
   const featureKeys = ["feature1", "feature2", "feature3"];
@@ -67,7 +68,7 @@ export default function KeyFeatures({ id }: Props) {
           initial="hidden"
           animate={headerInView ? "visible" : "hidden"}
         >
-          <Image src={hangyulIcon} alt="Hangyul Icon" width={28} height={28} />
+          <Image src={hangyulIcon} alt="" width={28} height={28} />
           <h2 className={styles.title}>{t("title")}</h2>
           <p className={styles.subtitle}>
             {t.rich("subtitle", {

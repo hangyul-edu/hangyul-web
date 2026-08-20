@@ -1,0 +1,93 @@
+{
+  "MainSection": {
+    "description": "Genoeg saaie grammaticalessen!\nLeer Koreaans door het meteen te spreken, met Hangyul.",
+    "button": "Nu beginnen"
+  },
+  "ServiceIntro": {
+    "title": "Waarom Hangyul?",
+    "subtitle": "Omdat leren niet stopt bij luisteren: <mobileBr></mobileBr>wat je leert, spreek je ook echt uit.",
+    "feature1": {
+      "title": "Leren met de nadruk op spreken",
+      "description": "Oefeningen waarbij je zelf hardop spreekt\nDialogen uit echte alledaagse situaties"
+    },
+    "feature2": {
+      "title": "Persoonlijke AI-feedback",
+      "description": "Automatisch niveauadvies op basis van analyse\nNauwkeurige correctie van uitspraak en intonatie"
+    },
+    "feature3": {
+      "title": "Hogere TOPIK-scores",
+      "description": "Strategische cursus op basis van examenvragen\nJe score en je spreekvaardigheid groeien samen"
+    },
+    "feature4": {
+      "title": "Lessen met creators",
+      "description": "Creators van over de hele wereld\nalleen bij Hangyul"
+    }
+  },
+  "KeyFeatures": {
+    "title": "Zo leer je",
+    "subtitle": "Wat je leert ga je zeggen, <mobileBr></mobileBr>en wat je zegt wordt echte vaardigheid",
+    "feature1": {
+      "category": "Koreaanse conversatielessen om hardop mee te praten",
+      "title": "Blijf niet hangen bij luisteren\nSpreek nu meteen!",
+      "description": "Volg conversatielessen op jouw niveau van creators wereldwijd\nen oefen meteen met shadowing in realtime.\nDe AI-spraakanalyse verbetert <mobileBr></mobileBr>je uitspraak ter plekke.\nVragen? De AI geeft je meteen antwoord."
+    },
+    "feature2": {
+      "category": "Zinnen aanbevolen door AI",
+      "title": "Herhaal met de zinnen die je bewaarde\nGroei met zinnen speciaal voor jou",
+      "description": "De AI analyseert je niveau en je doelen <mobileBr></mobileBr>en beveelt automatisch passende zinnen aan. <mobileBr></mobileBr>Dagdoelen houden je voortgang op koers.\nBewaar de zinnen die je mooi vindt\nen maak van je fouten je eigen studieschrift."
+    },
+    "feature3": {
+      "category": "Leren via leagues",
+      "title": "Samen leren, samen strijden\nLeuker, langer en met meer regelmaat",
+      "description": "Hoe hoger je klimt, hoe beter je Koreaans wordt.\nReguliere leagues en vriendenleagues houden je motivatie hoog,\nzodat je elke dag doorgaat en plezier beleeft aan je vooruitgang."
+    }
+  },
+  "Pricing": {
+    "category": "Premium-lidmaatschap",
+    "title": "Blijf leren,\nabonneer zonder gedoe",
+    "description": "Met het Premium-lidmaatschap gebruik je <mobileBr></mobileBr>alle leerfuncties onbeperkt.\nEen abonnement kiezen en beheren is eenvoudig\nen je wijzigt het wanneer je wilt."
+  },
+  "CtaSection": {
+    "title": "Begin vandaag nog <mobileBr></mobileBr>met Koreaans spreken",
+    "description": "Sluit je aan bij miljoenen leerders wereldwijd <mobileBr></mobileBr>en laat Koreaans niet op papier staan, <mobileBr></mobileBr>maar tot leven komen in jouw stem.\nJe kunt nu gratis beginnen.",
+    "button": "Nu beginnen"
+  },
+  "StoreButton": {
+    "comingSoon": "Lancering op 31 augustus 2026."
+  },
+  "QrModal": {
+    "title": "App downloaden",
+    "description": "Scan de QR-code\nmet je mobiele apparaat",
+    "close": "Sluiten"
+  },
+  "LegalModal": {
+    "close": "Sluiten"
+  },
+  "A11y": {
+    "skipToContent": "Naar hoofdinhoud"
+  },
+  "Header": {
+    "nav": {
+      "why": "Waarom Hangyul?",
+      "learning": "Leren",
+      "membership": "Lidmaatschap"
+    },
+    "aria": {
+      "language": "Taal selecteren",
+      "menu": "Navigatiemenu"
+    },
+    "search": {
+      "placeholder": "Taal zoeken",
+      "noResults": "Geen talen gevonden"
+    }
+  },
+  "Footer": {
+    "ceo": "Algemeen directeur: JaeHee Lew",
+    "businessDivision": "Bedrijfsdivisie: WooJun Nam",
+    "email": "E-mail: support@talkhangyul.com",
+    "businessNumber": "Handelsregisternummer: 403-87-03380",
+    "mailOrderNumber": "Registratienummer verkoop op afstand: 2026-Seoul Dobong-0542",
+    "terms": "Gebruiksvoorwaarden",
+    "privacy": "Privacybeleid"
+  }
+}

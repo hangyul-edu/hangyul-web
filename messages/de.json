@@ -1,0 +1,93 @@
+{
+  "MainSection": {
+    "description": "Schluss mit trockener Grammatikpaukerei!\nLerne Koreanisch, indem du sprichst – mit Hangyul.",
+    "button": "Jetzt starten"
+  },
+  "ServiceIntro": {
+    "title": "Warum Hangyul?",
+    "subtitle": "Weil Lernen nicht beim Zuhören aufhört, <mobileBr></mobileBr>sondern das Gelernte direkt über deine Lippen kommt.",
+    "feature1": {
+      "title": "Sprechen im Mittelpunkt",
+      "description": "Übungen, bei denen du selbst sprichst\nDialoge aus echten Alltagssituationen"
+    },
+    "feature2": {
+      "title": "Persönliches KI-Feedback",
+      "description": "Automatische Levelempfehlung nach Niveauanalyse\nPräzise Korrektur von Aussprache und Intonation"
+    },
+    "feature3": {
+      "title": "Top-Ergebnisse im TOPIK",
+      "description": "Strategiekurse auf Basis echter Prüfungsformate\nPunktzahl und Sprechkompetenz wachsen gemeinsam"
+    },
+    "feature4": {
+      "title": "Kurse mit Creators",
+      "description": "Creators aus aller Welt,\ndie du nur bei Hangyul findest"
+    }
+  },
+  "KeyFeatures": {
+    "title": "Das Lernkonzept",
+    "subtitle": "Gelerntes wird zum Sprechen, <mobileBr></mobileBr>Sprechen wird zum Können",
+    "feature1": {
+      "category": "Koreanisch-Konversation zum Mitsprechen",
+      "title": "Bleib nicht beim Zuhören stehen\nSprich jetzt einfach los!",
+      "description": "Lerne mit Konversationskursen globaler Creator auf deinem Niveau\nund übe sofort per Shadowing in Echtzeit.\nDie KI-Sprachanalyse korrigiert <mobileBr></mobileBr>deine Aussprache auf der Stelle.\nOffene Fragen? Die KI antwortet dir sofort."
+    },
+    "feature2": {
+      "category": "KI-Satzempfehlungen",
+      "title": "Wiederholen mit gespeicherten Sätzen\nWachsen mit Sätzen nur für dich",
+      "description": "Die KI analysiert dein Niveau und deine Ziele <mobileBr></mobileBr>und empfiehlt automatisch passende Sätze. <mobileBr></mobileBr>Tagesziele halten deinen Fortschritt im Blick.\nSpeichere Sätze, die dir gefallen,\nund mach aus deinen Fehlern dein eigenes Lernheft."
+    },
+    "feature3": {
+      "category": "Lernen in Ligen",
+      "title": "Gemeinsam lernen, gemeinsam wetteifern\nMehr Spaß, mehr Ausdauer, mehr Fortschritt",
+      "description": "Je höher dein Rang, desto besser dein Koreanisch.\nReguläre Ligen und Freundesligen halten deine Motivation hoch,\nund du erlebst, wie viel Freude Fortschritt macht."
+    }
+  },
+  "Pricing": {
+    "category": "Premium-Mitgliedschaft",
+    "title": "Konstant lernen,\nunkompliziert abonnieren",
+    "description": "Mit der Premium-Mitgliedschaft nutzt du <mobileBr></mobileBr>alle Lernfunktionen ohne Einschränkung.\nTarif wählen und verwalten ist einfach\nund jederzeit änderbar."
+  },
+  "CtaSection": {
+    "title": "Sprich Koreanisch – <mobileBr></mobileBr>und zwar ab heute",
+    "description": "Schließ dich Millionen Lernenden weltweit an <mobileBr></mobileBr>und erlebe Koreanisch, das nicht auf dem Papier bleibt, <mobileBr></mobileBr>sondern in deiner Stimme lebendig wird.\nJetzt kostenlos starten.",
+    "button": "Jetzt starten"
+  },
+  "StoreButton": {
+    "comingSoon": "Launch am 31. August 2026."
+  },
+  "QrModal": {
+    "title": "App herunterladen",
+    "description": "Scanne den QR-Code\nmit deinem Mobilgerät",
+    "close": "Schließen"
+  },
+  "LegalModal": {
+    "close": "Schließen"
+  },
+  "A11y": {
+    "skipToContent": "Zum Hauptinhalt springen"
+  },
+  "Header": {
+    "nav": {
+      "why": "Warum Hangyul?",
+      "learning": "Lernen",
+      "membership": "Mitgliedschaft"
+    },
+    "aria": {
+      "language": "Sprache auswählen",
+      "menu": "Navigationsmenü"
+    },
+    "search": {
+      "placeholder": "Sprache suchen",
+      "noResults": "Keine Sprachen gefunden"
+    }
+  },
+  "Footer": {
+    "ceo": "Geschäftsführer: JaeHee Lew",
+    "businessDivision": "Geschäftsbereich: WooJun Nam",
+    "email": "E-Mail: support@talkhangyul.com",
+    "businessNumber": "Gewerberegisternummer: 403-87-03380",
+    "mailOrderNumber": "Registriernummer für den Online-Handel: 2026-Seoul Dobong-0542",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutzerklärung"
+  }
+}

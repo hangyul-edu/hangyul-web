@@ -1,0 +1,93 @@
+{
+  "MainSection": {
+    "description": "Konec nudného biflování gramatiky!\nUčte se korejsky tím, že mluvíte – s Hangyul.",
+    "button": "Začít hned"
+  },
+  "ServiceIntro": {
+    "title": "Proč Hangyul?",
+    "subtitle": "Protože učení nekončí u poslechu: <mobileBr></mobileBr>to, co se naučíte, vám konečně vyjde z úst.",
+    "feature1": {
+      "title": "Výuka zaměřená na mluvení",
+      "description": "Cvičení, ve kterých mluvíte nahlas vy sami\nDialogy vycházející ze skutečných situací"
+    },
+    "feature2": {
+      "title": "Osobní zpětná vazba od AI",
+      "description": "Automatické doporučení úrovně podle analýzy\nPřesná korekce výslovnosti a intonace"
+    },
+    "feature3": {
+      "title": "Vyšší skóre u TOPIK",
+      "description": "Strategický kurz podle typů zkouškových úloh\nSkóre i mluvený projev rostou společně"
+    },
+    "feature4": {
+      "title": "Lekce s tvůrci",
+      "description": "Tvůrci z celého světa\njen na Hangyul"
+    }
+  },
+  "KeyFeatures": {
+    "title": "Jak výuka probíhá",
+    "subtitle": "Co se naučíte, to i vyslovíte, <mobileBr></mobileBr>a co vyslovíte, to se stane skutečnou dovedností",
+    "feature1": {
+      "category": "Konverzační lekce, ve kterých opravdu mluvíte",
+      "title": "Nekončete u poslechu\nZačněte mluvit hned teď!",
+      "description": "Učte se z konverzačních lekcí podle úrovně od tvůrců z celého světa\na hned si to zkoušejte opakováním v reálném čase.\nHlasová analýza s AI opraví <mobileBr></mobileBr>vaši výslovnost na místě.\nMáte otázku? AI vám odpoví okamžitě."
+    },
+    "feature2": {
+      "category": "Věty doporučené AI",
+      "title": "Opakujte z uložených vět\nRozvíjejte se s větami na míru",
+      "description": "AI analyzuje vaši úroveň a cíle <mobileBr></mobileBr>a automaticky doporučí vhodné věty. <mobileBr></mobileBr>Denní cíle vám pomohou držet tempo.\nUložte si věty, které se vám líbí,\na z chyb si udělejte vlastní studijní sešit."
+    },
+    "feature3": {
+      "category": "Učení v rytmu lig",
+      "title": "Učte se a soutěžte společně\nZábavněji, déle a pravidelněji",
+      "description": "Čím výš v žebříčku, tím lepší vaše korejština.\nPravidelné ligy i ligy s přáteli udrží vaši motivaci,\nabyste pokračovali každý den a užili si vlastní pokrok."
+    }
+  },
+  "Pricing": {
+    "category": "Členství Premium",
+    "title": "Učte se pravidelně,\npředplaťte si to snadno",
+    "description": "S členstvím Premium využijete <mobileBr></mobileBr>všechny funkce pro učení bez omezení.\nVýběr i správa tarifu jsou jednoduché\na kdykoli je můžete změnit."
+  },
+  "CtaSection": {
+    "title": "Začněte mluvit korejsky <mobileBr></mobileBr>ještě dnes",
+    "description": "Přidejte se k milionům studentů po celém světě <mobileBr></mobileBr>a nenechte korejštinu ležet na papíře - <mobileBr></mobileBr>ať ožije ve vašem hlase.\nZačít můžete zdarma.",
+    "button": "Začít hned"
+  },
+  "StoreButton": {
+    "comingSoon": "Spuštění 31. srpna 2026."
+  },
+  "QrModal": {
+    "title": "Stáhnout aplikaci",
+    "description": "Naskenujte QR kód\nsvým mobilním zařízením",
+    "close": "Zavřít"
+  },
+  "LegalModal": {
+    "close": "Zavřít"
+  },
+  "A11y": {
+    "skipToContent": "Přejít k hlavnímu obsahu"
+  },
+  "Header": {
+    "nav": {
+      "why": "Proč Hangyul?",
+      "learning": "Výuka",
+      "membership": "Členství"
+    },
+    "aria": {
+      "language": "Vybrat jazyk",
+      "menu": "Navigační menu"
+    },
+    "search": {
+      "placeholder": "Hledat jazyk",
+      "noResults": "Žádný jazyk nenalezen"
+    }
+  },
+  "Footer": {
+    "ceo": "Generální ředitel: JaeHee Lew",
+    "businessDivision": "Obchodní úsek: WooJun Nam",
+    "email": "E-mail: support@talkhangyul.com",
+    "businessNumber": "Registrační číslo firmy: 403-87-03380",
+    "mailOrderNumber": "Registrační číslo zásilkového prodeje: 2026-Seoul Dobong-0542",
+    "terms": "Podmínky služby",
+    "privacy": "Zásady ochrany osobních údajů"
+  }
+}

@@ -20,7 +20,7 @@ export default function CtaSection() {
       <div className={styles.bgDesktop}>
         <Image
           src={bgWrapDesktopImg}
-          alt="Background Pattern Desktop"
+          alt=""
           fill
           style={{ objectFit: "cover" }}
         />
@@ -29,7 +29,7 @@ export default function CtaSection() {
       <div className={styles.bgMobile}>
         <Image
           src={bgWrapMobileImg}
-          alt="Background Pattern Mobile"
+          alt=""
           fill
           style={{ objectFit: "cover", objectPosition: "center" }}
         />
@@ -55,7 +55,13 @@ export default function CtaSection() {
         <motion.div variants={staggerItem}>
           <StoreButton className={styles.storeBtn}>
             {t("button")}
-            <Image src={chevronRightIcon} alt="arrow" width={16} height={16} />
+            <Image
+              src={chevronRightIcon}
+              alt=""
+              width={16}
+              height={16}
+              className="rtl-flip"
+            />
           </StoreButton>
         </motion.div>
       </motion.div>

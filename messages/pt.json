@@ -1,0 +1,93 @@
+{
+  "MainSection": {
+    "description": "Acabaram-se as aulas de gramática maçadoras!\nComece a falar coreano desde o primeiro dia, com a Hangyul.",
+    "button": "Começar agora"
+  },
+  "ServiceIntro": {
+    "title": "Porquê Hangyul?",
+    "subtitle": "Porque aprender não acaba ao ouvir: <mobileBr></mobileBr>o que aprende sai finalmente pela sua boca.",
+    "feature1": {
+      "title": "Aprendizagem centrada na fala",
+      "description": "Prática pensada para o fazer falar\nDiálogos baseados em situações reais"
+    },
+    "feature2": {
+      "title": "Feedback personalizado com IA",
+      "description": "Nível recomendado automaticamente após análise\nCorreção precisa da pronúncia e da entoação"
+    },
+    "feature3": {
+      "title": "Melhor nota no TOPIK",
+      "description": "Percurso estratégico baseado nos tipos de exame\nA nota e a fluência sobem em conjunto"
+    },
+    "feature4": {
+      "title": "Aulas com criadores",
+      "description": "Criadores de todo o mundo\nsó na Hangyul"
+    }
+  },
+  "KeyFeatures": {
+    "title": "Como se aprende",
+    "subtitle": "O que aprende passa a ser falado, <mobileBr></mobileBr>e o que fala torna-se domínio real",
+    "feature1": {
+      "category": "Aulas de conversação para falar em voz alta",
+      "title": "Não fique apenas a ouvir\nFale já agora!",
+      "description": "Assista a aulas de conversação por nível de criadores de todo o mundo\ne pratique de imediato com repetição em tempo real.\nA análise de voz com IA corrige <mobileBr></mobileBr>a sua pronúncia na hora.\nTem dúvidas? A IA responde num instante."
+    },
+    "feature2": {
+      "category": "Frases recomendadas pela IA",
+      "title": "Reveja com as frases que guardou\nEvolua com frases feitas para si",
+      "description": "A IA analisa o seu nível e os seus objetivos <mobileBr></mobileBr>para recomendar as frases certas. <mobileBr></mobileBr>As metas diárias mantêm o seu ritmo de estudo.\nGuarde as frases de que mais gosta\ne transforme os seus erros no seu próprio caderno de estudo."
+    },
+    "feature3": {
+      "category": "Aprender através de ligas",
+      "title": "Estudar e competir em conjunto\nCom mais gosto, mais tempo, mais constância",
+      "description": "Quanto mais sobe na classificação, mais sobe o seu nível.\nAs ligas regulares e as ligas com amigos mantêm a motivação\npara continuar todos os dias e sentir o prazer de evoluir."
+    }
+  },
+  "Pricing": {
+    "category": "Subscrição Premium",
+    "title": "Estudar com constância,\nsubscrever com simplicidade",
+    "description": "Com a subscrição Premium tem acesso livre <mobileBr></mobileBr>a todas as funcionalidades de aprendizagem.\nEscolher e gerir o plano é simples,\ne pode alterá-lo quando quiser."
+  },
+  "CtaSection": {
+    "title": "Comece hoje mesmo <mobileBr></mobileBr>a falar coreano",
+    "description": "Junte-se a milhões de estudantes em todo o mundo <mobileBr></mobileBr>e deixe que o coreano não fique no papel, <mobileBr></mobileBr>mas ganhe vida na sua voz.\nPode começar já, gratuitamente.",
+    "button": "Começar agora"
+  },
+  "StoreButton": {
+    "comingSoon": "Lançamento a 31 de agosto de 2026."
+  },
+  "QrModal": {
+    "title": "Descarregar a aplicação",
+    "description": "Leia o código QR\ncom o seu dispositivo móvel",
+    "close": "Fechar"
+  },
+  "LegalModal": {
+    "close": "Fechar"
+  },
+  "A11y": {
+    "skipToContent": "Ir para o conteúdo principal"
+  },
+  "Header": {
+    "nav": {
+      "why": "Porquê Hangyul?",
+      "learning": "Aprendizagem",
+      "membership": "Subscrição"
+    },
+    "aria": {
+      "language": "Selecionar idioma",
+      "menu": "Menu de navegação"
+    },
+    "search": {
+      "placeholder": "Pesquisar idioma",
+      "noResults": "Nenhum idioma encontrado"
+    }
+  },
+  "Footer": {
+    "ceo": "Diretor executivo: JaeHee Lew",
+    "businessDivision": "Direção de negócio: WooJun Nam",
+    "email": "E-mail: support@talkhangyul.com",
+    "businessNumber": "Número de registo comercial: 403-87-03380",
+    "mailOrderNumber": "Número de registo de venda à distância: 2026-Seoul Dobong-0542",
+    "terms": "Termos de utilização",
+    "privacy": "Política de privacidade"
+  }
+}

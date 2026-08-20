@@ -1,0 +1,93 @@
+{
+  "MainSection": {
+    "description": "Zerikarli grammatika yodlash endi tugadi!\nBirinchi kundanoq gapirib koreys tilini o'rganing, Hangyul bilan.",
+    "button": "Boshlash"
+  },
+  "ServiceIntro": {
+    "title": "Nega Hangyul?",
+    "subtitle": "Chunki o'rganish tinglash bilan tugamaydi: <mobileBr></mobileBr>o'rgangan gapingiz darhol tilingizdan chiqadi.",
+    "feature1": {
+      "title": "Gapirishga qaratilgan ta'lim",
+      "description": "O'zingiz ovoz chiqarib takrorlaydigan mashqlar\nHayotdagi real vaziyatlarga asoslangan suhbatlar"
+    },
+    "feature2": {
+      "title": "Sun'iy intellektdan shaxsiy tavsiyalar",
+      "description": "Bilim darajangiz tahliliga asoslangan avtomatik daraja tavsiyasi\nTalaffuz va ohangni aniq tahlil qilib to'g'rilash"
+    },
+    "feature3": {
+      "title": "TOPIK'da yuqori ball va amaliyot",
+      "description": "Savol turlari tahliliga asoslangan strategik kurs\nBall ham, gapirish ko'nikmasi ham birga o'sadi"
+    },
+    "feature4": {
+      "title": "Kreatorlar bilan darslar",
+      "description": "Dunyo bo'ylab kreatorlar\nfaqat Hangyul'da"
+    }
+  },
+  "KeyFeatures": {
+    "title": "Ta'lim haqida",
+    "subtitle": "O'rgangan narsangiz nutqqa, <mobileBr></mobileBr>nutqingiz esa haqiqiy mahoratga aylanadi",
+    "feature1": {
+      "category": "O'zingiz gapiradigan koreys tili suhbat darslari",
+      "title": "Tinglash bilan cheklanib qolmang\nHoziroq gapirib ko'ring!",
+      "description": "Dunyo kreatorlarining daraja bo'yicha suhbat darslarini ko'ring\nva real vaqtda takrorlab darhol mashq qiling.\nSun'iy intellekt ovozingizni tahlil qilib <mobileBr></mobileBr>talaffuzingizni shu zahoti to'g'rilaydi.\nSavolingiz bo'lsa, sun'iy intellekt darhol javob beradi."
+    },
+    "feature2": {
+      "category": "Sun'iy intellekt tavsiya qilgan gaplar",
+      "title": "Saqlagan gaplaringiz bilan takrorlang\nSizga moslangan gaplar bilan o'sing",
+      "description": "Sun'iy intellekt darajangiz va maqsadingizni tahlil qilib <mobileBr></mobileBr>mos gaplarni o'zi tavsiya etadi. <mobileBr></mobileBr>Kunlik maqsadlar bilan sur'atingizni ushlab turasiz.\nYoqqan gaplarni saqlab takrorlang,\nxatolaringizdan esa o'z daftaringizni yarating."
+    },
+    "feature3": {
+      "category": "Ligalar bilan davom etadigan ta'lim",
+      "title": "Birga o'qing, birga bellashing\nQiziqarliroq, uzoqroq, muntazamroq",
+      "description": "Reytingda qanchalik yuqoriga chiqsangiz, bilimingiz ham shunchalik oshadi.\nMuntazam ligalar va do'stlar ligasi o'rganish ishtiyoqini yuqori tutadi,\nhar kuni davom etib, o'sish zavqini his qilasiz."
+    }
+  },
+  "Pricing": {
+    "category": "Premium a'zolik",
+    "title": "Muntazam o'rganing,\noson obuna bo'ling",
+    "description": "Premium a'zolik bilan <mobileBr></mobileBr>barcha ta'lim imkoniyatlaridan erkin foydalanasiz.\nTarifni tanlash va boshqarish oson,\nistalgan vaqtda o'zgartirishingiz mumkin."
+  },
+  "CtaSection": {
+    "title": "Koreys tilida gapirishni <mobileBr></mobileBr>bugundan boshlang",
+    "description": "Dunyodagi millionlab o'rganuvchilarga qo'shiling <mobileBr></mobileBr>va koreys tili qog'ozda qolib ketmasin, <mobileBr></mobileBr>sizning ovozingizda jonlansin.\nHoziroq bepul boshlashingiz mumkin.",
+    "button": "Boshlash"
+  },
+  "StoreButton": {
+    "comingSoon": "2026-yil 31-avgustda ishga tushadi."
+  },
+  "QrModal": {
+    "title": "Mobil ilovani yuklab olish",
+    "description": "Mobil qurilmangiz bilan\nQR kodni skanerlang",
+    "close": "Yopish"
+  },
+  "LegalModal": {
+    "close": "Yopish"
+  },
+  "A11y": {
+    "skipToContent": "Asosiy kontentga o'tish"
+  },
+  "Header": {
+    "nav": {
+      "why": "Nega Hangyul?",
+      "learning": "Ta'lim",
+      "membership": "A'zolik"
+    },
+    "aria": {
+      "language": "Tilni tanlash",
+      "menu": "Navigatsiya menyusi"
+    },
+    "search": {
+      "placeholder": "Tilni qidirish",
+      "noResults": "Til topilmadi"
+    }
+  },
+  "Footer": {
+    "ceo": "Bosh direktor: JaeHee Lew",
+    "businessDivision": "Biznes bo'limi: WooJun Nam",
+    "email": "Elektron pochta: support@talkhangyul.com",
+    "businessNumber": "Biznes ro'yxat raqami: 403-87-03380",
+    "mailOrderNumber": "Masofaviy savdo ro'yxat raqami: 2026-Seoul Dobong-0542",
+    "terms": "Foydalanish shartlari",
+    "privacy": "Maxfiylik siyosati"
+  }
+}

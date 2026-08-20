@@ -1,0 +1,93 @@
+{
+  "MainSection": {
+    "description": "¡Se acabó estudiar gramática aburrida!\nAprende coreano hablando desde el primer día, con Hangyul.",
+    "button": "Empieza ya"
+  },
+  "ServiceIntro": {
+    "title": "¿Por qué Hangyul?",
+    "subtitle": "Porque aprender no termina al escuchar: <mobileBr></mobileBr>lo que aprendes sale por fin de tu boca.",
+    "feature1": {
+      "title": "Aprendizaje centrado en hablar",
+      "description": "Práctica diseñada para que hables tú\nDiálogos basados en situaciones reales"
+    },
+    "feature2": {
+      "title": "Feedback personalizado con IA",
+      "description": "Nivel recomendado automáticamente según tu análisis\nCorrección precisa de pronunciación y entonación"
+    },
+    "feature3": {
+      "title": "Más puntos en el TOPIK",
+      "description": "Ruta estratégica basada en los tipos de examen\nLa nota y la fluidez avanzan a la vez"
+    },
+    "feature4": {
+      "title": "Clases con creadores",
+      "description": "Creadores de todo el mundo\nsolo en Hangyul"
+    }
+  },
+  "KeyFeatures": {
+    "title": "Cómo se aprende",
+    "subtitle": "Lo aprendido se convierte en habla, <mobileBr></mobileBr>y el habla, en dominio real",
+    "feature1": {
+      "category": "Clases de conversación para hablar en voz alta",
+      "title": "No te quedes solo escuchando\n¡Habla ahora mismo!",
+      "description": "Aprende con clases de conversación por niveles de creadores globales\ny practica al instante repitiendo en tiempo real.\nEl análisis de voz con IA corrige <mobileBr></mobileBr>tu pronunciación al momento.\n¿Tienes dudas? La IA te responde al instante."
+    },
+    "feature2": {
+      "category": "Frases recomendadas por la IA",
+      "title": "Repasa con las frases que guardaste\nAvanza con frases hechas para ti",
+      "description": "La IA analiza tu nivel y tus objetivos <mobileBr></mobileBr>para recomendarte las frases adecuadas. <mobileBr></mobileBr>Las metas diarias mantienen tu ritmo de estudio.\nGuarda las frases que más te gusten\ny convierte tus errores en tu propio cuaderno de estudio."
+    },
+    "feature3": {
+      "category": "Aprender a través de ligas",
+      "title": "Estudia y compite en compañía\nMás divertido, más constante, más progreso",
+      "description": "Cuanto más subes en la clasificación, más sube tu nivel.\nLas ligas oficiales y las ligas con amigos mantienen la motivación\npara que sigas cada día y disfrutes de tu progreso."
+    }
+  },
+  "Pricing": {
+    "category": "Membresía Premium",
+    "title": "Estudia con constancia,\nsuscríbete sin complicaciones",
+    "description": "Con la membresía Premium accedes <mobileBr></mobileBr>a todas las funciones de aprendizaje.\nElegir y gestionar tu plan es muy sencillo,\ny puedes cambiarlo cuando quieras."
+  },
+  "CtaSection": {
+    "title": "Empieza a hablar coreano <mobileBr></mobileBr>hoy mismo",
+    "description": "Únete a millones de estudiantes de todo el mundo <mobileBr></mobileBr>y haz que el coreano no se quede en el papel, <mobileBr></mobileBr>sino que cobre vida en tu voz.\nPuedes empezar gratis ahora mismo.",
+    "button": "Empieza ya"
+  },
+  "StoreButton": {
+    "comingSoon": "Lanzamiento el 31 de agosto de 2026."
+  },
+  "QrModal": {
+    "title": "Descargar la aplicación",
+    "description": "Escanea el código QR\ncon tu dispositivo móvil",
+    "close": "Cerrar"
+  },
+  "LegalModal": {
+    "close": "Cerrar"
+  },
+  "A11y": {
+    "skipToContent": "Ir al contenido principal"
+  },
+  "Header": {
+    "nav": {
+      "why": "¿Por qué Hangyul?",
+      "learning": "Aprendizaje",
+      "membership": "Membresía"
+    },
+    "aria": {
+      "language": "Seleccionar idioma",
+      "menu": "Menú de navegación"
+    },
+    "search": {
+      "placeholder": "Buscar idioma",
+      "noResults": "No se encontraron idiomas"
+    }
+  },
+  "Footer": {
+    "ceo": "Director ejecutivo: JaeHee Lew",
+    "businessDivision": "División de negocio: WooJun Nam",
+    "email": "Correo electrónico: support@talkhangyul.com",
+    "businessNumber": "Número de registro mercantil: 403-87-03380",
+    "mailOrderNumber": "Número de registro de venta a distancia: 2026-Seoul Dobong-0542",
+    "terms": "Términos del servicio",
+    "privacy": "Política de privacidad"
+  }
+}

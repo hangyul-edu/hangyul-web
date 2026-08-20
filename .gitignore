@@ -2,6 +2,10 @@
 
 # dependencies
 /node_modules
+# 이 저장소의 기준 lockfile은 pnpm-lock.yaml 입니다.
+# 로컬에서 npm을 쓰면 생성되는 package-lock.json은 커밋하지 않습니다
+# (Vercel/CI의 패키지 매니저 감지가 바뀌지 않도록).
+/package-lock.json
 /.pnp
 .pnp.*
 .yarn/*

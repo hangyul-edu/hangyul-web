@@ -41,6 +41,12 @@ test.describe("Accessibility (WCAG)", () => {
     expect(results.violations).toEqual([]);
   });
 
+  test("/ar - WCAG 위반 없음 (RTL)", async ({ page }) => {
+    await page.goto("/ar");
+    const results = await (await axe(page)).analyze();
+    expect(results.violations).toEqual([]);
+  });
+
   test("이용약관 모달 - WCAG 위반 없음", async ({ page }) => {
     await page.goto("/ko");
     await page.getByRole("button", { name: /이용약관/i }).click();

@@ -9,13 +9,13 @@ import {
 } from "@/assets/icons";
 import { backgroundHeroImg } from "@/assets/images";
 import { useLocale, useTranslations } from "next-intl";
-import { IMAGES } from "@/constants/images";
+import { getLocaleImages } from "@/constants/images";
 import StoreButton from "@/components/common/StoreButton";
 
 export default function MainSection() {
   const t = useTranslations("MainSection");
-  const locale = useLocale() as "en" | "ko";
-  const mockupImg = IMAGES[locale].mockup;
+  const locale = useLocale();
+  const mockupImg = getLocaleImages(locale).mockup;
 
   return (
     <section className={styles.container}>
@@ -58,7 +58,13 @@ export default function MainSection() {
           <div>
             <StoreButton className={styles.storeBtn}>
               {t("button")}
-              <Image src={chevronRightIcon} alt="arrow" width={16} height={16} />
+              <Image
+              src={chevronRightIcon}
+              alt=""
+              width={16}
+              height={16}
+              className="rtl-flip"
+            />
             </StoreButton>
           </div>
         </div>
@@ -66,7 +72,7 @@ export default function MainSection() {
         <div className={styles.mockupWrapper}>
           <Image
             src={mockupImg}
-            alt="Mockup"
+            alt=""
             width={522}
             height={628}
             sizes="(max-width: 768px) 320px, 522px"

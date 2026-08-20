@@ -1,0 +1,93 @@
+{
+  "MainSection": {
+    "description": "Sudah cukup belajar tata bahasa yang membosankan!\nMulai bicara bahasa Korea sejak hari pertama bersama Hangyul.",
+    "button": "Mulai sekarang"
+  },
+  "ServiceIntro": {
+    "title": "Kenapa Hangyul?",
+    "subtitle": "Karena belajar tak berhenti saat mendengar, <mobileBr></mobileBr>tapi membuat yang kamu pelajari langsung terucap.",
+    "feature1": {
+      "title": "Belajar berfokus pada berbicara",
+      "description": "Latihan berulang yang membuatmu langsung bicara\nStruktur percakapan sesuai situasi nyata"
+    },
+    "feature2": {
+      "title": "Umpan balik personal dari AI",
+      "description": "Rekomendasi level otomatis dari analisis kemampuan\nAnalisis dan koreksi pelafalan serta intonasi yang presisi"
+    },
+    "feature3": {
+      "title": "Skor TOPIK tinggi dan siap praktik",
+      "description": "Kursus strategis berbasis analisis tipe soal\nSkor dan kemampuan bicara naik bersamaan"
+    },
+    "feature4": {
+      "title": "Kelas kolaborasi kreator",
+      "description": "Jajaran kreator global\nyang hanya ada di Hangyul"
+    }
+  },
+  "KeyFeatures": {
+    "title": "Sekilas pembelajaran",
+    "subtitle": "Yang dipelajari jadi ucapan, <mobileBr></mobileBr>ucapan jadi kemampuan nyata",
+    "feature1": {
+      "category": "Kelas percakapan Korea untuk langsung dipraktikkan",
+      "title": "Jangan berhenti di mendengar\nCoba bicara sekarang juga!",
+      "description": "Ikuti kelas percakapan per level dari kreator global,\nlalu langsung berlatih dengan shadowing real-time.\nAnalisis suara berbasis AI <mobileBr></mobileBr>langsung memperbaiki pelafalanmu.\nAda yang ingin ditanyakan? AI generatif menjawab saat itu juga."
+    },
+    "feature2": {
+      "category": "Rekomendasi kalimat dari AI",
+      "title": "Ulangi dengan kalimat yang kamu simpan\nBerkembang dengan kalimat khusus untukmu",
+      "description": "AI menganalisis kemampuan dan tujuanmu, <mobileBr></mobileBr>lalu merekomendasikan kalimat secara otomatis. <mobileBr></mobileBr>Progres belajar terpantau lewat target harian.\nSimpan kalimat favoritmu untuk diulang,\ndan ubah kalimat yang salah jadi catatan belajar milikmu sendiri."
+    },
+    "feature3": {
+      "category": "Belajar berlanjut lewat liga",
+      "title": "Belajar bareng, bersaing bareng\nLebih seru, lebih lama, lebih konsisten",
+      "description": "Semakin naik peringkatmu, semakin naik pula kemampuanmu.\nLiga reguler dan liga teman menjaga semangat belajarmu,\nsupaya kamu terus konsisten dan menikmati setiap kemajuan."
+    }
+  },
+  "Pricing": {
+    "category": "Membership Premium",
+    "title": "Belajar konsisten,\nberlangganan praktis",
+    "description": "Dengan membership Premium, <mobileBr></mobileBr>semua fitur belajar bisa kamu pakai sepuasnya.\nMemilih dan mengelola paket pun mudah,\ndan bisa diubah kapan saja."
+  },
+  "CtaSection": {
+    "title": "Mulai bicara bahasa Korea <mobileBr></mobileBr>mulai hari ini",
+    "description": "Bersama jutaan pelajar bahasa Korea di dunia, <mobileBr></mobileBr>rasakan belajar yang membuat bahasa Korea <mobileBr></mobileBr>langsung keluar dari mulutmu.\nMulai gratis sekarang juga.",
+    "button": "Mulai sekarang"
+  },
+  "StoreButton": {
+    "comingSoon": "Akan diluncurkan pada 31 Agustus 2026."
+  },
+  "QrModal": {
+    "title": "Unduh aplikasi mobile",
+    "description": "Pindai kode QR\ndengan perangkat mobile kamu",
+    "close": "Tutup"
+  },
+  "LegalModal": {
+    "close": "Tutup"
+  },
+  "A11y": {
+    "skipToContent": "Lompat ke konten utama"
+  },
+  "Header": {
+    "nav": {
+      "why": "Kenapa Hangyul?",
+      "learning": "Pembelajaran",
+      "membership": "Membership"
+    },
+    "aria": {
+      "language": "Pilih bahasa",
+      "menu": "Menu navigasi"
+    },
+    "search": {
+      "placeholder": "Cari bahasa",
+      "noResults": "Bahasa tidak ditemukan"
+    }
+  },
+  "Footer": {
+    "ceo": "CEO: JaeHee Lew",
+    "businessDivision": "Divisi Bisnis: WooJun Nam",
+    "email": "Email: support@talkhangyul.com",
+    "businessNumber": "Nomor Registrasi Usaha: 403-87-03380",
+    "mailOrderNumber": "Nomor Registrasi Penjualan Daring: 2026-Seoul Dobong-0542",
+    "terms": "Syarat Layanan",
+    "privacy": "Kebijakan Privasi"
+  }
+}

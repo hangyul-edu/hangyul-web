@@ -6,12 +6,13 @@ import Image from "next/image";
 import { logoIcon } from "@/assets/icons";
 import { useLocale, useTranslations } from "next-intl";
 import LegalModal from "@/components/common/LegalModal";
-import { termsKo } from "@/content/terms/ko";
-import { termsEn } from "@/content/terms/en";
-import { privacyKo } from "@/content/privacy/ko";
-import { privacyEn } from "@/content/privacy/en";
+import {
+  loadLegalDocument,
+  type LegalDocument,
+  type LegalDocumentType,
+} from "@/content/legal";
 
-type ModalType = "terms" | "privacy" | null;
+type ModalType = LegalDocumentType | null;
 
 function getLegalModalType(value: string | null): ModalType {
   if (value === "terms" || value === "privacy") return value;
@@ -22,6 +23,11 @@ export default function Footer() {
   const t = useTranslations("Footer");
   const locale = useLocale();
   const [openModal, setOpenModal] = useState<ModalType>(null);
+  const [loadedLegal, setLoadedLegal] = useState<{
+    type: LegalDocumentType;
+    locale: string;
+    document: LegalDocument;
+  } | null>(null);
 
   const getModalTypeFromUrl = useCallback(() => {
     return getLegalModalType(
@@ -61,10 +67,33 @@ export default function Footer() {
     return () => window.removeEventListener("popstate", syncModalWithUrl);
   }, [getModalTypeFromUrl]);
 
-  const terms = locale === "ko" ? termsKo : termsEn;
-  const privacy = locale === "ko" ? privacyKo : privacyEn;
+  // 모달을 열 때 현재 locale의 약관 문서만 동적으로 불러온다.
+  useEffect(() => {
+    if (!openModal) return;
 
-  const activeContent = openModal === "terms" ? terms : privacy;
+    let cancelled = false;
+
+    loadLegalDocument(openModal, locale).then((document) => {
+      if (!cancelled) setLoadedLegal({ type: openModal, locale, document });
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [openModal, locale]);
+
+  const prefetchLegal = useCallback(
+    (type: LegalDocumentType) => {
+      void loadLegalDocument(type, locale);
+    },
+    [locale]
+  );
+
+  // 다른 문서나 다른 언어를 불러오는 중에는 이전 내용을 보여주지 않는다.
+  const activeContent =
+    loadedLegal && loadedLegal.type === openModal && loadedLegal.locale === locale
+      ? loadedLegal.document
+      : null;
 
   return (
     <footer className={styles.footer}>
@@ -80,11 +109,10 @@ export default function Footer() {
 
           <address className={styles.info}>
             <p>{t("ceo")}</p>
+            <p>{t("businessDivision")}</p>
             <p>{t("email")}</p>
             <p>{t("businessNumber")}</p>
-            <p>{t("address")}</p>
             <p>{t("mailOrderNumber")}</p>
-            <p>{t("contact")}</p>
           </address>
         </div>
 
@@ -94,6 +122,8 @@ export default function Footer() {
               className={styles.legalLink}
               aria-haspopup="dialog"
               onClick={() => updateLegalParam("terms")}
+              onMouseEnter={() => prefetchLegal("terms")}
+              onFocus={() => prefetchLegal("terms")}
             >
               {t("terms")}
             </button>
@@ -102,21 +132,25 @@ export default function Footer() {
               className={styles.legalLink}
               aria-haspopup="dialog"
               onClick={() => updateLegalParam("privacy")}
+              onMouseEnter={() => prefetchLegal("privacy")}
+              onFocus={() => prefetchLegal("privacy")}
             >
               {t("privacy")}
             </button>
           </div>
           <p className={styles.copyright}>
-            Copyright © 2025 HanGyul. All Rights Reserved.
+            {/* 영문 고정 문구이므로 RTL 페이지에서도 LTR 순서로 표기 */}
+            <span dir="ltr">Copyright © 2025 HanGyul. All Rights Reserved.</span>
           </p>
         </div>
       </div>
 
       {openModal && (
         <LegalModal
-          title={activeContent.title}
-          lastUpdated={activeContent.lastUpdated}
-          body={activeContent.body}
+          /* 제목은 번역 메시지로 즉시 표시하고, 본문은 로드되는 대로 채운다. */
+          title={t(openModal)}
+          lastUpdated={activeContent?.lastUpdated ?? ""}
+          body={activeContent?.body ?? ""}
           onClose={() => updateLegalParam(null, "replace")}
         />
       )}

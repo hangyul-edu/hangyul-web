@@ -3,7 +3,7 @@
 import Image from "next/image";
 import styles from "./Pricing.module.css";
 import { useLocale, useTranslations } from "next-intl";
-import { IMAGES } from "@/constants/images";
+import { getLocaleImages } from "@/constants/images";
 import { motion } from "framer-motion";
 import {
   fadeInLeftVariants,
@@ -17,8 +17,8 @@ interface Props {
 
 export default function Pricing({ id }: Props) {
   const t = useTranslations("Pricing");
-  const locale = useLocale() as "en" | "ko";
-  const priceImg = IMAGES[locale].pricing;
+  const locale = useLocale();
+  const priceImg = getLocaleImages(locale).pricing;
 
   const { ref: imageRef, isInView: imageInView } = useAnimateInView();
   const { ref: textRef, isInView: textInView } = useAnimateInView();

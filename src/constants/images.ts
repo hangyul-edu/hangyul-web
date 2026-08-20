@@ -27,3 +27,11 @@ export const IMAGES = {
     feature3: feature3KoImg,
   },
 };
+
+/**
+ * locale별 스크린샷 이미지를 반환합니다.
+ * 전용 이미지가 없는 locale은 영어 이미지로 대체합니다.
+ */
+export function getLocaleImages(locale: string) {
+  return IMAGES[locale as keyof typeof IMAGES] ?? IMAGES.en;
+}

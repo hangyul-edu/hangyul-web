@@ -1,0 +1,93 @@
+{
+  "MainSection": {
+    "description": "Sıkıcı dil bilgisi ezberi artık son bulsun!\nKoreceyi ilk günden konuşarak öğren, Hangyul ile.",
+    "button": "Hemen başla"
+  },
+  "ServiceIntro": {
+    "title": "Neden Hangyul?",
+    "subtitle": "Çünkü öğrenme dinlemekle bitmiyor: <mobileBr></mobileBr>öğrendiğin sonunda senin ağzından dökülüyor.",
+    "feature1": {
+      "title": "Konuşma odaklı öğrenme",
+      "description": "Sesli olarak kendin konuştuğun tekrar pratikleri\nGerçek hayattaki durumlara dayalı diyaloglar"
+    },
+    "feature2": {
+      "title": "Yapay zekâdan kişisel geri bildirim",
+      "description": "Seviye analizine göre otomatik seviye önerisi\nTelaffuz ve tonlamada hassas analiz ve düzeltme"
+    },
+    "feature3": {
+      "title": "Yüksek TOPIK puanı ve pratik",
+      "description": "Soru tiplerinin analizine dayanan stratejik kurs\nPuan ve konuşma becerisi birlikte yükselir"
+    },
+    "feature4": {
+      "title": "İçerik üreticileriyle dersler",
+      "description": "Dünyanın dört bir yanından üreticiler,\nyalnızca Hangyul'da"
+    }
+  },
+  "KeyFeatures": {
+    "title": "Nasıl öğreniyorsun?",
+    "subtitle": "Öğrendiğin konuşmaya, <mobileBr></mobileBr>konuştuğun gerçek beceriye dönüşüyor",
+    "feature1": {
+      "category": "Doğrudan konuştuğun Korece diyalog dersleri",
+      "title": "Dinlemekle yetinme\nHemen şimdi konuşmaya başla!",
+      "description": "Dünyanın dört bir yanından üreticilerin seviyene uygun diyalog derslerini izle,\nardından gerçek zamanlı tekrarla hemen pratik yap.\nYapay zekâ ses analizi telaffuzunu <mobileBr></mobileBr>anında düzeltir.\nAklına takılanı sor, yapay zekâ hemen yanıtlasın."
+    },
+    "feature2": {
+      "category": "Yapay zekâ önerili cümleler",
+      "title": "Kaydettiğin cümlelerle tekrar et\nSana özel cümlelerle ilerle",
+      "description": "Yapay zekâ seviyeni ve hedeflerini analiz ederek <mobileBr></mobileBr>sana en uygun cümleleri otomatik önerir. <mobileBr></mobileBr>Günlük hedeflerle çalışma temponu korursun.\nBeğendiğin cümleleri kaydedip tekrar et,\nyanlışlarını kendi çalışma defterine dönüştür."
+    },
+    "feature3": {
+      "category": "Liglerle devam eden öğrenme",
+      "title": "Birlikte çalış, birlikte yarış\nDaha keyifli, daha uzun, daha düzenli",
+      "description": "Sıralamada yükseldikçe seviyen de yükselir.\nNormal ligler ve arkadaş ligleri motivasyonunu canlı tutar,\nher gün devam edip ilerlemenin keyfini çıkarırsın."
+    }
+  },
+  "Pricing": {
+    "category": "Premium Üyelik",
+    "title": "Düzenli çalış,\nkolayca abone ol",
+    "description": "Premium üyelikle tüm öğrenme özelliklerini <mobileBr></mobileBr>dilediğin gibi kullanabilirsin.\nPlan seçmek ve yönetmek çok kolay,\nüstelik istediğin zaman değiştirebilirsin."
+  },
+  "CtaSection": {
+    "title": "Korece konuşmaya <mobileBr></mobileBr>bugün başla",
+    "description": "Dünyadaki milyonlarca öğrenene katıl <mobileBr></mobileBr>ve Korece kâğıtta kalmasın, <mobileBr></mobileBr>senin sesinde hayat bulsun.\nHemen ücretsiz başlayabilirsin.",
+    "button": "Hemen başla"
+  },
+  "StoreButton": {
+    "comingSoon": "31 Ağustos 2026'da yayında."
+  },
+  "QrModal": {
+    "title": "Mobil uygulamayı indir",
+    "description": "QR kodunu\nmobil cihazınla tara",
+    "close": "Kapat"
+  },
+  "LegalModal": {
+    "close": "Kapat"
+  },
+  "A11y": {
+    "skipToContent": "Ana içeriğe geç"
+  },
+  "Header": {
+    "nav": {
+      "why": "Neden Hangyul?",
+      "learning": "Öğrenme",
+      "membership": "Üyelik"
+    },
+    "aria": {
+      "language": "Dil seç",
+      "menu": "Gezinme menüsü"
+    },
+    "search": {
+      "placeholder": "Dil ara",
+      "noResults": "Dil bulunamadı"
+    }
+  },
+  "Footer": {
+    "ceo": "Genel müdür: JaeHee Lew",
+    "businessDivision": "İş birimi: WooJun Nam",
+    "email": "E-posta: support@talkhangyul.com",
+    "businessNumber": "Ticaret sicil numarası: 403-87-03380",
+    "mailOrderNumber": "Mesafeli satış kayıt numarası: 2026-Seoul Dobong-0542",
+    "terms": "Kullanım koşulları",
+    "privacy": "Gizlilik politikası"
+  }
+}

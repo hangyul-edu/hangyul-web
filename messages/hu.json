@@ -1,0 +1,93 @@
+{
+  "MainSection": {
+    "description": "Elég volt az unalmas nyelvtanmagolásból!\nTanulj koreaiul úgy, hogy tényleg megszólalsz – a Hangyullal.",
+    "button": "Kezdés most"
+  },
+  "ServiceIntro": {
+    "title": "Miért a Hangyul?",
+    "subtitle": "Mert a tanulás nem ér véget a hallgatásnál: <mobileBr></mobileBr>amit megtanulsz, végre a saját szádból jön ki.",
+    "feature1": {
+      "title": "Beszédközpontú tanulás",
+      "description": "Gyakorlatok, amelyekben te magad szólalsz meg\nValós helyzetekre épülő párbeszédek"
+    },
+    "feature2": {
+      "title": "Személyre szabott MI-visszajelzés",
+      "description": "Automatikus szintajánlás a tudásod elemzése alapján\nKiejtés és hanglejtés pontos elemzése és javítása"
+    },
+    "feature3": {
+      "title": "Magasabb TOPIK-pontszám",
+      "description": "Feladattípus-elemzésre épülő stratégiai kurzus\nA pontszám és a beszéd együtt fejlődik"
+    },
+    "feature4": {
+      "title": "Órák alkotókkal",
+      "description": "Világszerte ismert alkotók,\ncsak a Hangyulon"
+    }
+  },
+  "KeyFeatures": {
+    "title": "Így tanulsz",
+    "subtitle": "Amit tanulsz, azt ki is mondod, <mobileBr></mobileBr>és amit kimondasz, az valódi tudássá válik",
+    "feature1": {
+      "category": "Koreai társalgási órák, ahol tényleg megszólalsz",
+      "title": "Ne állj meg a hallgatásnál\nSzólalj meg most rögtön!",
+      "description": "Tanulj a világ alkotóinak szint szerinti társalgási óráiból,\nés gyakorolj azonnal valós idejű utánmondással.\nAz MI hangelemzése azonnal <mobileBr></mobileBr>kijavítja a kiejtésedet.\nHa kérdésed van, az MI rögtön válaszol."
+    },
+    "feature2": {
+      "category": "MI által ajánlott mondatok",
+      "title": "Ismételj a mentett mondataiddal\nFejlődj a neked szánt mondatokkal",
+      "description": "Az MI elemzi a tudásodat és a céljaidat, <mobileBr></mobileBr>majd automatikusan ajánl mondatokat. <mobileBr></mobileBr>A napi célok segítenek tartani a tempót.\nMentsd el a kedvenc mondataidat,\na hibáidból pedig készíts saját tanulási jegyzetet."
+    },
+    "feature3": {
+      "category": "Tanulás ligákban",
+      "title": "Tanuljatok és versenyezzetek együtt\nSzórakoztatóbban, tovább, kitartóbban",
+      "description": "Minél feljebb kerülsz a ranglistán, annál jobb lesz a koreaid.\nA rendes ligák és a baráti ligák fenntartják a motivációt,\nhogy nap mint nap folytasd, és élvezd a fejlődést."
+    }
+  },
+  "Pricing": {
+    "category": "Prémium tagság",
+    "title": "Tanulj kitartóan,\nelőfizess egyszerűen",
+    "description": "A prémium tagsággal szabadon használhatod <mobileBr></mobileBr>az összes tanulási funkciót.\nA csomag kiválasztása és kezelése egyszerű,\nés bármikor válthatsz."
+  },
+  "CtaSection": {
+    "title": "Kezdj el koreaiul beszélni <mobileBr></mobileBr>még ma",
+    "description": "Csatlakozz a világ több millió nyelvtanulójához, <mobileBr></mobileBr>és ne hagyd, hogy a koreai a papíron maradjon - <mobileBr></mobileBr>keljen életre a saját hangodon.\nMost ingyen elkezdheted.",
+    "button": "Kezdés most"
+  },
+  "StoreButton": {
+    "comingSoon": "Megjelenés: 2026. augusztus 31."
+  },
+  "QrModal": {
+    "title": "Mobilalkalmazás letöltése",
+    "description": "Olvasd be a QR-kódot\na mobil eszközöddel",
+    "close": "Bezárás"
+  },
+  "LegalModal": {
+    "close": "Bezárás"
+  },
+  "A11y": {
+    "skipToContent": "Ugrás a fő tartalomra"
+  },
+  "Header": {
+    "nav": {
+      "why": "Miért a Hangyul?",
+      "learning": "Tanulás",
+      "membership": "Tagság"
+    },
+    "aria": {
+      "language": "Nyelv kiválasztása",
+      "menu": "Navigációs menü"
+    },
+    "search": {
+      "placeholder": "Nyelv keresése",
+      "noResults": "Nincs találat"
+    }
+  },
+  "Footer": {
+    "ceo": "Vezérigazgató: JaeHee Lew",
+    "businessDivision": "Üzletág: WooJun Nam",
+    "email": "E-mail: support@talkhangyul.com",
+    "businessNumber": "Cégjegyzékszám: 403-87-03380",
+    "mailOrderNumber": "Távértékesítési nyilvántartási szám: 2026-Seoul Dobong-0542",
+    "terms": "Felhasználási feltételek",
+    "privacy": "Adatvédelmi tájékoztató"
+  }
+}

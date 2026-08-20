@@ -76,6 +76,12 @@
   top: 8px;
 }
 
+/* RTL에서는 카드 스프링 장식도 반대쪽으로 이동 */
+:global([dir="rtl"]) .ringPosition {
+  left: auto;
+  right: -4px;
+}
+
 .cardTitle {
   color: #000;
   font-size: 20px;

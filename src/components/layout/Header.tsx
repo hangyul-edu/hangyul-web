@@ -2,13 +2,17 @@
 
 import Image from "next/image";
 import styles from "./Header.module.css";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import { Link, useRouter, usePathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { useLocale, useTranslations } from "next-intl";
 
-import { LOCALE_CONFIG } from "@/constants/locales";
+import {
+  LOCALE_CONFIG,
+  getLocaleSearchTokens,
+  normalizeSearchText,
+} from "@/constants/locales";
 import {
   chevronDownIcon,
   chevronUpIcon,
@@ -19,10 +23,14 @@ import {
 const LANGUAGES = routing.locales.map((code) => ({
   code,
   ...LOCALE_CONFIG[code],
+  // 검색 비교용 문자열은 렌더링마다 다시 만들지 않도록 미리 계산해 둔다.
+  searchTokens: getLocaleSearchTokens(code),
 }));
 
 export default function Header() {
   const t = useTranslations("Header.nav");
+  const tAria = useTranslations("Header.aria");
+  const tSearch = useTranslations("Header.search");
 
   const router = useRouter();
   const pathname = usePathname();
@@ -32,32 +40,60 @@ export default function Header() {
 
   const [isLangOpen, setIsLangOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [languageQuery, setLanguageQuery] = useState("");
   const headerRef = useRef<HTMLDivElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
 
-  // 페이지 로드 시 다른 locale을 미리 프리페치
-  // routing.locales에서 자동으로 읽으므로 새 언어 추가 시 별도 수정 불필요
+  // 지원 언어가 많아 검색으로 걸러낸다. 언어명(모국어/영어)과 locale 코드 모두 매칭한다.
+  const filteredLanguages = useMemo(() => {
+    const keyword = normalizeSearchText(languageQuery);
+    if (!keyword) return LANGUAGES;
+
+    return LANGUAGES.filter((lang) =>
+      lang.searchTokens.some((token) => token.includes(keyword))
+    );
+  }, [languageQuery]);
+
+  // 데스크톱에서 목록을 열면 검색창에 포커스한다.
+  // (모바일은 키보드가 목록을 가리므로 자동 포커스하지 않는다.)
   useEffect(() => {
-    routing.locales
-      .filter((l) => l !== locale)
-      .forEach((otherLocale) => {
-        router.prefetch(pathname, { locale: otherLocale });
-      });
-  }, [locale, pathname, router]);
+    if (!isLangOpen) return;
+
+    if (window.matchMedia("(min-width: 769px)").matches) {
+      searchInputRef.current?.focus();
+    }
+  }, [isLangOpen]);
+
+  const closeLangDropDown = useCallback(() => {
+    setIsLangOpen(false);
+    setLanguageQuery("");
+  }, []);
+
+  // 지원 언어가 많아 전체 locale을 미리 받아오면 초기 로딩이 무거워지므로,
+  // 사용자가 목록에서 특정 언어를 가리키거나 포커스했을 때만 해당 locale을 프리페치합니다.
+  const prefetchLocale = useCallback(
+    (targetLocale: string) => {
+      if (targetLocale === locale) return;
+      router.prefetch(pathname, { locale: targetLocale });
+    },
+    [locale, pathname, router]
+  );
 
   const toggleLangDropDown = () => {
     setIsLangOpen((prev) => !prev);
+    setLanguageQuery("");
     setIsMobileMenuOpen(false);
   };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
-    setIsLangOpen(false);
+    closeLangDropDown();
   };
 
   const handleSelect = (lang: (typeof LANGUAGES)[0]) => {
     window.scrollTo({ top: 0, behavior: "instant" });
     router.replace(pathname, { locale: lang.code });
-    setIsLangOpen(false);
+    closeLangDropDown();
   };
 
   useEffect(() => {
@@ -66,7 +102,7 @@ export default function Header() {
         headerRef.current &&
         !headerRef.current.contains(event.target as Node)
       ) {
-        setIsLangOpen(false);
+        closeLangDropDown();
         setIsMobileMenuOpen(false);
       }
     };
@@ -78,18 +114,18 @@ export default function Header() {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isMobileMenuOpen, isLangOpen]);
+  }, [isMobileMenuOpen, isLangOpen, closeLangDropDown]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
-        setIsLangOpen(false);
+        closeLangDropDown();
         setIsMobileMenuOpen(false);
       }
     };
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
-  }, []);
+  }, [closeLangDropDown]);
 
   return (
     <header className={styles.header} ref={headerRef}>
@@ -142,7 +178,7 @@ export default function Header() {
                 isLangOpen ? styles.active : ""
               }`}
               onClick={toggleLangDropDown}
-              aria-label="언어 선택"
+              aria-label={tAria("language")}
               aria-expanded={isLangOpen}
               aria-haspopup="listbox"
             >
@@ -166,36 +202,58 @@ export default function Header() {
             </button>
 
             {isLangOpen && (
-              <ul className={styles.dropdownList}>
-                {LANGUAGES.map((lang) => (
-                  <li key={lang.code}>
-                    <button
-                      className={`${styles.dropdownItem} ${
-                        selectedLang.code === lang.code ? styles.selected : ""
-                      }`}
-                      onClick={() => handleSelect(lang)}
-                    >
-                      <div className={styles.langInfo}>
-                        <Image
-                          src={lang.flag}
-                          alt={lang.code}
-                          width={20}
-                          height={13}
-                          loading="eager"
-                        />
-                        <span className={styles.langCode}>{lang.name}</span>
-                      </div>
-                    </button>
-                  </li>
-                ))}
-              </ul>
+              <div className={styles.dropdownPanel}>
+                <input
+                  ref={searchInputRef}
+                  type="text"
+                  className={styles.searchInput}
+                  value={languageQuery}
+                  onChange={(event) => setLanguageQuery(event.target.value)}
+                  placeholder={tSearch("placeholder")}
+                  aria-label={tSearch("placeholder")}
+                  autoComplete="off"
+                />
+
+                {filteredLanguages.length === 0 ? (
+                  <p className={styles.emptyResult}>{tSearch("noResults")}</p>
+                ) : (
+                  <ul className={styles.dropdownList}>
+                    {filteredLanguages.map((lang) => (
+                      <li key={lang.code}>
+                        <button
+                          className={`${styles.dropdownItem} ${
+                            selectedLang.code === lang.code
+                              ? styles.selected
+                              : ""
+                          }`}
+                          onClick={() => handleSelect(lang)}
+                          onMouseEnter={() => prefetchLocale(lang.code)}
+                          onFocus={() => prefetchLocale(lang.code)}
+                          lang={lang.code}
+                        >
+                          <div className={styles.langInfo}>
+                            <Image
+                              src={lang.flag}
+                              alt=""
+                              width={20}
+                              height={13}
+                              loading="eager"
+                            />
+                            <span className={styles.langCode}>{lang.name}</span>
+                          </div>
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             )}
           </div>
 
           <button
             className={styles.hamburger}
             onClick={toggleMobileMenu}
-            aria-label="내비게이션 메뉴"
+            aria-label={tAria("menu")}
             aria-expanded={isMobileMenuOpen}
           >
             <Image src={listIcon} alt="" width={24} height={24} />

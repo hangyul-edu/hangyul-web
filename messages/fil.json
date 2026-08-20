@@ -1,0 +1,93 @@
+{
+  "MainSection": {
+    "description": "Tapos na ang nakakaantok na grammar drills!\nMatuto ng Korean habang nagsasalita, kasama ang Hangyul.",
+    "button": "Magsimula na"
+  },
+  "ServiceIntro": {
+    "title": "Bakit Hangyul?",
+    "subtitle": "Dahil hindi natatapos sa pakikinig ang pag-aaral: <mobileBr></mobileBr>ang natutunan mo ay lumalabas mismo sa bibig mo.",
+    "feature1": {
+      "title": "Pag-aaral na nakatuon sa pagsasalita",
+      "description": "Paulit-ulit na pagsasanay kung saan ikaw ang nagsasalita\nMga usapang hango sa totoong sitwasyon"
+    },
+    "feature2": {
+      "title": "Personalisadong feedback mula sa AI",
+      "description": "Awtomatikong rekomendasyon ng level batay sa iyong antas\nMasusing pagsusuri at pagtatama ng bigkas at tono"
+    },
+    "feature3": {
+      "title": "Mas mataas na iskor sa TOPIK",
+      "description": "Estratehikong kurso batay sa mga uri ng tanong\nSabay na tumataas ang iskor at ang tapang magsalita"
+    },
+    "feature4": {
+      "title": "Klase kasama ang mga creator",
+      "description": "Mga global creator\nsa Hangyul lamang"
+    }
+  },
+  "KeyFeatures": {
+    "title": "Paano ka matututo",
+    "subtitle": "Ang natutunan ay nagiging salita, <mobileBr></mobileBr>at ang salita ay nagiging tunay na galing",
+    "feature1": {
+      "category": "Korean conversation class na talagang magpapasalita sa iyo",
+      "title": "Huwag tumigil sa pakikinig\nMagsalita ka na ngayon!",
+      "description": "Panoorin ang conversation class ayon sa level mula sa mga global creator,\nat magsanay agad sa real-time na pag-uulit.\nSinusuri ng AI ang boses mo at <mobileBr></mobileBr>itinatama ang bigkas mo agad-agad.\nMay tanong? Sasagot ang AI sa isang iglap."
+    },
+    "feature2": {
+      "category": "Mga pangungusap na inirerekomenda ng AI",
+      "title": "Mag-review gamit ang na-save mong pangungusap\nUmangat gamit ang pangungusap na para sa iyo",
+      "description": "Sinusuri ng AI ang antas at layunin mo <mobileBr></mobileBr>para awtomatikong magrekomenda ng tamang pangungusap. <mobileBr></mobileBr>Nagagabayan ka ng pang-araw-araw na target.\nI-save ang mga linyang gusto mo,\nat gawing sarili mong study notes ang mga naging mali."
+    },
+    "feature3": {
+      "category": "Pag-aaral na tuloy-tuloy sa league",
+      "title": "Sabay mag-aral, sabay magpaligsahan\nMas masaya, mas matagal, mas tuloy-tuloy",
+      "description": "Habang umaakyat ang ranggo mo, umaangat din ang galing mo.\nAng regular league at friend league ang nagpapanatili ng gana mong mag-aral,\npara tuluy-tuloy ka at ma-enjoy ang bawat pag-unlad."
+    }
+  },
+  "Pricing": {
+    "category": "Premium Membership",
+    "title": "Tuloy-tuloy na pag-aaral,\nmadaling subscription",
+    "description": "Sa Premium Membership, malaya mong magagamit <mobileBr></mobileBr>ang lahat ng learning features.\nMadaling piliin at pamahalaan ang plano,\nat puwede mo itong palitan anumang oras."
+  },
+  "CtaSection": {
+    "title": "Simulan mo nang magsalita <mobileBr></mobileBr>ng Korean ngayon",
+    "description": "Sumali sa milyun-milyong nag-aaral sa buong mundo <mobileBr></mobileBr>at huwag hayaang manatili sa papel ang Korean, <mobileBr></mobileBr>hayaan itong mabuhay sa boses mo.\nPuwede kang magsimula nang libre ngayon.",
+    "button": "Magsimula na"
+  },
+  "StoreButton": {
+    "comingSoon": "Ilulunsad sa Agosto 31, 2026."
+  },
+  "QrModal": {
+    "title": "I-download ang mobile app",
+    "description": "I-scan ang QR code\ngamit ang iyong mobile device",
+    "close": "Isara"
+  },
+  "LegalModal": {
+    "close": "Isara"
+  },
+  "A11y": {
+    "skipToContent": "Lumaktaw sa pangunahing nilalaman"
+  },
+  "Header": {
+    "nav": {
+      "why": "Bakit Hangyul?",
+      "learning": "Pag-aaral",
+      "membership": "Membership"
+    },
+    "aria": {
+      "language": "Pumili ng wika",
+      "menu": "Menu ng nabigasyon"
+    },
+    "search": {
+      "placeholder": "Maghanap ng wika",
+      "noResults": "Walang nahanap na wika"
+    }
+  },
+  "Footer": {
+    "ceo": "CEO: JaeHee Lew",
+    "businessDivision": "Dibisyon ng Negosyo: WooJun Nam",
+    "email": "Email: support@talkhangyul.com",
+    "businessNumber": "Numero ng Rehistro ng Negosyo: 403-87-03380",
+    "mailOrderNumber": "Numero ng Rehistro sa Mail-Order Sales: 2026-Seoul Dobong-0542",
+    "terms": "Mga Tuntunin ng Serbisyo",
+    "privacy": "Patakaran sa Privacy"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "MainSection": {
+    "description": "Gata cu gramatica plictisitoare!\nÎnvață coreeana vorbind din prima zi, alături de Hangyul.",
+    "button": "Începe acum"
+  },
+  "ServiceIntro": {
+    "title": "De ce Hangyul?",
+    "subtitle": "Pentru că învățarea nu se oprește la ascultat: <mobileBr></mobileBr>ceea ce înveți îți iese, în sfârșit, pe gură.",
+    "feature1": {
+      "title": "Învățare axată pe vorbit",
+      "description": "Exerciții în care vorbești chiar tu, cu voce tare\nDialoguri construite pe situații reale"
+    },
+    "feature2": {
+      "title": "Feedback personalizat cu AI",
+      "description": "Nivel recomandat automat, în urma analizei\nPronunție și intonație corectate cu precizie"
+    },
+    "feature3": {
+      "title": "Punctaj mai mare la TOPIK",
+      "description": "Curs strategic bazat pe tipurile de subiecte\nPunctajul și vorbirea cresc împreună"
+    },
+    "feature4": {
+      "title": "Cursuri alături de creatori",
+      "description": "Creatori din toată lumea,\nnumai pe Hangyul"
+    }
+  },
+  "KeyFeatures": {
+    "title": "Cum înveți",
+    "subtitle": "Ce înveți devine vorbire, <mobileBr></mobileBr>iar vorbirea devine competență reală",
+    "feature1": {
+      "category": "Lecții de conversație în care chiar vorbești",
+      "title": "Nu te opri la ascultat\nVorbește chiar acum!",
+      "description": "Urmărește lecții de conversație pe niveluri, de la creatori din toată lumea,\nși exersează imediat, repetând în timp real.\nAnaliza vocală cu AI îți corectează <mobileBr></mobileBr>pronunția pe loc.\nAi o nelămurire? AI îți răspunde imediat."
+    },
+    "feature2": {
+      "category": "Propoziții recomandate de AI",
+      "title": "Recapitulează cu propozițiile salvate\nEvoluează cu propoziții alese pentru tine",
+      "description": "AI îți analizează nivelul și obiectivele <mobileBr></mobileBr>și îți recomandă automat propozițiile potrivite. <mobileBr></mobileBr>Obiectivele zilnice îți mențin ritmul de studiu.\nSalvează propozițiile care îți plac\nși transformă greșelile în propriul caiet de învățare."
+    },
+    "feature3": {
+      "category": "Învățare prin ligi",
+      "title": "Învățați și concurați împreună\nMai distractiv, mai constant, mai mult timp",
+      "description": "Cu cât urci mai sus în clasament, cu atât îți crește nivelul.\nLigile obișnuite și cele cu prietenii îți mențin motivația,\nca să continui zi de zi și să te bucuri de progres."
+    }
+  },
+  "Pricing": {
+    "category": "Abonament Premium",
+    "title": "Învață constant,\nabonează-te simplu",
+    "description": "Cu abonamentul Premium folosești liber <mobileBr></mobileBr>toate funcțiile de învățare.\nAlegerea și gestionarea planului sunt simple,\niar planul poate fi schimbat oricând."
+  },
+  "CtaSection": {
+    "title": "Începe să vorbești coreeană <mobileBr></mobileBr>chiar de azi",
+    "description": "Alătură-te milioanelor de cursanți din toată lumea <mobileBr></mobileBr>și lasă coreeana să nu rămână pe hârtie, <mobileBr></mobileBr>ci să prindă viață în vocea ta.\nPoți începe gratuit chiar acum.",
+    "button": "Începe acum"
+  },
+  "StoreButton": {
+    "comingSoon": "Lansare pe 31 august 2026."
+  },
+  "QrModal": {
+    "title": "Descarcă aplicația",
+    "description": "Scanează codul QR\ncu dispozitivul tău mobil",
+    "close": "Închide"
+  },
+  "LegalModal": {
+    "close": "Închide"
+  },
+  "A11y": {
+    "skipToContent": "Sari la conținutul principal"
+  },
+  "Header": {
+    "nav": {
+      "why": "De ce Hangyul?",
+      "learning": "Învățare",
+      "membership": "Abonament"
+    },
+    "aria": {
+      "language": "Alege limba",
+      "menu": "Meniu de navigare"
+    },
+    "search": {
+      "placeholder": "Caută limba",
+      "noResults": "Nicio limbă găsită"
+    }
+  },
+  "Footer": {
+    "ceo": "Director general: JaeHee Lew",
+    "businessDivision": "Divizia de business: WooJun Nam",
+    "email": "E-mail: support@talkhangyul.com",
+    "businessNumber": "Număr de înregistrare a firmei: 403-87-03380",
+    "mailOrderNumber": "Număr de înregistrare pentru vânzări la distanță: 2026-Seoul Dobong-0542",
+    "terms": "Termeni și condiții",
+    "privacy": "Politica de confidențialitate"
+  }
+}

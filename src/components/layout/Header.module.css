@@ -42,7 +42,7 @@
 
 .dropdownWrapper {
   position: relative;
-  width: 140px;
+  width: 170px;
   height: 32px;
 }
 
@@ -65,34 +65,70 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  min-width: 0;
 }
 
 .langCode {
   color: #000;
   font-size: 15px;
   font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.dropdownList {
+.dropdownPanel {
   position: absolute;
   top: 100%;
-  left: 0;
+  inset-inline-start: 0;
   z-index: 100;
   width: 100%;
 
-  list-style: none;
   margin-top: 8px;
-  display: flex;
   padding: 6px 0;
-  padding-left: 8px;
-  flex-direction: column;
-  gap: 4px;
+  padding-inline-start: 8px;
+  padding-inline-end: 4px;
 
   background-color: #fff;
   border-radius: 5px;
+  border: 1px solid #d9d9d9;
+}
 
-  max-height: 135px;
+.searchInput {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 6px;
+  padding: 4px 8px;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.searchInput::placeholder {
+  color: var(--gray-400);
+}
+
+.emptyResult {
+  padding: 8px 4px;
+  font-size: 13px;
+  color: var(--gray-500);
+}
+
+.dropdownList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  /* 지원 언어가 32개이므로 목록이 뷰포트를 넘지 않도록 스크롤 처리 */
+  max-height: min(280px, calc(100vh - 160px));
   overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .dropdownList::-webkit-scrollbar {
@@ -160,15 +196,27 @@
     position: static;
   }
 
-  .dropdownList {
+  .dropdownPanel {
     position: fixed;
     top: 56px;
+    inset-inline-start: 0;
     width: 100%;
-    max-height: 195px;
     margin-top: 0;
-    padding: 16px 0;
-    padding-left: 16px;
+    padding: 16px;
+    border: none;
     border-radius: 0px;
+    border-bottom: 1px solid var(--gray-200);
+  }
+
+  .searchInput {
+    height: 40px;
+    font-size: 16px; /* iOS에서 입력 시 화면이 확대되지 않도록 16px 유지 */
+    margin-bottom: 12px;
+  }
+
+  .dropdownList {
+    max-height: calc(100vh - 56px - 84px);
+    max-height: calc(100dvh - 56px - 84px);
   }
 
   .dropdownItem {

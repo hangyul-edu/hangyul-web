@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
+import { useTranslations } from "next-intl";
 import styles from "./LegalModal.module.css";
 import { useScrollLock } from "@/hooks/useScrollLock";
 import { useFocusTrap } from "@/hooks/useFocusTrap";
@@ -14,6 +15,7 @@ interface Props {
 }
 
 export default function LegalModal({ title, lastUpdated, body, onClose }: Props) {
+  const t = useTranslations("LegalModal");
   const modalRef = useFocusTrap<HTMLElement>();
   useScrollLock();
 
@@ -31,9 +33,9 @@ export default function LegalModal({ title, lastUpdated, body, onClose }: Props)
         <div className={styles.header}>
           <div>
             <p id="legal-modal-title" className={styles.title}>{title}</p>
-            <p className={styles.lastUpdated}>{lastUpdated}</p>
+            {lastUpdated && <p className={styles.lastUpdated}>{lastUpdated}</p>}
           </div>
-          <button className={styles.closeBtn} onClick={onClose} aria-label="닫기">
+          <button className={styles.closeBtn} onClick={onClose} aria-label={t("close")}>
             ✕
           </button>
         </div>

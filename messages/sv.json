@@ -1,0 +1,93 @@
+{
+  "MainSection": {
+    "description": "Slut på tråkig grammatikplugg!\nLär dig koreanska genom att prata från dag ett, med Hangyul.",
+    "button": "Kom igång"
+  },
+  "ServiceIntro": {
+    "title": "Varför Hangyul?",
+    "subtitle": "För att lärandet inte tar slut vid lyssnandet: <mobileBr></mobileBr>det du lär dig kommer faktiskt ur din egen mun.",
+    "feature1": {
+      "title": "Fokus på att prata",
+      "description": "Övningar där du själv säger orden högt\nDialoger hämtade från verkliga situationer"
+    },
+    "feature2": {
+      "title": "Personlig AI-feedback",
+      "description": "Nivån föreslås automatiskt utifrån din analys\nUttal och intonation rättas med precision"
+    },
+    "feature3": {
+      "title": "Högre TOPIK-resultat",
+      "description": "Strategisk kurs byggd på provets frågetyper\nPoängen och talförmågan växer tillsammans"
+    },
+    "feature4": {
+      "title": "Lektioner med kreatörer",
+      "description": "Kreatörer från hela världen\nbara hos Hangyul"
+    }
+  },
+  "KeyFeatures": {
+    "title": "Så går inlärningen till",
+    "subtitle": "Det du lär dig blir tal, <mobileBr></mobileBr>och talet blir verklig färdighet",
+    "feature1": {
+      "category": "Koreanska konversationslektioner att prata med i",
+      "title": "Stanna inte vid att lyssna\nBörja prata redan nu!",
+      "description": "Följ konversationslektioner på din nivå från kreatörer världen över\noch träna direkt genom att härma i realtid.\nAI:ns röstanalys rättar <mobileBr></mobileBr>ditt uttal på stället.\nUndrar du något? AI:n svarar direkt."
+    },
+    "feature2": {
+      "category": "Meningar som AI rekommenderar",
+      "title": "Repetera med dina sparade meningar\nVäx med meningar gjorda för dig",
+      "description": "AI:n analyserar din nivå och dina mål <mobileBr></mobileBr>och rekommenderar automatiskt rätt meningar. <mobileBr></mobileBr>Dagliga mål håller din studietakt uppe.\nSpara meningarna du gillar\noch gör om dina misstag till ditt eget anteckningsblock."
+    },
+    "feature3": {
+      "category": "Lärande som fortsätter i ligor",
+      "title": "Plugga ihop och tävla ihop\nRoligare, längre och mer regelbundet",
+      "description": "Ju högre du klättrar, desto bättre blir din koreanska.\nOrdinarie ligor och kompisligor håller motivationen uppe,\nså att du fortsätter varje dag och njuter av utvecklingen."
+    }
+  },
+  "Pricing": {
+    "category": "Premiummedlemskap",
+    "title": "Plugga regelbundet,\nprenumerera enkelt",
+    "description": "Med Premiummedlemskap använder du <mobileBr></mobileBr>alla studiefunktioner fritt.\nDet är enkelt att välja och hantera din plan\noch du kan byta när du vill."
+  },
+  "CtaSection": {
+    "title": "Börja prata koreanska <mobileBr></mobileBr>redan i dag",
+    "description": "Gå med bland miljontals som lär sig världen över <mobileBr></mobileBr>och låt koreanskan inte stanna på pappret, <mobileBr></mobileBr>utan komma till liv i din röst.\nDu kan börja gratis nu.",
+    "button": "Kom igång"
+  },
+  "StoreButton": {
+    "comingSoon": "Lansering den 31 augusti 2026."
+  },
+  "QrModal": {
+    "title": "Ladda ner appen",
+    "description": "Skanna QR-koden\nmed din mobila enhet",
+    "close": "Stäng"
+  },
+  "LegalModal": {
+    "close": "Stäng"
+  },
+  "A11y": {
+    "skipToContent": "Hoppa till huvudinnehållet"
+  },
+  "Header": {
+    "nav": {
+      "why": "Varför Hangyul?",
+      "learning": "Inlärning",
+      "membership": "Medlemskap"
+    },
+    "aria": {
+      "language": "Välj språk",
+      "menu": "Navigeringsmeny"
+    },
+    "search": {
+      "placeholder": "Sök språk",
+      "noResults": "Inga språk hittades"
+    }
+  },
+  "Footer": {
+    "ceo": "VD: JaeHee Lew",
+    "businessDivision": "Affärsområde: WooJun Nam",
+    "email": "E-post: support@talkhangyul.com",
+    "businessNumber": "Organisationsnummer: 403-87-03380",
+    "mailOrderNumber": "Registreringsnummer för distanshandel: 2026-Seoul Dobong-0542",
+    "terms": "Användarvillkor",
+    "privacy": "Integritetspolicy"
+  }
+}

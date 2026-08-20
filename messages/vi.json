@@ -1,0 +1,93 @@
+{
+  "MainSection": {
+    "description": "Tạm biệt những giờ học ngữ pháp buồn tẻ!\nBắt đầu nói tiếng Hàn ngay từ ngày đầu tiên, cùng Hangyul.",
+    "button": "Bắt đầu ngay"
+  },
+  "ServiceIntro": {
+    "title": "Vì sao chọn Hangyul?",
+    "subtitle": "Vì việc học không dừng lại ở nghe, <mobileBr></mobileBr>mà giúp tiếng Hàn bật ra ngay trên môi bạn.",
+    "feature1": {
+      "title": "Học tập trung vào kỹ năng nói",
+      "description": "Thiết kế luyện tập lặp lại để bạn tự nói\nHội thoại bám sát tình huống đời thực"
+    },
+    "feature2": {
+      "title": "Phản hồi cá nhân hóa bằng AI",
+      "description": "Tự động đề xuất cấp độ phù hợp với bạn\nPhân tích và chỉnh phát âm, ngữ điệu chi tiết"
+    },
+    "feature3": {
+      "title": "Điểm TOPIK cao, sẵn sàng thực chiến",
+      "description": "Lộ trình chiến lược bám sát dạng đề\nNâng điểm số song hành với khả năng nói"
+    },
+    "feature4": {
+      "title": "Lớp học cùng nhà sáng tạo nội dung",
+      "description": "Dàn nhà sáng tạo nội dung toàn cầu\nchỉ có tại Hangyul"
+    }
+  },
+  "KeyFeatures": {
+    "title": "Giới thiệu lộ trình học",
+    "subtitle": "Học để nói được, <mobileBr></mobileBr>nói được để giỏi thật sự",
+    "feature1": {
+      "category": "Lớp hội thoại tiếng Hàn nói được ngay",
+      "title": "Đừng dừng lại ở việc nghe\nHãy nói ra ngay bây giờ!",
+      "description": "Học hội thoại theo cấp độ từ các nhà sáng tạo nội dung toàn cầu,\nrồi luyện nói theo ngay lập tức.\nAI phân tích giọng nói và <mobileBr></mobileBr>chỉnh phát âm cho bạn tức thì.\nThắc mắc bất cứ lúc nào cũng có AI giải đáp ngay."
+    },
+    "feature2": {
+      "category": "Câu gợi ý riêng từ AI",
+      "title": "Ôn tập bằng câu đã lưu\nTiến bộ với câu dành riêng cho bạn",
+      "description": "AI phân tích trình độ và mục tiêu để <mobileBr></mobileBr>tự động gợi ý câu phù hợp nhất. <mobileBr></mobileBr>Mục tiêu mỗi ngày giúp bạn học đều đặn.\nLưu lại những câu bạn thích để ôn tập,\nvà biến câu sai thành sổ tay học tập của riêng mình."
+    },
+    "feature3": {
+      "category": "Học đều đặn nhờ giải đấu",
+      "title": "Cùng học, cùng thi đua\nVui hơn, bền hơn, đều đặn hơn",
+      "description": "Thứ hạng đi lên thì thực lực cũng đi lên.\nGiải đấu chính thức và giải đấu cùng bạn bè giữ vững động lực,\nđể bạn học đều mỗi ngày và tận hưởng niềm vui tiến bộ."
+    }
+  },
+  "Pricing": {
+    "category": "Gói hội viên Premium",
+    "title": "Học thì đều đặn,\nđăng ký thì gọn nhẹ",
+    "description": "Với gói Premium, bạn dùng thoải mái <mobileBr></mobileBr>toàn bộ tính năng học tập.\nChọn và quản lý gói thật đơn giản,\nthay đổi bất cứ lúc nào bạn muốn."
+  },
+  "CtaSection": {
+    "title": "Bắt đầu nói tiếng Hàn <mobileBr></mobileBr>ngay hôm nay",
+    "description": "Cùng hàng triệu người học trên thế giới, <mobileBr></mobileBr>hãy để tiếng Hàn không nằm yên trên trang sách <mobileBr></mobileBr>mà bật thành tiếng nói của bạn.\nBắt đầu miễn phí ngay hôm nay.",
+    "button": "Bắt đầu ngay"
+  },
+  "StoreButton": {
+    "comingSoon": "Dự kiến ra mắt ngày 31 tháng 8 năm 2026."
+  },
+  "QrModal": {
+    "title": "Tải ứng dụng di động",
+    "description": "Hãy quét mã QR\nbằng thiết bị di động của bạn",
+    "close": "Đóng"
+  },
+  "LegalModal": {
+    "close": "Đóng"
+  },
+  "A11y": {
+    "skipToContent": "Đến nội dung chính"
+  },
+  "Header": {
+    "nav": {
+      "why": "Vì sao chọn Hangyul?",
+      "learning": "Lộ trình học",
+      "membership": "Hội viên"
+    },
+    "aria": {
+      "language": "Chọn ngôn ngữ",
+      "menu": "Menu điều hướng"
+    },
+    "search": {
+      "placeholder": "Tìm ngôn ngữ",
+      "noResults": "Không tìm thấy ngôn ngữ"
+    }
+  },
+  "Footer": {
+    "ceo": "Giám đốc điều hành: JaeHee Lew",
+    "businessDivision": "Phụ trách kinh doanh: WooJun Nam",
+    "email": "Email: support@talkhangyul.com",
+    "businessNumber": "Mã số doanh nghiệp: 403-87-03380",
+    "mailOrderNumber": "Số đăng ký kinh doanh bán hàng qua mạng: 2026-Seoul Dobong-0542",
+    "terms": "Điều khoản dịch vụ",
+    "privacy": "Chính sách bảo mật"
+  }
+}

@@ -31,8 +31,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* 단어(한국어 어절 포함) 중간에서 줄이 끊기지 않도록 어절 단위로 줄바꿈합니다. */
   word-break: keep-all;
+  /* URL·이메일처럼 컨테이너보다 긴 토큰만 예외적으로 강제 줄바꿈합니다. */
   overflow-wrap: break-word;
+}
+
+/*
+ * 중국어·일본어·태국어는 어절 사이에 공백이 없어 keep-all을 적용하면
+ * 한 줄이 끝없이 이어지므로, 해당 언어에서는 기본 줄바꿈 규칙을 사용합니다.
+ */
+html[lang="zh"] body,
+html[lang="ja"] body,
+html[lang="th"] body {
+  word-break: normal;
+  line-break: auto;
+}
+
+/*
+ * RTL(아랍어)에서 진행 방향을 나타내는 아이콘만 좌우 반전합니다.
+ * 로고·목업·국기 등 브랜드/실사 이미지는 반전하지 않습니다.
+ */
+[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
 }
 
 section {
@@ -53,7 +75,7 @@ a {
 .skip-nav {
   position: absolute;
   top: -40px;
-  left: 0;
+  inset-inline-start: 0;
   padding: 8px 16px;
   background: #000;
   color: #fff;
