@@ -12,7 +12,7 @@
     },
     "feature2": {
       "title": "Personlig AI-feedback",
-      "description": "Nivån föreslås automatiskt utifrån din analys\nUttal och intonation rättas med precision"
+      "description": "Nivån föreslås automatiskt utifrån analysen av dina kunskaper\nUttal och intonation rättas med precision"
     },
     "feature3": {
       "title": "Högre TOPIK-resultat",
@@ -27,9 +27,9 @@
     "title": "Så går inlärningen till",
     "subtitle": "Det du lär dig blir tal, <mobileBr></mobileBr>och talet blir verklig färdighet",
     "feature1": {
-      "category": "Koreanska konversationslektioner att prata med i",
+      "category": "Koreanska konversationslektioner där du pratar själv",
       "title": "Stanna inte vid att lyssna\nBörja prata redan nu!",
-      "description": "Följ konversationslektioner på din nivå från kreatörer världen över\noch träna direkt genom att härma i realtid.\nAI:ns röstanalys rättar <mobileBr></mobileBr>ditt uttal på stället.\nUndrar du något? AI:n svarar direkt."
+      "description": "Följ konversationslektioner på din nivå från kreatörer världen över\noch träna direkt genom att härma i realtid.\nAI:ns röstanalys rättar <mobileBr></mobileBr>ditt uttal med detsamma.\nUndrar du något? AI:n svarar direkt."
     },
     "feature2": {
       "category": "Meningar som AI rekommenderar",
@@ -49,7 +49,7 @@
   },
   "CtaSection": {
     "title": "Börja prata koreanska <mobileBr></mobileBr>redan i dag",
-    "description": "Gå med bland miljontals som lär sig världen över <mobileBr></mobileBr>och låt koreanskan inte stanna på pappret, <mobileBr></mobileBr>utan komma till liv i din röst.\nDu kan börja gratis nu.",
+    "description": "Gå med bland miljontals som lär sig koreanska världen över <mobileBr></mobileBr>och låt inte koreanskan stanna på pappret, <mobileBr></mobileBr>utan komma till liv i din röst.\nDu kan börja gratis nu.",
     "button": "Kom igång"
   },
   "StoreButton": {

@@ -1,7 +1,7 @@
 {
   "MainSection": {
     "description": "Elég volt az unalmas nyelvtanmagolásból!\nTanulj koreaiul úgy, hogy tényleg megszólalsz – a Hangyullal.",
-    "button": "Kezdés most"
+    "button": "Kezdd el most"
   },
   "ServiceIntro": {
     "title": "Miért a Hangyul?",
@@ -20,7 +20,7 @@
     },
     "feature4": {
       "title": "Órák alkotókkal",
-      "description": "Világszerte ismert alkotók,\ncsak a Hangyulon"
+      "description": "A világ minden tájáról érkező alkotók,\ncsak a Hangyulon"
     }
   },
   "KeyFeatures": {
@@ -49,8 +49,8 @@
   },
   "CtaSection": {
     "title": "Kezdj el koreaiul beszélni <mobileBr></mobileBr>még ma",
-    "description": "Csatlakozz a világ több millió nyelvtanulójához, <mobileBr></mobileBr>és ne hagyd, hogy a koreai a papíron maradjon - <mobileBr></mobileBr>keljen életre a saját hangodon.\nMost ingyen elkezdheted.",
-    "button": "Kezdés most"
+    "description": "Csatlakozz a világ több millió nyelvtanulójához, <mobileBr></mobileBr>és ne hagyd, hogy a koreai a papíron maradjon – <mobileBr></mobileBr>keljen életre a saját hangodon.\nMost ingyen elkezdheted.",
+    "button": "Kezdd el most"
   },
   "StoreButton": {
     "comingSoon": "Megjelenés: 2026. augusztus 31."

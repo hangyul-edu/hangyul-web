@@ -1,6 +1,6 @@
 {
   "MainSection": {
-    "description": "Sıkıcı dil bilgisi ezberi artık son bulsun!\nKoreceyi ilk günden konuşarak öğren, Hangyul ile.",
+    "description": "Sıkıcı dil bilgisi ezberine son!\nHangyul ile Koreceyi ilk günden konuşarak öğren.",
     "button": "Hemen başla"
   },
   "ServiceIntro": {
@@ -12,7 +12,7 @@
     },
     "feature2": {
       "title": "Yapay zekâdan kişisel geri bildirim",
-      "description": "Seviye analizine göre otomatik seviye önerisi\nTelaffuz ve tonlamada hassas analiz ve düzeltme"
+      "description": "Beceri analizine göre otomatik seviye önerisi\nTelaffuz ve tonlamada hassas analiz ve düzeltme"
     },
     "feature3": {
       "title": "Yüksek TOPIK puanı ve pratik",
@@ -20,16 +20,16 @@
     },
     "feature4": {
       "title": "İçerik üreticileriyle dersler",
-      "description": "Dünyanın dört bir yanından üreticiler,\nyalnızca Hangyul'da"
+      "description": "Dünyanın dört bir yanından içerik üreticileri,\nyalnızca Hangyul'da"
     }
   },
   "KeyFeatures": {
-    "title": "Nasıl öğreniyorsun?",
+    "title": "Nasıl öğrenirsin?",
     "subtitle": "Öğrendiğin konuşmaya, <mobileBr></mobileBr>konuştuğun gerçek beceriye dönüşüyor",
     "feature1": {
       "category": "Doğrudan konuştuğun Korece diyalog dersleri",
       "title": "Dinlemekle yetinme\nHemen şimdi konuşmaya başla!",
-      "description": "Dünyanın dört bir yanından üreticilerin seviyene uygun diyalog derslerini izle,\nardından gerçek zamanlı tekrarla hemen pratik yap.\nYapay zekâ ses analizi telaffuzunu <mobileBr></mobileBr>anında düzeltir.\nAklına takılanı sor, yapay zekâ hemen yanıtlasın."
+      "description": "Dünyanın dört bir yanından içerik üreticilerinin seviyene uygun diyalog derslerini izle,\nardından gerçek zamanlı tekrarla hemen pratik yap.\nYapay zekâ ses analizi telaffuzunu <mobileBr></mobileBr>anında düzeltir.\nAklına takılanı sor, yapay zekâ hemen yanıtlasın."
     },
     "feature2": {
       "category": "Yapay zekâ önerili cümleler",
@@ -53,7 +53,7 @@
     "button": "Hemen başla"
   },
   "StoreButton": {
-    "comingSoon": "31 Ağustos 2026'da yayında."
+    "comingSoon": "31 Ağustos 2026'da yayınlanıyor."
   },
   "QrModal": {
     "title": "Mobil uygulamayı indir",

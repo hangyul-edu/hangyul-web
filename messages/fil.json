@@ -12,11 +12,11 @@
     },
     "feature2": {
       "title": "Personalisadong feedback mula sa AI",
-      "description": "Awtomatikong rekomendasyon ng level batay sa iyong antas\nMasusing pagsusuri at pagtatama ng bigkas at tono"
+      "description": "Awtomatikong rekomendasyon ng level batay sa pagsusuri ng iyong antas\nMasusing pagsusuri at pagtatama ng bigkas at tono"
     },
     "feature3": {
       "title": "Mas mataas na iskor sa TOPIK",
-      "description": "Estratehikong kurso batay sa mga uri ng tanong\nSabay na tumataas ang iskor at ang tapang magsalita"
+      "description": "Estratehikong kurso batay sa mga uri ng tanong\nSabay na tumataas ang iskor at ang galing mong magsalita"
     },
     "feature4": {
       "title": "Klase kasama ang mga creator",
@@ -34,7 +34,7 @@
     "feature2": {
       "category": "Mga pangungusap na inirerekomenda ng AI",
       "title": "Mag-review gamit ang na-save mong pangungusap\nUmangat gamit ang pangungusap na para sa iyo",
-      "description": "Sinusuri ng AI ang antas at layunin mo <mobileBr></mobileBr>para awtomatikong magrekomenda ng tamang pangungusap. <mobileBr></mobileBr>Nagagabayan ka ng pang-araw-araw na target.\nI-save ang mga linyang gusto mo,\nat gawing sarili mong study notes ang mga naging mali."
+      "description": "Sinusuri ng AI ang antas at layunin mo <mobileBr></mobileBr>para awtomatikong magrekomenda ng tamang pangungusap. <mobileBr></mobileBr>Nagagabayan ka ng pang-araw-araw na target.\nI-save ang mga pangungusap na gusto mo,\nat gawing sarili mong study notes ang mga naging mali."
     },
     "feature3": {
       "category": "Pag-aaral na tuloy-tuloy sa league",

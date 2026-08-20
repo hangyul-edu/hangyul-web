@@ -1,22 +1,22 @@
 {
   "MainSection": {
-    "description": "Fini les leçons de grammaire interminables !\nApprenez le coréen en le parlant, avec Hangyul.",
+    "description": "Fini la grammaire ennuyeuse !\nAvec Hangyul, apprenez le coréen en le parlant dès le premier jour.",
     "button": "Commencer"
   },
   "ServiceIntro": {
-    "title": "Pourquoi Hangyul ?",
-    "subtitle": "Parce qu'apprendre ne s'arrête pas à écouter : <mobileBr></mobileBr>ce que vous apprenez, vous le dites enfin à voix haute.",
+    "title": "Pourquoi Hangyul ?",
+    "subtitle": "Parce qu’apprendre ne s’arrête pas à écouter : <mobileBr></mobileBr>ce que vous apprenez, vous le dites enfin à voix haute.",
     "feature1": {
-      "title": "Un apprentissage centré sur l'oral",
+      "title": "Un apprentissage centré sur l’oral",
       "description": "Des exercices conçus pour vous faire parler\nDes dialogues tirés de situations réelles"
     },
     "feature2": {
-      "title": "Des retours personnalisés par l'IA",
-      "description": "Niveau recommandé automatiquement après analyse\nPrononciation et intonation corrigées avec précision"
+      "title": "Des retours personnalisés par l’IA",
+      "description": "Niveau recommandé automatiquement après analyse de vos acquis\nPrononciation et intonation corrigées avec précision"
     },
     "feature3": {
       "title": "Un meilleur score au TOPIK",
-      "description": "Un parcours stratégique basé sur les types d'épreuves\nLe score et l'aisance à l'oral progressent ensemble"
+      "description": "Un parcours stratégique basé sur les types d’épreuves\nLe score et l’aisance à l’oral progressent ensemble"
     },
     "feature4": {
       "title": "Des cours avec des créateurs",
@@ -24,17 +24,17 @@
     }
   },
   "KeyFeatures": {
-    "title": "Le parcours d'apprentissage",
-    "subtitle": "Ce que vous apprenez se dit, <mobileBr></mobileBr>ce que vous dites devient une vraie compétence",
+    "title": "Le parcours d’apprentissage",
+    "subtitle": "Ce que vous apprenez, vous le dites ; <mobileBr></mobileBr>et ce que vous dites devient une vraie compétence",
     "feature1": {
       "category": "Des cours de conversation à répéter à voix haute",
-      "title": "Ne vous arrêtez pas à l'écoute\nParlez dès maintenant !",
-      "description": "Suivez les cours de conversation par niveau de créateurs du monde entier,\npuis répétez aussitôt en shadowing.\nL'analyse vocale par IA corrige <mobileBr></mobileBr>votre prononciation sur-le-champ.\nUne question ? L'IA vous répond immédiatement."
+      "title": "Ne vous arrêtez pas à l’écoute\nParlez dès maintenant !",
+      "description": "Suivez les cours de conversation par niveau de créateurs du monde entier,\npuis répétez aussitôt en shadowing.\nL’analyse vocale par IA corrige <mobileBr></mobileBr>votre prononciation sur-le-champ.\nUne question ? L’IA vous répond immédiatement."
     },
     "feature2": {
-      "category": "Des phrases recommandées par l'IA",
+      "category": "Des phrases recommandées par l’IA",
       "title": "Réviser avec vos phrases enregistrées\nProgresser avec des phrases faites pour vous",
-      "description": "L'IA analyse votre niveau et vos objectifs <mobileBr></mobileBr>pour vous recommander les bonnes phrases. <mobileBr></mobileBr>Vos objectifs quotidiens rythment votre progression.\nEnregistrez les phrases qui vous plaisent,\net transformez vos erreurs en carnet de révision personnel."
+      "description": "L’IA analyse votre niveau et vos objectifs <mobileBr></mobileBr>pour vous recommander les bonnes phrases. <mobileBr></mobileBr>Vos objectifs quotidiens rythment votre progression.\nEnregistrez les phrases qui vous plaisent,\net transformez vos erreurs en carnet de révision personnel."
     },
     "feature3": {
       "category": "Apprendre au fil des ligues",
@@ -44,19 +44,19 @@
   },
   "Pricing": {
     "category": "Abonnement Premium",
-    "title": "Apprendre avec régularité,\ns'abonner en toute simplicité",
-    "description": "L'abonnement Premium vous ouvre <mobileBr></mobileBr>toutes les fonctionnalités d'apprentissage.\nChoisir et gérer votre formule reste simple,\net vous pouvez en changer à tout moment."
+    "title": "Apprendre avec régularité,\ns’abonner en toute simplicité",
+    "description": "L’abonnement Premium vous ouvre <mobileBr></mobileBr>toutes les fonctionnalités d’apprentissage.\nChoisir et gérer votre formule reste simple,\net vous pouvez en changer à tout moment."
   },
   "CtaSection": {
-    "title": "Parlez coréen <mobileBr></mobileBr>dès aujourd'hui",
-    "description": "Rejoignez des millions d'apprenants dans le monde <mobileBr></mobileBr>et faites sortir le coréen des pages <mobileBr></mobileBr>pour le faire vivre dans votre voix.\nC'est gratuit pour commencer.",
+    "title": "Parlez coréen <mobileBr></mobileBr>dès aujourd’hui",
+    "description": "Rejoignez des millions d’apprenants dans le monde <mobileBr></mobileBr>et faites sortir le coréen des pages <mobileBr></mobileBr>pour le faire vivre dans votre voix.\nC’est gratuit pour commencer.",
     "button": "Commencer"
   },
   "StoreButton": {
     "comingSoon": "Lancement prévu le 31 août 2026."
   },
   "QrModal": {
-    "title": "Télécharger l'application",
+    "title": "Télécharger l’application",
     "description": "Scannez le code QR\navec votre appareil mobile",
     "close": "Fermer"
   },
@@ -68,7 +68,7 @@
   },
   "Header": {
     "nav": {
-      "why": "Pourquoi Hangyul ?",
+      "why": "Pourquoi Hangyul ?",
       "learning": "Apprentissage",
       "membership": "Abonnement"
     },
@@ -82,12 +82,12 @@
     }
   },
   "Footer": {
-    "ceo": "Directeur général : JaeHee Lew",
-    "businessDivision": "Direction commerciale : WooJun Nam",
-    "email": "E-mail : support@talkhangyul.com",
-    "businessNumber": "Numéro d'enregistrement de l'entreprise : 403-87-03380",
-    "mailOrderNumber": "Numéro de déclaration de vente à distance : 2026-Seoul Dobong-0542",
-    "terms": "Conditions d'utilisation",
+    "ceo": "Directeur général : JaeHee Lew",
+    "businessDivision": "Direction commerciale : WooJun Nam",
+    "email": "E-mail : support@talkhangyul.com",
+    "businessNumber": "Numéro d’enregistrement de l’entreprise : 403-87-03380",
+    "mailOrderNumber": "Numéro de déclaration de vente à distance : 2026-Seoul Dobong-0542",
+    "terms": "Conditions d’utilisation",
     "privacy": "Politique de confidentialité"
   }
 }

@@ -12,7 +12,7 @@
     },
     "feature2": {
       "title": "Persönliches KI-Feedback",
-      "description": "Automatische Levelempfehlung nach Niveauanalyse\nPräzise Korrektur von Aussprache und Intonation"
+      "description": "Passendes Level, automatisch nach Analyse deines Niveaus\nPräzise Korrektur von Aussprache und Intonation"
     },
     "feature3": {
       "title": "Top-Ergebnisse im TOPIK",
@@ -34,7 +34,7 @@
     "feature2": {
       "category": "KI-Satzempfehlungen",
       "title": "Wiederholen mit gespeicherten Sätzen\nWachsen mit Sätzen nur für dich",
-      "description": "Die KI analysiert dein Niveau und deine Ziele <mobileBr></mobileBr>und empfiehlt automatisch passende Sätze. <mobileBr></mobileBr>Tagesziele halten deinen Fortschritt im Blick.\nSpeichere Sätze, die dir gefallen,\nund mach aus deinen Fehlern dein eigenes Lernheft."
+      "description": "Die KI analysiert dein Niveau und deine Ziele <mobileBr></mobileBr>und empfiehlt dir automatisch passende Sätze. <mobileBr></mobileBr>Tagesziele halten deinen Fortschritt im Blick.\nSpeichere die Sätze, die dir gefallen,\nund mach aus deinen Fehlern dein eigenes Lernheft."
     },
     "feature3": {
       "category": "Lernen in Ligen",
@@ -85,8 +85,8 @@
     "ceo": "Geschäftsführer: JaeHee Lew",
     "businessDivision": "Geschäftsbereich: WooJun Nam",
     "email": "E-Mail: support@talkhangyul.com",
-    "businessNumber": "Gewerberegisternummer: 403-87-03380",
-    "mailOrderNumber": "Registriernummer für den Online-Handel: 2026-Seoul Dobong-0542",
+    "businessNumber": "Unternehmensregisternummer: 403-87-03380",
+    "mailOrderNumber": "Registrierungsnummer für den Online-Handel: 2026-Seoul Dobong-0542",
     "terms": "Nutzungsbedingungen",
     "privacy": "Datenschutzerklärung"
   }

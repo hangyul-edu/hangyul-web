@@ -1,56 +1,56 @@
 {
   "MainSection": {
-    "description": "Zerikarli grammatika yodlash endi tugadi!\nBirinchi kundanoq gapirib koreys tilini o'rganing, Hangyul bilan.",
-    "button": "Boshlash"
+    "description": "Zerikarli grammatika yodlash tamom!\nHangyul bilan birinchi kundanoq gapirib koreys tilini oʻrganing.",
+    "button": "Hoziroq boshlash"
   },
   "ServiceIntro": {
     "title": "Nega Hangyul?",
-    "subtitle": "Chunki o'rganish tinglash bilan tugamaydi: <mobileBr></mobileBr>o'rgangan gapingiz darhol tilingizdan chiqadi.",
+    "subtitle": "Chunki oʻrganish tinglash bilan tugamaydi: <mobileBr></mobileBr>oʻrgangan gapingiz darhol tilingizdan chiqadi.",
     "feature1": {
-      "title": "Gapirishga qaratilgan ta'lim",
-      "description": "O'zingiz ovoz chiqarib takrorlaydigan mashqlar\nHayotdagi real vaziyatlarga asoslangan suhbatlar"
+      "title": "Gapirishga qaratilgan taʼlim",
+      "description": "Oʻzingiz ovoz chiqarib takrorlaydigan mashqlar\nHayotdagi real vaziyatlarga asoslangan suhbatlar"
     },
     "feature2": {
-      "title": "Sun'iy intellektdan shaxsiy tavsiyalar",
-      "description": "Bilim darajangiz tahliliga asoslangan avtomatik daraja tavsiyasi\nTalaffuz va ohangni aniq tahlil qilib to'g'rilash"
+      "title": "Sunʼiy intellektdan shaxsiy tavsiyalar",
+      "description": "Bilimingizni tahlil qilib, mos darajani avtomatik tavsiya etamiz\nTalaffuz va ohangni aniq tahlil qilib toʻgʻrilaymiz"
     },
     "feature3": {
-      "title": "TOPIK'da yuqori ball va amaliyot",
-      "description": "Savol turlari tahliliga asoslangan strategik kurs\nBall ham, gapirish ko'nikmasi ham birga o'sadi"
+      "title": "TOPIKda yuqori ball va amaliyot",
+      "description": "Savol turlari tahliliga asoslangan strategik kurs\nBall ham, gapirish koʻnikmasi ham birga oʻsadi"
     },
     "feature4": {
       "title": "Kreatorlar bilan darslar",
-      "description": "Dunyo bo'ylab kreatorlar\nfaqat Hangyul'da"
+      "description": "Dunyo boʻylab kreatorlar\nfaqat Hangyulda"
     }
   },
   "KeyFeatures": {
-    "title": "Ta'lim haqida",
-    "subtitle": "O'rgangan narsangiz nutqqa, <mobileBr></mobileBr>nutqingiz esa haqiqiy mahoratga aylanadi",
+    "title": "Taʼlim haqida",
+    "subtitle": "Oʻrgangan narsangiz nutqqa, <mobileBr></mobileBr>nutqingiz esa haqiqiy mahoratga aylanadi",
     "feature1": {
-      "category": "O'zingiz gapiradigan koreys tili suhbat darslari",
-      "title": "Tinglash bilan cheklanib qolmang\nHoziroq gapirib ko'ring!",
-      "description": "Dunyo kreatorlarining daraja bo'yicha suhbat darslarini ko'ring\nva real vaqtda takrorlab darhol mashq qiling.\nSun'iy intellekt ovozingizni tahlil qilib <mobileBr></mobileBr>talaffuzingizni shu zahoti to'g'rilaydi.\nSavolingiz bo'lsa, sun'iy intellekt darhol javob beradi."
+      "category": "Oʻzingiz gapiradigan koreys tili suhbat darslari",
+      "title": "Tinglash bilan cheklanib qolmang\nHoziroq gapirib koʻring!",
+      "description": "Dunyo kreatorlarining daraja boʻyicha suhbat darslarini koʻring\nva real vaqtda takrorlab darhol mashq qiling.\nSunʼiy intellekt ovozingizni tahlil qilib <mobileBr></mobileBr>talaffuzingizni shu zahoti toʻgʻrilaydi.\nSavolingiz boʻlsa, sunʼiy intellekt darhol javob beradi."
     },
     "feature2": {
-      "category": "Sun'iy intellekt tavsiya qilgan gaplar",
-      "title": "Saqlagan gaplaringiz bilan takrorlang\nSizga moslangan gaplar bilan o'sing",
-      "description": "Sun'iy intellekt darajangiz va maqsadingizni tahlil qilib <mobileBr></mobileBr>mos gaplarni o'zi tavsiya etadi. <mobileBr></mobileBr>Kunlik maqsadlar bilan sur'atingizni ushlab turasiz.\nYoqqan gaplarni saqlab takrorlang,\nxatolaringizdan esa o'z daftaringizni yarating."
+      "category": "Sunʼiy intellekt tavsiya qilgan gaplar",
+      "title": "Saqlagan gaplaringiz bilan takrorlang\nSizga moslangan gaplar bilan oʻsing",
+      "description": "Sunʼiy intellekt darajangiz va maqsadingizni tahlil qilib <mobileBr></mobileBr>mos gaplarni oʻzi tavsiya etadi. <mobileBr></mobileBr>Kunlik maqsadlar surʼatingizni ushlab turadi.\nYoqqan gaplarni saqlab takrorlang,\nxatolaringizdan esa oʻz daftaringizni yarating."
     },
     "feature3": {
-      "category": "Ligalar bilan davom etadigan ta'lim",
-      "title": "Birga o'qing, birga bellashing\nQiziqarliroq, uzoqroq, muntazamroq",
-      "description": "Reytingda qanchalik yuqoriga chiqsangiz, bilimingiz ham shunchalik oshadi.\nMuntazam ligalar va do'stlar ligasi o'rganish ishtiyoqini yuqori tutadi,\nhar kuni davom etib, o'sish zavqini his qilasiz."
+      "category": "Ligalar bilan davom etadigan taʼlim",
+      "title": "Birga oʻqing, birga bellashing\nQiziqarliroq, uzoqroq, muntazamroq",
+      "description": "Reytingda qanchalik yuqoriga chiqsangiz, bilimingiz ham shunchalik oshadi.\nMuntazam ligalar va doʻstlar ligasi oʻrganish ishtiyoqini yuqori tutadi,\nhar kuni davom etib, oʻsish zavqini his qilasiz."
     }
   },
   "Pricing": {
-    "category": "Premium a'zolik",
-    "title": "Muntazam o'rganing,\noson obuna bo'ling",
-    "description": "Premium a'zolik bilan <mobileBr></mobileBr>barcha ta'lim imkoniyatlaridan erkin foydalanasiz.\nTarifni tanlash va boshqarish oson,\nistalgan vaqtda o'zgartirishingiz mumkin."
+    "category": "Premium aʼzolik",
+    "title": "Muntazam oʻrganing,\noson obuna boʻling",
+    "description": "Premium aʼzolik bilan <mobileBr></mobileBr>barcha taʼlim imkoniyatlaridan erkin foydalanasiz.\nTarifni tanlash va boshqarish oson,\nistalgan vaqtda oʻzgartirishingiz mumkin."
   },
   "CtaSection": {
     "title": "Koreys tilida gapirishni <mobileBr></mobileBr>bugundan boshlang",
-    "description": "Dunyodagi millionlab o'rganuvchilarga qo'shiling <mobileBr></mobileBr>va koreys tili qog'ozda qolib ketmasin, <mobileBr></mobileBr>sizning ovozingizda jonlansin.\nHoziroq bepul boshlashingiz mumkin.",
-    "button": "Boshlash"
+    "description": "Dunyodagi millionlab oʻrganuvchilarga qoʻshiling <mobileBr></mobileBr>va koreys tili qogʻozda qolib ketmasin, <mobileBr></mobileBr>sizning ovozingizda jonlansin.\nHoziroq bepul boshlashingiz mumkin.",
+    "button": "Hoziroq boshlash"
   },
   "StoreButton": {
     "comingSoon": "2026-yil 31-avgustda ishga tushadi."
@@ -64,13 +64,13 @@
     "close": "Yopish"
   },
   "A11y": {
-    "skipToContent": "Asosiy kontentga o'tish"
+    "skipToContent": "Asosiy kontentga oʻtish"
   },
   "Header": {
     "nav": {
       "why": "Nega Hangyul?",
-      "learning": "Ta'lim",
-      "membership": "A'zolik"
+      "learning": "Taʼlim",
+      "membership": "Aʼzolik"
     },
     "aria": {
       "language": "Tilni tanlash",
@@ -83,10 +83,10 @@
   },
   "Footer": {
     "ceo": "Bosh direktor: JaeHee Lew",
-    "businessDivision": "Biznes bo'limi: WooJun Nam",
+    "businessDivision": "Biznes boʻlimi: WooJun Nam",
     "email": "Elektron pochta: support@talkhangyul.com",
-    "businessNumber": "Biznes ro'yxat raqami: 403-87-03380",
-    "mailOrderNumber": "Masofaviy savdo ro'yxat raqami: 2026-Seoul Dobong-0542",
+    "businessNumber": "Biznesni roʻyxatga olish raqami: 403-87-03380",
+    "mailOrderNumber": "Masofaviy savdo roʻyxat raqami: 2026-Seoul Dobong-0542",
     "terms": "Foydalanish shartlari",
     "privacy": "Maxfiylik siyosati"
   }

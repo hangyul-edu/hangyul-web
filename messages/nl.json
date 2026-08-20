@@ -12,7 +12,7 @@
     },
     "feature2": {
       "title": "Persoonlijke AI-feedback",
-      "description": "Automatisch niveauadvies op basis van analyse\nNauwkeurige correctie van uitspraak en intonatie"
+      "description": "Automatisch het juiste level na een niveauanalyse\nNauwkeurige correctie van uitspraak en intonatie"
     },
     "feature3": {
       "title": "Hogere TOPIK-scores",
@@ -25,7 +25,7 @@
   },
   "KeyFeatures": {
     "title": "Zo leer je",
-    "subtitle": "Wat je leert ga je zeggen, <mobileBr></mobileBr>en wat je zegt wordt echte vaardigheid",
+    "subtitle": "Wat je leert wordt spreken, <mobileBr></mobileBr>en spreken wordt echt kunnen",
     "feature1": {
       "category": "Koreaanse conversatielessen om hardop mee te praten",
       "title": "Blijf niet hangen bij luisteren\nSpreek nu meteen!",
@@ -33,7 +33,7 @@
     },
     "feature2": {
       "category": "Zinnen aanbevolen door AI",
-      "title": "Herhaal met de zinnen die je bewaarde\nGroei met zinnen speciaal voor jou",
+      "title": "Herhaal met je opgeslagen zinnen\nGroei met zinnen speciaal voor jou",
       "description": "De AI analyseert je niveau en je doelen <mobileBr></mobileBr>en beveelt automatisch passende zinnen aan. <mobileBr></mobileBr>Dagdoelen houden je voortgang op koers.\nBewaar de zinnen die je mooi vindt\nen maak van je fouten je eigen studieschrift."
     },
     "feature3": {
@@ -44,7 +44,7 @@
   },
   "Pricing": {
     "category": "Premium-lidmaatschap",
-    "title": "Blijf leren,\nabonneer zonder gedoe",
+    "title": "Leer met regelmaat,\nabonneer zonder gedoe",
     "description": "Met het Premium-lidmaatschap gebruik je <mobileBr></mobileBr>alle leerfuncties onbeperkt.\nEen abonnement kiezen en beheren is eenvoudig\nen je wijzigt het wanneer je wilt."
   },
   "CtaSection": {
@@ -64,7 +64,7 @@
     "close": "Sluiten"
   },
   "A11y": {
-    "skipToContent": "Naar hoofdinhoud"
+    "skipToContent": "Ga naar de hoofdinhoud"
   },
   "Header": {
     "nav": {

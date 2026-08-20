@@ -34,11 +34,11 @@
     "feature2": {
       "category": "AI 定制句子推荐",
       "title": "用收藏的句子复习\n用定制的句子成长",
-      "description": "AI 分析你的水平与目标， <mobileBr></mobileBr>自动推荐最适合的学习句子， <mobileBr></mobileBr>并按每日目标管理学习进度。\n喜欢的句子随手收藏、随时复习，\n说错的句子自动整理成专属学习笔记。"
+      "description": "AI 分析你的水平与目标， <mobileBr></mobileBr>自动推荐最适合的学习句子， <mobileBr></mobileBr>并按每日目标管理学习进度。\n喜欢的句子随手收藏、随时复习，\n说错的句子还能整理成专属学习笔记。"
     },
     "feature3": {
       "category": "在联赛中持续学习",
-      "title": "一起学习，一起竞争\n更有趣，更长久，更坚持",
+      "title": "一起学习，一起竞争\n更有趣，更持久，更有动力",
       "description": "排名越往上，实力也跟着提升。\n常规联赛和好友联赛让学习动力持续在线，\n每天坚持下去，感受成长的乐趣。"
     }
   },
@@ -48,7 +48,7 @@
     "description": "高级会员可以 <mobileBr></mobileBr>自由使用全部学习功能。\n方案选择与管理同样简单，\n随时都能自由更换。"
   },
   "CtaSection": {
-    "title": "现在就开始，<mobileBr></mobileBr>说得出口的韩语。",
+    "title": "现在就开始，<mobileBr></mobileBr>说得出口的韩语",
     "description": "和全球数百万韩语学习者一起，<mobileBr></mobileBr>体验学过的韩语能立刻 <mobileBr></mobileBr>脱口而出的学习方式。\n现在就能免费开始。",
     "button": "立即开始"
   },

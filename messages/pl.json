@@ -1,6 +1,6 @@
 {
   "MainSection": {
-    "description": "Koniec z nudną gramatyką!\nUcz się koreańskiego, mówiąc od pierwszego dnia – z Hangyul.",
+    "description": "Koniec z nudną gramatyką!\nUcz się koreańskiego, mówiąc od pierwszego dnia – z Hangyulem.",
     "button": "Zacznij teraz"
   },
   "ServiceIntro": {
@@ -12,7 +12,7 @@
     },
     "feature2": {
       "title": "Spersonalizowane wskazówki AI",
-      "description": "Automatycznie dobrany poziom po analizie umiejętności\nDokładna korekta wymowy i intonacji"
+      "description": "Poziom dobierany automatycznie po analizie umiejętności\nDokładna korekta wymowy i intonacji"
     },
     "feature3": {
       "title": "Wyższy wynik na TOPIK",
@@ -20,7 +20,7 @@
     },
     "feature4": {
       "title": "Zajęcia z twórcami",
-      "description": "Twórcy z całego świata\ntylko w Hangyul"
+      "description": "Twórcy z całego świata\ntylko w Hangyulu"
     }
   },
   "KeyFeatures": {
@@ -29,11 +29,11 @@
     "feature1": {
       "category": "Lekcje konwersacji, na których naprawdę mówisz",
       "title": "Nie kończ na słuchaniu\nZacznij mówić już teraz!",
-      "description": "Ucz się na lekcjach konwersacji od twórców z całego świata,\ni ćwicz od razu, powtarzając na bieżąco.\nAnaliza głosu przez AI poprawia <mobileBr></mobileBr>twoją wymowę na miejscu.\nMasz pytanie? AI odpowie ci od ręki."
+      "description": "Ucz się na lekcjach konwersacji od twórców z całego świata\ni ćwicz od razu, powtarzając na bieżąco.\nAnaliza głosu przez AI poprawia <mobileBr></mobileBr>twoją wymowę na miejscu.\nMasz pytanie? AI odpowie ci od ręki."
     },
     "feature2": {
       "category": "Zdania polecane przez AI",
-      "title": "Powtarzaj z zapisanych zdań\nRozwijaj się dzięki zdaniom dobranym dla ciebie",
+      "title": "Powtarzaj z zapisanymi zdaniami\nRozwijaj się dzięki zdaniom dobranym dla ciebie",
       "description": "AI analizuje twój poziom i cele, <mobileBr></mobileBr>aby automatycznie polecać właściwe zdania. <mobileBr></mobileBr>Codzienne cele pomagają utrzymać rytm nauki.\nZapisuj zdania, które ci się spodobały,\na z własnych błędów twórz osobisty zeszyt do powtórek."
     },
     "feature3": {
@@ -45,7 +45,7 @@
   "Pricing": {
     "category": "Członkostwo Premium",
     "title": "Ucz się regularnie,\nsubskrybuj bez wysiłku",
-    "description": "Członkostwo Premium daje ci swobodny dostęp <mobileBr></mobileBr>do wszystkich funkcji nauki.\nWybór i zmiana planu są proste,\na plan zmienisz w dowolnym momencie."
+    "description": "Członkostwo Premium daje ci swobodny dostęp <mobileBr></mobileBr>do wszystkich funkcji nauki.\nWybór i zarządzanie planem są proste,\na zmienisz go w dowolnej chwili."
   },
   "CtaSection": {
     "title": "Zacznij mówić po koreańsku <mobileBr></mobileBr>jeszcze dziś",

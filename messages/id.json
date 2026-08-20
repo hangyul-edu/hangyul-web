@@ -1,13 +1,13 @@
 {
   "MainSection": {
-    "description": "Sudah cukup belajar tata bahasa yang membosankan!\nMulai bicara bahasa Korea sejak hari pertama bersama Hangyul.",
+    "description": "Cukup sudah belajar tata bahasa yang membosankan!\nMulai bicara bahasa Korea sejak hari pertama bersama Hangyul.",
     "button": "Mulai sekarang"
   },
   "ServiceIntro": {
     "title": "Kenapa Hangyul?",
     "subtitle": "Karena belajar tak berhenti saat mendengar, <mobileBr></mobileBr>tapi membuat yang kamu pelajari langsung terucap.",
     "feature1": {
-      "title": "Belajar berfokus pada berbicara",
+      "title": "Fokus pada kemampuan bicara",
       "description": "Latihan berulang yang membuatmu langsung bicara\nStruktur percakapan sesuai situasi nyata"
     },
     "feature2": {
@@ -24,7 +24,7 @@
     }
   },
   "KeyFeatures": {
-    "title": "Sekilas pembelajaran",
+    "title": "Sekilas cara belajar",
     "subtitle": "Yang dipelajari jadi ucapan, <mobileBr></mobileBr>ucapan jadi kemampuan nyata",
     "feature1": {
       "category": "Kelas percakapan Korea untuk langsung dipraktikkan",
@@ -48,7 +48,7 @@
     "description": "Dengan membership Premium, <mobileBr></mobileBr>semua fitur belajar bisa kamu pakai sepuasnya.\nMemilih dan mengelola paket pun mudah,\ndan bisa diubah kapan saja."
   },
   "CtaSection": {
-    "title": "Mulai bicara bahasa Korea <mobileBr></mobileBr>mulai hari ini",
+    "title": "Mulai bicara bahasa Korea <mobileBr></mobileBr>hari ini juga",
     "description": "Bersama jutaan pelajar bahasa Korea di dunia, <mobileBr></mobileBr>rasakan belajar yang membuat bahasa Korea <mobileBr></mobileBr>langsung keluar dari mulutmu.\nMulai gratis sekarang juga.",
     "button": "Mulai sekarang"
   },
@@ -57,7 +57,7 @@
   },
   "QrModal": {
     "title": "Unduh aplikasi mobile",
-    "description": "Pindai kode QR\ndengan perangkat mobile kamu",
+    "description": "Pindai kode QR\ndengan perangkat mobile-mu",
     "close": "Tutup"
   },
   "LegalModal": {

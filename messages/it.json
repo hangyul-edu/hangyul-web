@@ -12,7 +12,7 @@
     },
     "feature2": {
       "title": "Feedback personalizzato con l'IA",
-      "description": "Livello consigliato in automatico dopo l'analisi\nPronuncia e intonazione corrette con precisione"
+      "description": "Il livello giusto suggerito in automatico\nCorrezione precisa di pronuncia e intonazione"
     },
     "feature3": {
       "title": "Punteggi TOPIK più alti",
@@ -34,7 +34,7 @@
     "feature2": {
       "category": "Frasi consigliate dall'IA",
       "title": "Ripassa con le frasi che hai salvato\nCresci con frasi pensate per te",
-      "description": "L'IA analizza il tuo livello e i tuoi obiettivi <mobileBr></mobileBr>e ti consiglia le frasi giuste. <mobileBr></mobileBr>Gli obiettivi giornalieri tengono il ritmo dello studio.\nSalva le frasi che ti piacciono di più\ne trasforma i tuoi errori nel tuo quaderno personale."
+      "description": "L'IA analizza il tuo livello e i tuoi obiettivi <mobileBr></mobileBr>e ti consiglia le frasi giuste. <mobileBr></mobileBr>Gli obiettivi giornalieri ti fanno tenere il ritmo.\nSalva le frasi che ti piacciono di più\ne trasforma i tuoi errori nel tuo quaderno personale."
     },
     "feature3": {
       "category": "Imparare con le leghe",

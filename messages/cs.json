@@ -1,6 +1,6 @@
 {
   "MainSection": {
-    "description": "Konec nudného biflování gramatiky!\nUčte se korejsky tím, že mluvíte – s Hangyul.",
+    "description": "Konec nudného biflování gramatiky!\nUčte se korejsky tím, že mluvíte – s Hangyulem.",
     "button": "Začít hned"
   },
   "ServiceIntro": {
@@ -20,7 +20,7 @@
     },
     "feature4": {
       "title": "Lekce s tvůrci",
-      "description": "Tvůrci z celého světa\njen na Hangyul"
+      "description": "Tvůrci z celého světa\njen na Hangyulu"
     }
   },
   "KeyFeatures": {
@@ -29,11 +29,11 @@
     "feature1": {
       "category": "Konverzační lekce, ve kterých opravdu mluvíte",
       "title": "Nekončete u poslechu\nZačněte mluvit hned teď!",
-      "description": "Učte se z konverzačních lekcí podle úrovně od tvůrců z celého světa\na hned si to zkoušejte opakováním v reálném čase.\nHlasová analýza s AI opraví <mobileBr></mobileBr>vaši výslovnost na místě.\nMáte otázku? AI vám odpoví okamžitě."
+      "description": "Učte se z konverzačních lekcí podle úrovně od tvůrců z celého světa\na hned si je vyzkoušejte opakováním v reálném čase.\nHlasová analýza s AI opraví <mobileBr></mobileBr>vaši výslovnost na místě.\nMáte otázku? AI vám odpoví okamžitě."
     },
     "feature2": {
       "category": "Věty doporučené AI",
-      "title": "Opakujte z uložených vět\nRozvíjejte se s větami na míru",
+      "title": "Opakujte s uloženými větami\nRozvíjejte se s větami na míru",
       "description": "AI analyzuje vaši úroveň a cíle <mobileBr></mobileBr>a automaticky doporučí vhodné věty. <mobileBr></mobileBr>Denní cíle vám pomohou držet tempo.\nUložte si věty, které se vám líbí,\na z chyb si udělejte vlastní studijní sešit."
     },
     "feature3": {
@@ -44,12 +44,12 @@
   },
   "Pricing": {
     "category": "Členství Premium",
-    "title": "Učte se pravidelně,\npředplaťte si to snadno",
+    "title": "Učte se pravidelně,\npředplatné vyřídíte snadno",
     "description": "S členstvím Premium využijete <mobileBr></mobileBr>všechny funkce pro učení bez omezení.\nVýběr i správa tarifu jsou jednoduché\na kdykoli je můžete změnit."
   },
   "CtaSection": {
     "title": "Začněte mluvit korejsky <mobileBr></mobileBr>ještě dnes",
-    "description": "Přidejte se k milionům studentů po celém světě <mobileBr></mobileBr>a nenechte korejštinu ležet na papíře - <mobileBr></mobileBr>ať ožije ve vašem hlase.\nZačít můžete zdarma.",
+    "description": "Přidejte se k milionům studentů po celém světě <mobileBr></mobileBr>a nenechte korejštinu ležet na papíře – <mobileBr></mobileBr>ať ožije ve vašem hlase.\nZačít můžete zdarma.",
     "button": "Začít hned"
   },
   "StoreButton": {

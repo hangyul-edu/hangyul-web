@@ -12,7 +12,7 @@
     },
     "feature2": {
       "title": "Feedback personalizat cu AI",
-      "description": "Nivel recomandat automat, în urma analizei\nPronunție și intonație corectate cu precizie"
+      "description": "Nivel recomandat automat, în urma analizei nivelului tău\nPronunție și intonație corectate cu precizie"
     },
     "feature3": {
       "title": "Punctaj mai mare la TOPIK",
@@ -38,7 +38,7 @@
     },
     "feature3": {
       "category": "Învățare prin ligi",
-      "title": "Învățați și concurați împreună\nMai distractiv, mai constant, mai mult timp",
+      "title": "Învățați și concurați împreună\nMai distractiv, mai mult timp, mai constant",
       "description": "Cu cât urci mai sus în clasament, cu atât îți crește nivelul.\nLigile obișnuite și cele cu prietenii îți mențin motivația,\nca să continui zi de zi și să te bucuri de progres."
     }
   },
@@ -77,13 +77,13 @@
       "menu": "Meniu de navigare"
     },
     "search": {
-      "placeholder": "Caută limba",
-      "noResults": "Nicio limbă găsită"
+      "placeholder": "Caută o limbă",
+      "noResults": "Nu am găsit nicio limbă"
     }
   },
   "Footer": {
     "ceo": "Director general: JaeHee Lew",
-    "businessDivision": "Divizia de business: WooJun Nam",
+    "businessDivision": "Divizia de afaceri: WooJun Nam",
     "email": "E-mail: support@talkhangyul.com",
     "businessNumber": "Număr de înregistrare a firmei: 403-87-03380",
     "mailOrderNumber": "Număr de înregistrare pentru vânzări la distanță: 2026-Seoul Dobong-0542",
