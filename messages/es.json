@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "Ir al contenido principal"
   },
+  "Alt": {
+    "appPreview": "Pantalla de la app Hangyul para practicar coreano hablado",
+    "membershipPreview": "Planes de membresía Premium de Hangyul",
+    "ganadaPreview": "Pantalla de Hangyul Ganada para escribir letras coreanas a mano"
+  },
   "Header": {
     "nav": {
       "why": "¿Por qué Hangyul?",

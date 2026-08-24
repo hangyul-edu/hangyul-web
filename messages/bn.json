@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "মূল বিষয়বস্তুতে যান"
   },
+  "Alt": {
+    "appPreview": "কোরিয়ান বলা অনুশীলনের জন্য Hangyul অ্যাপের স্ক্রিন",
+    "membershipPreview": "Hangyul প্রিমিয়াম মেম্বারশিপ প্ল্যান",
+    "ganadaPreview": "হাতে কোরিয়ান অক্ষর লেখার Hangyul Ganada স্ক্রিন"
+  },
   "Header": {
     "nav": {
       "why": "কেন Hangyul?",

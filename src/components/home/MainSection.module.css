@@ -52,8 +52,16 @@
   gap: clamp(24px, 4vw, 40px);
 }
 
+/* 히어로 슬로건 h1. 내부에 이미지만 있으므로 기본 텍스트 스타일만 무력화합니다. */
+.slogan {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 .sloganDesktop {
+  width: 100%;
   max-width: 594px;
+  height: auto;
 }
 
 .sloganMobile {
@@ -143,6 +151,7 @@
     display: block;
     width: 100%;
     max-width: 300px;
+    height: auto;
   }
 
   .textGroup {

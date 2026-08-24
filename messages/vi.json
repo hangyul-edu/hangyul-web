@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "Chuyển đến nội dung chính"
   },
+  "Alt": {
+    "appPreview": "Màn hình ứng dụng Hangyul để luyện nói tiếng Hàn",
+    "membershipPreview": "Các gói hội viên Premium của Hangyul",
+    "ganadaPreview": "Màn hình Hangyul Ganada để viết tay chữ cái tiếng Hàn"
+  },
   "Header": {
     "nav": {
       "why": "Vì sao chọn Hangyul?",

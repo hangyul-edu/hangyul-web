@@ -16,6 +16,7 @@ import { useAnimateInView } from "@/hooks/useAnimateInView";
 
 export default function GanadaSection() {
   const t = useTranslations("GanadaSection");
+  const tAlt = useTranslations("Alt");
 
   const { ref: textRef, isInView: textInView } = useAnimateInView();
   const { ref: imageRef, isInView: imageInView } = useAnimateInView();
@@ -64,13 +65,13 @@ export default function GanadaSection() {
         >
           <Image
             src={ganadaMockupDesktopImg}
-            alt=""
+            alt={tAlt("ganadaPreview")}
             sizes="(max-width: 768px) 1px, 545px"
             className={styles.mockupDesktop}
           />
           <Image
             src={ganadaMockupMobileImg}
-            alt=""
+            alt={tAlt("ganadaPreview")}
             sizes="(max-width: 768px) 100vw, 1px"
             className={styles.mockupMobile}
           />

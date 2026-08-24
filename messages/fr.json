@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "Aller au contenu principal"
   },
+  "Alt": {
+    "appPreview": "Écran de l'application Hangyul pour pratiquer le coréen à l'oral",
+    "membershipPreview": "Formules d'abonnement Premium de Hangyul",
+    "ganadaPreview": "Écran Hangyul Ganada pour écrire les lettres coréennes à la main"
+  },
   "Header": {
     "nav": {
       "why": "Pourquoi Hangyul ?",

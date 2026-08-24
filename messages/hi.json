@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "मुख्य सामग्री पर जाएँ"
   },
+  "Alt": {
+    "appPreview": "कोरियन बोलने के अभ्यास के लिए Hangyul ऐप की स्क्रीन",
+    "membershipPreview": "Hangyul प्रीमियम मेंबरशिप प्लान",
+    "ganadaPreview": "हाथ से कोरियन अक्षर लिखने की Hangyul Ganada स्क्रीन"
+  },
   "Header": {
     "nav": {
       "why": "Hangyul ही क्यों?",

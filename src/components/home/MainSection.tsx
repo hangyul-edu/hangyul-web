@@ -12,8 +12,12 @@ import { useLocale, useTranslations } from "next-intl";
 import { getLocaleImages } from "@/constants/images";
 import StoreButton from "@/components/common/StoreButton";
 
+/** 슬로건 이미지에 실제로 쓰여 있는 문구 (모든 로케일 공통 영문 그래픽) */
+const HERO_SLOGAN = "When life gives you a tangerine, Talk Hangyul.";
+
 export default function MainSection() {
   const t = useTranslations("MainSection");
+  const tAlt = useTranslations("Alt");
   const locale = useLocale();
   const mockupImg = getLocaleImages(locale).mockup;
 
@@ -32,25 +36,27 @@ export default function MainSection() {
       <div className={styles.content}>
         <div className={styles.leftSection}>
           <div className={styles.textGroup}>
-            <div className={styles.sloganDesktop}>
+            {/*
+              히어로 슬로건 이미지가 페이지의 대표 제목이므로 h1으로 감쌉니다.
+              alt에는 이미지에 실제로 적혀 있는 문구를 그대로 넣습니다.
+              (데스크탑/모바일 중 한 쪽만 렌더링되므로 alt는 동일합니다.)
+            */}
+            <h1 className={styles.slogan}>
               <Image
                 src={sloganDesktopIcon}
-                alt="HanGyul Slogan Desktop"
+                alt={HERO_SLOGAN}
                 width={594}
                 height={240}
-                style={{ width: "100%", height: "auto" }}
+                className={styles.sloganDesktop}
               />
-            </div>
-
-            <div className={styles.sloganMobile}>
               <Image
                 src={sloganMobileIcon}
-                alt="HanGyul Slogan Mobile"
+                alt={HERO_SLOGAN}
                 width={262}
                 height={105}
-                style={{ width: "100%", height: "auto" }}
+                className={styles.sloganMobile}
               />
-            </div>
+            </h1>
 
             <p className={styles.description}>{t("description")}</p>
           </div>
@@ -72,9 +78,10 @@ export default function MainSection() {
         <div className={styles.mockupWrapper}>
           <Image
             src={mockupImg}
-            alt=""
+            alt={tAlt("appPreview")}
             width={522}
             height={628}
+            priority
             sizes="(max-width: 768px) 320px, 522px"
             style={{ width: "100%", height: "auto" }}
           />

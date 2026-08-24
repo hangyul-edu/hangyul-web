@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "本文へスキップ"
   },
+  "Alt": {
+    "appPreview": "韓国語のスピーキング練習ができるHangyulアプリの画面",
+    "membershipPreview": "Hangyulのプレミアム会員プラン画面",
+    "ganadaPreview": "ハングルを手で書いて学ぶHangyul Ganadaの画面"
+  },
   "Header": {
     "nav": {
       "why": "なぜHangyul？",

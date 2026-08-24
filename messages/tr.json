@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "Ana içeriğe geç"
   },
+  "Alt": {
+    "appPreview": "Korece konuşma pratiği için Hangyul uygulama ekranı",
+    "membershipPreview": "Hangyul Premium üyelik planları",
+    "ganadaPreview": "Korece harfleri elle yazmak için Hangyul Ganada ekranı"
+  },
   "Header": {
     "nav": {
       "why": "Neden Hangyul?",

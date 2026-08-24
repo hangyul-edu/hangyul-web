@@ -17,6 +17,7 @@ interface Props {
 
 export default function Pricing({ id }: Props) {
   const t = useTranslations("Pricing");
+  const tAlt = useTranslations("Alt");
   const locale = useLocale();
   const priceImg = getLocaleImages(locale).pricing;
 
@@ -37,7 +38,7 @@ export default function Pricing({ id }: Props) {
             >
               <Image
                 src={priceImg}
-                alt=""
+                alt={tAlt("membershipPreview")}
                 width={640}
                 height={480}
                 style={{ width: "100%", height: "auto" }}
@@ -52,7 +53,7 @@ export default function Pricing({ id }: Props) {
               animate={textInView ? "visible" : "hidden"}
             >
               <span className={styles.category}>{t("category")}</span>
-              <h3 className={styles.featureTitle}>{t("title")}</h3>
+              <h2 className={styles.featureTitle}>{t("title")}</h2>
               <p className={styles.description}>
                 {t.rich("description", {
                   mobileBr: () => <br className={styles.mobileBr} />,

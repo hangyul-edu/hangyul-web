@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "Μετάβαση στο κύριο περιεχόμενο"
   },
+  "Alt": {
+    "appPreview": "Οθόνη της εφαρμογής Hangyul για εξάσκηση στα προφορικά κορεατικά",
+    "membershipPreview": "Πακέτα συνδρομής Premium του Hangyul",
+    "ganadaPreview": "Οθόνη Hangyul Ganada για γραφή κορεατικών γραμμάτων στο χέρι"
+  },
   "Header": {
     "nav": {
       "why": "Γιατί Hangyul;",

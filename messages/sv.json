@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "Hoppa till huvudinnehållet"
   },
+  "Alt": {
+    "appPreview": "Skärm i Hangyul-appen för att öva på att tala koreanska",
+    "membershipPreview": "Hangyuls premiummedlemskap och planer",
+    "ganadaPreview": "Hangyul Ganada-skärm för att skriva koreanska bokstäver för hand"
+  },
   "Header": {
     "nav": {
       "why": "Varför Hangyul?",

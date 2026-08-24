@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "Негізгі мазмұнға өту"
   },
+  "Alt": {
+    "appPreview": "Корей тілінде сөйлеуді жаттықтыруға арналған Hangyul қолданбасының экраны",
+    "membershipPreview": "Hangyul премиум мүшелік жоспарлары",
+    "ganadaPreview": "Корей әріптерін қолмен жазуға арналған Hangyul Ganada экраны"
+  },
   "Header": {
     "nav": {
       "why": "Неге Hangyul?",

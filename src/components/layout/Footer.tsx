@@ -6,6 +6,7 @@ import Image from "next/image";
 import { logoIcon } from "@/assets/icons";
 import { useLocale, useTranslations } from "next-intl";
 import LegalModal from "@/components/common/LegalModal";
+import { getBrandName } from "@/constants/site";
 import {
   loadLegalDocument,
   type LegalDocument,
@@ -102,7 +103,7 @@ export default function Footer() {
           <Image
             className={styles.logo}
             src={logoIcon}
-            alt="HanGyul Logo"
+            alt={getBrandName(locale)}
             width={133}
             height={28}
           />

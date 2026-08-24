@@ -13,6 +13,7 @@ import {
   getLocaleSearchTokens,
   normalizeSearchText,
 } from "@/constants/locales";
+import { getBrandName } from "@/constants/site";
 import {
   chevronDownIcon,
   chevronUpIcon,
@@ -153,7 +154,7 @@ export default function Header() {
         >
           <Image
             src={logoIcon}
-            alt="HanGyul Logo"
+            alt={getBrandName(locale)}
             width={151}
             height={32}
             className={styles.logo}

@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "ప్రధాన కంటెంట్‌కు వెళ్లండి"
   },
+  "Alt": {
+    "appPreview": "కొరియన్ మాట్లాడే సాధన కోసం Hangyul యాప్ స్క్రీన్",
+    "membershipPreview": "Hangyul ప్రీమియం మెంబర్‌షిప్ ప్లాన్‌లు",
+    "ganadaPreview": "కొరియన్ అక్షరాలను చేత్తో రాసే Hangyul Ganada స్క్రీన్"
+  },
   "Header": {
     "nav": {
       "why": "Hangyul ఎందుకు?",

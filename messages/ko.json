@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "본문 바로가기"
   },
+  "Alt": {
+    "appPreview": "한귤 앱의 한국어 말하기 학습 화면",
+    "membershipPreview": "한귤 프리미엄 멤버십 플랜 화면",
+    "ganadaPreview": "손으로 한글을 써보는 한귤 가나다 학습 화면"
+  },
   "Header": {
     "nav": {
       "why": "Why 한귤?",

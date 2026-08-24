@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "Ugrás a fő tartalomra"
   },
+  "Alt": {
+    "appPreview": "A Hangyul alkalmazás képernyője a koreai beszédgyakorláshoz",
+    "membershipPreview": "A Hangyul prémium tagsági csomagjai",
+    "ganadaPreview": "Hangyul Ganada képernyő a koreai betűk kézzel írásához"
+  },
   "Header": {
     "nav": {
       "why": "Miért a Hangyul?",

@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "跳到主要内容"
   },
+  "Alt": {
+    "appPreview": "Hangyul 应用的韩语口语练习界面",
+    "membershipPreview": "Hangyul 高级会员方案界面",
+    "ganadaPreview": "用手书写韩文字母的 Hangyul Ganada 界面"
+  },
   "Header": {
     "nav": {
       "why": "为什么选 Hangyul？",

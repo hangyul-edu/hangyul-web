@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "Sari la conținutul principal"
   },
+  "Alt": {
+    "appPreview": "Ecranul aplicației Hangyul pentru exersarea vorbirii în coreeană",
+    "membershipPreview": "Planurile de abonament Premium Hangyul",
+    "ganadaPreview": "Ecranul Hangyul Ganada pentru scrierea de mână a literelor coreene"
+  },
   "Header": {
     "nav": {
       "why": "De ce Hangyul?",

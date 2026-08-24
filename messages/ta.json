@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "முதன்மை உள்ளடக்கத்திற்குச் செல்லவும்"
   },
+  "Alt": {
+    "appPreview": "கொரிய பேச்சுப் பயிற்சிக்கான Hangyul செயலியின் திரை",
+    "membershipPreview": "Hangyul பிரீமியம் உறுப்பினர் திட்டங்கள்",
+    "ganadaPreview": "கொரிய எழுத்துகளைக் கையால் எழுதும் Hangyul Ganada திரை"
+  },
   "Header": {
     "nav": {
       "why": "ஏன் Hangyul?",

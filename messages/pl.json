@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "Przejdź do treści głównej"
   },
+  "Alt": {
+    "appPreview": "Ekran aplikacji Hangyul do ćwiczenia mówienia po koreańsku",
+    "membershipPreview": "Plany członkostwa Premium w Hangyul",
+    "ganadaPreview": "Ekran Hangyul Ganada do ręcznego pisania koreańskich liter"
+  },
   "Header": {
     "nav": {
       "why": "Dlaczego Hangyul?",

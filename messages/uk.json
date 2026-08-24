@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "Перейти до основного вмісту"
   },
+  "Alt": {
+    "appPreview": "Екран застосунку Hangyul для практики розмовної корейської",
+    "membershipPreview": "Тарифи преміум-підписки Hangyul",
+    "ganadaPreview": "Екран Hangyul Ganada для написання корейських літер від руки"
+  },
   "Header": {
     "nav": {
       "why": "Чому Hangyul?",

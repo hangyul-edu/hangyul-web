@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "Přejít k hlavnímu obsahu"
   },
+  "Alt": {
+    "appPreview": "Obrazovka aplikace Hangyul pro nácvik mluvené korejštiny",
+    "membershipPreview": "Tarify prémiového členství Hangyul",
+    "ganadaPreview": "Obrazovka Hangyul Ganada pro psaní korejských písmen rukou"
+  },
   "Header": {
     "nav": {
       "why": "Proč Hangyul?",

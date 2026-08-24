@@ -15,44 +15,45 @@ export type LocaleMeta = {
 
 export const LOCALE_META: Record<string, LocaleMeta> = {
   en: {
-    title: "Hangyul - AI Korean Learning App | Speak Korean with AI",
+    title: "Hangyul (한귤) | AI Korean Learning App for Speaking & TOPIK",
     description:
-      "Speak Korean naturally with fun, AI-powered lessons made for real conversations.",
+      "Hangyul (한귤) is an AI Korean learning app for speaking practice, pronunciation feedback, personalized learning, and TOPIK preparation.",
     keywords: [
+      "Hangyul",
+      "한귤",
       "AI Korean learning",
       "learn Korean",
       "speak Korean",
       "Korean language app",
       "Korean speaking practice",
       "AI pronunciation training",
-      "Korean learning app",
-      "Korean speaking AI",
-      "Korean study online",
+      "TOPIK preparation",
       "Talk Hangyul",
     ],
-    ogTitle: "Hangyul - Speak Korean Naturally with AI",
+    ogTitle: "Hangyul (한귤) | AI Korean Learning App",
     ogDescription:
       "Learn Korean with AI. Hangyul helps you practice pronunciation, learn real Korean sentences, and build speaking confidence through personalized AI feedback.",
     ogLocale: "en_US",
   },
   ko: {
-    title: "한귤 | AI와 함께 자연스럽게 말하는 한국어",
-    description: "AI와 함께 말하면서 배우는 쉽고 재미있는 한국어 학습 플랫폼",
+    title: "한귤(HANGYUL) | AI 한국어 학습 앱 · 한국어 회화 · TOPIK",
+    description:
+      "한귤(HANGYUL)은 외국인을 위한 AI 한국어 학습 서비스입니다. 한국어 회화, 발음 피드백, 맞춤 문장 학습, TOPIK 대비를 한곳에서 시작하세요.",
     keywords: [
+      "한귤",
+      "HANGYUL",
+      "한귤 앱",
+      "한귤 한국어",
       "AI 한국어 학습",
       "한국어 회화 앱",
       "한국어 말하기 연습",
       "AI 발음 교정",
-      "한국어 공부 앱",
-      "한국어 학습 플랫폼",
-      "한국어 회화 연습",
-      "한국어 AI 튜터",
-      "한국어 공부 온라인",
+      "TOPIK 대비",
       "한귤 Hangyul",
     ],
-    ogTitle: "AI와 함께 배우는 한국어 회화, 한귤",
+    ogTitle: "한귤(HANGYUL) | AI 한국어 학습 앱",
     ogDescription:
-      "AI 발음 분석과 개인 맞춤 학습으로 한국어를 자연스럽게 말해보세요. 실제 한국어 문장을 연습하며 말하기 자신감을 키울 수 있습니다.",
+      "한귤(HANGYUL)은 외국인을 위한 AI 한국어 학습 서비스입니다. AI 발음 분석과 개인 맞춤 학습으로 한국어 회화를 연습하고 TOPIK까지 대비하세요.",
     ogLocale: "ko_KR",
   },
   ar: {
@@ -95,7 +96,8 @@ export const LOCALE_META: Record<string, LocaleMeta> = {
   },
   zh: {
     title: "Hangyul | AI 韩语学习应用，开口说韩语",
-    description: "用有趣的 AI 课程练习真实对话，自然而然地开口说韩语。",
+    description:
+      "Hangyul（한귤）是面向外国学习者的 AI 韩语学习服务。用有趣的 AI 课程练习真实对话，纠正发音，并备考 TOPIK。",
     keywords: [
       "韩语学习",
       "学韩语",

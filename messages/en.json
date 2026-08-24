@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "Skip to main content"
   },
+  "Alt": {
+    "appPreview": "Hangyul app screen for Korean speaking practice",
+    "membershipPreview": "Hangyul premium membership plans",
+    "ganadaPreview": "Hangyul Ganada screen for writing Korean letters by hand"
+  },
   "Header": {
     "nav": {
       "why": "Why Hangyul?",

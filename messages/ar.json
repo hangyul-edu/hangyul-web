@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "تخطَّ إلى المحتوى الرئيسي"
   },
+  "Alt": {
+    "appPreview": "شاشة تطبيق Hangyul لممارسة التحدث بالكورية",
+    "membershipPreview": "خطط عضوية بريميوم في Hangyul",
+    "ganadaPreview": "شاشة Hangyul Ganada لكتابة الحروف الكورية بخط اليد"
+  },
   "Header": {
     "nav": {
       "why": "لماذا Hangyul؟",

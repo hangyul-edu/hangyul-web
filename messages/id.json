@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "Lompat ke konten utama"
   },
+  "Alt": {
+    "appPreview": "Layar aplikasi Hangyul untuk latihan berbicara bahasa Korea",
+    "membershipPreview": "Paket keanggotaan Premium Hangyul",
+    "ganadaPreview": "Layar Hangyul Ganada untuk menulis huruf Korea dengan tangan"
+  },
   "Header": {
     "nav": {
       "why": "Kenapa Hangyul?",

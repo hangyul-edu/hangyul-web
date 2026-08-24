@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "Lumaktaw sa pangunahing nilalaman"
   },
+  "Alt": {
+    "appPreview": "Screen ng Hangyul app para sa pagsasanay sa pagsasalita ng Korean",
+    "membershipPreview": "Mga Premium membership plan ng Hangyul",
+    "ganadaPreview": "Screen ng Hangyul Ganada para sulatin ang mga letrang Korean gamit ang kamay"
+  },
   "Header": {
     "nav": {
       "why": "Bakit Hangyul?",

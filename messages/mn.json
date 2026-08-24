@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "Үндсэн агуулга руу очих"
   },
+  "Alt": {
+    "appPreview": "Солонгосоор ярих дадлага хийх Hangyul аппын дэлгэц",
+    "membershipPreview": "Hangyul-ийн Premium гишүүнчлэлийн багцууд",
+    "ganadaPreview": "Солонгос үсгийг гараар бичих Hangyul Ganada дэлгэц"
+  },
   "Header": {
     "nav": {
       "why": "Яагаад Hangyul?",

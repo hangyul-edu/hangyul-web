@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "Ga naar de hoofdinhoud"
   },
+  "Alt": {
+    "appPreview": "Scherm van de Hangyul-app om Koreaans te leren spreken",
+    "membershipPreview": "Premium-lidmaatschapsplannen van Hangyul",
+    "ganadaPreview": "Hangyul Ganada-scherm om Koreaanse letters met de hand te schrijven"
+  },
   "Header": {
     "nav": {
       "why": "Waarom Hangyul?",

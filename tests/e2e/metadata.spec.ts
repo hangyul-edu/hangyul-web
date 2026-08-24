@@ -17,7 +17,7 @@ test.describe("OG Metadata", () => {
       .locator('meta[property="og:locale"]')
       .getAttribute("content");
 
-    expect(ogTitle).toBe("AI와 함께 배우는 한국어 회화, 한귤");
+    expect(ogTitle).toBe("한귤(HANGYUL) | AI 한국어 학습 앱");
     expect(ogDescription).toContain("AI 발음 분석");
     expect(ogImage).toContain("talkhangyul.com");
     expect(ogImage).not.toContain("localhost");
@@ -86,4 +86,48 @@ test.describe("OG Metadata", () => {
     );
   });
 
+});
+
+test.describe("브랜드 엔티티 구조화 데이터", () => {
+  test("/ko - WebSite/Organization JSON-LD가 초기 HTML에 포함", async ({
+    page,
+  }) => {
+    const response = await page.goto("/ko");
+    const html = (await response?.text()) ?? "";
+
+    // 클라이언트 렌더링이 아니라 서버가 내려준 HTML에 들어 있어야 한다.
+    expect(html).toContain('type="application/ld+json"');
+
+    const raw = await page
+      .locator('script[type="application/ld+json"]')
+      .first()
+      .textContent();
+    const graph = JSON.parse(raw ?? "{}")["@graph"];
+
+    const website = graph.find((n: { "@type": string }) => n["@type"] === "WebSite");
+    expect(website.name).toBe("Hangyul");
+    expect(website.url).toBe("https://www.talkhangyul.com/");
+    expect(website.alternateName).toEqual(
+      expect.arrayContaining(["한귤", "HANGYUL", "HanGyul", "talkhangyul.com"])
+    );
+
+    const org = graph.find(
+      (n: { "@type": string }) => n["@type"] === "Organization"
+    );
+    expect(org.name).toBe("Hangyul");
+    expect(org.alternateName).toEqual(expect.arrayContaining(["한귤"]));
+  });
+
+  test("/en - 홈페이지에 h1이 하나 존재", async ({ page }) => {
+    await page.goto("/en");
+    await expect(page.locator("h1")).toHaveCount(1);
+  });
+
+  test("noindex가 걸려 있지 않음", async ({ page }) => {
+    await page.goto("/ko");
+    const robots = await page
+      .locator('meta[name="robots"]')
+      .getAttribute("content");
+    expect(robots ?? "").not.toContain("noindex");
+  });
 });

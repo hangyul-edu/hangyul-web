@@ -72,6 +72,11 @@
   "A11y": {
     "skipToContent": "Asosiy kontentga oʻtish"
   },
+  "Alt": {
+    "appPreview": "Koreys tilida gapirishni mashq qilish uchun Hangyul ilovasi ekrani",
+    "membershipPreview": "Hangyul Premium aʼzolik rejalari",
+    "ganadaPreview": "Koreys harflarini qoʻlda yozish uchun Hangyul Ganada ekrani"
+  },
   "Header": {
     "nav": {
       "why": "Nega Hangyul?",
