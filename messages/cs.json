@@ -52,6 +52,12 @@
     "description": "Přidejte se k milionům studentů po celém světě <mobileBr></mobileBr>a nenechte korejštinu ležet na papíře – <mobileBr></mobileBr>ať ožije ve vašem hlase.\nZačít můžete zdarma.",
     "button": "Začít hned"
   },
+  "GanadaSection": {
+    "category": "O krok snazší začátek",
+    "title": "Teprve začínáte s korejštinou?\n<highlight>Hangyul Ganada</highlight>",
+    "description": "Od písmen až po slovní zásobu, hned od začátku správně.\nJen číst nestačí, hangul si osvojíte psaním vlastní rukou.\nS Hangyul Ganada si vybudujete pevné základy.",
+    "button": "Začít s Hangyul Ganada"
+  },
   "StoreButton": {
     "comingSoon": "Spuštění 31. srpna 2026."
   },

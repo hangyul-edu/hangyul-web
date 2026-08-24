@@ -52,6 +52,12 @@
     "description": "Únete a millones de estudiantes de todo el mundo <mobileBr></mobileBr>y haz que el coreano no se quede en el papel, <mobileBr></mobileBr>sino que cobre vida en tu voz.\nPuedes empezar gratis ahora mismo.",
     "button": "Empieza ya"
   },
+  "GanadaSection": {
+    "category": "Un comienzo más fácil",
+    "title": "¿Acabas de empezar con el coreano?\n<highlight>Hangyul Ganada</highlight>",
+    "description": "De las letras al vocabulario, empezando bien desde el principio.\nLeer no basta, aprende el hangul escribiéndolo con tu propia mano.\nConstruye una base sólida con Hangyul Ganada.",
+    "button": "Empezar Hangyul Ganada"
+  },
   "StoreButton": {
     "comingSoon": "Lanzamiento el 31 de agosto de 2026."
   },

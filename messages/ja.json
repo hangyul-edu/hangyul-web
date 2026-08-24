@@ -52,6 +52,12 @@
     "description": "世界中の数百万人の学習者と一緒に、<mobileBr></mobileBr>学んだ韓国語がそのまま口から出てくる <mobileBr></mobileBr>学習を体験してみてください。\n今すぐ無料で始められます。",
     "button": "今すぐ始める"
   },
+  "GanadaSection": {
+    "category": "もう一歩やさしいスタート",
+    "title": "韓国語の勉強を始めたばかりなら\n<highlight>Hangyul Ganada</highlight>",
+    "description": "文字から語彙まで、最初のひと針からしっかりと。\n読むだけでは足りなかったハングルを、手で書きながら覚えます。\nHangyul Ganadaで確かな基礎を身につけましょう。",
+    "button": "Hangyul Ganadaを始める"
+  },
   "StoreButton": {
     "comingSoon": "2026年8月31日リリース予定です。"
   },

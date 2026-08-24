@@ -52,6 +52,12 @@
     "description": "전 세계 수백만 한국어 학습자들과 함께, <mobileBr></mobileBr>배운 한국어가 내 입에서 바로 나오는 <mobileBr></mobileBr>학습을 경험해보세요.\n지금 무료로 시작할 수 있습니다.",
     "button": "지금 시작하기"
   },
+  "GanadaSection": {
+    "category": "한 걸음 더 쉬운 시작",
+    "title": "한국어 공부, 이제 막 시작한다면\n<highlight>한귤 가나다</highlight>",
+    "description": "글자부터 어휘까지, 첫 단추부터 제대로.\n읽기만으론 부족했던 한글, 손으로 직접 써보며 익혀요.\n한귤 가나다로 탄탄한 기초를 잡으세요.",
+    "button": "한귤 가나다 시작하기"
+  },
   "StoreButton": {
     "comingSoon": "2026년 8월 31일 런칭 예정입니다."
   },

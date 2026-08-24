@@ -52,6 +52,12 @@
     "description": "Dünyadaki milyonlarca öğrenene katıl <mobileBr></mobileBr>ve Korece kâğıtta kalmasın, <mobileBr></mobileBr>senin sesinde hayat bulsun.\nHemen ücretsiz başlayabilirsin.",
     "button": "Hemen başla"
   },
+  "GanadaSection": {
+    "category": "Bir adım daha kolay başlangıç",
+    "title": "Koreceye yeni mi başladın?\n<highlight>Hangyul Ganada</highlight>",
+    "description": "Harflerden kelimelere, daha ilk adımda doğru şekilde.\nSadece okumak yetmez, hangıl'ı kendi elinle yazarak öğren.\nHangyul Ganada ile sağlam bir temel at.",
+    "button": "Hangyul Ganada'yı başlat"
+  },
   "StoreButton": {
     "comingSoon": "31 Ağustos 2026'da yayınlanıyor."
   },

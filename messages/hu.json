@@ -52,6 +52,12 @@
     "description": "Csatlakozz a világ több millió nyelvtanulójához, <mobileBr></mobileBr>és ne hagyd, hogy a koreai a papíron maradjon – <mobileBr></mobileBr>keljen életre a saját hangodon.\nMost ingyen elkezdheted.",
     "button": "Kezdd el most"
   },
+  "GanadaSection": {
+    "category": "Egy lépéssel könnyebb kezdés",
+    "title": "Most kezdted a koreait?\n<highlight>Hangyul Ganada</highlight>",
+    "description": "A betűktől a szókincsig, mindjárt jól kezdve.\nAz olvasás önmagában kevés, a hangult saját kezeddel írva sajátítod el.\nÉpíts szilárd alapokat a Hangyul Ganadával.",
+    "button": "Hangyul Ganada indítása"
+  },
   "StoreButton": {
     "comingSoon": "Megjelenés: 2026. augusztus 31."
   },

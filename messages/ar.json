@@ -52,6 +52,12 @@
     "description": "انضم إلى ملايين المتعلّمين حول العالم، <mobileBr></mobileBr>ولا تدع الكورية حبيسة الورق، <mobileBr></mobileBr>بل اجعلها تنبض في صوتك.\nيمكنك البدء مجانًا الآن.",
     "button": "ابدأ الآن"
   },
+  "GanadaSection": {
+    "category": "بداية أسهل بخطوة",
+    "title": "هل بدأت للتوّ تعلّم الكورية؟\n<highlight>Hangyul Ganada</highlight>",
+    "description": "من الحروف إلى المفردات، ابدأ بالشكل الصحيح.\nالقراءة وحدها لا تكفي، اكتب الهانغول بيدك لتتقنه.\nابنِ أساسًا متينًا مع Hangyul Ganada.",
+    "button": "ابدأ مع Hangyul Ganada"
+  },
   "StoreButton": {
     "comingSoon": "الإطلاق في 31 أغسطس 2026."
   },

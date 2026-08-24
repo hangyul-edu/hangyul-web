@@ -52,6 +52,12 @@
     "description": "Cùng hàng triệu người học trên thế giới, <mobileBr></mobileBr>hãy để tiếng Hàn không nằm yên trên trang sách <mobileBr></mobileBr>mà bật thành tiếng nói của bạn.\nBắt đầu miễn phí ngay hôm nay.",
     "button": "Bắt đầu ngay"
   },
+  "GanadaSection": {
+    "category": "Khởi đầu dễ hơn một bước",
+    "title": "Bạn vừa bắt đầu học tiếng Hàn?\n<highlight>Hangyul Ganada</highlight>",
+    "description": "Từ chữ cái đến từ vựng, đi đúng ngay từ bước đầu.\nChỉ đọc thôi là chưa đủ, hãy tự tay viết để nhớ hangeul.\nXây nền tảng vững chắc cùng Hangyul Ganada.",
+    "button": "Bắt đầu Hangyul Ganada"
+  },
   "StoreButton": {
     "comingSoon": "Dự kiến ra mắt ngày 31 tháng 8 năm 2026."
   },

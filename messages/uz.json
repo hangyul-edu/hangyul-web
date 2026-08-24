@@ -52,6 +52,12 @@
     "description": "Dunyodagi millionlab oʻrganuvchilarga qoʻshiling <mobileBr></mobileBr>va koreys tili qogʻozda qolib ketmasin, <mobileBr></mobileBr>sizning ovozingizda jonlansin.\nHoziroq bepul boshlashingiz mumkin.",
     "button": "Hoziroq boshlash"
   },
+  "GanadaSection": {
+    "category": "Bir qadam osonroq boshlanish",
+    "title": "Koreys tilini endigina boshladingizmi?\n<highlight>Hangyul Ganada</highlight>",
+    "description": "Harflardan lugʻatgacha, ilk qadamdanoq toʻgʻri.\nFaqat oʻqish yetarli emas, hangulni oʻz qoʻlingiz bilan yozib oʻrganing.\nHangyul Ganada bilan mustahkam poydevor quring.",
+    "button": "Hangyul Ganada'ni boshlash"
+  },
   "StoreButton": {
     "comingSoon": "2026-yil 31-avgustda ishga tushadi."
   },

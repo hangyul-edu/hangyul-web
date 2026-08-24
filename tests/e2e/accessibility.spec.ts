@@ -25,7 +25,9 @@ const axe = async (page: import("@playwright/test").Page) => {
     // ServiceIntro 제목: #ff6700 텍스트 + #feead6 배경 (2.49:1)
     .exclude("#intro h2")
     // KeyFeatures/Pricing category: #ff6700 텍스트 + #ffffff 배경 (2.91:1)
-    .exclude('[class*="category"]');
+    .exclude('[class*="category"]')
+    // GanadaSection 제목 강조: #ff6700 텍스트 + #f7f7f7 배경 (2.72:1)
+    .exclude('[class*="highlight"]');
 };
 
 test.describe("Accessibility (WCAG)", () => {

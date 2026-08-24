@@ -52,6 +52,12 @@
     "description": "Bersama jutaan pelajar bahasa Korea di dunia, <mobileBr></mobileBr>rasakan belajar yang membuat bahasa Korea <mobileBr></mobileBr>langsung keluar dari mulutmu.\nMulai gratis sekarang juga.",
     "button": "Mulai sekarang"
   },
+  "GanadaSection": {
+    "category": "Awal yang lebih mudah",
+    "title": "Baru mulai belajar bahasa Korea?\n<highlight>Hangyul Ganada</highlight>",
+    "description": "Dari huruf sampai kosakata, mulailah dengan cara yang benar.\nMembaca saja tidak cukup, pelajari hangul dengan menulisnya sendiri.\nBangun dasar yang kuat bersama Hangyul Ganada.",
+    "button": "Mulai Hangyul Ganada"
+  },
   "StoreButton": {
     "comingSoon": "Akan diluncurkan pada 31 Agustus 2026."
   },

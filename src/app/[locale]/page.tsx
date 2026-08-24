@@ -6,6 +6,7 @@ import ServiceIntro from "@/components/home/ServiceIntro";
 import KeyFeatures from "@/components/home/KeyFeatures";
 import Pricing from "@/components/home/Pricing";
 import CtaSection from "@/components/home/CtaSection";
+import GanadaSection from "@/components/home/GanadaSection";
 
 export default function Home({
   params,
@@ -23,6 +24,7 @@ export default function Home({
       <KeyFeatures id="features" />
       <Pricing id="pricing" />
       <CtaSection />
+      <GanadaSection />
     </main>
   );
 }

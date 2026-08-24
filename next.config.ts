@@ -2,6 +2,9 @@ import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
 const nextConfig: NextConfig = {
+  // 개발 서버 좌측 하단에 뜨는 Next.js 개발 도구 인디케이터를 표시하지 않습니다.
+  devIndicators: false,
+
   async headers() {
     return [
       {

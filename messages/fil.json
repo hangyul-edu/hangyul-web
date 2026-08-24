@@ -52,6 +52,12 @@
     "description": "Sumali sa milyun-milyong nag-aaral sa buong mundo <mobileBr></mobileBr>at huwag hayaang manatili sa papel ang Korean, <mobileBr></mobileBr>hayaan itong mabuhay sa boses mo.\nPuwede kang magsimula nang libre ngayon.",
     "button": "Magsimula na"
   },
+  "GanadaSection": {
+    "category": "Isang hakbang na mas madaling simula",
+    "title": "Kasisimula mo pa lang sa Korean?\n<highlight>Hangyul Ganada</highlight>",
+    "description": "Mula sa mga letra hanggang bokabularyo, tama agad ang simula.\nHindi sapat ang basahin lang, isulat mo mismo ang hangul para tumatak.\nBumuo ng matibay na pundasyon kasama ang Hangyul Ganada.",
+    "button": "Simulan ang Hangyul Ganada"
+  },
   "StoreButton": {
     "comingSoon": "Ilulunsad sa Agosto 31, 2026."
   },

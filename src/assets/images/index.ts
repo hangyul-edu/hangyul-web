@@ -11,3 +11,5 @@ export { default as feature2EnImg } from "./feature2-en.png";
 export { default as feature2KoImg } from "./feature2-ko.png";
 export { default as feature3EnImg } from "./feature3-en.png";
 export { default as feature3KoImg } from "./feature3-ko.png";
+export { default as ganadaMockupDesktopImg } from "./ganada-mockup-desktop.webp";
+export { default as ganadaMockupMobileImg } from "./ganada-mockup-mobile.webp";

@@ -52,6 +52,12 @@
     "description": "Alătură-te milioanelor de cursanți din toată lumea <mobileBr></mobileBr>și lasă coreeana să nu rămână pe hârtie, <mobileBr></mobileBr>ci să prindă viață în vocea ta.\nPoți începe gratuit chiar acum.",
     "button": "Începe acum"
   },
+  "GanadaSection": {
+    "category": "Un început mai ușor",
+    "title": "Abia ai început coreeana?\n<highlight>Hangyul Ganada</highlight>",
+    "description": "De la litere la vocabular, corect chiar de la primul pas.\nCititul singur nu ajunge, învață hangul scriindu-l cu mâna ta.\nConstruiește baze solide cu Hangyul Ganada.",
+    "button": "Începe Hangyul Ganada"
+  },
   "StoreButton": {
     "comingSoon": "Lansare pe 31 august 2026."
   },

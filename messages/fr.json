@@ -52,6 +52,12 @@
     "description": "Rejoignez des millions d’apprenants dans le monde <mobileBr></mobileBr>et faites sortir le coréen des pages <mobileBr></mobileBr>pour le faire vivre dans votre voix.\nC’est gratuit pour commencer.",
     "button": "Commencer"
   },
+  "GanadaSection": {
+    "category": "Un début plus facile",
+    "title": "Vous débutez en coréen ?\n<highlight>Hangyul Ganada</highlight>",
+    "description": "Des lettres au vocabulaire, bien commencer dès le départ.\nLire ne suffit pas, apprenez le hangeul en l'écrivant de votre main.\nConstruisez des bases solides avec Hangyul Ganada.",
+    "button": "Commencer Hangyul Ganada"
+  },
   "StoreButton": {
     "comingSoon": "Lancement prévu le 31 août 2026."
   },

@@ -52,6 +52,12 @@
     "description": "Sluit je aan bij miljoenen leerders wereldwijd <mobileBr></mobileBr>en laat Koreaans niet op papier staan, <mobileBr></mobileBr>maar tot leven komen in jouw stem.\nJe kunt nu gratis beginnen.",
     "button": "Nu beginnen"
   },
+  "GanadaSection": {
+    "category": "Een stap makkelijker beginnen",
+    "title": "Net begonnen met Koreaans?\n<highlight>Hangyul Ganada</highlight>",
+    "description": "Van letters tot woordenschat, meteen goed beginnen.\nAlleen lezen is niet genoeg, leer hangul door het zelf te schrijven.\nLeg een stevige basis met Hangyul Ganada.",
+    "button": "Start met Hangyul Ganada"
+  },
   "StoreButton": {
     "comingSoon": "Lancering op 31 augustus 2026."
   },

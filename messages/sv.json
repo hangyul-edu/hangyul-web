@@ -52,6 +52,12 @@
     "description": "Gå med bland miljontals som lär sig koreanska världen över <mobileBr></mobileBr>och låt inte koreanskan stanna på pappret, <mobileBr></mobileBr>utan komma till liv i din röst.\nDu kan börja gratis nu.",
     "button": "Kom igång"
   },
+  "GanadaSection": {
+    "category": "En enklare start",
+    "title": "Har du precis börjat med koreanska?\n<highlight>Hangyul Ganada</highlight>",
+    "description": "Från bokstäver till ordförråd, rätt redan från början.\nAtt bara läsa räcker inte, lär dig hangul genom att skriva det för hand.\nBygg en stabil grund med Hangyul Ganada.",
+    "button": "Starta Hangyul Ganada"
+  },
   "StoreButton": {
     "comingSoon": "Lansering den 31 augusti 2026."
   },

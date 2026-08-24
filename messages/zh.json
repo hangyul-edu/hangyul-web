@@ -52,6 +52,12 @@
     "description": "和全球数百万韩语学习者一起，<mobileBr></mobileBr>体验学过的韩语能立刻 <mobileBr></mobileBr>脱口而出的学习方式。\n现在就能免费开始。",
     "button": "立即开始"
   },
+  "GanadaSection": {
+    "category": "更轻松的开始",
+    "title": "刚开始学韩语吗？\n<highlight>Hangyul Ganada</highlight>",
+    "description": "从字母到词汇，第一步就走对。\n只靠读还不够，用手写一写，把韩文真正记牢。\n用 Hangyul Ganada 打下扎实的基础。",
+    "button": "开始 Hangyul Ganada"
+  },
   "StoreButton": {
     "comingSoon": "预计于 2026 年 8 月 31 日上线。"
   },

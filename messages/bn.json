@@ -52,6 +52,12 @@
     "description": "বিশ্বজুড়ে লাখো শিক্ষার্থীর সঙ্গে যোগ দিন <mobileBr></mobileBr>আর কোরিয়ানকে কাগজে আটকে না রেখে <mobileBr></mobileBr>নিজের কণ্ঠে জীবন্ত করে তুলুন।\nএখনই বিনামূল্যে শুরু করতে পারেন।",
     "button": "শুরু করুন"
   },
+  "GanadaSection": {
+    "category": "আরও সহজ একটি শুরু",
+    "title": "কোরিয়ান শেখা সবে শুরু করেছেন?\n<highlight>Hangyul Ganada</highlight>",
+    "description": "অক্ষর থেকে শব্দভান্ডার, শুরুটা হোক একদম ঠিকঠাক।\nশুধু পড়ে হবে না, নিজের হাতে লিখে শিখুন হাঙ্গুল।\nHangyul Ganada দিয়ে গড়ে তুলুন মজবুত ভিত্তি।",
+    "button": "Hangyul Ganada শুরু করুন"
+  },
   "StoreButton": {
     "comingSoon": "৩১ আগস্ট ২০২৬-এ চালু হবে।"
   },
