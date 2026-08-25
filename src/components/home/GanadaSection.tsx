@@ -1,22 +1,25 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 
 import styles from "./GanadaSection.module.css";
 import { chevronRightIcon } from "@/assets/icons";
-import { ganadaMockupDesktopImg, ganadaMockupMobileImg } from "@/assets/images";
 import StoreButton from "@/components/common/StoreButton";
 import {
   fadeInLeftVariants,
   fadeInRightVariants,
 } from "@/constants/animations";
+import { getLocaleImages } from "@/constants/images";
 import { useAnimateInView } from "@/hooks/useAnimateInView";
 
 export default function GanadaSection() {
   const t = useTranslations("GanadaSection");
   const tAlt = useTranslations("Alt");
+
+  const locale = useLocale();
+  const images = getLocaleImages(locale);
 
   const { ref: textRef, isInView: textInView } = useAnimateInView();
   const { ref: imageRef, isInView: imageInView } = useAnimateInView();
@@ -64,13 +67,13 @@ export default function GanadaSection() {
           animate={imageInView ? "visible" : "hidden"}
         >
           <Image
-            src={ganadaMockupDesktopImg}
+            src={images.ganadaMockupDesktop}
             alt={tAlt("ganadaPreview")}
             sizes="(max-width: 768px) 1px, 545px"
             className={styles.mockupDesktop}
           />
           <Image
-            src={ganadaMockupMobileImg}
+            src={images.ganadaMockupMobile}
             alt={tAlt("ganadaPreview")}
             sizes="(max-width: 768px) 100vw, 1px"
             className={styles.mockupMobile}

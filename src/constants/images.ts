@@ -5,6 +5,10 @@ import {
   feature2KoImg,
   feature3EnImg,
   feature3KoImg,
+  ganadaMockupDesktopEnImg,
+  ganadaMockupDesktopKoImg,
+  ganadaMockupMobileEnImg,
+  ganadaMockupMobileKoImg,
   mockupEnImg,
   mockupKoImg,
   pricingEnImg,
@@ -18,6 +22,8 @@ export const IMAGES = {
     feature1: feature1EnImg,
     feature2: feature2EnImg,
     feature3: feature3EnImg,
+    ganadaMockupDesktop: ganadaMockupDesktopEnImg,
+    ganadaMockupMobile: ganadaMockupMobileEnImg,
   },
   ko: {
     mockup: mockupKoImg,
@@ -25,6 +31,8 @@ export const IMAGES = {
     feature1: feature1KoImg,
     feature2: feature2KoImg,
     feature3: feature3KoImg,
+    ganadaMockupDesktop: ganadaMockupDesktopKoImg,
+    ganadaMockupMobile: ganadaMockupMobileKoImg,
   },
 };
 
