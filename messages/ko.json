@@ -69,8 +69,12 @@
   "StoreSelectModal": {
     "title": "어떤 기기에서 시작할까요?",
     "description": "한귤 가나다를 사용할 기기를 선택해주세요.",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "androidLabel": "Android",
+    "androidStore": "Google Play에서 다운로드",
+    "androidAria": "Android용 한귤 가나다를 Google Play에서 다운로드",
+    "appleLabel": "iPhone",
+    "appleStore": "App Store에서 다운로드",
+    "appleAria": "iPhone용 한귤 가나다를 App Store에서 다운로드",
     "close": "닫기"
   },
   "QrModal": {

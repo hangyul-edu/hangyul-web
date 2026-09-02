@@ -67,10 +67,14 @@
     "close": "关闭"
   },
   "StoreSelectModal": {
-    "title": "选择你的设备",
-    "description": "请选择下载 Hangyul Ganada 的平台。",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "你使用的是哪种设备？",
+    "description": "请选择你的设备以下载 Hangyul Ganada。",
+    "androidLabel": "Android",
+    "androidStore": "在 Google Play 下载",
+    "androidAria": "在 Google Play 下载 Android 版 Hangyul Ganada",
+    "appleLabel": "iPhone",
+    "appleStore": "在 App Store 下载",
+    "appleAria": "在 App Store 下载 iPhone 版 Hangyul Ganada",
     "close": "关闭"
   },
   "QrModal": {

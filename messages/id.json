@@ -67,10 +67,14 @@
     "close": "Tutup"
   },
   "StoreSelectModal": {
-    "title": "Pilih perangkatmu",
-    "description": "Pilih tempat kamu ingin mengunduh Hangyul Ganada.",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "Perangkat apa yang kamu gunakan?",
+    "description": "Pilih perangkatmu untuk mengunduh Hangyul Ganada.",
+    "androidLabel": "Android",
+    "androidStore": "Unduh di Google Play",
+    "androidAria": "Unduh Hangyul Ganada untuk Android di Google Play",
+    "appleLabel": "iPhone",
+    "appleStore": "Unduh di App Store",
+    "appleAria": "Unduh Hangyul Ganada untuk iPhone di App Store",
     "close": "Tutup"
   },
   "QrModal": {

@@ -67,10 +67,14 @@
     "close": "Bezárás"
   },
   "StoreSelectModal": {
-    "title": "Válaszd ki az eszközödet",
-    "description": "Válaszd ki, honnan töltöd le a Hangyul Ganadát.",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "Milyen eszközt használsz?",
+    "description": "Válaszd ki az eszközödet a Hangyul Ganada letöltéséhez.",
+    "androidLabel": "Android",
+    "androidStore": "Letöltés a Google Play áruházból",
+    "androidAria": "A Hangyul Ganada letöltése Androidra a Google Play áruházból",
+    "appleLabel": "iPhone",
+    "appleStore": "Letöltés az App Store-ból",
+    "appleAria": "A Hangyul Ganada letöltése iPhone-ra az App Store-ból",
     "close": "Bezárás"
   },
   "QrModal": {

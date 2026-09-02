@@ -67,10 +67,14 @@
     "close": "閉じる"
   },
   "StoreSelectModal": {
-    "title": "デバイスを選択",
-    "description": "Hangyul Ganadaをダウンロードするストアを選んでください。",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "お使いのデバイスはどちらですか？",
+    "description": "Hangyul Ganadaをダウンロードするデバイスを選んでください。",
+    "androidLabel": "Android",
+    "androidStore": "Google Playでダウンロード",
+    "androidAria": "Android版Hangyul GanadaをGoogle Playでダウンロード",
+    "appleLabel": "iPhone",
+    "appleStore": "App Storeでダウンロード",
+    "appleAria": "iPhone版Hangyul GanadaをApp Storeでダウンロード",
     "close": "閉じる"
   },
   "QrModal": {

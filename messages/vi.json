@@ -67,10 +67,14 @@
     "close": "Đóng"
   },
   "StoreSelectModal": {
-    "title": "Chọn thiết bị của bạn",
-    "description": "Chọn nơi bạn muốn tải Hangyul Ganada.",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "Bạn đang dùng thiết bị nào?",
+    "description": "Chọn thiết bị của bạn để tải Hangyul Ganada.",
+    "androidLabel": "Android",
+    "androidStore": "Tải trên Google Play",
+    "androidAria": "Tải Hangyul Ganada cho Android trên Google Play",
+    "appleLabel": "iPhone",
+    "appleStore": "Tải trên App Store",
+    "appleAria": "Tải Hangyul Ganada cho iPhone trên App Store",
     "close": "Đóng"
   },
   "QrModal": {

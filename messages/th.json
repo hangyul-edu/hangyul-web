@@ -67,10 +67,14 @@
     "close": "ปิด"
   },
   "StoreSelectModal": {
-    "title": "เลือกอุปกรณ์ของคุณ",
-    "description": "เลือกช่องทางที่ต้องการดาวน์โหลด Hangyul Ganada",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "คุณใช้อุปกรณ์แบบไหน",
+    "description": "เลือกอุปกรณ์ของคุณเพื่อดาวน์โหลด Hangyul Ganada",
+    "androidLabel": "Android",
+    "androidStore": "ดาวน์โหลดจาก Google Play",
+    "androidAria": "ดาวน์โหลด Hangyul Ganada สำหรับ Android จาก Google Play",
+    "appleLabel": "iPhone",
+    "appleStore": "ดาวน์โหลดจาก App Store",
+    "appleAria": "ดาวน์โหลด Hangyul Ganada สำหรับ iPhone จาก App Store",
     "close": "ปิด"
   },
   "QrModal": {

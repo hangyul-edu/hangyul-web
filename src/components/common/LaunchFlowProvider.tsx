@@ -4,6 +4,7 @@ import { createContext, useCallback, useContext, useMemo, useState } from "react
 import { useTranslations } from "next-intl";
 
 import AppModal from "./AppModal";
+import DeviceChoiceList from "./DeviceChoiceList";
 import { detectDevice } from "@/hooks/useDeviceType";
 import { GANADA_STORE_LINKS, type StorePlatform } from "@/constants/storeLinks";
 
@@ -12,7 +13,7 @@ type ActiveModal = "launch" | "storeSelect" | null;
 interface LaunchFlow {
   /** 한귤 앱 "지금 시작하기": 10월 9일(한글날) 오픈 안내 모달 */
   openMainLaunchModal: () => void;
-  /** 한귤 가나다: 기기에 맞는 스토어로 이동 (데스크톱은 스토어 선택 모달) */
+  /** 한귤 가나다: 기기에 맞는 스토어로 이동 (데스크톱은 기기 선택 모달) */
   openHangyulGanada: () => void;
 }
 
@@ -53,7 +54,7 @@ export function LaunchFlowProvider({ children }: { children: React.ReactNode }) 
       return;
     }
 
-    // 데스크톱(Mac/Windows/기타): 사용자가 스토어를 직접 선택합니다.
+    // 데스크톱(Mac/Windows/기타): 사용자가 자신의 기기(Android / iPhone)를 직접 선택합니다.
     setActiveModal("storeSelect");
   }, []);
 
@@ -95,11 +96,26 @@ export function LaunchFlowProvider({ children }: { children: React.ReactNode }) 
           description={tStore("description")}
           onClose={close}
           iconCloseLabel={tStore("close")}
-          actions={[
-            { label: tStore("googlePlay"), onClick: () => selectStore("android") },
-            { label: tStore("appStore"), onClick: () => selectStore("ios") },
-          ]}
-        />
+        >
+          {/* 기기가 1차 선택지, 스토어는 보조 정보. 카드 전체가 버튼입니다. */}
+          <DeviceChoiceList
+            onSelect={selectStore}
+            choices={[
+              {
+                platform: "android",
+                label: tStore("androidLabel"),
+                store: tStore("androidStore"),
+                ariaLabel: tStore("androidAria"),
+              },
+              {
+                platform: "ios",
+                label: tStore("appleLabel"),
+                store: tStore("appleStore"),
+                ariaLabel: tStore("appleAria"),
+              },
+            ]}
+          />
+        </AppModal>
       )}
     </LaunchFlowContext.Provider>
   );

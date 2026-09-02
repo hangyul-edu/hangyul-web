@@ -67,10 +67,14 @@
     "close": "Stäng"
   },
   "StoreSelectModal": {
-    "title": "Välj din enhet",
-    "description": "Välj var du vill ladda ner Hangyul Ganada.",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "Vilken enhet använder du?",
+    "description": "Välj din enhet för att ladda ner Hangyul Ganada.",
+    "androidLabel": "Android",
+    "androidStore": "Ladda ner på Google Play",
+    "androidAria": "Ladda ner Hangyul Ganada för Android på Google Play",
+    "appleLabel": "iPhone",
+    "appleStore": "Ladda ner på App Store",
+    "appleAria": "Ladda ner Hangyul Ganada för iPhone på App Store",
     "close": "Stäng"
   },
   "QrModal": {

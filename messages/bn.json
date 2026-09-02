@@ -67,10 +67,14 @@
     "close": "বন্ধ করুন"
   },
   "StoreSelectModal": {
-    "title": "আপনার ডিভাইস বেছে নিন",
-    "description": "Hangyul Ganada কোথা থেকে ডাউনলোড করবেন তা বেছে নিন।",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "আপনি কোন ডিভাইস ব্যবহার করেন?",
+    "description": "Hangyul Ganada ডাউনলোড করতে আপনার ডিভাইস বেছে নিন।",
+    "androidLabel": "Android",
+    "androidStore": "Google Play থেকে ডাউনলোড করুন",
+    "androidAria": "Android-এর জন্য Hangyul Ganada Google Play থেকে ডাউনলোড করুন",
+    "appleLabel": "iPhone",
+    "appleStore": "App Store থেকে ডাউনলোড করুন",
+    "appleAria": "iPhone-এর জন্য Hangyul Ganada App Store থেকে ডাউনলোড করুন",
     "close": "বন্ধ করুন"
   },
   "QrModal": {

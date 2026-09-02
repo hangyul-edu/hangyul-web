@@ -1,0 +1,128 @@
+/*
+ * 한귤 가나다 기기 선택 카드 (StoreSelectModal 전용)
+ * AppModal(cp_G_01_modals) 안에서 사용하며 같은 타이포/색/radius 체계를 따릅니다.
+ * - 1차 정보: 기기(Android / iPhone) — Body 4 (Pretendard Bold 15 / 20.3), Gray 7 #262C31
+ * - 2차 정보: 스토어(Google Play / App Store) — 13 / 18, Gray 5 #778088
+ * - 카드 전체가 하나의 <button>이라 어디를 눌러도 동작하며, 키보드 포커스 링을 표시합니다.
+ */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.card {
+  --icon-bg: #f4f6f8;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  min-height: 64px;
+  padding: 12px 16px;
+
+  background: var(--white);
+  border: 1px solid #dfe3e7;
+  border-radius: 12px;
+
+  font-family: inherit;
+  color: #262c31;
+  text-align: start;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.card:hover {
+  --icon-bg: #ffe9d9;
+
+  border-color: var(--primary-color);
+  background: #fff8f3;
+  box-shadow: 0 2px 6px rgba(255, 103, 0, 0.12);
+}
+
+.card:active {
+  background: #fff1e6;
+}
+
+.card:focus-visible {
+  --icon-bg: #ffe9d9;
+
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+  border-color: var(--primary-color);
+}
+
+.icon {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--icon-bg);
+  color: #262c31;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.card:hover .icon,
+.card:focus-visible .icon {
+  color: var(--primary-color);
+}
+
+.text {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.label {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20.3px;
+  color: #262c31;
+}
+
+.store {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #778088;
+  overflow-wrap: anywhere;
+}
+
+.chevron {
+  flex: none;
+  color: #bec5cc;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.card:hover .chevron,
+.card:focus-visible .chevron {
+  color: var(--primary-color);
+  transform: translateX(2px);
+}
+
+[dir="rtl"] .chevron {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .card:hover .chevron,
+[dir="rtl"] .card:focus-visible .chevron {
+  transform: scaleX(-1) translateX(2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .icon,
+  .chevron {
+    transition: none;
+  }
+}

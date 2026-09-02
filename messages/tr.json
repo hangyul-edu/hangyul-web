@@ -67,10 +67,14 @@
     "close": "Kapat"
   },
   "StoreSelectModal": {
-    "title": "Cihazını seç",
-    "description": "Hangyul Ganada'yı nereden indirmek istediğini seç.",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "Hangi cihazı kullanıyorsun?",
+    "description": "Hangyul Ganada'yı indirmek için cihazını seç.",
+    "androidLabel": "Android",
+    "androidStore": "Google Play'den indir",
+    "androidAria": "Android için Hangyul Ganada'yı Google Play'den indir",
+    "appleLabel": "iPhone",
+    "appleStore": "App Store'dan indir",
+    "appleAria": "iPhone için Hangyul Ganada'yı App Store'dan indir",
     "close": "Kapat"
   },
   "QrModal": {

@@ -18,7 +18,10 @@ interface Props {
   title: string;
   /** 문단 배열은 문단 간 간격을 두고 렌더링됩니다. */
   description: string | string[];
-  actions: AppModalAction[];
+  /** 하단 버튼 (선택). children으로 자체 선택 UI를 넣는 모달은 생략할 수 있습니다. */
+  actions?: AppModalAction[];
+  /** 본문과 하단 버튼 사이에 들어가는 커스텀 콘텐츠 (예: 기기 선택 카드) */
+  children?: React.ReactNode;
   onClose: () => void;
   /**
    * 우상단 ✕ 아이콘 닫기 버튼의 접근성 라벨.
@@ -37,7 +40,8 @@ export default function AppModal({
   eyebrow,
   title,
   description,
-  actions,
+  actions = [],
+  children,
   onClose,
   iconCloseLabel,
   name,
@@ -94,20 +98,24 @@ export default function AppModal({
           </div>
         </div>
 
-        <div className={styles.actions}>
-          {actions.map((action) => (
-            <button
-              key={action.label}
-              type="button"
-              className={`${styles.button} ${
-                action.variant === "secondary" ? styles.secondary : styles.primary
-              }`}
-              onClick={action.onClick}
-            >
-              {action.label}
-            </button>
-          ))}
-        </div>
+        {children}
+
+        {actions.length > 0 && (
+          <div className={styles.actions}>
+            {actions.map((action) => (
+              <button
+                key={action.label}
+                type="button"
+                className={`${styles.button} ${
+                  action.variant === "secondary" ? styles.secondary : styles.primary
+                }`}
+                onClick={action.onClick}
+              >
+                {action.label}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
     </div>,
     document.body

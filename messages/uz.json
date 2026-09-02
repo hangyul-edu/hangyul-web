@@ -67,10 +67,14 @@
     "close": "Yopish"
   },
   "StoreSelectModal": {
-    "title": "Qurilmangizni tanlang",
-    "description": "Hangyul Ganada'ni qayerdan yuklab olishni tanlang.",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "Qaysi qurilmadan foydalanasiz?",
+    "description": "Hangyul Ganada'ni yuklab olish uchun qurilmangizni tanlang.",
+    "androidLabel": "Android",
+    "androidStore": "Google Play'dan yuklab olish",
+    "androidAria": "Android uchun Hangyul Ganada'ni Google Play'dan yuklab olish",
+    "appleLabel": "iPhone",
+    "appleStore": "App Store'dan yuklab olish",
+    "appleAria": "iPhone uchun Hangyul Ganada'ni App Store'dan yuklab olish",
     "close": "Yopish"
   },
   "QrModal": {

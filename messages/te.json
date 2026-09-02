@@ -67,10 +67,14 @@
     "close": "మూసివేయండి"
   },
   "StoreSelectModal": {
-    "title": "మీ పరికరాన్ని ఎంచుకోండి",
-    "description": "Hangyul Ganadaను ఎక్కడి నుంచి డౌన్‌లోడ్ చేయాలో ఎంచుకోండి.",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "మీరు ఏ పరికరాన్ని ఉపయోగిస్తున్నారు?",
+    "description": "Hangyul Ganadaను డౌన్‌లోడ్ చేయడానికి మీ పరికరాన్ని ఎంచుకోండి.",
+    "androidLabel": "Android",
+    "androidStore": "Google Playలో డౌన్‌లోడ్ చేయండి",
+    "androidAria": "Android కోసం Hangyul Ganadaను Google Playలో డౌన్‌లోడ్ చేయండి",
+    "appleLabel": "iPhone",
+    "appleStore": "App Storeలో డౌన్‌లోడ్ చేయండి",
+    "appleAria": "iPhone కోసం Hangyul Ganadaను App Storeలో డౌన్‌లోడ్ చేయండి",
     "close": "మూసివేయండి"
   },
   "QrModal": {

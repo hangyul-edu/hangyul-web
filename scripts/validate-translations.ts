@@ -32,8 +32,8 @@ const ENGLISH_ALLOWLIST = new Set([
   "Footer.mailOrderNumber",
   "Pricing.category",
   "Header.nav.membership",
-  "StoreSelectModal.googlePlay",
-  "StoreSelectModal.appStore",
+  "StoreSelectModal.androidLabel",
+  "StoreSelectModal.appleLabel",
 ]);
 
 type NestedMessages = {

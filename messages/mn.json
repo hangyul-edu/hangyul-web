@@ -67,10 +67,14 @@
     "close": "Хаах"
   },
   "StoreSelectModal": {
-    "title": "Төхөөрөмжөө сонгоно уу",
-    "description": "Hangyul Ganada-г хаанаас татахаа сонгоно уу.",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "Та ямар төхөөрөмж ашигладаг вэ?",
+    "description": "Hangyul Ganada-г татахын тулд төхөөрөмжөө сонгоно уу.",
+    "androidLabel": "Android",
+    "androidStore": "Google Play-ээс татах",
+    "androidAria": "Android-д зориулсан Hangyul Ganada-г Google Play-ээс татах",
+    "appleLabel": "iPhone",
+    "appleStore": "App Store-оос татах",
+    "appleAria": "iPhone-д зориулсан Hangyul Ganada-г App Store-оос татах",
     "close": "Хаах"
   },
   "QrModal": {

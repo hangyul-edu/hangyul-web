@@ -67,10 +67,14 @@
     "close": "बंद करें"
   },
   "StoreSelectModal": {
-    "title": "अपना डिवाइस चुनें",
-    "description": "चुनें कि आप Hangyul Ganada कहाँ से डाउनलोड करना चाहते हैं।",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "आप कौन सा डिवाइस इस्तेमाल करते हैं?",
+    "description": "Hangyul Ganada डाउनलोड करने के लिए अपना डिवाइस चुनें।",
+    "androidLabel": "Android",
+    "androidStore": "Google Play से डाउनलोड करें",
+    "androidAria": "Android के लिए Hangyul Ganada Google Play से डाउनलोड करें",
+    "appleLabel": "iPhone",
+    "appleStore": "App Store से डाउनलोड करें",
+    "appleAria": "iPhone के लिए Hangyul Ganada App Store से डाउनलोड करें",
     "close": "बंद करें"
   },
   "QrModal": {

@@ -67,10 +67,14 @@
     "close": "Închide"
   },
   "StoreSelectModal": {
-    "title": "Alege dispozitivul tău",
-    "description": "Alege de unde vrei să descarci Hangyul Ganada.",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "Ce dispozitiv folosești?",
+    "description": "Alege dispozitivul tău pentru a descărca Hangyul Ganada.",
+    "androidLabel": "Android",
+    "androidStore": "Descarcă din Google Play",
+    "androidAria": "Descarcă Hangyul Ganada pentru Android din Google Play",
+    "appleLabel": "iPhone",
+    "appleStore": "Descarcă din App Store",
+    "appleAria": "Descarcă Hangyul Ganada pentru iPhone din App Store",
     "close": "Închide"
   },
   "QrModal": {

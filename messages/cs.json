@@ -67,10 +67,14 @@
     "close": "Zavřít"
   },
   "StoreSelectModal": {
-    "title": "Vyberte své zařízení",
-    "description": "Vyberte, kde chcete Hangyul Ganada stáhnout.",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "Jaké zařízení používáte?",
+    "description": "Vyberte své zařízení a stáhněte si Hangyul Ganada.",
+    "androidLabel": "Android",
+    "androidStore": "Stáhnout z Google Play",
+    "androidAria": "Stáhnout Hangyul Ganada pro Android z Google Play",
+    "appleLabel": "iPhone",
+    "appleStore": "Stáhnout z App Store",
+    "appleAria": "Stáhnout Hangyul Ganada pro iPhone z App Store",
     "close": "Zavřít"
   },
   "QrModal": {

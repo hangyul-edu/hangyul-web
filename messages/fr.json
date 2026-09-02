@@ -67,10 +67,14 @@
     "close": "Fermer"
   },
   "StoreSelectModal": {
-    "title": "Choisissez votre appareil",
-    "description": "Choisissez où vous souhaitez télécharger Hangyul Ganada.",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "Quel appareil utilisez-vous ?",
+    "description": "Choisissez votre appareil pour télécharger Hangyul Ganada.",
+    "androidLabel": "Android",
+    "androidStore": "Télécharger sur Google Play",
+    "androidAria": "Télécharger Hangyul Ganada pour Android sur Google Play",
+    "appleLabel": "iPhone",
+    "appleStore": "Télécharger sur l’App Store",
+    "appleAria": "Télécharger Hangyul Ganada pour iPhone sur l’App Store",
     "close": "Fermer"
   },
   "QrModal": {

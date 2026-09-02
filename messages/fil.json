@@ -67,10 +67,14 @@
     "close": "Isara"
   },
   "StoreSelectModal": {
-    "title": "Piliin ang iyong device",
-    "description": "Piliin kung saan mo gustong i-download ang Hangyul Ganada.",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "Anong device ang gamit mo?",
+    "description": "Piliin ang iyong device para i-download ang Hangyul Ganada.",
+    "androidLabel": "Android",
+    "androidStore": "I-download sa Google Play",
+    "androidAria": "I-download ang Hangyul Ganada para sa Android mula sa Google Play",
+    "appleLabel": "iPhone",
+    "appleStore": "I-download sa App Store",
+    "appleAria": "I-download ang Hangyul Ganada para sa iPhone mula sa App Store",
     "close": "Isara"
   },
   "QrModal": {

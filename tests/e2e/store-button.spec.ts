@@ -60,6 +60,11 @@ const storeSelectModal = (page: Page) =>
   page.locator('[data-modal="storeSelect"]');
 const launchCta = (page: Page) =>
   launchModal(page).getByRole("button", { name: /start with hangyul ganada/i });
+/** 기기 선택 카드: 접근성 이름은 "Download Hangyul Ganada for Android from Google Play" 형태입니다. */
+const androidCard = (page: Page) =>
+  storeSelectModal(page).getByRole("button", { name: /for android/i });
+const appleCard = (page: Page) =>
+  storeSelectModal(page).getByRole("button", { name: /for iphone from/i });
 
 test.describe("Main HANGYUL launch modal", () => {
   test.beforeEach(async ({ page }) => {
@@ -133,15 +138,16 @@ test.describe("Hangyul Ganada routing — desktop (Windows)", () => {
     await page.goto("/en");
   });
 
-  test("Ganada CTA opens the store chooser, Google Play opens Play in a new tab", async ({ page, context }) => {
+  test("Ganada CTA opens the device chooser, Android card opens Google Play in a new tab", async ({ page, context }) => {
     await clickCta(startGanada(page));
 
     const chooser = storeSelectModal(page);
     await expect(chooser).toBeVisible();
-    await expect(chooser).toContainText("Choose your device");
+    await expect(chooser).toContainText("Which device do you use?");
+    await expect(chooser).toContainText("Choose your device to download Hangyul Ganada.");
 
     const popup = context.waitForEvent("page");
-    await chooser.getByRole("button", { name: "Google Play" }).click();
+    await androidCard(page).click();
     const newPage = await popup;
     await newPage.waitForLoadState();
     expect(newPage.url()).toBe(PLAY_URL);
@@ -149,11 +155,87 @@ test.describe("Hangyul Ganada routing — desktop (Windows)", () => {
     expect(page.url()).toContain("/en");
   });
 
-  test("App Store choice opens the App Store in a new tab", async ({ page, context }) => {
+  test("iPhone card opens the App Store in a new tab", async ({ page, context }) => {
     await clickCta(startGanada(page));
     const popup = context.waitForEvent("page");
-    await storeSelectModal(page).getByRole("button", { name: "App Store" }).click();
+    await appleCard(page).click();
     expect((await popup).url()).toBe(APP_STORE_URL);
+  });
+
+  test("Device is the primary label and the store is secondary on each card", async ({ page }) => {
+    await clickCta(startGanada(page));
+
+    const android = androidCard(page);
+    await expect(android).toHaveAccessibleName("Download Hangyul Ganada for Android from Google Play");
+    await expect(android.locator("span").filter({ hasText: /^Android$/ })).toBeVisible();
+    await expect(android).toContainText("Download on Google Play");
+
+    const apple = appleCard(page);
+    await expect(apple).toHaveAccessibleName("Download Hangyul Ganada for iPhone from the App Store");
+    await expect(apple.locator("span").filter({ hasText: /^iPhone$/ })).toBeVisible();
+    await expect(apple).toContainText("Download on the App Store");
+
+    // 스토어 이름만 단독 버튼으로 존재하지 않아야 합니다 (기기 카드 전체가 버튼).
+    await expect(storeSelectModal(page).getByRole("button", { name: /^google play$/i })).toHaveCount(0);
+    await expect(storeSelectModal(page).getByRole("button", { name: /^app store$/i })).toHaveCount(0);
+    await expect(storeSelectModal(page).getByRole("button")).toHaveCount(3); // ✕ + 2 cards
+  });
+
+  test("Clicking the secondary store caption inside a card also opens the store", async ({ page, context }) => {
+    await clickCta(startGanada(page));
+    const popup = context.waitForEvent("page");
+    await storeSelectModal(page).getByText("Download on the App Store").click();
+    expect((await popup).url()).toBe(APP_STORE_URL);
+  });
+
+  test("Cards are keyboard-operable: Tab to iPhone and press Enter", async ({ page, context }) => {
+    await clickCta(startGanada(page));
+    await expect(storeSelectModal(page)).toBeVisible();
+
+    // 포커스 트랩이 첫 요소(✕)에 포커스를 두므로 Tab 두 번이면 두 번째 카드입니다.
+    await page.keyboard.press("Tab");
+    await expect(androidCard(page)).toBeFocused();
+    await page.keyboard.press("Tab");
+    await expect(appleCard(page)).toBeFocused();
+
+    const popup = context.waitForEvent("page");
+    await page.keyboard.press("Enter");
+    expect((await popup).url()).toBe(APP_STORE_URL);
+  });
+
+  test("Cards do not overflow the modal in a long-translation locale", async ({ page }) => {
+    await page.goto("/hu");
+    await clickCta(page.getByRole("button", { name: "Hangyul Ganada indítása" }));
+    const chooser = storeSelectModal(page);
+    await expect(chooser).toBeVisible();
+
+    const modalBox = await chooser.boundingBox();
+    for (const card of await chooser.locator("button[data-platform]").all()) {
+      const box = await card.boundingBox();
+      expect(box!.x).toBeGreaterThanOrEqual(modalBox!.x);
+      expect(box!.x + box!.width).toBeLessThanOrEqual(modalBox!.x + modalBox!.width + 0.5);
+      expect(await card.evaluate((el) => el.scrollWidth <= el.clientWidth + 1)).toBe(true);
+    }
+  });
+
+  test("Korean copy: device first, store second", async ({ page, context }) => {
+    await page.goto("/ko");
+    await clickCta(page.getByRole("button", { name: /한귤 가나다 시작하기|한귤 가나다로 시작하기/ }).first());
+    const chooser = storeSelectModal(page);
+    await expect(chooser).toContainText("어떤 기기에서 시작할까요?");
+    await expect(chooser).toContainText("한귤 가나다를 사용할 기기를 선택해주세요.");
+
+    const android = chooser.getByRole("button", { name: "Android용 한귤 가나다를 Google Play에서 다운로드" });
+    await expect(android).toContainText("Android");
+    await expect(android).toContainText("Google Play에서 다운로드");
+
+    const apple = chooser.getByRole("button", { name: "iPhone용 한귤 가나다를 App Store에서 다운로드" });
+    await expect(apple).toContainText("iPhone");
+    await expect(apple).toContainText("App Store에서 다운로드");
+
+    const popup = context.waitForEvent("page");
+    await android.click();
+    expect((await popup).url()).toBe(PLAY_URL);
   });
 
   test("Start Now → launch modal → Ganada CTA → store chooser", async ({ page, context }) => {
@@ -164,7 +246,7 @@ test.describe("Hangyul Ganada routing — desktop (Windows)", () => {
     await expect(storeSelectModal(page)).toBeVisible();
 
     const popup = context.waitForEvent("page");
-    await storeSelectModal(page).getByRole("button", { name: "Google Play" }).click();
+    await androidCard(page).click();
     expect((await popup).url()).toBe(PLAY_URL);
   });
 

@@ -67,10 +67,14 @@
     "close": "Fechar"
   },
   "StoreSelectModal": {
-    "title": "Escolha o seu dispositivo",
-    "description": "Escolha onde quer transferir o Hangyul Ganada.",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "Que dispositivo utiliza?",
+    "description": "Escolha o seu dispositivo para transferir o Hangyul Ganada.",
+    "androidLabel": "Android",
+    "androidStore": "Transferir no Google Play",
+    "androidAria": "Transferir o Hangyul Ganada para Android no Google Play",
+    "appleLabel": "iPhone",
+    "appleStore": "Transferir na App Store",
+    "appleAria": "Transferir o Hangyul Ganada para iPhone na App Store",
     "close": "Fechar"
   },
   "QrModal": {

@@ -67,10 +67,14 @@
     "close": "மூடு"
   },
   "StoreSelectModal": {
-    "title": "உங்கள் சாதனத்தைத் தேர்வுசெய்யுங்கள்",
-    "description": "Hangyul Ganada-வை எங்கிருந்து பதிவிறக்க வேண்டும் என்பதைத் தேர்வுசெய்யுங்கள்.",
-    "googlePlay": "Google Play",
-    "appStore": "App Store",
+    "title": "நீங்கள் எந்த சாதனத்தைப் பயன்படுத்துகிறீர்கள்?",
+    "description": "Hangyul Ganada-வைப் பதிவிறக்க உங்கள் சாதனத்தைத் தேர்வுசெய்யுங்கள்.",
+    "androidLabel": "Android",
+    "androidStore": "Google Play-இல் பதிவிறக்குங்கள்",
+    "androidAria": "Android-க்கான Hangyul Ganada-வை Google Play-இல் பதிவிறக்குங்கள்",
+    "appleLabel": "iPhone",
+    "appleStore": "App Store-இல் பதிவிறக்குங்கள்",
+    "appleAria": "iPhone-க்கான Hangyul Ganada-வை App Store-இல் பதிவிறக்குங்கள்",
     "close": "மூடு"
   },
   "QrModal": {
