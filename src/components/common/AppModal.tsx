@@ -24,8 +24,8 @@ interface Props {
   children?: React.ReactNode;
   onClose: () => void;
   /**
-   * 우상단 ✕ 아이콘 닫기 버튼의 접근성 라벨.
-   * 하단 버튼에 "닫기"가 없는 모달에서 사용합니다.
+   * 우상단 ✕ 아이콘 닫기 버튼의 접근성 라벨("닫기" / "Close").
+   * 라벨 없는 아이콘 버튼을 만들지 않도록, 값이 있을 때만 버튼을 렌더링합니다.
    */
   iconCloseLabel?: string;
   /** e2e/스타일 훅용 식별자 */
@@ -79,8 +79,17 @@ export default function AppModal({
             className={styles.iconClose}
             onClick={onClose}
             aria-label={iconCloseLabel}
+            data-modal-close="icon"
           >
-            ✕
+            {/* 폰트에 따라 모양이 흔들리는 ✕ 글리프 대신 선 아이콘을 사용합니다. */}
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path
+                d="M4 4 12 12M12 4 4 12"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+              />
+            </svg>
           </button>
         )}
 

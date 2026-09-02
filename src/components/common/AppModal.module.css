@@ -117,12 +117,13 @@
   background: #aeb6be;
 }
 
+/* 우상단 닫기 ✕: 카드 모서리에 붙지 않도록 10px 띄우고, 탭 영역은 40px(모바일 44px) 확보합니다. */
 .iconClose {
   position: absolute;
-  top: 8px;
-  inset-inline-end: 8px;
-  width: 32px;
-  height: 32px;
+  top: 10px;
+  inset-inline-end: 10px;
+  width: 40px;
+  height: 40px;
 
   display: inline-flex;
   align-items: center;
@@ -130,15 +131,23 @@
 
   background: none;
   border: none;
-  border-radius: 8px;
+  border-radius: 50%;
   color: #778088;
-  font-size: 18px;
   line-height: 1;
   cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .iconClose:hover {
+  background: var(--gray-100);
   color: #262c31;
+}
+
+/* 전역 :focus-visible이 border-radius를 덮어쓰므로 원형 포커스 링을 다시 지정합니다. */
+.iconClose:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+  border-radius: 50%;
 }
 
 /* 모바일: 뷰포트 안에 머물도록 가변 폭, Figma 원본 여백(30/20/20)을 사용합니다. */
@@ -147,6 +156,13 @@
     width: 100%;
     max-width: 400px;
     padding: 30px 20px 20px;
+  }
+
+  .iconClose {
+    top: 8px;
+    inset-inline-end: 8px;
+    width: 44px;
+    height: 44px;
   }
 }
 

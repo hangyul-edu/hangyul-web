@@ -82,6 +82,7 @@ export function LaunchFlowProvider({ children }: { children: React.ReactNode }) 
           title={tLaunch("title")}
           description={[tLaunch("description"), tLaunch("suggestion")]}
           onClose={close}
+          iconCloseLabel={tLaunch("close")}
           actions={[
             { label: tLaunch("close"), onClick: close, variant: "secondary" },
             { label: tLaunch("cta"), onClick: openHangyulGanada },

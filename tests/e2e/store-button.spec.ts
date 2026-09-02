@@ -60,6 +60,14 @@ const storeSelectModal = (page: Page) =>
   page.locator('[data-modal="storeSelect"]');
 const launchCta = (page: Page) =>
   launchModal(page).getByRole("button", { name: /start with hangyul ganada/i });
+/** 우상단 ✕ 아이콘 버튼 (하단 "Close" 버튼과 접근성 이름이 같으므로 data 훅으로 구분) */
+const launchCloseIcon = (page: Page) =>
+  launchModal(page).locator('[data-modal-close="icon"]');
+/** 하단 "Close" 버튼 */
+const launchCloseButton = (page: Page) =>
+  launchModal(page).locator("button:not([data-modal-close])", {
+    hasText: /^close$/i,
+  });
 /** 기기 선택 카드: 접근성 이름은 "Download Hangyul Ganada for Android from Google Play" 형태입니다. */
 const androidCard = (page: Page) =>
   storeSelectModal(page).getByRole("button", { name: /for android/i });
@@ -92,11 +100,54 @@ test.describe("Main HANGYUL launch modal", () => {
   test("Close button closes the modal and restores focus", async ({ page }) => {
     const trigger = startNow(page);
     await trigger.click();
-    await launchModal(page).getByRole("button", { name: /^close$/i }).click();
+    await launchCloseButton(page).click();
 
     await expect(launchModal(page)).toHaveCount(0);
     await expect(trigger).toBeFocused();
     await expect(page.locator("html")).not.toHaveCSS("overflow", "hidden");
+  });
+
+  test("Top-right ✕ closes the modal and restores focus", async ({ page }) => {
+    const trigger = startNow(page);
+    await trigger.click();
+
+    const icon = launchCloseIcon(page);
+    await expect(icon).toBeVisible();
+    await expect(icon).toHaveAccessibleName("Close");
+
+    // 카드 우상단에 놓이고, 모서리에 붙지 않았는지 확인합니다.
+    const modalBox = (await launchModal(page).boundingBox())!;
+    const iconBox = (await icon.boundingBox())!;
+    expect(iconBox.width).toBeGreaterThanOrEqual(40);
+    expect(iconBox.height).toBeGreaterThanOrEqual(40);
+    expect(iconBox.y - modalBox.y).toBeGreaterThanOrEqual(8);
+    expect(modalBox.x + modalBox.width - (iconBox.x + iconBox.width)).toBeGreaterThanOrEqual(8);
+
+    await icon.click();
+    await expect(launchModal(page)).toHaveCount(0);
+    await expect(trigger).toBeFocused();
+    await expect(page.locator("html")).not.toHaveCSS("overflow", "hidden");
+  });
+
+  // 키보드 포커스 링은 데스크톱 관심사이므로 모바일 프로젝트에서는 건너뜁니다.
+  test("Top-right ✕ is keyboard focusable with a visible focus ring", async ({
+    page,
+    isMobile,
+  }) => {
+    test.skip(!!isMobile, "keyboard-only behaviour");
+    await startNow(page).click();
+
+    // 포커스 트랩이 ✕에 포커스를 두므로, Tab 3번(✕ → Close → CTA → 순환)이면 다시 ✕입니다.
+    // 프로그램 포커스로는 :focus-visible이 켜지지 않으므로 실제 키보드로 이동합니다.
+    const icon = launchCloseIcon(page);
+    await page.keyboard.press("Tab");
+    await page.keyboard.press("Tab");
+    await page.keyboard.press("Tab");
+    await expect(icon).toBeFocused();
+    await expect(icon).toHaveCSS("outline-style", "solid");
+
+    await page.keyboard.press("Enter");
+    await expect(launchModal(page)).toHaveCount(0);
   });
 
   test("Escape closes the modal", async ({ page }) => {
@@ -123,6 +174,7 @@ test.describe("Main HANGYUL launch modal", () => {
     await page.goto("/ko");
     await page.getByRole("button", { name: /지금 시작하기/ }).first().click();
     const modal = launchModal(page);
+    await expect(launchCloseIcon(page)).toHaveAccessibleName("닫기");
     await expect(modal).toContainText("한귤, 한글날에 만나요");
     await expect(modal).toContainText("2026년 10월 9일");
     await expect(modal.getByRole("button", { name: "한귤 가나다로 시작하기" })).toBeVisible();
