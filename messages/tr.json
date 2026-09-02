@@ -58,8 +58,20 @@
     "description": "Harflerden kelimelere, daha ilk adımda doğru şekilde.\nSadece okumak yetmez, hangıl'ı kendi elinle yazarak öğren.\nHangyul Ganada ile sağlam bir temel at.",
     "button": "Hangyul Ganada'yı başlat"
   },
-  "StoreButton": {
-    "comingSoon": "31 Ağustos 2026'da yayınlanıyor."
+  "LaunchModal": {
+    "eyebrow": "Çok yakında",
+    "title": "Hangyul, Hangıl Günü'nde geliyor",
+    "description": "Hangyul uygulaması 9 Ekim 2026 Hangıl Günü'nde resmen yayına giriyor.",
+    "suggestion": "O zamana kadar Hangyul Ganada ile başla ve Hangıl temelini en baştan sağlam at.",
+    "cta": "Hangyul Ganada ile başla",
+    "close": "Kapat"
+  },
+  "StoreSelectModal": {
+    "title": "Cihazını seç",
+    "description": "Hangyul Ganada'yı nereden indirmek istediğini seç.",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "Kapat"
   },
   "QrModal": {
     "title": "Mobil uygulamayı indir",

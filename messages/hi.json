@@ -58,8 +58,20 @@
     "description": "अक्षरों से लेकर शब्दों तक, शुरुआत बिलकुल सही।\nसिर्फ़ पढ़ना काफ़ी नहीं, हांगुल को अपने हाथ से लिखकर सीखिए।\nHangyul Ganada के साथ मज़बूत नींव बनाइए।",
     "button": "Hangyul Ganada शुरू करें"
   },
-  "StoreButton": {
-    "comingSoon": "31 अगस्त 2026 को लॉन्च होगा।"
+  "LaunchModal": {
+    "eyebrow": "जल्द आ रहा है",
+    "title": "हंगुल दिवस पर आ रहा है Hangyul",
+    "description": "Hangyul ऐप 9 अक्टूबर 2026, हंगुल दिवस को आधिकारिक रूप से लॉन्च होगा।",
+    "suggestion": "तब तक Hangyul Ganada से शुरू करें और शुरुआत से ही हंगुल की मज़बूत नींव बनाएँ।",
+    "cta": "Hangyul Ganada से शुरू करें",
+    "close": "बंद करें"
+  },
+  "StoreSelectModal": {
+    "title": "अपना डिवाइस चुनें",
+    "description": "चुनें कि आप Hangyul Ganada कहाँ से डाउनलोड करना चाहते हैं।",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "बंद करें"
   },
   "QrModal": {
     "title": "मोबाइल ऐप डाउनलोड करें",

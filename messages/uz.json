@@ -58,8 +58,20 @@
     "description": "Harflardan lugʻatgacha, ilk qadamdanoq toʻgʻri.\nFaqat oʻqish yetarli emas, hangulni oʻz qoʻlingiz bilan yozib oʻrganing.\nHangyul Ganada bilan mustahkam poydevor quring.",
     "button": "Hangyul Ganada'ni boshlash"
   },
-  "StoreButton": {
-    "comingSoon": "2026-yil 31-avgustda ishga tushadi."
+  "LaunchModal": {
+    "eyebrow": "Tez kunda",
+    "title": "Hangyul Hangul kunida ishga tushadi",
+    "description": "Hangyul ilovasi 2026-yil 9-oktabr, Hangul kunida rasman ishga tushadi.",
+    "suggestion": "Ungacha Hangyul Ganada bilan boshlang va hangul asoslarini eng boshidan mustahkam egallang.",
+    "cta": "Hangyul Ganada bilan boshlash",
+    "close": "Yopish"
+  },
+  "StoreSelectModal": {
+    "title": "Qurilmangizni tanlang",
+    "description": "Hangyul Ganada'ni qayerdan yuklab olishni tanlang.",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "Yopish"
   },
   "QrModal": {
     "title": "Mobil ilovani yuklab olish",

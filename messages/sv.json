@@ -58,8 +58,20 @@
     "description": "Från bokstäver till ordförråd, rätt redan från början.\nAtt bara läsa räcker inte, lär dig hangul genom att skriva det för hand.\nBygg en stabil grund med Hangyul Ganada.",
     "button": "Starta Hangyul Ganada"
   },
-  "StoreButton": {
-    "comingSoon": "Lansering den 31 augusti 2026."
+  "LaunchModal": {
+    "eyebrow": "Kommer snart",
+    "title": "Hangyul lanseras på Hangul-dagen",
+    "description": "Hangyul-appen lanseras officiellt den 9 oktober 2026, på Hangul-dagen.",
+    "suggestion": "Börja med Hangyul Ganada tills dess och bygg en stabil grund i hangul från allra första början.",
+    "cta": "Börja med Hangyul Ganada",
+    "close": "Stäng"
+  },
+  "StoreSelectModal": {
+    "title": "Välj din enhet",
+    "description": "Välj var du vill ladda ner Hangyul Ganada.",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "Stäng"
   },
   "QrModal": {
     "title": "Ladda ner appen",

@@ -58,8 +58,20 @@
     "description": "Mula sa mga letra hanggang bokabularyo, tama agad ang simula.\nHindi sapat ang basahin lang, isulat mo mismo ang hangul para tumatak.\nBumuo ng matibay na pundasyon kasama ang Hangyul Ganada.",
     "button": "Simulan ang Hangyul Ganada"
   },
-  "StoreButton": {
-    "comingSoon": "Ilulunsad sa Agosto 31, 2026."
+  "LaunchModal": {
+    "eyebrow": "Malapit na",
+    "title": "Ilulunsad ang Hangyul sa Araw ng Hangul",
+    "description": "Opisyal na ilulunsad ang Hangyul app sa Oktubre 9, 2026, Araw ng Hangul.",
+    "suggestion": "Hanggang doon, magsimula sa Hangyul Ganada at bumuo ng matibay na pundasyon sa Hangul mula sa simula.",
+    "cta": "Magsimula sa Hangyul Ganada",
+    "close": "Isara"
+  },
+  "StoreSelectModal": {
+    "title": "Piliin ang iyong device",
+    "description": "Piliin kung saan mo gustong i-download ang Hangyul Ganada.",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "Isara"
   },
   "QrModal": {
     "title": "I-download ang mobile app",

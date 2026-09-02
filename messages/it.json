@@ -58,8 +58,20 @@
     "description": "Dalle lettere al vocabolario, partendo subito nel modo giusto.\nLeggere non basta, impara l'hangul scrivendolo a mano.\nCostruisci basi solide con Hangyul Ganada.",
     "button": "Inizia con Hangyul Ganada"
   },
-  "StoreButton": {
-    "comingSoon": "Lancio previsto per il 31 agosto 2026."
+  "LaunchModal": {
+    "eyebrow": "In arrivo",
+    "title": "Hangyul arriva il giorno dell'Hangul",
+    "description": "L'app Hangyul sarà lanciata ufficialmente il 9 ottobre 2026, giorno dell'Hangul.",
+    "suggestion": "Nel frattempo, inizia con Hangyul Ganada e costruisci basi solide di Hangul fin dall'inizio.",
+    "cta": "Inizia con Hangyul Ganada",
+    "close": "Chiudi"
+  },
+  "StoreSelectModal": {
+    "title": "Scegli il tuo dispositivo",
+    "description": "Scegli dove vuoi scaricare Hangyul Ganada.",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "Chiudi"
   },
   "QrModal": {
     "title": "Scarica l'app",

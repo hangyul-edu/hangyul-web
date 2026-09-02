@@ -1,0 +1,158 @@
+/*
+ * Figma: 앱서비스 디자인_최종안 > cp_G_01_modals (node 1681:27840)
+ * - 카드 320px, radius 10px, padding 30px 20px 20px, 요소 간격 18px
+ *   (웹 데스크톱은 문장 줄바꿈이 과도하지 않도록 480px로 넓혀 적용, 모바일은 Figma 비율 유지)
+ * - 제목 Heading 8 (Pretendard SemiBold 18 / 25.2), Gray 7 #262C31
+ * - 본문 Body 6 (Pretendard Medium 15 / 22.3), Gray 5 #778088
+ * - 버튼 cp_C_01_primaryBtn: radius 12px, padding 14px 10px,
+ *   Body 4 (Pretendard Bold 15 / 20.3) white, 보조 #BEC5CC / 주요 #FF6700
+ */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.modal {
+  position: relative;
+  width: 480px;
+  max-width: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 32px 28px 24px;
+
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.textGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--primary-color);
+}
+
+.title {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+  color: #262c31;
+}
+
+.description {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22.3px;
+  color: #778088;
+}
+
+.description + .description {
+  margin-top: 6px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.button {
+  /* 두 버튼이 여백을 나눠 갖되, 긴 라벨(CTA)이 더 넓은 폭을 차지할 수 있게 합니다. */
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 48px;
+  padding: 14px 10px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20.3px;
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.primary {
+  background: var(--primary-color);
+}
+
+.primary:hover {
+  background: #ff8533;
+}
+
+.secondary {
+  background: #bec5cc;
+}
+
+.secondary:hover {
+  background: #aeb6be;
+}
+
+.iconClose {
+  position: absolute;
+  top: 8px;
+  inset-inline-end: 8px;
+  width: 32px;
+  height: 32px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: none;
+  border: none;
+  border-radius: 8px;
+  color: #778088;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.iconClose:hover {
+  color: #262c31;
+}
+
+/* 모바일: 뷰포트 안에 머물도록 가변 폭, Figma 원본 여백(30/20/20)을 사용합니다. */
+@media (max-width: 768px) {
+  .modal {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px 20px 20px;
+  }
+}
+
+/* 좁은 화면에서 긴 번역이 버튼 한 줄에 들어가지 않으면 세로로 쌓습니다. */
+@media (max-width: 360px) {
+  .actions {
+    flex-direction: column;
+  }
+}

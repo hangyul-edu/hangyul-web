@@ -62,7 +62,7 @@ export default function MainSection() {
           </div>
 
           <div>
-            <StoreButton className={styles.storeBtn}>
+            <StoreButton app="hangyul" className={styles.storeBtn}>
               {t("button")}
               <Image
               src={chevronRightIcon}

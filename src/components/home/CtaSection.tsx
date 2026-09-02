@@ -53,7 +53,7 @@ export default function CtaSection() {
           })}
         </motion.p>
         <motion.div variants={staggerItem}>
-          <StoreButton className={styles.storeBtn}>
+          <StoreButton app="hangyul" className={styles.storeBtn}>
             {t("button")}
             <Image
               src={chevronRightIcon}

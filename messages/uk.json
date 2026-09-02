@@ -58,8 +58,20 @@
     "description": "Від літер до словникового запасу — правильно з самого початку.\nСамого читання замало, хангиль засвоюється, коли пишеш його рукою.\nЗакладіть міцну основу разом із Hangyul Ganada.",
     "button": "Почати Hangyul Ganada"
   },
-  "StoreButton": {
-    "comingSoon": "Запуск 31 серпня 2026 року."
+  "LaunchModal": {
+    "eyebrow": "Незабаром",
+    "title": "Hangyul виходить у День хангилю",
+    "description": "Застосунок Hangyul офіційно виходить 9 жовтня 2026 року, у День хангилю.",
+    "suggestion": "А поки почніть із Hangyul Ganada та закладіть міцну основу хангилю з самих азів.",
+    "cta": "Почати з Hangyul Ganada",
+    "close": "Закрити"
+  },
+  "StoreSelectModal": {
+    "title": "Оберіть свій пристрій",
+    "description": "Оберіть, звідки завантажити Hangyul Ganada.",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "Закрити"
   },
   "QrModal": {
     "title": "Завантажити мобільний застосунок",

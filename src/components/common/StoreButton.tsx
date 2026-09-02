@@ -1,45 +1,25 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-
-// TODO: 앱 런칭(2026.05.18) 후 아래 주석을 해제하고 comingSoon alert를 제거하세요
-// import { useState } from "react";
-// import { useDeviceType } from "@/hooks/useDeviceType";
-// import { STORE_LINKS } from "@/constants/storeLinks";
-// import QrModal from "./QrModal";
+import { useLaunchFlow } from "./LaunchFlowProvider";
 
 interface Props {
+  /**
+   * - "hangyul": 한귤 앱 CTA. 2026-10-09(한글날) 오픈 안내 모달을 띄웁니다.
+   * - "ganada": 이미 출시된 한귤 가나다 CTA. 기기에 맞는 스토어로 바로 연결합니다.
+   */
+  app: "hangyul" | "ganada";
   className?: string;
   children: React.ReactNode;
 }
 
-export default function StoreButton({ className, children }: Props) {
-  const t = useTranslations("StoreButton");
+export default function StoreButton({ app, className, children }: Props) {
+  const { openMainLaunchModal, openHangyulGanada } = useLaunchFlow();
 
-  const handleClick = () => {
-    alert(t("comingSoon"));
-  };
-
-  // TODO: 앱 런칭(2026.05.18) 후 아래 코드로 교체하세요
-  // const device = useDeviceType();
-  // const [isModalOpen, setIsModalOpen] = useState(false);
-  // const handleClick = () => {
-  //   if (device === "android") {
-  //     window.open(STORE_LINKS.android, "_blank");
-  //   } else if (device === "ios" || device === "mac") {
-  //     window.open(STORE_LINKS.ios, "_blank");
-  //   } else {
-  //     setIsModalOpen(true);
-  //   }
-  // };
+  const handleClick = app === "ganada" ? openHangyulGanada : openMainLaunchModal;
 
   return (
-    <>
-      <button className={className} onClick={handleClick}>
-        {children}
-      </button>
-      {/* TODO: 앱 런칭(2026.05.18) 후 추가 */}
-      {/* {isModalOpen && <QrModal onClose={() => setIsModalOpen(false)} />} */}
-    </>
+    <button type="button" className={className} onClick={handleClick}>
+      {children}
+    </button>
   );
 }

@@ -58,8 +58,20 @@
     "description": "Od písmen až po slovní zásobu, hned od začátku správně.\nJen číst nestačí, hangul si osvojíte psaním vlastní rukou.\nS Hangyul Ganada si vybudujete pevné základy.",
     "button": "Začít s Hangyul Ganada"
   },
-  "StoreButton": {
-    "comingSoon": "Spuštění 31. srpna 2026."
+  "LaunchModal": {
+    "eyebrow": "Již brzy",
+    "title": "Hangyul přichází na Den hangulu",
+    "description": "Aplikace Hangyul bude oficiálně spuštěna 9. října 2026, na Den hangulu.",
+    "suggestion": "Do té doby začněte s Hangyul Ganada a vybudujte si pevné základy hangulu od úplného začátku.",
+    "cta": "Začít s Hangyul Ganada",
+    "close": "Zavřít"
+  },
+  "StoreSelectModal": {
+    "title": "Vyberte své zařízení",
+    "description": "Vyberte, kde chcete Hangyul Ganada stáhnout.",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "Zavřít"
   },
   "QrModal": {
     "title": "Stáhnout aplikaci",

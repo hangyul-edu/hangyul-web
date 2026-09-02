@@ -58,8 +58,20 @@
     "description": "글자부터 어휘까지, 첫 단추부터 제대로.\n읽기만으론 부족했던 한글, 손으로 직접 써보며 익혀요.\n한귤 가나다로 탄탄한 기초를 잡으세요.",
     "button": "한귤 가나다 시작하기"
   },
-  "StoreButton": {
-    "comingSoon": "2026년 8월 31일 런칭 예정입니다."
+  "LaunchModal": {
+    "eyebrow": "곧 만나요",
+    "title": "한귤, 한글날에 만나요",
+    "description": "한귤 앱은 2026년 10월 9일 한글날에 정식 오픈합니다.",
+    "suggestion": "기다리는 동안, 한글의 기초부터 차근차근 익힐 수 있는 ‘한귤 가나다’로 먼저 시작해보세요.",
+    "cta": "한귤 가나다로 시작하기",
+    "close": "닫기"
+  },
+  "StoreSelectModal": {
+    "title": "어떤 기기에서 시작할까요?",
+    "description": "한귤 가나다를 사용할 기기를 선택해주세요.",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "닫기"
   },
   "QrModal": {
     "title": "모바일 앱 다운로드",

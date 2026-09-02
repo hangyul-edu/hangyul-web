@@ -58,8 +58,20 @@
     "description": "Тамгадан сөз байлыгына чейин — биринчи кадамдан туура.\nОкуу гана жетишсиз, хангылды өз колуңуз менен жазып үйрөнүңүз.\nHangyul Ganada менен бекем негиз түптөңүз.",
     "button": "Hangyul Ganada-ны баштоо"
   },
-  "StoreButton": {
-    "comingSoon": "2026-жылдын 31-августунда ишке кирет."
+  "LaunchModal": {
+    "eyebrow": "Жакында",
+    "title": "Hangyul Хангыл күнү ишке кирет",
+    "description": "Hangyul колдонмосу 2026-жылдын 9-октябрында, Хангыл күнүндө расмий ишке кирет.",
+    "suggestion": "Ага чейин Hangyul Ganada менен баштап, хангылдын бекем негизин эң башынан түптөңүз.",
+    "cta": "Hangyul Ganada менен баштоо",
+    "close": "Жабуу"
+  },
+  "StoreSelectModal": {
+    "title": "Түзмөгүңүздү тандаңыз",
+    "description": "Hangyul Ganada-ны кайдан жүктөп алууну тандаңыз.",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "Жабуу"
   },
   "QrModal": {
     "title": "Мобилдик колдонмону жүктөө",

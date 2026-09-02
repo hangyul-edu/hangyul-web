@@ -58,8 +58,20 @@
     "description": "অক্ষর থেকে শব্দভান্ডার, শুরুটা হোক একদম ঠিকঠাক।\nশুধু পড়ে হবে না, নিজের হাতে লিখে শিখুন হাঙ্গুল।\nHangyul Ganada দিয়ে গড়ে তুলুন মজবুত ভিত্তি।",
     "button": "Hangyul Ganada শুরু করুন"
   },
-  "StoreButton": {
-    "comingSoon": "৩১ আগস্ট ২০২৬-এ চালু হবে।"
+  "LaunchModal": {
+    "eyebrow": "শীঘ্রই আসছে",
+    "title": "হাঙ্গুল দিবসে আসছে Hangyul",
+    "description": "Hangyul অ্যাপ ২০২৬ সালের ৯ অক্টোবর, হাঙ্গুল দিবসে আনুষ্ঠানিকভাবে চালু হচ্ছে।",
+    "suggestion": "ততদিন Hangyul Ganada দিয়ে শুরু করুন এবং একদম শুরু থেকে হাঙ্গুলের শক্ত ভিত্তি গড়ে তুলুন।",
+    "cta": "Hangyul Ganada দিয়ে শুরু করুন",
+    "close": "বন্ধ করুন"
+  },
+  "StoreSelectModal": {
+    "title": "আপনার ডিভাইস বেছে নিন",
+    "description": "Hangyul Ganada কোথা থেকে ডাউনলোড করবেন তা বেছে নিন।",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "বন্ধ করুন"
   },
   "QrModal": {
     "title": "মোবাইল অ্যাপ ডাউনলোড",

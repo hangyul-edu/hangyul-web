@@ -58,8 +58,20 @@
     "description": "Από τα γράμματα ως το λεξιλόγιο, σωστά από την πρώτη στιγμή.\nΜόνο η ανάγνωση δεν αρκεί, μάθε το χανγκούλ γράφοντάς το με το χέρι σου.\nΧτίσε γερές βάσεις με το Hangyul Ganada.",
     "button": "Ξεκίνα το Hangyul Ganada"
   },
-  "StoreButton": {
-    "comingSoon": "Κυκλοφορεί στις 31 Αυγούστου 2026."
+  "LaunchModal": {
+    "eyebrow": "Έρχεται σύντομα",
+    "title": "Το Hangyul έρχεται την Ημέρα του Χανγκούλ",
+    "description": "Η εφαρμογή Hangyul κυκλοφορεί επίσημα στις 9 Οκτωβρίου 2026, την Ημέρα του Χανγκούλ.",
+    "suggestion": "Μέχρι τότε, ξεκίνα με το Hangyul Ganada και χτίσε γερές βάσεις στο Χανγκούλ από την αρχή.",
+    "cta": "Ξεκίνα με το Hangyul Ganada",
+    "close": "Κλείσιμο"
+  },
+  "StoreSelectModal": {
+    "title": "Επίλεξε τη συσκευή σου",
+    "description": "Επίλεξε από πού θέλεις να κατεβάσεις το Hangyul Ganada.",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "Κλείσιμο"
   },
   "QrModal": {
     "title": "Κατέβασε την εφαρμογή",

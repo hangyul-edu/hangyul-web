@@ -7,6 +7,7 @@ import KeyFeatures from "@/components/home/KeyFeatures";
 import Pricing from "@/components/home/Pricing";
 import CtaSection from "@/components/home/CtaSection";
 import GanadaSection from "@/components/home/GanadaSection";
+import { LaunchFlowProvider } from "@/components/common/LaunchFlowProvider";
 
 export default function Home({
   params,
@@ -19,12 +20,14 @@ export default function Home({
 
   return (
     <main id="main-content">
-      <MainSection />
-      <ServiceIntro id="intro" />
-      <KeyFeatures id="features" />
-      <Pricing id="pricing" />
-      <CtaSection />
-      <GanadaSection />
+      <LaunchFlowProvider>
+        <MainSection />
+        <ServiceIntro id="intro" />
+        <KeyFeatures id="features" />
+        <Pricing id="pricing" />
+        <CtaSection />
+        <GanadaSection />
+      </LaunchFlowProvider>
     </main>
   );
 }

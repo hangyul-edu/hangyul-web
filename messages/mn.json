@@ -58,8 +58,20 @@
     "description": "Үсгээс эхлээд үгийн сан хүртэл, эхний алхмаасаа зөв.\nЗөвхөн уншаад хүрэхгүй, хангылыг гараараа бичиж тогтооно.\nHangyul Ganada-тай хамт бат бөх суурийг тавь.",
     "button": "Hangyul Ganada эхлүүлэх"
   },
-  "StoreButton": {
-    "comingSoon": "2026 оны 8 дугаар сарын 31-нд гарна."
+  "LaunchModal": {
+    "eyebrow": "Тун удахгүй",
+    "title": "Hangyul Хангыль өдрөөр нээлтээ хийнэ",
+    "description": "Hangyul апп 2026 оны 10 дугаар сарын 9-нд, Хангыль өдрөөр албан ёсоор нээгдэнэ.",
+    "suggestion": "Тэр болтол Hangyul Ganada-аар эхлүүлж, хангылийн суурийг анхнаас нь бат бэх тавиарай.",
+    "cta": "Hangyul Ganada-аар эхлүүлэх",
+    "close": "Хаах"
+  },
+  "StoreSelectModal": {
+    "title": "Төхөөрөмжөө сонгоно уу",
+    "description": "Hangyul Ganada-г хаанаас татахаа сонгоно уу.",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "Хаах"
   },
   "QrModal": {
     "title": "Гар утасны апп татах",

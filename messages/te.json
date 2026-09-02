@@ -58,8 +58,20 @@
     "description": "అక్షరాల నుంచి పదజాలం వరకు, తొలి అడుగే సరిగ్గా.\nచదవడం ఒక్కటే సరిపోదు, హంగుల్‌ను మీ చేత్తో రాస్తూ నేర్చుకోండి.\nHangyul Ganada తో బలమైన పునాది వేసుకోండి.",
     "button": "Hangyul Ganada ప్రారంభించండి"
   },
-  "StoreButton": {
-    "comingSoon": "2026 ఆగస్టు 31న విడుదల."
+  "LaunchModal": {
+    "eyebrow": "త్వరలో",
+    "title": "హంగుల్ దినోత్సవం రోజున Hangyul వస్తోంది",
+    "description": "Hangyul యాప్ 2026 అక్టోబర్ 9, హంగుల్ దినోత్సవం రోజున అధికారికంగా ప్రారంభమవుతుంది.",
+    "suggestion": "అప్పటివరకు Hangyul Ganadaతో మొదలుపెట్టి, హంగుల్‌లో మొదటి నుంచే బలమైన పునాది వేసుకోండి.",
+    "cta": "Hangyul Ganadaతో ప్రారంభించండి",
+    "close": "మూసివేయండి"
+  },
+  "StoreSelectModal": {
+    "title": "మీ పరికరాన్ని ఎంచుకోండి",
+    "description": "Hangyul Ganadaను ఎక్కడి నుంచి డౌన్‌లోడ్ చేయాలో ఎంచుకోండి.",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "మూసివేయండి"
   },
   "QrModal": {
     "title": "మొబైల్ యాప్ డౌన్‌లోడ్",

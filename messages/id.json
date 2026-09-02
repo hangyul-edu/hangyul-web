@@ -58,8 +58,20 @@
     "description": "Dari huruf sampai kosakata, mulailah dengan cara yang benar.\nMembaca saja tidak cukup, pelajari hangul dengan menulisnya sendiri.\nBangun dasar yang kuat bersama Hangyul Ganada.",
     "button": "Mulai Hangyul Ganada"
   },
-  "StoreButton": {
-    "comingSoon": "Akan diluncurkan pada 31 Agustus 2026."
+  "LaunchModal": {
+    "eyebrow": "Segera hadir",
+    "title": "Hangyul hadir di Hari Hangul",
+    "description": "Aplikasi Hangyul resmi diluncurkan pada 9 Oktober 2026, Hari Hangul.",
+    "suggestion": "Sambil menunggu, mulailah dengan Hangyul Ganada dan bangun dasar Hangul yang kuat dari awal.",
+    "cta": "Mulai dengan Hangyul Ganada",
+    "close": "Tutup"
+  },
+  "StoreSelectModal": {
+    "title": "Pilih perangkatmu",
+    "description": "Pilih tempat kamu ingin mengunduh Hangyul Ganada.",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "Tutup"
   },
   "QrModal": {
     "title": "Unduh aplikasi mobile",

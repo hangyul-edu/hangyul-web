@@ -58,8 +58,20 @@
     "description": "من الحروف إلى المفردات، ابدأ بالشكل الصحيح.\nالقراءة وحدها لا تكفي، اكتب الهانغول بيدك لتتقنه.\nابنِ أساسًا متينًا مع Hangyul Ganada.",
     "button": "ابدأ مع Hangyul Ganada"
   },
-  "StoreButton": {
-    "comingSoon": "الإطلاق في 31 أغسطس 2026."
+  "LaunchModal": {
+    "eyebrow": "قريبًا",
+    "title": "Hangyul ينطلق في يوم الهانغول",
+    "description": "يُطلق تطبيق Hangyul رسميًا في 9 أكتوبر 2026، يوم الهانغول.",
+    "suggestion": "حتى ذلك الحين، ابدأ مع Hangyul Ganada وابنِ أساسًا قويًا في الهانغول من البداية.",
+    "cta": "ابدأ مع Hangyul Ganada",
+    "close": "إغلاق"
+  },
+  "StoreSelectModal": {
+    "title": "اختر جهازك",
+    "description": "اختر المكان الذي تريد تنزيل Hangyul Ganada منه.",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "إغلاق"
   },
   "QrModal": {
     "title": "تنزيل التطبيق",

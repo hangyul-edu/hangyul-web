@@ -58,8 +58,20 @@
     "description": "Từ chữ cái đến từ vựng, đi đúng ngay từ bước đầu.\nChỉ đọc thôi là chưa đủ, hãy tự tay viết để nhớ hangeul.\nXây nền tảng vững chắc cùng Hangyul Ganada.",
     "button": "Bắt đầu Hangyul Ganada"
   },
-  "StoreButton": {
-    "comingSoon": "Dự kiến ra mắt ngày 31 tháng 8 năm 2026."
+  "LaunchModal": {
+    "eyebrow": "Sắp ra mắt",
+    "title": "Hangyul ra mắt vào Ngày Hangul",
+    "description": "Ứng dụng Hangyul chính thức ra mắt vào ngày 9 tháng 10 năm 2026, Ngày Hangul.",
+    "suggestion": "Trong lúc chờ đợi, hãy bắt đầu với Hangyul Ganada để xây nền tảng Hangul vững chắc ngay từ đầu.",
+    "cta": "Bắt đầu với Hangyul Ganada",
+    "close": "Đóng"
+  },
+  "StoreSelectModal": {
+    "title": "Chọn thiết bị của bạn",
+    "description": "Chọn nơi bạn muốn tải Hangyul Ganada.",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "Đóng"
   },
   "QrModal": {
     "title": "Tải ứng dụng di động",

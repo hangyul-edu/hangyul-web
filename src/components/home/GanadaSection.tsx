@@ -47,7 +47,7 @@ export default function GanadaSection() {
 
           <p className={styles.description}>{t("description")}</p>
 
-          <StoreButton className={styles.storeBtn}>
+          <StoreButton app="ganada" className={styles.storeBtn}>
             {t("button")}
             <Image
               src={chevronRightIcon}

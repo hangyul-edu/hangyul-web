@@ -58,8 +58,20 @@
     "description": "Letters to vocabulary get it right from the start.\nReading isn't enough write it with your hands.\nBuild a solid foundation with Hangyul Ganada.",
     "button": "Start Hangyul Ganada"
   },
-  "StoreButton": {
-    "comingSoon": "Launching on August 31, 2026."
+  "LaunchModal": {
+    "eyebrow": "Coming Soon",
+    "title": "Hangyul launches on Hangul Day",
+    "description": "Hangyul officially launches on October 9, 2026 — Hangul Day.",
+    "suggestion": "Until then, start with Hangyul Ganada and build a strong foundation in Hangul from the very beginning.",
+    "cta": "Start with Hangyul Ganada",
+    "close": "Close"
+  },
+  "StoreSelectModal": {
+    "title": "Choose your device",
+    "description": "Select where you'd like to download Hangyul Ganada.",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "Close"
   },
   "QrModal": {
     "title": "Download the App",

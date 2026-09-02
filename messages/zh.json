@@ -58,8 +58,20 @@
     "description": "从字母到词汇，第一步就走对。\n只靠读还不够，用手写一写，把韩文真正记牢。\n用 Hangyul Ganada 打下扎实的基础。",
     "button": "开始 Hangyul Ganada"
   },
-  "StoreButton": {
-    "comingSoon": "预计于 2026 年 8 月 31 日上线。"
+  "LaunchModal": {
+    "eyebrow": "即将上线",
+    "title": "Hangyul 将于韩文日正式上线",
+    "description": "Hangyul 将于 2026 年 10 月 9 日（韩文日）正式上线。",
+    "suggestion": "在此之前，不妨先从 Hangyul Ganada 开始，从零打好韩文基础。",
+    "cta": "从 Hangyul Ganada 开始",
+    "close": "关闭"
+  },
+  "StoreSelectModal": {
+    "title": "选择你的设备",
+    "description": "请选择下载 Hangyul Ganada 的平台。",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "关闭"
   },
   "QrModal": {
     "title": "下载手机应用",

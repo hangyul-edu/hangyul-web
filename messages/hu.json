@@ -58,8 +58,20 @@
     "description": "A betűktől a szókincsig, mindjárt jól kezdve.\nAz olvasás önmagában kevés, a hangult saját kezeddel írva sajátítod el.\nÉpíts szilárd alapokat a Hangyul Ganadával.",
     "button": "Hangyul Ganada indítása"
   },
-  "StoreButton": {
-    "comingSoon": "Megjelenés: 2026. augusztus 31."
+  "LaunchModal": {
+    "eyebrow": "Hamarosan",
+    "title": "A Hangyul a hangul napján érkezik",
+    "description": "A Hangyul alkalmazás hivatalosan 2026. október 9-én, a hangul napján indul.",
+    "suggestion": "Addig is kezdd el a Hangyul Ganadával, és építs szilárd alapokat a hangulban a legelejétől.",
+    "cta": "Kezdés a Hangyul Ganadával",
+    "close": "Bezárás"
+  },
+  "StoreSelectModal": {
+    "title": "Válaszd ki az eszközödet",
+    "description": "Válaszd ki, honnan töltöd le a Hangyul Ganadát.",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "close": "Bezárás"
   },
   "QrModal": {
     "title": "Mobilalkalmazás letöltése",
