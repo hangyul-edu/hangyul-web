@@ -1,7 +1,7 @@
 export const privacyTr = {
   title: "Gizlilik politikası",
   lastUpdated: "Son güncelleme: 18 Mayıs 2026",
-  body: `Hangyul Inc. ("Şirket") kullanıcılarının gizliliğine saygı duyar ve yürürlükteki veri koruma mevzuatına uyar. İşbu Gizlilik Politikası, kullanıcılar Hangyul hizmetine eriştiğinde kişisel verilerin nasıl toplandığını, kullanıldığını ve korunduğunu açıklar.
+  body: `Hangyul Inc. (“Şirket”) kullanıcılarının gizliliğine saygı duyar ve yürürlükteki veri koruma mevzuatına uyar. İşbu Gizlilik Politikası, kullanıcılar Hangyul hizmetine eriştiğinde kişisel verilerin nasıl toplandığını, kullanıldığını ve korunduğunu açıklar.
 
 Madde 1. Toplanan Veriler
 Şirket aşağıdaki kişisel veri türlerini toplayabilir.

@@ -1,7 +1,7 @@
 export const privacyNl = {
   title: "Privacybeleid",
   lastUpdated: "Laatst bijgewerkt: 18 mei 2026",
-  body: `Hangyul Inc. ("het Bedrijf") respecteert de privacy van zijn gebruikers en houdt zich aan de toepasselijke wetgeving inzake gegevensbescherming. Dit Privacybeleid legt uit hoe persoonsgegevens worden verzameld, gebruikt en beschermd wanneer gebruikers de dienst Hangyul gebruiken.
+  body: `Hangyul Inc. (“het Bedrijf”) respecteert de privacy van zijn gebruikers en houdt zich aan de toepasselijke wetgeving inzake gegevensbescherming. Dit Privacybeleid legt uit hoe persoonsgegevens worden verzameld, gebruikt en beschermd wanneer gebruikers de dienst Hangyul gebruiken.
 
 Artikel 1. Gegevens die wij verzamelen
 Het Bedrijf kan de volgende soorten persoonsgegevens verzamelen.

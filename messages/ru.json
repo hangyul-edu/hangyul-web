@@ -56,7 +56,7 @@
     "category": "Ещё более лёгкий старт",
     "title": "Только начинаете учить корейский?\n<highlight>Hangyul Ganada</highlight>",
     "description": "От букв до лексики — правильно с самого начала.\nОдного чтения мало, хангыль запоминается, когда пишешь его рукой.\nСоздайте прочную основу вместе с Hangyul Ganada.",
-    "button": "Начать Hangyul Ganada"
+    "button": "Начать с Hangyul Ganada"
   },
   "LaunchModal": {
     "eyebrow": "Скоро",
@@ -91,7 +91,7 @@
   "Alt": {
     "appPreview": "Экран приложения Hangyul для практики разговорного корейского",
     "membershipPreview": "Тарифы премиум-подписки Hangyul",
-    "ganadaPreview": "Экран Hangyul Ganada для письма корейских букв от руки"
+    "ganadaPreview": "Экран Hangyul Ganada для написания корейских букв от руки"
   },
   "Header": {
     "nav": {

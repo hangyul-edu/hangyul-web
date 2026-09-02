@@ -1,7 +1,7 @@
 export const privacySv = {
   title: "Integritetspolicy",
   lastUpdated: "Senast uppdaterad: 18 maj 2026",
-  body: `Hangyul Inc. ("Bolaget") respekterar användarnas integritet och följer tillämplig dataskyddslagstiftning. Denna integritetspolicy beskriver hur personuppgifter samlas in, används och skyddas när användare använder tjänsten Hangyul.
+  body: `Hangyul Inc. (”Bolaget”) respekterar användarnas integritet och följer tillämplig dataskyddslagstiftning. Denna integritetspolicy beskriver hur personuppgifter samlas in, används och skyddas när användare använder tjänsten Hangyul.
 
 Artikel 1. Uppgifter som vi samlar in
 Bolaget kan samla in följande typer av personuppgifter.

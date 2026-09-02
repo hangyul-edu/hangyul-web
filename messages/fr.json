@@ -25,7 +25,7 @@
   },
   "KeyFeatures": {
     "title": "Le parcours d’apprentissage",
-    "subtitle": "Ce que vous apprenez, vous le dites ; <mobileBr></mobileBr>et ce que vous dites devient une vraie compétence",
+    "subtitle": "Ce que vous apprenez, vous le dites ; <mobileBr></mobileBr>ce que vous dites devient une vraie compétence",
     "feature1": {
       "category": "Des cours de conversation à répéter à voix haute",
       "title": "Ne vous arrêtez pas à l’écoute\nParlez dès maintenant !",
@@ -54,9 +54,9 @@
   },
   "GanadaSection": {
     "category": "Un début plus facile",
-    "title": "Vous débutez en coréen ?\n<highlight>Hangyul Ganada</highlight>",
-    "description": "Des lettres au vocabulaire, bien commencer dès le départ.\nLire ne suffit pas, apprenez le hangeul en l'écrivant de votre main.\nConstruisez des bases solides avec Hangyul Ganada.",
-    "button": "Commencer Hangyul Ganada"
+    "title": "Vous débutez en coréen ?\n<highlight>Hangyul Ganada</highlight>",
+    "description": "Des lettres au vocabulaire, bien commencer dès le départ.\nLire ne suffit pas, apprenez le hangeul en l’écrivant de votre main.\nConstruisez des bases solides avec Hangyul Ganada.",
+    "button": "Commencer avec Hangyul Ganada"
   },
   "LaunchModal": {
     "eyebrow": "Bientôt disponible",
@@ -67,7 +67,7 @@
     "close": "Fermer"
   },
   "StoreSelectModal": {
-    "title": "Quel appareil utilisez-vous ?",
+    "title": "Quel appareil utilisez-vous ?",
     "description": "Choisissez votre appareil pour télécharger Hangyul Ganada.",
     "androidLabel": "Android",
     "androidStore": "Télécharger sur Google Play",
@@ -89,8 +89,8 @@
     "skipToContent": "Aller au contenu principal"
   },
   "Alt": {
-    "appPreview": "Écran de l'application Hangyul pour pratiquer le coréen à l'oral",
-    "membershipPreview": "Formules d'abonnement Premium de Hangyul",
+    "appPreview": "Écran de l’application Hangyul pour pratiquer le coréen à l’oral",
+    "membershipPreview": "Formules d’abonnement Premium de Hangyul",
     "ganadaPreview": "Écran Hangyul Ganada pour écrire les lettres coréennes à la main"
   },
   "Header": {

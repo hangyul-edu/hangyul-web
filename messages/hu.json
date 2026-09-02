@@ -38,7 +38,7 @@
     },
     "feature3": {
       "category": "Tanulás ligákban",
-      "title": "Tanuljatok és versenyezzetek együtt\nSzórakoztatóbban, tovább, kitartóbban",
+      "title": "Tanulj és versenyezz másokkal\nSzórakoztatóbban, tovább, kitartóbban",
       "description": "Minél feljebb kerülsz a ranglistán, annál jobb lesz a koreaid.\nA rendes ligák és a baráti ligák fenntartják a motivációt,\nhogy nap mint nap folytasd, és élvezd a fejlődést."
     }
   },
@@ -55,7 +55,7 @@
   "GanadaSection": {
     "category": "Egy lépéssel könnyebb kezdés",
     "title": "Most kezdted a koreait?\n<highlight>Hangyul Ganada</highlight>",
-    "description": "A betűktől a szókincsig, mindjárt jól kezdve.\nAz olvasás önmagában kevés, a hangult saját kezeddel írva sajátítod el.\nÉpíts szilárd alapokat a Hangyul Ganadával.",
+    "description": "A betűktől a szókincsig – jól kezdd, már az első lépéstől.\nAz olvasás önmagában kevés, a hangult saját kezeddel írva sajátítod el.\nÉpíts szilárd alapokat a Hangyul Ganadával.",
     "button": "Hangyul Ganada indítása"
   },
   "LaunchModal": {
@@ -79,7 +79,7 @@
   },
   "QrModal": {
     "title": "Mobilalkalmazás letöltése",
-    "description": "Olvasd be a QR-kódot\na mobil eszközöddel",
+    "description": "Olvasd be a QR-kódot\na mobileszközöddel",
     "close": "Bezárás"
   },
   "LegalModal": {

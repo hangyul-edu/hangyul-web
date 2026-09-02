@@ -56,11 +56,11 @@
     "category": "Bir qadam osonroq boshlanish",
     "title": "Koreys tilini endigina boshladingizmi?\n<highlight>Hangyul Ganada</highlight>",
     "description": "Harflardan lugʻatgacha, ilk qadamdanoq toʻgʻri.\nFaqat oʻqish yetarli emas, hangulni oʻz qoʻlingiz bilan yozib oʻrganing.\nHangyul Ganada bilan mustahkam poydevor quring.",
-    "button": "Hangyul Ganada'ni boshlash"
+    "button": "Hangyul Ganada-ni boshlash"
   },
   "LaunchModal": {
     "eyebrow": "Tez kunda",
-    "title": "Hangyul Hangul kunida ishga tushadi",
+    "title": "Hangyul ilovasi Hangul kunida ishga tushadi",
     "description": "Hangyul ilovasi 2026-yil 9-oktabr, Hangul kunida rasman ishga tushadi.",
     "suggestion": "Ungacha Hangyul Ganada bilan boshlang va hangul asoslarini eng boshidan mustahkam egallang.",
     "cta": "Hangyul Ganada bilan boshlash",
@@ -68,13 +68,13 @@
   },
   "StoreSelectModal": {
     "title": "Qaysi qurilmadan foydalanasiz?",
-    "description": "Hangyul Ganada'ni yuklab olish uchun qurilmangizni tanlang.",
+    "description": "Hangyul Ganada-ni yuklab olish uchun qurilmangizni tanlang.",
     "androidLabel": "Android",
-    "androidStore": "Google Play'dan yuklab olish",
-    "androidAria": "Android uchun Hangyul Ganada'ni Google Play'dan yuklab olish",
+    "androidStore": "Google Play-dan yuklab olish",
+    "androidAria": "Android uchun Hangyul Ganada-ni Google Play-dan yuklab olish",
     "appleLabel": "iPhone",
-    "appleStore": "App Store'dan yuklab olish",
-    "appleAria": "iPhone uchun Hangyul Ganada'ni App Store'dan yuklab olish",
+    "appleStore": "App Store-dan yuklab olish",
+    "appleAria": "iPhone uchun Hangyul Ganada-ni App Store-dan yuklab olish",
     "close": "Yopish"
   },
   "QrModal": {
@@ -113,7 +113,7 @@
     "businessDivision": "Biznes boʻlimi: WooJun Nam",
     "email": "Elektron pochta: support@talkhangyul.com",
     "businessNumber": "Biznesni roʻyxatga olish raqami: 403-87-03380",
-    "mailOrderNumber": "Masofaviy savdo roʻyxat raqami: 2026-Seoul Dobong-0542",
+    "mailOrderNumber": "Masofaviy savdo roʻyxatga olish raqami: 2026-Seoul Dobong-0542",
     "terms": "Foydalanish shartlari",
     "privacy": "Maxfiylik siyosati"
   }

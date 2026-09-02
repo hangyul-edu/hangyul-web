@@ -12,7 +12,7 @@
     },
     "feature2": {
       "title": "Feedback personalizado con IA",
-      "description": "Nivel recomendado automáticamente tras analizar tu nivel\nCorrección precisa de pronunciación y entonación"
+      "description": "Nivel recomendado automáticamente tras analizar tus conocimientos\nCorrección precisa de pronunciación y entonación"
     },
     "feature3": {
       "title": "Más puntos en el TOPIK",
@@ -56,7 +56,7 @@
     "category": "Un comienzo más fácil",
     "title": "¿Acabas de empezar con el coreano?\n<highlight>Hangyul Ganada</highlight>",
     "description": "De las letras al vocabulario, empezando bien desde el principio.\nLeer no basta, aprende el hangul escribiéndolo con tu propia mano.\nConstruye una base sólida con Hangyul Ganada.",
-    "button": "Empezar Hangyul Ganada"
+    "button": "Empezar con Hangyul Ganada"
   },
   "LaunchModal": {
     "eyebrow": "Muy pronto",
@@ -73,8 +73,8 @@
     "androidStore": "Descargar en Google Play",
     "androidAria": "Descargar Hangyul Ganada para Android en Google Play",
     "appleLabel": "iPhone",
-    "appleStore": "Descargar en App Store",
-    "appleAria": "Descargar Hangyul Ganada para iPhone en App Store",
+    "appleStore": "Descargar en el App Store",
+    "appleAria": "Descargar Hangyul Ganada para iPhone en el App Store",
     "close": "Cerrar"
   },
   "QrModal": {

@@ -71,7 +71,7 @@ export const LOCALE_CONFIG: Record<string, LocaleInfo> = {
   tr: { name: "Türkçe", englishName: "Turkish", flag: TRFlag },
   uk: { name: "українська", englishName: "Ukrainian", flag: UAFlag },
   vi: { name: "Tiếng Việt", englishName: "Vietnamese", flag: VNFlag },
-  uz: { name: "O‘zbekcha", englishName: "Uzbek", flag: UZFlag },
+  uz: { name: "Oʻzbekcha", englishName: "Uzbek", flag: UZFlag },
   kk: { name: "қазақ", englishName: "Kazakh", flag: KZFlag },
   ky: { name: "Кыргызча", englishName: "Kyrgyz", flag: KGFlag },
   mn: { name: "монгол хэл", englishName: "Mongolian", flag: MNFlag },

@@ -54,9 +54,9 @@
   },
   "GanadaSection": {
     "category": "เริ่มต้นได้ง่ายขึ้นอีกขั้น",
-    "title": "เพิ่งเริ่มเรียนภาษาเกาหลีใช่ไหม\n<highlight>Hangyul Ganada</highlight>",
+    "title": "เพิ่งเริ่มเรียนภาษาเกาหลีใช่ไหม?\n<highlight>Hangyul Ganada</highlight>",
     "description": "ตั้งแต่ตัวอักษรจนถึงคำศัพท์ เริ่มต้นให้ถูกตั้งแต่ก้าวแรก\nแค่อ่านอย่างเดียวยังไม่พอ ลองเขียนฮันกึลด้วยมือของคุณเอง\nวางรากฐานให้แน่นด้วย Hangyul Ganada",
-    "button": "เริ่ม Hangyul Ganada"
+    "button": "เริ่มใช้ Hangyul Ganada"
   },
   "LaunchModal": {
     "eyebrow": "เร็ว ๆ นี้",
@@ -67,7 +67,7 @@
     "close": "ปิด"
   },
   "StoreSelectModal": {
-    "title": "คุณใช้อุปกรณ์แบบไหน",
+    "title": "คุณใช้อุปกรณ์แบบไหน?",
     "description": "เลือกอุปกรณ์ของคุณเพื่อดาวน์โหลด Hangyul Ganada",
     "androidLabel": "Android",
     "androidStore": "ดาวน์โหลดจาก Google Play",

@@ -1,6 +1,6 @@
 {
   "MainSection": {
-    "description": "Жалықтыратын грамматика жаттау — енді жетер!\nHangyul-мен бірге алғашқы күннен-ақ сөйлеп үйреніңіз.",
+    "description": "Жалықтыратын грамматика жаттау — енді жетер!\nHangyul-мен бірге алғашқы күннен-ақ сөйлеп корей тілін үйреніңіз.",
     "button": "Қазір бастау"
   },
   "ServiceIntro": {
@@ -67,7 +67,7 @@
     "close": "Жабу"
   },
   "StoreSelectModal": {
-    "title": "Қандай құрылғы қолданасыз?",
+    "title": "Қандай құрылғыны қолданасыз?",
     "description": "Hangyul Ganada-ны жүктеп алу үшін құрылғыңызды таңдаңыз.",
     "androidLabel": "Android",
     "androidStore": "Google Play-ден жүктеп алу",
@@ -90,7 +90,7 @@
   },
   "Alt": {
     "appPreview": "Корей тілінде сөйлеуді жаттықтыруға арналған Hangyul қолданбасының экраны",
-    "membershipPreview": "Hangyul премиум мүшелік жоспарлары",
+    "membershipPreview": "Hangyul Premium мүшелік жоспарлары",
     "ganadaPreview": "Корей әріптерін қолмен жазуға арналған Hangyul Ganada экраны"
   },
   "Header": {

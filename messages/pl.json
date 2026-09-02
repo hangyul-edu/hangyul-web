@@ -38,7 +38,7 @@
     },
     "feature3": {
       "category": "Nauka w rytmie lig",
-      "title": "Uczcie się i rywalizujcie razem\nCiekawiej, dłużej i bardziej regularnie",
+      "title": "Ucz się i rywalizuj razem\nCiekawiej, dłużej i bardziej regularnie",
       "description": "Im wyżej w rankingu, tym lepszy twój koreański.\nLigi regularne i ligi ze znajomymi podtrzymują motywację,\nbyś uczył się codziennie i cieszył się postępami."
     }
   },
@@ -56,13 +56,13 @@
     "category": "O krok łatwiejszy start",
     "title": "Dopiero zaczynasz naukę koreańskiego?\n<highlight>Hangyul Ganada</highlight>",
     "description": "Od liter po słownictwo, od razu tak, jak trzeba.\nSamo czytanie nie wystarczy, hangul poznasz, pisząc go własną ręką.\nZbuduj solidne podstawy z Hangyul Ganada.",
-    "button": "Zacznij Hangyul Ganada"
+    "button": "Zacznij z Hangyul Ganada"
   },
   "LaunchModal": {
     "eyebrow": "Już wkrótce",
-    "title": "Hangyul startuje w Dzień Hangul",
-    "description": "Aplikacja Hangyul oficjalnie startuje 9 października 2026 r., w Dzień Hangul.",
-    "suggestion": "Do tego czasu zacznij z Hangyul Ganada i zbuduj solidne podstawy hangul od samego początku.",
+    "title": "Hangyul startuje w Dzień Hangulu",
+    "description": "Aplikacja Hangyul oficjalnie startuje 9 października 2026 r., w Dzień Hangulu.",
+    "suggestion": "Do tego czasu zacznij z Hangyul Ganada i zbuduj solidne podstawy hangulu od samego początku.",
     "cta": "Zacznij z Hangyul Ganada",
     "close": "Zamknij"
   },
@@ -90,7 +90,7 @@
   },
   "Alt": {
     "appPreview": "Ekran aplikacji Hangyul do ćwiczenia mówienia po koreańsku",
-    "membershipPreview": "Plany członkostwa Premium w Hangyul",
+    "membershipPreview": "Plany członkostwa Premium w Hangyulu",
     "ganadaPreview": "Ekran Hangyul Ganada do ręcznego pisania koreańskich liter"
   },
   "Header": {

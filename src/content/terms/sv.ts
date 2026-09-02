@@ -2,15 +2,15 @@ export const termsSv = {
   title: "Användarvillkor",
   lastUpdated: "Senast uppdaterad: 18 maj 2026",
   body: `Artikel 1 (Syfte)
-Dessa villkor reglerar rättigheter och skyldigheter mellan Hangyul Inc. ("Bolaget") och användarna vid användning av tjänsten för koreanskainlärning Hangyul och tillhörande applikationer, webbplatser, API:er och tjänster ("Tjänsten").
+Dessa villkor reglerar rättigheter och skyldigheter mellan Hangyul Inc. (”Bolaget”) och användarna vid användning av tjänsten för koreanskainlärning Hangyul och tillhörande applikationer, webbplatser, API:er och tjänster (”Tjänsten”).
 
 Artikel 2 (Definitioner)
-1. "Tjänsten" avser den AI-baserade plattformen för koreanskainlärning och tillhörande tjänster som Bolaget tillhandahåller.
-2. "Användare" avser var och en som får åtkomst till eller använder Tjänsten.
-3. "Medlem" avser en registrerad användare av Tjänsten.
-4. "Konto" avser de inloggningsuppgifter som används för att få åtkomst till Tjänsten.
-5. "Innehåll" avser lektioner, meningar, röstanalysdata och utbildningsmaterial i Tjänsten.
-6. "Prenumerationstjänst" avser betalda medlemsfunktioner som är tillgängliga under en viss period.
+1. ”Tjänsten” avser den AI-baserade plattformen för koreanskainlärning och tillhörande tjänster som Bolaget tillhandahåller.
+2. ”Användare” avser var och en som får åtkomst till eller använder Tjänsten.
+3. ”Medlem” avser en registrerad användare av Tjänsten.
+4. ”Konto” avser de inloggningsuppgifter som används för att få åtkomst till Tjänsten.
+5. ”Innehåll” avser lektioner, meningar, röstanalysdata och utbildningsmaterial i Tjänsten.
+6. ”Prenumerationstjänst” avser betalda medlemsfunktioner som är tillgängliga under en viss period.
 
 Artikel 3 (Ändring av villkoren)
 Bolaget får ändra dessa villkor i enlighet med tillämplig lag och informerar användarna om detta via Tjänsten.

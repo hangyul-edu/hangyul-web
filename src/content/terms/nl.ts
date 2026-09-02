@@ -2,15 +2,15 @@ export const termsNl = {
   title: "Gebruiksvoorwaarden",
   lastUpdated: "Laatst bijgewerkt: 18 mei 2026",
   body: `Artikel 1 (Doel)
-Deze Voorwaarden regelen de rechten en verplichtingen tussen Hangyul Inc. ("het Bedrijf") en gebruikers met betrekking tot het gebruik van de Koreaanse leerdienst Hangyul en de bijbehorende applicaties, websites, API's en diensten ("de Dienst").
+Deze Voorwaarden regelen de rechten en verplichtingen tussen Hangyul Inc. (“het Bedrijf”) en gebruikers met betrekking tot het gebruik van de Koreaanse leerdienst Hangyul en de bijbehorende applicaties, websites, API's en diensten (“de Dienst”).
 
 Artikel 2 (Definities)
-1. "Dienst" verwijst naar het door het Bedrijf aangeboden AI-gestuurde platform voor het leren van Koreaans en de daarmee samenhangende diensten.
-2. "Gebruiker" verwijst naar iedereen die toegang heeft tot de Dienst of deze gebruikt.
-3. "Lid" verwijst naar een geregistreerde gebruiker van de Dienst.
-4. "Account" verwijst naar de inloggegevens waarmee toegang tot de Dienst wordt verkregen.
-5. "Content" verwijst naar lessen, zinnen, spraakanalysegegevens en lesmateriaal binnen de Dienst.
-6. "Abonnementsdienst" verwijst naar betaalde lidmaatschapsfuncties die gedurende een bepaalde periode beschikbaar zijn.
+1. “Dienst” verwijst naar het door het Bedrijf aangeboden AI-gestuurde platform voor het leren van Koreaans en de daarmee samenhangende diensten.
+2. “Gebruiker” verwijst naar iedereen die toegang heeft tot de Dienst of deze gebruikt.
+3. “Lid” verwijst naar een geregistreerde gebruiker van de Dienst.
+4. “Account” verwijst naar de inloggegevens waarmee toegang tot de Dienst wordt verkregen.
+5. “Content” verwijst naar lessen, zinnen, spraakanalysegegevens en lesmateriaal binnen de Dienst.
+6. “Abonnementsdienst” verwijst naar betaalde lidmaatschapsfuncties die gedurende een bepaalde periode beschikbaar zijn.
 
 Artikel 3 (Wijziging van de Voorwaarden)
 Het Bedrijf kan deze Voorwaarden wijzigen in overeenstemming met de toepasselijke wetgeving en zal gebruikers hierover via de Dienst informeren.

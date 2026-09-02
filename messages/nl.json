@@ -1,6 +1,6 @@
 {
   "MainSection": {
-    "description": "Genoeg saaie grammaticalessen!\nLeer Koreaans door het meteen te spreken, met Hangyul.",
+    "description": "Genoeg saaie grammaticalessen!\nLeer Koreaans door meteen te praten, met Hangyul.",
     "button": "Nu beginnen"
   },
   "ServiceIntro": {
@@ -25,7 +25,7 @@
   },
   "KeyFeatures": {
     "title": "Zo leer je",
-    "subtitle": "Wat je leert wordt spreken, <mobileBr></mobileBr>en spreken wordt echt kunnen",
+    "subtitle": "Wat je leert, wordt spreken; <mobileBr></mobileBr>en spreken wordt echt kunnen",
     "feature1": {
       "category": "Koreaanse conversatielessen om hardop mee te praten",
       "title": "Blijf niet hangen bij luisteren\nSpreek nu meteen!",
@@ -37,9 +37,9 @@
       "description": "De AI analyseert je niveau en je doelen <mobileBr></mobileBr>en beveelt automatisch passende zinnen aan. <mobileBr></mobileBr>Dagdoelen houden je voortgang op koers.\nBewaar de zinnen die je mooi vindt\nen maak van je fouten je eigen studieschrift."
     },
     "feature3": {
-      "category": "Leren via leagues",
+      "category": "Leren via liga's",
       "title": "Samen leren, samen strijden\nLeuker, langer en met meer regelmaat",
-      "description": "Hoe hoger je klimt, hoe beter je Koreaans wordt.\nReguliere leagues en vriendenleagues houden je motivatie hoog,\nzodat je elke dag doorgaat en plezier beleeft aan je vooruitgang."
+      "description": "Hoe hoger je klimt, hoe beter je Koreaans wordt.\nReguliere liga's en vriendenliga's houden je motivatie hoog,\nzodat je elke dag doorgaat en plezier beleeft aan je vooruitgang."
     }
   },
   "Pricing": {
@@ -55,7 +55,7 @@
   "GanadaSection": {
     "category": "Een stap makkelijker beginnen",
     "title": "Net begonnen met Koreaans?\n<highlight>Hangyul Ganada</highlight>",
-    "description": "Van letters tot woordenschat, meteen goed beginnen.\nAlleen lezen is niet genoeg, leer hangul door het zelf te schrijven.\nLeg een stevige basis met Hangyul Ganada.",
+    "description": "Van letters tot woordenschat, meteen goed beginnen.\nAlleen lezen is niet genoeg, leer Hangul door het zelf te schrijven.\nLeg een stevige basis met Hangyul Ganada.",
     "button": "Start met Hangyul Ganada"
   },
   "LaunchModal": {
@@ -90,7 +90,7 @@
   },
   "Alt": {
     "appPreview": "Scherm van de Hangyul-app om Koreaans te leren spreken",
-    "membershipPreview": "Premium-lidmaatschapsplannen van Hangyul",
+    "membershipPreview": "Premium-lidmaatschappen van Hangyul",
     "ganadaPreview": "Hangyul Ganada-scherm om Koreaanse letters met de hand te schrijven"
   },
   "Header": {

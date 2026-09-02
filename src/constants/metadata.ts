@@ -211,7 +211,7 @@ export const LOCALE_META: Record<string, LocaleMeta> = {
   hi: {
     title: "Hangyul | AI के साथ कोरियन सीखने वाला ऐप",
     description:
-      "असली बातचीत के लिए बने मज़ेदार AI पाठों के साथ कोरियन बोलना सहज बनाइए।",
+      "असली बातचीत के लिए बने मज़ेदार AI पाठों के साथ कोरियन बोलना सहज बनाएँ।",
     keywords: [
       "कोरियन सीखें",
       "कोरियन भाषा ऐप",
@@ -222,9 +222,9 @@ export const LOCALE_META: Record<string, LocaleMeta> = {
       "ऑनलाइन कोरियन",
       "Hangyul",
     ],
-    ogTitle: "Hangyul - AI के साथ स्वाभाविक रूप से कोरियन बोलिए",
+    ogTitle: "Hangyul - AI के साथ स्वाभाविक रूप से कोरियन बोलें",
     ogDescription:
-      "AI के साथ कोरियन सीखिए। Hangyul आपके उच्चारण को सुधारता है, असली कोरियन वाक्य सिखाता है और व्यक्तिगत फीडबैक से बोलने का आत्मविश्वास देता है।",
+      "AI के साथ कोरियन सीखें। Hangyul आपके उच्चारण को सुधारता है, असली कोरियन वाक्य सिखाता है और व्यक्तिगत फीडबैक से बोलने का आत्मविश्वास देता है।",
     ogLocale: "hi_IN",
   },
   hu: {
@@ -338,7 +338,7 @@ export const LOCALE_META: Record<string, LocaleMeta> = {
     ],
     ogTitle: "Hangyul - Fale coreano com naturalidade graças à IA",
     ogDescription:
-      "Aprenda coreano com IA. O Hangyul corrige a sua pronúncia, ensina frases coreanas reais e dá-lhe confiança para falar através de feedback personalizado.",
+      "Aprenda coreano com IA. Hangyul corrige a sua pronúncia, ensina frases coreanas reais e dá-lhe confiança para falar através de feedback personalizado.",
     ogLocale: "pt_PT",
   },
   ro: {
@@ -437,7 +437,7 @@ export const LOCALE_META: Record<string, LocaleMeta> = {
     ogLocale: "fil_PH",
   },
   ta: {
-    title: "Hangyul | AI உடன் கொரிய மொழி கற்கும் ஆப்",
+    title: "Hangyul | AI உடன் கொரிய மொழி கற்கும் செயலி",
     description:
       "உண்மையான உரையாடல்களுக்காக உருவாக்கப்பட்ட சுவாரஸ்யமான AI பாடங்களுடன் இயல்பாக கொரிய மொழி பேசுங்கள்.",
     keywords: [
@@ -490,7 +490,7 @@ export const LOCALE_META: Record<string, LocaleMeta> = {
     ],
     ogTitle: "Hangyul - พูดเกาหลีอย่างเป็นธรรมชาติไปกับ AI",
     ogDescription:
-      "เรียนภาษาเกาหลีกับ AI ไปกับ Hangyul ที่ช่วยแก้การออกเสียง สอนประโยคเกาหลีที่ใช้จริง และสร้างความมั่นใจในการพูดด้วยฟีดแบ็กเฉพาะบุคคล",
+      "เรียนภาษาเกาหลีไปกับ AI ของ Hangyul ที่ช่วยแก้การออกเสียง สอนประโยคเกาหลีที่ใช้จริง และสร้างความมั่นใจในการพูดด้วยฟีดแบ็กเฉพาะบุคคล",
     ogLocale: "th_TH",
   },
   tr: {
@@ -553,7 +553,7 @@ export const LOCALE_META: Record<string, LocaleMeta> = {
   uz: {
     title: "Hangyul | Sunʼiy intellekt bilan koreys tilini oʻrganish ilovasi",
     description:
-      "Haqiqiy suhbatlar uchun tayyorlangan qiziqarli AI darslari bilan koreys tilida erkin gapiring.",
+      "Haqiqiy suhbatlar uchun tayyorlangan qiziqarli sunʼiy intellekt darslari bilan koreys tilida erkin gapiring.",
     keywords: [
       "koreys tilini oʻrganish",
       "koreys tili ilovasi",
@@ -564,9 +564,9 @@ export const LOCALE_META: Record<string, LocaleMeta> = {
       "onlayn koreys tili",
       "Hangyul",
     ],
-    ogTitle: "Hangyul - AI bilan koreys tilida tabiiy gapiring",
+    ogTitle: "Hangyul - Sunʼiy intellekt bilan koreys tilida tabiiy gapiring",
     ogDescription:
-      "AI bilan koreys tilini oʻrganing. Hangyul talaffuzingizni toʻgʻrilaydi, hayotda ishlatiladigan koreyscha jumlalarni oʻrgatadi va shaxsiy tavsiyalar orqali gapirishga ishonch beradi.",
+      "Sunʼiy intellekt bilan koreys tilini oʻrganing. Hangyul talaffuzingizni toʻgʻrilaydi, hayotda ishlatiladigan koreyscha jumlalarni oʻrgatadi va shaxsiy tavsiyalar orqali gapirishga ishonch beradi.",
     ogLocale: "uz_UZ",
   },
   kk: {
@@ -608,7 +608,7 @@ export const LOCALE_META: Record<string, LocaleMeta> = {
     ogLocale: "ky_KG",
   },
   mn: {
-    title: "Hangyul | Хиймэл оюунтай солонгос хэлний апп",
+    title: "Hangyul | AI-тай солонгос хэлний апп",
     description:
       "Бодит харилцан яриаг бодож бүтээсэн сонирхолтой AI хичээлүүдээр солонгосоор чөлөөтэй яриарай.",
     keywords: [

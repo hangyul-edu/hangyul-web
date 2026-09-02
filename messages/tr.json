@@ -55,14 +55,14 @@
   "GanadaSection": {
     "category": "Bir adım daha kolay başlangıç",
     "title": "Koreceye yeni mi başladın?\n<highlight>Hangyul Ganada</highlight>",
-    "description": "Harflerden kelimelere, daha ilk adımda doğru şekilde.\nSadece okumak yetmez, hangıl'ı kendi elinle yazarak öğren.\nHangyul Ganada ile sağlam bir temel at.",
+    "description": "Harflerden kelimelere, daha ilk adımda doğru şekilde.\nSadece okumak yetmez, Hangul'u kendi elinle yazarak öğren.\nHangyul Ganada ile sağlam bir temel at.",
     "button": "Hangyul Ganada'yı başlat"
   },
   "LaunchModal": {
     "eyebrow": "Çok yakında",
-    "title": "Hangyul, Hangıl Günü'nde geliyor",
-    "description": "Hangyul uygulaması 9 Ekim 2026 Hangıl Günü'nde resmen yayına giriyor.",
-    "suggestion": "O zamana kadar Hangyul Ganada ile başla ve Hangıl temelini en baştan sağlam at.",
+    "title": "Hangyul, Hangul Günü'nde geliyor",
+    "description": "Hangyul uygulaması 9 Ekim 2026 Hangul Günü'nde resmen yayına giriyor.",
+    "suggestion": "O zamana kadar Hangyul Ganada ile başla ve Hangul temelini en baştan sağlam at.",
     "cta": "Hangyul Ganada ile başla",
     "close": "Kapat"
   },

@@ -55,7 +55,7 @@
   "GanadaSection": {
     "category": "Awal yang lebih mudah",
     "title": "Baru mulai belajar bahasa Korea?\n<highlight>Hangyul Ganada</highlight>",
-    "description": "Dari huruf sampai kosakata, mulailah dengan cara yang benar.\nMembaca saja tidak cukup, pelajari hangul dengan menulisnya sendiri.\nBangun dasar yang kuat bersama Hangyul Ganada.",
+    "description": "Dari huruf sampai kosakata, mulailah dengan cara yang benar.\nMembaca saja tidak cukup, pelajari Hangul dengan menulisnya sendiri.\nBangun dasar yang kuat bersama Hangyul Ganada.",
     "button": "Mulai Hangyul Ganada"
   },
   "LaunchModal": {
@@ -79,7 +79,7 @@
   },
   "QrModal": {
     "title": "Unduh aplikasi mobile",
-    "description": "Pindai kode QR\ndengan perangkat mobile-mu",
+    "description": "Pindai kode QR\ndengan ponselmu",
     "close": "Tutup"
   },
   "LegalModal": {
@@ -90,7 +90,7 @@
   },
   "Alt": {
     "appPreview": "Layar aplikasi Hangyul untuk latihan berbicara bahasa Korea",
-    "membershipPreview": "Paket keanggotaan Premium Hangyul",
+    "membershipPreview": "Paket Membership Premium Hangyul",
     "ganadaPreview": "Layar Hangyul Ganada untuk menulis huruf Korea dengan tangan"
   },
   "Header": {

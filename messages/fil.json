@@ -53,9 +53,9 @@
     "button": "Magsimula na"
   },
   "GanadaSection": {
-    "category": "Isang hakbang na mas madaling simula",
+    "category": "Mas madaling simula",
     "title": "Kasisimula mo pa lang sa Korean?\n<highlight>Hangyul Ganada</highlight>",
-    "description": "Mula sa mga letra hanggang bokabularyo, tama agad ang simula.\nHindi sapat ang basahin lang, isulat mo mismo ang hangul para tumatak.\nBumuo ng matibay na pundasyon kasama ang Hangyul Ganada.",
+    "description": "Mula sa mga letra hanggang bokabularyo, tama agad ang simula.\nHindi sapat ang basahin lang, isulat mo mismo ang Hangul para tumatak.\nBumuo ng matibay na pundasyon kasama ang Hangyul Ganada.",
     "button": "Simulan ang Hangyul Ganada"
   },
   "LaunchModal": {
@@ -91,7 +91,7 @@
   "Alt": {
     "appPreview": "Screen ng Hangyul app para sa pagsasanay sa pagsasalita ng Korean",
     "membershipPreview": "Mga Premium membership plan ng Hangyul",
-    "ganadaPreview": "Screen ng Hangyul Ganada para sulatin ang mga letrang Korean gamit ang kamay"
+    "ganadaPreview": "Screen ng Hangyul Ganada para isulat ang mga letrang Korean gamit ang kamay"
   },
   "Header": {
     "nav": {

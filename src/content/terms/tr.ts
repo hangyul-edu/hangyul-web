@@ -2,15 +2,15 @@ export const termsTr = {
   title: "Kullanım koşulları",
   lastUpdated: "Son güncelleme: 18 Mayıs 2026",
   body: `Madde 1 (Amaç)
-İşbu Koşullar, Hangyul Inc. ("Şirket") ile kullanıcılar arasında, Hangyul Korece öğrenme hizmetinin ve bağlantılı uygulamaların, web sitelerinin, API'lerin ve hizmetlerin ("Hizmet") kullanımına ilişkin hak ve yükümlülükleri düzenler.
+İşbu Koşullar, Hangyul Inc. (“Şirket”) ile kullanıcılar arasında, Hangyul Korece öğrenme hizmetinin ve bağlantılı uygulamaların, web sitelerinin, API'lerin ve hizmetlerin (“Hizmet”) kullanımına ilişkin hak ve yükümlülükleri düzenler.
 
 Madde 2 (Tanımlar)
-1. "Hizmet", Şirket tarafından sunulan yapay zekâ tabanlı Korece öğrenme platformunu ve bağlantılı hizmetleri ifade eder.
-2. "Kullanıcı", Hizmet'e erişen veya Hizmet'i kullanan herkesi ifade eder.
-3. "Üye", Hizmet'e kayıtlı kullanıcıyı ifade eder.
-4. "Hesap", Hizmet'e erişmek için kullanılan oturum açma bilgilerini ifade eder.
-5. "İçerik", Hizmet içindeki dersleri, cümleleri, ses analizi verilerini ve eğitim materyallerini ifade eder.
-6. "Abonelik Hizmeti", belirli bir süre boyunca kullanılabilen ücretli üyelik özelliklerini ifade eder.
+1. “Hizmet”, Şirket tarafından sunulan yapay zekâ tabanlı Korece öğrenme platformunu ve bağlantılı hizmetleri ifade eder.
+2. “Kullanıcı”, Hizmet'e erişen veya Hizmet'i kullanan herkesi ifade eder.
+3. “Üye”, Hizmet'e kayıtlı kullanıcıyı ifade eder.
+4. “Hesap”, Hizmet'e erişmek için kullanılan oturum açma bilgilerini ifade eder.
+5. “İçerik”, Hizmet içindeki dersleri, cümleleri, ses analizi verilerini ve eğitim materyallerini ifade eder.
+6. “Abonelik Hizmeti”, belirli bir süre boyunca kullanılabilen ücretli üyelik özelliklerini ifade eder.
 
 Madde 3 (Koşulların Değiştirilmesi)
 Şirket, işbu Koşulları yürürlükteki mevzuata uygun olarak değiştirebilir ve kullanıcıları Hizmet üzerinden bilgilendirir.

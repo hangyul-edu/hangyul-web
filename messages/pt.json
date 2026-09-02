@@ -1,6 +1,6 @@
 {
   "MainSection": {
-    "description": "Acabaram-se as aulas de gramática maçadoras!\nComece a falar coreano desde o primeiro dia, com a Hangyul.",
+    "description": "Acabaram-se as aulas de gramática maçadoras!\nComece a falar coreano desde o primeiro dia, com Hangyul.",
     "button": "Começar agora"
   },
   "ServiceIntro": {
@@ -20,7 +20,7 @@
     },
     "feature4": {
       "title": "Aulas com criadores",
-      "description": "Criadores de todo o mundo\nsó na Hangyul"
+      "description": "Criadores de todo o mundo\nsó em Hangyul"
     }
   },
   "KeyFeatures": {
@@ -54,27 +54,27 @@
   },
   "GanadaSection": {
     "category": "Um começo mais fácil",
-    "title": "Está começando agora no coreano?\n<highlight>Hangyul Ganada</highlight>",
-    "description": "Das letras ao vocabulário, começando do jeito certo.\nSó ler não basta, aprenda o hangul escrevendo com a própria mão.\nConstrua uma base sólida com o Hangyul Ganada.",
-    "button": "Começar o Hangyul Ganada"
+    "title": "Está a começar agora no coreano?\n<highlight>Hangyul Ganada</highlight>",
+    "description": "Das letras ao vocabulário, a começar da forma certa.\nSó ler não basta, aprenda o hangul escrevendo com a sua própria mão.\nConstrua uma base sólida com Hangyul Ganada.",
+    "button": "Começar com Hangyul Ganada"
   },
   "LaunchModal": {
     "eyebrow": "Em breve",
-    "title": "O Hangyul chega no Dia do Hangul",
-    "description": "A aplicação Hangyul é lançada oficialmente a 9 de outubro de 2026, o Dia do Hangul.",
-    "suggestion": "Até lá, comece com o Hangyul Ganada e construa bases sólidas de Hangul desde o início.",
-    "cta": "Começar com o Hangyul Ganada",
+    "title": "Hangyul chega no Dia do Hangul",
+    "description": "A aplicação Hangyul será lançada oficialmente a 9 de outubro de 2026, o Dia do Hangul.",
+    "suggestion": "Até lá, comece com Hangyul Ganada e construa bases sólidas de hangul desde o início.",
+    "cta": "Começar com Hangyul Ganada",
     "close": "Fechar"
   },
   "StoreSelectModal": {
     "title": "Que dispositivo utiliza?",
-    "description": "Escolha o seu dispositivo para transferir o Hangyul Ganada.",
+    "description": "Escolha o seu dispositivo para transferir Hangyul Ganada.",
     "androidLabel": "Android",
     "androidStore": "Transferir no Google Play",
-    "androidAria": "Transferir o Hangyul Ganada para Android no Google Play",
+    "androidAria": "Transferir Hangyul Ganada para Android no Google Play",
     "appleLabel": "iPhone",
     "appleStore": "Transferir na App Store",
-    "appleAria": "Transferir o Hangyul Ganada para iPhone na App Store",
+    "appleAria": "Transferir Hangyul Ganada para iPhone na App Store",
     "close": "Fechar"
   },
   "QrModal": {
@@ -89,9 +89,9 @@
     "skipToContent": "Ir para o conteúdo principal"
   },
   "Alt": {
-    "appPreview": "Tela do aplicativo Hangyul para praticar a fala em coreano",
-    "membershipPreview": "Planos de assinatura Premium do Hangyul",
-    "ganadaPreview": "Tela do Hangyul Ganada para escrever letras coreanas à mão"
+    "appPreview": "Ecrã da aplicação Hangyul para praticar coreano falado",
+    "membershipPreview": "Planos de subscrição Premium de Hangyul",
+    "ganadaPreview": "Ecrã de Hangyul Ganada para escrever letras coreanas à mão"
   },
   "Header": {
     "nav": {

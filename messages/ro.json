@@ -5,7 +5,7 @@
   },
   "ServiceIntro": {
     "title": "De ce Hangyul?",
-    "subtitle": "Pentru că învățarea nu se oprește la ascultat: <mobileBr></mobileBr>ceea ce înveți îți iese, în sfârșit, pe gură.",
+    "subtitle": "Pentru că învățarea nu se oprește la ascultat: <mobileBr></mobileBr>ceea ce înveți ajungi, în sfârșit, să și spui cu voce tare.",
     "feature1": {
       "title": "Învățare axată pe vorbit",
       "description": "Exerciții în care vorbești chiar tu, cu voce tare\nDialoguri construite pe situații reale"
@@ -38,7 +38,7 @@
     },
     "feature3": {
       "category": "Învățare prin ligi",
-      "title": "Învățați și concurați împreună\nMai distractiv, mai mult timp, mai constant",
+      "title": "Învață și concurează împreună\nMai distractiv, mai mult timp, mai constant",
       "description": "Cu cât urci mai sus în clasament, cu atât îți crește nivelul.\nLigile obișnuite și cele cu prietenii îți mențin motivația,\nca să continui zi de zi și să te bucuri de progres."
     }
   },
@@ -55,20 +55,20 @@
   "GanadaSection": {
     "category": "Un început mai ușor",
     "title": "Abia ai început coreeana?\n<highlight>Hangyul Ganada</highlight>",
-    "description": "De la litere la vocabular, corect chiar de la primul pas.\nCititul singur nu ajunge, învață hangul scriindu-l cu mâna ta.\nConstruiește baze solide cu Hangyul Ganada.",
-    "button": "Începe Hangyul Ganada"
+    "description": "De la litere la vocabular, corect chiar de la primul pas.\nNu e de ajuns să citești, învață hangulul scriindu-l cu mâna ta.\nConstruiește baze solide cu Hangyul Ganada.",
+    "button": "Începe cu Hangyul Ganada"
   },
   "LaunchModal": {
     "eyebrow": "În curând",
-    "title": "Hangyul se lansează de Ziua Hangul",
-    "description": "Aplicația Hangyul se lansează oficial pe 9 octombrie 2026, de Ziua Hangul.",
-    "suggestion": "Până atunci, începe cu Hangyul Ganada și construiește-ți o bază solidă în Hangul chiar de la început.",
+    "title": "Hangyul se lansează de Ziua Hangulului",
+    "description": "Aplicația Hangyul se lansează oficial pe 9 octombrie 2026, de Ziua Hangulului.",
+    "suggestion": "Până atunci, începe cu Hangyul Ganada și construiește-ți o bază solidă în hangul chiar de la început.",
     "cta": "Începe cu Hangyul Ganada",
     "close": "Închide"
   },
   "StoreSelectModal": {
     "title": "Ce dispozitiv folosești?",
-    "description": "Alege dispozitivul tău pentru a descărca Hangyul Ganada.",
+    "description": "Alege-ți dispozitivul pentru a descărca Hangyul Ganada.",
     "androidLabel": "Android",
     "androidStore": "Descarcă din Google Play",
     "androidAria": "Descarcă Hangyul Ganada pentru Android din Google Play",

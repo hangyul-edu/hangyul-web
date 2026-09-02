@@ -29,7 +29,7 @@
     "feature1": {
       "category": "Koreanisch-Konversation zum Mitsprechen",
       "title": "Bleib nicht beim Zuhören stehen\nSprich jetzt einfach los!",
-      "description": "Lerne mit Konversationskursen globaler Creator auf deinem Niveau\nund übe sofort per Shadowing in Echtzeit.\nDie KI-Sprachanalyse korrigiert <mobileBr></mobileBr>deine Aussprache auf der Stelle.\nOffene Fragen? Die KI antwortet dir sofort."
+      "description": "Lerne mit Konversationskursen von Creators aus aller Welt auf deinem Niveau\nund übe sofort per Shadowing in Echtzeit.\nDie KI-Sprachanalyse korrigiert <mobileBr></mobileBr>deine Aussprache auf der Stelle.\nOffene Fragen? Die KI antwortet dir sofort."
     },
     "feature2": {
       "category": "KI-Satzempfehlungen",
@@ -38,14 +38,14 @@
     },
     "feature3": {
       "category": "Lernen in Ligen",
-      "title": "Gemeinsam lernen, gemeinsam wetteifern\nMehr Spaß, mehr Ausdauer, mehr Fortschritt",
+      "title": "Gemeinsam lernen, gemeinsam antreten\nMehr Spaß, mehr Ausdauer, mehr Fortschritt",
       "description": "Je höher dein Rang, desto besser dein Koreanisch.\nReguläre Ligen und Freundesligen halten deine Motivation hoch,\nund du erlebst, wie viel Freude Fortschritt macht."
     }
   },
   "Pricing": {
     "category": "Premium-Mitgliedschaft",
     "title": "Konstant lernen,\nunkompliziert abonnieren",
-    "description": "Mit der Premium-Mitgliedschaft nutzt du <mobileBr></mobileBr>alle Lernfunktionen ohne Einschränkung.\nTarif wählen und verwalten ist einfach\nund jederzeit änderbar."
+    "description": "Mit der Premium-Mitgliedschaft nutzt du <mobileBr></mobileBr>alle Lernfunktionen ohne Einschränkung.\nDeinen Tarif wählst und verwaltest du ganz einfach\nund änderst ihn jederzeit."
   },
   "CtaSection": {
     "title": "Sprich Koreanisch – <mobileBr></mobileBr>und zwar ab heute",
@@ -55,7 +55,7 @@
   "GanadaSection": {
     "category": "Ein Stück leichter starten",
     "title": "Gerade erst mit Koreanisch angefangen?\n<highlight>Hangyul Ganada</highlight>",
-    "description": "Von den Buchstaben bis zum Wortschatz, von Anfang an richtig.\nNur Lesen reicht nicht, Hangul lernst du, indem du es selbst schreibst.\nLege mit Hangyul Ganada ein solides Fundament.",
+    "description": "Von den Buchstaben bis zum Wortschatz, von Anfang an richtig.\nNur Lesen reicht nicht, Hangeul lernst du, indem du es selbst schreibst.\nLege mit Hangyul Ganada ein solides Fundament.",
     "button": "Hangyul Ganada starten"
   },
   "LaunchModal": {
