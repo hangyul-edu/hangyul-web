@@ -115,6 +115,8 @@
     "businessNumber": "Реєстраційний номер компанії: 403-87-03380",
     "mailOrderNumber": "Номер реєстрації дистанційної торгівлі: 2026-Seoul Dobong-0542",
     "terms": "Умови користування",
-    "privacy": "Політика конфіденційності"
+    "privacy": "Політика конфіденційності",
+    "socialMedia": "Соціальні мережі",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

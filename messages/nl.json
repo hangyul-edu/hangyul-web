@@ -115,6 +115,8 @@
     "businessNumber": "Handelsregisternummer: 403-87-03380",
     "mailOrderNumber": "Registratienummer verkoop op afstand: 2026-Seoul Dobong-0542",
     "terms": "Gebruiksvoorwaarden",
-    "privacy": "Privacybeleid"
+    "privacy": "Privacybeleid",
+    "socialMedia": "Sociale media",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

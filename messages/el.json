@@ -115,6 +115,8 @@
     "businessNumber": "Αριθμός μητρώου επιχείρησης: 403-87-03380",
     "mailOrderNumber": "Αριθμός καταχώρισης πωλήσεων εξ αποστάσεως: 2026-Seoul Dobong-0542",
     "terms": "Όροι χρήσης",
-    "privacy": "Πολιτική απορρήτου"
+    "privacy": "Πολιτική απορρήτου",
+    "socialMedia": "Μέσα κοινωνικής δικτύωσης",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

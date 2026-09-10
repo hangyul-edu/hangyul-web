@@ -115,6 +115,8 @@
     "businessNumber": "事業者登録番号：403-87-03380",
     "mailOrderNumber": "通信販売業申告番号：2026-Seoul Dobong-0542",
     "terms": "利用規約",
-    "privacy": "プライバシーポリシー"
+    "privacy": "プライバシーポリシー",
+    "socialMedia": "ソーシャルメディア",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

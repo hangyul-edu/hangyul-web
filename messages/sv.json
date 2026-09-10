@@ -115,6 +115,8 @@
     "businessNumber": "Organisationsnummer: 403-87-03380",
     "mailOrderNumber": "Registreringsnummer för distanshandel: 2026-Seoul Dobong-0542",
     "terms": "Användarvillkor",
-    "privacy": "Integritetspolicy"
+    "privacy": "Integritetspolicy",
+    "socialMedia": "Sociala medier",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

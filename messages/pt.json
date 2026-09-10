@@ -115,6 +115,8 @@
     "businessNumber": "Número de registo comercial: 403-87-03380",
     "mailOrderNumber": "Número de registo de venda à distância: 2026-Seoul Dobong-0542",
     "terms": "Termos de utilização",
-    "privacy": "Política de privacidade"
+    "privacy": "Política de privacidade",
+    "socialMedia": "Redes sociais",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

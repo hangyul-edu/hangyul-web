@@ -6,6 +6,7 @@ import Image from "next/image";
 import { logoIcon } from "@/assets/icons";
 import { useLocale, useTranslations } from "next-intl";
 import LegalModal from "@/components/common/LegalModal";
+import SocialLinks from "./SocialLinks";
 import { getBrandName } from "@/constants/site";
 import {
   loadLegalDocument,
@@ -118,6 +119,8 @@ export default function Footer() {
         </div>
 
         <div className={styles.rightSection}>
+          <SocialLinks />
+
           <div className={styles.infoRow}>
             <button
               className={styles.legalLink}

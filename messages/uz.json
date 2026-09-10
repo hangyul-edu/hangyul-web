@@ -115,6 +115,8 @@
     "businessNumber": "Biznesni roʻyxatga olish raqami: 403-87-03380",
     "mailOrderNumber": "Masofaviy savdo roʻyxatga olish raqami: 2026-Seoul Dobong-0542",
     "terms": "Foydalanish shartlari",
-    "privacy": "Maxfiylik siyosati"
+    "privacy": "Maxfiylik siyosati",
+    "socialMedia": "Ijtimoiy tarmoqlar",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

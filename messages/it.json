@@ -115,6 +115,8 @@
     "businessNumber": "Numero di registrazione dell'impresa: 403-87-03380",
     "mailOrderNumber": "Numero di registrazione per la vendita a distanza: 2026-Seoul Dobong-0542",
     "terms": "Termini di servizio",
-    "privacy": "Informativa sulla privacy"
+    "privacy": "Informativa sulla privacy",
+    "socialMedia": "Social media",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

@@ -115,6 +115,8 @@
     "businessNumber": "Cégjegyzékszám: 403-87-03380",
     "mailOrderNumber": "Távértékesítési nyilvántartási szám: 2026-Seoul Dobong-0542",
     "terms": "Felhasználási feltételek",
-    "privacy": "Adatvédelmi tájékoztató"
+    "privacy": "Adatvédelmi tájékoztató",
+    "socialMedia": "Közösségi média",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

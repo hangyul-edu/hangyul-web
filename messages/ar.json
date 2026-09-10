@@ -115,6 +115,8 @@
     "businessNumber": "رقم السجل التجاري: ⁦403-87-03380⁩",
     "mailOrderNumber": "رقم تسجيل البيع عن بُعد: ⁦2026-Seoul Dobong-0542⁩",
     "terms": "شروط الخدمة",
-    "privacy": "سياسة الخصوصية"
+    "privacy": "سياسة الخصوصية",
+    "socialMedia": "وسائل التواصل الاجتماعي",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

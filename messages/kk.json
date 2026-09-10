@@ -115,6 +115,8 @@
     "businessNumber": "Бизнесті тіркеу нөмірі: 403-87-03380",
     "mailOrderNumber": "Қашықтан сауда тіркеу нөмірі: 2026-Seoul Dobong-0542",
     "terms": "Қызмет көрсету шарттары",
-    "privacy": "Құпиялылық саясаты"
+    "privacy": "Құпиялылық саясаты",
+    "socialMedia": "Әлеуметтік желілер",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

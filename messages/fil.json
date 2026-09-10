@@ -115,6 +115,8 @@
     "businessNumber": "Numero ng Rehistro ng Negosyo: 403-87-03380",
     "mailOrderNumber": "Numero ng Rehistro sa Mail-Order Sales: 2026-Seoul Dobong-0542",
     "terms": "Mga Tuntunin ng Serbisyo",
-    "privacy": "Patakaran sa Privacy"
+    "privacy": "Patakaran sa Privacy",
+    "socialMedia": "Social Media",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

@@ -115,6 +115,8 @@
     "businessNumber": "Registrační číslo firmy: 403-87-03380",
     "mailOrderNumber": "Registrační číslo zásilkového prodeje: 2026-Seoul Dobong-0542",
     "terms": "Podmínky služby",
-    "privacy": "Zásady ochrany osobních údajů"
+    "privacy": "Zásady ochrany osobních údajů",
+    "socialMedia": "Sociální sítě",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

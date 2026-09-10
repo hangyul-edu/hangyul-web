@@ -115,6 +115,8 @@
     "businessNumber": "வணிகப் பதிவு எண்: 403-87-03380",
     "mailOrderNumber": "தொலைவணிகப் பதிவு எண்: 2026-Seoul Dobong-0542",
     "terms": "சேவை விதிமுறைகள்",
-    "privacy": "தனியுரிமைக் கொள்கை"
+    "privacy": "தனியுரிமைக் கொள்கை",
+    "socialMedia": "சமூக ஊடகங்கள்",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

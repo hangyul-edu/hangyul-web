@@ -115,6 +115,8 @@
     "businessNumber": "Бизнести каттоо номери: 403-87-03380",
     "mailOrderNumber": "Аралыктан соода каттоо номери: 2026-Seoul Dobong-0542",
     "terms": "Кызмат көрсөтүү шарттары",
-    "privacy": "Купуялык саясаты"
+    "privacy": "Купуялык саясаты",
+    "socialMedia": "Социалдык тармактар",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

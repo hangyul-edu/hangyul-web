@@ -115,6 +115,8 @@
     "businessNumber": "Număr de înregistrare a firmei: 403-87-03380",
     "mailOrderNumber": "Număr de înregistrare pentru vânzări la distanță: 2026-Seoul Dobong-0542",
     "terms": "Termeni și condiții",
-    "privacy": "Politica de confidențialitate"
+    "privacy": "Politica de confidențialitate",
+    "socialMedia": "Rețele sociale",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

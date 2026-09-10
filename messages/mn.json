@@ -115,6 +115,8 @@
     "businessNumber": "Бизнес бүртгэлийн дугаар: 403-87-03380",
     "mailOrderNumber": "Цахим худалдааны бүртгэлийн дугаар: 2026-Seoul Dobong-0542",
     "terms": "Үйлчилгээний нөхцөл",
-    "privacy": "Нууцлалын бодлого"
+    "privacy": "Нууцлалын бодлого",
+    "socialMedia": "Сошиал медиа",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

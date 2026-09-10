@@ -115,6 +115,8 @@
     "businessNumber": "사업자등록번호: 403-87-03380",
     "mailOrderNumber": "통신판매업 신고번호 : 제2026-서울도봉-0542호",
     "terms": "이용약관",
-    "privacy": "개인정보취급방침"
+    "privacy": "개인정보취급방침",
+    "socialMedia": "소셜 미디어",
+    "socialLinkLabel": "한귤 {platform}"
   }
 }

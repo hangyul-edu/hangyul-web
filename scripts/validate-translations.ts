@@ -30,6 +30,8 @@ const ENGLISH_ALLOWLIST = new Set([
   "Footer.email",
   "Footer.businessNumber",
   "Footer.mailOrderNumber",
+  // 브랜드명 + 플랫폼명(고유명사)이라 한국어를 제외하면 값이 같습니다.
+  "Footer.socialLinkLabel",
   "Pricing.category",
   "Header.nav.membership",
   "StoreSelectModal.androidLabel",

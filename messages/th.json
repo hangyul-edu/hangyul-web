@@ -115,6 +115,8 @@
     "businessNumber": "เลขทะเบียนธุรกิจ: 403-87-03380",
     "mailOrderNumber": "เลขทะเบียนผู้ประกอบธุรกิจขายสินค้าออนไลน์: 2026-Seoul Dobong-0542",
     "terms": "ข้อกำหนดการใช้บริการ",
-    "privacy": "นโยบายความเป็นส่วนตัว"
+    "privacy": "นโยบายความเป็นส่วนตัว",
+    "socialMedia": "โซเชียลมีเดีย",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

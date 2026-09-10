@@ -115,6 +115,8 @@
     "businessNumber": "Mã số doanh nghiệp: 403-87-03380",
     "mailOrderNumber": "Số đăng ký kinh doanh bán hàng qua mạng: 2026-Seoul Dobong-0542",
     "terms": "Điều khoản dịch vụ",
-    "privacy": "Chính sách bảo mật"
+    "privacy": "Chính sách bảo mật",
+    "socialMedia": "Mạng xã hội",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

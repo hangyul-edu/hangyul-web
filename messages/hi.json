@@ -115,6 +115,8 @@
     "businessNumber": "व्यवसाय पंजीकरण संख्या: 403-87-03380",
     "mailOrderNumber": "दूरस्थ बिक्री पंजीकरण संख्या: 2026-Seoul Dobong-0542",
     "terms": "सेवा की शर्तें",
-    "privacy": "गोपनीयता नीति"
+    "privacy": "गोपनीयता नीति",
+    "socialMedia": "सोशल मीडिया",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }

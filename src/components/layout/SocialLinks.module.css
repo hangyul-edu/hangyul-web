@@ -1,0 +1,115 @@
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  /* 약관 링크와 확실히 구분되도록 rightSection 기본 간격(8px)에 여백을 더한다. */
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--gray-500); /* WCAG AA: #595959 on #ffffff = 7.14:1 */
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+
+  /* 아이콘 버튼의 안쪽 여백만큼 당겨 첫 글리프를 제목 왼쪽 끝에 맞춘다. */
+  margin-inline-start: -10px;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* 글리프는 20px이지만 터치 영역은 40px로 확보한다. */
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+
+  /*
+   * --brand: 단색 글리프(YouTube·Facebook)가 currentColor로 물려받는 브랜드 컬러.
+   * --brand-tint: hover·focus 시 깔리는 아주 옅은 같은 계열 배경.
+   * 값이 없을 때는 기존 회색으로 안전하게 떨어진다.
+   */
+  color: var(--brand, var(--gray-500));
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* 브랜드 컬러는 각 사 공식 팔레트를 따르되, 흰 배경에서 눈에 튀지 않는 톤으로 고른다. */
+.link[data-platform="YouTube"] {
+  --brand: #e62117;
+  --brand-tint: rgba(230, 33, 23, 0.09);
+}
+
+.link[data-platform="Instagram"] {
+  --brand: #dd2a7b;
+  --brand-tint: rgba(221, 42, 123, 0.09);
+}
+
+.link[data-platform="TikTok"] {
+  --brand: #161823;
+  --brand-tint: rgba(254, 44, 85, 0.09);
+}
+
+.link[data-platform="Facebook"] {
+  --brand: #1877f2;
+  --brand-tint: rgba(24, 119, 242, 0.09);
+}
+
+.link:hover {
+  background-color: var(--brand-tint, var(--gray-100));
+  transform: translateY(-1px);
+}
+
+/* globals.css의 :focus-visible이 border-radius를 2px로 덮어쓰지 않도록 유지한다. */
+.link:focus-visible {
+  background-color: var(--brand-tint, var(--gray-100));
+  border-radius: 10px;
+}
+
+/*
+ * 강제 색상 모드에서는 브랜드 색이 무시되므로 시스템 색으로 되돌려
+ * 글리프가 배경에 묻히지 않게 한다.
+ */
+@media (forced-colors: active) {
+  .link {
+    color: LinkText;
+  }
+}
+
+.icon {
+  display: block;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .social {
+    /* 모바일에서는 rightSection 간격이 12px이라 추가 여백을 줄인다. */
+    margin-bottom: 4px;
+  }
+
+  .list {
+    /* 좁은 화면에서도 가로 스크롤 없이 줄바꿈되도록 한다. */
+    flex-wrap: wrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link {
+    transition: none;
+  }
+
+  .link:hover {
+    transform: none;
+  }
+}

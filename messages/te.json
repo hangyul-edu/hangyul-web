@@ -115,6 +115,8 @@
     "businessNumber": "వ్యాపార నమోదు సంఖ్య: 403-87-03380",
     "mailOrderNumber": "దూర విక్రయ నమోదు సంఖ్య: 2026-Seoul Dobong-0542",
     "terms": "సేవా నిబంధనలు",
-    "privacy": "గోప్యతా విధానం"
+    "privacy": "గోప్యతా విధానం",
+    "socialMedia": "సోషల్ మీడియా",
+    "socialLinkLabel": "Hangyul {platform}"
   }
 }
