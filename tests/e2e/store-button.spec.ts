@@ -80,14 +80,15 @@ test.describe("Main HANGYUL launch modal", () => {
     await page.goto("/en");
   });
 
-  test("Start Now opens the October 9 launch modal instead of alert()", async ({ page }) => {
+  test("Start Now opens the October 26 launch modal instead of alert()", async ({ page }) => {
     await startNow(page).click();
 
     const modal = launchModal(page);
     await expect(modal).toBeVisible();
     await expect(modal).toHaveAttribute("role", "dialog");
-    await expect(modal).toContainText("Hangyul launches on Hangul Day");
-    await expect(modal).toContainText("October 9, 2026");
+    await expect(modal).toContainText("Hangyul launches October 26");
+    await expect(modal).toContainText("October 26, 2026");
+    await expect(modal).not.toContainText("Hangul Day");
     await expect(modal).not.toContainText("August 31");
     await expect(page.locator("html")).toHaveCSS("overflow", "hidden");
   });
@@ -175,8 +176,9 @@ test.describe("Main HANGYUL launch modal", () => {
     await page.getByRole("button", { name: /지금 시작하기/ }).first().click();
     const modal = launchModal(page);
     await expect(launchCloseIcon(page)).toHaveAccessibleName("닫기");
-    await expect(modal).toContainText("한귤, 한글날에 만나요");
-    await expect(modal).toContainText("2026년 10월 9일");
+    await expect(modal).toContainText("한귤, 10월 26일에 만나요");
+    await expect(modal).toContainText("2026년 10월 26일");
+    await expect(modal).not.toContainText("한글날");
     await expect(modal.getByRole("button", { name: "한귤 가나다로 시작하기" })).toBeVisible();
   });
 });

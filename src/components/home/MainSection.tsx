@@ -19,7 +19,7 @@ export default function MainSection() {
   const t = useTranslations("MainSection");
   const tAlt = useTranslations("Alt");
   const locale = useLocale();
-  const mockupImg = getLocaleImages(locale).mockup;
+  const images = getLocaleImages(locale);
 
   return (
     <section className={styles.container}>
@@ -76,14 +76,20 @@ export default function MainSection() {
         </div>
 
         <div className={styles.mockupWrapper}>
+          {/* 데스크탑/모바일 목업은 CSS로 하나만 노출합니다. 숨겨진 쪽은 sizes를 1px로 두어 큰 이미지를 받지 않습니다. */}
           <Image
-            src={mockupImg}
+            src={images.mockupDesktop}
             alt={tAlt("appPreview")}
-            width={522}
-            height={628}
             priority
-            sizes="(max-width: 768px) 320px, 522px"
-            style={{ width: "100%", height: "auto" }}
+            sizes="(max-width: 768px) 1px, 522px"
+            className={styles.mockupDesktop}
+          />
+          <Image
+            src={images.mockupMobile}
+            alt={tAlt("appPreview")}
+            priority
+            sizes="(max-width: 768px) 320px, 1px"
+            className={styles.mockupMobile}
           />
         </div>
       </div>

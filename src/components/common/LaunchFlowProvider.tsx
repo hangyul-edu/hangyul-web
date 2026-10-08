@@ -11,7 +11,7 @@ import { GANADA_STORE_LINKS, type StorePlatform } from "@/constants/storeLinks";
 type ActiveModal = "launch" | "storeSelect" | null;
 
 interface LaunchFlow {
-  /** 한귤 앱 "지금 시작하기": 10월 9일(한글날) 오픈 안내 모달 */
+  /** 한귤 앱 "지금 시작하기": 10월 26일 오픈 안내 모달 */
   openMainLaunchModal: () => void;
   /** 한귤 가나다: 기기에 맞는 스토어로 이동 (데스크톱은 기기 선택 모달) */
   openHangyulGanada: () => void;

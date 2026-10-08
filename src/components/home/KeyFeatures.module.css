@@ -53,6 +53,16 @@
   width: 100%;
 }
 
+.imageDesktop,
+.imageMobile {
+  width: 100%;
+  height: auto;
+}
+
+.imageMobile {
+  display: none;
+}
+
 .reverse {
   flex-direction: row-reverse;
 }
@@ -116,6 +126,14 @@
   .imageWrapper {
     order: -1; /* Flex 아이템 순서를 0보다 작은 -1로 설정하여 맨 앞으로 이동 */
     width: 100%;
+  }
+
+  .imageDesktop {
+    display: none;
+  }
+
+  .imageMobile {
+    display: block;
   }
 
   .mobileBr {

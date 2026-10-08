@@ -22,11 +22,12 @@ export default function KeyFeatures({ id }: Props) {
   const locale = useLocale();
   const images = getLocaleImages(locale);
 
-  const feature1Img = images.feature1;
-  const feature2Img = images.feature2;
-  const feature3Img = images.feature3;
-
-  const featureImages = [feature1Img, feature2Img, feature3Img];
+  // 모바일 전용 이미지가 있는 항목은 브레이크포인트에 따라 CSS로 하나만 노출합니다.
+  const featureImages = [
+    { desktop: images.feature1 },
+    { desktop: images.feature2, mobile: images.feature2Mobile },
+    { desktop: images.feature3 },
+  ];
   const featureKeys = ["feature1", "feature2", "feature3"];
 
   const { ref: headerRef, isInView: headerInView } = useAnimateInView();
@@ -118,13 +119,30 @@ export default function KeyFeatures({ id }: Props) {
                   initial="hidden"
                   animate={imageInView ? "visible" : "hidden"}
                 >
-                  <Image
-                    src={featureImages[index]}
-                    alt={t(`${key}.category`)}
-                    width={640}
-                    height={480}
-                    style={{ width: "100%", height: "auto" }}
-                  />
+                  {featureImages[index].mobile ? (
+                    <>
+                      <Image
+                        src={featureImages[index].desktop}
+                        alt={t(`${key}.category`)}
+                        sizes="(max-width: 768px) 1px, 560px"
+                        className={styles.imageDesktop}
+                      />
+                      <Image
+                        src={featureImages[index].mobile}
+                        alt={t(`${key}.category`)}
+                        sizes="(max-width: 768px) 100vw, 1px"
+                        className={styles.imageMobile}
+                      />
+                    </>
+                  ) : (
+                    <Image
+                      src={featureImages[index].desktop}
+                      alt={t(`${key}.category`)}
+                      width={640}
+                      height={480}
+                      style={{ width: "100%", height: "auto" }}
+                    />
+                  )}
                 </motion.div>
               </div>
             );

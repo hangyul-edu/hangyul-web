@@ -4,7 +4,7 @@ import { useLaunchFlow } from "./LaunchFlowProvider";
 
 interface Props {
   /**
-   * - "hangyul": 한귤 앱 CTA. 2026-10-09(한글날) 오픈 안내 모달을 띄웁니다.
+   * - "hangyul": 한귤 앱 CTA. 2026-10-26 오픈 안내 모달을 띄웁니다.
    * - "ganada": 이미 출시된 한귤 가나다 CTA. 기기에 맞는 스토어로 바로 연결합니다.
    */
   app: "hangyul" | "ganada";

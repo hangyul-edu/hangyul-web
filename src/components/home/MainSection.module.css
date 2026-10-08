@@ -119,6 +119,16 @@
   max-width: 522px;
 }
 
+.mockupDesktop,
+.mockupMobile {
+  width: 100%;
+  height: auto;
+}
+
+.mockupMobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .container {
     height: auto;
@@ -166,5 +176,13 @@
   .mockupWrapper {
     width: 100%;
     max-width: 320px;
+  }
+
+  .mockupDesktop {
+    display: none;
+  }
+
+  .mockupMobile {
+    display: block;
   }
 }

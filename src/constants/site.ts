@@ -2,13 +2,13 @@ export const BASE_URL = "https://www.talkhangyul.com";
 
 // Bump this (e.g. to today's date) whenever /public/og-image.png changes,
 // so social crawlers fetch the new image instead of serving a cached one.
-export const OG_IMAGE_VERSION = "20260819";
+export const OG_IMAGE_VERSION = "20261009";
 
 /** OG 이미지 실제 크기 (public/og-image.png) */
 export const OG_IMAGE = {
   path: `/og-image.png?v=${OG_IMAGE_VERSION}`,
-  width: 3200,
-  height: 1600,
+  width: 1600,
+  height: 800,
 } as const;
 
 /** 구조화 데이터(Organization.logo)용 로고. public/logo.png */
