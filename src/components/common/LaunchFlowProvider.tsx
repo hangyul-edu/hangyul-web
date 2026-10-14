@@ -1,12 +1,23 @@
 "use client";
 
-import { createContext, useCallback, useContext, useMemo, useState } from "react";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 import { useTranslations } from "next-intl";
 
 import AppModal from "./AppModal";
 import DeviceChoiceList from "./DeviceChoiceList";
 import { detectDevice } from "@/hooks/useDeviceType";
-import { GANADA_STORE_LINKS, type StorePlatform } from "@/constants/storeLinks";
+import {
+  DOWNLOAD_CHOOSER_PARAM,
+  GANADA_STORE_LINKS,
+  type StorePlatform,
+} from "@/constants/storeLinks";
 
 type ActiveModal = "launch" | "storeSelect" | null;
 
@@ -57,6 +68,25 @@ export function LaunchFlowProvider({ children }: { children: React.ReactNode }) 
     // 데스크톱(Mac/Windows/기타): 사용자가 자신의 기기(Android / iPhone)를 직접 선택합니다.
     setActiveModal("storeSelect");
   }, []);
+
+  /*
+   * /download?app=ganada 스마트 링크로 들어온 데스크톱·판별 불가 기기는 프록시가
+   * 홈페이지로 보내면서 ?download=ganada를 붙입니다. 기존 기기 선택 모달을 바로 열어
+   * 사용자가 한 번의 선택으로 스토어로 갈 수 있게 합니다.
+   * (Android·iPhone은 프록시에서 이미 스토어로 302되므로 여기까지 오지 않습니다.)
+   */
+  useEffect(() => {
+    const requestedApp = new URLSearchParams(window.location.search).get(
+      DOWNLOAD_CHOOSER_PARAM
+    );
+
+    /*
+     * 마운트 직후 URL을 한 번 읽어 모달을 여는 1회성 초기화입니다.
+     * (Footer의 ?legal= 모달과 같은 방식이며 렌더 연쇄를 만들지 않습니다.)
+     */
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    if (requestedApp === "ganada") openHangyulGanada();
+  }, [openHangyulGanada]);
 
   const selectStore = useCallback(
     (platform: StorePlatform) => {
