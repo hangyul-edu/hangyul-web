@@ -8,6 +8,7 @@ export const SOCIAL_LINKS = [
   { platform: "YouTube", href: "https://www.youtube.com/@talkhangyul" },
   { platform: "Instagram", href: "https://www.instagram.com/talkhangyul" },
   { platform: "TikTok", href: "https://www.tiktok.com/@talkhangyul" },
+  { platform: "Reddit", href: "https://www.reddit.com/user/talkhangyul" },
   { platform: "Facebook", href: "https://www.facebook.com/share/1HDHU95quq" },
 ] as const;
 

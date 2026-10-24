@@ -35,7 +35,7 @@
   border-radius: 10px;
 
   /*
-   * --brand: 단색 글리프(YouTube·Facebook)가 currentColor로 물려받는 브랜드 컬러.
+   * --brand: 단색 글리프(YouTube·Reddit·Facebook)가 currentColor로 물려받는 브랜드 컬러.
    * --brand-tint: hover·focus 시 깔리는 아주 옅은 같은 계열 배경.
    * 값이 없을 때는 기존 회색으로 안전하게 떨어진다.
    */
@@ -59,6 +59,11 @@
 .link[data-platform="TikTok"] {
   --brand: #161823;
   --brand-tint: rgba(254, 44, 85, 0.09);
+}
+
+.link[data-platform="Reddit"] {
+  --brand: #ff4500;
+  --brand-tint: rgba(255, 69, 0, 0.09);
 }
 
 .link[data-platform="Facebook"] {
