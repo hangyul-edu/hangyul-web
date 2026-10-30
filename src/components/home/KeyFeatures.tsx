@@ -24,7 +24,7 @@ export default function KeyFeatures({ id }: Props) {
 
   // 모바일 전용 이미지가 있는 항목은 브레이크포인트에 따라 CSS로 하나만 노출합니다.
   const featureImages = [
-    { desktop: images.feature1 },
+    { desktop: images.feature1, mobile: images.feature1Mobile },
     { desktop: images.feature2, mobile: images.feature2Mobile },
     { desktop: images.feature3 },
   ];
