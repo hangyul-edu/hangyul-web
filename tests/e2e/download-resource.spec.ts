@@ -332,7 +332,7 @@ test.describe("Language selector", () => {
   test("search filters languages by native and English names", async ({ page }) => {
     await page.goto(EN_LINK);
     await languageTrigger(page).click();
-    const search = page.getByRole("banner").getByRole("searchbox");
+    const search = page.getByRole("banner").getByRole("textbox");
 
     await search.fill("japan");
     await expect(page.getByRole("banner").getByRole("listitem")).toHaveCount(1);
@@ -428,6 +428,63 @@ test.describe("/download?resource=<unknown> — graceful not-found", () => {
     expect(response?.status()).toBe(404);
     await expect(page.locator("html")).toHaveAttribute("lang", "ja");
     await expect(h1(page)).toHaveText(messages("ja").notFound.title);
+  });
+});
+
+test.describe("Header matches the homepage header", () => {
+  /** 로고·언어 선택기·국기·글자의 크기와 위치 (홈페이지와 같은 방식으로 측정) */
+  const headerMetrics = (page: Page) =>
+    page.evaluate(() => {
+      const rect = (el: Element) => {
+        const r = el.getBoundingClientRect();
+        return [Math.round(r.left), Math.round(r.top), Math.round(r.width), Math.round(r.height)];
+      };
+      const header = document.querySelector("header")!;
+      const trigger = header.querySelector("button[aria-expanded]")!;
+      const label = trigger.querySelector('[class*="langCode"]')!;
+      const ts = getComputedStyle(trigger);
+      const ls = getComputedStyle(label);
+      return {
+        headerHeight: Math.round(header.getBoundingClientRect().height),
+        logo: rect(header.querySelector("a img")!),
+        flag: rect(trigger.querySelector("img")!).slice(2),
+        label: [ls.fontSize, ls.fontWeight, ls.color, (label as HTMLElement).offsetWidth > 0],
+        border: [ts.borderTopWidth, ts.borderTopColor, ts.borderTopLeftRadius],
+        triggerBox: rect(trigger),
+      };
+    });
+
+  for (const width of [1280, 1440, 1600, 1920]) {
+    test(`logo and language selector match the homepage at ${width}px`, async ({ page }) => {
+      await page.setViewportSize({ width, height: 900 });
+      await page.goto("/en");
+      const home = await headerMetrics(page);
+      await page.goto(EN_LINK);
+      const resource = await headerMetrics(page);
+
+      expect(resource).toEqual(home);
+      // 홈페이지 내비게이션은 넣지 않습니다.
+      await expect(page.getByRole("banner").getByRole("link")).toHaveCount(1);
+    });
+  }
+
+  test("mobile logo, flag and header height match the homepage", async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto("/en");
+    const home = await headerMetrics(page);
+    await page.goto(EN_LINK);
+    const resource = await headerMetrics(page);
+
+    expect(resource.headerHeight).toBe(home.headerHeight);
+    expect(resource.logo).toEqual(home.logo);
+    expect(resource.flag).toEqual(home.flag);
+    expect(resource.label).toEqual(home.label); // 모바일에서는 언어명 숨김
+    expect(resource.border).toEqual(home.border);
+    // 햄버거가 없으므로 국기는 컨테이너 오른쪽 끝(16px 여백) 안쪽 8px에 붙습니다.
+    const flagRight = await page.evaluate(
+      () => Math.round(document.querySelector("header button[aria-expanded] img")!.getBoundingClientRect().right)
+    );
+    expect(flagRight).toBe(390 - 16 - 8);
   });
 });
 
@@ -564,9 +621,12 @@ test.describe("Responsive layout", () => {
         expect(box!.y + box!.height).toBeLessThanOrEqual(vp.height);
       }
 
-      // 언어 선택기는 손가락으로 누르기 쉬운 크기입니다.
-      const trigger = await languageTrigger(page).boundingBox();
-      expect(trigger!.height).toBeGreaterThanOrEqual(40);
+      // 모바일에서는 국기만 보이는 트리거에 44px 터치 영역을 둡니다.
+      if (vp.width <= 768) {
+        const trigger = await languageTrigger(page).boundingBox();
+        expect(trigger!.height).toBeGreaterThanOrEqual(44);
+        expect(trigger!.width).toBeGreaterThanOrEqual(44);
+      }
     });
   }
 

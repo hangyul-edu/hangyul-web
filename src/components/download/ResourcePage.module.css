@@ -14,11 +14,11 @@
 .page {
   /*
    * 첫 화면 배경: 은은한 웜 아이보리(종이 톤). 흰색보다 분명히 따뜻하지만
-   * 예전의 노란 베이지(#fbf8f1, 색상 42°/채도 56%)보다 덜 노랗게(39°) 잡았습니다.
-   * 선은 같은 계열의 중성 톤.
+   * 예전의 노란 베이지(#fbf8f1, 색상 42°)보다 덜 노란 37°로, 아래 흰 섹션과 비교했을 때만
+   * 느껴질 정도의 밝기(L 94.7%)로 잡았습니다. 선은 같은 계열의 중성 톤.
    */
-  --cream: #f9f5ef;
-  --cream-line: #ebe5dc;
+  --cream: #f8f3eb;
+  --cream-line: #e8e1d6;
   --accent-text: #b84700;
   --accent-strong: #d95700;
   --accent-strong-hover: #c24b00;
@@ -58,28 +58,23 @@
 
 /* ---------- Header ---------- */
 
+/*
+ * 홈페이지 헤더(Header.module.css)와 같은 높이·여백: 데스크톱 80px, 모바일(≤768px) 56px,
+ * 위아래 14px. 내부 컨테이너·로고·언어 선택기는 홈페이지 헤더 클래스를 그대로 씁니다.
+ * 홈페이지와 달리 고정(fixed)하지 않고, 배경은 히어로와 같은 웜 아이보리로 이어집니다.
+ */
 .header {
   position: relative;
   z-index: 20;
+  height: 80px;
+  padding-block: 14px;
   background: var(--cream);
-}
-
-.headerInner {
-  max-width: var(--container);
-  margin: 0 auto;
-  padding: 0 var(--gutter);
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
 }
 
 .logoLink {
   display: inline-flex;
   align-items: center;
   flex-shrink: 0;
-  padding: 6px 0;
   border-radius: 6px;
 }
 
@@ -87,168 +82,28 @@
   border-radius: 6px;
 }
 
-/* ---------- Language selector ---------- */
-
-.langSelector {
-  position: relative;
-  min-width: 0;
-}
-
-.langTrigger {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  max-width: 220px;
-  height: 40px;
-  padding: 0 12px;
-
-  border: 1px solid var(--cream-line);
-  border-radius: 999px;
-  background: var(--white);
-  color: var(--ink);
-
-  font: inherit;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.langTrigger:hover {
-  border-color: var(--gray-200);
-  box-shadow: 0 1px 3px rgba(60, 40, 10, 0.08);
-}
-
-.langTrigger[aria-expanded="true"] {
-  border-color: var(--gray-400);
-}
-
-.langTrigger:focus-visible {
-  border-radius: 999px;
-}
-
-.langFlag {
-  flex-shrink: 0;
-  border-radius: 2px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
-}
-
-.langName {
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.langChevron {
-  flex-shrink: 0;
-  color: var(--muted);
-  transition: transform 0.2s ease;
-}
-
-.langChevron[data-open="true"] {
-  transform: rotate(180deg);
-}
-
-.langPanel {
-  position: absolute;
-  top: calc(100% + 8px);
-  inset-inline-end: 0;
-  width: min(280px, calc(100vw - 2 * var(--gutter)));
-  padding: 8px;
-
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  box-shadow:
-    0 2px 4px rgba(0, 0, 0, 0.04),
-    0 16px 40px -12px rgba(60, 40, 10, 0.24);
-}
-
-.langPanel[hidden] {
-  display: none;
-}
-
-.langSearch {
-  width: 100%;
-  height: 40px;
-  margin-bottom: 6px;
-  padding: 0 12px;
-
-  font: inherit;
-  /* iOS에서 입력 시 화면이 확대되지 않도록 16px 유지 */
-  font-size: 16px;
-  color: var(--ink);
-
-  border: 1px solid var(--gray-200);
-  border-radius: 10px;
-  background: var(--white);
-}
-
-.langSearch::placeholder {
-  color: var(--gray-400);
-}
-
-.langSearch:focus-visible {
-  outline-offset: 0;
-  border-radius: 10px;
-}
-
-.langEmpty {
-  padding: 10px 8px;
-  font-size: 14px;
-  color: var(--muted);
-}
-
-.langList {
-  list-style: none;
-  max-height: min(320px, calc(100dvh - 160px));
-  overflow-y: auto;
-  overscroll-behavior: contain;
-}
-
+/* 홈페이지 .dropdownItem(button용)을 링크에 쓰기 위한 최소 보정 */
 .langOption {
   display: flex;
   align-items: center;
-  gap: 10px;
-  min-height: 40px;
-  padding: 8px 10px;
-  border-radius: 8px;
-
-  font-size: 15px;
-  color: var(--ink);
+  color: inherit;
 }
 
-.langOption:hover,
-.langOption:focus-visible {
-  background: var(--gray-100);
-}
+@media (max-width: 768px) {
+  .header {
+    height: 56px;
+  }
 
-.langOption:focus-visible {
-  outline-offset: -2px;
-  border-radius: 8px;
-}
-
-.langOption[aria-current="true"] {
-  font-weight: 600;
-}
-
-.langOption img {
-  flex-shrink: 0;
-  border-radius: 2px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
-}
-
-.langOptionName {
-  flex: 1;
-  min-width: 0;
-}
-
-.langCheck {
-  flex-shrink: 0;
-  color: var(--accent-text);
+  /*
+   * 모바일에서 홈페이지 트리거는 테두리 없는 국기만 보입니다. 모양은 그대로 두고
+   * 손가락으로 누르기 쉽도록 보이지 않는 터치 영역만 44px로 넓힙니다.
+   */
+  .langTrigger {
+    min-width: 44px;
+    min-height: 44px;
+    /* 국기는 홈페이지 트리거처럼 오른쪽 안쪽 여백(8px)에 붙이고, 터치 영역만 왼쪽으로 넓힙니다. */
+    justify-content: flex-end;
+  }
 }
 
 /* ---------- Main ---------- */
@@ -812,10 +667,6 @@
     --hero-fade: 96px;
   }
 
-  .headerInner {
-    height: 68px;
-  }
-
   .heroInner {
     padding: 20px var(--gutter) 72px;
     flex-direction: row;
@@ -1020,9 +871,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .primaryButton,
-  .secondaryButton,
-  .langTrigger,
-  .langChevron {
+  .secondaryButton {
     transition: none;
   }
 
@@ -1033,8 +882,7 @@
 
 @media (forced-colors: active) {
   .primaryButton,
-  .secondaryButton,
-  .langTrigger {
+  .secondaryButton {
     border: 1px solid ButtonText;
   }
 }

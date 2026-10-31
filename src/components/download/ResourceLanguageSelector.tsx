@@ -23,6 +23,8 @@ import {
   DOWNLOAD_RESOURCE_PARAM,
 } from "@/constants/downloadResources";
 import { routing } from "@/i18n/routing";
+import { chevronDownIcon, chevronUpIcon } from "@/assets/icons";
+import headerStyles from "@/components/layout/Header.module.css";
 import { pushResourceEvent } from "./ResourceTracking";
 import styles from "./ResourcePage.module.css";
 
@@ -30,7 +32,10 @@ import styles from "./ResourcePage.module.css";
  * 자료 페이지 언어 선택기 (헤더 우측)
  *
  * 홈페이지 헤더와 같은 로케일 목록(routing.locales)·언어명·국기(LOCALE_CONFIG)·
- * 검색 규칙·번역(Header.aria / Header.search)을 재사용합니다.
+ * 검색 규칙·번역(Header.aria / Header.search)을 재사용하고, 모양은 홈페이지 헤더의
+ * 스타일(Header.module.css: dropdownWrapper/Trigger/Panel/Item, 쉐브론 아이콘)을 그대로
+ * 씁니다. 홈페이지 Header 컴포넌트는 내비게이션·햄버거와 로케일 라우팅이 묶여 있어
+ * 이 페이지(?lang= 쿼리)에는 동작만 따로 둡니다.
  *
  * 동작
  *  - 화면 언어(lang)만 바꾸고 utm_* 등 다른 쿼리는 그대로 둡니다.
@@ -170,57 +175,44 @@ export default function ResourceLanguageSelector({
   };
 
   return (
-    <div className={styles.langSelector} ref={rootRef}>
+    <div className={headerStyles.dropdownWrapper} ref={rootRef}>
       <button
         ref={triggerRef}
         type="button"
-        className={styles.langTrigger}
+        className={`${headerStyles.dropdownTrigger} ${
+          open ? headerStyles.active : ""
+        } ${styles.langTrigger}`}
         aria-expanded={open}
         aria-controls={panelId}
         aria-label={`${tAria("language")}: ${current.name}`}
         onClick={() => (open ? close() : setOpen(true))}
       >
-        <Image
-          className={styles.langFlag}
-          src={current.flag}
-          alt=""
-          width={20}
-          height={14}
-        />
-        <span className={styles.langName} lang={current.code}>
-          {current.name}
+        <span className={headerStyles.langInfo}>
+          <Image src={current.flag} alt="" width={20} height={13} />
+          <span className={headerStyles.langCode} lang={current.code}>
+            {current.name}
+          </span>
         </span>
-        <svg
-          className={styles.langChevron}
-          data-open={open}
-          viewBox="0 0 16 16"
-          width="14"
-          height="14"
-          aria-hidden="true"
-          focusable="false"
-        >
-          <path
-            d="m4 6 4 4 4-4"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.75"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+        <Image
+          src={open ? chevronUpIcon : chevronDownIcon}
+          alt=""
+          width={16}
+          height={16}
+          className={headerStyles.chevron}
+        />
       </button>
 
       <div
         id={panelId}
-        className={styles.langPanel}
+        className={headerStyles.dropdownPanel}
         hidden={!open}
         onKeyDown={handlePanelKeyDown}
       >
         {LANGUAGES.length > SEARCH_THRESHOLD && (
           <input
             ref={searchRef}
-            type="search"
-            className={styles.langSearch}
+            type="text"
+            className={headerStyles.searchInput}
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder={tSearch("placeholder")}
@@ -238,42 +230,27 @@ export default function ResourceLanguageSelector({
         )}
 
         {filtered.length === 0 ? (
-          <p className={styles.langEmpty} role="status">
+          <p className={headerStyles.emptyResult} role="status">
             {tSearch("noResults")}
           </p>
         ) : (
-          <ul className={styles.langList} ref={listRef}>
+          <ul className={headerStyles.dropdownList} ref={listRef}>
             {filtered.map((lang) => (
               <li key={lang.code}>
                 <a
-                  className={styles.langOption}
+                  className={`${headerStyles.dropdownItem} ${
+                    lang.code === uiLanguage ? headerStyles.selected : ""
+                  } ${styles.langOption}`}
                   href={hrefFor(lang.code)}
                   hrefLang={lang.code}
                   lang={lang.code}
                   aria-current={lang.code === uiLanguage ? "true" : undefined}
                   onClick={(event) => handleSelect(event, lang.code)}
                 >
-                  <Image src={lang.flag} alt="" width={20} height={14} />
-                  <span className={styles.langOptionName}>{lang.name}</span>
-                  {lang.code === uiLanguage && (
-                    <svg
-                      className={styles.langCheck}
-                      viewBox="0 0 16 16"
-                      width="16"
-                      height="16"
-                      aria-hidden="true"
-                      focusable="false"
-                    >
-                      <path
-                        d="m3.5 8.5 3 3 6-7"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  )}
+                  <span className={headerStyles.langInfo}>
+                    <Image src={lang.flag} alt="" width={20} height={13} />
+                    <span className={headerStyles.langCode}>{lang.name}</span>
+                  </span>
                 </a>
               </li>
             ))}
