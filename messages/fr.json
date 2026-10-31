@@ -118,5 +118,70 @@
     "privacy": "Politique de confidentialité",
     "socialMedia": "Réseaux sociaux",
     "socialLinkLabel": "Hangyul {platform}"
+  },
+  "ResourceDownload": {
+    "common": {
+      "homeLink": "Accueil Hangyul",
+      "downloadCta": "Télécharger le PDF gratuit",
+      "noSignUp": "Sans inscription",
+      "pageCount": "{count, plural, one {# page} other {# pages}}",
+      "statSentences": "{count, plural, one {phrase} other {phrases}}",
+      "statChapters": "{count, plural, one {chapitre thématique} other {chapitres thématiques}}",
+      "statPages": "{count, plural, one {page} other {pages}}",
+      "statsLabel": "Le guide en un coup d’œil",
+      "whatsInside": "Au programme",
+      "whatsInsideIntro": "Tout ce qu’il vous faut pour réviser l’épisode à votre rythme.",
+      "lookInside": "Aperçu des pages",
+      "closingBody": "Téléchargement gratuit. Imprimez-le ou étudiez sur votre téléphone.",
+      "opensInNewTab": "(s’ouvre dans un nouvel onglet)"
+    },
+    "editionLanguages": {
+      "en": {
+        "label": "Édition anglaise",
+        "notice": "Ce PDF est en anglais. Les significations, les notes d’usage et les traductions des dialogues sont entièrement rédigées en anglais.",
+        "switch": "Obtenir l’édition anglaise"
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "eyebrow": "Guide d’étude gratuit",
+        "title": "100 phrases coréennes du quotidien",
+        "description": "Entraînez-vous sur les 100 phrases de l’EP.01 avec le coréen, la romanisation, des traductions naturelles en anglais, des exemples concrets, des révisions par chapitre et une checklist d’apprentissage.",
+        "youtubeCta": "Regarder l’EP.01 sur YouTube",
+        "closingTitle": "Gardez les 100 phrases toujours avec vous",
+        "coverAlt": "Couverture du guide d’étude Hangyul « 100 phrases coréennes du quotidien » (일상 한국어 100문장), Korean While You Sleep EP01, édition anglaise",
+        "previews": {
+          "chapter": "Exemple de page du chapitre 1, Salutations et réponses essentielles : chaque phrase est présentée en coréen, avec sa romanisation, sa signification en anglais, une note d’usage et un court dialogue",
+          "review": "Exemple de page de révision de chapitre avec quatre exercices : comprendre le sens, dire la phrase en coréen, compléter le dialogue et trouver la bonne réponse"
+        },
+        "features": {
+          "sentences": {
+            "title": "100 phrases du quotidien",
+            "body": "Du coréen utile pour saluer, faire connaissance, parler de nourriture, de shopping et de projets, et réagir naturellement."
+          },
+          "conversation": {
+            "title": "En situation réelle",
+            "body": "Chaque phrase est accompagnée d’un court dialogue qui montre comment elle s’emploie vraiment."
+          },
+          "romanization": {
+            "title": "Sens + romanisation",
+            "body": "Suivez le coréen grâce à une romanisation adaptée aux débutants, une traduction naturelle en anglais et une courte note d’usage."
+          },
+          "review": {
+            "title": "Révision et pratique",
+            "body": "Des révisions par chapitre avec corrigés, une révision rapide des 100 phrases et une checklist d’apprentissage finale."
+          }
+        },
+        "seoTitle": "100 phrases coréennes du quotidien — Guide d’étude gratuit | Hangyul",
+        "seoDescription": "Téléchargez le guide d’étude gratuit Hangyul EP01 : 100 phrases coréennes du quotidien avec romanisation, significations en anglais, dialogues, révisions et exercices."
+      }
+    },
+    "notFound": {
+      "metaTitle": "Ressource introuvable | Hangyul",
+      "title": "Nous n’avons pas trouvé cette ressource",
+      "body": "Le lien contient peut-être une erreur, ou cette ressource n’est plus disponible.",
+      "cta": "Aller sur Hangyul",
+      "youtube": "Visiter notre chaîne YouTube"
+    }
   }
 }

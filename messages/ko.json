@@ -118,5 +118,70 @@
     "privacy": "개인정보취급방침",
     "socialMedia": "소셜 미디어",
     "socialLinkLabel": "한귤 {platform}"
+  },
+  "ResourceDownload": {
+    "common": {
+      "homeLink": "한귤 홈",
+      "downloadCta": "무료 PDF 다운로드",
+      "noSignUp": "회원가입 없이 바로 다운로드",
+      "pageCount": "{count, plural, other {#페이지}}",
+      "statSentences": "{count, plural, other {문장}}",
+      "statChapters": "{count, plural, other {주제별 챕터}}",
+      "statPages": "{count, plural, other {페이지}}",
+      "statsLabel": "학습 가이드 한눈에 보기",
+      "whatsInside": "이런 내용을 담았어요",
+      "whatsInsideIntro": "에피소드를 내 속도에 맞춰 복습하는 데 필요한 모든 것을 담았습니다.",
+      "lookInside": "미리 보기",
+      "closingBody": "무료로 다운로드하세요. 인쇄해서 봐도, 휴대폰으로 공부해도 좋아요.",
+      "opensInNewTab": "(새 탭에서 열림)"
+    },
+    "editionLanguages": {
+      "en": {
+        "label": "영어판",
+        "notice": "이 PDF는 영어판입니다. 뜻, 활용 설명, 대화 번역이 모두 영어로 작성되어 있습니다.",
+        "switch": "영어판 받기"
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "eyebrow": "무료 학습 가이드",
+        "title": "일상 한국어 100문장",
+        "description": "EP.01의 100문장을 한국어, 로마자 표기, 자연스러운 영어 뜻, 실생활 예시, 챕터별 복습, 학습 체크리스트와 함께 연습해 보세요.",
+        "youtubeCta": "YouTube에서 EP.01 보기",
+        "closingTitle": "100문장을 언제나 곁에 두세요",
+        "coverAlt": "한귤 학습 가이드 ‘일상 한국어 100문장’ 표지, Korean While You Sleep EP01 영어판",
+        "previews": {
+          "chapter": "1장 ‘인사와 필수 대답’ 샘플 페이지: 문장마다 한국어, 로마자 표기, 영어 뜻, 활용 설명, 짧은 대화가 실려 있습니다",
+          "review": "네 가지 연습 문제로 구성된 챕터 복습 샘플 페이지: 무슨 뜻일까요, 한국어로 어떻게 말할까요, 대화 완성하기, 나라면 뭐라고 말할까요"
+        },
+        "features": {
+          "sentences": {
+            "title": "일상 문장 100개",
+            "body": "인사와 첫 만남부터 음식, 쇼핑, 약속, 자연스러운 리액션까지 바로 쓸 수 있는 한국어를 담았습니다."
+          },
+          "conversation": {
+            "title": "실생활 맥락",
+            "body": "모든 문장에 실제로 어떻게 쓰이는지 보여 주는 짧은 대화가 함께 나옵니다."
+          },
+          "romanization": {
+            "title": "뜻 + 로마자 표기",
+            "body": "초보자도 읽기 쉬운 로마자 표기와 자연스러운 영어 뜻, 짧은 활용 설명으로 한국어를 따라가 보세요."
+          },
+          "review": {
+            "title": "복습과 연습",
+            "body": "정답이 포함된 챕터별 복습, 100문장 전체 빠른 복습, 마지막 학습 체크리스트까지 담았습니다."
+          }
+        },
+        "seoTitle": "일상 한국어 100문장 — 무료 학습 가이드 | 한귤",
+        "seoDescription": "한귤 EP01 무료 학습 가이드를 다운로드하세요. 일상 한국어 100문장과 로마자 표기, 영어 뜻, 대화문, 복습, 연습 문제를 담았습니다."
+      }
+    },
+    "notFound": {
+      "metaTitle": "자료를 찾을 수 없습니다 | 한귤",
+      "title": "자료를 찾을 수 없어요",
+      "body": "링크가 잘못 입력되었거나 더 이상 제공되지 않는 자료입니다.",
+      "cta": "한귤로 이동",
+      "youtube": "YouTube 채널 방문하기"
+    }
   }
 }

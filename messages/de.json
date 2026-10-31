@@ -118,5 +118,70 @@
     "privacy": "Datenschutzerklärung",
     "socialMedia": "Soziale Medien",
     "socialLinkLabel": "Hangyul {platform}"
+  },
+  "ResourceDownload": {
+    "common": {
+      "homeLink": "Hangyul-Startseite",
+      "downloadCta": "Kostenloses PDF herunterladen",
+      "noSignUp": "Keine Anmeldung erforderlich",
+      "pageCount": "{count, plural, one {# Seite} other {# Seiten}}",
+      "statSentences": "{count, plural, one {Satz} other {Sätze}}",
+      "statChapters": "{count, plural, one {Themenkapitel} other {Themenkapitel}}",
+      "statPages": "{count, plural, one {Seite} other {Seiten}}",
+      "statsLabel": "Das Lernheft auf einen Blick",
+      "whatsInside": "Das steckt drin",
+      "whatsInsideIntro": "Alles, was du brauchst, um die Folge in deinem eigenen Tempo zu wiederholen.",
+      "lookInside": "Ein Blick ins Heft",
+      "closingBody": "Kostenlos zum Herunterladen. Druck es aus oder lern direkt auf dem Handy.",
+      "opensInNewTab": "(öffnet in neuem Tab)"
+    },
+    "editionLanguages": {
+      "en": {
+        "label": "Englische Ausgabe",
+        "notice": "Dieses PDF ist auf Englisch. Bedeutungen, Verwendungshinweise und die Übersetzungen der Dialoge sind durchgehend auf Englisch verfasst.",
+        "switch": "Zur englischen Ausgabe"
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "eyebrow": "Kostenloses Lernheft",
+        "title": "100 koreanische Alltagssätze",
+        "description": "Übe alle 100 Sätze aus EP.01 – mit Koreanisch, Umschrift, natürlichen englischen Bedeutungen, Beispielen aus dem Alltag, Kapitelwiederholungen und einer Lern-Checkliste.",
+        "youtubeCta": "EP.01 auf YouTube ansehen",
+        "closingTitle": "Nimm die 100 Sätze überallhin mit",
+        "coverAlt": "Cover des Hangyul-Lernhefts „100 koreanische Alltagssätze“ (일상 한국어 100문장), Korean While You Sleep EP01, englische Ausgabe",
+        "previews": {
+          "chapter": "Beispielseite aus Kapitel 1, Begrüßungen und wichtige Antworten: Zu jedem Satz gibt es Koreanisch, Umschrift, die englische Bedeutung, einen Verwendungshinweis und einen kurzen Dialog",
+          "review": "Beispielseite einer Kapitelwiederholung mit vier Übungen: Bedeutung erkennen, auf Koreanisch ausdrücken, Dialog vervollständigen und passende Antwort finden"
+        },
+        "features": {
+          "sentences": {
+            "title": "100 Alltagssätze",
+            "body": "Nützliches Koreanisch – von Begrüßungen und dem Kennenlernen bis zu Essen, Shopping, Plänen und natürlichen Reaktionen."
+          },
+          "conversation": {
+            "title": "Echte Alltagssituationen",
+            "body": "Zu jedem Satz gibt es einen kurzen Dialog, der zeigt, wie er tatsächlich verwendet wird."
+          },
+          "romanization": {
+            "title": "Bedeutung + Umschrift",
+            "body": "Lies das Koreanische mit einsteigerfreundlicher Umschrift, einer natürlichen englischen Bedeutung und einem kurzen Verwendungshinweis."
+          },
+          "review": {
+            "title": "Wiederholen und üben",
+            "body": "Kapitelwiederholungen mit Lösungen, eine Schnellwiederholung aller 100 Sätze und eine abschließende Lern-Checkliste."
+          }
+        },
+        "seoTitle": "100 koreanische Alltagssätze — Kostenloses Lernheft | Hangyul",
+        "seoDescription": "Lade das kostenlose Hangyul-Lernheft zu EP01 herunter: 100 koreanische Alltagssätze mit Umschrift, englischen Bedeutungen, Dialogen, Wiederholungen und Übungen."
+      }
+    },
+    "notFound": {
+      "metaTitle": "Inhalt nicht gefunden | Hangyul",
+      "title": "Diesen Inhalt konnten wir nicht finden",
+      "body": "Möglicherweise ist der Link fehlerhaft oder der Inhalt ist nicht mehr verfügbar.",
+      "cta": "Zu Hangyul",
+      "youtube": "Zu unserem YouTube-Kanal"
+    }
   }
 }

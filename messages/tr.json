@@ -118,5 +118,70 @@
     "privacy": "Gizlilik politikası",
     "socialMedia": "Sosyal Medya",
     "socialLinkLabel": "Hangyul {platform}"
+  },
+  "ResourceDownload": {
+    "common": {
+      "homeLink": "Hangyul ana sayfası",
+      "downloadCta": "PDF'yi ücretsiz indir",
+      "noSignUp": "Kayıt gerekmez",
+      "pageCount": "{count, plural, one {# sayfa} other {# sayfa}}",
+      "statSentences": "{count, plural, one {cümle} other {cümle}}",
+      "statChapters": "{count, plural, one {tematik bölüm} other {tematik bölüm}}",
+      "statPages": "{count, plural, one {sayfa} other {sayfa}}",
+      "statsLabel": "Rakamlarla çalışma rehberi",
+      "whatsInside": "İçinde neler var?",
+      "whatsInsideIntro": "Videoyu kendi hızında tekrar etmek için ihtiyacın olan her şey.",
+      "lookInside": "İçeriden bir bakış",
+      "closingBody": "Ücretsiz indirilebilir. Çıktısını al ya da telefonundan çalış.",
+      "opensInNewTab": "(yeni sekmede açılır)"
+    },
+    "editionLanguages": {
+      "en": {
+        "label": "İngilizce sürüm",
+        "notice": "Bu PDF İngilizcedir. Anlamlar, kullanım notları ve diyalog çevirilerinin tamamı İngilizce yazılmıştır.",
+        "switch": "İngilizce sürüme geç"
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "eyebrow": "Ücretsiz çalışma rehberi",
+        "title": "Günlük Hayattan 100 Korece Cümle",
+        "description": "EP.01'deki 100 cümlenin hepsini Korece metin, Latin harfli okunuş, doğal İngilizce anlamlar, gerçek hayattan örnekler, bölüm tekrarları ve öğrenme kontrol listesiyle çalış.",
+        "youtubeCta": "EP.01'i YouTube'da izle",
+        "closingTitle": "100 cümle hep yanında olsun",
+        "coverAlt": "Hangyul çalışma rehberi “Günlük Hayattan 100 Korece Cümle” (일상 한국어 100문장) kapağı, Korean While You Sleep EP01, İngilizce sürüm",
+        "previews": {
+          "chapter": "1. bölümden (Selamlaşma ve Temel Yanıtlar) örnek sayfa: her cümlede Korece metin, Latin harfli okunuş, İngilizce anlam, kullanım notu ve kısa bir diyalog yer alır",
+          "review": "Dört alıştırma içeren örnek bölüm tekrarı sayfası: “Ne anlama geliyor?”, “Korecede nasıl denir?”, “Diyaloğu tamamla” ve “Sen ne derdin?”"
+        },
+        "features": {
+          "sentences": {
+            "title": "Günlük hayattan 100 cümle",
+            "body": "Selamlaşma ve tanışmadan yemeğe, alışverişe, planlara ve doğal tepkilere kadar işe yarar Korece."
+          },
+          "conversation": {
+            "title": "Gerçek hayattan bağlam",
+            "body": "Her cümleyle birlikte, gerçekte nasıl kullanıldığını gösteren kısa bir diyalog var."
+          },
+          "romanization": {
+            "title": "Anlam + okunuş",
+            "body": "Korece metni yeni başlayanlara uygun Latin harfli okunuş, doğal bir İngilizce anlam ve kısa bir kullanım notuyla takip et."
+          },
+          "review": {
+            "title": "Tekrar ve pratik",
+            "body": "Cevaplı bölüm tekrarları, 100 cümlenin tamamı için hızlı bir tekrar ve son bir öğrenme kontrol listesi."
+          }
+        },
+        "seoTitle": "Günlük Hayattan 100 Korece Cümle — Ücretsiz Çalışma Rehberi | Hangyul",
+        "seoDescription": "Ücretsiz Hangyul EP01 çalışma rehberini indir: Latin harfli okunuş, İngilizce anlamlar, diyaloglar, tekrarlar ve alıştırmalarla günlük hayattan 100 Korece cümle."
+      }
+    },
+    "notFound": {
+      "metaTitle": "Kaynak bulunamadı | Hangyul",
+      "title": "Bu kaynağı bulamadık",
+      "body": "Bağlantı yanlış yazılmış olabilir ya da bu kaynak artık mevcut değil.",
+      "cta": "Hangyul'a git",
+      "youtube": "YouTube kanalımızı ziyaret et"
+    }
   }
 }

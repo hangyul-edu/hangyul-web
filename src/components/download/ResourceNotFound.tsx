@@ -1,14 +1,16 @@
+"use client";
+
 import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 
-import styles from "@/components/download/ResourcePage.module.css";
 import { SOCIAL_LINKS } from "@/constants/socialLinks";
-import { getResourceUiCopy } from "@/content/downloadResources";
+import styles from "./ResourcePage.module.css";
 
-/**
- * /download?resource=<모르는 값> — 다른 자료를 내려주지 않고 안내만 합니다. (404)
- */
+/** 자료 없음 화면 (화면 언어로 표시, 다른 자료를 대신 내려주지 않음) */
 export default function ResourceNotFound() {
-  const copy = getResourceUiCopy("en");
+  const t = useTranslations("ResourceDownload.notFound");
+  const tCommon = useTranslations("ResourceDownload.common");
+  const locale = useLocale();
   const youtube = SOCIAL_LINKS.find((link) => link.platform === "YouTube");
 
   return (
@@ -16,12 +18,16 @@ export default function ResourceNotFound() {
       <section className={styles.notFound} aria-labelledby="not-found-title">
         <div className={styles.notFoundInner}>
           <h1 id="not-found-title" className={styles.notFoundTitle}>
-            {copy.notFoundTitle}
+            {t("title")}
           </h1>
-          <p className={styles.notFoundBody}>{copy.notFoundBody}</p>
+          <p className={styles.notFoundBody}>{t("body")}</p>
           <div className={styles.notFoundActions}>
-            <Link href="/" prefetch={false} className={styles.primaryButton}>
-              {copy.notFoundCta}
+            <Link
+              href={`/${locale}`}
+              prefetch={false}
+              className={styles.primaryButton}
+            >
+              {t("cta")}
             </Link>
             {youtube && (
               <a
@@ -30,8 +36,8 @@ export default function ResourceNotFound() {
                 rel="noopener noreferrer"
                 className={styles.secondaryButton}
               >
-                {copy.notFoundSecondary}
-                <span className={styles.srOnly}> (opens in a new tab)</span>
+                {t("youtube")}
+                <span className={styles.srOnly}> {tCommon("opensInNewTab")}</span>
               </a>
             )}
           </div>

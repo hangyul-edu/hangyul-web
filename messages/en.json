@@ -118,5 +118,70 @@
     "privacy": "Privacy Policy",
     "socialMedia": "Social Media",
     "socialLinkLabel": "Hangyul {platform}"
+  },
+  "ResourceDownload": {
+    "common": {
+      "homeLink": "Hangyul home",
+      "downloadCta": "Download Free PDF",
+      "noSignUp": "No sign-up required",
+      "pageCount": "{count, plural, one {# page} other {# pages}}",
+      "statSentences": "{count, plural, one {sentence} other {sentences}}",
+      "statChapters": "{count, plural, one {topic chapter} other {topic chapters}}",
+      "statPages": "{count, plural, one {page} other {pages}}",
+      "statsLabel": "Study guide at a glance",
+      "whatsInside": "What’s inside",
+      "whatsInsideIntro": "Everything you need to review the episode at your own pace.",
+      "lookInside": "A look inside",
+      "closingBody": "Free to download. Print it or study on your phone.",
+      "opensInNewTab": "(opens in a new tab)"
+    },
+    "editionLanguages": {
+      "en": {
+        "label": "English edition",
+        "notice": "This PDF is in English. Meanings, usage notes and conversation translations are all written in English.",
+        "switch": "Get the English edition"
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "eyebrow": "Free Study Guide",
+        "title": "100 Everyday Korean Sentences",
+        "description": "Practice all 100 sentences from EP.01 with Korean, romanization, natural English meanings, real-life examples, chapter reviews, and a learning checklist.",
+        "youtubeCta": "Watch EP.01 on YouTube",
+        "closingTitle": "Keep the 100 sentences with you",
+        "coverAlt": "Cover of the Hangyul study guide “100 Everyday Korean Sentences” (일상 한국어 100문장), Korean While You Sleep EP01, English edition",
+        "previews": {
+          "chapter": "Sample page from Chapter 1, Greetings and Essential Responses: each sentence shows Korean, romanization, the English meaning, a usage note and a short conversation",
+          "review": "Sample chapter review page with four exercises: what does it mean, how do you say it in Korean, complete the conversation, and what would you say"
+        },
+        "features": {
+          "sentences": {
+            "title": "100 everyday sentences",
+            "body": "Useful Korean from greetings and meeting people to food, shopping, plans and natural reactions."
+          },
+          "conversation": {
+            "title": "Real-life context",
+            "body": "Every sentence comes with a short conversation that shows how it’s actually used."
+          },
+          "romanization": {
+            "title": "Meaning + romanization",
+            "body": "Follow the Korean with beginner-friendly romanization, a natural English meaning and a short usage note."
+          },
+          "review": {
+            "title": "Review and practice",
+            "body": "Chapter reviews with answers, a quick review of all 100 sentences and a final learning checklist."
+          }
+        },
+        "seoTitle": "100 Everyday Korean Sentences — Free Study Guide | Hangyul",
+        "seoDescription": "Download the free Hangyul EP01 study guide with 100 everyday Korean sentences, romanization, English meanings, conversations, reviews, and practice."
+      }
+    },
+    "notFound": {
+      "metaTitle": "Resource not found | Hangyul",
+      "title": "We couldn’t find this resource",
+      "body": "The link may be mistyped, or this resource is no longer available.",
+      "cta": "Go to Hangyul",
+      "youtube": "Visit our YouTube channel"
+    }
   }
 }

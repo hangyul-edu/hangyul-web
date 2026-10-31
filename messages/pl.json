@@ -118,5 +118,70 @@
     "privacy": "Polityka prywatności",
     "socialMedia": "Media społecznościowe",
     "socialLinkLabel": "Hangyul {platform}"
+  },
+  "ResourceDownload": {
+    "common": {
+      "homeLink": "Strona główna Hangyul",
+      "downloadCta": "Pobierz darmowy PDF",
+      "noSignUp": "Bez rejestracji",
+      "pageCount": "{count, plural, one {# strona} few {# strony} many {# stron} other {# strony}}",
+      "statSentences": "{count, plural, one {zdanie} few {zdania} many {zdań} other {zdania}}",
+      "statChapters": "{count, plural, one {rozdział tematyczny} few {rozdziały tematyczne} many {rozdziałów tematycznych} other {rozdziału tematycznego}}",
+      "statPages": "{count, plural, one {strona} few {strony} many {stron} other {strony}}",
+      "statsLabel": "Materiały w pigułce",
+      "whatsInside": "Co znajdziesz w środku",
+      "whatsInsideIntro": "Wszystko, czego potrzebujesz, by powtórzyć odcinek we własnym tempie.",
+      "lookInside": "Zajrzyj do środka",
+      "closingBody": "Do pobrania za darmo. Wydrukuj albo ucz się na telefonie.",
+      "opensInNewTab": "(otwiera się w nowej karcie)"
+    },
+    "editionLanguages": {
+      "en": {
+        "label": "Wydanie angielskie",
+        "notice": "Ten plik PDF jest w języku angielskim. Znaczenia, wskazówki dotyczące użycia i tłumaczenia dialogów są w całości napisane po angielsku.",
+        "switch": "Przejdź do wydania angielskiego"
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "eyebrow": "Darmowe materiały do nauki",
+        "title": "100 codziennych zdań po koreańsku",
+        "description": "Przećwicz wszystkie 100 zdań z EP.01: zapis koreański, latynizacja, naturalne znaczenia po angielsku, przykłady z życia, powtórki rozdziałów i lista kontrolna postępów.",
+        "youtubeCta": "Obejrzyj EP.01 na YouTube",
+        "closingTitle": "Miej te 100 zdań zawsze przy sobie",
+        "coverAlt": "Okładka materiałów do nauki Hangyul „100 codziennych zdań po koreańsku” (일상 한국어 100문장), Korean While You Sleep EP01, wydanie angielskie",
+        "previews": {
+          "chapter": "Przykładowa strona z rozdziału 1, Powitania i najważniejsze odpowiedzi: przy każdym zdaniu jest zapis koreański, latynizacja, znaczenie po angielsku, wskazówka dotycząca użycia i krótki dialog",
+          "review": "Przykładowa strona powtórki rozdziału z czterema ćwiczeniami: co to znaczy, jak to powiedzieć po koreańsku, uzupełnij dialog i co powiedzieć w danej sytuacji"
+        },
+        "features": {
+          "sentences": {
+            "title": "100 codziennych zdań",
+            "body": "Przydatny koreański: od powitań i poznawania ludzi po jedzenie, zakupy, plany i naturalne reakcje."
+          },
+          "conversation": {
+            "title": "Prawdziwe sytuacje",
+            "body": "Każdemu zdaniu towarzyszy krótki dialog, który pokazuje, jak używa się go w praktyce."
+          },
+          "romanization": {
+            "title": "Znaczenie + latynizacja",
+            "body": "Czytaj koreański z latynizacją przyjazną początkującym, naturalnym znaczeniem po angielsku i krótką wskazówką dotyczącą użycia."
+          },
+          "review": {
+            "title": "Powtórka i ćwiczenia",
+            "body": "Powtórki rozdziałów z odpowiedziami, szybka powtórka wszystkich 100 zdań i końcowa lista kontrolna postępów."
+          }
+        },
+        "seoTitle": "100 codziennych zdań po koreańsku — Darmowe materiały do nauki | Hangyul",
+        "seoDescription": "Pobierz darmowe materiały do nauki Hangyul do EP01: 100 codziennych zdań po koreańsku z latynizacją, znaczeniami po angielsku, dialogami, powtórkami i ćwiczeniami."
+      }
+    },
+    "notFound": {
+      "metaTitle": "Nie znaleziono materiału | Hangyul",
+      "title": "Nie udało się znaleźć tego materiału",
+      "body": "Link może zawierać literówkę albo ten materiał nie jest już dostępny.",
+      "cta": "Przejdź na stronę Hangyul",
+      "youtube": "Odwiedź nasz kanał na YouTube"
+    }
   }
 }

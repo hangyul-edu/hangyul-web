@@ -12,11 +12,12 @@ import { useEffect, type AnchorHTMLAttributes } from "react";
 type ResourceEvent =
   | "resource_download_page_view"
   | "resource_download_click"
-  | "resource_youtube_click";
+  | "resource_youtube_click"
+  | "resource_language_change";
 
 type DataLayerWindow = Window & { dataLayer?: Record<string, unknown>[] };
 
-function pushResourceEvent(
+export function pushResourceEvent(
   event: ResourceEvent,
   params: Record<string, string>
 ) {
@@ -25,21 +26,31 @@ function pushResourceEvent(
     w.dataLayer = w.dataLayer || [];
     w.dataLayer.push({ event, ...params });
   } catch {
-    // 분석 실패가 다운로드를 막아서는 안 됩니다.
+    // 분석 실패가 다운로드·이동을 막아서는 안 됩니다.
   }
 }
 
-export function ResourcePageView({ slug }: { slug: string }) {
+export function ResourcePageView({
+  slug,
+  uiLanguage,
+}: {
+  slug: string;
+  uiLanguage: string;
+}) {
   useEffect(() => {
-    pushResourceEvent("resource_download_page_view", { resource_slug: slug });
-  }, [slug]);
+    pushResourceEvent("resource_download_page_view", {
+      resource_slug: slug,
+      ui_language: uiLanguage,
+    });
+  }, [slug, uiLanguage]);
 
   return null;
 }
 
 type TrackedLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
-  event: Exclude<ResourceEvent, "resource_download_page_view">;
+  event: "resource_download_click" | "resource_youtube_click";
   slug: string;
+  uiLanguage: string;
   /** 같은 이벤트가 여러 위치에서 나올 때 구분값 (예: hero, closing) */
   placement: string;
 };
@@ -48,6 +59,7 @@ type TrackedLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
 export function TrackedLink({
   event,
   slug,
+  uiLanguage,
   placement,
   onClick,
   ...anchorProps
@@ -56,7 +68,11 @@ export function TrackedLink({
     <a
       {...anchorProps}
       onClick={(e) => {
-        pushResourceEvent(event, { resource_slug: slug, placement });
+        pushResourceEvent(event, {
+          resource_slug: slug,
+          ui_language: uiLanguage,
+          placement,
+        });
         onClick?.(e);
       }}
     />

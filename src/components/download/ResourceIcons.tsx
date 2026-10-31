@@ -1,4 +1,4 @@
-import type { DownloadResourceFeature } from "@/content/downloadResources";
+import type { ResourceFeatureIcon } from "@/content/downloadResources";
 
 /**
  * 다운로드 페이지 전용 라인 아이콘 (장식용, 스크린리더에서는 숨김).
@@ -35,10 +35,31 @@ export function PlayIcon({ size = 20 }: { size?: number }) {
   );
 }
 
+/** 판(PDF 언어) 배지용 문서 아이콘 */
+export function DocumentIcon({ size = 14 }: { size?: number }) {
+  return (
+    <svg {...base} width={size} height={size} strokeWidth={2}>
+      <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" />
+      <path d="M14 3v5h5" />
+    </svg>
+  );
+}
+
+/** 판 언어 안내용 정보 아이콘 */
+export function InfoIcon({ size = 18 }: { size?: number }) {
+  return (
+    <svg {...base} width={size} height={size}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 11v5" />
+      <path d="M12 7.5h.01" strokeWidth={2.5} />
+    </svg>
+  );
+}
+
 export function FeatureIcon({
   icon,
 }: {
-  icon: DownloadResourceFeature["icon"];
+  icon: ResourceFeatureIcon;
 }) {
   switch (icon) {
     case "sentences":

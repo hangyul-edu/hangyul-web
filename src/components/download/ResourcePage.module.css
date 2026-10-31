@@ -2,7 +2,8 @@
  * 무료 학습 자료 다운로드 페이지
  *
  * 모바일 우선. 기존 한귤 토큰(globals.css)을 쓰고, 이 페이지에서만 필요한
- * 값은 아래 .page 범위 변수로 둡니다.
+ * 값은 아래 .page 범위 변수로 둡니다. 좌우가 바뀌는 값은 논리 속성(inline-start/end)을
+ * 써서 아랍어(RTL)에서도 그대로 동작하게 합니다.
  *
  * 대비(WCAG AA):
  *  - 브랜드 오렌지(#ff6700)는 장식(선·아이콘 배경)에만 쓰고,
@@ -21,6 +22,9 @@
   --muted: var(--gray-500);
   --line: #ebebeb;
   --radius: 12px;
+  /* 헤더·히어로·섹션이 같은 좌우 기준선을 쓰도록 하나의 컨테이너 폭을 공유합니다. */
+  --container: 1120px;
+  --gutter: 16px;
 
   min-height: 100vh;
   display: flex;
@@ -44,27 +48,196 @@
 /* ---------- Header ---------- */
 
 .header {
+  position: relative;
+  z-index: 20;
   background: var(--cream);
 }
 
 .headerInner {
-  max-width: 1180px;
+  max-width: var(--container);
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 var(--gutter);
   height: 60px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 .logoLink {
   display: inline-flex;
   align-items: center;
+  flex-shrink: 0;
   padding: 6px 0;
   border-radius: 6px;
 }
 
 .logoLink:focus-visible {
   border-radius: 6px;
+}
+
+/* ---------- Language selector ---------- */
+
+.langSelector {
+  position: relative;
+  min-width: 0;
+}
+
+.langTrigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 220px;
+  height: 40px;
+  padding: 0 12px;
+
+  border: 1px solid var(--cream-line);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--ink);
+
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.langTrigger:hover {
+  border-color: var(--gray-200);
+  box-shadow: 0 1px 3px rgba(60, 40, 10, 0.08);
+}
+
+.langTrigger[aria-expanded="true"] {
+  border-color: var(--gray-400);
+}
+
+.langTrigger:focus-visible {
+  border-radius: 999px;
+}
+
+.langFlag {
+  flex-shrink: 0;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.langName {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.langChevron {
+  flex-shrink: 0;
+  color: var(--muted);
+  transition: transform 0.2s ease;
+}
+
+.langChevron[data-open="true"] {
+  transform: rotate(180deg);
+}
+
+.langPanel {
+  position: absolute;
+  top: calc(100% + 8px);
+  inset-inline-end: 0;
+  width: min(280px, calc(100vw - 2 * var(--gutter)));
+  padding: 8px;
+
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    0 16px 40px -12px rgba(60, 40, 10, 0.24);
+}
+
+.langPanel[hidden] {
+  display: none;
+}
+
+.langSearch {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 6px;
+  padding: 0 12px;
+
+  font: inherit;
+  /* iOS에서 입력 시 화면이 확대되지 않도록 16px 유지 */
+  font-size: 16px;
+  color: var(--ink);
+
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  background: var(--white);
+}
+
+.langSearch::placeholder {
+  color: var(--gray-400);
+}
+
+.langSearch:focus-visible {
+  outline-offset: 0;
+  border-radius: 10px;
+}
+
+.langEmpty {
+  padding: 10px 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.langList {
+  list-style: none;
+  max-height: min(320px, calc(100dvh - 160px));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.langOption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 40px;
+  padding: 8px 10px;
+  border-radius: 8px;
+
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.langOption:hover,
+.langOption:focus-visible {
+  background: var(--gray-100);
+}
+
+.langOption:focus-visible {
+  outline-offset: -2px;
+  border-radius: 8px;
+}
+
+.langOption[aria-current="true"] {
+  font-weight: 600;
+}
+
+.langOption img {
+  flex-shrink: 0;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.langOptionName {
+  flex: 1;
+  min-width: 0;
+}
+
+.langCheck {
+  flex-shrink: 0;
+  color: var(--accent-text);
 }
 
 /* ---------- Main ---------- */
@@ -81,9 +254,9 @@
 }
 
 .heroInner {
-  max-width: 1180px;
+  max-width: var(--container);
   margin: 0 auto;
-  padding: 4px 16px 40px;
+  padding: 4px var(--gutter) 40px;
 
   display: flex;
   flex-direction: column;
@@ -99,11 +272,16 @@
 
 /*
  * 표지 뒤로 종이 두 장이 살짝 비치게 해 "여러 페이지짜리 가이드"임을 보여줍니다.
- * 이미지 없이 CSS만 사용합니다.
+ * 이미지 없이 CSS만 사용합니다. RTL에서는 종이가 반대쪽으로 비칩니다.
  */
 .coverStack {
+  --stack-dir: 1;
   position: relative;
   width: 160px;
+}
+
+:global([dir="rtl"]) .coverStack {
+  --stack-dir: -1;
 }
 
 .coverStack::before,
@@ -117,12 +295,14 @@
 }
 
 .coverStack::before {
-  transform: translate(10px, 8px) rotate(3deg);
+  transform: translate(calc(var(--stack-dir) * 9px), 7px)
+    rotate(calc(var(--stack-dir) * 3deg));
   opacity: 0.7;
 }
 
 .coverStack::after {
-  transform: translate(5px, 4px) rotate(1.5deg);
+  transform: translate(calc(var(--stack-dir) * 4.5px), 3.5px)
+    rotate(calc(var(--stack-dir) * 1.5deg));
 }
 
 .cover {
@@ -139,7 +319,7 @@
 
 .info {
   width: 100%;
-  max-width: 560px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -158,6 +338,26 @@
   color: var(--accent-text);
 }
 
+/* 대소문자·자간 개념이 없는 문자권에서는 자간을 넣지 않습니다. */
+:global(html:is([lang="ko"], [lang="ja"], [lang="zh"], [lang="th"], [lang="ar"], [lang="hi"], [lang="bn"], [lang="ta"], [lang="te"])) .eyebrow {
+  letter-spacing: 0;
+}
+
+/*
+ * 일본어·중국어 제목이 단어 중간(例: 韓/国語)에서 끊기지 않도록 구(phrase) 단위로 줄바꿈하고,
+ * 행두 금칙(、。 등)을 엄격하게 적용합니다. 지원하지 않는 브라우저는 기본 규칙을 씁니다.
+ */
+:global(html:is([lang="ja"], [lang="zh"])) .title,
+:global(html:is([lang="ja"], [lang="zh"])) .notFoundTitle,
+:global(html:is([lang="ja"], [lang="zh"])) .closingTitle,
+:global(html:is([lang="ja"], [lang="zh"])) .sectionTitle {
+  word-break: auto-phrase;
+}
+
+:global(html:is([lang="ja"], [lang="zh"])) .page {
+  line-break: strict;
+}
+
 .eyebrow::before {
   content: "";
   width: 18px;
@@ -173,38 +373,84 @@
   letter-spacing: -0.02em;
   color: var(--ink);
   text-wrap: balance;
+  hyphens: auto;
 }
 
-.subline {
-  margin-top: 10px;
+/* 시리즈·회차 + PDF 판 언어 배지 */
+.meta {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+}
+
+.series {
   font-size: 15px;
   font-weight: 500;
   line-height: 1.5;
   color: var(--gray-600);
 }
 
+.editionBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px 3px 8px;
+
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--ink);
+
+  background: var(--white);
+  border: 1px solid var(--cream-line);
+  border-radius: 999px;
+}
+
+.editionBadge svg {
+  flex-shrink: 0;
+  color: var(--accent-text);
+}
+
 .description {
-  margin-top: 12px;
+  margin-top: 14px;
   font-size: 16px;
   line-height: 1.65;
   color: var(--muted);
 }
 
-/* 모바일에서는 첫 화면에 다운로드 버튼이 보이도록 수치 요약을 숨기고 microcopy로 대신합니다. */
+/*
+ * 문서 수치는 보조 정보입니다. 대시보드 KPI처럼 보이지 않도록 숫자를 과하게 키우지 않고
+ * 얇은 구분선으로만 나눕니다. 모바일에서는 다운로드 버튼이 먼저 보이도록 버튼 아래로 보냅니다.
+ */
 .stats {
-  display: none;
+  order: 10;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--cream-line);
 }
 
 .stat {
   display: flex;
   flex-direction: column-reverse;
   gap: 2px;
+  padding-inline: 20px;
+  border-inline-start: 1px solid var(--cream-line);
+}
+
+.stat:first-child {
+  padding-inline-start: 0;
+  border-inline-start: 0;
 }
 
 .statValue {
-  font-size: 24px;
+  font-size: 19px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.25;
   color: var(--ink);
   font-variant-numeric: tabular-nums;
 }
@@ -212,7 +458,37 @@
 .statLabel {
   font-size: 13px;
   font-weight: 500;
+  line-height: 1.4;
   color: var(--muted);
+}
+
+/*
+ * 화면 언어와 PDF 언어가 다를 때 PDF가 어떤 언어인지 자세히 알립니다.
+ * 데스크톱·태블릿에서는 다운로드 버튼 바로 위, 모바일에서는 첫 화면에 버튼이 먼저
+ * 보이도록 버튼 바로 아래에 둡니다. (판 언어 배지는 어느 화면에서든 버튼보다 위에 있습니다.)
+ */
+.editionNotice {
+  order: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  margin-top: 14px;
+  padding: 10px 12px;
+
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--gray-600);
+
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--cream-line);
+  border-radius: 10px;
+}
+
+.editionNotice svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: var(--accent-text);
 }
 
 .actions {
@@ -230,14 +506,20 @@
   justify-content: center;
   gap: 10px;
   min-height: 56px;
-  padding: 0 24px;
+  padding: 12px 18px;
   border-radius: var(--radius);
-  white-space: nowrap;
+  text-align: center;
+  line-height: 1.3;
   transition:
     background-color 0.2s ease,
     border-color 0.2s ease,
     box-shadow 0.2s ease,
     transform 0.2s ease;
+}
+
+.primaryButton svg,
+.secondaryButton svg {
+  flex-shrink: 0;
 }
 
 .primaryButton {
@@ -283,10 +565,21 @@
 }
 
 .microcopy {
+  order: 2;
   margin-top: 14px;
   font-size: 14px;
   font-weight: 500;
   color: var(--muted);
+}
+
+.siblingLink {
+  order: 11;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* ---------- What's inside ---------- */
@@ -296,9 +589,9 @@
 }
 
 .insideInner {
-  max-width: 1180px;
+  max-width: var(--container);
   margin: 0 auto;
-  padding: 48px 16px;
+  padding: 48px var(--gutter);
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -369,12 +662,12 @@
 .previewPages {
   display: flex;
   justify-content: center;
-  gap: 14px;
+  gap: 12px;
   width: 100%;
 }
 
 .previewPage {
-  flex: 0 1 200px;
+  flex: 0 1 220px;
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -398,11 +691,11 @@
 
 .closing {
   background: var(--white);
-  padding: 0 16px 56px;
+  padding: 0 var(--gutter) 56px;
 }
 
 .closingInner {
-  max-width: 1148px;
+  max-width: calc(var(--container) - 2 * var(--gutter));
   margin: 0 auto;
   padding: 28px 20px;
   border-radius: 16px;
@@ -412,6 +705,10 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.closingText {
+  min-width: 0;
 }
 
 .closingInner .primaryButton {
@@ -442,7 +739,7 @@
 .notFoundInner {
   max-width: 560px;
   margin: 0 auto;
-  padding: 72px 16px 96px;
+  padding: 72px var(--gutter) 96px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -454,6 +751,7 @@
   font-weight: 700;
   line-height: 1.3;
   color: var(--ink);
+  text-wrap: balance;
 }
 
 .notFoundBody {
@@ -483,6 +781,7 @@
   .notFoundActions {
     max-width: none;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
@@ -490,13 +789,16 @@
 /* ---------- Tablet ≥ 768px ---------- */
 
 @media (min-width: 768px) {
+  .page {
+    --gutter: 24px;
+  }
+
   .headerInner {
-    height: 72px;
-    padding: 0 24px;
+    height: 68px;
   }
 
   .heroInner {
-    padding: 24px 24px 72px;
+    padding: 20px var(--gutter) 72px;
     flex-direction: row;
     align-items: center;
     gap: 48px;
@@ -508,22 +810,24 @@
   }
 
   .coverStack {
-    width: 280px;
+    width: 260px;
   }
 
   .coverStack::before {
-    transform: translate(16px, 12px) rotate(3deg);
+    transform: translate(calc(var(--stack-dir) * 14px), 11px)
+      rotate(calc(var(--stack-dir) * 3deg));
   }
 
   .coverStack::after {
-    transform: translate(8px, 6px) rotate(1.5deg);
+    transform: translate(calc(var(--stack-dir) * 7px), 5.5px)
+      rotate(calc(var(--stack-dir) * 1.5deg));
   }
 
   .title {
     font-size: 38px;
   }
 
-  .subline {
+  .series {
     font-size: 16px;
   }
 
@@ -531,21 +835,32 @@
     font-size: 17px;
   }
 
-  .stats {
-    display: flex;
-    gap: 32px;
-    margin-top: 24px;
-    padding-top: 20px;
-    border-top: 1px solid var(--cream-line);
-    width: 100%;
+  /* 넓은 화면에서는 수치를 설명 바로 아래, 판 안내는 버튼 바로 위에 둡니다. */
+  .stats,
+  .editionNotice,
+  .microcopy {
+    order: 0;
+  }
+
+  .editionNotice {
+    margin-top: 20px;
+  }
+
+  .stat {
+    padding-inline: 24px;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    padding-inline: 24px;
   }
 
   .actions {
-    margin-top: 28px;
+    margin-top: 24px;
   }
 
   .insideInner {
-    padding: 72px 24px;
+    padding: 72px var(--gutter);
   }
 
   .sectionTitle {
@@ -558,7 +873,7 @@
   }
 
   .closing {
-    padding: 0 24px 72px;
+    padding: 0 var(--gutter) 72px;
   }
 
   .closingInner {
@@ -572,6 +887,7 @@
   .closingInner .primaryButton {
     width: auto;
     flex-shrink: 0;
+    max-width: 50%;
   }
 
   .closingTitle {
@@ -582,14 +898,19 @@
 /* ---------- Desktop ≥ 1024px ---------- */
 
 @media (min-width: 1024px) {
+  /*
+   * 표지는 로고와 같은 왼쪽 기준선에, 정보 영역은 언어 선택기와 같은 오른쪽 기준선에 맞춥니다.
+   */
   .heroInner {
-    padding: 32px 24px 88px;
-    gap: 88px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 340px minmax(0, 600px);
+    justify-content: space-between;
+    column-gap: 64px;
+    padding: 32px var(--gutter) 88px;
   }
 
   .coverStack {
-    width: 360px;
+    width: 340px;
   }
 
   .title {
@@ -600,7 +921,7 @@
     flex-direction: row;
     align-items: center;
     gap: 72px;
-    padding: 96px 24px;
+    padding: 96px var(--gutter);
   }
 
   .insideText {
@@ -612,9 +933,14 @@
     flex: 0 0 440px;
   }
 
-  /* 두 장이 살짝 겹쳐 보이도록 배치 */
+  /* 두 장이 살짝 겹쳐 보이도록 배치 (RTL에서는 좌우 반전) */
   .previewPages {
+    --overlap-dir: 1;
     gap: 0;
+  }
+
+  :global([dir="rtl"]) .previewPages {
+    --overlap-dir: -1;
   }
 
   .previewPage {
@@ -622,12 +948,14 @@
   }
 
   .previewPage:first-child {
-    transform: rotate(-2deg) translateX(14px);
+    transform: rotate(calc(var(--overlap-dir) * -2deg))
+      translateX(calc(var(--overlap-dir) * 14px));
     z-index: 1;
   }
 
   .previewPage:last-child {
-    transform: rotate(2deg) translate(-14px, 18px);
+    transform: rotate(calc(var(--overlap-dir) * 2deg))
+      translate(calc(var(--overlap-dir) * -14px), 18px);
   }
 
   /* 아래로 내려간 두 번째 페이지와 겹치지 않도록 */
@@ -637,14 +965,20 @@
 }
 
 @media (min-width: 1200px) {
+  .heroInner {
+    grid-template-columns: 360px minmax(0, 600px);
+  }
+
   .coverStack {
-    width: 380px;
+    width: 360px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .primaryButton,
-  .secondaryButton {
+  .secondaryButton,
+  .langTrigger,
+  .langChevron {
     transition: none;
   }
 
@@ -655,7 +989,8 @@
 
 @media (forced-colors: active) {
   .primaryButton,
-  .secondaryButton {
+  .secondaryButton,
+  .langTrigger {
     border: 1px solid ButtonText;
   }
 }

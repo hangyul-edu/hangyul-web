@@ -118,5 +118,70 @@
     "privacy": "Integritetspolicy",
     "socialMedia": "Sociala medier",
     "socialLinkLabel": "Hangyul {platform}"
+  },
+  "ResourceDownload": {
+    "common": {
+      "homeLink": "Hangyuls startsida",
+      "downloadCta": "Ladda ner gratis PDF",
+      "noSignUp": "Ingen registrering krävs",
+      "pageCount": "{count, plural, one {# sida} other {# sidor}}",
+      "statSentences": "{count, plural, one {mening} other {meningar}}",
+      "statChapters": "{count, plural, one {temakapitel} other {temakapitel}}",
+      "statPages": "{count, plural, one {sida} other {sidor}}",
+      "statsLabel": "Studieguiden i korthet",
+      "whatsInside": "Det här ingår",
+      "whatsInsideIntro": "Allt du behöver för att repetera avsnittet i din egen takt.",
+      "lookInside": "En titt inuti",
+      "closingBody": "Gratis att ladda ner. Skriv ut den eller plugga i mobilen.",
+      "opensInNewTab": "(öppnas i en ny flik)"
+    },
+    "editionLanguages": {
+      "en": {
+        "label": "Engelsk utgåva",
+        "notice": "Den här PDF:en är på engelska. Betydelser, användningstips och översättningar av dialogerna är alla skrivna på engelska.",
+        "switch": "Hämta den engelska utgåvan"
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "eyebrow": "Gratis studieguide",
+        "title": "100 koreanska vardagsmeningar",
+        "description": "Öva på alla 100 meningar från EP.01 med koreanska, romanisering, naturliga engelska betydelser, exempel från verkligheten, kapitelrepetitioner och en checklista för inlärningen.",
+        "youtubeCta": "Se EP.01 på YouTube",
+        "closingTitle": "Ha de 100 meningarna alltid med dig",
+        "coverAlt": "Omslaget till Hangyuls studieguide ”100 koreanska vardagsmeningar” (일상 한국어 100문장), Korean While You Sleep EP01, engelsk utgåva",
+        "previews": {
+          "chapter": "Exempelsida från kapitel 1, Hälsningar och grundläggande svar: varje mening visas med koreanska, romanisering, den engelska betydelsen, ett användningstips och en kort dialog",
+          "review": "Exempelsida med kapitelrepetition och fyra övningar: vad betyder det, hur säger man det på koreanska, fyll i dialogen och vad skulle du säga"
+        },
+        "features": {
+          "sentences": {
+            "title": "100 vardagsmeningar",
+            "body": "Användbar koreanska för att hälsa, lära känna nya människor, prata om mat, shopping och planer och reagera naturligt."
+          },
+          "conversation": {
+            "title": "Verkliga sammanhang",
+            "body": "Varje mening har en kort dialog som visar hur den faktiskt används."
+          },
+          "romanization": {
+            "title": "Betydelse + romanisering",
+            "body": "Följ koreanskan med nybörjarvänlig romanisering, en naturlig engelsk betydelse och ett kort användningstips."
+          },
+          "review": {
+            "title": "Repetition och övning",
+            "body": "Kapitelrepetitioner med facit, en snabb repetition av alla 100 meningar och en avslutande checklista för inlärningen."
+          }
+        },
+        "seoTitle": "100 koreanska vardagsmeningar — Gratis studieguide | Hangyul",
+        "seoDescription": "Ladda ner Hangyuls kostnadsfria studieguide till EP01 med 100 koreanska vardagsmeningar, romanisering, engelska betydelser, dialoger, repetition och övningar."
+      }
+    },
+    "notFound": {
+      "metaTitle": "Materialet hittades inte | Hangyul",
+      "title": "Vi kunde inte hitta det här materialet",
+      "body": "Länken kan vara felskriven, eller så är materialet inte längre tillgängligt.",
+      "cta": "Gå till Hangyul",
+      "youtube": "Besök vår YouTube-kanal"
+    }
   }
 }

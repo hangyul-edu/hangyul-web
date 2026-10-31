@@ -35,21 +35,21 @@ export async function GET(
   { params }: { params: Promise<{ file: string }> }
 ) {
   const { file } = await params;
-  const resource = file.endsWith(".pdf")
-    ? getDownloadResource(file.slice(0, -".pdf".length))
+  const edition = file.endsWith(".pdf")
+    ? getDownloadResource(file.slice(0, -".pdf".length))?.edition
     : null;
 
-  if (!resource) {
+  if (!edition) {
     return new Response("Not found", { status: 404 });
   }
 
-  const pdf = await readFile(path.join(DOWNLOADS_DIR, resource.file));
+  const pdf = await readFile(path.join(DOWNLOADS_DIR, edition.file));
 
   return new Response(new Uint8Array(pdf), {
     headers: {
       "Content-Type": "application/pdf",
       "Content-Length": String(pdf.byteLength),
-      "Content-Disposition": contentDisposition(resource.downloadFileName),
+      "Content-Disposition": contentDisposition(edition.downloadFileName),
       // 같은 주소로 수정본을 다시 올릴 수 있으므로 브라우저 캐시는 짧게 둡니다.
       "Cache-Control": "public, max-age=3600",
       "X-Robots-Tag": "noindex",

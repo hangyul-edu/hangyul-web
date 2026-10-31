@@ -118,5 +118,70 @@
     "privacy": "Patakaran sa Privacy",
     "socialMedia": "Social Media",
     "socialLinkLabel": "Hangyul {platform}"
+  },
+  "ResourceDownload": {
+    "common": {
+      "homeLink": "Home ng Hangyul",
+      "downloadCta": "I-download ang Libreng PDF",
+      "noSignUp": "Walang kailangang sign-up",
+      "pageCount": "{count, plural, one {# pahina} other {# pahina}}",
+      "statSentences": "{count, plural, one {pangungusap} other {pangungusap}}",
+      "statChapters": "{count, plural, one {kabanata ayon sa paksa} other {kabanata ayon sa paksa}}",
+      "statPages": "{count, plural, one {pahina} other {pahina}}",
+      "statsLabel": "Sulyap sa study guide",
+      "whatsInside": "Ano ang nasa loob",
+      "whatsInsideIntro": "Lahat ng kailangan mo para balikan ang episode sa sarili mong bilis.",
+      "lookInside": "Silipin ang loob",
+      "closingBody": "Libreng i-download. I-print ito o mag-aral sa iyong phone.",
+      "opensInNewTab": "(magbubukas sa bagong tab)"
+    },
+    "editionLanguages": {
+      "en": {
+        "label": "Edisyong Ingles",
+        "notice": "Nasa Ingles ang PDF na ito. Nakasulat sa Ingles ang lahat ng kahulugan, paliwanag sa paggamit, at salin ng mga usapan.",
+        "switch": "Kunin ang edisyong Ingles"
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "eyebrow": "Libreng Study Guide",
+        "title": "100 Pang-araw-araw na Pangungusap sa Korean",
+        "description": "Sanayin ang lahat ng 100 pangungusap mula sa EP.01 gamit ang Korean, romanization, natural na kahulugan sa Ingles, mga halimbawa mula sa totoong buhay, review sa bawat kabanata, at learning checklist.",
+        "youtubeCta": "Panoorin ang EP.01 sa YouTube",
+        "closingTitle": "Dalhin ang 100 pangungusap saan ka man magpunta",
+        "coverAlt": "Cover ng Hangyul study guide na “100 Pang-araw-araw na Pangungusap sa Korean” (일상 한국어 100문장), Korean While You Sleep EP01, edisyong Ingles",
+        "previews": {
+          "chapter": "Halimbawang pahina mula sa Kabanata 1, Pagbati at Mahahalagang Sagot: bawat pangungusap ay may Korean, romanization, kahulugan sa Ingles, paliwanag sa paggamit, at maikling usapan",
+          "review": "Halimbawang pahina ng chapter review na may apat na pagsasanay: ano ang ibig sabihin, paano ito sabihin sa Korean, kumpletuhin ang usapan, at ano ang sasabihin mo"
+        },
+        "features": {
+          "sentences": {
+            "title": "100 pang-araw-araw na pangungusap",
+            "body": "Kapaki-pakinabang na Korean mula sa pagbati at pakikipagkilala hanggang sa pagkain, pamimili, mga plano, at natural na reaksyon."
+          },
+          "conversation": {
+            "title": "Konteksto mula sa totoong buhay",
+            "body": "May kasamang maikling usapan ang bawat pangungusap para makita kung paano ito talagang ginagamit."
+          },
+          "romanization": {
+            "title": "Kahulugan + romanization",
+            "body": "Sundan ang Korean gamit ang romanization na madali para sa baguhan, natural na kahulugan sa Ingles, at maikling paliwanag sa paggamit."
+          },
+          "review": {
+            "title": "Review at pagsasanay",
+            "body": "Chapter review na may mga sagot, mabilisang review ng lahat ng 100 pangungusap, at panghuling learning checklist."
+          }
+        },
+        "seoTitle": "100 Pang-araw-araw na Pangungusap sa Korean — Libreng Study Guide | Hangyul",
+        "seoDescription": "I-download ang libreng Hangyul EP01 study guide na may 100 pang-araw-araw na pangungusap sa Korean, romanization, kahulugan sa Ingles, mga usapan, review, at pagsasanay."
+      }
+    },
+    "notFound": {
+      "metaTitle": "Hindi nahanap ang resource | Hangyul",
+      "title": "Hindi namin mahanap ang resource na ito",
+      "body": "Maaaring mali ang pagkaka-type ng link, o hindi na available ang resource na ito.",
+      "cta": "Pumunta sa Hangyul",
+      "youtube": "Bisitahin ang aming YouTube channel"
+    }
   }
 }

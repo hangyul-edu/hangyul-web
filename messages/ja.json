@@ -118,5 +118,70 @@
     "privacy": "プライバシーポリシー",
     "socialMedia": "ソーシャルメディア",
     "socialLinkLabel": "Hangyul {platform}"
+  },
+  "ResourceDownload": {
+    "common": {
+      "homeLink": "Hangyulホーム",
+      "downloadCta": "無料PDFをダウンロード",
+      "noSignUp": "会員登録は不要です",
+      "pageCount": "{count, plural, other {#ページ}}",
+      "statSentences": "{count, plural, other {フレーズ}}",
+      "statChapters": "{count, plural, other {テーマ別チャプター}}",
+      "statPages": "{count, plural, other {ページ}}",
+      "statsLabel": "学習ガイドの概要",
+      "whatsInside": "ガイドの内容",
+      "whatsInsideIntro": "エピソードを自分のペースで復習するために必要なものが、すべてそろっています。",
+      "lookInside": "中身をチェック",
+      "closingBody": "無料でダウンロードできます。印刷しても、スマホで学習してもOKです。",
+      "opensInNewTab": "（新しいタブで開きます）"
+    },
+    "editionLanguages": {
+      "en": {
+        "label": "英語版",
+        "notice": "このPDFは英語版です。意味、使い方のポイント、会話の訳はすべて英語で書かれています。",
+        "switch": "英語版を入手"
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "eyebrow": "無料学習ガイド",
+        "title": "日常で使える韓国語100フレーズ",
+        "description": "EP.01の100フレーズを、韓国語・ローマ字表記・自然な英語の意味・実生活での使用例・チャプター復習・学習チェックリストで練習しましょう。",
+        "youtubeCta": "YouTubeでEP.01を見る",
+        "closingTitle": "100フレーズをいつも手元に",
+        "coverAlt": "Hangyul学習ガイド『日常で使える韓国語100フレーズ』（일상 한국어 100문장）の表紙。Korean While You Sleep EP01、英語版",
+        "previews": {
+          "chapter": "第1章「あいさつと基本の受け答え」のサンプルページ。各フレーズに韓国語、ローマ字表記、英語の意味、使い方のポイント、短い会話を掲載",
+          "review": "チャプター復習のサンプルページ。「どういう意味？」「韓国語で何と言う？」「会話を完成させよう」「あなたなら何と言う？」の4つの練習問題を掲載"
+        },
+        "features": {
+          "sentences": {
+            "title": "日常フレーズ100",
+            "body": "あいさつや初対面から、食事、買い物、予定、自然なリアクションまで、すぐに使える韓国語を収録。"
+          },
+          "conversation": {
+            "title": "リアルな場面で学ぶ",
+            "body": "すべてのフレーズに、実際の使われ方がわかる短い会話が付いています。"
+          },
+          "romanization": {
+            "title": "意味＋ローマ字表記",
+            "body": "初心者にやさしいローマ字表記、自然な英語の意味、短い使い方のポイントで韓国語をスムーズに読み進められます。"
+          },
+          "review": {
+            "title": "復習と練習",
+            "body": "解答付きのチャプター復習、100フレーズ全体のクイック復習、最後に学習チェックリストも。"
+          }
+        },
+        "seoTitle": "日常で使える韓国語100フレーズ — 無料学習ガイド | Hangyul",
+        "seoDescription": "Hangyul EP01の無料学習ガイドをダウンロード。日常で使える韓国語100フレーズを、ローマ字表記、英語の意味、会話例、復習、練習問題とともに収録しています。"
+      }
+    },
+    "notFound": {
+      "metaTitle": "資料が見つかりません | Hangyul",
+      "title": "お探しの資料が見つかりませんでした",
+      "body": "リンクが間違っているか、この資料の公開が終了した可能性があります。",
+      "cta": "Hangyulトップへ",
+      "youtube": "YouTubeチャンネルを見る"
+    }
   }
 }

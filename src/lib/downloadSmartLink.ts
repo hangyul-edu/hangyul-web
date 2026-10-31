@@ -8,10 +8,14 @@ import {
   isDownloadApp,
 } from "@/constants/storeLinks";
 import {
+  DOWNLOAD_LANG_PARAM,
   DOWNLOAD_RESOURCE_PARAM,
   normalizeResourceSlug,
+  normalizeUiLanguage,
   resourceRenderPath,
 } from "@/constants/downloadResources";
+import { getDownloadResource } from "@/content/downloadResources";
+import { routing } from "@/i18n/routing";
 import { detectStorePlatformFromHeaders } from "./deviceDetection";
 
 /**
@@ -27,8 +31,8 @@ import { detectStorePlatformFromHeaders } from "./deviceDetection";
  * - 데스크톱·봇·판별 불가 → 홈페이지의 기존 기기 선택 모달로 302
  * - app 파라미터가 없거나 모르는 값 → 홈페이지로 302 (루프 없음)
  *
- * 예외: app 없이 ?resource=<slug>만 있으면 무료 학습 자료 페이지로 rewrite 합니다.
- * (src/constants/downloadResources.ts, src/app/download/[resource]/page.tsx)
+ * 예외: app 없이 ?resource=<slug>(&lang=<UI 언어>)가 있으면 무료 학습 자료 페이지로
+ * rewrite 합니다. (src/constants/downloadResources.ts, src/app/download/[resource]/[lang]/page.tsx)
  */
 
 /** Next가 보통 뒤쪽 슬래시를 먼저 정규화하지만, 그대로 들어오는 경우도 받아 둡니다. */
@@ -84,8 +88,15 @@ export function handleDownloadSmartLink(
     request.nextUrl.searchParams.get(DOWNLOAD_RESOURCE_PARAM)
   );
   if (resource && !request.nextUrl.searchParams.has(DOWNLOAD_APP_PARAM)) {
+    // 화면 언어: 유효한 ?lang → 그 언어, 없거나 잘못되면 PDF 판의 언어 → 기본 로케일.
+    // (Accept-Language 같은 추측 없이 링크만 보고 결정적으로 정합니다.)
+    const uiLanguage =
+      normalizeUiLanguage(request.nextUrl.searchParams.get(DOWNLOAD_LANG_PARAM)) ??
+      normalizeUiLanguage(getDownloadResource(resource)?.edition.language) ??
+      routing.defaultLocale;
+
     const url = request.nextUrl.clone();
-    url.pathname = resourceRenderPath(resource);
+    url.pathname = resourceRenderPath(resource, uiLanguage);
     return NextResponse.rewrite(url);
   }
 

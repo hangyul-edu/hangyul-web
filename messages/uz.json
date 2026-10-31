@@ -118,5 +118,70 @@
     "privacy": "Maxfiylik siyosati",
     "socialMedia": "Ijtimoiy tarmoqlar",
     "socialLinkLabel": "Hangyul {platform}"
+  },
+  "ResourceDownload": {
+    "common": {
+      "homeLink": "Hangyul bosh sahifasi",
+      "downloadCta": "PDF-ni bepul yuklab olish",
+      "noSignUp": "Roʻyxatdan oʻtish shart emas",
+      "pageCount": "{count, plural, one {# sahifa} other {# sahifa}}",
+      "statSentences": "{count, plural, one {jumla} other {jumla}}",
+      "statChapters": "{count, plural, one {mavzuli bob} other {mavzuli bob}}",
+      "statPages": "{count, plural, one {sahifa} other {sahifa}}",
+      "statsLabel": "Qoʻllanma haqida qisqacha",
+      "whatsInside": "Ichida nimalar bor",
+      "whatsInsideIntro": "Epizodni oʻz surʼatingizda takrorlash uchun kerak boʻlgan hamma narsa.",
+      "lookInside": "Ichiga bir nazar",
+      "closingBody": "Bepul yuklab oling. Chop eting yoki telefoningizda oʻrganing.",
+      "opensInNewTab": "(yangi varaqda ochiladi)"
+    },
+    "editionLanguages": {
+      "en": {
+        "label": "Ingliz tilidagi nashr",
+        "notice": "Bu PDF ingliz tilida. Maʼnolar, qoʻllanish boʻyicha izohlar va suhbatlar tarjimasi toʻliq ingliz tilida yozilgan.",
+        "switch": "Ingliz tilidagi nashrni olish"
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "eyebrow": "Bepul oʻquv qoʻllanma",
+        "title": "100 ta kundalik koreyscha jumla",
+        "description": "EP.01-dagi barcha 100 ta jumlani koreyscha matn, lotin transkripsiyasi, tabiiy inglizcha maʼnolar, hayotiy misollar, boblar boʻyicha takrorlash va oʻrganish nazorat roʻyxati bilan mashq qiling.",
+        "youtubeCta": "EP.01-ni YouTube-da koʻrish",
+        "closingTitle": "100 ta jumla doim yoningizda boʻlsin",
+        "coverAlt": "Hangyul oʻquv qoʻllanmasi muqovasi: “100 ta kundalik koreyscha jumla” (일상 한국어 100문장), Korean While You Sleep EP01, ingliz tilidagi nashr",
+        "previews": {
+          "chapter": "1-bobdan namuna sahifa, “Salomlashish va asosiy javoblar”: har bir jumla koreyscha matn, lotin transkripsiyasi, inglizcha maʼno, qoʻllanish izohi va qisqa suhbat bilan berilgan",
+          "review": "Bob boʻyicha takrorlash sahifasidan namuna, toʻrtta mashq bilan: bu nimani anglatadi, koreyschada qanday aytiladi, suhbatni toʻldiring va siz nima degan boʻlardingiz"
+        },
+        "features": {
+          "sentences": {
+            "title": "100 ta kundalik jumla",
+            "body": "Salomlashish va tanishuvdan tortib ovqat, xarid, rejalar va tabiiy munosabat bildirishgacha foydali koreyscha iboralar."
+          },
+          "conversation": {
+            "title": "Hayotiy kontekst",
+            "body": "Har bir jumla u amalda qanday ishlatilishini koʻrsatadigan qisqa suhbat bilan birga keladi."
+          },
+          "romanization": {
+            "title": "Maʼno + transkripsiya",
+            "body": "Koreyscha matnni yangi boshlovchilar uchun qulay lotin transkripsiyasi, tabiiy inglizcha maʼno va qisqa qoʻllanish izohi yordamida kuzatib boring."
+          },
+          "review": {
+            "title": "Takrorlash va mashq",
+            "body": "Javoblari bilan boblar boʻyicha takrorlash, barcha 100 ta jumlani tezkor takrorlash va yakuniy oʻrganish nazorat roʻyxati."
+          }
+        },
+        "seoTitle": "100 ta kundalik koreyscha jumla — Bepul oʻquv qoʻllanma | Hangyul",
+        "seoDescription": "Hangyul EP01 bepul oʻquv qoʻllanmasini yuklab oling: 100 ta kundalik koreyscha jumla, lotin transkripsiyasi, inglizcha maʼnolar, suhbatlar, takrorlash va mashqlar."
+      }
+    },
+    "notFound": {
+      "metaTitle": "Material topilmadi | Hangyul",
+      "title": "Bu materialni topa olmadik",
+      "body": "Havola notoʻgʻri yozilgan boʻlishi mumkin yoki bu material endi mavjud emas.",
+      "cta": "Hangyulga oʻtish",
+      "youtube": "YouTube kanalimizga tashrif buyuring"
+    }
   }
 }

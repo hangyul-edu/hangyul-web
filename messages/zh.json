@@ -118,5 +118,70 @@
     "privacy": "隐私政策",
     "socialMedia": "社交媒体",
     "socialLinkLabel": "Hangyul {platform}"
+  },
+  "ResourceDownload": {
+    "common": {
+      "homeLink": "Hangyul 首页",
+      "downloadCta": "免费下载 PDF",
+      "noSignUp": "无需注册",
+      "pageCount": "{count, plural, other {# 页}}",
+      "statSentences": "{count, plural, other {个句子}}",
+      "statChapters": "{count, plural, other {个主题章节}}",
+      "statPages": "{count, plural, other {页}}",
+      "statsLabel": "学习指南速览",
+      "whatsInside": "指南内容",
+      "whatsInsideIntro": "按自己的节奏复习本集内容，需要的一切都在这里。",
+      "lookInside": "内页预览",
+      "closingBody": "免费下载，可打印，也可以直接在手机上学习。",
+      "opensInNewTab": "（在新标签页中打开）"
+    },
+    "editionLanguages": {
+      "en": {
+        "label": "英文版",
+        "notice": "本 PDF 为英文版，释义、用法说明和对话翻译均以英文编写。",
+        "switch": "获取英文版"
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "eyebrow": "免费学习指南",
+        "title": "100 句日常韩语",
+        "description": "通过韩语原文、罗马音、地道的英文释义、生活实例、章节复习和学习清单，练习 EP.01 中的全部 100 个句子。",
+        "youtubeCta": "在 YouTube 观看 EP.01",
+        "closingTitle": "把这 100 句随身带着",
+        "coverAlt": "Hangyul 学习指南《100 句日常韩语》（일상 한국어 100문장）封面，Korean While You Sleep EP01 英文版",
+        "previews": {
+          "chapter": "第 1 章“问候与基本回应”示例页：每个句子都附有韩语、罗马音、英文释义、用法说明和一段简短对话",
+          "review": "章节复习示例页，包含四类练习：“这是什么意思”“用韩语怎么说”“补全对话”和“换作是你会怎么说”"
+        },
+        "features": {
+          "sentences": {
+            "title": "100 个日常句子",
+            "body": "从打招呼、认识新朋友，到美食、购物、约定计划和自然反应，全是实用韩语。"
+          },
+          "conversation": {
+            "title": "真实生活语境",
+            "body": "每个句子都配有一段简短对话，展示它在实际中怎么用。"
+          },
+          "romanization": {
+            "title": "释义 + 罗马音",
+            "body": "借助适合初学者的罗马音、地道的英文释义和简短的用法说明，轻松读懂韩语。"
+          },
+          "review": {
+            "title": "复习与练习",
+            "body": "附答案的章节复习、全部 100 句的快速复习，以及最后的学习清单。"
+          }
+        },
+        "seoTitle": "100 句日常韩语 — 免费学习指南 | Hangyul",
+        "seoDescription": "免费下载 Hangyul EP01 学习指南，收录 100 句日常韩语，附罗马音、英文释义、对话、复习与练习。"
+      }
+    },
+    "notFound": {
+      "metaTitle": "未找到该资源 | Hangyul",
+      "title": "找不到这个资源",
+      "body": "链接可能输入有误，或该资源已不再提供。",
+      "cta": "前往 Hangyul",
+      "youtube": "访问我们的 YouTube 频道"
+    }
   }
 }
