@@ -22,19 +22,11 @@ function getLegalModalType(value: string | null): ModalType {
 }
 
 type FooterProps = {
-  /**
-   * 페이지가 자체 콘텐츠 컨테이너(최대 폭·좌우 여백)를 쓰는 경우, 푸터 내용도 같은
-   * 기준선에 맞추도록 그 컨테이너 클래스를 덧붙입니다. (홈페이지는 기본값 그대로)
-   */
-  containerClassName?: string;
   /** 데스크톱에서 오른쪽 열(소셜·약관·저작권)을 컨테이너 오른쪽 끝선에 맞춥니다. */
   alignEnd?: boolean;
 };
 
-export default function Footer({
-  containerClassName,
-  alignEnd = false,
-}: FooterProps = {}) {
+export default function Footer({ alignEnd = false }: FooterProps = {}) {
   const t = useTranslations("Footer");
   const locale = useLocale();
   const [openModal, setOpenModal] = useState<ModalType>(null);
@@ -113,13 +105,11 @@ export default function Footer({
   return (
     <footer className={styles.footer}>
       <div
-        className={[
-          styles.container,
-          alignEnd ? styles.containerEndAligned : "",
-          containerClassName ?? "",
-        ]
-          .filter(Boolean)
-          .join(" ")}
+        className={
+          alignEnd
+            ? `${styles.container} ${styles.containerEndAligned}`
+            : styles.container
+        }
       >
         <div className={styles.leftSection}>
           <Image

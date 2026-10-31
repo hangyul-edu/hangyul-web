@@ -85,8 +85,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
           />
           {children}
-          {/* 푸터도 헤더·히어로·섹션과 같은 컨테이너(--container, --gutter)에 맞춥니다. */}
-          <Footer containerClassName={styles.footerContainer} alignEnd />
+          {/* 홈페이지와 같은 푸터 컨테이너(1180px)를 그대로 씁니다. */}
+          <Footer alignEnd />
         </NextIntlClientProvider>
       </body>
     </html>

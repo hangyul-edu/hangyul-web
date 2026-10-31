@@ -464,7 +464,38 @@ test.describe("One container for header, hero, sections and footer", () => {
       };
     });
 
-  for (const width of [1440, 1280, 1024, 820]) {
+  // 홈페이지(/en)가 기준입니다: 헤더·푸터 컨테이너의 좌우 끝선이 자료 페이지와 같아야 합니다.
+  for (const width of [1280, 1440, 1600, 1920, 820]) {
+    test(`uses the homepage container width at ${width}px`, async ({ page }) => {
+      await page.setViewportSize({ width, height: 900 });
+      const contentEdges = () =>
+        page.evaluate(() => {
+          const inner = (el: Element) => {
+            const r = el.getBoundingClientRect();
+            const cs = getComputedStyle(el);
+            return {
+              left: Math.round(r.left + parseFloat(cs.paddingLeft)),
+              right: Math.round(r.right - parseFloat(cs.paddingRight)),
+            };
+          };
+          return {
+            header: inner(document.querySelector("header > div")!),
+            footer: inner(document.querySelector("footer > div")!),
+          };
+        });
+
+      await page.goto("/en");
+      const home = await contentEdges();
+      await page.goto(EN_LINK);
+      const resource = await contentEdges();
+
+      expect(resource.header).toEqual(home.header);
+      expect(resource.footer).toEqual(home.footer);
+      expect(resource.header).toEqual(resource.footer);
+    });
+  }
+
+  for (const width of [1920, 1440, 1280, 1024, 820]) {
     test(`footer edges match the page container at ${width}px`, async ({ page }) => {
       await page.setViewportSize({ width, height: 900 });
       await page.goto(EN_LINK);

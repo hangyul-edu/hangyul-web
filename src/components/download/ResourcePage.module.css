@@ -13,11 +13,12 @@
 
 .page {
   /*
-   * 따뜻한 종이 톤의 아주 옅은 아이보리. 노란 기가 도는 베이지(#fbf8f1)보다 채도를 낮춰
-   * 배경이 표지·제목·CTA를 받쳐 주기만 하도록 합니다. 선은 같은 계열의 중성 톤.
+   * 첫 화면 배경: 은은한 웜 아이보리(종이 톤). 흰색보다 분명히 따뜻하지만
+   * 예전의 노란 베이지(#fbf8f1, 색상 42°/채도 56%)보다 덜 노랗게(39°) 잡았습니다.
+   * 선은 같은 계열의 중성 톤.
    */
-  --cream: #faf8f4;
-  --cream-line: #ebe7e0;
+  --cream: #f9f5ef;
+  --cream-line: #ebe5dc;
   --accent-text: #b84700;
   --accent-strong: #d95700;
   --accent-strong-hover: #c24b00;
@@ -26,9 +27,15 @@
   --muted: var(--gray-500);
   --line: #ebebeb;
   --radius: 12px;
-  /* 헤더·히어로·섹션이 같은 좌우 기준선을 쓰도록 하나의 컨테이너 폭을 공유합니다. */
-  --container: 1120px;
+  /*
+   * 한귤 홈페이지와 같은 컨테이너: 최대 1180px, 좌우 16px (모든 화면 폭).
+   * (Header·Footer·KeyFeatures·Pricing 등의 .container와 동일)
+   * 헤더·히어로·섹션·마지막 CTA·푸터가 모두 이 기준선을 공유합니다.
+   */
+  --container: 1180px;
   --gutter: 16px;
+  /* 히어로 아래쪽에서 흰 섹션으로 자연스럽게 이어지는 그라데이션 길이 */
+  --hero-fade: 56px;
 
   min-height: 100vh;
   display: flex;
@@ -252,9 +259,17 @@
 
 /* ---------- Hero ---------- */
 
+/*
+ * 헤더와 같은 웜 아이보리로 시작해 아래쪽 --hero-fade 구간에서만 흰색으로 옅어집니다.
+ * 경계선 없이 다음 흰 섹션으로 이어지도록 합니다. (주황 등 다른 색은 섞지 않음)
+ */
 .hero {
-  background: var(--cream);
-  border-bottom: 1px solid var(--cream-line);
+  background: linear-gradient(
+    to bottom,
+    var(--cream) 0,
+    var(--cream) calc(100% - var(--hero-fade)),
+    var(--white) 100%
+  );
 }
 
 .heroInner {
@@ -733,18 +748,6 @@
   color: var(--muted);
 }
 
-/* ---------- Footer (기존 한귤 푸터를 같은 컨테이너에 맞춤) ---------- */
-
-/*
- * 기존 Footer의 .container(1180px / 16px)를 이 페이지의 컨테이너 토큰으로 덮어
- * 로고·회사 정보는 왼쪽 기준선, 소셜·약관·저작권은 오른쪽 기준선에 맞춥니다.
- * (.page 범위로 우선순위를 높여 CSS 로드 순서와 무관하게 적용)
- */
-.page .footerContainer {
-  max-width: var(--container);
-  padding-inline: var(--gutter);
-}
-
 /* ---------- Not found ---------- */
 
 .notFound {
@@ -806,7 +809,7 @@
 
 @media (min-width: 768px) {
   .page {
-    --gutter: 24px;
+    --hero-fade: 96px;
   }
 
   .headerInner {
@@ -876,7 +879,7 @@
   }
 
   .insideInner {
-    padding: 72px var(--gutter);
+    padding: 48px var(--gutter) 72px;
   }
 
   .sectionTitle {
@@ -914,6 +917,10 @@
 /* ---------- Desktop ≥ 1024px ---------- */
 
 @media (min-width: 1024px) {
+  .page {
+    --hero-fade: 128px;
+  }
+
   /*
    * 표지는 로고와 같은 왼쪽 기준선에, 정보 영역은 언어 선택기와 같은 오른쪽 기준선에 맞춥니다.
    */
@@ -922,11 +929,16 @@
     grid-template-columns: 340px minmax(0, 600px);
     justify-content: space-between;
     column-gap: 64px;
-    padding: 32px var(--gutter) 88px;
+    padding: 32px var(--gutter) 104px;
   }
 
   .coverStack {
     width: 340px;
+  }
+
+  /* 정보 열 폭은 그리드 열이 정합니다 (오른쪽 끝선 = 컨테이너 끝선). */
+  .info {
+    max-width: none;
   }
 
   .title {
@@ -934,7 +946,7 @@
   }
 
   .insideInner {
-    padding: 96px var(--gutter);
+    padding: 64px var(--gutter) 96px;
   }
 
   /* 두 장이 살짝 겹쳐 보이도록 배치 (RTL에서는 좌우 반전) */
@@ -972,12 +984,12 @@
   /*
    * 기능 설명과 미리보기를 나란히 두는 것은 1200px 이상에서만 합니다.
    * 그보다 좁으면 긴 번역(ru·de 등)에서 설명 두 열이 7–8줄로 잘게 끊기므로
-   * 태블릿처럼 위아래로 쌓습니다. 미리보기 폭은 설명 열이 충분히 넓도록 400px.
+   * 태블릿처럼 위아래로 쌓습니다. 홈페이지 폭(1180px)에서는 미리보기 460px, 간격 80px.
    */
   .insideInner {
     flex-direction: row;
     align-items: center;
-    gap: 64px;
+    gap: 80px;
   }
 
   .insideText {
@@ -986,15 +998,23 @@
   }
 
   .previews {
-    flex: 0 0 400px;
+    flex: 0 0 460px;
   }
 
+  .previewPage {
+    flex-basis: 240px;
+  }
+
+  /*
+   * 홈페이지 폭(내용 1148px)에서 표지 400px + 정보 최대 640px.
+   * 남는 폭은 두 열 사이 간격(약 108px)으로만 쓰고, 제목·버튼 크기는 그대로 둡니다.
+   */
   .heroInner {
-    grid-template-columns: 360px minmax(0, 600px);
+    grid-template-columns: 400px minmax(0, 640px);
   }
 
   .coverStack {
-    width: 360px;
+    width: 400px;
   }
 }
 
