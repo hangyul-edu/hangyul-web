@@ -130,7 +130,7 @@
       "statPages": "{count, plural, other {页}}",
       "statsLabel": "学习指南速览",
       "whatsInside": "指南内容",
-      "whatsInsideIntro": "按自己的节奏复习本集内容，需要的一切都在这里。",
+      "whatsInsideIntro": "按自己的节奏，轻松复习本集全部内容。",
       "lookInside": "内页预览",
       "closingBody": "免费下载，可打印，也可以直接在手机上学习。",
       "opensInNewTab": "（在新标签页中打开）"
@@ -146,7 +146,7 @@
       "ep01EnStudyGuide": {
         "eyebrow": "免费学习指南",
         "title": "100 句日常韩语",
-        "description": "通过韩语原文、罗马音、地道的英文释义、生活实例、章节复习和学习清单，练习 EP.01 中的全部 100 个句子。",
+        "description": "练习 EP.01 中的全部 100 个句子，附韩语原文、罗马音、地道的英文释义和生活实例，还有章节复习与学习清单。",
         "youtubeCta": "在 YouTube 观看 EP.01",
         "closingTitle": "把这 100 句随身带着",
         "coverAlt": "Hangyul 学习指南《100 句日常韩语》（일상 한국어 100문장）封面，Korean While You Sleep EP01 英文版",
@@ -160,7 +160,7 @@
             "body": "从打招呼、认识新朋友，到美食、购物、约定计划和自然反应，全是实用韩语。"
           },
           "conversation": {
-            "title": "真实生活语境",
+            "title": "真实场景对话",
             "body": "每个句子都配有一段简短对话，展示它在实际中怎么用。"
           },
           "romanization": {

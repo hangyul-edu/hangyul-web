@@ -130,7 +130,7 @@
       "statPages": "{count, plural, one {sahifa} other {sahifa}}",
       "statsLabel": "Qoʻllanma haqida qisqacha",
       "whatsInside": "Ichida nimalar bor",
-      "whatsInsideIntro": "Epizodni oʻz surʼatingizda takrorlash uchun kerak boʻlgan hamma narsa.",
+      "whatsInsideIntro": "Epizodni oʻz surʼatingizda takrorlang.",
       "lookInside": "Ichiga bir nazar",
       "closingBody": "Bepul yuklab oling. Chop eting yoki telefoningizda oʻrganing.",
       "opensInNewTab": "(yangi varaqda ochiladi)"
@@ -160,19 +160,19 @@
             "body": "Salomlashish va tanishuvdan tortib ovqat, xarid, rejalar va tabiiy munosabat bildirishgacha foydali koreyscha iboralar."
           },
           "conversation": {
-            "title": "Hayotiy kontekst",
-            "body": "Har bir jumla u amalda qanday ishlatilishini koʻrsatadigan qisqa suhbat bilan birga keladi."
+            "title": "Hayotiy suhbatlar",
+            "body": "Har bir jumla uning amalda qanday ishlatilishini koʻrsatadigan qisqa suhbat bilan berilgan."
           },
           "romanization": {
             "title": "Maʼno + transkripsiya",
-            "body": "Koreyscha matnni yangi boshlovchilar uchun qulay lotin transkripsiyasi, tabiiy inglizcha maʼno va qisqa qoʻllanish izohi yordamida kuzatib boring."
+            "body": "Koreyscha matnni yangi boshlovchilar uchun qulay lotin transkripsiyasi, tabiiy inglizcha maʼno va qisqa qoʻllanish izohi bilan birga oʻqing."
           },
           "review": {
             "title": "Takrorlash va mashq",
             "body": "Javoblari bilan boblar boʻyicha takrorlash, barcha 100 ta jumlani tezkor takrorlash va yakuniy oʻrganish nazorat roʻyxati."
           }
         },
-        "seoTitle": "100 ta kundalik koreyscha jumla — Bepul oʻquv qoʻllanma | Hangyul",
+        "seoTitle": "100 ta kundalik koreyscha jumla — bepul oʻquv qoʻllanma | Hangyul",
         "seoDescription": "Hangyul EP01 bepul oʻquv qoʻllanmasini yuklab oling: 100 ta kundalik koreyscha jumla, lotin transkripsiyasi, inglizcha maʼnolar, suhbatlar, takrorlash va mashqlar."
       }
     },

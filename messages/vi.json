@@ -130,7 +130,7 @@
       "statPages": "{count, plural, other {trang}}",
       "statsLabel": "Tổng quan tài liệu học",
       "whatsInside": "Có gì bên trong",
-      "whatsInsideIntro": "Mọi thứ bạn cần để ôn lại tập này theo nhịp độ của riêng mình.",
+      "whatsInsideIntro": "Ôn lại toàn bộ nội dung tập này theo tốc độ của riêng bạn.",
       "lookInside": "Xem trước nội dung",
       "closingBody": "Tải miễn phí. In ra hoặc học ngay trên điện thoại.",
       "opensInNewTab": "(mở trong thẻ mới)"
@@ -146,7 +146,7 @@
       "ep01EnStudyGuide": {
         "eyebrow": "Tài liệu học miễn phí",
         "title": "100 câu tiếng Hàn thông dụng hằng ngày",
-        "description": "Luyện trọn vẹn 100 câu trong EP.01 với tiếng Hàn, phiên âm La-tinh, nghĩa tiếng Anh tự nhiên, ví dụ thực tế, phần ôn tập theo chương và bảng kiểm tra tiến độ học.",
+        "description": "Luyện trọn 100 câu trong EP.01, kèm câu tiếng Hàn, phiên âm La-tinh, nghĩa tiếng Anh tự nhiên, ví dụ thực tế, phần ôn tập theo chương và bảng kiểm tra tiến độ học.",
         "youtubeCta": "Xem EP.01 trên YouTube",
         "closingTitle": "Mang 100 câu này theo bên mình",
         "coverAlt": "Bìa tài liệu học của Hangyul “100 câu tiếng Hàn thông dụng hằng ngày” (일상 한국어 100문장), Korean While You Sleep EP01, bản tiếng Anh",
@@ -157,7 +157,7 @@
         "features": {
           "sentences": {
             "title": "100 câu dùng hằng ngày",
-            "body": "Tiếng Hàn hữu ích từ chào hỏi, làm quen đến ăn uống, mua sắm, lên kế hoạch và những cách phản ứng tự nhiên."
+            "body": "Những câu tiếng Hàn hữu ích, từ chào hỏi, làm quen đến ăn uống, mua sắm, lên kế hoạch và cách phản ứng tự nhiên."
           },
           "conversation": {
             "title": "Ngữ cảnh thực tế",
@@ -165,7 +165,7 @@
           },
           "romanization": {
             "title": "Nghĩa + phiên âm",
-            "body": "Đọc theo tiếng Hàn dễ dàng với phiên âm La-tinh thân thiện cho người mới, nghĩa tiếng Anh tự nhiên và ghi chú cách dùng ngắn gọn."
+            "body": "Dễ dàng đọc theo tiếng Hàn nhờ phiên âm La-tinh dễ hiểu cho người mới bắt đầu, nghĩa tiếng Anh tự nhiên và ghi chú cách dùng ngắn gọn."
           },
           "review": {
             "title": "Ôn tập và luyện tập",
@@ -178,9 +178,9 @@
     },
     "notFound": {
       "metaTitle": "Không tìm thấy tài liệu | Hangyul",
-      "title": "Chúng tôi không tìm thấy tài liệu này",
+      "title": "Không tìm thấy tài liệu này",
       "body": "Có thể đường liên kết bị nhập sai, hoặc tài liệu này không còn được cung cấp nữa.",
-      "cta": "Đến Hangyul",
+      "cta": "Về trang chủ Hangyul",
       "youtube": "Ghé kênh YouTube của chúng tôi"
     }
   }

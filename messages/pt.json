@@ -123,7 +123,7 @@
     "common": {
       "homeLink": "Página inicial Hangyul",
       "downloadCta": "Transferir PDF gratuito",
-      "noSignUp": "Sem necessidade de registo",
+      "noSignUp": "Sem registo",
       "pageCount": "{count, plural, one {# página} other {# páginas}}",
       "statSentences": "{count, plural, one {frase} other {frases}}",
       "statChapters": "{count, plural, one {capítulo temático} other {capítulos temáticos}}",
@@ -146,7 +146,7 @@
       "ep01EnStudyGuide": {
         "eyebrow": "Guia de estudo gratuito",
         "title": "100 frases coreanas do dia a dia",
-        "description": "Pratique as 100 frases do EP.01 com o coreano, a romanização, significados naturais em inglês, exemplos do quotidiano, revisões por capítulo e uma lista de verificação da aprendizagem.",
+        "description": "Pratique as 100 frases do EP.01: coreano, romanização, significados naturais em inglês, exemplos do quotidiano, revisões por capítulo e uma lista de verificação da aprendizagem.",
         "youtubeCta": "Ver o EP.01 no YouTube",
         "closingTitle": "Leve as 100 frases sempre consigo",
         "coverAlt": "Capa do guia de estudo Hangyul «100 frases coreanas do dia a dia» (일상 한국어 100문장), Korean While You Sleep EP01, edição em inglês",

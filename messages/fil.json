@@ -123,7 +123,7 @@
     "common": {
       "homeLink": "Home ng Hangyul",
       "downloadCta": "I-download ang Libreng PDF",
-      "noSignUp": "Walang kailangang sign-up",
+      "noSignUp": "Hindi kailangang mag-sign up",
       "pageCount": "{count, plural, one {# pahina} other {# pahina}}",
       "statSentences": "{count, plural, one {pangungusap} other {pangungusap}}",
       "statChapters": "{count, plural, one {kabanata ayon sa paksa} other {kabanata ayon sa paksa}}",

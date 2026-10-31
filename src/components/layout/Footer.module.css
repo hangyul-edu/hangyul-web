@@ -113,3 +113,24 @@
     width: 100%;
   }
 }
+
+/*
+ * alignEnd: 데스크톱에서 오른쪽 열의 항목을 끝선에 맞춥니다. (모바일 세로 배치는 그대로)
+ * 소셜 아이콘은 40px 터치 영역 안에 20px 글리프가 있으므로, 시작 쪽에 주던 -10px 보정을
+ * 끝 쪽으로 옮겨 마지막 글리프가 끝선에 닿게 합니다.
+ */
+@media (min-width: 769px) {
+  .containerEndAligned .rightSection {
+    align-items: flex-end;
+    text-align: end;
+  }
+
+  .containerEndAligned .rightSection > :first-child {
+    align-items: flex-end;
+  }
+
+  .containerEndAligned .rightSection > :first-child ul {
+    margin-inline-start: 0;
+    margin-inline-end: -10px;
+  }
+}

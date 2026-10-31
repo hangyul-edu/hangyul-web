@@ -12,8 +12,12 @@
  */
 
 .page {
-  --cream: #fbf8f1;
-  --cream-line: #ece6d8;
+  /*
+   * 따뜻한 종이 톤의 아주 옅은 아이보리. 노란 기가 도는 베이지(#fbf8f1)보다 채도를 낮춰
+   * 배경이 표지·제목·CTA를 받쳐 주기만 하도록 합니다. 선은 같은 계열의 중성 톤.
+   */
+  --cream: #faf8f4;
+  --cream-line: #ebe7e0;
   --accent-text: #b84700;
   --accent-strong: #d95700;
   --accent-strong-hover: #c24b00;
@@ -729,6 +733,18 @@
   color: var(--muted);
 }
 
+/* ---------- Footer (기존 한귤 푸터를 같은 컨테이너에 맞춤) ---------- */
+
+/*
+ * 기존 Footer의 .container(1180px / 16px)를 이 페이지의 컨테이너 토큰으로 덮어
+ * 로고·회사 정보는 왼쪽 기준선, 소셜·약관·저작권은 오른쪽 기준선에 맞춥니다.
+ * (.page 범위로 우선순위를 높여 CSS 로드 순서와 무관하게 적용)
+ */
+.page .footerContainer {
+  max-width: var(--container);
+  padding-inline: var(--gutter);
+}
+
 /* ---------- Not found ---------- */
 
 .notFound {
@@ -918,19 +934,7 @@
   }
 
   .insideInner {
-    flex-direction: row;
-    align-items: center;
-    gap: 72px;
     padding: 96px var(--gutter);
-  }
-
-  .insideText {
-    flex: 1 1 0;
-    min-width: 0;
-  }
-
-  .previews {
-    flex: 0 0 440px;
   }
 
   /* 두 장이 살짝 겹쳐 보이도록 배치 (RTL에서는 좌우 반전) */
@@ -944,7 +948,7 @@
   }
 
   .previewPage {
-    flex-basis: 230px;
+    flex-basis: 210px;
   }
 
   .previewPage:first-child {
@@ -965,6 +969,26 @@
 }
 
 @media (min-width: 1200px) {
+  /*
+   * 기능 설명과 미리보기를 나란히 두는 것은 1200px 이상에서만 합니다.
+   * 그보다 좁으면 긴 번역(ru·de 등)에서 설명 두 열이 7–8줄로 잘게 끊기므로
+   * 태블릿처럼 위아래로 쌓습니다. 미리보기 폭은 설명 열이 충분히 넓도록 400px.
+   */
+  .insideInner {
+    flex-direction: row;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .insideText {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .previews {
+    flex: 0 0 400px;
+  }
+
   .heroInner {
     grid-template-columns: 360px minmax(0, 600px);
   }

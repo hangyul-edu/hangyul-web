@@ -236,6 +236,8 @@ for (const locale of ["ja", "ru"] as const) {
     });
 
     test("has no WCAG A/AA violations", async ({ page }) => {
+      // axe 전체 스캔은 무거워 WebKit 병렬 실행에서 기본 30초를 넘길 수 있습니다.
+      test.slow();
       await page.goto(url);
       const results = await new AxeBuilder({ page })
         .withTags(["wcag2a", "wcag2aa"])
@@ -272,6 +274,7 @@ test.describe("Arabic (RTL)", () => {
   });
 
   test("has no WCAG A/AA violations", async ({ page }) => {
+    test.slow();
     await page.goto(`${RESOURCE_LINK}&lang=ar`);
     const results = await new AxeBuilder({ page })
       .withTags(["wcag2a", "wcag2aa"])
@@ -425,6 +428,81 @@ test.describe("/download?resource=<unknown> — graceful not-found", () => {
     expect(response?.status()).toBe(404);
     await expect(page.locator("html")).toHaveAttribute("lang", "ja");
     await expect(h1(page)).toHaveText(messages("ja").notFound.title);
+  });
+});
+
+test.describe("One container for header, hero, sections and footer", () => {
+  /** 요소의 실제 내용(텍스트·글리프) 좌우 끝 */
+  const edges = (page: Page) =>
+    page.evaluate(() => {
+      const box = (el: Element | null) => {
+        const b = el!.getBoundingClientRect();
+        return { left: Math.round(b.left), right: Math.round(b.right) };
+      };
+      const text = (el: Element | null) => {
+        const range = document.createRange();
+        range.selectNodeContents(el!);
+        const b = range.getBoundingClientRect();
+        return { left: Math.round(b.left), right: Math.round(b.right) };
+      };
+      const footer = document.querySelector("footer")!;
+      const rightColumn = footer.querySelector("address")!.parentElement!
+        .nextElementSibling!;
+      const icons = rightColumn.querySelectorAll("ul a svg");
+      return {
+        headerLogo: box(document.querySelector("header a img")),
+        selector: box(document.querySelector("header button")),
+        cover: box(document.querySelector("main img")),
+        info: box(document.querySelector("h1")!.parentElement),
+        closing: box(document.querySelector("#closing-title")!.closest("div")!.parentElement),
+        footerLogo: box(footer.querySelector("img")),
+        footerAddress: text(footer.querySelector("address p")),
+        socialTitle: text(rightColumn.querySelector("h2")),
+        lastSocialIcon: box(icons[icons.length - 1]),
+        legal: box(rightColumn.children[1]),
+        copyright: text(rightColumn.querySelector("p span")),
+      };
+    });
+
+  for (const width of [1440, 1280, 1024, 820]) {
+    test(`footer edges match the page container at ${width}px`, async ({ page }) => {
+      await page.setViewportSize({ width, height: 900 });
+      await page.goto(EN_LINK);
+      const e = await edges(page);
+
+      const left = e.headerLogo.left;
+      for (const key of ["cover", "closing", "footerLogo", "footerAddress"] as const) {
+        expect(e[key].left, key).toBe(left);
+      }
+      const right = e.selector.right;
+      for (const key of ["info", "closing", "socialTitle", "lastSocialIcon", "legal", "copyright"] as const) {
+        expect(e[key].right, key).toBe(right);
+      }
+    });
+  }
+
+  test("footer edges are mirrored in RTL", async ({ page }) => {
+    await page.setViewportSize({ width: 1440, height: 900 });
+    await page.goto(`${RESOURCE_LINK}&lang=ar`);
+    const e = await edges(page);
+
+    const start = e.headerLogo.right;
+    for (const key of ["cover", "closing", "footerLogo", "footerAddress"] as const) {
+      expect(e[key].right, key).toBe(start);
+    }
+    const end = e.selector.left;
+    for (const key of ["info", "closing", "socialTitle", "lastSocialIcon", "legal", "copyright"] as const) {
+      expect(e[key].left, key).toBe(end);
+    }
+  });
+
+  test("mobile footer stays on the same gutter", async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto(EN_LINK);
+    const e = await edges(page);
+    for (const key of ["headerLogo", "info", "closing", "footerLogo", "footerAddress", "socialTitle", "legal", "copyright"] as const) {
+      expect(e[key].left, key).toBe(16);
+    }
   });
 });
 

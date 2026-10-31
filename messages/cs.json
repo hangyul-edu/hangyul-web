@@ -146,12 +146,12 @@
       "ep01EnStudyGuide": {
         "eyebrow": "Studijní materiál zdarma",
         "title": "100 korejských vět pro každý den",
-        "description": "Procvičte si všech 100 vět z EP.01 – s korejštinou, přepisem do latinky, přirozenými anglickými významy, příklady ze života, opakováním kapitol a kontrolním seznamem.",
+        "description": "Procvičte si všech 100 vět z EP.01 – s korejštinou, přepisem do latinky, přirozeným významem v angličtině, příklady ze života, opakováním kapitol a kontrolním seznamem.",
         "youtubeCta": "Sledovat EP.01 na YouTube",
         "closingTitle": "Mějte 100 vět vždy po ruce",
         "coverAlt": "Obálka studijního materiálu Hangyul „100 korejských vět pro každý den“ (일상 한국어 100문장), Korean While You Sleep EP01, anglická verze",
         "previews": {
-          "chapter": "Ukázková strana z kapitoly 1 Pozdravy a základní odpovědi: u každé věty je korejština, přepis do latinky, anglický význam, poznámka k použití a krátká konverzace",
+          "chapter": "Ukázková strana z kapitoly 1 (Pozdravy a základní odpovědi): u každé věty je korejština, přepis do latinky, anglický význam, poznámka k použití a krátká konverzace",
           "review": "Ukázková strana opakování kapitoly se čtyřmi cvičeními: „Co to znamená?“, „Jak se to řekne korejsky?“, „Doplňte konverzaci“ a „Co byste řekli?“"
         },
         "features": {
@@ -160,7 +160,7 @@
             "body": "Užitečná korejština od pozdravů a seznamování po jídlo, nakupování, plány a přirozené reakce."
           },
           "conversation": {
-            "title": "Kontext ze života",
+            "title": "Použití v praxi",
             "body": "Ke každé větě patří krátká konverzace, která ukazuje, jak se skutečně používá."
           },
           "romanization": {
@@ -172,7 +172,7 @@
             "body": "Opakování kapitol s řešením, rychlé zopakování všech 100 vět a závěrečný kontrolní seznam."
           }
         },
-        "seoTitle": "100 korejských vět pro každý den — studijní materiál zdarma | Hangyul",
+        "seoTitle": "100 korejských vět pro každý den – studijní materiál zdarma | Hangyul",
         "seoDescription": "Stáhněte si zdarma studijní materiál Hangyul k EP01: 100 každodenních korejských vět s přepisem do latinky, anglickými významy, konverzacemi, opakováním a procvičováním."
       }
     },

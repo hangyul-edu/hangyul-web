@@ -130,10 +130,10 @@
       "statPages": "{count, plural, one {Seite} other {Seiten}}",
       "statsLabel": "Das Lernheft auf einen Blick",
       "whatsInside": "Das steckt drin",
-      "whatsInsideIntro": "Alles, was du brauchst, um die Folge in deinem eigenen Tempo zu wiederholen.",
+      "whatsInsideIntro": "So wiederholst du die Folge ganz in deinem eigenen Tempo.",
       "lookInside": "Ein Blick ins Heft",
       "closingBody": "Kostenlos zum Herunterladen. Druck es aus oder lern direkt auf dem Handy.",
-      "opensInNewTab": "(öffnet in neuem Tab)"
+      "opensInNewTab": "(öffnet sich in einem neuen Tab)"
     },
     "editionLanguages": {
       "en": {
@@ -146,7 +146,7 @@
       "ep01EnStudyGuide": {
         "eyebrow": "Kostenloses Lernheft",
         "title": "100 koreanische Alltagssätze",
-        "description": "Übe alle 100 Sätze aus EP.01 – mit Koreanisch, Umschrift, natürlichen englischen Bedeutungen, Beispielen aus dem Alltag, Kapitelwiederholungen und einer Lern-Checkliste.",
+        "description": "Übe alle 100 Sätze aus EP.01 – mit koreanischem Text, Umschrift, natürlichen englischen Bedeutungen, Beispielen aus dem Alltag, Kapitelwiederholungen und einer Lern-Checkliste.",
         "youtubeCta": "EP.01 auf YouTube ansehen",
         "closingTitle": "Nimm die 100 Sätze überallhin mit",
         "coverAlt": "Cover des Hangyul-Lernhefts „100 koreanische Alltagssätze“ (일상 한국어 100문장), Korean While You Sleep EP01, englische Ausgabe",
@@ -172,7 +172,7 @@
             "body": "Kapitelwiederholungen mit Lösungen, eine Schnellwiederholung aller 100 Sätze und eine abschließende Lern-Checkliste."
           }
         },
-        "seoTitle": "100 koreanische Alltagssätze — Kostenloses Lernheft | Hangyul",
+        "seoTitle": "100 koreanische Alltagssätze – Kostenloses Lernheft | Hangyul",
         "seoDescription": "Lade das kostenlose Hangyul-Lernheft zu EP01 herunter: 100 koreanische Alltagssätze mit Umschrift, englischen Bedeutungen, Dialogen, Wiederholungen und Übungen."
       }
     },

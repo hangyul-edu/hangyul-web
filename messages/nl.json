@@ -129,9 +129,9 @@
       "statChapters": "{count, plural, one {themahoofdstuk} other {themahoofdstukken}}",
       "statPages": "{count, plural, one {pagina} other {pagina's}}",
       "statsLabel": "De studiegids in één oogopslag",
-      "whatsInside": "Wat zit erin",
+      "whatsInside": "Dit zit erin",
       "whatsInsideIntro": "Alles wat je nodig hebt om de aflevering in je eigen tempo te herhalen.",
-      "lookInside": "Een kijkje binnenin",
+      "lookInside": "Een kijkje in de gids",
       "closingBody": "Gratis te downloaden. Print hem uit of leer op je telefoon.",
       "opensInNewTab": "(opent in een nieuw tabblad)"
     },

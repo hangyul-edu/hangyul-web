@@ -126,11 +126,11 @@
       "noSignUp": "Tanpa perlu daftar",
       "pageCount": "{count, plural, other {# halaman}}",
       "statSentences": "{count, plural, other {kalimat}}",
-      "statChapters": "{count, plural, other {bab topik}}",
+      "statChapters": "{count, plural, other {bab bertema}}",
       "statPages": "{count, plural, other {halaman}}",
       "statsLabel": "Sekilas tentang panduan belajar",
       "whatsInside": "Isi panduan",
-      "whatsInsideIntro": "Semua yang kamu butuhkan untuk mengulang episode ini sesuai kecepatanmu sendiri.",
+      "whatsInsideIntro": "Pelajari ulang isi episode ini dengan lengkap, sesuai kecepatanmu sendiri.",
       "lookInside": "Intip isinya",
       "closingBody": "Gratis diunduh. Cetak atau pelajari langsung di ponselmu.",
       "opensInNewTab": "(terbuka di tab baru)"
@@ -146,13 +146,13 @@
       "ep01EnStudyGuide": {
         "eyebrow": "Panduan Belajar Gratis",
         "title": "100 Kalimat Bahasa Korea Sehari-hari",
-        "description": "Latih semua 100 kalimat dari EP.01 lengkap dengan bahasa Korea, romanisasi, arti bahasa Inggris yang natural, contoh dari kehidupan nyata, ulasan per bab, dan daftar periksa belajar.",
+        "description": "Latih 100 kalimat dari EP.01 lengkap dengan teks Korea, romanisasi, arti bahasa Inggris yang natural, contoh dari kehidupan nyata, latihan akhir bab, dan daftar periksa belajar.",
         "youtubeCta": "Tonton EP.01 di YouTube",
         "closingTitle": "Bawa 100 kalimat ini ke mana pun",
         "coverAlt": "Sampul panduan belajar Hangyul “100 Kalimat Bahasa Korea Sehari-hari” (일상 한국어 100문장), Korean While You Sleep EP01, edisi bahasa Inggris",
         "previews": {
           "chapter": "Contoh halaman dari Bab 1, Salam dan Respons Penting: setiap kalimat dilengkapi bahasa Korea, romanisasi, arti bahasa Inggris, catatan penggunaan, dan percakapan singkat",
-          "review": "Contoh halaman ulasan bab dengan empat latihan: apa artinya, bagaimana mengatakannya dalam bahasa Korea, lengkapi percakapan, dan apa yang akan kamu katakan"
+          "review": "Contoh halaman latihan akhir bab dengan empat jenis soal: apa artinya, bagaimana mengatakannya dalam bahasa Korea, lengkapi percakapan, dan apa yang akan kamu katakan"
         },
         "features": {
           "sentences": {
@@ -160,27 +160,27 @@
             "body": "Bahasa Korea yang berguna, mulai dari menyapa dan berkenalan hingga soal makanan, belanja, rencana, dan reaksi yang natural."
           },
           "conversation": {
-            "title": "Konteks kehidupan nyata",
+            "title": "Sesuai situasi nyata",
             "body": "Setiap kalimat dilengkapi percakapan singkat yang menunjukkan cara pemakaiannya sehari-hari."
           },
           "romanization": {
             "title": "Arti + romanisasi",
-            "body": "Ikuti bahasa Korea dengan romanisasi yang ramah pemula, arti bahasa Inggris yang natural, dan catatan penggunaan singkat."
+            "body": "Baca bahasa Korea dengan mudah lewat romanisasi yang ramah pemula, arti bahasa Inggris yang natural, dan catatan penggunaan singkat."
           },
           "review": {
-            "title": "Ulasan dan latihan",
-            "body": "Ulasan per bab beserta kunci jawaban, ulasan cepat semua 100 kalimat, dan daftar periksa belajar di bagian akhir."
+            "title": "Mengulang dan berlatih",
+            "body": "Latihan akhir bab beserta kunci jawaban, ringkasan cepat seluruh 100 kalimat, dan daftar periksa belajar di bagian akhir."
           }
         },
         "seoTitle": "100 Kalimat Bahasa Korea Sehari-hari — Panduan Belajar Gratis | Hangyul",
-        "seoDescription": "Unduh gratis panduan belajar EP01 dari Hangyul berisi 100 kalimat bahasa Korea sehari-hari, romanisasi, arti bahasa Inggris, percakapan, ulasan, dan latihan."
+        "seoDescription": "Unduh gratis panduan belajar EP01 dari Hangyul berisi 100 kalimat bahasa Korea sehari-hari, romanisasi, arti bahasa Inggris, percakapan, latihan akhir bab, dan ringkasan cepat."
       }
     },
     "notFound": {
       "metaTitle": "Materi tidak ditemukan | Hangyul",
       "title": "Kami tidak dapat menemukan materi ini",
       "body": "Tautannya mungkin salah ketik, atau materi ini sudah tidak tersedia.",
-      "cta": "Ke Hangyul",
+      "cta": "Ke Beranda Hangyul",
       "youtube": "Kunjungi channel YouTube kami"
     }
   }

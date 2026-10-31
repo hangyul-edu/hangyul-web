@@ -130,8 +130,8 @@
       "statPages": "{count, plural, one {sayfa} other {sayfa}}",
       "statsLabel": "Rakamlarla çalışma rehberi",
       "whatsInside": "İçinde neler var?",
-      "whatsInsideIntro": "Videoyu kendi hızında tekrar etmek için ihtiyacın olan her şey.",
-      "lookInside": "İçeriden bir bakış",
+      "whatsInsideIntro": "Videoda öğrendiklerini kendi hızında tekrar etmek için ihtiyacın olan her şey.",
+      "lookInside": "Rehbere göz at",
       "closingBody": "Ücretsiz indirilebilir. Çıktısını al ya da telefonundan çalış.",
       "opensInNewTab": "(yeni sekmede açılır)"
     },
@@ -160,12 +160,12 @@
             "body": "Selamlaşma ve tanışmadan yemeğe, alışverişe, planlara ve doğal tepkilere kadar işe yarar Korece."
           },
           "conversation": {
-            "title": "Gerçek hayattan bağlam",
+            "title": "Gerçek hayatta kullanım",
             "body": "Her cümleyle birlikte, gerçekte nasıl kullanıldığını gösteren kısa bir diyalog var."
           },
           "romanization": {
             "title": "Anlam + okunuş",
-            "body": "Korece metni yeni başlayanlara uygun Latin harfli okunuş, doğal bir İngilizce anlam ve kısa bir kullanım notuyla takip et."
+            "body": "Korece cümleleri yeni başlayanlara uygun Latin harfli okunuş, doğal bir İngilizce anlam ve kısa bir kullanım notuyla oku."
           },
           "review": {
             "title": "Tekrar ve pratik",
