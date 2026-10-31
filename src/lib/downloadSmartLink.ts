@@ -7,6 +7,11 @@ import {
   DOWNLOAD_PATH,
   isDownloadApp,
 } from "@/constants/storeLinks";
+import {
+  DOWNLOAD_RESOURCE_PARAM,
+  normalizeResourceSlug,
+  resourceRenderPath,
+} from "@/constants/downloadResources";
 import { detectStorePlatformFromHeaders } from "./deviceDetection";
 
 /**
@@ -21,6 +26,9 @@ import { detectStorePlatformFromHeaders } from "./deviceDetection";
  * - iPhone/iOS → App Store로 302
  * - 데스크톱·봇·판별 불가 → 홈페이지의 기존 기기 선택 모달로 302
  * - app 파라미터가 없거나 모르는 값 → 홈페이지로 302 (루프 없음)
+ *
+ * 예외: app 없이 ?resource=<slug>만 있으면 무료 학습 자료 페이지로 rewrite 합니다.
+ * (src/constants/downloadResources.ts, src/app/download/[resource]/page.tsx)
  */
 
 /** Next가 보통 뒤쪽 슬래시를 먼저 정규화하지만, 그대로 들어오는 경우도 받아 둡니다. */
@@ -65,6 +73,21 @@ export function handleDownloadSmartLink(
   request: NextRequest
 ): NextResponse | null {
   if (!isDownloadPath(request.nextUrl.pathname)) return null;
+
+  /*
+   * /download?resource=<slug> 무료 학습 자료 페이지.
+   * app 파라미터가 있으면 항상 기존 스마트 링크가 우선하고, 이 분기는
+   * app 없이 resource만 있는 요청에만 해당합니다. 리다이렉트가 아닌 rewrite라
+   * 주소창에는 공개 URL(utm_* 포함)이 그대로 남습니다.
+   */
+  const resource = normalizeResourceSlug(
+    request.nextUrl.searchParams.get(DOWNLOAD_RESOURCE_PARAM)
+  );
+  if (resource && !request.nextUrl.searchParams.has(DOWNLOAD_APP_PARAM)) {
+    const url = request.nextUrl.clone();
+    url.pathname = resourceRenderPath(resource);
+    return NextResponse.rewrite(url);
+  }
 
   // 링크에 대소문자가 섞여도(?app=Ganada) 동작하게 맞춰 줍니다.
   const app =
