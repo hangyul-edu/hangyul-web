@@ -133,7 +133,8 @@
       "whatsInsideIntro": "Ôn lại toàn bộ nội dung tập này theo tốc độ của riêng bạn.",
       "lookInside": "Xem trước nội dung",
       "closingBody": "Tải miễn phí. In ra hoặc học ngay trên điện thoại.",
-      "opensInNewTab": "(mở trong thẻ mới)"
+      "opensInNewTab": "(mở trong thẻ mới)",
+      "youtubeCta": "Xem trên YouTube"
     },
     "editionLanguages": {
       "en": {
@@ -142,22 +143,14 @@
         "switch": "Tải bản tiếng Anh"
       }
     },
-    "resources": {
-      "ep01EnStudyGuide": {
+    "formats": {
+      "everydaySentences": {
         "eyebrow": "Tài liệu học miễn phí",
         "title": "100 câu tiếng Hàn thông dụng hằng ngày",
-        "description": "Luyện trọn 100 câu trong EP.01, kèm câu tiếng Hàn, phiên âm La-tinh, nghĩa tiếng Anh tự nhiên, ví dụ thực tế, phần ôn tập theo chương và bảng kiểm tra tiến độ học.",
-        "youtubeCta": "Xem EP.01 trên YouTube",
         "closingTitle": "Mang 100 câu này theo bên mình",
-        "coverAlt": "Bìa tài liệu học của Hangyul “100 câu tiếng Hàn thông dụng hằng ngày” (일상 한국어 100문장), Korean While You Sleep EP01, bản tiếng Anh",
-        "previews": {
-          "chapter": "Trang mẫu từ Chương 1, Chào hỏi và câu đáp cơ bản: mỗi câu gồm tiếng Hàn, phiên âm La-tinh, nghĩa tiếng Anh, ghi chú cách dùng và một đoạn hội thoại ngắn",
-          "review": "Trang mẫu ôn tập chương với bốn dạng bài: câu này nghĩa là gì, nói bằng tiếng Hàn thế nào, hoàn thành đoạn hội thoại và bạn sẽ nói gì"
-        },
         "features": {
           "sentences": {
-            "title": "100 câu dùng hằng ngày",
-            "body": "Những câu tiếng Hàn hữu ích, từ chào hỏi, làm quen đến ăn uống, mua sắm, lên kế hoạch và cách phản ứng tự nhiên."
+            "title": "100 câu dùng hằng ngày"
           },
           "conversation": {
             "title": "Ngữ cảnh thực tế",
@@ -171,9 +164,32 @@
             "title": "Ôn tập và luyện tập",
             "body": "Ôn tập từng chương kèm đáp án, ôn nhanh toàn bộ 100 câu và bảng kiểm tra tiến độ học ở cuối."
           }
+        }
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "description": "Luyện trọn 100 câu trong EP.01, kèm câu tiếng Hàn, phiên âm La-tinh, nghĩa tiếng Anh tự nhiên, ví dụ thực tế, phần ôn tập theo chương và bảng kiểm tra tiến độ học.",
+        "youtubeCta": "Xem EP.01 trên YouTube",
+        "topics": "Những câu tiếng Hàn hữu ích, từ chào hỏi, làm quen đến ăn uống, mua sắm, lên kế hoạch và cách phản ứng tự nhiên.",
+        "coverAlt": "Bìa tài liệu học của Hangyul “100 câu tiếng Hàn thông dụng hằng ngày” (일상 한국어 100문장), Korean While You Sleep EP01, bản tiếng Anh",
+        "previews": {
+          "chapter": "Trang mẫu từ Chương 1, Chào hỏi và câu đáp cơ bản: mỗi câu gồm tiếng Hàn, phiên âm La-tinh, nghĩa tiếng Anh, ghi chú cách dùng và một đoạn hội thoại ngắn",
+          "review": "Trang mẫu ôn tập chương với bốn dạng bài: câu này nghĩa là gì, nói bằng tiếng Hàn thế nào, hoàn thành đoạn hội thoại và bạn sẽ nói gì"
         },
-        "seoTitle": "100 câu tiếng Hàn thông dụng hằng ngày — Tài liệu học miễn phí | Hangyul",
+        "seoTitle": "100 câu tiếng Hàn thông dụng hằng ngày — EP01 Tài liệu học miễn phí | Hangyul",
         "seoDescription": "Tải miễn phí tài liệu học EP01 của Hangyul với 100 câu tiếng Hàn thông dụng hằng ngày, phiên âm La-tinh, nghĩa tiếng Anh, hội thoại, phần ôn tập và luyện tập."
+      },
+      "ep02EnStudyGuide": {
+        "description": "Luyện thêm 100 câu trong EP.02, kèm câu tiếng Hàn, phiên âm La-tinh, nghĩa tiếng Anh tự nhiên, ghi chú cách dùng, hội thoại thực tế, phần ôn tập theo chương và phần ôn nhanh cả 100 câu.",
+        "topics": "Tiếng Hàn thực tế khi đi nhà hàng và quán cà phê, mua sắm, di chuyển, lên kế hoạch, nói về sức khỏe và cảm xúc, cùng cách phản ứng tự nhiên.",
+        "coverAlt": "Bìa tài liệu học của Hangyul “100 câu tiếng Hàn thông dụng hằng ngày” (일상 한국어 100문장), Korean While You Sleep EP02, bản tiếng Anh",
+        "previews": {
+          "chapter": "Trang mẫu từ Chương 1, Hiểu nhau: mỗi câu gồm tiếng Hàn, phiên âm La-tinh, nghĩa tiếng Anh, ghi chú cách dùng và một đoạn hội thoại ngắn",
+          "review": "Trang mẫu ôn tập chương với bốn dạng bài: câu này nghĩa là gì, nói bằng tiếng Hàn thế nào, hoàn thành đoạn hội thoại và bạn sẽ nói gì"
+        },
+        "seoTitle": "100 câu tiếng Hàn thông dụng hằng ngày — EP02 Tài liệu học miễn phí | Hangyul",
+        "seoDescription": "Tải miễn phí tài liệu học EP02 của Hangyul với thêm 100 câu tiếng Hàn thông dụng hằng ngày, phiên âm La-tinh, nghĩa tiếng Anh, hội thoại, phần ôn tập theo chương và luyện tập."
       }
     },
     "notFound": {

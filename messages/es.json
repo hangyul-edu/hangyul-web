@@ -133,7 +133,8 @@
       "whatsInsideIntro": "Todo lo que necesitas para repasar el episodio a tu ritmo.",
       "lookInside": "Un vistazo al interior",
       "closingBody": "Descarga gratuita. Imprímela o estudia desde el teléfono.",
-      "opensInNewTab": "(se abre en una pestaña nueva)"
+      "opensInNewTab": "(se abre en una pestaña nueva)",
+      "youtubeCta": "Ver en YouTube"
     },
     "editionLanguages": {
       "en": {
@@ -142,22 +143,14 @@
         "switch": "Obtener la edición en inglés"
       }
     },
-    "resources": {
-      "ep01EnStudyGuide": {
+    "formats": {
+      "everydaySentences": {
         "eyebrow": "Guía de estudio gratuita",
         "title": "100 frases cotidianas en coreano",
-        "description": "Practica las 100 frases del EP.01: coreano, romanización, significados naturales en inglés, ejemplos de la vida real, repasos por capítulo y una lista de verificación del aprendizaje.",
-        "youtubeCta": "Ver el EP.01 en YouTube",
         "closingTitle": "Lleva las 100 frases siempre contigo",
-        "coverAlt": "Portada de la guía de estudio de Hangyul «100 frases cotidianas en coreano» (일상 한국어 100문장), Korean While You Sleep EP01, edición en inglés",
-        "previews": {
-          "chapter": "Página de muestra del capítulo 1, Saludos y respuestas esenciales: cada frase incluye el coreano, la romanización, el significado en inglés, una nota de uso y una breve conversación",
-          "review": "Página de muestra de un repaso de capítulo con cuatro ejercicios: qué significa, cómo se dice en coreano, completa la conversación y qué dirías"
-        },
         "features": {
           "sentences": {
-            "title": "100 frases cotidianas",
-            "body": "Coreano útil para saludar, conocer gente, hablar de comida, compras y planes, y reaccionar con naturalidad."
+            "title": "100 frases cotidianas"
           },
           "conversation": {
             "title": "Contexto real",
@@ -171,9 +164,32 @@
             "title": "Repaso y práctica",
             "body": "Repasos por capítulo con soluciones, un repaso rápido de las 100 frases y una lista final de verificación del aprendizaje."
           }
+        }
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "description": "Practica las 100 frases del EP.01: coreano, romanización, significados naturales en inglés, ejemplos de la vida real, repasos por capítulo y una lista de verificación del aprendizaje.",
+        "youtubeCta": "Ver el EP.01 en YouTube",
+        "topics": "Coreano útil para saludar, conocer gente, hablar de comida, compras y planes, y reaccionar con naturalidad.",
+        "coverAlt": "Portada de la guía de estudio de Hangyul «100 frases cotidianas en coreano» (일상 한국어 100문장), Korean While You Sleep EP01, edición en inglés",
+        "previews": {
+          "chapter": "Página de muestra del capítulo 1, Saludos y respuestas esenciales: cada frase incluye el coreano, la romanización, el significado en inglés, una nota de uso y una breve conversación",
+          "review": "Página de muestra de un repaso de capítulo con cuatro ejercicios: qué significa, cómo se dice en coreano, completa la conversación y qué dirías"
         },
-        "seoTitle": "100 frases cotidianas en coreano — Guía de estudio gratuita | Hangyul",
+        "seoTitle": "100 frases cotidianas en coreano — EP01 Guía de estudio gratuita | Hangyul",
         "seoDescription": "Descarga gratis la guía de estudio EP01 de Hangyul con 100 frases cotidianas en coreano, romanización, significados en inglés, conversaciones, repasos y práctica."
+      },
+      "ep02EnStudyGuide": {
+        "description": "Practica otras 100 frases del EP.02: coreano, romanización, significados naturales en inglés, notas de uso, conversaciones de la vida real, repasos por capítulo y un repaso rápido de las 100.",
+        "topics": "Coreano práctico para restaurantes y cafeterías, compras, desplazarse, hacer planes, salud y emociones, y reaccionar con naturalidad.",
+        "coverAlt": "Portada de la guía de estudio de Hangyul «100 frases cotidianas en coreano» (일상 한국어 100문장), Korean While You Sleep EP02, edición en inglés",
+        "previews": {
+          "chapter": "Página de muestra del capítulo 1, Entendernos: cada frase incluye el coreano, la romanización, el significado en inglés, una nota de uso y una breve conversación",
+          "review": "Página de muestra de un repaso de capítulo con cuatro ejercicios: qué significa, cómo se dice en coreano, completa la conversación y qué dirías"
+        },
+        "seoTitle": "100 frases cotidianas en coreano — EP02 Guía de estudio gratuita | Hangyul",
+        "seoDescription": "Descarga gratis la guía de estudio EP02 de Hangyul con otras 100 frases cotidianas en coreano, romanización, significados en inglés, conversaciones, repasos por capítulo y práctica."
       }
     },
     "notFound": {

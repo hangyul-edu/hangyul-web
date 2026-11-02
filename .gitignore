@@ -55,3 +55,6 @@ playwright-report/
 test-results/
 
 .pnpm-store/
+
+# Windows(WSL)에서 내려받은 파일에 붙는 메타데이터 — 제품 에셋이 아닙니다.
+*:Zone.Identifier

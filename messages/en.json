@@ -133,7 +133,8 @@
       "whatsInsideIntro": "Everything you need to review the episode at your own pace.",
       "lookInside": "A look inside",
       "closingBody": "Free to download. Print it or study on your phone.",
-      "opensInNewTab": "(opens in a new tab)"
+      "opensInNewTab": "(opens in a new tab)",
+      "youtubeCta": "Watch on YouTube"
     },
     "editionLanguages": {
       "en": {
@@ -142,22 +143,14 @@
         "switch": "Get the English edition"
       }
     },
-    "resources": {
-      "ep01EnStudyGuide": {
+    "formats": {
+      "everydaySentences": {
         "eyebrow": "Free Study Guide",
         "title": "100 Everyday Korean Sentences",
-        "description": "Practice all 100 sentences from EP.01 with Korean, romanization, natural English meanings, real-life examples, chapter reviews, and a learning checklist.",
-        "youtubeCta": "Watch EP.01 on YouTube",
         "closingTitle": "Keep the 100 sentences with you",
-        "coverAlt": "Cover of the Hangyul study guide “100 Everyday Korean Sentences” (일상 한국어 100문장), Korean While You Sleep EP01, English edition",
-        "previews": {
-          "chapter": "Sample page from Chapter 1, Greetings and Essential Responses: each sentence shows Korean, romanization, the English meaning, a usage note and a short conversation",
-          "review": "Sample chapter review page with four exercises: what does it mean, how do you say it in Korean, complete the conversation, and what would you say"
-        },
         "features": {
           "sentences": {
-            "title": "100 everyday sentences",
-            "body": "Useful Korean from greetings and meeting people to food, shopping, plans and natural reactions."
+            "title": "100 everyday sentences"
           },
           "conversation": {
             "title": "Real-life context",
@@ -171,9 +164,32 @@
             "title": "Review and practice",
             "body": "Chapter reviews with answers, a quick review of all 100 sentences and a final learning checklist."
           }
+        }
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "description": "Practice all 100 sentences from EP.01 with Korean, romanization, natural English meanings, real-life examples, chapter reviews, and a learning checklist.",
+        "youtubeCta": "Watch EP.01 on YouTube",
+        "topics": "Useful Korean from greetings and meeting people to food, shopping, plans and natural reactions.",
+        "coverAlt": "Cover of the Hangyul study guide “100 Everyday Korean Sentences” (일상 한국어 100문장), Korean While You Sleep EP01, English edition",
+        "previews": {
+          "chapter": "Sample page from Chapter 1, Greetings and Essential Responses: each sentence shows Korean, romanization, the English meaning, a usage note and a short conversation",
+          "review": "Sample chapter review page with four exercises: what does it mean, how do you say it in Korean, complete the conversation, and what would you say"
         },
-        "seoTitle": "100 Everyday Korean Sentences — Free Study Guide | Hangyul",
+        "seoTitle": "100 Everyday Korean Sentences — EP01 Free Study Guide | Hangyul",
         "seoDescription": "Download the free Hangyul EP01 study guide with 100 everyday Korean sentences, romanization, English meanings, conversations, reviews, and practice."
+      },
+      "ep02EnStudyGuide": {
+        "description": "Practice another 100 sentences from EP.02 with Korean, romanization, natural English meanings, usage notes, real-life conversations, chapter reviews, and a quick review of all 100.",
+        "topics": "Practical Korean for restaurants and cafés, shopping, getting around, making plans, health and feelings, and natural reactions.",
+        "coverAlt": "Cover of the Hangyul study guide “100 Everyday Korean Sentences” (일상 한국어 100문장), Korean While You Sleep EP02, English edition",
+        "previews": {
+          "chapter": "Sample page from Chapter 1, Understanding Each Other: each sentence shows Korean, romanization, the English meaning, a usage note and a short conversation",
+          "review": "Sample chapter review page with four exercises: what does it mean, how do you say it in Korean, complete the conversation, and what would you say"
+        },
+        "seoTitle": "100 Everyday Korean Sentences — EP02 Free Study Guide | Hangyul",
+        "seoDescription": "Download the free Hangyul EP02 study guide: another 100 everyday Korean sentences with romanization, English meanings, conversations, chapter reviews, and practice."
       }
     },
     "notFound": {

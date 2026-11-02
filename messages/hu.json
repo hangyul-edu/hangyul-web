@@ -133,7 +133,8 @@
       "whatsInsideIntro": "Minden, ami ahhoz kell, hogy a saját tempódban ismételd át az epizódot.",
       "lookInside": "Belepillantás",
       "closingBody": "Ingyenesen letölthető. Nyomtasd ki, vagy tanulj belőle a telefonodon.",
-      "opensInNewTab": "(új lapon nyílik meg)"
+      "opensInNewTab": "(új lapon nyílik meg)",
+      "youtubeCta": "Nézd meg a YouTube-on"
     },
     "editionLanguages": {
       "en": {
@@ -142,22 +143,14 @@
         "switch": "Tovább az angol nyelvű kiadáshoz"
       }
     },
-    "resources": {
-      "ep01EnStudyGuide": {
+    "formats": {
+      "everydaySentences": {
         "eyebrow": "Ingyenes tananyag",
         "title": "100 hétköznapi koreai mondat",
-        "description": "Gyakorold az EP.01 mind a 100 mondatát koreai szöveggel, latin betűs átírással, természetes angol jelentésekkel, életszerű példákkal, fejezetismétlőkkel és tanulási ellenőrzőlistával.",
-        "youtubeCta": "Nézd meg az EP.01-et a YouTube-on",
         "closingTitle": "Legyen mindig kéznél a 100 mondat",
-        "coverAlt": "A Hangyul „100 hétköznapi koreai mondat” (일상 한국어 100문장) című tananyagának borítója, Korean While You Sleep EP01, angol nyelvű kiadás",
-        "previews": {
-          "chapter": "Mintaoldal az 1. fejezetből (Köszönések és alapvető válaszok): minden mondatnál szerepel a koreai szöveg, a latin betűs átírás, az angol jelentés, egy használati megjegyzés és egy rövid párbeszéd",
-          "review": "Fejezetismétlő mintaoldal négy feladattal: „Mit jelent?”, „Hogy mondod koreaiul?”, „Egészítsd ki a párbeszédet!” és „Mit mondanál?”"
-        },
         "features": {
           "sentences": {
-            "title": "100 hétköznapi mondat",
-            "body": "Hasznos koreai mondatok a köszönéstől és az ismerkedéstől az evésen és a vásárláson át a tervekig és a természetes reakciókig."
+            "title": "100 hétköznapi mondat"
           },
           "conversation": {
             "title": "Valós helyzetek",
@@ -171,9 +164,32 @@
             "title": "Ismétlés és gyakorlás",
             "body": "Fejezetismétlők megoldásokkal, mind a 100 mondat gyors átismétlése és egy záró tanulási ellenőrzőlista."
           }
+        }
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "description": "Gyakorold az EP.01 mind a 100 mondatát koreai szöveggel, latin betűs átírással, természetes angol jelentésekkel, életszerű példákkal, fejezetismétlőkkel és tanulási ellenőrzőlistával.",
+        "youtubeCta": "Nézd meg az EP.01-et a YouTube-on",
+        "topics": "Hasznos koreai mondatok a köszönéstől és az ismerkedéstől az evésen és a vásárláson át a tervekig és a természetes reakciókig.",
+        "coverAlt": "A Hangyul „100 hétköznapi koreai mondat” (일상 한국어 100문장) című tananyagának borítója, Korean While You Sleep EP01, angol nyelvű kiadás",
+        "previews": {
+          "chapter": "Mintaoldal az 1. fejezetből (Köszönések és alapvető válaszok): minden mondatnál szerepel a koreai szöveg, a latin betűs átírás, az angol jelentés, egy használati megjegyzés és egy rövid párbeszéd",
+          "review": "Fejezetismétlő mintaoldal négy feladattal: „Mit jelent?”, „Hogy mondod koreaiul?”, „Egészítsd ki a párbeszédet!” és „Mit mondanál?”"
         },
-        "seoTitle": "100 hétköznapi koreai mondat – ingyenes tananyag | Hangyul",
+        "seoTitle": "100 hétköznapi koreai mondat – EP01 ingyenes tananyag | Hangyul",
         "seoDescription": "Töltsd le ingyen a Hangyul EP01 tananyagát: 100 hétköznapi koreai mondat latin betűs átírással, angol jelentésekkel, párbeszédekkel, ismétléssel és gyakorlással."
+      },
+      "ep02EnStudyGuide": {
+        "description": "Gyakorolj újabb 100 mondatot az EP.02-ből koreai szöveggel, latin betűs átírással, természetes angol jelentésekkel, használati megjegyzésekkel, életszerű párbeszédekkel, fejezetismétlőkkel és mind a 100 mondat gyors átismétlésével.",
+        "topics": "Gyakorlati koreai étteremben és kávézóban, vásárláshoz, közlekedéshez, programok egyeztetéséhez, az egészségről és az érzésekről, valamint természetes reakciókhoz.",
+        "coverAlt": "A Hangyul „100 hétköznapi koreai mondat” (일상 한국어 100문장) című tananyagának borítója, Korean While You Sleep EP02, angol nyelvű kiadás",
+        "previews": {
+          "chapter": "Mintaoldal az 1. fejezetből (Megértjük egymást): minden mondatnál szerepel a koreai szöveg, a latin betűs átírás, az angol jelentés, egy használati megjegyzés és egy rövid párbeszéd",
+          "review": "Fejezetismétlő mintaoldal négy feladattal: „Mit jelent?”, „Hogy mondod koreaiul?”, „Egészítsd ki a párbeszédet!” és „Mit mondanál?”"
+        },
+        "seoTitle": "100 hétköznapi koreai mondat – EP02 ingyenes tananyag | Hangyul",
+        "seoDescription": "Töltsd le ingyen a Hangyul EP02 tananyagát: újabb 100 hétköznapi koreai mondat latin betűs átírással, angol jelentésekkel, párbeszédekkel, fejezetismétlőkkel és gyakorlással."
       }
     },
     "notFound": {

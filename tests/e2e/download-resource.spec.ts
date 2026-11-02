@@ -38,6 +38,7 @@ const APP_STORE_URL =
 type ResourceMessages = {
   common: Record<string, string>;
   editionLanguages: Record<string, Record<string, string>>;
+  formats: Record<string, Record<string, string>>;
   resources: Record<string, Record<string, string>>;
   notFound: Record<string, string>;
 };
@@ -46,6 +47,8 @@ function messages(locale: string): ResourceMessages {
   return JSON.parse(fs.readFileSync(file, "utf8")).ResourceDownload;
 }
 const copy = (locale: string) => messages(locale).resources.ep01EnStudyGuide;
+/** EP01·EP02가 함께 쓰는 학습 가이드 형식 문구 (제목, What's inside…) */
+const formatCopy = (locale: string) => messages(locale).formats.everydaySentences;
 
 function rawResponse(page: Page, url: string, userAgent = IOS_UA) {
   return page.request.get(url, {
@@ -116,7 +119,8 @@ test.describe("English UI — /download?resource=ep01-en-study-guide&lang=en", (
     await expect(page.getByTestId("edition-badge")).toHaveText("English edition");
     // 화면과 PDF 언어가 같으면 별도 안내는 없습니다.
     await expect(page.getByTestId("edition-notice")).toHaveCount(0);
-    await expect(page.getByText("40 pages · PDF · No sign-up required")).toBeVisible();
+    // 실제 PDF의 물리 페이지 수(표지·뒷표지 포함)
+    await expect(page.getByText("43 pages · PDF · No sign-up required")).toBeVisible();
     await expect(page.getByRole("img", { name: /cover of the hangyul study guide/i })).toBeVisible();
     await expect(page.getByRole("heading", { level: 2, name: /what.s inside/i })).toBeVisible();
   });
@@ -140,7 +144,7 @@ test.describe("English UI — /download?resource=ep01-en-study-guide&lang=en", (
     await page.goto(`${EN_LINK}&utm_source=youtube`);
 
     await expect(page).toHaveTitle(
-      "100 Everyday Korean Sentences — Free Study Guide | Hangyul"
+      "100 Everyday Korean Sentences — EP01 Free Study Guide | Hangyul"
     );
     // 대표 주소에는 utm_*이 붙지 않습니다.
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
@@ -215,8 +219,8 @@ for (const locale of ["ja", "ru"] as const) {
       const m = messages(locale);
 
       await expect(page.locator("html")).toHaveAttribute("lang", locale);
-      await expect(h1(page)).toHaveText(copy(locale).title);
-      await expect(page.getByText(copy(locale).eyebrow, { exact: true })).toBeVisible();
+      await expect(h1(page)).toHaveText(formatCopy(locale).title);
+      await expect(page.getByText(formatCopy(locale).eyebrow, { exact: true })).toBeVisible();
       await expect(heroDownload(page)).toContainText(m.common.downloadCta);
 
       // PDF가 영어판이라는 사실을 배지와 안내문 두 곳에서 알립니다.
@@ -253,7 +257,7 @@ test.describe("Arabic (RTL)", () => {
     await page.goto(`${RESOURCE_LINK}&lang=ar`);
 
     await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
-    await expect(h1(page)).toHaveText(copy("ar").title);
+    await expect(h1(page)).toHaveText(formatCopy("ar").title);
 
     // RTL에서는 로고가 오른쪽, 언어 선택기가 왼쪽입니다.
     const logo = await page.getByRole("banner").getByRole("link").boundingBox();
@@ -315,7 +319,7 @@ test.describe("Language selector", () => {
     expect(url.searchParams.get("utm_campaign")).toBe("korean-while-you-sleep-ep01");
 
     await expect(page.locator("html")).toHaveAttribute("lang", "ja");
-    await expect(h1(page)).toHaveText(copy("ja").title);
+    await expect(h1(page)).toHaveText(formatCopy("ja").title);
   });
 
   test("adds lang when the original link had none", async ({ page }) => {
@@ -699,4 +703,215 @@ test.describe("Responsive layout", () => {
     const title = await h1(page).boundingBox();
     expect(cover!.y + cover!.height).toBeLessThan(title!.y);
   });
+});
+
+/*
+ * EP02 — 같은 페이지 컴포넌트·같은 레지스트리로 렌더링되는 두 번째 가이드.
+ * EP01 문구·이미지·PDF가 섞여 나오지 않는지, 링크된 영상이 EP01인 동안에는
+ * 버튼이 EP02 영상인 척하지 않는지를 확인합니다.
+ */
+const EP02_SLUG = "ep02-en-study-guide";
+const EP02_RESOURCE_LINK = `/download?resource=${EP02_SLUG}`;
+const EP02_EN_LINK = `${EP02_RESOURCE_LINK}&lang=en`;
+const EP02_PDF_PATH = `/download/files/${EP02_SLUG}.pdf`;
+const EP02_DOWNLOAD_FILE_NAME =
+  "Hangyul_EP02_100_Everyday_Korean_Sentences_Study_Guide_EN.pdf";
+const EP02_SOURCE_PDF = path.join(
+  process.cwd(),
+  "src/assets/downloads/EP02_EN_Study_Guide.pdf"
+);
+const ep02Copy = (locale: string) => messages(locale).resources.ep02EnStudyGuide;
+
+test.describe("EP02 — /download?resource=ep02-en-study-guide&lang=en", () => {
+  test("renders directly from an external link with EP02 identity", async ({ page }) => {
+    const response = await page.goto(EP02_EN_LINK);
+    expect(response?.status()).toBe(200);
+    await expect(page).toHaveURL(new RegExp(`/download\\?resource=${EP02_SLUG}&lang=en$`));
+
+    await expect(h1(page)).toHaveText("100 Everyday Korean Sentences");
+    await expect(page.getByTestId("resource-series")).toHaveText("Korean While You Sleep · EP02");
+    await expect(page.getByText("Korean While You Sleep · EP01")).toHaveCount(0);
+    await expect(page.getByTestId("edition-badge")).toHaveText("English edition");
+    await expect(page.getByText("43 pages · PDF · No sign-up required")).toBeVisible();
+    await expect(page.getByText(ep02Copy("en").description)).toBeVisible();
+    await expect(page.getByText(ep02Copy("en").topics)).toBeVisible();
+    await expect(
+      page.getByRole("img", { name: /korean while you sleep ep02, english edition/i })
+    ).toBeVisible();
+  });
+
+  test("the YouTube button is generic and temporarily links to the EP01 video", async ({ page }) => {
+    await page.goto(EP02_EN_LINK);
+    const youtube = page.getByTestId("resource-youtube");
+    await expect(youtube).toHaveAttribute("href", YOUTUBE_URL);
+    await expect(youtube).toHaveAttribute("target", "_blank");
+    await expect(youtube).toContainText("Watch on YouTube");
+    await expect(youtube).not.toContainText(/EP\.?0\d/);
+  });
+
+  test("uses EP02 images, not EP01 artwork", async ({ page }) => {
+    await page.goto(EP02_EN_LINK);
+    const ep01 = await (await page.request.get(EN_LINK)).text();
+    const og = await page.locator('meta[property="og:image"]').getAttribute("content");
+    expect(og).toMatch(/\.jpg$/);
+    expect(ep01).not.toContain(og!.replace(PROD, ""));
+
+    const srcs = await page.locator("main img").evaluateAll((imgs) =>
+      imgs.map((img) => (img as HTMLImageElement).currentSrc || img.getAttribute("src"))
+    );
+    expect(srcs.length).toBe(3);
+    for (const src of srcs) {
+      const media = decodeURIComponent(src!).match(/\/_next\/static\/media\/[^&?]+/)?.[0];
+      expect(media).toBeTruthy();
+      expect(ep01).not.toContain(media!);
+    }
+  });
+
+  test("has EP02 SEO metadata", async ({ page }) => {
+    await page.goto(EP02_EN_LINK);
+    await expect(page).toHaveTitle(
+      "100 Everyday Korean Sentences — EP02 Free Study Guide | Hangyul"
+    );
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+      "href",
+      `${PROD}${EP02_EN_LINK}`
+    );
+  });
+
+  test("the link without lang still works", async ({ page }) => {
+    await page.goto(EP02_RESOURCE_LINK);
+    await expect(page.locator("html")).toHaveAttribute("lang", "en");
+    await expect(page.getByTestId("resource-series")).toHaveText("Korean While You Sleep · EP02");
+    await expect(heroDownload(page)).toHaveAttribute("href", EP02_PDF_PATH);
+  });
+
+  test("Korean UI keeps the English-edition EP02 PDF", async ({ page }) => {
+    await page.goto(`${EP02_RESOURCE_LINK}&lang=ko`);
+    const m = messages("ko");
+    await expect(page.locator("html")).toHaveAttribute("lang", "ko");
+    await expect(h1(page)).toHaveText(formatCopy("ko").title);
+    await expect(page.getByText(ep02Copy("ko").description)).toBeVisible();
+    await expect(page.getByTestId("edition-badge")).toHaveText(m.editionLanguages.en.label);
+    await expect(page.getByTestId("edition-notice")).toHaveText(m.editionLanguages.en.notice);
+    await expect(page.getByTestId("resource-youtube")).toContainText(m.common.youtubeCta);
+    await expect(heroDownload(page)).toHaveAttribute("href", EP02_PDF_PATH);
+    await expect(heroDownload(page)).toHaveAttribute("download", EP02_DOWNLOAD_FILE_NAME);
+    await expect(page).toHaveTitle(ep02Copy("ko").seoTitle);
+  });
+
+  test("Japanese UI keeps the English-edition EP02 PDF", async ({ page }) => {
+    await page.goto(`${EP02_RESOURCE_LINK}&lang=ja`);
+    await expect(page.locator("html")).toHaveAttribute("lang", "ja");
+    await expect(page.getByTestId("edition-badge")).toHaveText(messages("ja").editionLanguages.en.label);
+    await expect(heroDownload(page)).toHaveAttribute("href", EP02_PDF_PATH);
+  });
+
+  test("the PDF endpoint serves the exact EP02 PDF, different from EP01", async ({ page }) => {
+    const response = await page.request.get(EP02_PDF_PATH);
+    expect(response.status()).toBe(200);
+    expect(response.headers()["content-type"]).toBe("application/pdf");
+    expect(response.headers()["content-disposition"]).toContain(
+      `filename="${EP02_DOWNLOAD_FILE_NAME}"`
+    );
+    const body = await response.body();
+    expect(body.subarray(0, 5).toString()).toBe("%PDF-");
+    expect(body.equals(fs.readFileSync(EP02_SOURCE_PDF))).toBe(true);
+
+    const ep01 = await (await page.request.get(PDF_PATH)).body();
+    expect(ep01.equals(body)).toBe(false);
+  });
+
+  test("clicking the CTA downloads the EP02 PDF", async ({ page, browserName }) => {
+    test.skip(browserName === "webkit", "download events are Chromium/Firefox only");
+    await page.goto(EP02_EN_LINK);
+    const [download] = await Promise.all([
+      page.waitForEvent("download"),
+      heroDownload(page).click(),
+    ]);
+    expect(download.suggestedFilename()).toBe(EP02_DOWNLOAD_FILE_NAME);
+    expect(fs.readFileSync(await download.path()).equals(fs.readFileSync(EP02_SOURCE_PDF))).toBe(true);
+  });
+
+  for (const vp of [
+    { width: 360, height: 800 },
+    { width: 390, height: 844 },
+    { width: 430, height: 932 },
+    { width: 1280, height: 800 },
+    { width: 1440, height: 900 },
+    { width: 1600, height: 900 },
+    { width: 1920, height: 1080 },
+  ]) {
+    test(`${vp.width}×${vp.height}: no overflow, EP number and CTA above the fold`, async ({ page }) => {
+      await page.setViewportSize(vp);
+      await page.goto(EP02_EN_LINK);
+      const overflow = await page.evaluate(
+        () => document.documentElement.scrollWidth - document.documentElement.clientWidth
+      );
+      expect(overflow).toBe(0);
+      await expect(page.getByTestId("resource-series")).toBeInViewport();
+      const box = await heroDownload(page).boundingBox();
+      expect(box!.y + box!.height).toBeLessThanOrEqual(vp.height);
+      await expect(page.getByTestId("resource-download-closing")).toHaveAttribute("href", EP02_PDF_PATH);
+      await expect(page.getByRole("contentinfo")).toBeVisible();
+    });
+  }
+
+  test("EP01 and EP02 share the same layout geometry", async ({ page }) => {
+    await page.setViewportSize({ width: 1440, height: 900 });
+    const measure = async (url: string) => {
+      await page.goto(url);
+      return {
+        cover: await page.locator("main img").first().boundingBox(),
+        title: await h1(page).boundingBox(),
+      };
+    };
+    const a = await measure(EN_LINK);
+    const b = await measure(EP02_EN_LINK);
+    expect(Math.round(b.cover!.x)).toBe(Math.round(a.cover!.x));
+    expect(Math.round(b.cover!.width)).toBe(Math.round(a.cover!.width));
+    expect(Math.round(b.title!.x)).toBe(Math.round(a.title!.x));
+  });
+});
+
+test.describe("EP01 — refreshed source PDF", () => {
+  test("the YouTube button names EP.01 and opens the EP01 video", async ({ page }) => {
+    await page.goto(EN_LINK);
+    const youtube = page.getByTestId("resource-youtube");
+    await expect(youtube).toHaveAttribute("href", YOUTUBE_URL);
+    await expect(youtube).toContainText("Watch EP.01 on YouTube");
+  });
+
+  test("serves the repository EP01 PDF, never the EP02 file", async ({ page }) => {
+    const body = await (await page.request.get(PDF_PATH)).body();
+    expect(body.equals(fs.readFileSync(SOURCE_PDF))).toBe(true);
+    expect(body.equals(fs.readFileSync(EP02_SOURCE_PDF))).toBe(false);
+  });
+
+  for (const vp of [
+    { width: 360, height: 800 },
+    { width: 390, height: 844 },
+    { width: 430, height: 932 },
+    { width: 1600, height: 900 },
+    { width: 1920, height: 1080 },
+  ]) {
+    test(`${vp.width}×${vp.height}: no overflow, EP01 visible, CTA above the fold`, async ({ page }) => {
+      await page.setViewportSize(vp);
+      await page.goto(EN_LINK);
+      const overflow = await page.evaluate(
+        () => document.documentElement.scrollWidth - document.documentElement.clientWidth
+      );
+      expect(overflow).toBe(0);
+      await expect(page.getByTestId("resource-series")).toHaveText("Korean While You Sleep · EP01");
+      await expect(page.getByTestId("resource-series")).toBeInViewport();
+      const box = await heroDownload(page).boundingBox();
+      expect(box!.y + box!.height).toBeLessThanOrEqual(vp.height);
+    });
+  }
+});
+
+test("resource=ep03-en-study-guide is not found and serves no PDF", async ({ page }) => {
+  const response = await page.goto("/download?resource=ep03-en-study-guide&lang=en");
+  expect(response?.status()).toBe(404);
+  await expect(page.locator('a[href$=".pdf"]')).toHaveCount(0);
+  expect((await page.request.get("/download/files/ep03-en-study-guide.pdf")).status()).toBe(404);
 });

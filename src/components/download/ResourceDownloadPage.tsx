@@ -19,9 +19,12 @@ import styles from "./ResourcePage.module.css";
 
 /*
  * 판마다 messages의 문구 묶음은 같은 모양이므로, 동적 네임스페이스는
- * 대표 판(EP01 영어판)의 타입으로 맞춰 키 검사를 유지합니다.
+ * 대표 판(EP01 영어판)·대표 형식의 타입으로 맞춰 키 검사를 유지합니다.
+ *  - formats.<formatMessagesKey>: 같은 형식의 가이드가 공유하는 문구 (제목, What's inside…)
+ *  - resources.<messagesKey>: 판마다 다른 문구 (설명, 다루는 주제, 표지·미리보기 alt, SEO)
  */
 type EditionCopyNamespace = "ResourceDownload.resources.ep01EnStudyGuide";
+type FormatCopyNamespace = "ResourceDownload.formats.everydaySentences";
 type EditionLanguageNamespace = "ResourceDownload.editionLanguages.en";
 
 /**
@@ -51,6 +54,11 @@ export default async function ResourceDownloadPage({
     namespace:
       `ResourceDownload.resources.${edition.messagesKey}` as EditionCopyNamespace,
   });
+  const tFormat = await getTranslations({
+    locale: uiLanguage,
+    namespace:
+      `ResourceDownload.formats.${family.formatMessagesKey}` as FormatCopyNamespace,
+  });
   const tEdition = await getTranslations({
     locale: uiLanguage,
     namespace:
@@ -71,6 +79,8 @@ export default async function ResourceDownloadPage({
     : null;
 
   const fileHref = resourceFilePath(edition.slug);
+  // 연결된 영상이 이 에피소드의 영상일 때만 판 문구에 에피소드가 들어간 버튼 문구가 있습니다.
+  const youtubeCta = tCopy.has("youtubeCta") ? tCopy("youtubeCta") : t("youtubeCta");
   const seriesLine = [family.series, family.episode].filter(Boolean).join(" · ");
 
   /*
@@ -140,14 +150,19 @@ export default async function ResourceDownloadPage({
           </div>
 
           <div className={styles.info}>
-            <p className={styles.eyebrow}>{tCopy("eyebrow")}</p>
+            <p className={styles.eyebrow}>{tFormat("eyebrow")}</p>
             <h1 id="resource-title" className={styles.title}>
-              {tCopy("title")}
+              {tFormat("title")}
             </h1>
 
             <div className={styles.meta}>
               {seriesLine && (
-                <span className={styles.series} lang="en" dir="ltr">
+                <span
+                  className={styles.series}
+                  lang="en"
+                  dir="ltr"
+                  data-testid="resource-series"
+                >
                   {seriesLine}
                 </span>
               )}
@@ -192,9 +207,10 @@ export default async function ResourceDownloadPage({
                   slug={edition.slug}
                   uiLanguage={uiLanguage}
                   placement="hero"
+                  data-testid="resource-youtube"
                 >
                   <PlayIcon />
-                  <span>{tCopy("youtubeCta")}</span>
+                  <span>{youtubeCta}</span>
                   {newTab}
                 </TrackedLink>
               )}
@@ -231,10 +247,13 @@ export default async function ResourceDownloadPage({
                   </span>
                   <div>
                     <h3 className={styles.featureTitle}>
-                      {tCopy(`features.${feature}.title`)}
+                      {tFormat(`features.${feature}.title`)}
                     </h3>
                     <p className={styles.featureBody}>
-                      {tCopy(`features.${feature}.body`)}
+                      {/* 다루는 주제는 에피소드마다 다르므로 판 문구에서 가져옵니다. */}
+                      {feature === "sentences"
+                        ? tCopy("topics")
+                        : tFormat(`features.${feature}.body`)}
                     </p>
                   </div>
                 </li>
@@ -269,7 +288,7 @@ export default async function ResourceDownloadPage({
         <div className={styles.closingInner}>
           <div className={styles.closingText}>
             <h2 id="closing-title" className={styles.closingTitle}>
-              {tCopy("closingTitle")}
+              {tFormat("closingTitle")}
             </h2>
             <p className={styles.closingBody}>{t("closingBody")}</p>
           </div>

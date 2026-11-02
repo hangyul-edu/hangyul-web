@@ -15,13 +15,20 @@
  * ─ 새 판 추가 (예: EP01 일본어판) ─────────────────────────────────────────
  *   1. PDF를 src/assets/downloads/ 에 넣습니다.
  *   2. 미리보기 이미지 생성:
- *        npx tsx scripts/generate-resource-previews.ts <PDF> <slug> 3 5
+ *        npx tsx scripts/generate-resource-previews.ts <PDF> <slug> <본문 페이지> <복습 페이지>
+ *      (EP01: 3 21, EP02: 3 10 — 1장 본문 + A–D 네 문제가 다 보이는 챕터 복습)
  *   3. 아래 가족의 editions에 판을 추가하고, downloadResourceAssets.ts에 이미지를 등록합니다.
  *   4. messages/*.json 의 ResourceDownload.resources.<messagesKey> 에 판 문구를,
+ *      (description, topics, coverAlt, previews, seoTitle, seoDescription, 선택: youtubeCta)
  *      (처음 쓰는 판 언어라면) ResourceDownload.editionLanguages.<언어> 에 판 이름을 추가합니다.
+ *      제목·What's inside 등 형식 공통 문구는 ResourceDownload.formats.<formatMessagesKey> 에 있습니다.
  *      npm run validate:i18n 이 32개 로케일 누락을 잡아 줍니다.
  *   페이지·PDF 경로·언어 선택기·메타데이터·hreflang은 자동으로 생깁니다.
- * ─ 새 가족 추가 (예: EP02) ─ 위와 같고, DOWNLOAD_RESOURCE_FAMILIES에 가족을 추가합니다.
+ * ─ 새 가족 추가 (예: EP03) ─ 위와 같고, DOWNLOAD_RESOURCE_FAMILIES에 가족을 추가합니다.
+ *   같은 형식의 가이드라면 formatMessagesKey를 재사용해 공통 문구를 다시 번역하지 않습니다.
+ *
+ * pageCount는 실제 내려받는 PDF의 물리 페이지 수(pdfinfo의 Pages)입니다.
+ * 본문에 인쇄된 쪽 번호(2–42)가 아니라 표지·뒷표지까지 포함한 값을 모든 판에 똑같이 씁니다.
  */
 
 export type ResourceFeatureIcon =
@@ -46,9 +53,20 @@ export type ResourceEdition = {
 
 export type ResourceFamily = {
   id: string;
+  /**
+   * messages/*.json 의 ResourceDownload.formats.<formatMessagesKey>
+   * 같은 구성(형식)의 학습 가이드가 함께 쓰는 화면 문구(제목·What's inside 등).
+   * 에피소드마다 다른 문구는 판의 messagesKey 쪽에 둡니다.
+   */
+  formatMessagesKey: string;
   /** 고유명사라 번역하지 않습니다. */
   series?: string;
   episode?: string;
+  /**
+   * YouTube 버튼 링크. 공유 컴포넌트에 하드코딩하지 않고 여기서만 정합니다.
+   * 버튼 문구는 판 문구에 youtubeCta가 있으면 그것(예: "Watch EP.01 on YouTube"),
+   * 없으면 일반 문구(common.youtubeCta, "Watch on YouTube")를 씁니다.
+   */
   youtubeUrl?: string;
   /** 모든 판에 공통인 사실 (판마다 다른 페이지 수는 판에 둡니다) */
   sentenceCount?: number;
@@ -63,6 +81,7 @@ export type ResourceFamily = {
 export const DOWNLOAD_RESOURCE_FAMILIES = [
   {
     id: "ep01-study-guide",
+    formatMessagesKey: "everydaySentences",
     series: "Korean While You Sleep",
     episode: "EP01",
     youtubeUrl: "https://www.youtube.com/watch?v=HGa7xurxL5c",
@@ -78,7 +97,33 @@ export const DOWNLOAD_RESOURCE_FAMILIES = [
         file: "EP01_EN_Study_Guide.pdf",
         downloadFileName:
           "Hangyul_EP01_100_Everyday_Korean_Sentences_Study_Guide_EN.pdf",
-        pageCount: 40,
+        // 실제 PDF 페이지 수 (표지·뒷표지 포함, pdfinfo 기준)
+        pageCount: 43,
+      },
+    },
+  },
+  {
+    id: "ep02-study-guide",
+    formatMessagesKey: "everydaySentences",
+    series: "Korean While You Sleep",
+    episode: "EP02",
+    // EP02 전용 영상이 아직 없어 당분간 EP01 영상으로 연결합니다(의도된 임시 설정).
+    // 버튼 문구는 일반 문구("Watch on YouTube")라 EP02 영상인 것처럼 보이지 않습니다.
+    // EP02 영상이 나오면 이 URL만 바꾸고 판 문구에 youtubeCta를 추가하면 됩니다.
+    youtubeUrl: "https://www.youtube.com/watch?v=HGa7xurxL5c",
+    sentenceCount: 100,
+    chapterCount: 10,
+    features: ["sentences", "conversation", "romanization", "review"],
+    format: "PDF",
+    editions: {
+      en: {
+        slug: "ep02-en-study-guide",
+        language: "en",
+        messagesKey: "ep02EnStudyGuide",
+        file: "EP02_EN_Study_Guide.pdf",
+        downloadFileName:
+          "Hangyul_EP02_100_Everyday_Korean_Sentences_Study_Guide_EN.pdf",
+        pageCount: 43,
       },
     },
   },

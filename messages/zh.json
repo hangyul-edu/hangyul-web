@@ -133,7 +133,8 @@
       "whatsInsideIntro": "按自己的节奏，轻松复习本集全部内容。",
       "lookInside": "内页预览",
       "closingBody": "免费下载，可打印，也可以直接在手机上学习。",
-      "opensInNewTab": "（在新标签页中打开）"
+      "opensInNewTab": "（在新标签页中打开）",
+      "youtubeCta": "在 YouTube 观看"
     },
     "editionLanguages": {
       "en": {
@@ -142,22 +143,14 @@
         "switch": "获取英文版"
       }
     },
-    "resources": {
-      "ep01EnStudyGuide": {
+    "formats": {
+      "everydaySentences": {
         "eyebrow": "免费学习指南",
         "title": "100 句日常韩语",
-        "description": "练习 EP.01 中的全部 100 个句子，附韩语原文、罗马音、地道的英文释义和生活实例，还有章节复习与学习清单。",
-        "youtubeCta": "在 YouTube 观看 EP.01",
         "closingTitle": "把这 100 句随身带着",
-        "coverAlt": "Hangyul 学习指南《100 句日常韩语》（일상 한국어 100문장）封面，Korean While You Sleep EP01 英文版",
-        "previews": {
-          "chapter": "第 1 章“问候与基本回应”示例页：每个句子都附有韩语、罗马音、英文释义、用法说明和一段简短对话",
-          "review": "章节复习示例页，包含四类练习：“这是什么意思”“用韩语怎么说”“补全对话”和“换作是你会怎么说”"
-        },
         "features": {
           "sentences": {
-            "title": "100 个日常句子",
-            "body": "从打招呼、认识新朋友，到美食、购物、约定计划和自然反应，全是实用韩语。"
+            "title": "100 个日常句子"
           },
           "conversation": {
             "title": "真实场景对话",
@@ -171,9 +164,32 @@
             "title": "复习与练习",
             "body": "附答案的章节复习、全部 100 句的快速复习，以及最后的学习清单。"
           }
+        }
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "description": "练习 EP.01 中的全部 100 个句子，附韩语原文、罗马音、地道的英文释义和生活实例，还有章节复习与学习清单。",
+        "youtubeCta": "在 YouTube 观看 EP.01",
+        "topics": "从打招呼、认识新朋友，到美食、购物、约定计划和自然反应，全是实用韩语。",
+        "coverAlt": "Hangyul 学习指南《100 句日常韩语》（일상 한국어 100문장）封面，Korean While You Sleep EP01 英文版",
+        "previews": {
+          "chapter": "第 1 章“问候与基本回应”示例页：每个句子都附有韩语、罗马音、英文释义、用法说明和一段简短对话",
+          "review": "章节复习示例页，包含四类练习：“这是什么意思”“用韩语怎么说”“补全对话”和“换作是你会怎么说”"
         },
-        "seoTitle": "100 句日常韩语 — 免费学习指南 | Hangyul",
+        "seoTitle": "100 句日常韩语 — EP01 免费学习指南 | Hangyul",
         "seoDescription": "免费下载 Hangyul EP01 学习指南，收录 100 句日常韩语，附罗马音、英文释义、对话、复习与练习。"
+      },
+      "ep02EnStudyGuide": {
+        "description": "再练习 EP.02 中的 100 个句子，附韩语原文、罗马音、地道的英文释义、用法说明和真实生活对话，还有章节复习与全部 100 句快速复习。",
+        "topics": "餐厅与咖啡馆、购物、出行、约定计划、健康与感受，以及自然反应，全是实用韩语。",
+        "coverAlt": "Hangyul 学习指南《100 句日常韩语》（일상 한국어 100문장）封面，Korean While You Sleep EP02 英文版",
+        "previews": {
+          "chapter": "第 1 章“相互理解”示例页：每个句子都附有韩语、罗马音、英文释义、用法说明和一段简短对话",
+          "review": "章节复习示例页，包含四类练习：“这是什么意思”“用韩语怎么说”“补全对话”和“换作是你会怎么说”"
+        },
+        "seoTitle": "100 句日常韩语 — EP02 免费学习指南 | Hangyul",
+        "seoDescription": "免费下载 Hangyul EP02 学习指南，再收录 100 句日常韩语，附罗马音、英文释义、对话、章节复习与练习。"
       }
     },
     "notFound": {

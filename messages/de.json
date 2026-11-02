@@ -133,7 +133,8 @@
       "whatsInsideIntro": "So wiederholst du die Folge ganz in deinem eigenen Tempo.",
       "lookInside": "Ein Blick ins Heft",
       "closingBody": "Kostenlos zum Herunterladen. Druck es aus oder lern direkt auf dem Handy.",
-      "opensInNewTab": "(öffnet sich in einem neuen Tab)"
+      "opensInNewTab": "(öffnet sich in einem neuen Tab)",
+      "youtubeCta": "Auf YouTube ansehen"
     },
     "editionLanguages": {
       "en": {
@@ -142,22 +143,14 @@
         "switch": "Zur englischen Ausgabe"
       }
     },
-    "resources": {
-      "ep01EnStudyGuide": {
+    "formats": {
+      "everydaySentences": {
         "eyebrow": "Kostenloses Lernheft",
         "title": "100 koreanische Alltagssätze",
-        "description": "Übe alle 100 Sätze aus EP.01 – mit koreanischem Text, Umschrift, natürlichen englischen Bedeutungen, Beispielen aus dem Alltag, Kapitelwiederholungen und einer Lern-Checkliste.",
-        "youtubeCta": "EP.01 auf YouTube ansehen",
         "closingTitle": "Nimm die 100 Sätze überallhin mit",
-        "coverAlt": "Cover des Hangyul-Lernhefts „100 koreanische Alltagssätze“ (일상 한국어 100문장), Korean While You Sleep EP01, englische Ausgabe",
-        "previews": {
-          "chapter": "Beispielseite aus Kapitel 1, Begrüßungen und wichtige Antworten: Zu jedem Satz gibt es Koreanisch, Umschrift, die englische Bedeutung, einen Verwendungshinweis und einen kurzen Dialog",
-          "review": "Beispielseite einer Kapitelwiederholung mit vier Übungen: Bedeutung erkennen, auf Koreanisch ausdrücken, Dialog vervollständigen und passende Antwort finden"
-        },
         "features": {
           "sentences": {
-            "title": "100 Alltagssätze",
-            "body": "Nützliches Koreanisch – von Begrüßungen und dem Kennenlernen bis zu Essen, Shopping, Plänen und natürlichen Reaktionen."
+            "title": "100 Alltagssätze"
           },
           "conversation": {
             "title": "Echte Alltagssituationen",
@@ -171,9 +164,32 @@
             "title": "Wiederholen und üben",
             "body": "Kapitelwiederholungen mit Lösungen, eine Schnellwiederholung aller 100 Sätze und eine abschließende Lern-Checkliste."
           }
+        }
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "description": "Übe alle 100 Sätze aus EP.01 – mit koreanischem Text, Umschrift, natürlichen englischen Bedeutungen, Beispielen aus dem Alltag, Kapitelwiederholungen und einer Lern-Checkliste.",
+        "youtubeCta": "EP.01 auf YouTube ansehen",
+        "topics": "Nützliches Koreanisch – von Begrüßungen und dem Kennenlernen bis zu Essen, Shopping, Plänen und natürlichen Reaktionen.",
+        "coverAlt": "Cover des Hangyul-Lernhefts „100 koreanische Alltagssätze“ (일상 한국어 100문장), Korean While You Sleep EP01, englische Ausgabe",
+        "previews": {
+          "chapter": "Beispielseite aus Kapitel 1, Begrüßungen und wichtige Antworten: Zu jedem Satz gibt es Koreanisch, Umschrift, die englische Bedeutung, einen Verwendungshinweis und einen kurzen Dialog",
+          "review": "Beispielseite einer Kapitelwiederholung mit vier Übungen: Bedeutung erkennen, auf Koreanisch ausdrücken, Dialog vervollständigen und passende Antwort finden"
         },
-        "seoTitle": "100 koreanische Alltagssätze – Kostenloses Lernheft | Hangyul",
+        "seoTitle": "100 koreanische Alltagssätze – EP01 Kostenloses Lernheft | Hangyul",
         "seoDescription": "Lade das kostenlose Hangyul-Lernheft zu EP01 herunter: 100 koreanische Alltagssätze mit Umschrift, englischen Bedeutungen, Dialogen, Wiederholungen und Übungen."
+      },
+      "ep02EnStudyGuide": {
+        "description": "Übe 100 weitere Sätze aus EP.02 – mit koreanischem Text, Umschrift, natürlichen englischen Bedeutungen, Verwendungshinweisen, Dialogen aus dem Alltag, Kapitelwiederholungen und einer schnellen Wiederholung aller 100 Sätze.",
+        "topics": "Praktisches Koreanisch für Restaurant und Café, Shopping, Unterwegssein, Verabredungen, Gesundheit und Gefühle sowie natürliche Reaktionen.",
+        "coverAlt": "Cover des Hangyul-Lernhefts „100 koreanische Alltagssätze“ (일상 한국어 100문장), Korean While You Sleep EP02, englische Ausgabe",
+        "previews": {
+          "chapter": "Beispielseite aus Kapitel 1, Einander verstehen: Zu jedem Satz gibt es Koreanisch, Umschrift, die englische Bedeutung, einen Verwendungshinweis und einen kurzen Dialog",
+          "review": "Beispielseite einer Kapitelwiederholung mit vier Übungen: Bedeutung erkennen, auf Koreanisch ausdrücken, Dialog vervollständigen und passende Antwort finden"
+        },
+        "seoTitle": "100 koreanische Alltagssätze – EP02 Kostenloses Lernheft | Hangyul",
+        "seoDescription": "Lade das kostenlose Hangyul-Lernheft zu EP02 herunter: 100 weitere koreanische Alltagssätze mit Umschrift, englischen Bedeutungen, Dialogen, Kapitelwiederholungen und Übungen."
       }
     },
     "notFound": {

@@ -4,8 +4,12 @@ import type { DownloadResourceSlug } from "./downloadResources";
 
 import ep01EnCover from "@/assets/images/resources/ep01-en-study-guide/cover.webp";
 import ep01EnPage3 from "@/assets/images/resources/ep01-en-study-guide/page-3.webp";
-import ep01EnPage5 from "@/assets/images/resources/ep01-en-study-guide/page-5.webp";
+import ep01EnPage21 from "@/assets/images/resources/ep01-en-study-guide/page-21.webp";
 import ep01EnOg from "@/assets/images/resources/ep01-en-study-guide/og.jpg";
+import ep02EnCover from "@/assets/images/resources/ep02-en-study-guide/cover.webp";
+import ep02EnPage3 from "@/assets/images/resources/ep02-en-study-guide/page-3.webp";
+import ep02EnPage10 from "@/assets/images/resources/ep02-en-study-guide/page-10.webp";
+import ep02EnOg from "@/assets/images/resources/ep02-en-study-guide/og.jpg";
 
 /**
  * 판(edition)별 이미지. scripts/generate-resource-previews.ts 로 실제 PDF에서 만듭니다.
@@ -29,9 +33,17 @@ export const DOWNLOAD_RESOURCE_ASSETS: Record<
     cover: ep01EnCover,
     previews: [
       { image: ep01EnPage3, altKey: "chapter" },
-      { image: ep01EnPage5, altKey: "review" },
+      { image: ep01EnPage21, altKey: "review" },
     ],
     ogImage: ep01EnOg,
+  },
+  "ep02-en-study-guide": {
+    cover: ep02EnCover,
+    previews: [
+      { image: ep02EnPage3, altKey: "chapter" },
+      { image: ep02EnPage10, altKey: "review" },
+    ],
+    ogImage: ep02EnOg,
   },
 };
 

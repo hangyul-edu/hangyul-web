@@ -133,7 +133,8 @@
       "whatsInsideIntro": "Alles wat je nodig hebt om de aflevering in je eigen tempo te herhalen.",
       "lookInside": "Een kijkje in de gids",
       "closingBody": "Gratis te downloaden. Print hem uit of leer op je telefoon.",
-      "opensInNewTab": "(opent in een nieuw tabblad)"
+      "opensInNewTab": "(opent in een nieuw tabblad)",
+      "youtubeCta": "Bekijk op YouTube"
     },
     "editionLanguages": {
       "en": {
@@ -142,22 +143,14 @@
         "switch": "Naar de Engelse editie"
       }
     },
-    "resources": {
-      "ep01EnStudyGuide": {
+    "formats": {
+      "everydaySentences": {
         "eyebrow": "Gratis studiegids",
         "title": "100 alledaagse Koreaanse zinnen",
-        "description": "Oefen alle 100 zinnen uit EP.01 met Koreaans, romanisatie, natuurlijke Engelse betekenissen, voorbeelden uit het dagelijks leven, hoofdstukherhalingen en een leerchecklist.",
-        "youtubeCta": "Bekijk EP.01 op YouTube",
         "closingTitle": "Houd de 100 zinnen altijd bij de hand",
-        "coverAlt": "Omslag van de Hangyul-studiegids “100 alledaagse Koreaanse zinnen” (일상 한국어 100문장), Korean While You Sleep EP01, Engelse editie",
-        "previews": {
-          "chapter": "Voorbeeldpagina uit hoofdstuk 1, Begroetingen en essentiële reacties: bij elke zin staan het Koreaans, de romanisatie, de Engelse betekenis, een gebruikstip en een kort gesprek",
-          "review": "Voorbeeldpagina van een hoofdstukherhaling met vier oefeningen: wat betekent het, hoe zeg je het in het Koreaans, maak het gesprek af en wat zou jij zeggen"
-        },
         "features": {
           "sentences": {
-            "title": "100 alledaagse zinnen",
-            "body": "Handig Koreaans om te groeten, mensen te leren kennen, over eten, winkelen en plannen te praten en natuurlijk te reageren."
+            "title": "100 alledaagse zinnen"
           },
           "conversation": {
             "title": "Echte situaties",
@@ -171,9 +164,32 @@
             "title": "Herhalen en oefenen",
             "body": "Hoofdstukherhalingen met antwoorden, een snelle herhaling van alle 100 zinnen en een afsluitende leerchecklist."
           }
+        }
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "description": "Oefen alle 100 zinnen uit EP.01 met Koreaans, romanisatie, natuurlijke Engelse betekenissen, voorbeelden uit het dagelijks leven, hoofdstukherhalingen en een leerchecklist.",
+        "youtubeCta": "Bekijk EP.01 op YouTube",
+        "topics": "Handig Koreaans om te groeten, mensen te leren kennen, over eten, winkelen en plannen te praten en natuurlijk te reageren.",
+        "coverAlt": "Omslag van de Hangyul-studiegids “100 alledaagse Koreaanse zinnen” (일상 한국어 100문장), Korean While You Sleep EP01, Engelse editie",
+        "previews": {
+          "chapter": "Voorbeeldpagina uit hoofdstuk 1, Begroetingen en essentiële reacties: bij elke zin staan het Koreaans, de romanisatie, de Engelse betekenis, een gebruikstip en een kort gesprek",
+          "review": "Voorbeeldpagina van een hoofdstukherhaling met vier oefeningen: wat betekent het, hoe zeg je het in het Koreaans, maak het gesprek af en wat zou jij zeggen"
         },
-        "seoTitle": "100 alledaagse Koreaanse zinnen — Gratis studiegids | Hangyul",
+        "seoTitle": "100 alledaagse Koreaanse zinnen — EP01 Gratis studiegids | Hangyul",
         "seoDescription": "Download de gratis Hangyul-studiegids bij EP01 met 100 alledaagse Koreaanse zinnen, romanisatie, Engelse betekenissen, gesprekken, herhalingen en oefeningen."
+      },
+      "ep02EnStudyGuide": {
+        "description": "Oefen nog eens 100 zinnen uit EP.02 met Koreaans, romanisatie, natuurlijke Engelse betekenissen, gebruikstips, gesprekken uit het dagelijks leven, hoofdstukherhalingen en een snelle herhaling van alle 100.",
+        "topics": "Praktisch Koreaans voor restaurants en cafés, winkelen, onderweg zijn, afspraken maken, gezondheid en gevoelens, en natuurlijke reacties.",
+        "coverAlt": "Omslag van de Hangyul-studiegids “100 alledaagse Koreaanse zinnen” (일상 한국어 100문장), Korean While You Sleep EP02, Engelse editie",
+        "previews": {
+          "chapter": "Voorbeeldpagina uit hoofdstuk 1, Elkaar begrijpen: bij elke zin staan het Koreaans, de romanisatie, de Engelse betekenis, een gebruikstip en een kort gesprek",
+          "review": "Voorbeeldpagina van een hoofdstukherhaling met vier oefeningen: wat betekent het, hoe zeg je het in het Koreaans, maak het gesprek af en wat zou jij zeggen"
+        },
+        "seoTitle": "100 alledaagse Koreaanse zinnen — EP02 Gratis studiegids | Hangyul",
+        "seoDescription": "Download de gratis Hangyul-studiegids bij EP02 met nog eens 100 alledaagse Koreaanse zinnen, romanisatie, Engelse betekenissen, gesprekken, hoofdstukherhalingen en oefeningen."
       }
     },
     "notFound": {

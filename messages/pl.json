@@ -133,7 +133,8 @@
       "whatsInsideIntro": "Wszystko, czego potrzebujesz, by powtórzyć odcinek we własnym tempie.",
       "lookInside": "Zajrzyj do środka",
       "closingBody": "Do pobrania za darmo. Wydrukuj albo ucz się na telefonie.",
-      "opensInNewTab": "(otwiera się w nowej karcie)"
+      "opensInNewTab": "(otwiera się w nowej karcie)",
+      "youtubeCta": "Obejrzyj na YouTube"
     },
     "editionLanguages": {
       "en": {
@@ -142,22 +143,14 @@
         "switch": "Przejdź do wydania angielskiego"
       }
     },
-    "resources": {
-      "ep01EnStudyGuide": {
+    "formats": {
+      "everydaySentences": {
         "eyebrow": "Darmowe materiały do nauki",
         "title": "100 codziennych zdań po koreańsku",
-        "description": "Przećwicz wszystkie 100 zdań z EP.01: zapis koreański, latynizacja, naturalne znaczenia po angielsku, przykłady z życia, powtórki rozdziałów i lista kontrolna postępów.",
-        "youtubeCta": "Obejrzyj EP.01 na YouTube",
         "closingTitle": "Miej te 100 zdań zawsze przy sobie",
-        "coverAlt": "Okładka materiałów do nauki Hangyul „100 codziennych zdań po koreańsku” (일상 한국어 100문장), Korean While You Sleep EP01, wydanie angielskie",
-        "previews": {
-          "chapter": "Przykładowa strona z rozdziału 1, Powitania i najważniejsze odpowiedzi: przy każdym zdaniu jest zapis koreański, latynizacja, znaczenie po angielsku, wskazówka dotycząca użycia i krótki dialog",
-          "review": "Przykładowa strona powtórki rozdziału z czterema ćwiczeniami: co to znaczy, jak to powiedzieć po koreańsku, uzupełnij dialog i co powiedzieć w danej sytuacji"
-        },
         "features": {
           "sentences": {
-            "title": "100 codziennych zdań",
-            "body": "Przydatny koreański: od powitań i poznawania ludzi po jedzenie, zakupy, plany i naturalne reakcje."
+            "title": "100 codziennych zdań"
           },
           "conversation": {
             "title": "Prawdziwe sytuacje",
@@ -171,9 +164,32 @@
             "title": "Powtórka i ćwiczenia",
             "body": "Powtórki rozdziałów z odpowiedziami, szybka powtórka wszystkich 100 zdań i końcowa lista kontrolna postępów."
           }
+        }
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "description": "Przećwicz wszystkie 100 zdań z EP.01: zapis koreański, latynizacja, naturalne znaczenia po angielsku, przykłady z życia, powtórki rozdziałów i lista kontrolna postępów.",
+        "youtubeCta": "Obejrzyj EP.01 na YouTube",
+        "topics": "Przydatny koreański: od powitań i poznawania ludzi po jedzenie, zakupy, plany i naturalne reakcje.",
+        "coverAlt": "Okładka materiałów do nauki Hangyul „100 codziennych zdań po koreańsku” (일상 한국어 100문장), Korean While You Sleep EP01, wydanie angielskie",
+        "previews": {
+          "chapter": "Przykładowa strona z rozdziału 1, Powitania i najważniejsze odpowiedzi: przy każdym zdaniu jest zapis koreański, latynizacja, znaczenie po angielsku, wskazówka dotycząca użycia i krótki dialog",
+          "review": "Przykładowa strona powtórki rozdziału z czterema ćwiczeniami: co to znaczy, jak to powiedzieć po koreańsku, uzupełnij dialog i co powiedzieć w danej sytuacji"
         },
-        "seoTitle": "100 codziennych zdań po koreańsku – Darmowe materiały do nauki | Hangyul",
+        "seoTitle": "100 codziennych zdań po koreańsku – EP01 Darmowe materiały do nauki | Hangyul",
         "seoDescription": "Pobierz darmowe materiały do nauki Hangyul do EP01: 100 codziennych zdań po koreańsku z latynizacją, znaczeniami po angielsku, dialogami, powtórkami i ćwiczeniami."
+      },
+      "ep02EnStudyGuide": {
+        "description": "Przećwicz kolejne 100 zdań z EP.02: zapis koreański, latynizacja, naturalne znaczenia po angielsku, wskazówki dotyczące użycia, dialogi z życia, powtórki rozdziałów i szybka powtórka wszystkich 100 zdań.",
+        "topics": "Praktyczny koreański: w restauracji i kawiarni, na zakupach, w drodze, przy umawianiu się, o zdrowiu i uczuciach oraz naturalne reakcje.",
+        "coverAlt": "Okładka materiałów do nauki Hangyul „100 codziennych zdań po koreańsku” (일상 한국어 100문장), Korean While You Sleep EP02, wydanie angielskie",
+        "previews": {
+          "chapter": "Przykładowa strona z rozdziału 1, Wzajemne zrozumienie: przy każdym zdaniu jest zapis koreański, latynizacja, znaczenie po angielsku, wskazówka dotycząca użycia i krótki dialog",
+          "review": "Przykładowa strona powtórki rozdziału z czterema ćwiczeniami: co to znaczy, jak to powiedzieć po koreańsku, uzupełnij dialog i co powiedzieć w danej sytuacji"
+        },
+        "seoTitle": "100 codziennych zdań po koreańsku – EP02 Darmowe materiały do nauki | Hangyul",
+        "seoDescription": "Pobierz darmowe materiały do nauki Hangyul do EP02: kolejne 100 codziennych zdań po koreańsku z latynizacją, znaczeniami po angielsku, dialogami, powtórkami rozdziałów i ćwiczeniami."
       }
     },
     "notFound": {

@@ -133,7 +133,8 @@
       "whatsInsideIntro": "Tudo o que precisa para rever o episódio ao seu ritmo.",
       "lookInside": "Espreite o interior",
       "closingBody": "Transferência gratuita. Imprima-o ou estude no telemóvel.",
-      "opensInNewTab": "(abre num novo separador)"
+      "opensInNewTab": "(abre num novo separador)",
+      "youtubeCta": "Ver no YouTube"
     },
     "editionLanguages": {
       "en": {
@@ -142,22 +143,14 @@
         "switch": "Obter a edição em inglês"
       }
     },
-    "resources": {
-      "ep01EnStudyGuide": {
+    "formats": {
+      "everydaySentences": {
         "eyebrow": "Guia de estudo gratuito",
         "title": "100 frases coreanas do dia a dia",
-        "description": "Pratique as 100 frases do EP.01: coreano, romanização, significados naturais em inglês, exemplos do quotidiano, revisões por capítulo e uma lista de verificação da aprendizagem.",
-        "youtubeCta": "Ver o EP.01 no YouTube",
         "closingTitle": "Leve as 100 frases sempre consigo",
-        "coverAlt": "Capa do guia de estudo Hangyul «100 frases coreanas do dia a dia» (일상 한국어 100문장), Korean While You Sleep EP01, edição em inglês",
-        "previews": {
-          "chapter": "Página de exemplo do capítulo 1, Cumprimentos e respostas essenciais: cada frase apresenta o coreano, a romanização, o significado em inglês, uma nota de utilização e um pequeno diálogo",
-          "review": "Página de exemplo de uma revisão de capítulo com quatro exercícios: o que significa, como se diz em coreano, complete o diálogo e o que diria"
-        },
         "features": {
           "sentences": {
-            "title": "100 frases do dia a dia",
-            "body": "Coreano útil para cumprimentar, conhecer pessoas, falar de comida, compras e planos, e reagir com naturalidade."
+            "title": "100 frases do dia a dia"
           },
           "conversation": {
             "title": "Contexto real",
@@ -171,9 +164,32 @@
             "title": "Revisão e prática",
             "body": "Revisões por capítulo com soluções, uma revisão rápida das 100 frases e uma lista final de verificação da aprendizagem."
           }
+        }
+      }
+    },
+    "resources": {
+      "ep01EnStudyGuide": {
+        "description": "Pratique as 100 frases do EP.01: coreano, romanização, significados naturais em inglês, exemplos do quotidiano, revisões por capítulo e uma lista de verificação da aprendizagem.",
+        "youtubeCta": "Ver o EP.01 no YouTube",
+        "topics": "Coreano útil para cumprimentar, conhecer pessoas, falar de comida, compras e planos, e reagir com naturalidade.",
+        "coverAlt": "Capa do guia de estudo Hangyul «100 frases coreanas do dia a dia» (일상 한국어 100문장), Korean While You Sleep EP01, edição em inglês",
+        "previews": {
+          "chapter": "Página de exemplo do capítulo 1, Cumprimentos e respostas essenciais: cada frase apresenta o coreano, a romanização, o significado em inglês, uma nota de utilização e um pequeno diálogo",
+          "review": "Página de exemplo de uma revisão de capítulo com quatro exercícios: o que significa, como se diz em coreano, complete o diálogo e o que diria"
         },
-        "seoTitle": "100 frases coreanas do dia a dia — Guia de estudo gratuito | Hangyul",
+        "seoTitle": "100 frases coreanas do dia a dia — EP01 Guia de estudo gratuito | Hangyul",
         "seoDescription": "Transfira gratuitamente o guia de estudo Hangyul EP01 com 100 frases coreanas do dia a dia, romanização, significados em inglês, diálogos, revisões e exercícios."
+      },
+      "ep02EnStudyGuide": {
+        "description": "Pratique mais 100 frases do EP.02: coreano, romanização, significados naturais em inglês, notas de utilização, diálogos do quotidiano, revisões por capítulo e uma revisão rápida das 100 frases.",
+        "topics": "Coreano prático para restaurantes e cafés, compras, deslocações, combinar planos, saúde e sentimentos, e reações naturais.",
+        "coverAlt": "Capa do guia de estudo Hangyul «100 frases coreanas do dia a dia» (일상 한국어 100문장), Korean While You Sleep EP02, edição em inglês",
+        "previews": {
+          "chapter": "Página de exemplo do capítulo 1, Compreensão mútua: cada frase apresenta o coreano, a romanização, o significado em inglês, uma nota de utilização e um pequeno diálogo",
+          "review": "Página de exemplo de uma revisão de capítulo com quatro exercícios: o que significa, como se diz em coreano, complete o diálogo e o que diria"
+        },
+        "seoTitle": "100 frases coreanas do dia a dia — EP02 Guia de estudo gratuito | Hangyul",
+        "seoDescription": "Transfira gratuitamente o guia de estudo Hangyul EP02 com mais 100 frases coreanas do dia a dia, romanização, significados em inglês, diálogos, revisões por capítulo e exercícios."
       }
     },
     "notFound": {
