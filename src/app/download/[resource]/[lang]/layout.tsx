@@ -15,7 +15,8 @@ import { routing } from "@/i18n/routing";
  * (/download?resource=<slug>&lang=<UI 언어> 에서 /download/<slug>/<lang> 으로 rewrite 됨)
  *
  * 홈페이지 레이아웃(src/app/[locale]/layout.tsx)의 큰 내비게이션 대신
- * 로고 + 언어 선택기만 있는 최소 헤더를 쓰고, 푸터는 기존 한귤 푸터를 재사용합니다.
+ * 로고 + 언어 선택기만 있는 최소 헤더를 쓰고, 푸터는 홈페이지와 같은 Footer 컴포넌트를
+ * 그대로 씁니다 (문구는 같은 messages.Footer, 반응형은 같은 Footer.module.css).
  * html lang/dir 은 화면 언어를 따릅니다 (PDF 판 언어와는 별개).
  */
 
@@ -85,8 +86,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
           />
           {children}
-          {/* 홈페이지와 같은 푸터 컨테이너(1180px)를 그대로 씁니다. */}
-          <Footer alignEnd />
+          {/* 홈페이지와 같은 푸터 컴포넌트를 변형 없이 그대로 씁니다. */}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

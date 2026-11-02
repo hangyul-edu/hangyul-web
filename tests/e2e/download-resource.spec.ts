@@ -488,36 +488,22 @@ test.describe("Header matches the homepage header", () => {
   });
 });
 
-test.describe("One container for header, hero, sections and footer", () => {
-  /** 요소의 실제 내용(텍스트·글리프) 좌우 끝 */
+test.describe("One container for header, hero and sections", () => {
+  /** 요소의 좌우 끝 */
   const edges = (page: Page) =>
     page.evaluate(() => {
       const box = (el: Element | null) => {
         const b = el!.getBoundingClientRect();
         return { left: Math.round(b.left), right: Math.round(b.right) };
       };
-      const text = (el: Element | null) => {
-        const range = document.createRange();
-        range.selectNodeContents(el!);
-        const b = range.getBoundingClientRect();
-        return { left: Math.round(b.left), right: Math.round(b.right) };
-      };
       const footer = document.querySelector("footer")!;
-      const rightColumn = footer.querySelector("address")!.parentElement!
-        .nextElementSibling!;
-      const icons = rightColumn.querySelectorAll("ul a svg");
       return {
         headerLogo: box(document.querySelector("header a img")),
         selector: box(document.querySelector("header button")),
-        cover: box(document.querySelector("main img")),
+        coverSurface: box(document.querySelector('[data-testid="cover-surface"]')),
         info: box(document.querySelector("h1")!.parentElement),
         closing: box(document.querySelector("#closing-title")!.closest("div")!.parentElement),
         footerLogo: box(footer.querySelector("img")),
-        footerAddress: text(footer.querySelector("address p")),
-        socialTitle: text(rightColumn.querySelector("h2")),
-        lastSocialIcon: box(icons[icons.length - 1]),
-        legal: box(rightColumn.children[1]),
-        copyright: text(rightColumn.querySelector("p span")),
       };
     });
 
@@ -553,45 +539,93 @@ test.describe("One container for header, hero, sections and footer", () => {
   }
 
   for (const width of [1920, 1440, 1280, 1024, 820]) {
-    test(`footer edges match the page container at ${width}px`, async ({ page }) => {
+    test(`hero, closing card and footer share the header edges at ${width}px`, async ({ page }) => {
       await page.setViewportSize({ width, height: 900 });
       await page.goto(EN_LINK);
       const e = await edges(page);
 
-      const left = e.headerLogo.left;
-      for (const key of ["cover", "closing", "footerLogo", "footerAddress"] as const) {
-        expect(e[key].left, key).toBe(left);
+      for (const key of ["coverSurface", "closing", "footerLogo"] as const) {
+        expect(e[key].left, key).toBe(e.headerLogo.left);
       }
-      const right = e.selector.right;
-      for (const key of ["info", "closing", "socialTitle", "lastSocialIcon", "legal", "copyright"] as const) {
-        expect(e[key].right, key).toBe(right);
+      for (const key of ["info", "closing"] as const) {
+        expect(e[key].right, key).toBe(e.selector.right);
       }
     });
   }
 
-  test("footer edges are mirrored in RTL", async ({ page }) => {
+  test("edges are mirrored in RTL", async ({ page }) => {
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.goto(`${RESOURCE_LINK}&lang=ar`);
     const e = await edges(page);
 
-    const start = e.headerLogo.right;
-    for (const key of ["cover", "closing", "footerLogo", "footerAddress"] as const) {
-      expect(e[key].right, key).toBe(start);
+    for (const key of ["coverSurface", "closing", "footerLogo"] as const) {
+      expect(e[key].right, key).toBe(e.headerLogo.right);
     }
-    const end = e.selector.left;
-    for (const key of ["info", "closing", "socialTitle", "lastSocialIcon", "legal", "copyright"] as const) {
-      expect(e[key].left, key).toBe(end);
+    for (const key of ["info", "closing"] as const) {
+      expect(e[key].left, key).toBe(e.selector.left);
     }
   });
+});
 
-  test("mobile footer stays on the same gutter", async ({ page }) => {
-    await page.setViewportSize({ width: 390, height: 844 });
-    await page.goto(EN_LINK);
-    const e = await edges(page);
-    for (const key of ["headerLogo", "info", "closing", "footerLogo", "footerAddress", "socialTitle", "legal", "copyright"] as const) {
-      expect(e[key].left, key).toBe(16);
-    }
-  });
+/*
+ * 자료 페이지는 홈페이지와 같은 Footer 컴포넌트를 변형 없이 씁니다.
+ * 마크업(문구·링크·아이콘)과 렌더링된 위치·스타일이 홈페이지와 완전히 같아야 합니다.
+ */
+test.describe("Footer is the homepage footer", () => {
+  /** 푸터 안 모든 요소의 (푸터 기준) 위치·크기와 주요 계산 스타일 */
+  const footerSnapshot = (page: Page) =>
+    page.evaluate(() => {
+      const footer = document.querySelector("footer")!;
+      const origin = footer.getBoundingClientRect();
+      const props = [
+        "color", "fontSize", "fontWeight", "fontFamily", "lineHeight",
+        "backgroundColor", "paddingTop", "paddingBottom", "gap", "textAlign",
+      ] as const;
+      return {
+        html: footer.outerHTML,
+        // SVG <defs>(그라데이션 정의)는 화면에 그려지지 않아 위치가 의미 없으므로 제외합니다.
+        nodes: [footer, ...footer.querySelectorAll("*")]
+          .filter((el) => !el.closest("defs"))
+          .map((el) => {
+          const r = el.getBoundingClientRect();
+          const cs = getComputedStyle(el);
+          return {
+            tag: el.tagName,
+            x: Math.round(r.left - origin.left),
+            y: Math.round(r.top - origin.top),
+            w: Math.round(r.width),
+            h: Math.round(r.height),
+            ...Object.fromEntries(props.map((p) => [p, cs[p]])),
+          };
+        }),
+      };
+    });
+
+  for (const width of [1280, 1440, 1600, 1920, 820, 430, 390, 360]) {
+    test(`renders exactly like the homepage footer at ${width}px`, async ({ page }) => {
+      await page.setViewportSize({ width, height: 900 });
+      await page.goto("/en");
+      const home = await footerSnapshot(page);
+      await page.goto(EN_LINK);
+      const resource = await footerSnapshot(page);
+
+      expect(resource.html).toBe(home.html);
+      expect(resource.nodes).toEqual(home.nodes);
+    });
+  }
+
+  for (const lang of ["ko", "ja", "de", "ru", "ar"]) {
+    test(`follows the UI language with the homepage copy (lang=${lang})`, async ({ page }) => {
+      await page.setViewportSize({ width: 1440, height: 900 });
+      await page.goto(`/${lang}`);
+      const home = await footerSnapshot(page);
+      await page.goto(`${RESOURCE_LINK}&lang=${lang}`);
+      const resource = await footerSnapshot(page);
+
+      expect(resource.html).toBe(home.html);
+      expect(resource.nodes).toEqual(home.nodes);
+    });
+  }
 });
 
 test.describe("Responsive layout", () => {

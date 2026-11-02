@@ -126,7 +126,7 @@ export default async function ResourceDownloadPage({
 
       <section className={styles.hero} aria-labelledby="resource-title">
         <div className={styles.heroInner}>
-          <div className={styles.coverColumn}>
+          <div className={styles.coverColumn} data-testid="cover-surface">
             <div className={styles.coverStack}>
               <Image
                 className={styles.cover}

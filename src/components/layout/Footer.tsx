@@ -21,12 +21,11 @@ function getLegalModalType(value: string | null): ModalType {
   return null;
 }
 
-type FooterProps = {
-  /** 데스크톱에서 오른쪽 열(소셜·약관·저작권)을 컨테이너 오른쪽 끝선에 맞춥니다. */
-  alignEnd?: boolean;
-};
-
-export default function Footer({ alignEnd = false }: FooterProps = {}) {
+/**
+ * 사이트 공통 푸터. 홈페이지([locale]/layout)와 무료 자료 페이지(download/[resource]/[lang]/layout)가
+ * 이 컴포넌트 하나를 그대로 씁니다. 페이지별 변형(prop)을 두지 않아 두 화면이 항상 같습니다.
+ */
+export default function Footer() {
   const t = useTranslations("Footer");
   const locale = useLocale();
   const [openModal, setOpenModal] = useState<ModalType>(null);
@@ -104,13 +103,7 @@ export default function Footer({ alignEnd = false }: FooterProps = {}) {
 
   return (
     <footer className={styles.footer}>
-      <div
-        className={
-          alignEnd
-            ? `${styles.container} ${styles.containerEndAligned}`
-            : styles.container
-        }
-      >
+      <div className={styles.container}>
         <div className={styles.leftSection}>
           <Image
             className={styles.logo}
