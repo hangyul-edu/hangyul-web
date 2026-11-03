@@ -107,10 +107,7 @@ export const DOWNLOAD_RESOURCE_FAMILIES = [
     formatMessagesKey: "everydaySentences",
     series: "Korean While You Sleep",
     episode: "EP02",
-    // EP02 전용 영상이 아직 없어 당분간 EP01 영상으로 연결합니다(의도된 임시 설정).
-    // 버튼 문구는 일반 문구("Watch on YouTube")라 EP02 영상인 것처럼 보이지 않습니다.
-    // EP02 영상이 나오면 이 URL만 바꾸고 판 문구에 youtubeCta를 추가하면 됩니다.
-    youtubeUrl: "https://www.youtube.com/watch?v=HGa7xurxL5c",
+    youtubeUrl: "https://youtu.be/eMv0Tsq08SQ",
     sentenceCount: 100,
     chapterCount: 10,
     features: ["sentences", "conversation", "romanization", "review"],

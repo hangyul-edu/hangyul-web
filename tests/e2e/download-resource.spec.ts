@@ -707,8 +707,7 @@ test.describe("Responsive layout", () => {
 
 /*
  * EP02 — 같은 페이지 컴포넌트·같은 레지스트리로 렌더링되는 두 번째 가이드.
- * EP01 문구·이미지·PDF가 섞여 나오지 않는지, 링크된 영상이 EP01인 동안에는
- * 버튼이 EP02 영상인 척하지 않는지를 확인합니다.
+ * EP01 문구·이미지·PDF·영상이 섞여 나오지 않는지 확인합니다.
  */
 const EP02_SLUG = "ep02-en-study-guide";
 const EP02_RESOURCE_LINK = `/download?resource=${EP02_SLUG}`;
@@ -720,6 +719,7 @@ const EP02_SOURCE_PDF = path.join(
   process.cwd(),
   "src/assets/downloads/EP02_EN_Study_Guide.pdf"
 );
+const EP02_YOUTUBE_URL = "https://youtu.be/eMv0Tsq08SQ";
 const ep02Copy = (locale: string) => messages(locale).resources.ep02EnStudyGuide;
 
 test.describe("EP02 — /download?resource=ep02-en-study-guide&lang=en", () => {
@@ -740,13 +740,14 @@ test.describe("EP02 — /download?resource=ep02-en-study-guide&lang=en", () => {
     ).toBeVisible();
   });
 
-  test("the YouTube button is generic and temporarily links to the EP01 video", async ({ page }) => {
+  test("the YouTube button links to the EP02 video", async ({ page }) => {
     await page.goto(EP02_EN_LINK);
-    const youtube = page.getByTestId("resource-youtube");
-    await expect(youtube).toHaveAttribute("href", YOUTUBE_URL);
+    const youtube = page.getByRole("link", { name: /watch ep\.02 on youtube/i });
+    await expect(youtube).toHaveAttribute("href", EP02_YOUTUBE_URL);
+    await expect(youtube).not.toHaveAttribute("href", YOUTUBE_URL);
     await expect(youtube).toHaveAttribute("target", "_blank");
-    await expect(youtube).toContainText("Watch on YouTube");
-    await expect(youtube).not.toContainText(/EP\.?0\d/);
+    await expect(youtube).toHaveAttribute("rel", /noopener/);
+    await expect(youtube).not.toContainText("EP.01");
   });
 
   test("uses EP02 images, not EP01 artwork", async ({ page }) => {
@@ -793,10 +794,30 @@ test.describe("EP02 — /download?resource=ep02-en-study-guide&lang=en", () => {
     await expect(page.getByText(ep02Copy("ko").description)).toBeVisible();
     await expect(page.getByTestId("edition-badge")).toHaveText(m.editionLanguages.en.label);
     await expect(page.getByTestId("edition-notice")).toHaveText(m.editionLanguages.en.notice);
-    await expect(page.getByTestId("resource-youtube")).toContainText(m.common.youtubeCta);
+    await expect(page.getByTestId("resource-youtube")).toContainText(ep02Copy("ko").youtubeCta);
+    await expect(page.getByTestId("resource-youtube")).toHaveAttribute("href", EP02_YOUTUBE_URL);
     await expect(heroDownload(page)).toHaveAttribute("href", EP02_PDF_PATH);
     await expect(heroDownload(page)).toHaveAttribute("download", EP02_DOWNLOAD_FILE_NAME);
     await expect(page).toHaveTitle(ep02Copy("ko").seoTitle);
+  });
+
+  test("every UI language shows its own EP02 YouTube CTA, EP01 keeps EP.01", async ({ page }) => {
+    const locales = fs
+      .readdirSync(path.join(process.cwd(), "messages"))
+      .filter((f) => f.endsWith(".json"))
+      .map((f) => f.replace(/\.json$/, ""));
+    expect(locales.length).toBeGreaterThan(1);
+    for (const locale of locales) {
+      const ep02Cta = ep02Copy(locale).youtubeCta;
+      expect(ep02Cta, locale).toContain("EP.02");
+      if (locale !== "en") expect(ep02Cta, locale).not.toBe(ep02Copy("en").youtubeCta);
+      expect(copy(locale).youtubeCta, locale).toContain("EP.01");
+
+      await page.goto(`${EP02_RESOURCE_LINK}&lang=${locale}`);
+      const youtube = page.getByTestId("resource-youtube");
+      await expect(youtube, locale).toContainText(ep02Cta);
+      await expect(youtube, locale).toHaveAttribute("href", EP02_YOUTUBE_URL);
+    }
   });
 
   test("Japanese UI keeps the English-edition EP02 PDF", async ({ page }) => {
