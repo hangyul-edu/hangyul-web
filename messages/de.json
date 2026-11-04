@@ -125,7 +125,6 @@
       "downloadCta": "Kostenloses PDF herunterladen",
       "noSignUp": "Keine Anmeldung erforderlich",
       "pageCount": "{count, plural, one {# Seite} other {# Seiten}}",
-      "statSentences": "{count, plural, one {Satz} other {Sätze}}",
       "statChapters": "{count, plural, one {Themenkapitel} other {Themenkapitel}}",
       "statPages": "{count, plural, one {Seite} other {Seiten}}",
       "statsLabel": "Das Lernheft auf einen Blick",
@@ -134,7 +133,14 @@
       "lookInside": "Ein Blick ins Heft",
       "closingBody": "Kostenlos zum Herunterladen. Druck es aus oder lern direkt auf dem Handy.",
       "opensInNewTab": "(öffnet sich in einem neuen Tab)",
-      "youtubeCta": "Auf YouTube ansehen"
+      "youtubeCta": "Auf YouTube ansehen",
+      "youtubeComingSoon": {
+        "eyebrow": "Demnächst",
+        "title": "Die Videolektion kommt bald",
+        "body": "Die YouTube-Lektion zu diesem Lernheft ist noch nicht verfügbar. Das Lernheft kannst du schon jetzt herunterladen – das Video verlinken wir hier, sobald es fertig ist.",
+        "confirm": "Alles klar",
+        "close": "Schließen"
+      }
     },
     "editionLanguages": {
       "en": {
@@ -147,6 +153,7 @@
       "everydaySentences": {
         "eyebrow": "Kostenloses Lernheft",
         "title": "100 koreanische Alltagssätze",
+        "statItems": "{count, plural, one {Satz} other {Sätze}}",
         "closingTitle": "Nimm die 100 Sätze überallhin mit",
         "features": {
           "sentences": {
@@ -163,6 +170,30 @@
           "review": {
             "title": "Wiederholen und üben",
             "body": "Kapitelwiederholungen mit Lösungen, eine Schnellwiederholung aller 100 Sätze und eine abschließende Lern-Checkliste."
+          }
+        }
+      },
+      "essentialWords": {
+        "eyebrow": "Kostenloses Lernheft",
+        "title": "500 wichtige koreanische Wörter",
+        "statItems": "{count, plural, one {wichtiges Wort} other {wichtige Wörter}}",
+        "closingTitle": "Nimm alle 500 Wörter überallhin mit",
+        "closingBody": "Lade es kostenlos herunter und wiederhole koreanische Vokabeln, wann immer du willst.",
+        "features": {
+          "words": {
+            "title": "500 wichtige koreanische Wörter"
+          },
+          "sentences": {
+            "title": "Ein echtes Beispiel zu jedem Wort",
+            "body": "Sieh jedes Wort in einem natürlichen koreanischen Satz – mit Umschrift und englischer Übersetzung."
+          },
+          "romanization": {
+            "title": "Bedeutung + Umschrift + Hinweise",
+            "body": "Zu jedem Wort gibt es Umschrift, Wortart und eine natürliche englische Bedeutung – und wo es hilft, einen kurzen Verwendungshinweis."
+          },
+          "review": {
+            "title": "Wiederholung + Kurzübersicht",
+            "body": "Teste dich nach jedem Kapitel, prüfe deine Antworten und hake in der Kurzübersicht mit Checkliste ab, was du schon kannst."
           }
         }
       }
@@ -191,6 +222,18 @@
         },
         "seoTitle": "100 koreanische Alltagssätze – EP02 Kostenloses Lernheft | Hangyul",
         "seoDescription": "Lade das kostenlose Hangyul-Lernheft zu EP02 herunter: 100 weitere koreanische Alltagssätze mit Umschrift, englischen Bedeutungen, Dialogen, Kapitelwiederholungen und Übungen."
+      },
+      "ep01En500EssentialWords": {
+        "description": "Leg mit 500 wichtigen Wörtern ein solides Fundament für deinen koreanischen Wortschatz – mit natürlichen Beispielsätzen, Umschrift, Verwendungshinweisen, Kapitelwiederholungen und einer Kurzübersicht mit Checkliste.",
+        "topics": "Praktischer Wortschatz für den Alltag: Menschen, Essen, Zahlen und Geld, unterwegs sein, Einkaufen, Gefühle, Gesundheit, Arbeit und mehr.",
+        "editionNotice": "Dieses PDF ist auf Englisch. Wortbedeutungen, Übersetzungen der Beispielsätze und Verwendungshinweise sind durchgehend auf Englisch verfasst.",
+        "coverAlt": "Cover des Hangyul-Lernhefts „500 wichtige koreanische Wörter“ (일상 회화 필수 단어 500), Korean Vocabulary Mastery EP01, englische Ausgabe",
+        "previews": {
+          "chapter": "Beispielseite aus Kapitel 1, Erste Wörter: Zu jedem Wort gibt es Koreanisch, Umschrift, Wortart, die englische Bedeutung, einen Beispielsatz und einen Verwendungshinweis",
+          "checklist": "Beispielseite der Kurzübersicht mit Checkliste: jedes Wort mit seiner Bedeutung und Kästchen zum Abhaken beim Wiederholen"
+        },
+        "seoTitle": "500 wichtige koreanische Wörter – Kostenloses Lernheft | Hangyul",
+        "seoDescription": "Lade das kostenlose Lernheft herunter: 500 wichtige koreanische Wörter mit Umschrift, natürlichen Beispielsätzen, Verwendungshinweisen, Kapitelwiederholungen und Checkliste."
       }
     },
     "notFound": {

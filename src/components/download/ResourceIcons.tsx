@@ -62,6 +62,15 @@ export function FeatureIcon({
   icon: ResourceFeatureIcon;
 }) {
   switch (icon) {
+    case "words":
+      // 단어 카드 두 장: 어휘 학습
+      return (
+        <svg {...base} width={22} height={22}>
+          <rect x="3.5" y="7" width="13" height="13" rx="2.5" />
+          <path d="M7.5 4h10A3 3 0 0 1 20.5 7v10" />
+          <path d="M7 12h6M7 15.5h4" />
+        </svg>
+      );
     case "sentences":
       return (
         <svg {...base} width={22} height={22}>

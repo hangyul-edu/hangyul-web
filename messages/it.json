@@ -125,7 +125,6 @@
       "downloadCta": "Scarica il PDF gratuito",
       "noSignUp": "Nessuna registrazione richiesta",
       "pageCount": "{count, plural, one {# pagina} other {# pagine}}",
-      "statSentences": "{count, plural, one {frase} other {frasi}}",
       "statChapters": "{count, plural, one {capitolo tematico} other {capitoli tematici}}",
       "statPages": "{count, plural, one {pagina} other {pagine}}",
       "statsLabel": "La guida in sintesi",
@@ -134,7 +133,14 @@
       "lookInside": "Uno sguardo all'interno",
       "closingBody": "Download gratuito. Stampala o studia sul telefono.",
       "opensInNewTab": "(si apre in una nuova scheda)",
-      "youtubeCta": "Guarda su YouTube"
+      "youtubeCta": "Guarda su YouTube",
+      "youtubeComingSoon": {
+        "eyebrow": "Prossimamente",
+        "title": "La lezione video arriverà presto",
+        "body": "La lezione su YouTube di questa guida non è ancora disponibile. Puoi già scaricare la guida: il video verrà collegato qui non appena sarà pronto.",
+        "confirm": "Ho capito",
+        "close": "Chiudi"
+      }
     },
     "editionLanguages": {
       "en": {
@@ -147,6 +153,7 @@
       "everydaySentences": {
         "eyebrow": "Guida allo studio gratuita",
         "title": "100 frasi coreane di tutti i giorni",
+        "statItems": "{count, plural, one {frase} other {frasi}}",
         "closingTitle": "Porta sempre con te le 100 frasi",
         "features": {
           "sentences": {
@@ -163,6 +170,30 @@
           "review": {
             "title": "Ripasso ed esercizi",
             "body": "Ripassi per capitolo con soluzioni, un ripasso veloce di tutte le 100 frasi e una checklist finale di apprendimento."
+          }
+        }
+      },
+      "essentialWords": {
+        "eyebrow": "Guida allo studio gratuita",
+        "title": "500 parole coreane essenziali",
+        "statItems": "{count, plural, one {parola essenziale} other {parole essenziali}}",
+        "closingTitle": "Porta sempre con te le 500 parole essenziali",
+        "closingBody": "Scaricala gratis e ripassa il vocabolario coreano quando vuoi.",
+        "features": {
+          "words": {
+            "title": "500 parole coreane essenziali"
+          },
+          "sentences": {
+            "title": "Un esempio reale per ogni parola",
+            "body": "Guarda ogni parola usata in una frase coreana naturale, con romanizzazione e traduzione in inglese."
+          },
+          "romanization": {
+            "title": "Significato + romanizzazione + note d’uso",
+            "body": "Ogni parola ha la romanizzazione, la categoria grammaticale e un significato naturale in inglese e, quando serve, una breve nota su come si usa."
+          },
+          "review": {
+            "title": "Ripassi + prontuario",
+            "body": "Mettiti alla prova dopo ogni capitolo, controlla le soluzioni e segna ciò che ricordi nel prontuario con checklist."
           }
         }
       }
@@ -191,6 +222,18 @@
         },
         "seoTitle": "100 frasi coreane di tutti i giorni — EP02 Guida allo studio gratuita | Hangyul",
         "seoDescription": "Scarica la guida allo studio gratuita Hangyul EP02 con altre 100 frasi coreane di tutti i giorni, romanizzazione, significati in inglese, dialoghi, ripassi per capitolo ed esercizi."
+      },
+      "ep01En500EssentialWords": {
+        "description": "Costruisci una base pratica di vocabolario coreano con 500 parole essenziali, frasi di esempio naturali, romanizzazione, note d’uso, ripassi per capitolo e un prontuario con checklist.",
+        "topics": "Vocabolario pratico per la vita di tutti i giorni: persone, cibo, numeri e soldi, spostamenti, shopping, emozioni, salute, lavoro e molto altro.",
+        "editionNotice": "Questo PDF è in inglese. Significati delle parole, traduzioni degli esempi e note d’uso sono tutti scritti in inglese.",
+        "coverAlt": "Copertina della guida allo studio Hangyul “500 parole coreane essenziali” (일상 회화 필수 단어 500), Korean Vocabulary Mastery EP01, edizione inglese",
+        "previews": {
+          "chapter": "Pagina di esempio del capitolo 1, Prime parole: ogni parola riporta coreano, romanizzazione, categoria grammaticale, significato in inglese, una frase di esempio e una nota d’uso",
+          "checklist": "Pagina di esempio del prontuario con checklist: ogni parola con il suo significato e caselle da spuntare durante il ripasso"
+        },
+        "seoTitle": "500 parole coreane essenziali — Guida allo studio gratuita | Hangyul",
+        "seoDescription": "Scarica gratis una guida allo studio con 500 parole coreane essenziali, romanizzazione, frasi di esempio naturali, note d’uso, ripassi per capitolo e un prontuario con checklist."
       }
     },
     "notFound": {

@@ -125,7 +125,6 @@
       "downloadCta": "Gratis PDF downloaden",
       "noSignUp": "Geen registratie nodig",
       "pageCount": "{count, plural, one {# pagina} other {# pagina's}}",
-      "statSentences": "{count, plural, one {zin} other {zinnen}}",
       "statChapters": "{count, plural, one {themahoofdstuk} other {themahoofdstukken}}",
       "statPages": "{count, plural, one {pagina} other {pagina's}}",
       "statsLabel": "De studiegids in één oogopslag",
@@ -134,7 +133,14 @@
       "lookInside": "Een kijkje in de gids",
       "closingBody": "Gratis te downloaden. Print hem uit of leer op je telefoon.",
       "opensInNewTab": "(opent in een nieuw tabblad)",
-      "youtubeCta": "Bekijk op YouTube"
+      "youtubeCta": "Bekijk op YouTube",
+      "youtubeComingSoon": {
+        "eyebrow": "Binnenkort",
+        "title": "De videoles komt binnenkort",
+        "body": "De YouTube-les bij deze studiegids is nog niet beschikbaar. Je kunt de studiegids nu al downloaden; zodra de video klaar is, vind je hier de link.",
+        "confirm": "Begrepen",
+        "close": "Sluiten"
+      }
     },
     "editionLanguages": {
       "en": {
@@ -147,6 +153,7 @@
       "everydaySentences": {
         "eyebrow": "Gratis studiegids",
         "title": "100 alledaagse Koreaanse zinnen",
+        "statItems": "{count, plural, one {zin} other {zinnen}}",
         "closingTitle": "Houd de 100 zinnen altijd bij de hand",
         "features": {
           "sentences": {
@@ -163,6 +170,30 @@
           "review": {
             "title": "Herhalen en oefenen",
             "body": "Hoofdstukherhalingen met antwoorden, een snelle herhaling van alle 100 zinnen en een afsluitende leerchecklist."
+          }
+        }
+      },
+      "essentialWords": {
+        "eyebrow": "Gratis studiegids",
+        "title": "500 essentiële Koreaanse woorden",
+        "statItems": "{count, plural, one {essentieel woord} other {essentiële woorden}}",
+        "closingTitle": "Houd alle 500 woorden altijd bij de hand",
+        "closingBody": "Download hem gratis en herhaal Koreaanse woordenschat wanneer je maar wilt.",
+        "features": {
+          "words": {
+            "title": "500 essentiële Koreaanse woorden"
+          },
+          "sentences": {
+            "title": "Een echt voorbeeld bij elk woord",
+            "body": "Zie elk woord terug in een natuurlijke Koreaanse zin, met romanisatie en Engelse vertaling."
+          },
+          "romanization": {
+            "title": "Betekenis + romanisatie + gebruikstips",
+            "body": "Bij elk woord staan de romanisatie, de woordsoort en een natuurlijke Engelse betekenis, en waar het helpt een korte gebruikstip."
+          },
+          "review": {
+            "title": "Herhaling + overzichtslijst",
+            "body": "Test jezelf na elk hoofdstuk, controleer je antwoorden en houd met de afvinklijst bij wat je al kent."
           }
         }
       }
@@ -191,6 +222,18 @@
         },
         "seoTitle": "100 alledaagse Koreaanse zinnen — EP02 Gratis studiegids | Hangyul",
         "seoDescription": "Download de gratis Hangyul-studiegids bij EP02 met nog eens 100 alledaagse Koreaanse zinnen, romanisatie, Engelse betekenissen, gesprekken, hoofdstukherhalingen en oefeningen."
+      },
+      "ep01En500EssentialWords": {
+        "description": "Leg een praktische basis voor je Koreaanse woordenschat met 500 essentiële woorden, natuurlijke voorbeeldzinnen, romanisatie, gebruikstips, hoofdstukherhalingen en een overzichtslijst om af te vinken.",
+        "topics": "Praktische woordenschat voor elke dag: mensen, eten, getallen en geld, onderweg, winkelen, gevoelens, gezondheid, werk en meer.",
+        "editionNotice": "Deze PDF is in het Engels. Woordbetekenissen, vertalingen van de voorbeelden en gebruikstips zijn allemaal in het Engels geschreven.",
+        "coverAlt": "Omslag van de Hangyul-studiegids “500 essentiële Koreaanse woorden” (일상 회화 필수 단어 500), Korean Vocabulary Mastery EP01, Engelse editie",
+        "previews": {
+          "chapter": "Voorbeeldpagina uit hoofdstuk 1, Eerste woorden: bij elk woord staan het Koreaans, de romanisatie, de woordsoort, de Engelse betekenis, een voorbeeldzin en een gebruikstip",
+          "checklist": "Voorbeeldpagina van de overzichtslijst: elk woord met zijn betekenis en vakjes om af te vinken tijdens het herhalen"
+        },
+        "seoTitle": "500 essentiële Koreaanse woorden — Gratis studiegids | Hangyul",
+        "seoDescription": "Download een gratis studiegids met 500 essentiële Koreaanse woorden, romanisatie, natuurlijke voorbeeldzinnen, gebruikstips, hoofdstukherhalingen en een overzichtslijst."
       }
     },
     "notFound": {

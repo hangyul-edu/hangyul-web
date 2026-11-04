@@ -125,7 +125,6 @@
       "downloadCta": "Stáhnout PDF zdarma",
       "noSignUp": "Bez registrace",
       "pageCount": "{count, plural, one {# strana} few {# strany} many {# strany} other {# stran}}",
-      "statSentences": "{count, plural, one {věta} few {věty} many {věty} other {vět}}",
       "statChapters": "{count, plural, one {tematická kapitola} few {tematické kapitoly} many {tematické kapitoly} other {tematických kapitol}}",
       "statPages": "{count, plural, one {strana} few {strany} many {strany} other {stran}}",
       "statsLabel": "Studijní materiál v kostce",
@@ -134,7 +133,14 @@
       "lookInside": "Nahlédněte dovnitř",
       "closingBody": "Ke stažení zdarma. Vytiskněte si ho, nebo se z něj učte v telefonu.",
       "opensInNewTab": "(otevře se na nové kartě)",
-      "youtubeCta": "Sledovat na YouTube"
+      "youtubeCta": "Sledovat na YouTube",
+      "youtubeComingSoon": {
+        "eyebrow": "Již brzy",
+        "title": "Videolekce bude brzy k dispozici",
+        "body": "Lekce na YouTube k tomuto studijnímu materiálu zatím není k dispozici. Materiál si můžete stáhnout už teď a odkaz na video sem doplníme, jakmile bude hotové.",
+        "confirm": "Rozumím",
+        "close": "Zavřít"
+      }
     },
     "editionLanguages": {
       "en": {
@@ -147,6 +153,7 @@
       "everydaySentences": {
         "eyebrow": "Studijní materiál zdarma",
         "title": "100 korejských vět pro každý den",
+        "statItems": "{count, plural, one {věta} few {věty} many {věty} other {vět}}",
         "closingTitle": "Mějte 100 vět vždy po ruce",
         "features": {
           "sentences": {
@@ -163,6 +170,30 @@
           "review": {
             "title": "Opakování a procvičování",
             "body": "Opakování kapitol s řešením, rychlé zopakování všech 100 vět a závěrečný kontrolní seznam."
+          }
+        }
+      },
+      "essentialWords": {
+        "eyebrow": "Studijní materiál zdarma",
+        "title": "500 základních korejských slov",
+        "statItems": "{count, plural, one {základní slovo} few {základní slova} many {základního slova} other {základních slov}}",
+        "closingTitle": "Mějte všech 500 slov vždy po ruce",
+        "closingBody": "Stáhněte si ho zdarma a opakujte korejská slovíčka, kdykoli budete chtít.",
+        "features": {
+          "words": {
+            "title": "500 základních korejských slov"
+          },
+          "sentences": {
+            "title": "Skutečný příklad ke každému slovu",
+            "body": "Každé slovo uvidíte v přirozené korejské větě s přepisem do latinky a anglickým překladem."
+          },
+          "romanization": {
+            "title": "Význam + přepis + poznámky k použití",
+            "body": "U každého slova najdete přepis, slovní druh a přirozený anglický význam, a kde to pomůže, i krátkou poznámku k použití."
+          },
+          "review": {
+            "title": "Opakování + rychlý přehled",
+            "body": "Po každé kapitole se otestujte, zkontrolujte si řešení a v rychlém přehledu si odškrtávejte, co už umíte."
           }
         }
       }
@@ -191,6 +222,18 @@
         },
         "seoTitle": "100 korejských vět pro každý den – EP02 studijní materiál zdarma | Hangyul",
         "seoDescription": "Stáhněte si zdarma studijní materiál Hangyul k EP02: dalších 100 každodenních korejských vět s přepisem do latinky, anglickými významy, konverzacemi, opakováním kapitol a procvičováním."
+      },
+      "ep01En500EssentialWords": {
+        "description": "Vybudujte si praktický základ korejské slovní zásoby: 500 základních slov, přirozené příkladové věty, přepis, poznámky k použití, opakování kapitol a rychlý přehled se seznamem k odškrtávání.",
+        "topics": "Praktická slovní zásoba pro každý den: lidé, jídlo, čísla a peníze, cestování po městě, nakupování, pocity, zdraví, práce a další.",
+        "editionNotice": "Toto PDF je v angličtině. Významy slov, překlady příkladů i poznámky k použití jsou psané anglicky.",
+        "coverAlt": "Obálka studijního materiálu Hangyul „500 základních korejských slov“ (일상 회화 필수 단어 500), Korean Vocabulary Mastery EP01, anglická verze",
+        "previews": {
+          "chapter": "Ukázková strana z kapitoly 1 (První slova): u každého slova je korejský zápis, přepis, slovní druh, anglický význam, příkladová věta a poznámka k použití",
+          "checklist": "Ukázková strana rychlého přehledu: každé slovo s významem a políčky k odškrtnutí při opakování"
+        },
+        "seoTitle": "500 základních korejských slov – studijní materiál zdarma | Hangyul",
+        "seoDescription": "Stáhněte si zdarma studijní materiál s 500 základními korejskými slovy, přepisem, přirozenými příkladovými větami, poznámkami k použití, opakováním kapitol a rychlým přehledem."
       }
     },
     "notFound": {

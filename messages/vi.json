@@ -125,7 +125,6 @@
       "downloadCta": "Tải PDF miễn phí",
       "noSignUp": "Không cần đăng ký",
       "pageCount": "{count, plural, other {# trang}}",
-      "statSentences": "{count, plural, other {câu}}",
       "statChapters": "{count, plural, other {chương chủ đề}}",
       "statPages": "{count, plural, other {trang}}",
       "statsLabel": "Tổng quan tài liệu học",
@@ -134,7 +133,14 @@
       "lookInside": "Xem trước nội dung",
       "closingBody": "Tải miễn phí. In ra hoặc học ngay trên điện thoại.",
       "opensInNewTab": "(mở trong thẻ mới)",
-      "youtubeCta": "Xem trên YouTube"
+      "youtubeCta": "Xem trên YouTube",
+      "youtubeComingSoon": {
+        "eyebrow": "Sắp ra mắt",
+        "title": "Video bài học sắp ra mắt",
+        "body": "Bài học trên YouTube cho tài liệu này hiện chưa có. Bạn có thể tải tài liệu ngay bây giờ, và video sẽ được gắn liên kết tại đây khi sẵn sàng.",
+        "confirm": "Đã hiểu",
+        "close": "Đóng"
+      }
     },
     "editionLanguages": {
       "en": {
@@ -147,6 +153,7 @@
       "everydaySentences": {
         "eyebrow": "Tài liệu học miễn phí",
         "title": "100 câu tiếng Hàn thông dụng hằng ngày",
+        "statItems": "{count, plural, other {câu}}",
         "closingTitle": "Mang 100 câu này theo bên mình",
         "features": {
           "sentences": {
@@ -163,6 +170,30 @@
           "review": {
             "title": "Ôn tập và luyện tập",
             "body": "Ôn tập từng chương kèm đáp án, ôn nhanh toàn bộ 100 câu và bảng kiểm tra tiến độ học ở cuối."
+          }
+        }
+      },
+      "essentialWords": {
+        "eyebrow": "Tài liệu học miễn phí",
+        "title": "500 từ vựng tiếng Hàn thiết yếu",
+        "statItems": "{count, plural, other {từ vựng thiết yếu}}",
+        "closingTitle": "Mang 500 từ vựng thiết yếu này theo bên mình",
+        "closingBody": "Tải miễn phí và ôn từ vựng tiếng Hàn bất cứ lúc nào bạn muốn.",
+        "features": {
+          "words": {
+            "title": "500 từ vựng tiếng Hàn thiết yếu"
+          },
+          "sentences": {
+            "title": "Mỗi từ đều có ví dụ thực tế",
+            "body": "Xem từng từ được dùng trong một câu tiếng Hàn tự nhiên, kèm phiên âm và bản dịch tiếng Anh."
+          },
+          "romanization": {
+            "title": "Nghĩa + phiên âm + ghi chú cách dùng",
+            "body": "Mỗi từ có phiên âm, từ loại và nghĩa tiếng Anh tự nhiên, kèm ghi chú ngắn về cách dùng khi cần."
+          },
+          "review": {
+            "title": "Ôn tập + bảng tra nhanh",
+            "body": "Tự kiểm tra sau mỗi chương, đối chiếu đáp án và đánh dấu những từ bạn đã nhớ trong bảng tra nhanh."
           }
         }
       }
@@ -191,6 +222,18 @@
         },
         "seoTitle": "100 câu tiếng Hàn thông dụng hằng ngày — EP02 Tài liệu học miễn phí | Hangyul",
         "seoDescription": "Tải miễn phí tài liệu học EP02 của Hangyul với thêm 100 câu tiếng Hàn thông dụng hằng ngày, phiên âm La-tinh, nghĩa tiếng Anh, hội thoại, phần ôn tập theo chương và luyện tập."
+      },
+      "ep01En500EssentialWords": {
+        "description": "Xây nền tảng từ vựng tiếng Hàn thực tế với 500 từ thiết yếu, câu ví dụ tự nhiên, phiên âm, ghi chú cách dùng, ôn tập từng chương và bảng tra nhanh có ô đánh dấu.",
+        "topics": "Từ vựng thực tế cho cuộc sống hằng ngày: con người, đồ ăn, số đếm và tiền bạc, đi lại, mua sắm, cảm xúc, sức khỏe, công việc và nhiều hơn nữa.",
+        "editionNotice": "Tệp PDF này bằng tiếng Anh. Phần nghĩa của từ, bản dịch câu ví dụ và ghi chú cách dùng đều được viết bằng tiếng Anh.",
+        "coverAlt": "Bìa tài liệu học của Hangyul “500 từ vựng tiếng Hàn thiết yếu” (일상 회화 필수 단어 500), Korean Vocabulary Mastery EP01, bản tiếng Anh",
+        "previews": {
+          "chapter": "Trang mẫu từ Chương 1, Những từ đầu tiên: mỗi từ gồm tiếng Hàn, phiên âm, từ loại, nghĩa tiếng Anh, câu ví dụ và ghi chú cách dùng",
+          "checklist": "Trang mẫu của bảng tra nhanh: mỗi từ kèm nghĩa và các ô để đánh dấu mỗi lần ôn"
+        },
+        "seoTitle": "500 từ vựng tiếng Hàn thiết yếu — Tài liệu học miễn phí | Hangyul",
+        "seoDescription": "Tải miễn phí tài liệu học gồm 500 từ vựng tiếng Hàn thiết yếu, phiên âm, câu ví dụ tự nhiên, ghi chú cách dùng, ôn tập từng chương và bảng tra nhanh."
       }
     },
     "notFound": {

@@ -125,7 +125,6 @@
       "downloadCta": "PDF-ni bepul yuklab olish",
       "noSignUp": "Roʻyxatdan oʻtish shart emas",
       "pageCount": "{count, plural, one {# sahifa} other {# sahifa}}",
-      "statSentences": "{count, plural, one {jumla} other {jumla}}",
       "statChapters": "{count, plural, one {mavzuli bob} other {mavzuli bob}}",
       "statPages": "{count, plural, one {sahifa} other {sahifa}}",
       "statsLabel": "Qoʻllanma haqida qisqacha",
@@ -134,7 +133,14 @@
       "lookInside": "Ichiga bir nazar",
       "closingBody": "Bepul yuklab oling. Chop eting yoki telefoningizda oʻrganing.",
       "opensInNewTab": "(yangi varaqda ochiladi)",
-      "youtubeCta": "YouTube-da koʻrish"
+      "youtubeCta": "YouTube-da koʻrish",
+      "youtubeComingSoon": {
+        "eyebrow": "Tez orada",
+        "title": "Video dars tez orada chiqadi",
+        "body": "Bu oʻquv qoʻllanmaga oid YouTube darsi hali mavjud emas. Qoʻllanmani hozirning oʻzida yuklab olishingiz mumkin, video tayyor boʻlishi bilan havolasi shu yerga qoʻshiladi.",
+        "confirm": "Tushunarli",
+        "close": "Yopish"
+      }
     },
     "editionLanguages": {
       "en": {
@@ -147,6 +153,7 @@
       "everydaySentences": {
         "eyebrow": "Bepul oʻquv qoʻllanma",
         "title": "100 ta kundalik koreyscha jumla",
+        "statItems": "{count, plural, one {jumla} other {jumla}}",
         "closingTitle": "100 ta jumla doim yoningizda boʻlsin",
         "features": {
           "sentences": {
@@ -163,6 +170,30 @@
           "review": {
             "title": "Takrorlash va mashq",
             "body": "Javoblari bilan boblar boʻyicha takrorlash, barcha 100 ta jumlani tezkor takrorlash va yakuniy oʻrganish nazorat roʻyxati."
+          }
+        }
+      },
+      "essentialWords": {
+        "eyebrow": "Bepul oʻquv qoʻllanma",
+        "title": "500 ta asosiy koreyscha soʻz",
+        "statItems": "{count, plural, one {asosiy soʻz} other {asosiy soʻz}}",
+        "closingTitle": "500 ta asosiy soʻz doim yoningizda boʻlsin",
+        "closingBody": "Bepul yuklab oling va koreyscha soʻzlarni xohlagan vaqtda takrorlang.",
+        "features": {
+          "words": {
+            "title": "500 ta asosiy koreyscha soʻz"
+          },
+          "sentences": {
+            "title": "Har bir soʻzga haqiqiy misol",
+            "body": "Har bir soʻz tabiiy koreyscha gapda qanday ishlatilishini transkripsiya va inglizcha tarjimasi bilan koʻring."
+          },
+          "romanization": {
+            "title": "Maʼno + transkripsiya + qoʻllanish izohlari",
+            "body": "Har bir soʻzning transkripsiyasi, soʻz turkumi va tabiiy inglizcha maʼnosi berilgan, kerakli joyda qoʻllanishi haqida qisqa izoh ham bor."
+          },
+          "review": {
+            "title": "Takrorlash + tezkor maʼlumotnoma",
+            "body": "Har bir bobdan keyin oʻzingizni sinang, javoblarni tekshiring va eslab qolgan soʻzlaringizni tezkor maʼlumotnoma roʻyxatida belgilang."
           }
         }
       }
@@ -191,6 +222,18 @@
         },
         "seoTitle": "100 ta kundalik koreyscha jumla — EP02 bepul oʻquv qoʻllanma | Hangyul",
         "seoDescription": "Hangyul EP02 bepul oʻquv qoʻllanmasini yuklab oling: yana 100 ta kundalik koreyscha jumla, lotin transkripsiyasi, inglizcha maʼnolar, suhbatlar, boblar boʻyicha takrorlash va mashqlar."
+      },
+      "ep01En500EssentialWords": {
+        "description": "500 ta asosiy soʻz bilan koreys tili soʻz boyligining amaliy poydevorini quring: tabiiy misol gaplar, transkripsiya, qoʻllanish izohlari, boblar boʻyicha takrorlash va belgilab boriladigan tezkor maʼlumotnoma roʻyxati.",
+        "topics": "Kundalik hayot uchun amaliy soʻzlar: odamlar, taom, sonlar va pul, yoʻlda yurish, xarid, his-tuygʻular, salomatlik, ish va boshqalar.",
+        "editionNotice": "Bu PDF ingliz tilida. Soʻzlarning maʼnolari, misollar tarjimasi va qoʻllanish izohlari toʻliq ingliz tilida yozilgan.",
+        "coverAlt": "Hangyul oʻquv qoʻllanmasi muqovasi: “500 ta asosiy koreyscha soʻz” (일상 회화 필수 단어 500), Korean Vocabulary Mastery EP01, ingliz tilidagi nashr",
+        "previews": {
+          "chapter": "1-bobdan namuna sahifa, “Ilk soʻzlar”: har bir soʻzda koreyscha yozilishi, transkripsiyasi, soʻz turkumi, inglizcha maʼnosi, misol gap va qoʻllanish izohi bor",
+          "checklist": "Tezkor maʼlumotnoma roʻyxatidan namuna sahifa: har bir soʻz maʼnosi bilan, takrorlaganda belgilanadigan katakchalar bilan"
+        },
+        "seoTitle": "500 ta asosiy koreyscha soʻz — bepul oʻquv qoʻllanma | Hangyul",
+        "seoDescription": "Bepul oʻquv qoʻllanmani yuklab oling: transkripsiya, tabiiy misol gaplar, qoʻllanish izohlari, boblar boʻyicha takrorlash va tezkor maʼlumotnoma roʻyxati bilan 500 ta asosiy koreyscha soʻz."
       }
     },
     "notFound": {

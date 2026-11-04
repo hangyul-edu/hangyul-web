@@ -10,6 +10,10 @@ import ep02EnCover from "@/assets/images/resources/ep02-en-study-guide/cover.web
 import ep02EnPage3 from "@/assets/images/resources/ep02-en-study-guide/page-3.webp";
 import ep02EnPage10 from "@/assets/images/resources/ep02-en-study-guide/page-10.webp";
 import ep02EnOg from "@/assets/images/resources/ep02-en-study-guide/og.jpg";
+import words500EnCover from "@/assets/images/resources/ep01-en-500-essential-korean-words-study-guide/cover.webp";
+import words500EnPage4 from "@/assets/images/resources/ep01-en-500-essential-korean-words-study-guide/page-4.webp";
+import words500EnPage65 from "@/assets/images/resources/ep01-en-500-essential-korean-words-study-guide/page-65.webp";
+import words500EnOg from "@/assets/images/resources/ep01-en-500-essential-korean-words-study-guide/og.jpg";
 
 /**
  * 판(edition)별 이미지. scripts/generate-resource-previews.ts 로 실제 PDF에서 만듭니다.
@@ -20,7 +24,10 @@ import ep02EnOg from "@/assets/images/resources/ep02-en-study-guide/og.jpg";
 export type ResourceEditionAssets = {
   cover: StaticImageData;
   /** "A look inside" 썸네일 (최대 2장) */
-  previews: { image: StaticImageData; altKey: "chapter" | "review" }[];
+  previews: {
+    image: StaticImageData;
+    altKey: "chapter" | "review" | "checklist";
+  }[];
   /** 1200×630 공유 이미지 */
   ogImage: StaticImageData;
 };
@@ -44,6 +51,16 @@ export const DOWNLOAD_RESOURCE_ASSETS: Record<
       { image: ep02EnPage10, altKey: "review" },
     ],
     ogImage: ep02EnOg,
+  },
+  "ep01-en-500-essential-korean-words-study-guide": {
+    cover: words500EnCover,
+    previews: [
+      // p.4: 1장 단어 본문 (단어·로마자·품사·뜻·예문·용법 메모)
+      { image: words500EnPage4, altKey: "chapter" },
+      // p.65: 빠른 참고표 & 체크리스트 (복습 진도 체크)
+      { image: words500EnPage65, altKey: "checklist" },
+    ],
+    ogImage: words500EnOg,
   },
 };
 

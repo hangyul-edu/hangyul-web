@@ -125,7 +125,6 @@
       "downloadCta": "Download Free PDF",
       "noSignUp": "No sign-up required",
       "pageCount": "{count, plural, one {# page} other {# pages}}",
-      "statSentences": "{count, plural, one {sentence} other {sentences}}",
       "statChapters": "{count, plural, one {topic chapter} other {topic chapters}}",
       "statPages": "{count, plural, one {page} other {pages}}",
       "statsLabel": "Study guide at a glance",
@@ -134,7 +133,14 @@
       "lookInside": "A look inside",
       "closingBody": "Free to download. Print it or study on your phone.",
       "opensInNewTab": "(opens in a new tab)",
-      "youtubeCta": "Watch on YouTube"
+      "youtubeCta": "Watch on YouTube",
+      "youtubeComingSoon": {
+        "eyebrow": "Coming soon",
+        "title": "The video lesson is coming soon",
+        "body": "The YouTube lesson for this study guide isn’t available yet. You can download the study guide now, and the video will be linked here once it’s ready.",
+        "confirm": "Got it",
+        "close": "Close"
+      }
     },
     "editionLanguages": {
       "en": {
@@ -147,6 +153,7 @@
       "everydaySentences": {
         "eyebrow": "Free Study Guide",
         "title": "100 Everyday Korean Sentences",
+        "statItems": "{count, plural, one {sentence} other {sentences}}",
         "closingTitle": "Keep the 100 sentences with you",
         "features": {
           "sentences": {
@@ -163,6 +170,30 @@
           "review": {
             "title": "Review and practice",
             "body": "Chapter reviews with answers, a quick review of all 100 sentences and a final learning checklist."
+          }
+        }
+      },
+      "essentialWords": {
+        "eyebrow": "Free Study Guide",
+        "title": "500 Essential Korean Words",
+        "statItems": "{count, plural, one {essential word} other {essential words}}",
+        "closingTitle": "Keep all 500 essential words with you",
+        "closingBody": "Download it free and review Korean vocabulary whenever you want.",
+        "features": {
+          "words": {
+            "title": "500 essential Korean words"
+          },
+          "sentences": {
+            "title": "A real example for every word",
+            "body": "See each word used in a natural Korean sentence, with romanization and an English translation."
+          },
+          "romanization": {
+            "title": "Meaning + romanization + usage notes",
+            "body": "Each word comes with romanization, its part of speech and a natural English meaning, plus a short usage note where it helps."
+          },
+          "review": {
+            "title": "Reviews + quick reference",
+            "body": "Test yourself after every chapter, check your answers, and track what you remember with the quick-reference checklist."
           }
         }
       }
@@ -191,6 +222,18 @@
         },
         "seoTitle": "100 Everyday Korean Sentences — EP02 Free Study Guide | Hangyul",
         "seoDescription": "Download the free Hangyul EP02 study guide: another 100 everyday Korean sentences with romanization, English meanings, conversations, chapter reviews, and practice."
+      },
+      "ep01En500EssentialWords": {
+        "description": "Build a practical Korean vocabulary foundation with 500 essential words, natural example sentences, romanization, usage notes, chapter reviews, and a quick-reference checklist.",
+        "topics": "Practical vocabulary for everyday life: people, food, numbers and money, getting around, shopping, feelings, health, work and more.",
+        "editionNotice": "This PDF is in English. Word meanings, example translations and usage notes are all written in English.",
+        "coverAlt": "Cover of the Hangyul study guide “500 Essential Korean Words” (일상 회화 필수 단어 500), Korean Vocabulary Mastery EP01, English edition",
+        "previews": {
+          "chapter": "Sample page from Chapter 1, First Words: each word shows Korean, romanization, part of speech, the English meaning, an example sentence and a usage note",
+          "checklist": "Sample quick reference and checklist page: each word with its meaning and boxes to tick as you review"
+        },
+        "seoTitle": "500 Essential Korean Words — Free Study Guide | Hangyul",
+        "seoDescription": "Download a free study guide with 500 essential Korean words, romanization, natural example sentences, usage notes, chapter reviews, and a quick-reference checklist."
       }
     },
     "notFound": {

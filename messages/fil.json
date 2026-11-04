@@ -125,7 +125,6 @@
       "downloadCta": "I-download ang Libreng PDF",
       "noSignUp": "Hindi kailangang mag-sign up",
       "pageCount": "{count, plural, one {# pahina} other {# pahina}}",
-      "statSentences": "{count, plural, one {pangungusap} other {pangungusap}}",
       "statChapters": "{count, plural, one {kabanata ayon sa paksa} other {kabanata ayon sa paksa}}",
       "statPages": "{count, plural, one {pahina} other {pahina}}",
       "statsLabel": "Sulyap sa study guide",
@@ -134,7 +133,14 @@
       "lookInside": "Silipin ang loob",
       "closingBody": "Libreng i-download. I-print ito o mag-aral sa iyong phone.",
       "opensInNewTab": "(magbubukas sa bagong tab)",
-      "youtubeCta": "Panoorin sa YouTube"
+      "youtubeCta": "Panoorin sa YouTube",
+      "youtubeComingSoon": {
+        "eyebrow": "Malapit na",
+        "title": "Malapit nang lumabas ang video lesson",
+        "body": "Wala pa ang YouTube lesson para sa study guide na ito. Puwede mo nang i-download ang study guide ngayon, at ilalagay namin dito ang link ng video kapag handa na ito.",
+        "confirm": "Sige",
+        "close": "Isara"
+      }
     },
     "editionLanguages": {
       "en": {
@@ -147,6 +153,7 @@
       "everydaySentences": {
         "eyebrow": "Libreng Study Guide",
         "title": "100 Pang-araw-araw na Pangungusap sa Korean",
+        "statItems": "{count, plural, one {pangungusap} other {pangungusap}}",
         "closingTitle": "Dalhin ang 100 pangungusap saan ka man magpunta",
         "features": {
           "sentences": {
@@ -163,6 +170,30 @@
           "review": {
             "title": "Review at pagsasanay",
             "body": "Chapter review na may mga sagot, mabilisang review ng lahat ng 100 pangungusap, at panghuling learning checklist."
+          }
+        }
+      },
+      "essentialWords": {
+        "eyebrow": "Libreng Study Guide",
+        "title": "500 Mahahalagang Salitang Korean",
+        "statItems": "{count, plural, one {mahalagang salita} other {mahahalagang salita}}",
+        "closingTitle": "Dalhin ang 500 mahahalagang salita saan ka man magpunta",
+        "closingBody": "I-download ito nang libre at mag-review ng Korean vocabulary kahit kailan mo gusto.",
+        "features": {
+          "words": {
+            "title": "500 mahahalagang salitang Korean"
+          },
+          "sentences": {
+            "title": "Totoong halimbawa para sa bawat salita",
+            "body": "Tingnan kung paano ginagamit ang bawat salita sa isang natural na pangungusap sa Korean, may romanization at salin sa Ingles."
+          },
+          "romanization": {
+            "title": "Kahulugan + romanization + paliwanag sa paggamit",
+            "body": "May romanization, bahagi ng pananalita, at natural na kahulugan sa Ingles ang bawat salita, at maikling paliwanag sa paggamit kapag nakakatulong."
+          },
+          "review": {
+            "title": "Review + quick reference",
+            "body": "Subukan ang sarili pagkatapos ng bawat kabanata, i-check ang mga sagot, at markahan sa quick-reference checklist ang mga natatandaan mo."
           }
         }
       }
@@ -191,6 +222,18 @@
         },
         "seoTitle": "100 Pang-araw-araw na Pangungusap sa Korean — EP02 Libreng Study Guide | Hangyul",
         "seoDescription": "I-download ang libreng Hangyul EP02 study guide na may isa pang 100 pang-araw-araw na pangungusap sa Korean, romanization, kahulugan sa Ingles, mga usapan, review sa bawat kabanata, at pagsasanay."
+      },
+      "ep01En500EssentialWords": {
+        "description": "Bumuo ng praktikal na pundasyon sa Korean vocabulary gamit ang 500 mahahalagang salita, natural na halimbawang pangungusap, romanization, paliwanag sa paggamit, chapter review, at quick-reference checklist.",
+        "topics": "Praktikal na bokabularyo para sa araw-araw: mga tao, pagkain, numero at pera, pagbiyahe, pamimili, damdamin, kalusugan, trabaho, at marami pa.",
+        "editionNotice": "Nasa Ingles ang PDF na ito. Nakasulat sa Ingles ang lahat ng kahulugan ng salita, salin ng mga halimbawa, at paliwanag sa paggamit.",
+        "coverAlt": "Cover ng Hangyul study guide na “500 Mahahalagang Salitang Korean” (일상 회화 필수 단어 500), Korean Vocabulary Mastery EP01, edisyong Ingles",
+        "previews": {
+          "chapter": "Halimbawang pahina mula sa Kabanata 1, Mga Unang Salita: bawat salita ay may Korean, romanization, bahagi ng pananalita, kahulugan sa Ingles, halimbawang pangungusap, at paliwanag sa paggamit",
+          "checklist": "Halimbawang pahina ng quick-reference checklist: bawat salita kasama ang kahulugan nito at mga kahong mamarkahan habang nagre-review"
+        },
+        "seoTitle": "500 Mahahalagang Salitang Korean — Libreng Study Guide | Hangyul",
+        "seoDescription": "I-download ang libreng study guide na may 500 mahahalagang salitang Korean, romanization, natural na halimbawang pangungusap, paliwanag sa paggamit, chapter review, at quick-reference checklist."
       }
     },
     "notFound": {

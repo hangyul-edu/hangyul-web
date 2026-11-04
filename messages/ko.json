@@ -125,7 +125,6 @@
       "downloadCta": "무료 PDF 다운로드",
       "noSignUp": "회원가입 없이 바로 다운로드",
       "pageCount": "{count, plural, other {#페이지}}",
-      "statSentences": "{count, plural, other {문장}}",
       "statChapters": "{count, plural, other {주제별 챕터}}",
       "statPages": "{count, plural, other {페이지}}",
       "statsLabel": "학습 가이드 한눈에 보기",
@@ -134,7 +133,14 @@
       "lookInside": "미리 보기",
       "closingBody": "무료로 받아서 인쇄하거나 휴대폰으로 편하게 공부해 보세요.",
       "opensInNewTab": "(새 탭에서 열림)",
-      "youtubeCta": "YouTube에서 보기"
+      "youtubeCta": "YouTube에서 보기",
+      "youtubeComingSoon": {
+        "eyebrow": "공개 예정",
+        "title": "영상 강의가 곧 공개돼요",
+        "body": "이 학습 가이드의 YouTube 강의는 아직 준비 중이에요. 학습 가이드는 지금 바로 다운로드할 수 있고, 영상이 준비되면 여기에 연결해 둘게요.",
+        "confirm": "확인",
+        "close": "닫기"
+      }
     },
     "editionLanguages": {
       "en": {
@@ -147,6 +153,7 @@
       "everydaySentences": {
         "eyebrow": "무료 학습 가이드",
         "title": "일상 한국어 100문장",
+        "statItems": "{count, plural, other {문장}}",
         "closingTitle": "100문장, 언제든 꺼내 보세요",
         "features": {
           "sentences": {
@@ -163,6 +170,30 @@
           "review": {
             "title": "복습과 연습",
             "body": "정답이 있는 챕터별 복습 문제, 100문장 한눈에 복습, 마지막 학습 체크리스트까지 담았어요."
+          }
+        }
+      },
+      "essentialWords": {
+        "eyebrow": "무료 학습 가이드",
+        "title": "일상 회화 필수 단어 500",
+        "statItems": "{count, plural, other {필수 단어}}",
+        "closingTitle": "필수 단어 500개, 언제든 꺼내 보세요",
+        "closingBody": "무료로 받아 두고 언제든 한국어 단어를 복습해 보세요.",
+        "features": {
+          "words": {
+            "title": "꼭 알아야 할 한국어 단어 500개"
+          },
+          "sentences": {
+            "title": "모든 단어에 실제 예문",
+            "body": "단어마다 자연스러운 한국어 예문으로 실제 쓰임을 보여 주고, 로마자 표기와 영어 번역도 함께 실었어요."
+          },
+          "romanization": {
+            "title": "뜻 + 로마자 표기 + 활용 설명",
+            "body": "단어마다 로마자 표기, 품사, 자연스러운 영어 뜻을 담고, 필요한 곳에는 실제 쓰임을 알려 주는 짧은 설명을 덧붙였어요."
+          },
+          "review": {
+            "title": "복습 + 한눈에 보는 단어표",
+            "body": "챕터마다 복습 문제를 풀고 정답을 확인한 다음, 마지막 단어표 체크리스트로 기억한 단어를 표시해 보세요."
           }
         }
       }
@@ -191,6 +222,18 @@
         },
         "seoTitle": "일상 한국어 100문장 — EP02 무료 학습 가이드 | 한귤",
         "seoDescription": "한귤 EP02 무료 학습 가이드를 다운로드하세요. 일상 한국어 100문장을 새로 담고, 로마자 표기, 영어 뜻, 대화문, 챕터별 복습, 연습 문제를 함께 실었습니다."
+      },
+      "ep01En500EssentialWords": {
+        "description": "필수 단어 500개로 실용적인 한국어 어휘의 기초를 다져 보세요. 자연스러운 예문, 로마자 표기, 활용 설명, 챕터별 복습, 한눈에 보는 단어표 체크리스트까지 담았어요.",
+        "topics": "사람, 음식, 숫자와 돈, 교통, 쇼핑, 감정, 건강, 일까지 일상생활에서 바로 쓰는 어휘를 익혀요.",
+        "editionNotice": "이 PDF는 영어판이에요. 단어 뜻, 예문 번역, 활용 설명이 모두 영어로 되어 있어요.",
+        "coverAlt": "한귤 학습 가이드 ‘일상 회화 필수 단어 500’ 표지, Korean Vocabulary Mastery EP01 영어판",
+        "previews": {
+          "chapter": "1장 ‘첫 단어’ 샘플 페이지: 단어마다 한국어, 로마자 표기, 품사, 영어 뜻, 예문, 활용 설명이 실려 있어요",
+          "checklist": "단어표·체크리스트 샘플 페이지: 단어와 뜻 옆에 복습할 때마다 표시하는 체크 칸이 있어요"
+        },
+        "seoTitle": "일상 회화 필수 단어 500 — 무료 학습 가이드 | 한귤",
+        "seoDescription": "필수 한국어 단어 500개를 로마자 표기, 자연스러운 예문, 활용 설명, 챕터별 복습, 단어표 체크리스트와 함께 담은 무료 학습 가이드를 다운로드하세요."
       }
     },
     "notFound": {

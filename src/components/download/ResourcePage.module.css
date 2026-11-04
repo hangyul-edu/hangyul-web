@@ -52,6 +52,21 @@
   /* 글자색은 본문(.main)에만 지정합니다. 헤더·푸터는 홈페이지처럼 기본 상속값을 씁니다. */
 }
 
+/*
+ * "영상 공개 예정" 안내 모달 (공통 AppModal, body로 포털됨).
+ * 모달 디자인은 그대로 두고, 이 페이지의 대비 규칙에 맞춰 작은 오렌지 글자(eyebrow)와
+ * 15px 버튼 글자가 4.5:1을 넘도록 진한 오렌지(--accent-text, 흰색 대비 4.56:1)를 씁니다.
+ * 홈페이지의 AppModal 색은 바뀌지 않습니다.
+ */
+.page [data-modal="youtube-coming-soon"] {
+  --primary-color: var(--accent-text);
+}
+
+.page [data-modal="youtube-coming-soon"] button:not([data-modal-close]):hover {
+  /* AppModal 기본 hover(#ff8533)는 흰 글자 대비가 낮아 더 진한 색으로 바꿉니다 (5.4:1). */
+  background: #b54700;
+}
+
 .srOnly {
   position: absolute;
   width: 1px;
@@ -453,6 +468,9 @@
   border: 1px solid var(--line-strong);
   font-size: 16px;
   font-weight: 600;
+  /* 영상이 아직 없는 자료는 링크 대신 <button>(안내 모달)이므로 같은 모양을 유지합니다. */
+  font-family: inherit;
+  cursor: pointer;
 }
 
 .secondaryButton:hover {

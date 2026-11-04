@@ -125,7 +125,6 @@
       "downloadCta": "Transferir PDF gratuito",
       "noSignUp": "Sem registo",
       "pageCount": "{count, plural, one {# página} other {# páginas}}",
-      "statSentences": "{count, plural, one {frase} other {frases}}",
       "statChapters": "{count, plural, one {capítulo temático} other {capítulos temáticos}}",
       "statPages": "{count, plural, one {página} other {páginas}}",
       "statsLabel": "O guia de estudo em resumo",
@@ -134,7 +133,14 @@
       "lookInside": "Espreite o interior",
       "closingBody": "Transferência gratuita. Imprima-o ou estude no telemóvel.",
       "opensInNewTab": "(abre num novo separador)",
-      "youtubeCta": "Ver no YouTube"
+      "youtubeCta": "Ver no YouTube",
+      "youtubeComingSoon": {
+        "eyebrow": "Brevemente",
+        "title": "A aula em vídeo chega em breve",
+        "body": "A aula no YouTube deste guia de estudo ainda não está disponível. Já pode transferir o guia, e o vídeo ficará ligado aqui assim que estiver pronto.",
+        "confirm": "Entendi",
+        "close": "Fechar"
+      }
     },
     "editionLanguages": {
       "en": {
@@ -147,6 +153,7 @@
       "everydaySentences": {
         "eyebrow": "Guia de estudo gratuito",
         "title": "100 frases coreanas do dia a dia",
+        "statItems": "{count, plural, one {frase} other {frases}}",
         "closingTitle": "Leve as 100 frases sempre consigo",
         "features": {
           "sentences": {
@@ -163,6 +170,30 @@
           "review": {
             "title": "Revisão e prática",
             "body": "Revisões por capítulo com soluções, uma revisão rápida das 100 frases e uma lista final de verificação da aprendizagem."
+          }
+        }
+      },
+      "essentialWords": {
+        "eyebrow": "Guia de estudo gratuito",
+        "title": "500 palavras essenciais em coreano",
+        "statItems": "{count, plural, one {palavra essencial} other {palavras essenciais}}",
+        "closingTitle": "Leve as 500 palavras essenciais sempre consigo",
+        "closingBody": "Transfira-o gratuitamente e reveja vocabulário coreano sempre que quiser.",
+        "features": {
+          "words": {
+            "title": "500 palavras essenciais em coreano"
+          },
+          "sentences": {
+            "title": "Um exemplo real para cada palavra",
+            "body": "Veja cada palavra usada numa frase coreana natural, com romanização e tradução para inglês."
+          },
+          "romanization": {
+            "title": "Significado + romanização + notas de utilização",
+            "body": "Cada palavra tem romanização, classe gramatical e um significado natural em inglês e, quando ajuda, uma breve nota sobre como se usa."
+          },
+          "review": {
+            "title": "Revisões + referência rápida",
+            "body": "Teste-se no fim de cada capítulo, confira as soluções e acompanhe o que já sabe com a lista de referência rápida."
           }
         }
       }
@@ -191,6 +222,18 @@
         },
         "seoTitle": "100 frases coreanas do dia a dia — EP02 Guia de estudo gratuito | Hangyul",
         "seoDescription": "Transfira gratuitamente o guia de estudo Hangyul EP02 com mais 100 frases coreanas do dia a dia, romanização, significados em inglês, diálogos, revisões por capítulo e exercícios."
+      },
+      "ep01En500EssentialWords": {
+        "description": "Construa uma base prática de vocabulário coreano com 500 palavras essenciais, frases de exemplo naturais, romanização, notas de utilização, revisões por capítulo e uma lista de referência rápida.",
+        "topics": "Vocabulário prático para o dia a dia: pessoas, comida, números e dinheiro, transportes, compras, emoções, saúde, trabalho e muito mais.",
+        "editionNotice": "Este PDF está em inglês. Os significados das palavras, as traduções dos exemplos e as notas de utilização estão todos escritos em inglês.",
+        "coverAlt": "Capa do guia de estudo Hangyul «500 palavras essenciais em coreano» (일상 회화 필수 단어 500), Korean Vocabulary Mastery EP01, edição em inglês",
+        "previews": {
+          "chapter": "Página de exemplo do capítulo 1, Primeiras palavras: cada palavra mostra o coreano, a romanização, a classe gramatical, o significado em inglês, uma frase de exemplo e uma nota de utilização",
+          "checklist": "Página de exemplo da referência rápida: cada palavra com o seu significado e caixas para assinalar à medida que revê"
+        },
+        "seoTitle": "500 palavras essenciais em coreano — Guia de estudo gratuito | Hangyul",
+        "seoDescription": "Transfira gratuitamente um guia de estudo com 500 palavras essenciais em coreano, romanização, frases de exemplo naturais, notas de utilização, revisões por capítulo e uma lista de referência rápida."
       }
     },
     "notFound": {

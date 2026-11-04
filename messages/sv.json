@@ -125,7 +125,6 @@
       "downloadCta": "Ladda ner gratis PDF",
       "noSignUp": "Ingen registrering krävs",
       "pageCount": "{count, plural, one {# sida} other {# sidor}}",
-      "statSentences": "{count, plural, one {mening} other {meningar}}",
       "statChapters": "{count, plural, one {temakapitel} other {temakapitel}}",
       "statPages": "{count, plural, one {sida} other {sidor}}",
       "statsLabel": "Studieguiden i korthet",
@@ -134,7 +133,14 @@
       "lookInside": "En titt inuti",
       "closingBody": "Gratis att ladda ner. Skriv ut den eller plugga i mobilen.",
       "opensInNewTab": "(öppnas i en ny flik)",
-      "youtubeCta": "Se på YouTube"
+      "youtubeCta": "Se på YouTube",
+      "youtubeComingSoon": {
+        "eyebrow": "Kommer snart",
+        "title": "Videolektionen kommer snart",
+        "body": "YouTube-lektionen till den här studieguiden är inte tillgänglig än. Du kan ladda ner studieguiden redan nu, och videon länkas här så snart den är klar.",
+        "confirm": "Okej",
+        "close": "Stäng"
+      }
     },
     "editionLanguages": {
       "en": {
@@ -147,6 +153,7 @@
       "everydaySentences": {
         "eyebrow": "Gratis studieguide",
         "title": "100 koreanska vardagsmeningar",
+        "statItems": "{count, plural, one {mening} other {meningar}}",
         "closingTitle": "Ha de 100 meningarna alltid med dig",
         "features": {
           "sentences": {
@@ -163,6 +170,30 @@
           "review": {
             "title": "Repetition och övning",
             "body": "Kapitelrepetitioner med facit, en snabb repetition av alla 100 meningar och en avslutande checklista för inlärningen."
+          }
+        }
+      },
+      "essentialWords": {
+        "eyebrow": "Gratis studieguide",
+        "title": "500 viktiga koreanska ord",
+        "statItems": "{count, plural, one {viktigt ord} other {viktiga ord}}",
+        "closingTitle": "Ha alla 500 orden alltid med dig",
+        "closingBody": "Ladda ner den gratis och repetera koreanska ord när du vill.",
+        "features": {
+          "words": {
+            "title": "500 viktiga koreanska ord"
+          },
+          "sentences": {
+            "title": "Ett riktigt exempel för varje ord",
+            "body": "Se varje ord i en naturlig koreansk mening, med romanisering och engelsk översättning."
+          },
+          "romanization": {
+            "title": "Betydelse + romanisering + användningstips",
+            "body": "Varje ord har romanisering, ordklass och en naturlig engelsk betydelse, och där det hjälper ett kort tips om hur det används."
+          },
+          "review": {
+            "title": "Repetition + snabböversikt",
+            "body": "Testa dig själv efter varje kapitel, kolla facit och bocka av det du kan i snabböversiktens checklista."
           }
         }
       }
@@ -191,6 +222,18 @@
         },
         "seoTitle": "100 koreanska vardagsmeningar – EP02 Gratis studieguide | Hangyul",
         "seoDescription": "Ladda ner Hangyuls kostnadsfria studieguide till EP02 med ytterligare 100 koreanska vardagsmeningar, romanisering, engelska betydelser, dialoger, kapitelrepetitioner och övningar."
+      },
+      "ep01En500EssentialWords": {
+        "description": "Bygg en praktisk grund i koreanskt ordförråd med 500 viktiga ord, naturliga exempelmeningar, romanisering, användningstips, kapitelrepetitioner och en snabböversikt med checklista.",
+        "topics": "Praktiska ord för vardagen: människor, mat, siffror och pengar, att ta sig fram, shopping, känslor, hälsa, jobb och mycket mer.",
+        "editionNotice": "Den här PDF:en är på engelska. Ordens betydelser, översättningarna av exemplen och användningstipsen är alla skrivna på engelska.",
+        "coverAlt": "Omslaget till Hangyuls studieguide ”500 viktiga koreanska ord” (일상 회화 필수 단어 500), Korean Vocabulary Mastery EP01, engelsk utgåva",
+        "previews": {
+          "chapter": "Exempelsida från kapitel 1, Första orden: varje ord visas med koreanska, romanisering, ordklass, engelsk betydelse, en exempelmening och ett användningstips",
+          "checklist": "Exempelsida från snabböversikten: varje ord med sin betydelse och rutor att bocka av när du repeterar"
+        },
+        "seoTitle": "500 viktiga koreanska ord – Gratis studieguide | Hangyul",
+        "seoDescription": "Ladda ner en gratis studieguide med 500 viktiga koreanska ord, romanisering, naturliga exempelmeningar, användningstips, kapitelrepetitioner och en snabböversikt med checklista."
       }
     },
     "notFound": {

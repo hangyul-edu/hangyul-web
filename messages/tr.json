@@ -125,7 +125,6 @@
       "downloadCta": "PDF'yi ücretsiz indir",
       "noSignUp": "Kayıt gerekmez",
       "pageCount": "{count, plural, one {# sayfa} other {# sayfa}}",
-      "statSentences": "{count, plural, one {cümle} other {cümle}}",
       "statChapters": "{count, plural, one {tematik bölüm} other {tematik bölüm}}",
       "statPages": "{count, plural, one {sayfa} other {sayfa}}",
       "statsLabel": "Rakamlarla çalışma rehberi",
@@ -134,7 +133,14 @@
       "lookInside": "Rehbere göz at",
       "closingBody": "Ücretsiz indirilebilir. Çıktısını al ya da telefonundan çalış.",
       "opensInNewTab": "(yeni sekmede açılır)",
-      "youtubeCta": "YouTube'da izle"
+      "youtubeCta": "YouTube'da izle",
+      "youtubeComingSoon": {
+        "eyebrow": "Çok yakında",
+        "title": "Video ders çok yakında",
+        "body": "Bu çalışma rehberinin YouTube dersi henüz yayında değil. Rehberi şimdi indirebilirsin; video hazır olduğunda bağlantısını buraya ekleyeceğiz.",
+        "confirm": "Tamam",
+        "close": "Kapat"
+      }
     },
     "editionLanguages": {
       "en": {
@@ -147,6 +153,7 @@
       "everydaySentences": {
         "eyebrow": "Ücretsiz çalışma rehberi",
         "title": "Günlük Hayattan 100 Korece Cümle",
+        "statItems": "{count, plural, one {cümle} other {cümle}}",
         "closingTitle": "100 cümle hep yanında olsun",
         "features": {
           "sentences": {
@@ -163,6 +170,30 @@
           "review": {
             "title": "Tekrar ve pratik",
             "body": "Cevaplı bölüm tekrarları, 100 cümlenin tamamı için hızlı bir tekrar ve son bir öğrenme kontrol listesi."
+          }
+        }
+      },
+      "essentialWords": {
+        "eyebrow": "Ücretsiz çalışma rehberi",
+        "title": "500 Temel Korece Kelime",
+        "statItems": "{count, plural, one {temel kelime} other {temel kelime}}",
+        "closingTitle": "500 temel kelime hep yanında olsun",
+        "closingBody": "Ücretsiz indir, Korece kelimeleri istediğin zaman tekrar et.",
+        "features": {
+          "words": {
+            "title": "500 temel Korece kelime"
+          },
+          "sentences": {
+            "title": "Her kelimeye gerçek bir örnek",
+            "body": "Her kelimeyi doğal bir Korece cümlede, okunuşu ve İngilizce çevirisiyle birlikte gör."
+          },
+          "romanization": {
+            "title": "Anlam + okunuş + kullanım notları",
+            "body": "Her kelimede okunuş, kelime türü ve doğal bir İngilizce anlam var; gerektiğinde nasıl kullanıldığını anlatan kısa bir not da ekli."
+          },
+          "review": {
+            "title": "Tekrar + hızlı başvuru",
+            "body": "Her bölümden sonra kendini sına, cevaplarını kontrol et ve hızlı başvuru listesinde hatırladıklarını işaretle."
           }
         }
       }
@@ -191,6 +222,18 @@
         },
         "seoTitle": "Günlük Hayattan 100 Korece Cümle — EP02 Ücretsiz Çalışma Rehberi | Hangyul",
         "seoDescription": "Ücretsiz Hangyul EP02 çalışma rehberini indir: Latin harfli okunuş, İngilizce anlamlar, diyaloglar, bölüm tekrarları ve alıştırmalarla günlük hayattan 100 yeni Korece cümle."
+      },
+      "ep01En500EssentialWords": {
+        "description": "500 temel kelimeyle pratik bir Korece kelime dağarcığının temelini at: doğal örnek cümleler, okunuş, kullanım notları, bölüm tekrarları ve işaretlenebilir bir hızlı başvuru listesi.",
+        "topics": "Günlük hayat için pratik kelimeler: insanlar, yemek, sayılar ve para, ulaşım, alışveriş, duygular, sağlık, iş ve daha fazlası.",
+        "editionNotice": "Bu PDF İngilizcedir. Kelime anlamları, örnek çevirileri ve kullanım notlarının tamamı İngilizce yazılmıştır.",
+        "coverAlt": "Hangyul çalışma rehberi “500 Temel Korece Kelime” (일상 회화 필수 단어 500) kapağı, Korean Vocabulary Mastery EP01, İngilizce sürüm",
+        "previews": {
+          "chapter": "1. bölümden (İlk Kelimeler) örnek sayfa: her kelimede Korecesi, okunuşu, kelime türü, İngilizce anlamı, bir örnek cümle ve bir kullanım notu yer alıyor",
+          "checklist": "Hızlı başvuru listesinden örnek sayfa: her kelime anlamıyla birlikte ve tekrar ettikçe işaretlenecek kutucuklarla"
+        },
+        "seoTitle": "500 Temel Korece Kelime — Ücretsiz Çalışma Rehberi | Hangyul",
+        "seoDescription": "500 temel Korece kelime, okunuş, doğal örnek cümleler, kullanım notları, bölüm tekrarları ve hızlı başvuru listesi içeren ücretsiz çalışma rehberini indir."
       }
     },
     "notFound": {

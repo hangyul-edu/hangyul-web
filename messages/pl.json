@@ -125,7 +125,6 @@
       "downloadCta": "Pobierz darmowy PDF",
       "noSignUp": "Bez rejestracji",
       "pageCount": "{count, plural, one {# strona} few {# strony} many {# stron} other {# strony}}",
-      "statSentences": "{count, plural, one {zdanie} few {zdania} many {zdań} other {zdania}}",
       "statChapters": "{count, plural, one {rozdział tematyczny} few {rozdziały tematyczne} many {rozdziałów tematycznych} other {rozdziału tematycznego}}",
       "statPages": "{count, plural, one {strona} few {strony} many {stron} other {strony}}",
       "statsLabel": "Materiały w pigułce",
@@ -134,7 +133,14 @@
       "lookInside": "Zajrzyj do środka",
       "closingBody": "Do pobrania za darmo. Wydrukuj albo ucz się na telefonie.",
       "opensInNewTab": "(otwiera się w nowej karcie)",
-      "youtubeCta": "Obejrzyj na YouTube"
+      "youtubeCta": "Obejrzyj na YouTube",
+      "youtubeComingSoon": {
+        "eyebrow": "Już wkrótce",
+        "title": "Lekcja wideo będzie dostępna wkrótce",
+        "body": "Lekcja na YouTube do tych materiałów nie jest jeszcze dostępna. Materiały możesz pobrać już teraz, a link do filmu pojawi się tutaj, gdy tylko będzie gotowy.",
+        "confirm": "Rozumiem",
+        "close": "Zamknij"
+      }
     },
     "editionLanguages": {
       "en": {
@@ -147,6 +153,7 @@
       "everydaySentences": {
         "eyebrow": "Darmowe materiały do nauki",
         "title": "100 codziennych zdań po koreańsku",
+        "statItems": "{count, plural, one {zdanie} few {zdania} many {zdań} other {zdania}}",
         "closingTitle": "Miej te 100 zdań zawsze przy sobie",
         "features": {
           "sentences": {
@@ -163,6 +170,30 @@
           "review": {
             "title": "Powtórka i ćwiczenia",
             "body": "Powtórki rozdziałów z odpowiedziami, szybka powtórka wszystkich 100 zdań i końcowa lista kontrolna postępów."
+          }
+        }
+      },
+      "essentialWords": {
+        "eyebrow": "Darmowe materiały do nauki",
+        "title": "500 najważniejszych słów po koreańsku",
+        "statItems": "{count, plural, one {najważniejsze słowo} few {najważniejsze słowa} many {najważniejszych słów} other {najważniejszego słowa}}",
+        "closingTitle": "Miej wszystkie 500 słów zawsze przy sobie",
+        "closingBody": "Pobierz za darmo i powtarzaj koreańskie słownictwo, kiedy tylko chcesz.",
+        "features": {
+          "words": {
+            "title": "500 najważniejszych koreańskich słów"
+          },
+          "sentences": {
+            "title": "Prawdziwy przykład do każdego słowa",
+            "body": "Zobacz każde słowo w naturalnym koreańskim zdaniu, z latynizacją i tłumaczeniem na angielski."
+          },
+          "romanization": {
+            "title": "Znaczenie + latynizacja + wskazówki",
+            "body": "Przy każdym słowie znajdziesz latynizację, część mowy i naturalne angielskie znaczenie, a tam, gdzie to pomaga – krótką wskazówkę dotyczącą użycia."
+          },
+          "review": {
+            "title": "Powtórki + ściąga",
+            "body": "Sprawdź się po każdym rozdziale, porównaj odpowiedzi i zaznaczaj na liście-ściądze słowa, które już pamiętasz."
           }
         }
       }
@@ -191,6 +222,18 @@
         },
         "seoTitle": "100 codziennych zdań po koreańsku – EP02 Darmowe materiały do nauki | Hangyul",
         "seoDescription": "Pobierz darmowe materiały do nauki Hangyul do EP02: kolejne 100 codziennych zdań po koreańsku z latynizacją, znaczeniami po angielsku, dialogami, powtórkami rozdziałów i ćwiczeniami."
+      },
+      "ep01En500EssentialWords": {
+        "description": "Zbuduj praktyczne podstawy koreańskiego słownictwa: 500 najważniejszych słów, naturalne przykładowe zdania, latynizacja, wskazówki dotyczące użycia, powtórki rozdziałów i ściąga z listą kontrolną.",
+        "topics": "Praktyczne słownictwo na co dzień: ludzie, jedzenie, liczby i pieniądze, poruszanie się po mieście, zakupy, uczucia, zdrowie, praca i nie tylko.",
+        "editionNotice": "Ten plik PDF jest w języku angielskim. Znaczenia słów, tłumaczenia przykładów i wskazówki dotyczące użycia są w całości napisane po angielsku.",
+        "coverAlt": "Okładka materiałów do nauki Hangyul „500 najważniejszych słów po koreańsku” (일상 회화 필수 단어 500), Korean Vocabulary Mastery EP01, wydanie angielskie",
+        "previews": {
+          "chapter": "Przykładowa strona z rozdziału 1, Pierwsze słowa: przy każdym słowie podano koreański zapis, latynizację, część mowy, angielskie znaczenie, przykładowe zdanie i wskazówkę dotyczącą użycia",
+          "checklist": "Przykładowa strona ściągi z listą kontrolną: każde słowo ze znaczeniem i polami do zaznaczania podczas powtórek"
+        },
+        "seoTitle": "500 najważniejszych słów po koreańsku – Darmowe materiały do nauki | Hangyul",
+        "seoDescription": "Pobierz darmowe materiały do nauki: 500 najważniejszych słów po koreańsku z latynizacją, naturalnymi przykładami, wskazówkami, powtórkami rozdziałów i listą kontrolną."
       }
     },
     "notFound": {

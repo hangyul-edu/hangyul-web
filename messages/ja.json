@@ -125,7 +125,6 @@
       "downloadCta": "無料PDFをダウンロード",
       "noSignUp": "会員登録不要",
       "pageCount": "{count, plural, other {#ページ}}",
-      "statSentences": "{count, plural, other {フレーズ}}",
       "statChapters": "{count, plural, other {テーマ別チャプター}}",
       "statPages": "{count, plural, other {ページ}}",
       "statsLabel": "学習ガイドの概要",
@@ -134,7 +133,14 @@
       "lookInside": "中身をチェック",
       "closingBody": "無料でダウンロードできます。印刷しても、スマホで学習してもOKです。",
       "opensInNewTab": "（新しいタブで開きます）",
-      "youtubeCta": "YouTubeで見る"
+      "youtubeCta": "YouTubeで見る",
+      "youtubeComingSoon": {
+        "eyebrow": "近日公開",
+        "title": "動画レッスンは近日公開予定です",
+        "body": "この学習ガイドのYouTubeレッスンはまだ公開されていません。学習ガイドは今すぐダウンロードでき、動画の準備ができしだい、ここにリンクします。",
+        "confirm": "OK",
+        "close": "閉じる"
+      }
     },
     "editionLanguages": {
       "en": {
@@ -147,6 +153,7 @@
       "everydaySentences": {
         "eyebrow": "無料学習ガイド",
         "title": "日常で使える韓国語100フレーズ",
+        "statItems": "{count, plural, other {フレーズ}}",
         "closingTitle": "100フレーズをいつも手元に",
         "features": {
           "sentences": {
@@ -163,6 +170,30 @@
           "review": {
             "title": "復習と練習",
             "body": "解答付きのチャプター復習に加え、全100フレーズのクイック復習と仕上げの学習チェックリストも収録。"
+          }
+        }
+      },
+      "essentialWords": {
+        "eyebrow": "無料学習ガイド",
+        "title": "日常会話で使う韓国語必須単語500",
+        "statItems": "{count, plural, other {必須単語}}",
+        "closingTitle": "必須単語500をいつも手元に",
+        "closingBody": "無料でダウンロードして、好きなときに韓国語の単語を復習しましょう。",
+        "features": {
+          "words": {
+            "title": "韓国語の必須単語500"
+          },
+          "sentences": {
+            "title": "すべての単語に実用的な例文",
+            "body": "各単語が自然な韓国語の文でどう使われるかを、ローマ字表記と英訳付きで確認できます。"
+          },
+          "romanization": {
+            "title": "意味＋ローマ字表記＋使い方のポイント",
+            "body": "各単語にローマ字表記、品詞、自然な英語の意味を掲載。必要に応じて、実際の使い方がわかる短いポイントも添えています。"
+          },
+          "review": {
+            "title": "復習＋単語一覧",
+            "body": "チャプターごとに復習問題を解いて答え合わせをしたら、巻末の単語一覧チェックリストで覚えた単語に印を付けましょう。"
           }
         }
       }
@@ -191,6 +222,18 @@
         },
         "seoTitle": "日常で使える韓国語100フレーズ — EP02 無料学習ガイド | Hangyul",
         "seoDescription": "Hangyul EP02の無料学習ガイドをダウンロード。日常で使える韓国語をさらに100フレーズ、ローマ字表記、英訳、会話例、チャプターごとの復習、練習問題とともに収録しています。"
+      },
+      "ep01En500EssentialWords": {
+        "description": "必須単語500で、実用的な韓国語の語彙の土台を作りましょう。自然な例文、ローマ字表記、使い方のポイント、チャプターごとの復習、単語一覧チェックリストを収録しています。",
+        "topics": "人、食べ物、数字とお金、交通、買い物、気持ち、健康、仕事など、毎日の生活ですぐに使える語彙が身につきます。",
+        "editionNotice": "このPDFは英語版です。単語の意味、例文の訳、使い方のポイントはすべて英語で書かれています。",
+        "coverAlt": "Hangyul学習ガイド『日常会話で使う韓国語必須単語500』（일상 회화 필수 단어 500）の表紙。Korean Vocabulary Mastery EP01、英語版",
+        "previews": {
+          "chapter": "第1章「最初の単語」のサンプルページ。各単語に韓国語、ローマ字表記、品詞、英語の意味、例文、使い方のポイントを掲載",
+          "checklist": "単語一覧・チェックリストのサンプルページ。各単語と意味の横に、復習のたびに印を付けるチェック欄があります"
+        },
+        "seoTitle": "日常会話で使う韓国語必須単語500 — 無料学習ガイド | Hangyul",
+        "seoDescription": "韓国語の必須単語500を、ローマ字表記、自然な例文、使い方のポイント、チャプターごとの復習、単語一覧チェックリストとともに収録した無料学習ガイドをダウンロード。"
       }
     },
     "notFound": {

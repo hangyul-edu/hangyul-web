@@ -15,6 +15,7 @@ import {
   PlayIcon,
 } from "./ResourceIcons";
 import { ResourcePageView, TrackedLink } from "./ResourceTracking";
+import YouTubeComingSoonButton from "./YouTubeComingSoonButton";
 import styles from "./ResourcePage.module.css";
 
 /*
@@ -81,6 +82,13 @@ export default async function ResourceDownloadPage({
   const fileHref = resourceFilePath(edition.slug);
   // 연결된 영상이 이 에피소드의 영상일 때만 판 문구에 에피소드가 들어간 버튼 문구가 있습니다.
   const youtubeCta = tCopy.has("youtubeCta") ? tCopy("youtubeCta") : t("youtubeCta");
+  // 판 언어 안내·마무리 문구는 기본값을 쓰되, 자료에 맞는 문구가 있으면 그것을 씁니다.
+  const editionNotice = tCopy.has("editionNotice")
+    ? tCopy("editionNotice")
+    : tEdition("notice");
+  const closingBody = tFormat.has("closingBody")
+    ? tFormat("closingBody")
+    : t("closingBody");
   const seriesLine = [family.series, family.episode].filter(Boolean).join(" · ");
 
   /*
@@ -100,9 +108,10 @@ export default async function ResourceDownloadPage({
   ].join(" · ");
 
   const stats = [
-    family.sentenceCount != null && {
-      value: family.sentenceCount,
-      label: t("statSentences", { count: family.sentenceCount }),
+    family.itemCount != null && {
+      value: family.itemCount,
+      // 학습 단위 이름(문장, 단어…)은 형식마다 다릅니다.
+      label: tFormat("statItems", { count: family.itemCount }),
     },
     family.chapterCount != null && {
       value: family.chapterCount,
@@ -190,16 +199,16 @@ export default async function ResourceDownloadPage({
             {languageMismatch && (
               <p className={styles.editionNotice} data-testid="edition-notice">
                 <InfoIcon />
-                <span>{tEdition("notice")}</span>
+                <span>{editionNotice}</span>
               </p>
             )}
 
             <div className={styles.actions}>
               {downloadLink("hero")}
 
-              {family.youtubeUrl && (
+              {family.youtube.status === "available" && (
                 <TrackedLink
-                  href={family.youtubeUrl}
+                  href={family.youtube.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.secondaryButton}
@@ -213,6 +222,23 @@ export default async function ResourceDownloadPage({
                   <span>{youtubeCta}</span>
                   {newTab}
                 </TrackedLink>
+              )}
+
+              {family.youtube.status === "comingSoon" && (
+                <YouTubeComingSoonButton
+                  label={youtubeCta}
+                  className={styles.secondaryButton}
+                  slug={edition.slug}
+                  uiLanguage={uiLanguage}
+                  placement="hero"
+                  dialog={{
+                    eyebrow: t("youtubeComingSoon.eyebrow"),
+                    title: t("youtubeComingSoon.title"),
+                    body: t("youtubeComingSoon.body"),
+                    confirm: t("youtubeComingSoon.confirm"),
+                    close: t("youtubeComingSoon.close"),
+                  }}
+                />
               )}
             </div>
 
@@ -250,10 +276,13 @@ export default async function ResourceDownloadPage({
                       {tFormat(`features.${feature}.title`)}
                     </h3>
                     <p className={styles.featureBody}>
-                      {/* 다루는 주제는 에피소드마다 다르므로 판 문구에서 가져옵니다. */}
-                      {feature === "sentences"
-                        ? tCopy("topics")
-                        : tFormat(`features.${feature}.body`)}
+                      {/*
+                       * 형식 문구에 본문이 없는 항목은 에피소드마다 다른 "다루는 주제"이므로
+                       * 판 문구(topics)에서 가져옵니다.
+                       */}
+                      {tFormat.has(`features.${feature}.body`)
+                        ? tFormat(`features.${feature}.body`)
+                        : tCopy("topics")}
                     </p>
                   </div>
                 </li>
@@ -290,7 +319,7 @@ export default async function ResourceDownloadPage({
             <h2 id="closing-title" className={styles.closingTitle}>
               {tFormat("closingTitle")}
             </h2>
-            <p className={styles.closingBody}>{t("closingBody")}</p>
+            <p className={styles.closingBody}>{closingBody}</p>
           </div>
           {downloadLink("closing")}
         </div>

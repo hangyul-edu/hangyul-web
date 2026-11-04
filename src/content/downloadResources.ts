@@ -16,10 +16,12 @@
  *   1. PDF를 src/assets/downloads/ 에 넣습니다.
  *   2. 미리보기 이미지 생성:
  *        npx tsx scripts/generate-resource-previews.ts <PDF> <slug> <본문 페이지> <복습 페이지>
- *      (EP01: 3 21, EP02: 3 10 — 1장 본문 + A–D 네 문제가 다 보이는 챕터 복습)
+ *      (EP01: 3 21, EP02: 3 10 — 1장 본문 + A–D 네 문제가 다 보이는 챕터 복습,
+ *       500단어 EP01: 4 65 — 1장 단어 본문 + 빠른 참고표·체크리스트)
  *   3. 아래 가족의 editions에 판을 추가하고, downloadResourceAssets.ts에 이미지를 등록합니다.
  *   4. messages/*.json 의 ResourceDownload.resources.<messagesKey> 에 판 문구를,
- *      (description, topics, coverAlt, previews, seoTitle, seoDescription, 선택: youtubeCta)
+ *      (description, topics, coverAlt, previews, seoTitle, seoDescription,
+ *       선택: youtubeCta, editionNotice — 판 언어 안내를 이 자료에 맞게 바꿀 때)
  *      (처음 쓰는 판 언어라면) ResourceDownload.editionLanguages.<언어> 에 판 이름을 추가합니다.
  *      제목·What's inside 등 형식 공통 문구는 ResourceDownload.formats.<formatMessagesKey> 에 있습니다.
  *      npm run validate:i18n 이 32개 로케일 누락을 잡아 줍니다.
@@ -32,6 +34,7 @@
  */
 
 export type ResourceFeatureIcon =
+  | "words"
   | "sentences"
   | "conversation"
   | "romanization"
@@ -63,15 +66,25 @@ export type ResourceFamily = {
   series?: string;
   episode?: string;
   /**
-   * YouTube 버튼 링크. 공유 컴포넌트에 하드코딩하지 않고 여기서만 정합니다.
+   * YouTube 버튼 상태. 공유 컴포넌트에 하드코딩하지 않고 여기서만 정합니다.
+   *  - available: 버튼이 영상(url)을 새 탭으로 엽니다.
+   *  - comingSoon: 아직 연결된 영상이 없습니다. 버튼은 그대로 보이고, 누르면
+   *    "곧 공개됩니다" 안내 모달(common.youtubeComingSoon)을 엽니다. 다른 영상으로 대신 연결하지 않습니다.
    * 버튼 문구는 판 문구에 youtubeCta가 있으면 그것(예: "Watch EP.01 on YouTube"),
    * 없으면 일반 문구(common.youtubeCta, "Watch on YouTube")를 씁니다.
    */
-  youtubeUrl?: string;
-  /** 모든 판에 공통인 사실 (판마다 다른 페이지 수는 판에 둡니다) */
-  sentenceCount?: number;
+  youtube: { status: "available"; url: string } | { status: "comingSoon" };
+  /**
+   * 모든 판에 공통인 사실 (판마다 다른 페이지 수는 판에 둡니다).
+   * itemCount는 가이드의 학습 단위 수(문장 100개, 단어 500개…)이고,
+   * 그 단위의 이름은 형식 문구 formats.<formatMessagesKey>.statItems 에 있습니다.
+   */
+  itemCount?: number;
   chapterCount?: number;
-  /** "What's inside" 항목 (아이콘 + messages의 features.<icon>) */
+  /**
+   * "What's inside" 항목 (아이콘 + formats.<formatMessagesKey>.features.<icon>).
+   * 형식 문구에 body가 없는 항목은 판 문구의 topics(에피소드마다 다른 주제)를 본문으로 씁니다.
+   */
   features: ResourceFeatureIcon[];
   format: "PDF";
   /** 판 언어 → 판. 실제로 존재하는 PDF만 등록합니다. */
@@ -84,8 +97,11 @@ export const DOWNLOAD_RESOURCE_FAMILIES = [
     formatMessagesKey: "everydaySentences",
     series: "Korean While You Sleep",
     episode: "EP01",
-    youtubeUrl: "https://www.youtube.com/watch?v=HGa7xurxL5c",
-    sentenceCount: 100,
+    youtube: {
+      status: "available",
+      url: "https://www.youtube.com/watch?v=HGa7xurxL5c",
+    },
+    itemCount: 100,
     chapterCount: 10,
     features: ["sentences", "conversation", "romanization", "review"],
     format: "PDF",
@@ -107,8 +123,8 @@ export const DOWNLOAD_RESOURCE_FAMILIES = [
     formatMessagesKey: "everydaySentences",
     series: "Korean While You Sleep",
     episode: "EP02",
-    youtubeUrl: "https://youtu.be/eMv0Tsq08SQ",
-    sentenceCount: 100,
+    youtube: { status: "available", url: "https://youtu.be/eMv0Tsq08SQ" },
+    itemCount: 100,
     chapterCount: 10,
     features: ["sentences", "conversation", "romanization", "review"],
     format: "PDF",
@@ -121,6 +137,31 @@ export const DOWNLOAD_RESOURCE_FAMILIES = [
         downloadFileName:
           "Hangyul_EP02_100_Everyday_Korean_Sentences_Study_Guide_EN.pdf",
         pageCount: 43,
+      },
+    },
+  },
+  {
+    id: "vocabulary-mastery-ep01",
+    formatMessagesKey: "essentialWords",
+    series: "Korean Vocabulary Mastery",
+    episode: "EP01",
+    // 이 가이드의 영상은 아직 없습니다. 다른 에피소드 영상으로 대신 연결하지 않습니다.
+    youtube: { status: "comingSoon" },
+    // 001–500, 20개 챕터 × 25단어 (PDF 목차·빠른 참고표 기준)
+    itemCount: 500,
+    chapterCount: 20,
+    features: ["words", "sentences", "romanization", "review"],
+    format: "PDF",
+    editions: {
+      en: {
+        slug: "ep01-en-500-essential-korean-words-study-guide",
+        language: "en",
+        messagesKey: "ep01En500EssentialWords",
+        file: "EP01_EN_500_Essential_Korean_Words_Study_Guide.pdf",
+        downloadFileName:
+          "Hangyul_EP01_500_Essential_Korean_Words_Study_Guide_EN.pdf",
+        // 실제 PDF 페이지 수 (표지·뒷표지 포함, pdfinfo 기준)
+        pageCount: 75,
       },
     },
   },

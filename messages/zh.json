@@ -125,7 +125,6 @@
       "downloadCta": "免费下载 PDF",
       "noSignUp": "无需注册",
       "pageCount": "{count, plural, other {# 页}}",
-      "statSentences": "{count, plural, other {个句子}}",
       "statChapters": "{count, plural, other {个主题章节}}",
       "statPages": "{count, plural, other {页}}",
       "statsLabel": "学习指南速览",
@@ -134,7 +133,14 @@
       "lookInside": "内页预览",
       "closingBody": "免费下载，可打印，也可以直接在手机上学习。",
       "opensInNewTab": "（在新标签页中打开）",
-      "youtubeCta": "在 YouTube 观看"
+      "youtubeCta": "在 YouTube 观看",
+      "youtubeComingSoon": {
+        "eyebrow": "即将上线",
+        "title": "视频课程即将上线",
+        "body": "这份学习指南的 YouTube 课程还没有上线。你现在就可以下载学习指南，视频准备好后会在这里提供链接。",
+        "confirm": "知道了",
+        "close": "关闭"
+      }
     },
     "editionLanguages": {
       "en": {
@@ -147,6 +153,7 @@
       "everydaySentences": {
         "eyebrow": "免费学习指南",
         "title": "100 句日常韩语",
+        "statItems": "{count, plural, other {个句子}}",
         "closingTitle": "把这 100 句随身带着",
         "features": {
           "sentences": {
@@ -163,6 +170,30 @@
           "review": {
             "title": "复习与练习",
             "body": "附答案的章节复习、全部 100 句的快速复习，以及最后的学习清单。"
+          }
+        }
+      },
+      "essentialWords": {
+        "eyebrow": "免费学习指南",
+        "title": "500 个必备韩语单词",
+        "statItems": "{count, plural, other {个必备单词}}",
+        "closingTitle": "把这 500 个必备单词随身带着",
+        "closingBody": "免费下载，随时复习韩语单词。",
+        "features": {
+          "words": {
+            "title": "500 个必备韩语单词"
+          },
+          "sentences": {
+            "title": "每个单词都有真实例句",
+            "body": "通过自然的韩语例句看每个单词怎么用，并附罗马音和英文翻译。"
+          },
+          "romanization": {
+            "title": "释义 + 罗马音 + 用法说明",
+            "body": "每个单词都附有罗马音、词性和地道的英文释义，必要时还有简短说明，告诉你它实际怎么用。"
+          },
+          "review": {
+            "title": "复习 + 速查表",
+            "body": "每章学完先做复习题、核对答案，再用书末的速查清单记录自己记住了哪些单词。"
           }
         }
       }
@@ -191,6 +222,18 @@
         },
         "seoTitle": "100 句日常韩语 — EP02 免费学习指南 | Hangyul",
         "seoDescription": "免费下载 Hangyul EP02 学习指南，再收录 100 句日常韩语，附罗马音、英文释义、对话、章节复习与练习。"
+      },
+      "ep01En500EssentialWords": {
+        "description": "用 500 个必备单词打好实用的韩语词汇基础，附自然例句、罗马音、用法说明、章节复习和速查清单。",
+        "topics": "掌握日常生活中马上用得上的词汇：人物、饮食、数字与金钱、出行、购物、情绪、健康、工作等。",
+        "editionNotice": "本 PDF 为英文版，单词释义、例句翻译和用法说明均以英文编写。",
+        "coverAlt": "Hangyul 学习指南《500 个必备韩语单词》（일상 회화 필수 단어 500）封面，Korean Vocabulary Mastery EP01 英文版",
+        "previews": {
+          "chapter": "第 1 章“入门单词”示例页：每个单词都附有韩语、罗马音、词性、英文释义、例句和用法说明",
+          "checklist": "速查表与清单示例页：列出每个单词及释义，并附有复习时打勾的方框"
+        },
+        "seoTitle": "500 个必备韩语单词 — 免费学习指南 | Hangyul",
+        "seoDescription": "免费下载学习指南，收录 500 个必备韩语单词，附罗马音、自然例句、用法说明、章节复习和速查清单。"
       }
     },
     "notFound": {

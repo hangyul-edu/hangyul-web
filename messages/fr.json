@@ -125,7 +125,6 @@
       "downloadCta": "Télécharger le PDF gratuit",
       "noSignUp": "Sans inscription",
       "pageCount": "{count, plural, one {# page} other {# pages}}",
-      "statSentences": "{count, plural, one {phrase} other {phrases}}",
       "statChapters": "{count, plural, one {chapitre thématique} other {chapitres thématiques}}",
       "statPages": "{count, plural, one {page} other {pages}}",
       "statsLabel": "Le guide en un coup d’œil",
@@ -134,7 +133,14 @@
       "lookInside": "Aperçu des pages",
       "closingBody": "Téléchargement gratuit. Imprimez-le ou étudiez sur votre téléphone.",
       "opensInNewTab": "(s’ouvre dans un nouvel onglet)",
-      "youtubeCta": "Regarder sur YouTube"
+      "youtubeCta": "Regarder sur YouTube",
+      "youtubeComingSoon": {
+        "eyebrow": "Bientôt disponible",
+        "title": "La leçon vidéo arrive bientôt",
+        "body": "La leçon YouTube de ce guide d’étude n’est pas encore disponible. Vous pouvez déjà télécharger le guide, et la vidéo sera ajoutée ici dès qu’elle sera prête.",
+        "confirm": "J’ai compris",
+        "close": "Fermer"
+      }
     },
     "editionLanguages": {
       "en": {
@@ -147,6 +153,7 @@
       "everydaySentences": {
         "eyebrow": "Guide d’étude gratuit",
         "title": "100 phrases coréennes du quotidien",
+        "statItems": "{count, plural, one {phrase} other {phrases}}",
         "closingTitle": "Gardez les 100 phrases toujours avec vous",
         "features": {
           "sentences": {
@@ -163,6 +170,30 @@
           "review": {
             "title": "Révision et pratique",
             "body": "Des révisions par chapitre avec corrigés, une révision rapide des 100 phrases et une checklist d’apprentissage finale."
+          }
+        }
+      },
+      "essentialWords": {
+        "eyebrow": "Guide d’étude gratuit",
+        "title": "500 mots coréens essentiels",
+        "statItems": "{count, plural, one {mot essentiel} other {mots essentiels}}",
+        "closingTitle": "Gardez les 500 mots essentiels toujours avec vous",
+        "closingBody": "Téléchargez-le gratuitement et révisez votre vocabulaire coréen quand vous le souhaitez.",
+        "features": {
+          "words": {
+            "title": "500 mots coréens essentiels"
+          },
+          "sentences": {
+            "title": "Un vrai exemple pour chaque mot",
+            "body": "Découvrez chaque mot dans une phrase coréenne naturelle, avec sa romanisation et sa traduction anglaise."
+          },
+          "romanization": {
+            "title": "Sens + romanisation + notes d’usage",
+            "body": "Chaque mot est accompagné de sa romanisation, de sa catégorie grammaticale et d’un sens anglais naturel, ainsi que d’une courte note d’usage quand c’est utile."
+          },
+          "review": {
+            "title": "Révisions + aide-mémoire",
+            "body": "Testez-vous après chaque chapitre, vérifiez vos réponses et suivez ce que vous avez retenu grâce à l’aide-mémoire à cocher."
           }
         }
       }
@@ -191,6 +222,18 @@
         },
         "seoTitle": "100 phrases coréennes du quotidien — EP02 Guide d’étude gratuit | Hangyul",
         "seoDescription": "Téléchargez le guide d’étude gratuit Hangyul EP02 : 100 nouvelles phrases coréennes du quotidien avec romanisation, significations en anglais, dialogues, révisions par chapitre et exercices."
+      },
+      "ep01En500EssentialWords": {
+        "description": "Posez des bases solides en vocabulaire coréen avec 500 mots essentiels, des phrases d’exemple naturelles, la romanisation, des notes d’usage, des révisions par chapitre et un aide-mémoire à cocher.",
+        "topics": "Un vocabulaire pratique pour le quotidien : les gens, la nourriture, les nombres et l’argent, les transports, les achats, les émotions, la santé, le travail et bien plus.",
+        "editionNotice": "Ce PDF est en anglais. Les sens des mots, les traductions des exemples et les notes d’usage sont entièrement rédigés en anglais.",
+        "coverAlt": "Couverture du guide d’étude Hangyul « 500 mots coréens essentiels » (일상 회화 필수 단어 500), Korean Vocabulary Mastery EP01, édition anglaise",
+        "previews": {
+          "chapter": "Exemple de page du chapitre 1, Premiers mots : chaque mot présente le coréen, la romanisation, la catégorie grammaticale, le sens en anglais, une phrase d’exemple et une note d’usage",
+          "checklist": "Exemple de page de l’aide-mémoire : chaque mot avec son sens et des cases à cocher au fil des révisions"
+        },
+        "seoTitle": "500 mots coréens essentiels — Guide d’étude gratuit | Hangyul",
+        "seoDescription": "Téléchargez un guide d’étude gratuit avec 500 mots coréens essentiels, la romanisation, des phrases d’exemple naturelles, des notes d’usage, des révisions par chapitre et un aide-mémoire."
       }
     },
     "notFound": {
