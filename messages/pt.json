@@ -116,6 +116,7 @@
     "mailOrderNumber": "Número de registo de venda à distância: 2026-Seoul Dobong-0542",
     "terms": "Termos de utilização",
     "privacy": "Política de privacidade",
+    "studyGuides": "Guias de estudo gratuitos",
     "socialMedia": "Redes sociais",
     "socialLinkLabel": "Hangyul {platform}"
   },
@@ -131,6 +132,7 @@
       "whatsInside": "O que inclui",
       "whatsInsideIntro": "Tudo o que precisa para rever o episódio ao seu ritmo.",
       "lookInside": "Espreite o interior",
+      "moreGuides": "Mais guias de coreano gratuitos",
       "closingBody": "Transferência gratuita. Imprima-o ou estude no telemóvel.",
       "opensInNewTab": "(abre num novo separador)",
       "youtubeCta": "Ver no YouTube",
@@ -145,8 +147,7 @@
     "editionLanguages": {
       "en": {
         "label": "Edição em inglês",
-        "notice": "Este PDF está em inglês. Os significados, as notas de utilização e as traduções dos diálogos estão todos escritos em inglês.",
-        "switch": "Obter a edição em inglês"
+        "notice": "Este PDF está em inglês. Os significados, as notas de utilização e as traduções dos diálogos estão todos escritos em inglês."
       }
     },
     "formats": {
@@ -236,6 +237,16 @@
         "seoTitle": "500 palavras essenciais em coreano — Guia de estudo gratuito | Hangyul",
         "seoDescription": "Transfira gratuitamente um guia de estudo com 500 palavras essenciais em coreano, romanização, frases de exemplo naturais, notas de utilização, revisões por capítulo e uma lista de referência rápida."
       }
+    },
+    "index": {
+      "seoTitle": "Guias de estudo de coreano gratuitos | Hangyul",
+      "seoDescription": "Transfira gratuitamente os guias de estudo de coreano da Hangyul: frases do dia a dia, vocabulário essencial, romanização, diálogos de exemplo e revisões por capítulo.",
+      "eyebrow": "PDF gratuitos",
+      "title": "Guias de estudo de coreano gratuitos",
+      "intro": "Guias de estudo em PDF gratuitos para acompanhar as aulas da Hangyul no YouTube. Reveja frases coreanas do dia a dia e vocabulário essencial com romanização, exemplos reais e revisões por capítulo, sem registo.",
+      "breadcrumb": "Guias de estudo gratuitos",
+      "viewGuide": "Ver o guia",
+      "viewAll": "Ver todos os guias gratuitos"
     },
     "notFound": {
       "metaTitle": "Recurso não encontrado | Hangyul",

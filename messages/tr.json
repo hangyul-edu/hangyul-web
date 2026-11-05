@@ -116,6 +116,7 @@
     "mailOrderNumber": "Mesafeli satış kayıt numarası: 2026-Seoul Dobong-0542",
     "terms": "Kullanım koşulları",
     "privacy": "Gizlilik politikası",
+    "studyGuides": "Ücretsiz çalışma rehberleri",
     "socialMedia": "Sosyal Medya",
     "socialLinkLabel": "Hangyul {platform}"
   },
@@ -131,6 +132,7 @@
       "whatsInside": "İçinde neler var?",
       "whatsInsideIntro": "Videoda öğrendiklerini kendi hızında tekrar etmek için ihtiyacın olan her şey.",
       "lookInside": "Rehbere göz at",
+      "moreGuides": "Diğer ücretsiz Korece çalışma rehberleri",
       "closingBody": "Ücretsiz indirilebilir. Çıktısını al ya da telefonundan çalış.",
       "opensInNewTab": "(yeni sekmede açılır)",
       "youtubeCta": "YouTube'da izle",
@@ -145,8 +147,7 @@
     "editionLanguages": {
       "en": {
         "label": "İngilizce sürüm",
-        "notice": "Bu PDF İngilizcedir. Anlamlar, kullanım notları ve diyalog çevirilerinin tamamı İngilizce yazılmıştır.",
-        "switch": "İngilizce sürüme geç"
+        "notice": "Bu PDF İngilizcedir. Anlamlar, kullanım notları ve diyalog çevirilerinin tamamı İngilizce yazılmıştır."
       }
     },
     "formats": {
@@ -236,6 +237,16 @@
         "seoTitle": "500 Temel Korece Kelime — Ücretsiz Çalışma Rehberi | Hangyul",
         "seoDescription": "500 temel Korece kelime, okunuş, doğal örnek cümleler, kullanım notları, bölüm tekrarları ve hızlı başvuru listesi içeren ücretsiz çalışma rehberini indir."
       }
+    },
+    "index": {
+      "seoTitle": "Ücretsiz Korece Çalışma Rehberleri | Hangyul",
+      "seoDescription": "Hangyul’un ücretsiz Korece çalışma rehberlerini indir: günlük cümleler, temel kelimeler, Latin harfli okunuş, örnek diyaloglar ve bölüm tekrarları.",
+      "eyebrow": "Ücretsiz PDF indir",
+      "title": "Ücretsiz Korece Çalışma Rehberleri",
+      "intro": "Hangyul’un YouTube derslerine eşlik eden ücretsiz PDF çalışma rehberleri. Günlük Korece cümleleri ve temel kelimeleri Latin harfli okunuş, gerçek örnekler ve bölüm tekrarlarıyla pekiştir; kayıt gerekmez.",
+      "breadcrumb": "Ücretsiz çalışma rehberleri",
+      "viewGuide": "Rehberi görüntüle",
+      "viewAll": "Tüm ücretsiz rehberleri gör"
     },
     "notFound": {
       "metaTitle": "Kaynak bulunamadı | Hangyul",

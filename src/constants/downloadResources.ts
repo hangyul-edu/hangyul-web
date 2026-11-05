@@ -1,18 +1,22 @@
 import { routing } from "@/i18n/routing";
 
 /**
- * 무료 학습 자료 다운로드 페이지 경로 규칙
+ * 무료 학습 자료 페이지 경로 규칙
  *
- * 공개 마케팅 링크:  /download?resource=<slug>&lang=<UI 언어>
+ * 대표(canonical) 주소:  /<UI 언어>/resources/<pageSlug>
+ *   예) https://www.talkhangyul.com/en/resources/100-everyday-korean-sentences-ep01
+ * 자료 목록:            /<UI 언어>/resources
+ *
+ * 기존 마케팅 링크:      /download?resource=<edition slug>&lang=<UI 언어>
  *   예) https://www.talkhangyul.com/download?resource=ep01-en-study-guide&lang=en
+ *   YouTube 고정 댓글·SNS에 이미 쓰이고 있으므로 계속 동작해야 합니다.
+ *   프록시(src/lib/downloadSmartLink.ts)가 app 파라미터 없이 resource만 있는 요청을
+ *   대표 주소로 301 리다이렉트합니다. resource·lang을 뺀 나머지 쿼리(utm_* 등)는 유지합니다.
+ *   - resource: 판(edition) slug. 대소문자·공백은 너그럽게 받습니다.
+ *   - lang: 화면 언어. 없거나 지원하지 않는 값이면 판 언어로 보냅니다.
+ *   - 등록되지 않은 resource는 리다이렉트하지 않고 그 자리에서 404를 보여줍니다.
  *
- * - resource: 내려받을 판(edition). PDF 언어는 판이 정합니다.
- * - lang: 페이지 화면 언어(사이트 로케일). 없거나 지원하지 않는 값이면 판 언어로 표시합니다.
- *   (lang 없는 기존 링크도 그대로 동작합니다.)
- *
- * /download 는 한귤 가나다 스마트 링크(?app=ganada)와 같은 진입점을 씁니다.
- * 프록시(src/lib/downloadSmartLink.ts)는 app 파라미터가 없고 resource 파라미터가
- * 있을 때만 내부 경로(/download/<slug>/<lang>)로 rewrite 하므로 주소창 URL은 그대로입니다.
+ * /download?app=ganada 스마트 링크는 이 규칙과 무관하게 그대로 동작합니다.
  *
  * 이 파일은 프록시에서도 import 하므로 이미지·PDF 같은 에셋을 import 하지 않습니다.
  */
@@ -56,22 +60,19 @@ export function normalizeUiLanguage(value: string | null | undefined): string | 
 }
 
 /**
- * 형식이 잘못된 slug는 등록될 수 없는 고정 값으로 보내 "자료 없음" 화면을 띄웁니다.
- * (레지스트리에 이 slug를 쓰지 마세요.)
+ * 등록되지 않은 자료 링크는 이 고정 slug의 대표 경로로 rewrite 해 "자료 없음"(404) 화면을
+ * 그 화면 언어로 보여줍니다. (레지스트리의 pageSlug로 쓰지 마세요.)
  */
 export const UNKNOWN_RESOURCE_SLUG = "unknown";
 
-/** 프록시가 rewrite 하는 내부 렌더링 경로 (src/app/download/[resource]/[lang]/page.tsx) */
-export function resourceRenderPath(slug: string, uiLanguage: string): string {
-  const safeSlug = isValidResourceSlug(slug) ? slug : UNKNOWN_RESOURCE_SLUG;
-  return `/download/${safeSlug}/${uiLanguage}`;
+/** 자료 목록 경로: /<UI 언어>/resources */
+export function resourcesIndexPath(uiLanguage: string): string {
+  return `/${uiLanguage}/resources`;
 }
 
-/** 공개 랜딩 페이지 경로 (canonical·hreflang·언어 선택기용) */
-export function resourcePagePath(slug: string, uiLanguage?: string): string {
-  const params = new URLSearchParams({ [DOWNLOAD_RESOURCE_PARAM]: slug });
-  if (uiLanguage) params.set(DOWNLOAD_LANG_PARAM, uiLanguage);
-  return `/download?${params.toString()}`;
+/** 자료 대표 경로 (canonical·hreflang·sitemap·내부 링크): /<UI 언어>/resources/<pageSlug> */
+export function resourcePagePath(pageSlug: string, uiLanguage: string): string {
+  return `${resourcesIndexPath(uiLanguage)}/${pageSlug}`;
 }
 
 /**

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import {
   useCallback,
@@ -18,10 +19,6 @@ import {
   getLocaleSearchTokens,
   normalizeSearchText,
 } from "@/constants/locales";
-import {
-  DOWNLOAD_LANG_PARAM,
-  DOWNLOAD_RESOURCE_PARAM,
-} from "@/constants/downloadResources";
 import { routing } from "@/i18n/routing";
 import { chevronDownIcon, chevronUpIcon } from "@/assets/icons";
 import headerStyles from "@/components/layout/Header.module.css";
@@ -34,15 +31,14 @@ import styles from "./ResourcePage.module.css";
  * 홈페이지 헤더와 같은 로케일 목록(routing.locales)·언어명·국기(LOCALE_CONFIG)·
  * 검색 규칙·번역(Header.aria / Header.search)을 재사용하고, 모양은 홈페이지 헤더의
  * 스타일(Header.module.css: dropdownWrapper/Trigger/Panel/Item, 쉐브론 아이콘)을 그대로
- * 씁니다. 홈페이지 Header 컴포넌트는 내비게이션·햄버거와 로케일 라우팅이 묶여 있어
- * 이 페이지(?lang= 쿼리)에는 동작만 따로 둡니다.
+ * 씁니다. 홈페이지 Header 컴포넌트는 내비게이션·햄버거와 묶여 있어 동작만 따로 둡니다.
  *
  * 동작
- *  - 화면 언어(lang)만 바꾸고 utm_* 등 다른 쿼리는 그대로 둡니다.
- *  - 같은 가족에 선택한 언어의 PDF 판이 실제로 있으면 그 판(resource)으로 함께 전환하고,
- *    없으면 지금 판을 유지합니다. (판을 지어내지 않습니다.)
- *  - 각 항목은 실제 링크(<a href>)라 JS 없이도 동작하고, JS가 있으면 클릭 시
- *    현재 주소의 다른 파라미터까지 보존한 URL로 이동합니다.
+ *  - 지금 주소의 첫 경로(/<UI 언어>)만 바꿉니다:
+ *    /en/resources/<pageSlug> → /ja/resources/<pageSlug>. 각 언어의 대표 주소이므로
+ *    hreflang과 같은 주소이고, 판(PDF 언어)은 그 페이지가 실제로 있는 판으로 정합니다.
+ *  - 각 항목은 실제 링크(<a href>)라 JS 없이도 동작하고(크롤러도 따라갈 수 있음),
+ *    JS가 있으면 클릭 시 utm_* 등 지금 주소의 쿼리를 보존한 URL로 이동합니다.
  */
 
 const LANGUAGES = routing.locales.map((code) => ({
@@ -56,17 +52,10 @@ const SEARCH_THRESHOLD = 8;
 
 type Props = {
   uiLanguage: string;
-  /** 지금 보고 있는 판 slug (자료 없음 화면에서는 null) */
-  resourceSlug: string | null;
-  /** 판 언어 → 판 slug (같은 가족에 실제로 있는 판만) */
-  siblingEditions: Record<string, string>;
 };
 
-export default function ResourceLanguageSelector({
-  uiLanguage,
-  resourceSlug,
-  siblingEditions,
-}: Props) {
+export default function ResourceLanguageSelector({ uiLanguage }: Props) {
+  const pathname = usePathname();
   const tAria = useTranslations("Header.aria");
   const tSearch = useTranslations("Header.search");
 
@@ -89,21 +78,16 @@ export default function ResourceLanguageSelector({
     );
   }, [query]);
 
-  /** base(현재 쿼리)를 보존하고 lang(+필요하면 resource)만 바꾼 주소 */
+  /** 첫 경로 조각(화면 언어)만 바꾸고, search(현재 쿼리)가 있으면 보존한 주소 */
   const hrefFor = useCallback(
-    (code: string, base = "") => {
-      const params = new URLSearchParams(base);
-      const sibling = siblingEditions[code];
-      if (sibling) {
-        params.set(DOWNLOAD_RESOURCE_PARAM, sibling);
-      } else if (!params.has(DOWNLOAD_RESOURCE_PARAM) && resourceSlug) {
-        params.set(DOWNLOAD_RESOURCE_PARAM, resourceSlug);
-      }
-      params.set(DOWNLOAD_LANG_PARAM, code);
-      return `/download?${params.toString()}`;
+    (code: string, search = "") => {
+      const [, , ...rest] = (pathname ?? `/${uiLanguage}`).split("/");
+      return `/${[code, ...rest].join("/")}${search}`;
     },
-    [resourceSlug, siblingEditions]
+    [pathname, uiLanguage]
   );
+  // 이벤트에 남길 자료 식별자 (/<lang>/resources/<pageSlug>의 pageSlug, 목록이면 "")
+  const resourceSlug = pathname?.split("/")[3] ?? "";
 
   const close = useCallback((restoreFocus = false) => {
     setOpen(false);
@@ -147,7 +131,7 @@ export default function ResourceLanguageSelector({
     }
 
     pushResourceEvent("resource_language_change", {
-      resource_slug: resourceSlug ?? "",
+      resource_slug: resourceSlug,
       previous_language: uiLanguage,
       selected_language: code,
     });

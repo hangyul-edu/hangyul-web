@@ -116,6 +116,7 @@
     "mailOrderNumber": "Registrierungsnummer für den Online-Handel: 2026-Seoul Dobong-0542",
     "terms": "Nutzungsbedingungen",
     "privacy": "Datenschutzerklärung",
+    "studyGuides": "Kostenlose Lernhefte",
     "socialMedia": "Soziale Medien",
     "socialLinkLabel": "Hangyul {platform}"
   },
@@ -131,6 +132,7 @@
       "whatsInside": "Das steckt drin",
       "whatsInsideIntro": "So wiederholst du die Folge ganz in deinem eigenen Tempo.",
       "lookInside": "Ein Blick ins Heft",
+      "moreGuides": "Weitere kostenlose Koreanisch-Lernhefte",
       "closingBody": "Kostenlos zum Herunterladen. Druck es aus oder lern direkt auf dem Handy.",
       "opensInNewTab": "(öffnet sich in einem neuen Tab)",
       "youtubeCta": "Auf YouTube ansehen",
@@ -145,8 +147,7 @@
     "editionLanguages": {
       "en": {
         "label": "Englische Ausgabe",
-        "notice": "Dieses PDF ist auf Englisch. Bedeutungen, Verwendungshinweise und die Übersetzungen der Dialoge sind durchgehend auf Englisch verfasst.",
-        "switch": "Zur englischen Ausgabe"
+        "notice": "Dieses PDF ist auf Englisch. Bedeutungen, Verwendungshinweise und die Übersetzungen der Dialoge sind durchgehend auf Englisch verfasst."
       }
     },
     "formats": {
@@ -236,6 +237,16 @@
         "seoTitle": "500 wichtige koreanische Wörter – Kostenloses Lernheft | Hangyul",
         "seoDescription": "Lade das kostenlose Lernheft herunter: 500 wichtige koreanische Wörter mit Umschrift, natürlichen Beispielsätzen, Verwendungshinweisen, Kapitelwiederholungen und Checkliste."
       }
+    },
+    "index": {
+      "seoTitle": "Kostenlose Koreanisch-Lernhefte & Lernmaterialien | Hangyul",
+      "seoDescription": "Lade kostenlose Koreanisch-Lernhefte von Hangyul herunter: Alltagssätze, wichtige Wörter, Umschrift, Beispieldialoge und Kapitelwiederholungen.",
+      "eyebrow": "Kostenlose PDF-Downloads",
+      "title": "Kostenlose Koreanisch-Lernhefte",
+      "intro": "Kostenlose PDF-Lernhefte zu den YouTube-Lektionen von Hangyul. Wiederhole koreanische Alltagssätze und wichtige Wörter mit Umschrift, echten Beispielen und Kapitelwiederholungen – ganz ohne Anmeldung.",
+      "breadcrumb": "Kostenlose Lernhefte",
+      "viewGuide": "Lernheft ansehen",
+      "viewAll": "Alle kostenlosen Lernhefte ansehen"
     },
     "notFound": {
       "metaTitle": "Inhalt nicht gefunden | Hangyul",

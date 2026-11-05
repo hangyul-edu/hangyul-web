@@ -4,12 +4,16 @@ import fs from "fs";
 import path from "path";
 
 /**
- * /download?resource=<slug>&lang=<UI 언어> 무료 학습 자료 다운로드 페이지
+ * 무료 학습 자료 페이지
+ *
+ * 대표 주소: /<UI 언어>/resources/<pageSlug>
+ * 기존 링크: /download?resource=<edition slug>&lang=<UI 언어> → 대표 주소로 301 (utm_* 유지)
  *
  * - 같은 /download 진입점의 ?app=ganada 스마트 링크와 공존해야 합니다.
  *   (스마트 링크 자체의 상세 동작은 download-smartlink.spec.ts에서 검증)
- * - lang은 화면 언어만 바꾸고, PDF 판(영어판)은 그대로이며 그 사실이 화면에 드러나야 합니다.
+ * - 화면 언어만 바뀌고, PDF 판(영어판)은 그대로이며 그 사실이 화면에 드러나야 합니다.
  * - 모르는 자료는 404 안내를 보여주고 다른 자료를 내려주지 않아야 합니다.
+ * 기존 테스트 대부분은 실제로 공유된 기존 링크로 들어와 301을 거친 뒤의 화면을 검증합니다.
  */
 
 const SLUG = "ep01-en-study-guide";
@@ -24,6 +28,9 @@ const SOURCE_PDF = path.join(
 );
 const YOUTUBE_URL = "https://www.youtube.com/watch?v=HGa7xurxL5c";
 const PROD = "https://www.talkhangyul.com";
+/** EP01 대표 주소 (화면 언어별) */
+const EP01_PAGE = "100-everyday-korean-sentences-ep01";
+const ep01Path = (locale: string) => `/${locale}/resources/${EP01_PAGE}`;
 
 const IOS_UA =
   "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1";
@@ -93,23 +100,50 @@ test.describe("/download — app and resource links coexist", () => {
     expect(response.headers()["location"]).toBe("/");
   });
 
-  test("resource links render in place (no redirect) on every device", async ({ page }) => {
-    for (const url of [RESOURCE_LINK, EN_LINK, `${RESOURCE_LINK}&lang=ja`]) {
+  test("resource links 301 to the same canonical page on every device", async ({ page }) => {
+    for (const [url, target] of [
+      [RESOURCE_LINK, ep01Path("en")],
+      [EN_LINK, ep01Path("en")],
+      [`${RESOURCE_LINK}&lang=ja`, ep01Path("ja")],
+    ]) {
       for (const ua of [IOS_UA, ANDROID_UA, devices["Desktop Chrome"].userAgent]) {
         const response = await rawResponse(page, url, ua);
-        expect(response.status()).toBe(200);
-        expect(response.headers()["location"]).toBeUndefined();
+        expect(response.status()).toBe(301);
+        // Location은 같은 호스트의 상대 경로로 내려옵니다.
+        expect(new URL(response.headers()["location"], PROD).pathname).toBe(target);
       }
     }
   });
+
+  test("the redirect keeps campaign parameters and drops resource/lang", async ({ page }) => {
+    const response = await rawResponse(
+      page,
+      `${EN_LINK}&utm_source=youtube&utm_medium=pinned_comment&utm_campaign=ep01`
+    );
+    expect(response.status()).toBe(301);
+    const location = new URL(response.headers()["location"], PROD);
+    expect(location.pathname).toBe(ep01Path("en"));
+    expect([...location.searchParams.keys()]).toEqual([
+      "utm_source",
+      "utm_medium",
+      "utm_campaign",
+    ]);
+    expect(location.searchParams.get("utm_medium")).toBe("pinned_comment");
+  });
+
+  test("the canonical page answers 200 directly, with no redirect chain", async ({ page }) => {
+    const response = await rawResponse(page, ep01Path("en"));
+    expect(response.status()).toBe(200);
+    expect(response.headers()["link"]).toBeUndefined();
+  });
 });
 
-test.describe("English UI — /download?resource=ep01-en-study-guide&lang=en", () => {
+test.describe("English UI — /en/resources/100-everyday-korean-sentences-ep01", () => {
   test("shows the English page for the English edition", async ({ page }) => {
     await page.goto(EN_LINK);
 
-    // 공개 URL이 그대로 유지됩니다 (rewrite).
-    await expect(page).toHaveURL(new RegExp(`/download\\?resource=${SLUG}&lang=en$`));
+    // 기존 링크는 대표 주소로 이동합니다 (301).
+    await expect(page).toHaveURL(new RegExp(`${ep01Path("en")}$`));
     await expect(page.locator("html")).toHaveAttribute("lang", "en");
     await expect(page.locator("html")).toHaveAttribute("dir", "ltr");
 
@@ -143,21 +177,22 @@ test.describe("English UI — /download?resource=ep01-en-study-guide&lang=en", (
   test("has English SEO metadata with a clean canonical and hreflang", async ({ page }) => {
     await page.goto(`${EN_LINK}&utm_source=youtube`);
 
+    await expect(page).toHaveURL(new RegExp(`${ep01Path("en")}\\?utm_source=youtube$`));
     await expect(page).toHaveTitle(
-      "100 Everyday Korean Sentences — EP01 Free Study Guide | Hangyul"
+      "100 Everyday Korean Sentences EP01 – Free Study Guide | Hangyul"
     );
     // 대표 주소에는 utm_*이 붙지 않습니다.
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
       "href",
-      `${PROD}${EN_LINK}`
+      `${PROD}${ep01Path("en")}`
     );
     await expect(page.locator('link[rel="alternate"][hreflang="ja"]')).toHaveAttribute(
       "href",
-      `${PROD}${RESOURCE_LINK}&lang=ja`
+      `${PROD}${ep01Path("ja")}`
     );
     await expect(
       page.locator('link[rel="alternate"][hreflang="x-default"]')
-    ).toHaveAttribute("href", `${PROD}${EN_LINK}`);
+    ).toHaveAttribute("href", `${PROD}${ep01Path("en")}`);
     await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
       "content",
       /^https:\/\/www\.talkhangyul\.com\/.+\.jpg$/
@@ -185,9 +220,10 @@ test.describe("No lang / invalid lang — deterministic fallback", () => {
     await expect(page.locator("html")).toHaveAttribute("lang", "en");
     await expect(h1(page)).toHaveText("100 Everyday Korean Sentences");
     // lang 없는 링크도 같은 대표 주소로 모입니다.
+    await expect(page).toHaveURL(new RegExp(`${ep01Path("en")}$`));
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
       "href",
-      `${PROD}${EN_LINK}`
+      `${PROD}${ep01Path("en")}`
     );
   });
 
@@ -220,7 +256,9 @@ for (const locale of ["ja", "ru"] as const) {
 
       await expect(page.locator("html")).toHaveAttribute("lang", locale);
       await expect(h1(page)).toHaveText(formatCopy(locale).title);
-      await expect(page.getByText(formatCopy(locale).eyebrow, { exact: true })).toBeVisible();
+      await expect(
+        page.getByRole("main").getByText(formatCopy(locale).eyebrow, { exact: true })
+      ).toBeVisible();
       await expect(heroDownload(page)).toContainText(m.common.downloadCta);
 
       // PDF가 영어판이라는 사실을 배지와 안내문 두 곳에서 알립니다.
@@ -234,7 +272,7 @@ for (const locale of ["ja", "ru"] as const) {
 
       await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
         "href",
-        `${PROD}${url}`
+        `${PROD}${ep01Path(locale)}`
       );
       await expect(page).toHaveTitle(copy(locale).seoTitle);
     });
@@ -302,18 +340,18 @@ test.describe("Language selector", () => {
     ).toHaveAttribute("hreflang", "en");
   });
 
-  test("switching language updates lang and preserves resource + UTM parameters", async ({ page }) => {
+  test("switching language goes to that language's canonical page and keeps UTM parameters", async ({ page }) => {
     await page.goto(
       `${EN_LINK}&utm_source=youtube&utm_medium=comment&utm_campaign=korean-while-you-sleep-ep01`
     );
     await languageTrigger(page).click();
     await page.getByRole("banner").locator('a[hreflang="ja"]').click();
 
-    await page.waitForURL(/lang=ja/);
+    await page.waitForURL(/\/ja\/resources\//);
     const url = new URL(page.url());
-    expect(url.pathname).toBe("/download");
-    expect(url.searchParams.get("resource")).toBe(SLUG);
-    expect(url.searchParams.get("lang")).toBe("ja");
+    expect(url.pathname).toBe(ep01Path("ja"));
+    expect(url.searchParams.get("resource")).toBeNull();
+    expect(url.searchParams.get("lang")).toBeNull();
     expect(url.searchParams.get("utm_source")).toBe("youtube");
     expect(url.searchParams.get("utm_medium")).toBe("comment");
     expect(url.searchParams.get("utm_campaign")).toBe("korean-while-you-sleep-ep01");
@@ -322,13 +360,13 @@ test.describe("Language selector", () => {
     await expect(h1(page)).toHaveText(formatCopy("ja").title);
   });
 
-  test("adds lang when the original link had none", async ({ page }) => {
+  test("works from an original link that had no lang", async ({ page }) => {
     await page.goto(`${RESOURCE_LINK}&utm_source=reddit`);
     await languageTrigger(page).click();
     await page.getByRole("banner").locator('a[hreflang="ru"]').click();
-    await page.waitForURL(/lang=ru/);
+    await page.waitForURL(/\/ru\/resources\//);
     const url = new URL(page.url());
-    expect(url.searchParams.get("resource")).toBe(SLUG);
+    expect(url.pathname).toBe(ep01Path("ru"));
     expect(url.searchParams.get("utm_source")).toBe("reddit");
     await expect(page.locator("html")).toHaveAttribute("lang", "ru");
   });
@@ -357,9 +395,10 @@ test.describe("Language selector", () => {
 
   test("option links work without JavaScript-built URLs (progressive enhancement)", async ({ page }) => {
     await page.goto(EN_LINK);
+    // 서버가 그린 HTML에 이미 각 언어의 대표 주소가 들어 있습니다 (hreflang과 같은 주소).
     await expect(page.getByRole("banner").locator('a[hreflang="de"]')).toHaveAttribute(
       "href",
-      `${RESOURCE_LINK}&lang=de`
+      ep01Path("de")
     );
   });
 });
@@ -401,7 +440,7 @@ test.describe("PDF download", () => {
       expect(download.url()).toContain(PDF_PATH);
       const saved = await download.path();
       expect(fs.statSync(saved).size).toBe(fs.statSync(SOURCE_PDF).size);
-      await expect(page).toHaveURL(new RegExp(`resource=${SLUG}`));
+      await expect(page).toHaveURL(new RegExp(`${ep01Path(lang)}$`));
     });
   }
 
@@ -720,17 +759,29 @@ const EP02_SOURCE_PDF = path.join(
   "src/assets/downloads/EP02_EN_Study_Guide.pdf"
 );
 const EP02_YOUTUBE_URL = "https://youtu.be/eMv0Tsq08SQ";
+const ep02Path = (locale: string) => `/${locale}/resources/100-everyday-korean-sentences-ep02`;
+/**
+ * 자료 자체의 이미지(표지·미리보기)만 모읍니다.
+ * 아래쪽 "다른 무료 학습 가이드" 링크의 썸네일은 의도적으로 다른 자료의 표지이므로 제외합니다.
+ */
+const ownImageMedia = (page: Page) =>
+  page.locator("main > section img").evaluateAll((imgs) =>
+    imgs.map((img) => {
+      const src = (img as HTMLImageElement).currentSrc || img.getAttribute("src") || "";
+      return decodeURIComponent(src).match(/\/_next\/static\/media\/[^&?]+/)?.[0] ?? "";
+    })
+  );
 const ep02Copy = (locale: string) => messages(locale).resources.ep02EnStudyGuide;
 
 test.describe("EP02 — /download?resource=ep02-en-study-guide&lang=en", () => {
-  test("renders directly from an external link with EP02 identity", async ({ page }) => {
+  test("renders from an external link with EP02 identity", async ({ page }) => {
     const response = await page.goto(EP02_EN_LINK);
     expect(response?.status()).toBe(200);
-    await expect(page).toHaveURL(new RegExp(`/download\\?resource=${EP02_SLUG}&lang=en$`));
+    await expect(page).toHaveURL(new RegExp(`${ep02Path("en")}$`));
 
     await expect(h1(page)).toHaveText("100 Everyday Korean Sentences");
     await expect(page.getByTestId("resource-series")).toHaveText("Korean While You Sleep · EP02");
-    await expect(page.getByText("Korean While You Sleep · EP01")).toHaveCount(0);
+    await expect(page.locator("main > section").getByText("Korean While You Sleep · EP01")).toHaveCount(0);
     await expect(page.getByTestId("edition-badge")).toHaveText("English edition");
     await expect(page.getByText("43 pages · PDF · No sign-up required")).toBeVisible();
     await expect(page.getByText(ep02Copy("en").description)).toBeVisible();
@@ -751,31 +802,32 @@ test.describe("EP02 — /download?resource=ep02-en-study-guide&lang=en", () => {
   });
 
   test("uses EP02 images, not EP01 artwork", async ({ page }) => {
+    await page.goto(EN_LINK);
+    const ep01Media = await ownImageMedia(page);
+    const ep01Og = await page.locator('meta[property="og:image"]').getAttribute("content");
+
     await page.goto(EP02_EN_LINK);
-    const ep01 = await (await page.request.get(EN_LINK)).text();
     const og = await page.locator('meta[property="og:image"]').getAttribute("content");
     expect(og).toMatch(/\.jpg$/);
-    expect(ep01).not.toContain(og!.replace(PROD, ""));
+    expect(og).not.toBe(ep01Og);
 
-    const srcs = await page.locator("main img").evaluateAll((imgs) =>
-      imgs.map((img) => (img as HTMLImageElement).currentSrc || img.getAttribute("src"))
-    );
-    expect(srcs.length).toBe(3);
-    for (const src of srcs) {
-      const media = decodeURIComponent(src!).match(/\/_next\/static\/media\/[^&?]+/)?.[0];
-      expect(media).toBeTruthy();
-      expect(ep01).not.toContain(media!);
+    const media = await ownImageMedia(page);
+    expect(media.length).toBe(3);
+    for (const src of media) {
+      expect(src).toBeTruthy();
+      expect(ep01Media).not.toContain(src);
     }
   });
 
   test("has EP02 SEO metadata", async ({ page }) => {
     await page.goto(EP02_EN_LINK);
     await expect(page).toHaveTitle(
-      "100 Everyday Korean Sentences — EP02 Free Study Guide | Hangyul"
+      "100 Everyday Korean Sentences EP02 – Free Study Guide | Hangyul"
     );
+    // EP02는 EP01로 canonical 되지 않고 자기 주소를 가집니다.
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
       "href",
-      `${PROD}${EP02_EN_LINK}`
+      `${PROD}${ep02Path("en")}`
     );
   });
 
@@ -802,6 +854,8 @@ test.describe("EP02 — /download?resource=ep02-en-study-guide&lang=en", () => {
   });
 
   test("every UI language shows its own EP02 YouTube CTA, EP01 keeps EP.01", async ({ page }) => {
+    // 32개 화면 언어를 차례로 엽니다 (기존 링크 → 301 → 대표 주소).
+    test.slow();
     const locales = fs
       .readdirSync(path.join(process.cwd(), "messages"))
       .filter((f) => f.endsWith(".json"))
@@ -955,6 +1009,7 @@ const wordsFormat = (locale: string) =>
   (messages(locale).formats as unknown as Record<string, Record<string, string>>)
     .essentialWords;
 const WORDS_YOUTUBE_URL = "https://www.youtube.com/watch?v=zl2JdibNnR4";
+const wordsPath = (locale: string) => `/${locale}/resources/500-essential-korean-words-ep01`;
 const comingSoonDialog = (page: Page) =>
   page.locator('[data-modal="youtube-coming-soon"]');
 
@@ -962,7 +1017,7 @@ test.describe("500 Essential Korean Words — /download?resource=ep01-en-500-ess
   test("renders its own vocabulary identity, not the sentence guides", async ({ page }) => {
     const response = await page.goto(WORDS_EN_LINK);
     expect(response?.status()).toBe(200);
-    await expect(page).toHaveURL(new RegExp(`/download\\?resource=${WORDS_SLUG}&lang=en$`));
+    await expect(page).toHaveURL(new RegExp(`${wordsPath("en")}$`));
 
     await expect(h1(page)).toHaveText("500 Essential Korean Words");
     await expect(page.getByText("Free Study Guide", { exact: true })).toBeVisible();
@@ -992,13 +1047,14 @@ test.describe("500 Essential Korean Words — /download?resource=ep01-en-500-ess
     await expect(page.getByRole("heading", { name: "Keep all 500 essential words with you" })).toBeVisible();
     await expect(page.getByText("Download it free and review Korean vocabulary whenever you want.")).toBeVisible();
 
-    // 문장 가이드 문구가 새지 않습니다.
-    const main = page.locator("main");
-    await expect(main).not.toContainText("100 Everyday Korean Sentences");
-    await expect(main).not.toContainText("Keep the 100 sentences with you");
+    // 문장 가이드 문구가 이 자료 본문에 새지 않습니다.
+    // (아래쪽 "다른 무료 학습 가이드" 링크는 의도적으로 다른 자료를 가리키므로 제외)
+    const own = (await page.locator("main > section").allInnerTexts()).join("\n");
+    expect(own).not.toContain("100 Everyday Korean Sentences");
+    expect(own).not.toContain("Keep the 100 sentences with you");
     await expect(page.getByText("sentences", { exact: true })).toHaveCount(0);
-    await expect(main).not.toContainText("43 pages");
-    await expect(main).not.toContainText("Korean While You Sleep");
+    expect(own).not.toContain("43 pages");
+    expect(own).not.toContain("Korean While You Sleep");
   });
 
   test("the link without lang falls back to the English UI", async ({ page }) => {
@@ -1010,18 +1066,21 @@ test.describe("500 Essential Korean Words — /download?resource=ep01-en-500-ess
 
   test("has its own SEO metadata and social image", async ({ page }) => {
     await page.goto(WORDS_EN_LINK);
-    await expect(page).toHaveTitle("500 Essential Korean Words — Free Study Guide | Hangyul");
+    await expect(page).toHaveTitle(
+      "500 Essential Korean Words – Free Korean Vocabulary Guide | Hangyul"
+    );
     await expect(page.locator('meta[name="description"]')).toHaveAttribute(
       "content",
       wordsCopy("en").seoDescription
     );
+    // 500단어 가이드는 문장 가이드로 canonical 되지 않고 자기 주소를 가집니다.
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
       "href",
-      `${PROD}${WORDS_EN_LINK}`
+      `${PROD}${wordsPath("en")}`
     );
     await expect(page.locator('meta[property="og:title"]')).toHaveAttribute(
       "content",
-      "500 Essential Korean Words — Free Study Guide | Hangyul"
+      "500 Essential Korean Words – Free Korean Vocabulary Guide | Hangyul"
     );
 
     const og = await page.locator('meta[property="og:image"]').getAttribute("content");
@@ -1035,19 +1094,17 @@ test.describe("500 Essential Korean Words — /download?resource=ep01-en-500-ess
   });
 
   test("uses its own cover and previews, not sentence-guide artwork", async ({ page }) => {
+    const others: string[] = [];
+    for (const url of [EN_LINK, "/download?resource=ep02-en-study-guide&lang=en"]) {
+      await page.goto(url);
+      others.push(...(await ownImageMedia(page)));
+    }
     await page.goto(WORDS_EN_LINK);
-    const others = [
-      await (await page.request.get(EN_LINK)).text(),
-      await (await page.request.get("/download?resource=ep02-en-study-guide&lang=en")).text(),
-    ];
-    const srcs = await page.locator("main img").evaluateAll((imgs) =>
-      imgs.map((img) => (img as HTMLImageElement).currentSrc || img.getAttribute("src"))
-    );
-    expect(srcs.length).toBe(3);
-    for (const src of srcs) {
-      const media = decodeURIComponent(src!).match(/\/_next\/static\/media\/[^&?]+/)?.[0];
-      expect(media).toBeTruthy();
-      for (const html of others) expect(html).not.toContain(media!);
+    const media = await ownImageMedia(page);
+    expect(media.length).toBe(3);
+    for (const src of media) {
+      expect(src).toBeTruthy();
+      expect(others).not.toContain(src);
     }
     await expect(
       page.getByRole("img", { name: /korean vocabulary mastery ep01, english edition/i })

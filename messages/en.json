@@ -116,6 +116,7 @@
     "mailOrderNumber": "Mail-Order Sales Business Registration No.: 2026-Seoul Dobong-0542",
     "terms": "Terms of Service",
     "privacy": "Privacy Policy",
+    "studyGuides": "Free study guides",
     "socialMedia": "Social Media",
     "socialLinkLabel": "Hangyul {platform}"
   },
@@ -131,6 +132,7 @@
       "whatsInside": "What’s inside",
       "whatsInsideIntro": "Everything you need to review the episode at your own pace.",
       "lookInside": "A look inside",
+      "moreGuides": "More free Korean study guides",
       "closingBody": "Free to download. Print it or study on your phone.",
       "opensInNewTab": "(opens in a new tab)",
       "youtubeCta": "Watch on YouTube",
@@ -145,8 +147,7 @@
     "editionLanguages": {
       "en": {
         "label": "English edition",
-        "notice": "This PDF is in English. Meanings, usage notes and conversation translations are all written in English.",
-        "switch": "Get the English edition"
+        "notice": "This PDF is in English. Meanings, usage notes and conversation translations are all written in English."
       }
     },
     "formats": {
@@ -208,8 +209,8 @@
           "chapter": "Sample page from Chapter 1, Greetings and Essential Responses: each sentence shows Korean, romanization, the English meaning, a usage note and a short conversation",
           "review": "Sample chapter review page with four exercises: what does it mean, how do you say it in Korean, complete the conversation, and what would you say"
         },
-        "seoTitle": "100 Everyday Korean Sentences — EP01 Free Study Guide | Hangyul",
-        "seoDescription": "Download the free Hangyul EP01 study guide with 100 everyday Korean sentences, romanization, English meanings, conversations, reviews, and practice."
+        "seoTitle": "100 Everyday Korean Sentences EP01 – Free Study Guide | Hangyul",
+        "seoDescription": "Download Hangyul’s free EP01 study guide with 100 everyday Korean sentences, romanization, natural English meanings, real-life conversations, and chapter reviews."
       },
       "ep02EnStudyGuide": {
         "description": "Practice another 100 sentences from EP.02 with Korean, romanization, natural English meanings, usage notes, real-life conversations, chapter reviews, and a quick review of all 100.",
@@ -220,8 +221,8 @@
           "chapter": "Sample page from Chapter 1, Understanding Each Other: each sentence shows Korean, romanization, the English meaning, a usage note and a short conversation",
           "review": "Sample chapter review page with four exercises: what does it mean, how do you say it in Korean, complete the conversation, and what would you say"
         },
-        "seoTitle": "100 Everyday Korean Sentences — EP02 Free Study Guide | Hangyul",
-        "seoDescription": "Download the free Hangyul EP02 study guide: another 100 everyday Korean sentences with romanization, English meanings, conversations, chapter reviews, and practice."
+        "seoTitle": "100 Everyday Korean Sentences EP02 – Free Study Guide | Hangyul",
+        "seoDescription": "Download Hangyul’s free EP02 study guide with 100 more practical Korean sentences for cafés, shopping, getting around and plans, with romanization and reviews."
       },
       "ep01En500EssentialWords": {
         "description": "Build a practical Korean vocabulary foundation with 500 essential words, natural example sentences, romanization, usage notes, chapter reviews, and a quick-reference checklist.",
@@ -233,9 +234,19 @@
           "chapter": "Sample page from Chapter 1, First Words: each word shows Korean, romanization, part of speech, the English meaning, an example sentence and a usage note",
           "checklist": "Sample quick reference and checklist page: each word with its meaning and boxes to tick as you review"
         },
-        "seoTitle": "500 Essential Korean Words — Free Study Guide | Hangyul",
-        "seoDescription": "Download a free study guide with 500 essential Korean words, romanization, natural example sentences, usage notes, chapter reviews, and a quick-reference checklist."
+        "seoTitle": "500 Essential Korean Words – Free Korean Vocabulary Guide | Hangyul",
+        "seoDescription": "Download a free Hangyul study guide with 500 essential Korean words, romanization, natural example sentences, usage notes, chapter reviews, and quick reference."
       }
+    },
+    "index": {
+      "seoTitle": "Free Korean Study Guides & Learning Resources | Hangyul",
+      "seoDescription": "Download free Hangyul Korean study guides with everyday sentences, essential vocabulary, romanization, example conversations and chapter reviews.",
+      "eyebrow": "Free PDF downloads",
+      "title": "Free Korean Study Guides",
+      "intro": "Free PDF study guides that go with Hangyul’s YouTube lessons. Review everyday Korean sentences and essential vocabulary with romanization, real examples and chapter reviews — no sign-up required.",
+      "breadcrumb": "Free Study Guides",
+      "viewGuide": "View study guide",
+      "viewAll": "See all free study guides"
     },
     "notFound": {
       "metaTitle": "Resource not found | Hangyul",

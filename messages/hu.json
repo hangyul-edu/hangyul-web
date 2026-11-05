@@ -116,6 +116,7 @@
     "mailOrderNumber": "Távértékesítési nyilvántartási szám: 2026-Seoul Dobong-0542",
     "terms": "Felhasználási feltételek",
     "privacy": "Adatvédelmi tájékoztató",
+    "studyGuides": "Ingyenes tananyagok",
     "socialMedia": "Közösségi média",
     "socialLinkLabel": "Hangyul {platform}"
   },
@@ -131,6 +132,7 @@
       "whatsInside": "Mit tartalmaz?",
       "whatsInsideIntro": "Minden, ami ahhoz kell, hogy a saját tempódban ismételd át az epizódot.",
       "lookInside": "Belepillantás",
+      "moreGuides": "További ingyenes koreai tananyagok",
       "closingBody": "Ingyenesen letölthető. Nyomtasd ki, vagy tanulj belőle a telefonodon.",
       "opensInNewTab": "(új lapon nyílik meg)",
       "youtubeCta": "Nézd meg a YouTube-on",
@@ -145,8 +147,7 @@
     "editionLanguages": {
       "en": {
         "label": "Angol nyelvű kiadás",
-        "notice": "Ez a PDF angol nyelvű. A jelentések, a használati megjegyzések és a párbeszédek fordításai mind angolul szerepelnek.",
-        "switch": "Tovább az angol nyelvű kiadáshoz"
+        "notice": "Ez a PDF angol nyelvű. A jelentések, a használati megjegyzések és a párbeszédek fordításai mind angolul szerepelnek."
       }
     },
     "formats": {
@@ -236,6 +237,16 @@
         "seoTitle": "500 alapvető koreai szó – ingyenes tananyag | Hangyul",
         "seoDescription": "Töltsd le ingyen a tananyagot: 500 alapvető koreai szó átírással, természetes példamondatokkal, használati tippekkel, fejezetismétlőkkel és gyors áttekintő listával."
       }
+    },
+    "index": {
+      "seoTitle": "Ingyenes koreai tananyagok | Hangyul",
+      "seoDescription": "Töltsd le ingyen a Hangyul koreai tananyagait: hétköznapi mondatok, alapszókincs, latin betűs átírás, példapárbeszédek és fejezetenkénti ismétlés.",
+      "eyebrow": "Ingyenes PDF-ek",
+      "title": "Ingyenes koreai tananyagok",
+      "intro": "Ingyenes PDF-tananyagok a Hangyul YouTube-leckéihez. Ismételd át a hétköznapi koreai mondatokat és az alapszókincset latin betűs átírással, valós példákkal és fejezetenkénti ismétléssel – regisztráció nélkül.",
+      "breadcrumb": "Ingyenes tananyagok",
+      "viewGuide": "Tananyag megnyitása",
+      "viewAll": "Az összes ingyenes tananyag"
     },
     "notFound": {
       "metaTitle": "Az anyag nem található | Hangyul",

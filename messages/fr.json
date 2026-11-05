@@ -116,6 +116,7 @@
     "mailOrderNumber": "Numéro de déclaration de vente à distance : 2026-Seoul Dobong-0542",
     "terms": "Conditions d’utilisation",
     "privacy": "Politique de confidentialité",
+    "studyGuides": "Guides d’étude gratuits",
     "socialMedia": "Réseaux sociaux",
     "socialLinkLabel": "Hangyul {platform}"
   },
@@ -131,6 +132,7 @@
       "whatsInside": "Au programme",
       "whatsInsideIntro": "Tout ce qu’il vous faut pour réviser l’épisode à votre rythme.",
       "lookInside": "Aperçu des pages",
+      "moreGuides": "D’autres guides de coréen gratuits",
       "closingBody": "Téléchargement gratuit. Imprimez-le ou étudiez sur votre téléphone.",
       "opensInNewTab": "(s’ouvre dans un nouvel onglet)",
       "youtubeCta": "Regarder sur YouTube",
@@ -145,8 +147,7 @@
     "editionLanguages": {
       "en": {
         "label": "Édition anglaise",
-        "notice": "Ce PDF est en anglais. Les significations, les notes d’usage et les traductions des dialogues sont entièrement rédigées en anglais.",
-        "switch": "Obtenir l’édition anglaise"
+        "notice": "Ce PDF est en anglais. Les significations, les notes d’usage et les traductions des dialogues sont entièrement rédigées en anglais."
       }
     },
     "formats": {
@@ -236,6 +237,16 @@
         "seoTitle": "500 mots coréens essentiels — Guide d’étude gratuit | Hangyul",
         "seoDescription": "Téléchargez un guide d’étude gratuit avec 500 mots coréens essentiels, la romanisation, des phrases d’exemple naturelles, des notes d’usage, des révisions par chapitre et un aide-mémoire."
       }
+    },
+    "index": {
+      "seoTitle": "Guides d’étude gratuits pour apprendre le coréen | Hangyul",
+      "seoDescription": "Téléchargez les guides d’étude gratuits de Hangyul : phrases coréennes du quotidien, vocabulaire essentiel, romanisation, dialogues et révisions par chapitre.",
+      "eyebrow": "PDF gratuits",
+      "title": "Guides d’étude de coréen gratuits",
+      "intro": "Des guides d’étude PDF gratuits pour accompagner les leçons YouTube de Hangyul. Révisez des phrases coréennes du quotidien et le vocabulaire essentiel avec la romanisation, des exemples concrets et des révisions par chapitre, sans inscription.",
+      "breadcrumb": "Guides d’étude gratuits",
+      "viewGuide": "Voir le guide",
+      "viewAll": "Voir tous les guides gratuits"
     },
     "notFound": {
       "metaTitle": "Ressource introuvable | Hangyul",

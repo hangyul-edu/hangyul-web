@@ -116,6 +116,7 @@
     "mailOrderNumber": "Număr de înregistrare pentru vânzări la distanță: 2026-Seoul Dobong-0542",
     "terms": "Termeni și condiții",
     "privacy": "Politica de confidențialitate",
+    "studyGuides": "Ghiduri de studiu gratuite",
     "socialMedia": "Rețele sociale",
     "socialLinkLabel": "Hangyul {platform}"
   },
@@ -131,6 +132,7 @@
       "whatsInside": "Ce conține",
       "whatsInsideIntro": "Tot ce îți trebuie ca să recapitulezi episodul în ritmul tău.",
       "lookInside": "O privire în interior",
+      "moreGuides": "Alte ghiduri de studiu gratuite pentru coreeană",
       "closingBody": "Se descarcă gratuit. Printează-l sau învață de pe telefon.",
       "opensInNewTab": "(se deschide într-o filă nouă)",
       "youtubeCta": "Urmărește pe YouTube",
@@ -145,8 +147,7 @@
     "editionLanguages": {
       "en": {
         "label": "Ediția în engleză",
-        "notice": "Acest PDF este în limba engleză. Sensurile, notele de utilizare și traducerile dialogurilor sunt toate scrise în engleză.",
-        "switch": "Treci la ediția în engleză"
+        "notice": "Acest PDF este în limba engleză. Sensurile, notele de utilizare și traducerile dialogurilor sunt toate scrise în engleză."
       }
     },
     "formats": {
@@ -236,6 +237,16 @@
         "seoTitle": "500 de cuvinte coreene esențiale — ghid de studiu gratuit | Hangyul",
         "seoDescription": "Descarcă gratuit un ghid de studiu cu 500 de cuvinte coreene esențiale, romanizare, propoziții-exemplu firești, note de utilizare, recapitulări pe capitole și o listă de referință rapidă."
       }
+    },
+    "index": {
+      "seoTitle": "Ghiduri de studiu gratuite pentru coreeană | Hangyul",
+      "seoDescription": "Descarcă gratuit ghidurile de studiu Hangyul pentru coreeană: propoziții de zi cu zi, vocabular esențial, romanizare, dialoguri model și recapitulări pe capitole.",
+      "eyebrow": "PDF-uri gratuite",
+      "title": "Ghiduri de studiu gratuite pentru coreeană",
+      "intro": "Ghiduri de studiu PDF gratuite care însoțesc lecțiile Hangyul de pe YouTube. Recapitulează propoziții coreene de zi cu zi și vocabularul esențial cu romanizare, exemple reale și recapitulări pe capitole, fără înregistrare.",
+      "breadcrumb": "Ghiduri de studiu gratuite",
+      "viewGuide": "Vezi ghidul",
+      "viewAll": "Vezi toate ghidurile gratuite"
     },
     "notFound": {
       "metaTitle": "Resursa nu a fost găsită | Hangyul",

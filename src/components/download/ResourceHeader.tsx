@@ -14,12 +14,8 @@ import styles from "./ResourcePage.module.css";
  */
 export default async function ResourceHeader({
   uiLanguage,
-  resourceSlug,
-  siblingEditions,
 }: {
   uiLanguage: string;
-  resourceSlug: string | null;
-  siblingEditions: Record<string, string>;
 }) {
   const t = await getTranslations({
     locale: uiLanguage,
@@ -40,11 +36,7 @@ export default async function ResourceHeader({
           />
         </Link>
 
-        <ResourceLanguageSelector
-          uiLanguage={uiLanguage}
-          resourceSlug={resourceSlug}
-          siblingEditions={siblingEditions}
-        />
+        <ResourceLanguageSelector uiLanguage={uiLanguage} />
       </div>
     </header>
   );

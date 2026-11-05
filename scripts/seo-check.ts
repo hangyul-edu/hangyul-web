@@ -15,10 +15,16 @@
  * - twitter:card
  * - JSON-LD 파싱 및 WebSite/Organization 노드, alternateName
  * - 의도치 않은 noindex
- * - robots.txt / sitemap.xml
+ * - robots.txt / sitemap.xml (무료 학습 자료 대표 주소 포함)
+ *   자료 페이지 자체의 상세 검사는 tests/e2e/resource-seo.spec.ts
  */
 import { routing } from "../src/i18n/routing";
 import { BASE_URL } from "../src/constants/site";
+import {
+  resourcePagePath,
+  resourcesIndexPath,
+} from "../src/constants/downloadResources";
+import { RESOURCE_PAGE_SLUGS } from "../src/content/downloadResources";
 
 const ORIGIN = process.env.BASE_URL ?? "http://localhost:3000";
 
@@ -220,12 +226,24 @@ async function checkRobotsAndSitemap() {
       if (!body.includes(`<loc>${BASE_URL}/${locale}</loc>`))
         fail("sitemap.xml", `${BASE_URL}/${locale} 없음`);
     }
+    // 무료 학습 자료: 목록 + 자료마다 화면 언어별 대표 주소
+    for (const locale of routing.locales) {
+      const paths = [
+        resourcesIndexPath(locale),
+        ...RESOURCE_PAGE_SLUGS.map((slug) => resourcePagePath(slug, locale)),
+      ];
+      for (const p of paths) {
+        if (!body.includes(`<loc>${BASE_URL}${p}</loc>`))
+          fail("sitemap.xml", `${BASE_URL}${p} 없음`);
+      }
+    }
+    if (/<loc>[^<]*(\?|\/download)[^<]*<\/loc>/.test(body))
+      fail("sitemap.xml", "쿼리 변형 또는 /download 링크 포함");
+
     const locCount = (body.match(/<loc>/g) ?? []).length;
-    if (locCount !== routing.locales.length)
-      warn(
-        "sitemap.xml",
-        `<loc> 개수 ${locCount} (로케일 ${routing.locales.length}개)`
-      );
+    const expected = routing.locales.length * (2 + RESOURCE_PAGE_SLUGS.length);
+    if (locCount !== expected)
+      warn("sitemap.xml", `<loc> 개수 ${locCount} (기대 ${expected}개)`);
   }
 }
 

@@ -7,33 +7,30 @@ import Footer from "@/components/layout/Footer";
 import ResourceHeader from "@/components/download/ResourceHeader";
 import styles from "@/components/download/ResourcePage.module.css";
 import { getLocaleDirection } from "@/constants/locales";
-import { getDownloadResource } from "@/content/downloadResources";
 import { routing } from "@/i18n/routing";
 
 /**
- * 무료 학습 자료 페이지 레이아웃
- * (/download?resource=<slug>&lang=<UI 언어> 에서 /download/<slug>/<lang> 으로 rewrite 됨)
+ * 무료 학습 자료 레이아웃 (/<UI 언어>/resources, /<UI 언어>/resources/<pageSlug>)
  *
- * 홈페이지 레이아웃(src/app/[locale]/layout.tsx)의 큰 내비게이션 대신
+ * 홈페이지 레이아웃(src/app/[locale]/(home)/layout.tsx)의 큰 내비게이션 대신
  * 로고 + 언어 선택기만 있는 최소 헤더를 쓰고, 푸터는 홈페이지와 같은 Footer 컴포넌트를
  * 그대로 씁니다 (문구는 같은 messages.Footer, 반응형은 같은 Footer.module.css).
  * html lang/dir 은 화면 언어를 따릅니다 (PDF 판 언어와는 별개).
  */
 
-export default async function ResourceLayout({
+export default async function ResourcesLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ resource: string; lang: string }>;
+  params: Promise<{ locale: string }>;
 }) {
-  const { resource: slug, lang } = await params;
-  if (!hasLocale(routing.locales, lang)) notFound();
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) notFound();
 
   // 요청 헤더를 읽지 않도록 로케일을 먼저 지정해 정적 생성을 유지합니다.
-  setRequestLocale(lang);
-  const messages = await getMessages({ locale: lang });
-  const resolved = getDownloadResource(slug);
+  setRequestLocale(locale);
+  const messages = await getMessages({ locale });
 
   // 클라이언트 컴포넌트(언어 선택기·자료 없음 화면·기존 푸터)가 쓰는 메시지만 넘깁니다.
   const clientMessages = {
@@ -47,7 +44,7 @@ export default async function ResourceLayout({
   };
 
   return (
-    <html lang={lang} dir={getLocaleDirection(lang)}>
+    <html lang={locale} dir={getLocaleDirection(locale)}>
       <head>
         {/* 홈페이지와 같은 GTM 컨테이너 (새 분석 도구는 추가하지 않음) */}
         <Script
@@ -71,20 +68,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        <NextIntlClientProvider locale={lang} messages={clientMessages}>
-          <ResourceHeader
-            uiLanguage={lang}
-            resourceSlug={resolved?.edition.slug ?? null}
-            siblingEditions={
-              resolved
-                ? Object.fromEntries(
-                    Object.entries(resolved.family.editions).map(
-                      ([language, edition]) => [language, edition.slug]
-                    )
-                  )
-                : {}
-            }
-          />
+        <NextIntlClientProvider locale={locale} messages={clientMessages}>
+          <ResourceHeader uiLanguage={locale} />
           {children}
           {/* 홈페이지와 같은 푸터 컴포넌트를 변형 없이 그대로 씁니다. */}
           <Footer />

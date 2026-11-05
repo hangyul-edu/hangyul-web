@@ -8,6 +8,7 @@ import { useLocale, useTranslations } from "next-intl";
 import LegalModal from "@/components/common/LegalModal";
 import SocialLinks from "./SocialLinks";
 import { getBrandName } from "@/constants/site";
+import { resourcesIndexPath } from "@/constants/downloadResources";
 import {
   loadLegalDocument,
   type LegalDocument,
@@ -22,7 +23,7 @@ function getLegalModalType(value: string | null): ModalType {
 }
 
 /**
- * 사이트 공통 푸터. 홈페이지([locale]/layout)와 무료 자료 페이지(download/[resource]/[lang]/layout)가
+ * 사이트 공통 푸터. 홈페이지([locale]/(home)/layout)와 무료 자료 페이지([locale]/resources/layout)가
  * 이 컴포넌트 하나를 그대로 씁니다. 페이지별 변형(prop)을 두지 않아 두 화면이 항상 같습니다.
  */
 export default function Footer() {
@@ -126,6 +127,11 @@ export default function Footer() {
           <SocialLinks />
 
           <div className={styles.infoRow}>
+            {/* 무료 학습 가이드 목록 — 홈페이지에서도 자료 페이지를 일반 링크로 찾을 수 있게 합니다. */}
+            <a className={styles.legalLink} href={resourcesIndexPath(locale)}>
+              {t("studyGuides")}
+            </a>
+            <span className={styles.divider} aria-hidden="true" />
             <button
               className={styles.legalLink}
               aria-haspopup="dialog"

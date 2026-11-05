@@ -116,6 +116,7 @@
     "mailOrderNumber": "Registrační číslo zásilkového prodeje: 2026-Seoul Dobong-0542",
     "terms": "Podmínky služby",
     "privacy": "Zásady ochrany osobních údajů",
+    "studyGuides": "Studijní materiály zdarma",
     "socialMedia": "Sociální sítě",
     "socialLinkLabel": "Hangyul {platform}"
   },
@@ -131,6 +132,7 @@
       "whatsInside": "Co najdete uvnitř",
       "whatsInsideIntro": "Vše, co potřebujete k zopakování dílu vlastním tempem.",
       "lookInside": "Nahlédněte dovnitř",
+      "moreGuides": "Další studijní materiály korejštiny zdarma",
       "closingBody": "Ke stažení zdarma. Vytiskněte si ho, nebo se z něj učte v telefonu.",
       "opensInNewTab": "(otevře se na nové kartě)",
       "youtubeCta": "Sledovat na YouTube",
@@ -145,8 +147,7 @@
     "editionLanguages": {
       "en": {
         "label": "Anglická verze",
-        "notice": "Toto PDF je v angličtině. Významy, poznámky k použití i překlady konverzací jsou psané anglicky.",
-        "switch": "Přejít na anglickou verzi"
+        "notice": "Toto PDF je v angličtině. Významy, poznámky k použití i překlady konverzací jsou psané anglicky."
       }
     },
     "formats": {
@@ -236,6 +237,16 @@
         "seoTitle": "500 základních korejských slov – studijní materiál zdarma | Hangyul",
         "seoDescription": "Stáhněte si zdarma studijní materiál s 500 základními korejskými slovy, přepisem, přirozenými příkladovými větami, poznámkami k použití, opakováním kapitol a rychlým přehledem."
       }
+    },
+    "index": {
+      "seoTitle": "Studijní materiály korejštiny zdarma | Hangyul",
+      "seoDescription": "Stáhněte si studijní materiály korejštiny od Hangyul zdarma: každodenní věty, základní slovní zásoba, romanizace, ukázkové rozhovory a opakování po kapitolách.",
+      "eyebrow": "PDF ke stažení zdarma",
+      "title": "Studijní materiály korejštiny zdarma",
+      "intro": "Studijní materiály v PDF zdarma k lekcím Hangyul na YouTube. Opakujte si každodenní korejské věty a základní slovní zásobu s romanizací, skutečnými příklady a opakováním po kapitolách – bez registrace.",
+      "breadcrumb": "Studijní materiály zdarma",
+      "viewGuide": "Zobrazit materiál",
+      "viewAll": "Zobrazit všechny materiály zdarma"
     },
     "notFound": {
       "metaTitle": "Materiál nenalezen | Hangyul",

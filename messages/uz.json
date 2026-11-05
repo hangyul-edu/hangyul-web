@@ -116,6 +116,7 @@
     "mailOrderNumber": "Masofaviy savdo roʻyxatga olish raqami: 2026-Seoul Dobong-0542",
     "terms": "Foydalanish shartlari",
     "privacy": "Maxfiylik siyosati",
+    "studyGuides": "Bepul oʻquv qoʻllanmalar",
     "socialMedia": "Ijtimoiy tarmoqlar",
     "socialLinkLabel": "Hangyul {platform}"
   },
@@ -131,6 +132,7 @@
       "whatsInside": "Ichida nimalar bor",
       "whatsInsideIntro": "Epizodni oʻz surʼatingizda takrorlang.",
       "lookInside": "Ichiga bir nazar",
+      "moreGuides": "Boshqa bepul koreys tili oʻquv qoʻllanmalari",
       "closingBody": "Bepul yuklab oling. Chop eting yoki telefoningizda oʻrganing.",
       "opensInNewTab": "(yangi varaqda ochiladi)",
       "youtubeCta": "YouTube-da koʻrish",
@@ -145,8 +147,7 @@
     "editionLanguages": {
       "en": {
         "label": "Ingliz tilidagi nashr",
-        "notice": "Bu PDF ingliz tilida. Maʼnolar, qoʻllanish boʻyicha izohlar va suhbatlar tarjimasi toʻliq ingliz tilida yozilgan.",
-        "switch": "Ingliz tilidagi nashrni olish"
+        "notice": "Bu PDF ingliz tilida. Maʼnolar, qoʻllanish boʻyicha izohlar va suhbatlar tarjimasi toʻliq ingliz tilida yozilgan."
       }
     },
     "formats": {
@@ -236,6 +237,16 @@
         "seoTitle": "500 ta asosiy koreyscha soʻz — bepul oʻquv qoʻllanma | Hangyul",
         "seoDescription": "Bepul oʻquv qoʻllanmani yuklab oling: transkripsiya, tabiiy misol gaplar, qoʻllanish izohlari, boblar boʻyicha takrorlash va tezkor maʼlumotnoma roʻyxati bilan 500 ta asosiy koreyscha soʻz."
       }
+    },
+    "index": {
+      "seoTitle": "Koreys tili boʻyicha bepul oʻquv qoʻllanmalar | Hangyul",
+      "seoDescription": "Hangyul’ning koreys tili boʻyicha bepul oʻquv qoʻllanmalarini yuklab oling: kundalik jumlalar, zarur soʻzlar, lotin transkripsiyasi, namunaviy suhbatlar va boblar boʻyicha takrorlash.",
+      "eyebrow": "Bepul PDF",
+      "title": "Koreys tili boʻyicha bepul oʻquv qoʻllanmalar",
+      "intro": "Hangyul’ning YouTube darslari bilan birga foydalanish uchun bepul PDF oʻquv qoʻllanmalar. Kundalik koreyscha jumlalar va zarur soʻzlarni lotin transkripsiyasi, real misollar va boblar boʻyicha takrorlash bilan mustahkamlang — roʻyxatdan oʻtish shart emas.",
+      "breadcrumb": "Bepul oʻquv qoʻllanmalar",
+      "viewGuide": "Qoʻllanmani koʻrish",
+      "viewAll": "Barcha bepul qoʻllanmalar"
     },
     "notFound": {
       "metaTitle": "Material topilmadi | Hangyul",

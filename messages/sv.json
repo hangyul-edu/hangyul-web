@@ -116,6 +116,7 @@
     "mailOrderNumber": "Registreringsnummer för distanshandel: 2026-Seoul Dobong-0542",
     "terms": "Användarvillkor",
     "privacy": "Integritetspolicy",
+    "studyGuides": "Gratis studieguider",
     "socialMedia": "Sociala medier",
     "socialLinkLabel": "Hangyul {platform}"
   },
@@ -131,6 +132,7 @@
       "whatsInside": "Det här ingår",
       "whatsInsideIntro": "Allt du behöver för att repetera avsnittet i din egen takt.",
       "lookInside": "En titt inuti",
+      "moreGuides": "Fler gratis studieguider i koreanska",
       "closingBody": "Gratis att ladda ner. Skriv ut den eller plugga i mobilen.",
       "opensInNewTab": "(öppnas i en ny flik)",
       "youtubeCta": "Se på YouTube",
@@ -145,8 +147,7 @@
     "editionLanguages": {
       "en": {
         "label": "Engelsk utgåva",
-        "notice": "Den här PDF:en är på engelska. Betydelser, användningstips och översättningar av dialogerna är alla skrivna på engelska.",
-        "switch": "Hämta den engelska utgåvan"
+        "notice": "Den här PDF:en är på engelska. Betydelser, användningstips och översättningar av dialogerna är alla skrivna på engelska."
       }
     },
     "formats": {
@@ -236,6 +237,16 @@
         "seoTitle": "500 viktiga koreanska ord – Gratis studieguide | Hangyul",
         "seoDescription": "Ladda ner en gratis studieguide med 500 viktiga koreanska ord, romanisering, naturliga exempelmeningar, användningstips, kapitelrepetitioner och en snabböversikt med checklista."
       }
+    },
+    "index": {
+      "seoTitle": "Gratis studieguider i koreanska | Hangyul",
+      "seoDescription": "Ladda ner Hangyuls gratis studieguider i koreanska: vardagsmeningar, viktiga ord, romanisering, exempeldialoger och repetition kapitel för kapitel.",
+      "eyebrow": "Gratis pdf-filer",
+      "title": "Gratis studieguider i koreanska",
+      "intro": "Gratis studieguider som pdf till Hangyuls YouTube-lektioner. Repetera koreanska vardagsmeningar och viktiga ord med romanisering, verkliga exempel och repetition kapitel för kapitel – ingen registrering krävs.",
+      "breadcrumb": "Gratis studieguider",
+      "viewGuide": "Visa studieguiden",
+      "viewAll": "Visa alla gratis studieguider"
     },
     "notFound": {
       "metaTitle": "Materialet hittades inte | Hangyul",

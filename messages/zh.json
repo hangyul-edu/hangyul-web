@@ -116,6 +116,7 @@
     "mailOrderNumber": "通信销售业申报号：2026-Seoul Dobong-0542",
     "terms": "服务条款",
     "privacy": "隐私政策",
+    "studyGuides": "免费学习指南",
     "socialMedia": "社交媒体",
     "socialLinkLabel": "Hangyul {platform}"
   },
@@ -131,6 +132,7 @@
       "whatsInside": "指南内容",
       "whatsInsideIntro": "按自己的节奏，轻松复习本集全部内容。",
       "lookInside": "内页预览",
+      "moreGuides": "更多免费韩语学习指南",
       "closingBody": "免费下载，可打印，也可以直接在手机上学习。",
       "opensInNewTab": "（在新标签页中打开）",
       "youtubeCta": "在 YouTube 观看",
@@ -145,8 +147,7 @@
     "editionLanguages": {
       "en": {
         "label": "英文版",
-        "notice": "本 PDF 为英文版，释义、用法说明和对话翻译均以英文编写。",
-        "switch": "获取英文版"
+        "notice": "本 PDF 为英文版，释义、用法说明和对话翻译均以英文编写。"
       }
     },
     "formats": {
@@ -236,6 +237,16 @@
         "seoTitle": "500 个必备韩语单词 — 免费学习指南 | Hangyul",
         "seoDescription": "免费下载学习指南，收录 500 个必备韩语单词，附罗马音、自然例句、用法说明、章节复习和速查清单。"
       }
+    },
+    "index": {
+      "seoTitle": "免费韩语学习指南与学习资料 | Hangyul",
+      "seoDescription": "免费下载 Hangyul 韩语学习指南，涵盖日常韩语句子、必备单词、罗马音、对话示例和章节复习。",
+      "eyebrow": "免费 PDF 下载",
+      "title": "免费韩语学习指南",
+      "intro": "配合 Hangyul YouTube 课程使用的免费 PDF 学习指南。借助罗马音、真实例句和章节复习，掌握日常韩语句子和必备单词，无需注册。",
+      "breadcrumb": "免费学习指南",
+      "viewGuide": "查看学习指南",
+      "viewAll": "查看全部免费学习指南"
     },
     "notFound": {
       "metaTitle": "未找到该资源 | Hangyul",

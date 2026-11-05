@@ -12,7 +12,8 @@ import {
   DOWNLOAD_RESOURCE_PARAM,
   normalizeResourceSlug,
   normalizeUiLanguage,
-  resourceRenderPath,
+  resourcePagePath,
+  UNKNOWN_RESOURCE_SLUG,
 } from "@/constants/downloadResources";
 import { getDownloadResource } from "@/content/downloadResources";
 import { routing } from "@/i18n/routing";
@@ -31,8 +32,10 @@ import { detectStorePlatformFromHeaders } from "./deviceDetection";
  * - 데스크톱·봇·판별 불가 → 홈페이지의 기존 기기 선택 모달로 302
  * - app 파라미터가 없거나 모르는 값 → 홈페이지로 302 (루프 없음)
  *
- * 예외: app 없이 ?resource=<slug>(&lang=<UI 언어>)가 있으면 무료 학습 자료 페이지로
- * rewrite 합니다. (src/constants/downloadResources.ts, src/app/download/[resource]/[lang]/page.tsx)
+ * 예외: app 없이 ?resource=<slug>(&lang=<UI 언어>)가 있으면 기존 무료 학습 자료 링크입니다.
+ * 등록된 자료는 대표 주소(/<UI 언어>/resources/<pageSlug>)로 301 리다이렉트하고,
+ * 모르는 자료는 그 화면 언어의 404를 보여줍니다.
+ * (src/constants/downloadResources.ts, src/app/[locale]/resources/[guide]/page.tsx)
  */
 
 /** Next가 보통 뒤쪽 슬래시를 먼저 정규화하지만, 그대로 들어오는 경우도 받아 둡니다. */
@@ -79,25 +82,46 @@ export function handleDownloadSmartLink(
   if (!isDownloadPath(request.nextUrl.pathname)) return null;
 
   /*
-   * /download?resource=<slug> 무료 학습 자료 페이지.
+   * /download?resource=<slug> — 이미 YouTube·SNS에 공유된 무료 학습 자료 링크.
    * app 파라미터가 있으면 항상 기존 스마트 링크가 우선하고, 이 분기는
-   * app 없이 resource만 있는 요청에만 해당합니다. 리다이렉트가 아닌 rewrite라
-   * 주소창에는 공개 URL(utm_* 포함)이 그대로 남습니다.
+   * app 없이 resource만 있는 요청에만 해당합니다.
    */
   const resource = normalizeResourceSlug(
     request.nextUrl.searchParams.get(DOWNLOAD_RESOURCE_PARAM)
   );
   if (resource && !request.nextUrl.searchParams.has(DOWNLOAD_APP_PARAM)) {
+    const resolved = getDownloadResource(resource);
     // 화면 언어: 유효한 ?lang → 그 언어, 없거나 잘못되면 PDF 판의 언어 → 기본 로케일.
     // (Accept-Language 같은 추측 없이 링크만 보고 결정적으로 정합니다.)
     const uiLanguage =
       normalizeUiLanguage(request.nextUrl.searchParams.get(DOWNLOAD_LANG_PARAM)) ??
-      normalizeUiLanguage(getDownloadResource(resource)?.edition.language) ??
+      normalizeUiLanguage(resolved?.edition.language) ??
       routing.defaultLocale;
 
-    const url = request.nextUrl.clone();
-    url.pathname = resourceRenderPath(resource, uiLanguage);
-    return NextResponse.rewrite(url);
+    if (!resolved) {
+      // 다른 자료로 보내지 않고, 주소는 그대로 둔 채 그 화면 언어의 404를 보여줍니다.
+      const url = request.nextUrl.clone();
+      url.pathname = resourcePagePath(UNKNOWN_RESOURCE_SLUG, uiLanguage);
+      url.search = "";
+      return NextResponse.rewrite(url);
+    }
+
+    /*
+     * 등록된 자료는 검색엔진용 대표 주소로 영구(301) 리다이렉트합니다.
+     * 어느 기기에서나 목적지가 같으므로 스마트 링크와 달리 영구 리다이렉트가 맞고,
+     * 링크가 가진 신호도 대표 주소로 모입니다. resource·lang 외의 쿼리(utm_* 등)는
+     * 그대로 넘겨 기존 유입 분석이 끊기지 않게 합니다.
+     */
+    const url = new URL(
+      resourcePagePath(resolved.family.pageSlug, uiLanguage),
+      request.url
+    );
+    request.nextUrl.searchParams.forEach((value, key) => {
+      if (key !== DOWNLOAD_RESOURCE_PARAM && key !== DOWNLOAD_LANG_PARAM) {
+        url.searchParams.append(key, value);
+      }
+    });
+    return NextResponse.redirect(url, 301);
   }
 
   // 링크에 대소문자가 섞여도(?app=Ganada) 동작하게 맞춰 줍니다.

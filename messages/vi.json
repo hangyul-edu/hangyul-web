@@ -116,6 +116,7 @@
     "mailOrderNumber": "Số đăng ký kinh doanh bán hàng qua mạng: 2026-Seoul Dobong-0542",
     "terms": "Điều khoản dịch vụ",
     "privacy": "Chính sách bảo mật",
+    "studyGuides": "Tài liệu học miễn phí",
     "socialMedia": "Mạng xã hội",
     "socialLinkLabel": "Hangyul {platform}"
   },
@@ -131,6 +132,7 @@
       "whatsInside": "Có gì bên trong",
       "whatsInsideIntro": "Ôn lại toàn bộ nội dung tập này theo tốc độ của riêng bạn.",
       "lookInside": "Xem trước nội dung",
+      "moreGuides": "Thêm tài liệu học tiếng Hàn miễn phí",
       "closingBody": "Tải miễn phí. In ra hoặc học ngay trên điện thoại.",
       "opensInNewTab": "(mở trong thẻ mới)",
       "youtubeCta": "Xem trên YouTube",
@@ -145,8 +147,7 @@
     "editionLanguages": {
       "en": {
         "label": "Bản tiếng Anh",
-        "notice": "Tệp PDF này bằng tiếng Anh. Phần nghĩa, ghi chú cách dùng và bản dịch hội thoại đều được viết bằng tiếng Anh.",
-        "switch": "Tải bản tiếng Anh"
+        "notice": "Tệp PDF này bằng tiếng Anh. Phần nghĩa, ghi chú cách dùng và bản dịch hội thoại đều được viết bằng tiếng Anh."
       }
     },
     "formats": {
@@ -236,6 +237,16 @@
         "seoTitle": "500 từ vựng tiếng Hàn thiết yếu — Tài liệu học miễn phí | Hangyul",
         "seoDescription": "Tải miễn phí tài liệu học gồm 500 từ vựng tiếng Hàn thiết yếu, phiên âm, câu ví dụ tự nhiên, ghi chú cách dùng, ôn tập từng chương và bảng tra nhanh."
       }
+    },
+    "index": {
+      "seoTitle": "Tài liệu học tiếng Hàn miễn phí | Hangyul",
+      "seoDescription": "Tải miễn phí tài liệu học tiếng Hàn của Hangyul với câu tiếng Hàn hằng ngày, từ vựng thiết yếu, phiên âm, hội thoại mẫu và phần ôn tập theo chương.",
+      "eyebrow": "Tải PDF miễn phí",
+      "title": "Tài liệu học tiếng Hàn miễn phí",
+      "intro": "Tài liệu học PDF miễn phí đi kèm các bài học YouTube của Hangyul. Ôn câu tiếng Hàn hằng ngày và từ vựng thiết yếu với phiên âm, ví dụ thực tế và phần ôn tập theo chương — không cần đăng ký.",
+      "breadcrumb": "Tài liệu học miễn phí",
+      "viewGuide": "Xem tài liệu",
+      "viewAll": "Xem tất cả tài liệu học miễn phí"
     },
     "notFound": {
       "metaTitle": "Không tìm thấy tài liệu | Hangyul",

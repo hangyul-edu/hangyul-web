@@ -116,6 +116,7 @@
     "mailOrderNumber": "Numer rejestracji sprzedaży wysyłkowej: 2026-Seoul Dobong-0542",
     "terms": "Regulamin",
     "privacy": "Polityka prywatności",
+    "studyGuides": "Darmowe materiały do nauki",
     "socialMedia": "Media społecznościowe",
     "socialLinkLabel": "Hangyul {platform}"
   },
@@ -131,6 +132,7 @@
       "whatsInside": "Co znajdziesz w środku",
       "whatsInsideIntro": "Wszystko, czego potrzebujesz, by powtórzyć odcinek we własnym tempie.",
       "lookInside": "Zajrzyj do środka",
+      "moreGuides": "Więcej darmowych materiałów do nauki koreańskiego",
       "closingBody": "Do pobrania za darmo. Wydrukuj albo ucz się na telefonie.",
       "opensInNewTab": "(otwiera się w nowej karcie)",
       "youtubeCta": "Obejrzyj na YouTube",
@@ -145,8 +147,7 @@
     "editionLanguages": {
       "en": {
         "label": "Wydanie angielskie",
-        "notice": "Ten plik PDF jest w języku angielskim. Znaczenia, wskazówki dotyczące użycia i tłumaczenia dialogów są w całości napisane po angielsku.",
-        "switch": "Przejdź do wydania angielskiego"
+        "notice": "Ten plik PDF jest w języku angielskim. Znaczenia, wskazówki dotyczące użycia i tłumaczenia dialogów są w całości napisane po angielsku."
       }
     },
     "formats": {
@@ -236,6 +237,16 @@
         "seoTitle": "500 najważniejszych słów po koreańsku – Darmowe materiały do nauki | Hangyul",
         "seoDescription": "Pobierz darmowe materiały do nauki: 500 najważniejszych słów po koreańsku z latynizacją, naturalnymi przykładami, wskazówkami, powtórkami rozdziałów i listą kontrolną."
       }
+    },
+    "index": {
+      "seoTitle": "Darmowe materiały do nauki koreańskiego | Hangyul",
+      "seoDescription": "Pobierz darmowe materiały Hangyul do nauki koreańskiego: codzienne zdania, najważniejsze słówka, latynizacja, przykładowe dialogi i powtórki do każdego rozdziału.",
+      "eyebrow": "Darmowe pliki PDF",
+      "title": "Darmowe materiały do nauki koreańskiego",
+      "intro": "Darmowe materiały do nauki w PDF do lekcji Hangyul na YouTube. Powtarzaj codzienne zdania po koreańsku i najważniejsze słówka z latynizacją, prawdziwymi przykładami i powtórkami do każdego rozdziału – bez rejestracji.",
+      "breadcrumb": "Darmowe materiały do nauki",
+      "viewGuide": "Zobacz materiał",
+      "viewAll": "Zobacz wszystkie darmowe materiały"
     },
     "notFound": {
       "metaTitle": "Nie znaleziono materiału | Hangyul",

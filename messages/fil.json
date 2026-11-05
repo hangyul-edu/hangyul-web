@@ -116,6 +116,7 @@
     "mailOrderNumber": "Numero ng Rehistro sa Mail-Order Sales: 2026-Seoul Dobong-0542",
     "terms": "Mga Tuntunin ng Serbisyo",
     "privacy": "Patakaran sa Privacy",
+    "studyGuides": "Libreng study guide",
     "socialMedia": "Social Media",
     "socialLinkLabel": "Hangyul {platform}"
   },
@@ -131,6 +132,7 @@
       "whatsInside": "Ano ang nasa loob",
       "whatsInsideIntro": "Lahat ng kailangan mo para balikan ang episode sa sarili mong bilis.",
       "lookInside": "Silipin ang loob",
+      "moreGuides": "Iba pang libreng Korean study guide",
       "closingBody": "Libreng i-download. I-print ito o mag-aral sa iyong phone.",
       "opensInNewTab": "(magbubukas sa bagong tab)",
       "youtubeCta": "Panoorin sa YouTube",
@@ -145,8 +147,7 @@
     "editionLanguages": {
       "en": {
         "label": "Edisyong Ingles",
-        "notice": "Nasa Ingles ang PDF na ito. Nakasulat sa Ingles ang lahat ng kahulugan, paliwanag sa paggamit, at salin ng mga usapan.",
-        "switch": "Kunin ang edisyong Ingles"
+        "notice": "Nasa Ingles ang PDF na ito. Nakasulat sa Ingles ang lahat ng kahulugan, paliwanag sa paggamit, at salin ng mga usapan."
       }
     },
     "formats": {
@@ -236,6 +237,16 @@
         "seoTitle": "500 Mahahalagang Salitang Korean — Libreng Study Guide | Hangyul",
         "seoDescription": "I-download ang libreng study guide na may 500 mahahalagang salitang Korean, romanization, natural na halimbawang pangungusap, paliwanag sa paggamit, chapter review, at quick-reference checklist."
       }
+    },
+    "index": {
+      "seoTitle": "Libreng Korean Study Guide at Learning Resources | Hangyul",
+      "seoDescription": "I-download ang mga libreng Korean study guide ng Hangyul na may pang-araw-araw na pangungusap, mahahalagang salita, romanization, halimbawang usapan at chapter review.",
+      "eyebrow": "Libreng PDF download",
+      "title": "Libreng Korean Study Guide",
+      "intro": "Mga libreng PDF study guide na kasama ng mga YouTube lesson ng Hangyul. Balikan ang mga pang-araw-araw na pangungusap at mahahalagang salita sa Korean gamit ang romanization, totoong halimbawa at chapter review — hindi kailangang mag-sign up.",
+      "breadcrumb": "Libreng Study Guide",
+      "viewGuide": "Tingnan ang study guide",
+      "viewAll": "Tingnan lahat ng libreng study guide"
     },
     "notFound": {
       "metaTitle": "Hindi nahanap ang resource | Hangyul",

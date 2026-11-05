@@ -1,10 +1,17 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
-import { resourceFilePath, resourcePagePath } from "@/constants/downloadResources";
+import {
+  resourceFilePath,
+  resourcesIndexPath,
+} from "@/constants/downloadResources";
+import {
+  buildResourceStructuredData,
+  serializeJsonLd,
+} from "@/constants/structuredData";
 import { getResourceAssets } from "@/content/downloadResourceAssets";
 import {
-  getSiblingEdition,
+  RESOURCE_FAMILIES,
   type ResolvedResource,
 } from "@/content/downloadResources";
 import {
@@ -14,6 +21,13 @@ import {
   InfoIcon,
   PlayIcon,
 } from "./ResourceIcons";
+import ResourceGuideList from "./ResourceGuideList";
+import {
+  absolute,
+  absoluteFileUrl,
+  getGuideSummary,
+  getResourceBreadcrumb,
+} from "./resourceGuides";
 import { ResourcePageView, TrackedLink } from "./ResourceTracking";
 import YouTubeComingSoonButton from "./YouTubeComingSoonButton";
 import styles from "./ResourcePage.module.css";
@@ -35,6 +49,8 @@ type EditionLanguageNamespace = "ResourceDownload.editionLanguages.en";
  * - 화면 문구는 messages/<화면 언어>.json 의 ResourceDownload 에서 가져옵니다.
  * - PDF 판 언어는 배지로 항상 표시하고, 화면 언어와 다르면 다운로드 버튼 바로 위에
  *   PDF가 어떤 언어로 쓰였는지 안내합니다.
+ * - 서버 컴포넌트라 제목·설명·통계·What's inside·구조화 데이터가 모두 초기 HTML에 들어갑니다.
+ * - 아래쪽에 다른 무료 학습 가이드로 가는 일반 링크와 자료 목록 링크를 둡니다.
  */
 export default async function ResourceDownloadPage({
   resource,
@@ -67,17 +83,31 @@ export default async function ResourceDownloadPage({
   });
 
   const languageMismatch = uiLanguage !== edition.language;
-  // 화면 언어로 쓰인 판이 같은 가족에 실제로 있을 때만 안내합니다.
-  const uiLanguageEdition = languageMismatch
-    ? getSiblingEdition(family, uiLanguage)
-    : null;
-  const tUiEdition = uiLanguageEdition
-    ? await getTranslations({
-        locale: uiLanguage,
-        namespace:
-          `ResourceDownload.editionLanguages.${uiLanguage}` as EditionLanguageNamespace,
-      })
-    : null;
+  const tIndex = await getTranslations({
+    locale: uiLanguage,
+    namespace: "ResourceDownload.index",
+  });
+
+  const current = await getGuideSummary(family, uiLanguage);
+  const otherGuides = await Promise.all(
+    RESOURCE_FAMILIES.filter((other) => other.id !== family.id).map((other) =>
+      getGuideSummary(other, uiLanguage)
+    )
+  );
+  const pageUrl = absolute(current.href);
+  const structuredData = buildResourceStructuredData({
+    url: pageUrl,
+    locale: uiLanguage,
+    pageTitle: tCopy("seoTitle"),
+    name: current.name,
+    description: tCopy("seoDescription"),
+    editionLanguage: edition.language,
+    fileUrl: absoluteFileUrl(edition),
+    thumbnailUrl: absolute(assets.cover.src),
+    imageUrl: absolute(assets.ogImage.src),
+    series: family.series,
+    breadcrumb: await getResourceBreadcrumb(uiLanguage, current),
+  });
 
   const fileHref = resourceFilePath(edition.slug);
   // 연결된 영상이 이 에피소드의 영상일 때만 판 문구에 에피소드가 들어간 버튼 문구가 있습니다.
@@ -141,6 +171,10 @@ export default async function ResourceDownloadPage({
 
   return (
     <main id="main-content" className={styles.main}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(structuredData) }}
+      />
       <ResourcePageView slug={edition.slug} uiLanguage={uiLanguage} />
 
       <section className={styles.hero} aria-labelledby="resource-title">
@@ -243,16 +277,6 @@ export default async function ResourceDownloadPage({
             </div>
 
             <p className={styles.microcopy}>{microcopy}</p>
-
-            {uiLanguageEdition && tUiEdition && (
-              <a
-                className={styles.siblingLink}
-                href={resourcePagePath(uiLanguageEdition.slug, uiLanguage)}
-                hrefLang={uiLanguage}
-              >
-                {tUiEdition("switch")}
-              </a>
-            )}
           </div>
         </div>
       </section>
@@ -324,6 +348,24 @@ export default async function ResourceDownloadPage({
           {downloadLink("closing")}
         </div>
       </section>
+
+      {otherGuides.length > 0 && (
+        <nav className={styles.related} aria-labelledby="related-title">
+          <div className={styles.relatedInner}>
+            <h2 id="related-title" className={styles.relatedTitle}>
+              {t("moreGuides")}
+            </h2>
+            <ResourceGuideList guides={otherGuides} variant="compact" />
+            <a
+              className={styles.relatedAll}
+              href={resourcesIndexPath(uiLanguage)}
+              data-testid="all-guides-link"
+            >
+              {tIndex("viewAll")}
+            </a>
+          </div>
+        </nav>
+      )}
     </main>
   );
 }

@@ -116,6 +116,7 @@
     "mailOrderNumber": "Nomor Registrasi Penjualan Daring: 2026-Seoul Dobong-0542",
     "terms": "Syarat Layanan",
     "privacy": "Kebijakan Privasi",
+    "studyGuides": "Panduan belajar gratis",
     "socialMedia": "Media Sosial",
     "socialLinkLabel": "Hangyul {platform}"
   },
@@ -131,6 +132,7 @@
       "whatsInside": "Isi panduan",
       "whatsInsideIntro": "Pelajari ulang isi episode ini dengan lengkap, sesuai kecepatanmu sendiri.",
       "lookInside": "Intip isinya",
+      "moreGuides": "Panduan belajar bahasa Korea gratis lainnya",
       "closingBody": "Gratis diunduh. Cetak atau pelajari langsung di ponselmu.",
       "opensInNewTab": "(terbuka di tab baru)",
       "youtubeCta": "Tonton di YouTube",
@@ -145,8 +147,7 @@
     "editionLanguages": {
       "en": {
         "label": "Edisi bahasa Inggris",
-        "notice": "PDF ini berbahasa Inggris. Arti, catatan penggunaan, dan terjemahan percakapan semuanya ditulis dalam bahasa Inggris.",
-        "switch": "Dapatkan edisi bahasa Inggris"
+        "notice": "PDF ini berbahasa Inggris. Arti, catatan penggunaan, dan terjemahan percakapan semuanya ditulis dalam bahasa Inggris."
       }
     },
     "formats": {
@@ -236,6 +237,16 @@
         "seoTitle": "500 Kosakata Bahasa Korea Penting — Panduan Belajar Gratis | Hangyul",
         "seoDescription": "Unduh panduan belajar gratis berisi 500 kosakata bahasa Korea penting, romanisasi, contoh kalimat alami, catatan penggunaan, latihan akhir bab, dan daftar ringkas."
       }
+    },
+    "index": {
+      "seoTitle": "Panduan Belajar Bahasa Korea Gratis | Hangyul",
+      "seoDescription": "Unduh panduan belajar bahasa Korea gratis dari Hangyul: kalimat sehari-hari, kosakata penting, romanisasi, contoh percakapan, dan ulasan per bab.",
+      "eyebrow": "Unduhan PDF gratis",
+      "title": "Panduan Belajar Bahasa Korea Gratis",
+      "intro": "Panduan belajar PDF gratis untuk menemani pelajaran YouTube Hangyul. Ulangi kalimat bahasa Korea sehari-hari dan kosakata penting dengan romanisasi, contoh nyata, dan ulasan per bab — tanpa perlu daftar.",
+      "breadcrumb": "Panduan Belajar Gratis",
+      "viewGuide": "Lihat panduan",
+      "viewAll": "Lihat semua panduan belajar gratis"
     },
     "notFound": {
       "metaTitle": "Materi tidak ditemukan | Hangyul",

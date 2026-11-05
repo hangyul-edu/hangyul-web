@@ -116,6 +116,7 @@
     "mailOrderNumber": "Registratienummer verkoop op afstand: 2026-Seoul Dobong-0542",
     "terms": "Gebruiksvoorwaarden",
     "privacy": "Privacybeleid",
+    "studyGuides": "Gratis studiegidsen",
     "socialMedia": "Sociale media",
     "socialLinkLabel": "Hangyul {platform}"
   },
@@ -131,6 +132,7 @@
       "whatsInside": "Dit zit erin",
       "whatsInsideIntro": "Alles wat je nodig hebt om de aflevering in je eigen tempo te herhalen.",
       "lookInside": "Een kijkje in de gids",
+      "moreGuides": "Meer gratis studiegidsen Koreaans",
       "closingBody": "Gratis te downloaden. Print hem uit of leer op je telefoon.",
       "opensInNewTab": "(opent in een nieuw tabblad)",
       "youtubeCta": "Bekijk op YouTube",
@@ -145,8 +147,7 @@
     "editionLanguages": {
       "en": {
         "label": "Engelse editie",
-        "notice": "Deze PDF is in het Engels. Betekenissen, gebruikstips en vertalingen van de gesprekken zijn allemaal in het Engels geschreven.",
-        "switch": "Naar de Engelse editie"
+        "notice": "Deze PDF is in het Engels. Betekenissen, gebruikstips en vertalingen van de gesprekken zijn allemaal in het Engels geschreven."
       }
     },
     "formats": {
@@ -236,6 +237,16 @@
         "seoTitle": "500 essentiële Koreaanse woorden — Gratis studiegids | Hangyul",
         "seoDescription": "Download een gratis studiegids met 500 essentiële Koreaanse woorden, romanisatie, natuurlijke voorbeeldzinnen, gebruikstips, hoofdstukherhalingen en een overzichtslijst."
       }
+    },
+    "index": {
+      "seoTitle": "Gratis studiegidsen Koreaans & lesmateriaal | Hangyul",
+      "seoDescription": "Download de gratis studiegidsen Koreaans van Hangyul: alledaagse zinnen, essentiële woorden, romanisatie, voorbeeldgesprekken en herhaling per hoofdstuk.",
+      "eyebrow": "Gratis pdf’s",
+      "title": "Gratis studiegidsen Koreaans",
+      "intro": "Gratis pdf-studiegidsen bij de YouTube-lessen van Hangyul. Herhaal alledaagse Koreaanse zinnen en essentiële woorden met romanisatie, echte voorbeelden en herhaling per hoofdstuk – zonder registratie.",
+      "breadcrumb": "Gratis studiegidsen",
+      "viewGuide": "Studiegids bekijken",
+      "viewAll": "Alle gratis studiegidsen bekijken"
     },
     "notFound": {
       "metaTitle": "Materiaal niet gevonden | Hangyul",

@@ -498,15 +498,6 @@
   color: var(--muted);
 }
 
-.siblingLink {
-  margin-top: 12px;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--accent-text);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
 /* ---------- What's inside ---------- */
 
 .inside {
@@ -717,6 +708,196 @@
   color: var(--text);
 }
 
+/* ---------- 다른 무료 학습 가이드 (자료 페이지 하단) ---------- */
+
+/*
+ * 마무리 CTA 아래의 조용한 내부 링크 영역입니다. 큰 카드·캐러셀 대신 작은 썸네일 목록으로
+ * 다운로드 CTA보다 앞서지 않게 합니다.
+ */
+.related {
+  background: var(--white);
+  padding: 0 var(--gutter) 48px;
+}
+
+.relatedInner {
+  max-width: calc(var(--container) - 2 * var(--gutter));
+  margin: 0 auto;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.relatedTitle {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--ink-strong);
+}
+
+.relatedAll {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.relatedAll:focus-visible,
+.guideCard:focus-visible,
+.guideCardCompact:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+/* ---------- 학습 가이드 카드 (목록 페이지 · 하단 링크 공용) ---------- */
+
+.guideList,
+.guideGrid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+.guideList {
+  margin-top: 14px;
+  gap: 10px;
+}
+
+.guideGrid {
+  gap: 16px;
+}
+
+.guideItem {
+  min-width: 0;
+}
+
+.guideCard,
+.guideCardCompact {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.guideCard {
+  padding: 16px;
+  gap: 16px;
+}
+
+.guideCardCompact {
+  align-items: center;
+  padding: 10px 12px;
+}
+
+.guideCard:hover,
+.guideCardCompact:hover {
+  border-color: var(--line-strong);
+  box-shadow: 0 8px 24px -18px rgba(20, 20, 20, 0.25);
+}
+
+.guideCover {
+  flex-shrink: 0;
+  display: block;
+  width: 56px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.guideCard .guideCover {
+  width: 96px;
+}
+
+.guideCover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.guideText {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.guideSeries {
+  /* 영어 고유명사(dir="ltr")라도 줄의 시작 쪽(RTL에서는 오른쪽)에 붙입니다. */
+  align-self: flex-start;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.guideTitle {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--ink-strong);
+}
+
+.guideCard .guideTitle {
+  font-size: 18px;
+}
+
+.guideDescription {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.guideMeta {
+  margin-top: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.guideView {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-text);
+}
+
+/* ---------- 자료 목록 페이지 ---------- */
+
+.indexHero {
+  background: var(--white);
+  padding: 0 var(--gutter);
+}
+
+.indexInner {
+  max-width: calc(var(--container) - 2 * var(--gutter));
+  margin: 0 auto;
+}
+
+.indexHero .indexInner {
+  padding: calc(var(--header-h) + 32px) 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.indexHero .description {
+  max-width: 640px;
+}
+
+.indexList {
+  background: var(--white);
+  padding: 8px var(--gutter) 64px;
+}
+
 /* ---------- Not found ---------- */
 
 .notFound {
@@ -815,9 +996,26 @@
   .stats {
     order: 9;
   }
+}
 
-  .siblingLink {
-    order: 10;
+/* ---------- 학습 가이드 카드: 태블릿 이상 ---------- */
+
+@media (min-width: 768px) {
+  .guideList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .guideGrid {
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 20px;
+  }
+
+  .guideCard {
+    padding: 20px;
+  }
+
+  .guideCard .guideCover {
+    width: 120px;
   }
 }
 
@@ -1056,7 +1254,9 @@
 
 @media (prefers-reduced-motion: reduce) {
   .primaryButton,
-  .secondaryButton {
+  .secondaryButton,
+  .guideCard,
+  .guideCardCompact {
     transition: none;
   }
 
