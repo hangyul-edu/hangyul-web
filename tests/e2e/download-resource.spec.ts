@@ -954,9 +954,7 @@ const wordsCopy = (locale: string) =>
 const wordsFormat = (locale: string) =>
   (messages(locale).formats as unknown as Record<string, Record<string, string>>)
     .essentialWords;
-const comingSoon = (locale: string) =>
-  (messages(locale).common as unknown as Record<string, Record<string, string>>)
-    .youtubeComingSoon;
+const WORDS_YOUTUBE_URL = "https://www.youtube.com/watch?v=zl2JdibNnR4";
 const comingSoonDialog = (page: Page) =>
   page.locator('[data-modal="youtube-coming-soon"]');
 
@@ -1063,88 +1061,42 @@ test.describe("500 Essential Korean Words — /download?resource=ep01-en-500-ess
     await expect(h1(page)).toHaveText(wordsFormat("ko").title);
     await expect(page.getByTestId("edition-badge")).toHaveText(m.editionLanguages.en.label);
     await expect(page.getByTestId("edition-notice")).toHaveText(wordsCopy("ko").editionNotice);
-    await expect(page.getByTestId("resource-youtube")).toContainText(m.common.youtubeCta);
+    await expect(page.getByTestId("resource-youtube")).toContainText(wordsCopy("ko").youtubeCta);
+    await expect(page.getByTestId("resource-youtube")).toHaveAttribute("href", WORDS_YOUTUBE_URL);
     await expect(heroDownload(page)).toHaveAttribute("href", WORDS_PDF_PATH);
     await expect(heroDownload(page)).toHaveAttribute("download", WORDS_DOWNLOAD_FILE_NAME);
     await expect(page).toHaveTitle(wordsCopy("ko").seoTitle);
   });
 });
 
-test.describe("500 Essential Korean Words — YouTube is not connected yet", () => {
-  test("the CTA is a visible button, never a link to another video", async ({ page }) => {
+test.describe("500 Essential Korean Words — YouTube", () => {
+  test("the CTA links straight to its own EP.01 video in a new tab", async ({ page }) => {
     await page.goto(WORDS_EN_LINK);
-    const youtube = page.getByTestId("resource-youtube");
+    const youtube = page.getByRole("link", { name: /watch ep\.01 on youtube/i });
     await expect(youtube).toBeVisible();
-    await expect(youtube).toHaveText("Watch on YouTube");
-    await expect(youtube).toHaveJSProperty("tagName", "BUTTON");
-    await expect(youtube).not.toHaveAttribute("href", /.*/);
-    await expect(youtube).toHaveAttribute("aria-haspopup", "dialog");
-
-    // EP01·EP02 영상으로 대신 연결하지 않습니다.
-    const html = await page.content();
-    expect(html).not.toContain("youtube.com/watch");
-    expect(html).not.toContain("youtu.be/");
-    await expect(page.locator('main a[href="#"]')).toHaveCount(0);
+    await expect(youtube).toHaveAttribute("data-testid", "resource-youtube");
+    await expect(youtube).toHaveAttribute("href", WORDS_YOUTUBE_URL);
+    await expect(youtube).toHaveAttribute("target", "_blank");
+    await expect(youtube).toHaveAttribute("rel", /noopener/);
+    await expect(youtube).not.toHaveAttribute("href", YOUTUBE_URL);
+    await expect(youtube).not.toHaveAttribute("href", EP02_YOUTUBE_URL);
   });
 
-  test("opens an accessible coming-soon dialog that traps focus and locks scrolling", async ({ page }) => {
+  test("clicking it opens the video and never shows the coming-soon dialog", async ({ page, context }) => {
+    await context.route(/https:\/\/www\.youtube\.com\/.*/, (route) =>
+      route.fulfill({ status: 200, contentType: "text/html", body: "<title>youtube</title>" })
+    );
     await page.goto(WORDS_EN_LINK);
-    const trigger = page.getByTestId("resource-youtube");
-    await trigger.click();
-
-    const dialog = page.getByRole("dialog", { name: "The video lesson is coming soon" });
-    await expect(dialog).toBeVisible();
-    await expect(dialog).toHaveAttribute("aria-modal", "true");
-    await expect(dialog).toContainText("Coming soon");
-    await expect(dialog).toContainText(comingSoon("en").body);
-    await expect(dialog.getByRole("button", { name: "Got it" })).toBeVisible();
-    await expect(dialog.getByRole("button", { name: "Close" })).toBeVisible();
-    await expect(page).toHaveURL(new RegExp(`resource=${WORDS_SLUG}`));
-
-    // 배경 스크롤 잠금 + 배경은 inert
-    expect(await page.evaluate(() => document.documentElement.style.overflow)).toBe("hidden");
-    await expect(page.locator("main")).toHaveAttribute("inert", "");
-
-    // 포커스가 대화상자 안에서만 돕니다.
-    for (let i = 0; i < 5; i++) {
-      await page.keyboard.press("Tab");
-      expect(await dialog.evaluate((el) => el.contains(document.activeElement))).toBe(true);
-    }
-    await page.keyboard.press("Shift+Tab");
-    expect(await dialog.evaluate((el) => el.contains(document.activeElement))).toBe(true);
-
-    // Escape로 닫히고, 포커스는 버튼으로 돌아갑니다.
-    await page.keyboard.press("Escape");
-    await expect(dialog).toHaveCount(0);
-    await expect(trigger).toBeFocused();
-    expect(await page.evaluate(() => document.documentElement.style.overflow)).toBe("");
+    const popup = context.waitForEvent("page");
+    await page.getByTestId("resource-youtube").click();
+    const newPage = await popup;
+    await newPage.waitForLoadState();
+    expect(newPage.url()).toBe(WORDS_YOUTUBE_URL);
+    await expect(comingSoonDialog(page)).toHaveCount(0);
+    await expect(page.getByRole("dialog")).toHaveCount(0);
   });
 
-  test("closes with Got it, the X button, and a click outside", async ({ page }) => {
-    await page.goto(WORDS_EN_LINK);
-    const trigger = page.getByTestId("resource-youtube");
-
-    await trigger.click();
-    const gotIt = comingSoonDialog(page).getByRole("button", { name: "Got it" });
-    // 이 페이지의 대비 규칙: 진한 오렌지(#c94f00), hover는 더 진하게(#b54700)
-    await expect(gotIt).toHaveCSS("background-color", "rgb(201, 79, 0)");
-    await gotIt.hover();
-    await expect(gotIt).toHaveCSS("background-color", "rgb(181, 71, 0)");
-    await gotIt.click();
-    await expect(comingSoonDialog(page)).toHaveCount(0);
-
-    await trigger.click();
-    await comingSoonDialog(page).getByRole("button", { name: "Close" }).click();
-    await expect(comingSoonDialog(page)).toHaveCount(0);
-
-    await trigger.click();
-    await expect(comingSoonDialog(page)).toBeVisible();
-    await page.mouse.click(5, 5);
-    await expect(comingSoonDialog(page)).toHaveCount(0);
-  });
-
-  test("the dialog is localized in every UI language", async ({ page }) => {
-    // 32개 화면 언어를 한 테스트에서 차례로 엽니다.
+  test("the EP.01 CTA is localized in every UI language and opens the same video", async ({ page }) => {
     test.slow();
     const locales = fs
       .readdirSync(path.join(process.cwd(), "messages"))
@@ -1152,30 +1104,15 @@ test.describe("500 Essential Korean Words — YouTube is not connected yet", () 
       .map((f) => f.replace(/\.json$/, ""));
     expect(locales.length).toBeGreaterThan(1);
     for (const locale of locales) {
-      const copyForLocale = comingSoon(locale);
-      if (locale !== "en") {
-        expect(copyForLocale.title, locale).not.toBe(comingSoon("en").title);
-        expect(copyForLocale.body, locale).not.toBe(comingSoon("en").body);
-      }
-      await page.goto(`${WORDS_RESOURCE_LINK}&lang=${locale}`);
-      await page.getByTestId("resource-youtube").click();
-      const dialog = page.getByRole("dialog", { name: copyForLocale.title });
-      await expect(dialog, locale).toBeVisible();
-      await expect(dialog, locale).toContainText(copyForLocale.eyebrow);
-      await expect(dialog, locale).toContainText(copyForLocale.body);
-      await expect(dialog.getByRole("button", { name: copyForLocale.confirm }), locale).toBeVisible();
-      await expect(dialog.getByRole("button", { name: copyForLocale.close }), locale).toBeVisible();
-    }
-  });
+      const cta = wordsCopy(locale).youtubeCta;
+      expect(cta, locale).toContain("EP.01");
+      if (locale !== "en") expect(cta, locale).not.toBe(wordsCopy("en").youtubeCta);
 
-  test("has no WCAG A/AA violations with the dialog open", async ({ page }) => {
-    await page.goto(WORDS_EN_LINK);
-    await page.getByTestId("resource-youtube").click();
-    await expect(comingSoonDialog(page)).toBeVisible();
-    const results = await new AxeBuilder({ page })
-      .withTags(["wcag2a", "wcag2aa"])
-      .analyze();
-    expect(results.violations).toEqual([]);
+      await page.goto(`${WORDS_RESOURCE_LINK}&lang=${locale}`);
+      const youtube = page.getByTestId("resource-youtube");
+      await expect(youtube, locale).toContainText(cta);
+      await expect(youtube, locale).toHaveAttribute("href", WORDS_YOUTUBE_URL);
+    }
   });
 
   test("EP01 and EP02 keep their real YouTube links", async ({ page }) => {
@@ -1237,7 +1174,7 @@ test.describe("500 Essential Korean Words — responsive", () => {
     { width: 1600, height: 900 },
     { width: 1920, height: 1080 },
   ]) {
-    test(`${vp.width}×${vp.height}: no overflow, CTA above the fold, dialog fits`, async ({ page }) => {
+    test(`${vp.width}×${vp.height}: no overflow, CTA above the fold, YouTube link fits`, async ({ page }) => {
       await page.setViewportSize(vp);
       await page.goto(WORDS_EN_LINK);
       const overflow = () =>
@@ -1250,14 +1187,12 @@ test.describe("500 Essential Korean Words — responsive", () => {
       expect(box!.y + box!.height).toBeLessThanOrEqual(vp.height);
       await expect(page.getByRole("contentinfo")).toBeVisible();
 
-      await page.getByTestId("resource-youtube").click();
-      const dialog = page.getByRole("dialog");
-      await expect(dialog).toBeInViewport({ ratio: 1 });
-      const d = await dialog.boundingBox();
-      expect(d!.x).toBeGreaterThanOrEqual(0);
-      expect(d!.x + d!.width).toBeLessThanOrEqual(vp.width);
-      expect(d!.width).toBeLessThanOrEqual(480);
-      expect(await overflow()).toBe(0);
+      const youtube = page.getByTestId("resource-youtube");
+      await expect(youtube).toBeVisible();
+      await expect(youtube).toHaveAttribute("href", WORDS_YOUTUBE_URL);
+      const y = await youtube.boundingBox();
+      expect(y!.x).toBeGreaterThanOrEqual(0);
+      expect(y!.x + y!.width).toBeLessThanOrEqual(vp.width);
     });
   }
 

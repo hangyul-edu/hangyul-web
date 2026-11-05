@@ -145,8 +145,10 @@ export const DOWNLOAD_RESOURCE_FAMILIES = [
     formatMessagesKey: "essentialWords",
     series: "Korean Vocabulary Mastery",
     episode: "EP01",
-    // 이 가이드의 영상은 아직 없습니다. 다른 에피소드 영상으로 대신 연결하지 않습니다.
-    youtube: { status: "comingSoon" },
+    youtube: {
+      status: "available",
+      url: "https://www.youtube.com/watch?v=zl2JdibNnR4",
+    },
     // 001–500, 20개 챕터 × 25단어 (PDF 목차·빠른 참고표 기준)
     itemCount: 500,
     chapterCount: 20,
