@@ -1300,9 +1300,9 @@ const NEW_GUIDES = [
     downloadFileName: "Hangyul_EP03_500_Real_Korean_Sentences_Study_Guide_EN.pdf",
     h1: "500 Real Korean Sentences",
     series: "Korean While You Sleep · EP03",
-    stats: ["500", "25", "177"],
+    stats: ["500", "25", "178"],
     statLabels: ["real Korean sentences", "topic chapters", "pages"],
-    microcopy: "177 pages · PDF · No sign-up required",
+    microcopy: "178 pages · PDF · No sign-up required",
     features: [
       "500 real Korean sentences",
       "Real conversations",
@@ -1325,9 +1325,9 @@ const NEW_GUIDES = [
     downloadFileName: "Hangyul_EP02_1000_Korean_Words_Study_Guide_EN.pdf",
     h1: "1,000 Korean Words You’ll Actually Use",
     series: "Korean Vocabulary Mastery · EP02",
-    stats: ["1,000", "25", "145"],
+    stats: ["1,000", "25", "146"],
     statLabels: ["Korean words", "topic chapters", "pages"],
-    microcopy: "145 pages · PDF · No sign-up required",
+    microcopy: "146 pages · PDF · No sign-up required",
     features: [
       "1,000 useful Korean words",
       "A real example for every word",

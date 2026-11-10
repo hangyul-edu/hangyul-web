@@ -172,7 +172,7 @@ export const DOWNLOAD_RESOURCE_FAMILIES = [
     id: "ep03-study-guide",
     pageSlug: "500-real-korean-sentences-ep03",
     defaultEdition: "en",
-    contentUpdatedAt: "2026-11-10",
+    contentUpdatedAt: "2026-11-11",
     formatMessagesKey: "realSentences",
     series: "Korean While You Sleep",
     episode: "EP03",
@@ -192,7 +192,7 @@ export const DOWNLOAD_RESOURCE_FAMILIES = [
         downloadFileName:
           "Hangyul_EP03_500_Real_Korean_Sentences_Study_Guide_EN.pdf",
         // 실제 PDF 페이지 수 (표지·뒷표지 포함, pdfinfo 기준)
-        pageCount: 177,
+        pageCount: 178,
       },
     },
   },
@@ -230,7 +230,7 @@ export const DOWNLOAD_RESOURCE_FAMILIES = [
     id: "vocabulary-mastery-ep02",
     pageSlug: "1000-korean-words-ep02",
     defaultEdition: "en",
-    contentUpdatedAt: "2026-11-10",
+    contentUpdatedAt: "2026-11-11",
     formatMessagesKey: "koreanWords1000",
     series: "Korean Vocabulary Mastery",
     episode: "EP02",
@@ -249,7 +249,7 @@ export const DOWNLOAD_RESOURCE_FAMILIES = [
         file: "EP02_EN_1000_Korean_Words_Study_Guide.pdf",
         downloadFileName: "Hangyul_EP02_1000_Korean_Words_Study_Guide_EN.pdf",
         // 실제 PDF 페이지 수 (표지·뒷표지 포함, pdfinfo 기준)
-        pageCount: 145,
+        pageCount: 146,
       },
     },
   },
