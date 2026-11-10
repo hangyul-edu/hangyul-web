@@ -138,8 +138,8 @@
       "youtubeCta": "Xem trên YouTube",
       "youtubeComingSoon": {
         "eyebrow": "Sắp ra mắt",
-        "title": "Video bài học sắp ra mắt",
-        "body": "Bài học trên YouTube cho tài liệu này hiện chưa có. Bạn có thể tải tài liệu ngay bây giờ, và video sẽ được gắn liên kết tại đây khi sẵn sàng.",
+        "title": "Video bài học đang được chuẩn bị",
+        "body": "Bài học trên YouTube cho tài liệu này hiện chưa được kết nối. Bạn có thể tải tài liệu ngay bây giờ, và chúng tôi sẽ thêm video vào đây khi sẵn sàng.",
         "confirm": "Đã hiểu",
         "close": "Đóng"
       }
@@ -174,6 +174,30 @@
           }
         }
       },
+      "realSentences": {
+        "eyebrow": "Tài liệu học miễn phí",
+        "title": "500 câu tiếng Hàn thực tế",
+        "statItems": "{count, plural, other {câu tiếng Hàn thực tế}}",
+        "closingTitle": "Mang trọn 500 câu này theo bên mình",
+        "closingBody": "Tải tài liệu miễn phí và ôn tiếng Hàn thực tế bất cứ lúc nào bạn muốn.",
+        "features": {
+          "sentences": {
+            "title": "500 câu tiếng Hàn thực tế"
+          },
+          "conversation": {
+            "title": "Hội thoại thực tế",
+            "body": "Mỗi câu đều được đặt trong một đoạn hội thoại ngắn, tự nhiên để bạn hiểu người Hàn thực sự dùng câu đó như thế nào."
+          },
+          "romanization": {
+            "title": "Nghĩa + phiên âm + ghi chú cách dùng",
+            "body": "Đọc theo tiếng Hàn với phiên âm La-tinh, nghĩa tiếng Anh tự nhiên và ghi chú ngắn gọn giải thích sắc thái cũng như cách dùng."
+          },
+          "review": {
+            "title": "Ôn tập + ôn nhanh",
+            "body": "Tự kiểm tra sau mỗi chương, đối chiếu đáp án và ôn lại toàn bộ 500 câu ở cuối tài liệu."
+          }
+        }
+      },
       "essentialWords": {
         "eyebrow": "Tài liệu học miễn phí",
         "title": "500 từ vựng tiếng Hàn thiết yếu",
@@ -195,6 +219,30 @@
           "review": {
             "title": "Ôn tập + bảng tra nhanh",
             "body": "Tự kiểm tra sau mỗi chương, đối chiếu đáp án và đánh dấu những từ bạn đã nhớ trong bảng tra nhanh."
+          }
+        }
+      },
+      "koreanWords1000": {
+        "eyebrow": "Tài liệu học miễn phí",
+        "title": "1.000 từ tiếng Hàn bạn thực sự sẽ dùng",
+        "statItems": "{count, plural, other {từ tiếng Hàn}}",
+        "closingTitle": "Mang trọn 1.000 từ tiếng Hàn theo bên mình",
+        "closingBody": "Tải tài liệu miễn phí và mở rộng vốn từ tiếng Hàn theo tốc độ của riêng bạn.",
+        "features": {
+          "words": {
+            "title": "1.000 từ tiếng Hàn hữu ích"
+          },
+          "sentences": {
+            "title": "Mỗi từ đều có ví dụ thực tế",
+            "body": "Xem từng từ trong một câu tiếng Hàn tự nhiên, kèm phiên âm và bản dịch tiếng Anh."
+          },
+          "romanization": {
+            "title": "Nghĩa + hướng dẫn cách dùng",
+            "body": "Nắm phiên âm, từ loại và nghĩa tiếng Anh tự nhiên của từng từ, cùng ghi chú ngắn gọn giúp bạn chọn đúng từ và dùng cho chuẩn."
+          },
+          "review": {
+            "title": "Ôn tập + bảng tra nhanh",
+            "body": "Ôn tập từng chương, đối chiếu đáp án và dùng bảng tra nhanh ở cuối để đánh dấu những từ bạn đã nhớ."
           }
         }
       }
@@ -224,6 +272,17 @@
         "seoTitle": "100 câu tiếng Hàn thông dụng hằng ngày — EP02 Tài liệu học miễn phí | Hangyul",
         "seoDescription": "Tải miễn phí tài liệu học EP02 của Hangyul với thêm 100 câu tiếng Hàn thông dụng hằng ngày, phiên âm La-tinh, nghĩa tiếng Anh, hội thoại, phần ôn tập theo chương và luyện tập."
       },
+      "ep03EnStudyGuide": {
+        "description": "Luyện 500 câu tiếng Hàn tự nhiên, kèm phiên âm La-tinh, nghĩa tiếng Anh đời thường, hội thoại thực tế, ghi chú cách dùng, phần ôn tập theo chương và phần ôn nhanh toàn bộ 500 câu.",
+        "topics": "Những câu thực tế cho các tình huống hằng ngày: phản ứng và cảm xúc, quán cà phê và mua sắm, đi lại, lên kế hoạch và rủ rê, các mối quan hệ, du lịch, công việc và nhiều hơn nữa.",
+        "coverAlt": "Bìa tài liệu học của Hangyul “500 câu tiếng Hàn thực tế” (실생활 한국어 500문장), Korean While You Sleep EP03, bản tiếng Anh",
+        "previews": {
+          "chapter": "Trang mẫu từ Chương 1, Hỏi han hằng ngày: mỗi câu gồm tiếng Hàn, phiên âm La-tinh, nghĩa tiếng Anh, ghi chú cách dùng và một đoạn hội thoại ngắn",
+          "review": "Trang mẫu từ Chương 2, Phản ứng tự nhiên: hai câu cuối của chương, tiếp theo là phần ôn tập với bốn dạng bài: câu này nghĩa là gì, nói bằng tiếng Hàn thế nào, hoàn thành đoạn hội thoại và bạn sẽ nói gì"
+        },
+        "seoTitle": "500 câu tiếng Hàn thực tế — Tài liệu học miễn phí | Hangyul",
+        "seoDescription": "Tải miễn phí tài liệu học EP03 của Hangyul: 500 câu tiếng Hàn thực tế kèm phiên âm La-tinh, nghĩa tiếng Anh tự nhiên, hội thoại, ghi chú cách dùng và phần ôn tập."
+      },
       "ep01En500EssentialWords": {
         "description": "Xây nền tảng từ vựng tiếng Hàn thực tế với 500 từ thiết yếu, câu ví dụ tự nhiên, phiên âm, ghi chú cách dùng, ôn tập từng chương và bảng tra nhanh có ô đánh dấu.",
         "youtubeCta": "Xem EP.01 trên YouTube",
@@ -236,6 +295,18 @@
         },
         "seoTitle": "500 từ vựng tiếng Hàn thiết yếu — Tài liệu học miễn phí | Hangyul",
         "seoDescription": "Tải miễn phí tài liệu học gồm 500 từ vựng tiếng Hàn thiết yếu, phiên âm, câu ví dụ tự nhiên, ghi chú cách dùng, ôn tập từng chương và bảng tra nhanh."
+      },
+      "ep02En1000KoreanWords": {
+        "description": "Xây vốn từ tiếng Hàn thực tế với 1.000 từ hữu ích, mỗi từ đều có câu ví dụ tự nhiên, phiên âm, ghi chú cách dùng, ôn tập từng chương và bảng tra nhanh có ô đánh dấu.",
+        "topics": "Mở rộng vốn từ qua nhiều chủ đề: hoạt động hằng ngày, đồ ăn, mua sắm, du lịch, các mối quan hệ, sức khỏe, trường học, công việc, đời sống số và nhiều hơn nữa.",
+        "editionNotice": "Tệp PDF này bằng tiếng Anh. Phần nghĩa của từ, bản dịch câu ví dụ và ghi chú cách dùng đều được viết bằng tiếng Anh.",
+        "coverAlt": "Bìa tài liệu học của Hangyul “1.000 từ tiếng Hàn bạn thực sự sẽ dùng” (일상에서 꼭 쓰는 한국어 단어 1,000개), Korean Vocabulary Mastery EP02, bản tiếng Anh",
+        "previews": {
+          "chapter": "Trang mẫu từ Chương 1, Hoạt động hằng ngày: mỗi từ gồm tiếng Hàn, phiên âm, từ loại, nghĩa tiếng Anh, câu ví dụ và ghi chú cách dùng",
+          "review": "Trang mẫu từ Chương 2, Miêu tả người và vật: bốn từ cuối của chương, tiếp theo là phần ôn tập với ba dạng bài: từ này nghĩa là gì, nói bằng tiếng Hàn thế nào và điền từ còn thiếu"
+        },
+        "seoTitle": "1.000 từ tiếng Hàn bạn thực sự sẽ dùng — Tài liệu học miễn phí | Hangyul",
+        "seoDescription": "Tải miễn phí tài liệu của Hangyul gồm 1.000 từ tiếng Hàn hữu ích, câu ví dụ cho từng từ, phiên âm, ghi chú cách dùng, ôn tập từng chương và bảng tra nhanh."
       }
     },
     "index": {

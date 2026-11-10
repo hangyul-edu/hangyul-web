@@ -138,8 +138,8 @@
       "youtubeCta": "Urmărește pe YouTube",
       "youtubeComingSoon": {
         "eyebrow": "În curând",
-        "title": "Lecția video vine în curând",
-        "body": "Lecția de pe YouTube pentru acest ghid de studiu nu este încă disponibilă. Poți descărca ghidul chiar acum, iar videoclipul va fi pus aici imediat ce este gata.",
+        "title": "Lecția video este în pregătire",
+        "body": "Lecția de pe YouTube pentru acest ghid de studiu nu a fost adăugată încă. Poți descărca ghidul chiar acum, iar videoclipul îl vom adăuga aici imediat ce este gata.",
         "confirm": "Am înțeles",
         "close": "Închide"
       }
@@ -174,6 +174,30 @@
           }
         }
       },
+      "realSentences": {
+        "eyebrow": "Ghid de studiu gratuit",
+        "title": "500 de propoziții coreene din viața reală",
+        "statItems": "{count, plural, one {propoziție din viața reală} few {propoziții din viața reală} other {propoziții din viața reală}}",
+        "closingTitle": "Ia cele 500 de propoziții cu tine",
+        "closingBody": "Descarcă ghidul gratuit și recapitulează coreeana reală oricând vrei.",
+        "features": {
+          "sentences": {
+            "title": "500 de propoziții din viața reală"
+          },
+          "conversation": {
+            "title": "Conversații reale",
+            "body": "Vezi fiecare propoziție într-o conversație scurtă și firească, ca să înțelegi cum o folosesc de fapt coreenii."
+          },
+          "romanization": {
+            "title": "Sens + romanizare + note de utilizare",
+            "body": "Urmărește textul coreean cu romanizare, un sens firesc în engleză și o notă concisă despre nuanțe și utilizare."
+          },
+          "review": {
+            "title": "Recapitulări + recapitulare rapidă",
+            "body": "Verifică-te după fiecare capitol, compară răspunsurile și, la final, recapitulează din nou toate cele 500 de propoziții."
+          }
+        }
+      },
       "essentialWords": {
         "eyebrow": "Ghid de studiu gratuit",
         "title": "500 de cuvinte coreene esențiale",
@@ -195,6 +219,30 @@
           "review": {
             "title": "Recapitulări + listă de referință",
             "body": "Verifică-te după fiecare capitol, compară-ți răspunsurile și bifează în lista de referință cuvintele pe care le știi."
+          }
+        }
+      },
+      "koreanWords1000": {
+        "eyebrow": "Ghid de studiu gratuit",
+        "title": "1.000 de cuvinte coreene pe care chiar le vei folosi",
+        "statItems": "{count, plural, one {cuvânt coreean} few {cuvinte coreene} other {cuvinte coreene}}",
+        "closingTitle": "Ia cele 1.000 de cuvinte coreene cu tine",
+        "closingBody": "Descarcă ghidul gratuit și construiește-ți vocabularul coreean în ritmul tău.",
+        "features": {
+          "words": {
+            "title": "1.000 de cuvinte coreene utile"
+          },
+          "sentences": {
+            "title": "Un exemplu real pentru fiecare cuvânt",
+            "body": "Vezi fiecare cuvânt folosit într-o propoziție coreeană firească, cu romanizare și traducere în engleză."
+          },
+          "romanization": {
+            "title": "Sens + sfaturi de utilizare",
+            "body": "Află romanizarea, partea de vorbire și sensul firesc în engleză al fiecărui cuvânt, cu note concise care te ajută să-l alegi și să-l folosești corect."
+          },
+          "review": {
+            "title": "Recapitulări + listă de referință",
+            "body": "Recapitulează fiecare capitol, verifică-ți răspunsurile și bifează în lista finală de referință rapidă cuvintele pe care le știi."
           }
         }
       }
@@ -224,6 +272,17 @@
         "seoTitle": "100 de propoziții coreene de zi cu zi — EP02 ghid de studiu gratuit | Hangyul",
         "seoDescription": "Descarcă gratuit ghidul de studiu Hangyul pentru EP02, cu încă 100 de propoziții coreene de zi cu zi, romanizare, sensuri în engleză, dialoguri, recapitulări pe capitole și exerciții."
       },
+      "ep03EnStudyGuide": {
+        "description": "Exersează 500 de propoziții coreene firești, cu romanizare, sensuri uzuale în engleză, conversații reale, note de utilizare, recapitulări pe capitole și o recapitulare rapidă a tuturor celor 500.",
+        "topics": "Propoziții practice pentru viața de zi cu zi: reacții și sentimente, cafenele și cumpărături, deplasări, planuri și invitații, relații, călătorii, muncă și multe altele.",
+        "coverAlt": "Coperta ghidului de studiu Hangyul „500 de propoziții coreene din viața reală” (실생활 한국어 500문장), Korean While You Sleep EP03, ediția în engleză",
+        "previews": {
+          "chapter": "Pagină de exemplu din capitolul 1, Ce mai faci?: fiecare propoziție are textul coreean, romanizarea, sensul în engleză, o notă de utilizare și o scurtă conversație",
+          "review": "Pagină de exemplu din capitolul 2, Reacții firești: ultimele două propoziții, urmate de o recapitulare a capitolului cu patru exerciții: „Ce înseamnă?”, „Cum se spune în coreeană?”, „Completează conversația” și „Ce ai spune?”"
+        },
+        "seoTitle": "500 de propoziții coreene din viața reală — ghid gratuit | Hangyul",
+        "seoDescription": "Descarcă gratuit ghidul de studiu Hangyul pentru EP03, cu 500 de propoziții coreene din viața reală, romanizare, sensuri în engleză, conversații și recapitulări."
+      },
       "ep01En500EssentialWords": {
         "description": "Construiește o bază practică de vocabular coreean cu 500 de cuvinte esențiale, propoziții-exemplu firești, romanizare, note de utilizare, recapitulări pe capitole și o listă de referință rapidă de bifat.",
         "youtubeCta": "Urmărește EP.01 pe YouTube",
@@ -236,6 +295,18 @@
         },
         "seoTitle": "500 de cuvinte coreene esențiale — ghid de studiu gratuit | Hangyul",
         "seoDescription": "Descarcă gratuit un ghid de studiu cu 500 de cuvinte coreene esențiale, romanizare, propoziții-exemplu firești, note de utilizare, recapitulări pe capitole și o listă de referință rapidă."
+      },
+      "ep02En1000KoreanWords": {
+        "description": "Construiește-ți un vocabular coreean practic cu 1.000 de cuvinte utile, o propoziție-exemplu firească pentru fiecare cuvânt, romanizare, note de utilizare, recapitulări pe capitole și o listă de referință rapidă de bifat.",
+        "topics": "Vocabular pentru acțiuni de zi cu zi, mâncare, cumpărături, călătorii, relații, sănătate, școală, muncă, viața digitală și multe altele.",
+        "editionNotice": "Acest PDF este în limba engleză. Sensurile cuvintelor, traducerile exemplelor și notele de utilizare sunt toate scrise în engleză.",
+        "coverAlt": "Coperta ghidului de studiu Hangyul „1.000 de cuvinte coreene pe care chiar le vei folosi” (일상에서 꼭 쓰는 한국어 단어 1,000개), Korean Vocabulary Mastery EP02, ediția în engleză",
+        "previews": {
+          "chapter": "Pagină de exemplu din capitolul 1, Acțiuni de zi cu zi: fiecare cuvânt apare în coreeană, cu romanizare, parte de vorbire, sensul în engleză, o propoziție-exemplu și o notă de utilizare",
+          "review": "Pagină de exemplu din capitolul 2, Descrierea oamenilor și a lucrurilor: ultimele patru cuvinte, urmate de o recapitulare a capitolului cu trei exerciții: „Ce înseamnă?”, „Cum se spune în coreeană?” și „Completează cuvântul lipsă”"
+        },
+        "seoTitle": "1.000 de cuvinte coreene utile — ghid de vocabular gratuit | Hangyul",
+        "seoDescription": "Descarcă gratuit un ghid Hangyul cu 1.000 de cuvinte coreene utile, o propoziție-exemplu pentru fiecare cuvânt, romanizare, note de utilizare și o listă de bifat."
       }
     },
     "index": {

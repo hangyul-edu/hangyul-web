@@ -138,8 +138,8 @@
       "youtubeCta": "YouTube'da izle",
       "youtubeComingSoon": {
         "eyebrow": "Çok yakında",
-        "title": "Video ders çok yakında",
-        "body": "Bu çalışma rehberinin YouTube dersi henüz yayında değil. Rehberi şimdi indirebilirsin; video hazır olduğunda bağlantısını buraya ekleyeceğiz.",
+        "title": "Video ders hazırlanıyor",
+        "body": "Bu çalışma rehberinin YouTube dersi henüz bağlanmadı. Rehberi şimdi indirebilirsin; video hazır olduğunda buraya ekleyeceğiz.",
         "confirm": "Tamam",
         "close": "Kapat"
       }
@@ -174,6 +174,30 @@
           }
         }
       },
+      "realSentences": {
+        "eyebrow": "Ücretsiz çalışma rehberi",
+        "title": "Gerçek Hayattan 500 Korece Cümle",
+        "statItems": "{count, plural, one {gerçek Korece cümle} other {gerçek Korece cümle}}",
+        "closingTitle": "500 cümlenin hepsi hep yanında olsun",
+        "closingBody": "Rehberi ücretsiz indir, gerçek Koreceyi istediğin zaman tekrar et.",
+        "features": {
+          "sentences": {
+            "title": "500 gerçek Korece cümle"
+          },
+          "conversation": {
+            "title": "Gerçek diyaloglar",
+            "body": "Her cümleyi kısa ve doğal bir diyalog içinde gör; Korelilerin onu gerçekte nasıl kullandığını anla."
+          },
+          "romanization": {
+            "title": "Anlam + okunuş + kullanım notları",
+            "body": "Korece cümleleri Latin harfli okunuş, doğal bir İngilizce anlam ve nüansları, kullanımı açıklayan kısa bir notla takip et."
+          },
+          "review": {
+            "title": "Tekrarlar + hızlı tekrar",
+            "body": "Her bölümden sonra kendini sına, cevaplarını kontrol et ve sonunda 500 cümlenin hepsini yeniden tekrar et."
+          }
+        }
+      },
       "essentialWords": {
         "eyebrow": "Ücretsiz çalışma rehberi",
         "title": "500 Temel Korece Kelime",
@@ -195,6 +219,30 @@
           "review": {
             "title": "Tekrar + hızlı başvuru",
             "body": "Her bölümden sonra kendini sına, cevaplarını kontrol et ve hızlı başvuru listesinde hatırladıklarını işaretle."
+          }
+        }
+      },
+      "koreanWords1000": {
+        "eyebrow": "Ücretsiz çalışma rehberi",
+        "title": "Gerçekten Kullanacağın 1.000 Korece Kelime",
+        "statItems": "{count, plural, one {Korece kelime} other {Korece kelime}}",
+        "closingTitle": "1.000 Korece kelimenin hepsi hep yanında olsun",
+        "closingBody": "Rehberi ücretsiz indir, Korece kelime dağarcığını kendi hızında geliştir.",
+        "features": {
+          "words": {
+            "title": "1.000 işe yarar Korece kelime"
+          },
+          "sentences": {
+            "title": "Her kelimeye gerçek bir örnek",
+            "body": "Her kelimeyi doğal bir Korece cümlede, okunuşu ve İngilizce çevirisiyle birlikte gör."
+          },
+          "romanization": {
+            "title": "Anlam + kullanım rehberi",
+            "body": "Her kelimenin okunuşunu, kelime türünü ve doğal İngilizce anlamını öğren; kısa notlar doğru kelimeyi seçip doğru kullanmana yardım etsin."
+          },
+          "review": {
+            "title": "Tekrar + hızlı başvuru",
+            "body": "Her bölümü tekrar et, cevaplarını kontrol et ve sondaki hızlı başvuru listesinde hatırladıklarını işaretle."
           }
         }
       }
@@ -224,6 +272,17 @@
         "seoTitle": "Günlük Hayattan 100 Korece Cümle — EP02 Ücretsiz Çalışma Rehberi | Hangyul",
         "seoDescription": "Ücretsiz Hangyul EP02 çalışma rehberini indir: Latin harfli okunuş, İngilizce anlamlar, diyaloglar, bölüm tekrarları ve alıştırmalarla günlük hayattan 100 yeni Korece cümle."
       },
+      "ep03EnStudyGuide": {
+        "description": "Latin harfli okunuş, günlük İngilizce anlamlar, gerçek diyaloglar, kullanım notları, bölüm tekrarları ve 500 cümlenin tamamı için hızlı bir tekrarla 500 doğal Korece cümleyi çalış.",
+        "topics": "Günlük durumlar için pratik cümleler: tepkiler ve duygular, kafeler ve alışveriş, ulaşım, planlar ve davetler, ilişkiler, seyahat, iş ve daha fazlası.",
+        "coverAlt": "Hangyul çalışma rehberi “Gerçek Hayattan 500 Korece Cümle” (실생활 한국어 500문장) kapağı, Korean While You Sleep EP03, İngilizce sürüm",
+        "previews": {
+          "chapter": "1. bölümden (Günlük Hal Hatır) örnek sayfa: her cümlede Korece metin, Latin harfli okunuş, İngilizce anlam, kullanım notu ve kısa bir diyalog yer alır",
+          "review": "2. bölümden (Doğal Tepkiler) örnek sayfa: son iki cümle ve ardından dört alıştırmalı bölüm tekrarı: “Ne anlama geliyor?”, “Korecede nasıl denir?”, “Diyaloğu tamamla” ve “Sen ne derdin?”"
+        },
+        "seoTitle": "Gerçek Hayattan 500 Korece Cümle — Ücretsiz Çalışma Rehberi | Hangyul",
+        "seoDescription": "Ücretsiz Hangyul EP03 çalışma rehberini indir: Latin harfli okunuş, İngilizce anlamlar, diyaloglar, kullanım notları ve tekrarlarla 500 gerçek Korece cümle."
+      },
       "ep01En500EssentialWords": {
         "description": "500 temel kelimeyle pratik bir Korece kelime dağarcığının temelini at: doğal örnek cümleler, okunuş, kullanım notları, bölüm tekrarları ve işaretlenebilir bir hızlı başvuru listesi.",
         "youtubeCta": "EP.01'i YouTube'da izle",
@@ -236,6 +295,18 @@
         },
         "seoTitle": "500 Temel Korece Kelime — Ücretsiz Çalışma Rehberi | Hangyul",
         "seoDescription": "500 temel Korece kelime, okunuş, doğal örnek cümleler, kullanım notları, bölüm tekrarları ve hızlı başvuru listesi içeren ücretsiz çalışma rehberini indir."
+      },
+      "ep02En1000KoreanWords": {
+        "description": "1.000 işe yarar kelimeyle pratik bir Korece kelime dağarcığı oluştur: her kelime için doğal bir örnek cümle, okunuş, kullanım notları, bölüm tekrarları ve işaretlenebilir bir hızlı başvuru listesi.",
+        "topics": "Günlük işler, yemek, alışveriş, seyahat, ilişkiler, sağlık, okul, iş, dijital hayat ve daha fazlasında kelime dağarcığını geliştir.",
+        "editionNotice": "Bu PDF İngilizcedir. Kelime anlamları, örnek çevirileri ve kullanım notlarının tamamı İngilizce yazılmıştır.",
+        "coverAlt": "Hangyul çalışma rehberi “Gerçekten Kullanacağın 1.000 Korece Kelime” (일상에서 꼭 쓰는 한국어 단어 1,000개) kapağı, Korean Vocabulary Mastery EP02, İngilizce sürüm",
+        "previews": {
+          "chapter": "1. bölümden (Günlük Eylemler) örnek sayfa: her kelimede Korecesi, okunuşu, kelime türü, İngilizce anlamı, bir örnek cümle ve bir kullanım notu yer alıyor",
+          "review": "2. bölümden (İnsanları ve Nesneleri Tanımlama) örnek sayfa: son dört kelime ve ardından üç alıştırmalı bölüm tekrarı: “Ne anlama geliyor?”, “Korecede nasıl denir?” ve “Eksik kelimeyi yaz”"
+        },
+        "seoTitle": "1.000 İşe Yarar Korece Kelime — Ücretsiz Çalışma Rehberi | Hangyul",
+        "seoDescription": "1.000 işe yarar Korece kelime, her kelime için örnek cümle, okunuş, kullanım notları, bölüm tekrarları ve kontrol listesi içeren ücretsiz Hangyul rehberini indir."
       }
     },
     "index": {

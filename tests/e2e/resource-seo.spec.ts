@@ -38,6 +38,15 @@ const GUIDES = [
     enTitle: "100 Everyday Korean Sentences EP02 – Free Study Guide | Hangyul",
   },
   {
+    page: "500-real-korean-sentences-ep03",
+    messagesKey: "ep03EnStudyGuide",
+    format: "realSentences",
+    episode: "EP03",
+    pdf: "/download/files/ep03-en-study-guide.pdf",
+    legacy: "/download?resource=ep03-en-study-guide&lang=en",
+    enTitle: "500 Real Korean Sentences – Free Study Guide | Hangyul",
+  },
+  {
     page: "500-essential-korean-words-ep01",
     messagesKey: "ep01En500EssentialWords",
     format: "essentialWords",
@@ -45,6 +54,15 @@ const GUIDES = [
     pdf: "/download/files/ep01-en-500-essential-korean-words-study-guide.pdf",
     legacy: "/download?resource=ep01-en-500-essential-korean-words-study-guide&lang=en",
     enTitle: "500 Essential Korean Words – Free Korean Vocabulary Guide | Hangyul",
+  },
+  {
+    page: "1000-korean-words-ep02",
+    messagesKey: "ep02En1000KoreanWords",
+    format: "koreanWords1000",
+    episode: "EP02",
+    pdf: "/download/files/ep02-en-1000-korean-words-study-guide.pdf",
+    legacy: "/download?resource=ep02-en-1000-korean-words-study-guide&lang=en",
+    enTitle: "1,000 Korean Words You’ll Actually Use – Free Vocabulary Guide | Hangyul",
   },
 ] as const;
 
@@ -220,7 +238,7 @@ test.describe("Canonical resource pages — server-rendered SEO", () => {
     });
   }
 
-  test("titles and descriptions are unique across the three resources in every language", async ({ page }) => {
+  test("titles and descriptions are unique across all resources in every language", async ({ page }) => {
     for (const locale of LOCALE_SAMPLE) {
       const titles = new Set<string | null>();
       const descriptions = new Set<string | null>();
@@ -278,7 +296,7 @@ test.describe("Localized SEO", () => {
 });
 
 test.describe("Resource index — /<locale>/resources", () => {
-  test("lists all three guides with crawlable links and its own SEO", async ({ page }) => {
+  test("lists all five guides with crawlable links and its own SEO", async ({ page }) => {
     const { status, html } = await serverHtml(page, "/en/resources");
     expect(status).toBe(200);
     expect(title(html)).toBe("Free Korean Study Guides & Learning Resources | Hangyul");
@@ -296,6 +314,8 @@ test.describe("Resource index — /<locale>/resources", () => {
         "100 Everyday Korean Sentences EP01",
         "100 Everyday Korean Sentences EP02",
         "500 Essential Korean Words EP01",
+        "500 Real Korean Sentences EP03",
+        "1,000 Korean Words You’ll Actually Use EP02",
       ])
     );
 
@@ -312,6 +332,8 @@ test.describe("Resource index — /<locale>/resources", () => {
     expect(title(html)).toBe(messages("ko").ResourceDownload.index.seoTitle);
     expect(h1s(html)).toEqual([messages("ko").ResourceDownload.index.title]);
     expect(html).toContain('href="/ko/resources/500-essential-korean-words-ep01"');
+    expect(html).toContain('href="/ko/resources/500-real-korean-sentences-ep03"');
+    expect(html).toContain('href="/ko/resources/1000-korean-words-ep02"');
   });
 
   test("the homepage footer links to the guide index", async ({ page }) => {
@@ -338,7 +360,7 @@ test.describe("Status codes", () => {
     for (const url of [
       "/en/resources/100-everyday-korean-sentences-ep03",
       "/ja/resources/unknown",
-      "/download?resource=ep03-en-study-guide&lang=en",
+      "/download?resource=ep04-en-study-guide&lang=en",
     ]) {
       const { status, html } = await serverHtml(page, url);
       expect(status, url).toBe(404);

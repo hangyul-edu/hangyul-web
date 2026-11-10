@@ -138,8 +138,8 @@
       "youtubeCta": "Obejrzyj na YouTube",
       "youtubeComingSoon": {
         "eyebrow": "Już wkrótce",
-        "title": "Lekcja wideo będzie dostępna wkrótce",
-        "body": "Lekcja na YouTube do tych materiałów nie jest jeszcze dostępna. Materiały możesz pobrać już teraz, a link do filmu pojawi się tutaj, gdy tylko będzie gotowy.",
+        "title": "Lekcja wideo jest w przygotowaniu",
+        "body": "Lekcja na YouTube do tych materiałów nie jest jeszcze podłączona. Materiały możesz pobrać już teraz, a film dodamy tutaj, gdy tylko będzie gotowy.",
         "confirm": "Rozumiem",
         "close": "Zamknij"
       }
@@ -174,6 +174,30 @@
           }
         }
       },
+      "realSentences": {
+        "eyebrow": "Darmowe materiały do nauki",
+        "title": "500 prawdziwych zdań po koreańsku",
+        "statItems": "{count, plural, one {prawdziwe koreańskie zdanie} few {prawdziwe koreańskie zdania} many {prawdziwych koreańskich zdań} other {prawdziwego koreańskiego zdania}}",
+        "closingTitle": "Miej wszystkie 500 zdań zawsze przy sobie",
+        "closingBody": "Pobierz materiały za darmo i powtarzaj prawdziwy koreański, kiedy tylko chcesz.",
+        "features": {
+          "sentences": {
+            "title": "500 prawdziwych koreańskich zdań"
+          },
+          "conversation": {
+            "title": "Prawdziwe rozmowy",
+            "body": "Każde zdanie zobaczysz w krótkim, naturalnym dialogu, dzięki czemu zrozumiesz, jak naprawdę używają go Koreańczycy."
+          },
+          "romanization": {
+            "title": "Znaczenie + latynizacja + wskazówki",
+            "body": "Czytaj koreański z latynizacją, naturalnym znaczeniem po angielsku i zwięzłą wskazówką, która wyjaśnia niuanse i użycie."
+          },
+          "review": {
+            "title": "Powtórki + szybka powtórka",
+            "body": "Sprawdź się po każdym rozdziale, porównaj odpowiedzi, a na koniec jeszcze raz powtórz wszystkie 500 zdań."
+          }
+        }
+      },
       "essentialWords": {
         "eyebrow": "Darmowe materiały do nauki",
         "title": "500 najważniejszych słów po koreańsku",
@@ -195,6 +219,30 @@
           "review": {
             "title": "Powtórki + ściąga",
             "body": "Sprawdź się po każdym rozdziale, porównaj odpowiedzi i zaznaczaj na liście-ściądze słowa, które już pamiętasz."
+          }
+        }
+      },
+      "koreanWords1000": {
+        "eyebrow": "Darmowe materiały do nauki",
+        "title": "1000 koreańskich słów, których naprawdę użyjesz",
+        "statItems": "{count, plural, one {koreańskie słowo} few {koreańskie słowa} many {koreańskich słów} other {koreańskiego słowa}}",
+        "closingTitle": "Miej wszystkie 1000 koreańskich słów zawsze przy sobie",
+        "closingBody": "Pobierz materiały za darmo i poszerzaj koreańskie słownictwo we własnym tempie.",
+        "features": {
+          "words": {
+            "title": "1000 przydatnych koreańskich słów"
+          },
+          "sentences": {
+            "title": "Prawdziwy przykład do każdego słowa",
+            "body": "Zobacz każde słowo w naturalnym koreańskim zdaniu, z latynizacją i tłumaczeniem na angielski."
+          },
+          "romanization": {
+            "title": "Znaczenie + wskazówki dotyczące użycia",
+            "body": "Przy każdym słowie znajdziesz latynizację, część mowy i naturalne angielskie znaczenie, a zwięzłe wskazówki pomogą ci dobrać je i poprawnie użyć."
+          },
+          "review": {
+            "title": "Powtórki + ściąga",
+            "body": "Powtarzaj każdy rozdział, sprawdzaj odpowiedzi i zaznaczaj na końcowej liście-ściądze słowa, które już pamiętasz."
           }
         }
       }
@@ -224,6 +272,17 @@
         "seoTitle": "100 codziennych zdań po koreańsku – EP02 Darmowe materiały do nauki | Hangyul",
         "seoDescription": "Pobierz darmowe materiały do nauki Hangyul do EP02: kolejne 100 codziennych zdań po koreańsku z latynizacją, znaczeniami po angielsku, dialogami, powtórkami rozdziałów i ćwiczeniami."
       },
+      "ep03EnStudyGuide": {
+        "description": "Przećwicz 500 naturalnych zdań po koreańsku: latynizacja, znaczenia po angielsku, prawdziwe dialogi, wskazówki dotyczące użycia, powtórki rozdziałów i szybka powtórka wszystkich 500 zdań.",
+        "topics": "Praktyczne zdania na co dzień: reakcje i uczucia, kawiarnie i zakupy, poruszanie się po mieście, plany i zaproszenia, relacje, podróże, praca i nie tylko.",
+        "coverAlt": "Okładka materiałów do nauki Hangyul „500 prawdziwych zdań po koreańsku” (실생활 한국어 500문장), Korean While You Sleep EP03, wydanie angielskie",
+        "previews": {
+          "chapter": "Przykładowa strona z rozdziału 1, Codzienne rozmowy: przy każdym zdaniu jest zapis koreański, latynizacja, znaczenie po angielsku, wskazówka dotycząca użycia i krótki dialog",
+          "review": "Przykładowa strona z rozdziału 2, Naturalne reakcje: dwa ostatnie zdania, a po nich powtórka rozdziału z czterema ćwiczeniami: co to znaczy, jak to powiedzieć po koreańsku, uzupełnij dialog i co powiedzieć w danej sytuacji"
+        },
+        "seoTitle": "500 prawdziwych zdań po koreańsku – Darmowe materiały do nauki | Hangyul",
+        "seoDescription": "Pobierz darmowe materiały Hangyul do EP03: 500 prawdziwych zdań po koreańsku z latynizacją, znaczeniami po angielsku, dialogami, wskazówkami i powtórkami."
+      },
       "ep01En500EssentialWords": {
         "description": "Zbuduj praktyczne podstawy koreańskiego słownictwa: 500 najważniejszych słów, naturalne przykładowe zdania, latynizacja, wskazówki dotyczące użycia, powtórki rozdziałów i ściąga z listą kontrolną.",
         "youtubeCta": "Obejrzyj EP.01 na YouTube",
@@ -236,6 +295,18 @@
         },
         "seoTitle": "500 najważniejszych słów po koreańsku – Darmowe materiały do nauki | Hangyul",
         "seoDescription": "Pobierz darmowe materiały do nauki: 500 najważniejszych słów po koreańsku z latynizacją, naturalnymi przykładami, wskazówkami, powtórkami rozdziałów i listą kontrolną."
+      },
+      "ep02En1000KoreanWords": {
+        "description": "Zbuduj praktyczne koreańskie słownictwo: 1000 przydatnych słów, naturalne przykładowe zdanie do każdego z nich, latynizacja, wskazówki dotyczące użycia, powtórki rozdziałów i ściąga z listą kontrolną.",
+        "topics": "Słownictwo z wielu dziedzin: codzienne czynności, jedzenie, zakupy, podróże, relacje, zdrowie, szkoła, praca, życie w sieci i nie tylko.",
+        "editionNotice": "Ten plik PDF jest w języku angielskim. Znaczenia słów, tłumaczenia przykładów i wskazówki dotyczące użycia są w całości napisane po angielsku.",
+        "coverAlt": "Okładka materiałów do nauki Hangyul „1000 koreańskich słów, których naprawdę użyjesz” (일상에서 꼭 쓰는 한국어 단어 1,000개), Korean Vocabulary Mastery EP02, wydanie angielskie",
+        "previews": {
+          "chapter": "Przykładowa strona z rozdziału 1, Codzienne czynności: przy każdym słowie podano koreański zapis, latynizację, część mowy, angielskie znaczenie, przykładowe zdanie i wskazówkę dotyczącą użycia",
+          "review": "Przykładowa strona z rozdziału 2, Opisywanie ludzi i rzeczy: cztery ostatnie słowa, a po nich powtórka rozdziału z trzema ćwiczeniami: co to znaczy, jak to powiedzieć po koreańsku i uzupełnij brakujące słowo"
+        },
+        "seoTitle": "1000 koreańskich słów na co dzień – Darmowe materiały | Hangyul",
+        "seoDescription": "Pobierz darmowe materiały Hangyul: 1000 przydatnych koreańskich słów, przykładowe zdanie do każdego, latynizacja, wskazówki, powtórki rozdziałów i lista kontrolna."
       }
     },
     "index": {

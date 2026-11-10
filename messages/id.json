@@ -138,8 +138,8 @@
       "youtubeCta": "Tonton di YouTube",
       "youtubeComingSoon": {
         "eyebrow": "Segera hadir",
-        "title": "Video pelajarannya segera hadir",
-        "body": "Pelajaran YouTube untuk panduan belajar ini belum tersedia. Kamu sudah bisa mengunduh panduannya sekarang, dan videonya akan ditautkan di sini begitu siap.",
+        "title": "Video pelajarannya sedang disiapkan",
+        "body": "Pelajaran YouTube untuk panduan belajar ini belum terhubung. Kamu sudah bisa mengunduh panduannya sekarang, dan kami akan menambahkan videonya di sini begitu siap.",
         "confirm": "Oke",
         "close": "Tutup"
       }
@@ -174,6 +174,30 @@
           }
         }
       },
+      "realSentences": {
+        "eyebrow": "Panduan Belajar Gratis",
+        "title": "500 Kalimat Bahasa Korea di Kehidupan Nyata",
+        "statItems": "{count, plural, other {kalimat bahasa Korea nyata}}",
+        "closingTitle": "Bawa 500 kalimat ini ke mana pun",
+        "closingBody": "Unduh panduannya gratis dan ulangi bahasa Korea sehari-hari kapan saja.",
+        "features": {
+          "sentences": {
+            "title": "500 kalimat bahasa Korea nyata"
+          },
+          "conversation": {
+            "title": "Percakapan nyata",
+            "body": "Lihat setiap kalimat dalam percakapan singkat yang natural, jadi kamu paham cara orang Korea benar-benar memakainya."
+          },
+          "romanization": {
+            "title": "Arti + romanisasi + catatan penggunaan",
+            "body": "Ikuti teks Korea dengan romanisasi, arti bahasa Inggris yang natural, dan catatan ringkas yang menjelaskan nuansa serta cara pakainya."
+          },
+          "review": {
+            "title": "Latihan ulang + ringkasan cepat",
+            "body": "Uji dirimu setelah setiap bab, cocokkan jawabannya, lalu ulangi lagi seluruh 500 kalimat di bagian akhir."
+          }
+        }
+      },
       "essentialWords": {
         "eyebrow": "Panduan Belajar Gratis",
         "title": "500 Kosakata Bahasa Korea Penting",
@@ -195,6 +219,30 @@
           "review": {
             "title": "Latihan ulang + daftar ringkas",
             "body": "Uji dirimu di akhir setiap bab, cocokkan jawabanmu, lalu tandai kata yang sudah kamu ingat di daftar ringkas."
+          }
+        }
+      },
+      "koreanWords1000": {
+        "eyebrow": "Panduan Belajar Gratis",
+        "title": "1.000 Kosakata Bahasa Korea yang Pasti Kamu Pakai",
+        "statItems": "{count, plural, other {kosakata bahasa Korea}}",
+        "closingTitle": "Bawa 1.000 kosakata bahasa Korea ini ke mana pun",
+        "closingBody": "Unduh panduannya gratis dan perkaya kosakata bahasa Koreamu sesuai kecepatanmu sendiri.",
+        "features": {
+          "words": {
+            "title": "1.000 kosakata bahasa Korea yang berguna"
+          },
+          "sentences": {
+            "title": "Contoh nyata untuk setiap kata",
+            "body": "Lihat setiap kata dipakai dalam kalimat bahasa Korea yang alami, lengkap dengan romanisasi dan terjemahan bahasa Inggris."
+          },
+          "romanization": {
+            "title": "Arti + panduan penggunaan",
+            "body": "Pelajari romanisasi, kelas kata, dan arti bahasa Inggris yang alami untuk setiap kata, dengan catatan ringkas yang membantumu memilih dan memakainya dengan tepat."
+          },
+          "review": {
+            "title": "Latihan ulang + daftar ringkas",
+            "body": "Ulangi setiap bab, cocokkan jawabanmu, lalu pakai daftar ringkas di bagian akhir untuk menandai kata yang sudah kamu ingat."
           }
         }
       }
@@ -224,6 +272,17 @@
         "seoTitle": "100 Kalimat Bahasa Korea Sehari-hari — EP02 Panduan Belajar Gratis | Hangyul",
         "seoDescription": "Unduh gratis panduan belajar EP02 dari Hangyul berisi 100 kalimat bahasa Korea sehari-hari lainnya, romanisasi, arti bahasa Inggris, percakapan, latihan akhir bab, dan soal latihan."
       },
+      "ep03EnStudyGuide": {
+        "description": "Latih 500 kalimat bahasa Korea yang natural, lengkap dengan romanisasi, arti bahasa Inggris sehari-hari, percakapan nyata, catatan penggunaan, latihan akhir bab, dan ringkasan cepat seluruh 500 kalimat.",
+        "topics": "Kalimat praktis untuk situasi sehari-hari: reaksi dan perasaan, kafe dan belanja, bepergian, rencana dan ajakan, hubungan, jalan-jalan, pekerjaan, dan banyak lagi.",
+        "coverAlt": "Sampul panduan belajar Hangyul “500 Kalimat Bahasa Korea di Kehidupan Nyata” (실생활 한국어 500문장), Korean While You Sleep EP03, edisi bahasa Inggris",
+        "previews": {
+          "chapter": "Contoh halaman dari Bab 1, Sapaan Sehari-hari: setiap kalimat dilengkapi bahasa Korea, romanisasi, arti bahasa Inggris, catatan penggunaan, dan percakapan singkat",
+          "review": "Contoh halaman dari Bab 2, Reaksi yang Natural: dua kalimat terakhir, lalu latihan akhir bab dengan empat jenis soal: apa artinya, bagaimana mengatakannya dalam bahasa Korea, lengkapi percakapan, dan apa yang akan kamu katakan"
+        },
+        "seoTitle": "500 Kalimat Bahasa Korea di Kehidupan Nyata — Panduan Gratis | Hangyul",
+        "seoDescription": "Unduh gratis panduan belajar EP03 dari Hangyul: 500 kalimat bahasa Korea nyata dengan romanisasi, arti bahasa Inggris, percakapan, catatan penggunaan, dan latihan."
+      },
       "ep01En500EssentialWords": {
         "description": "Bangun dasar kosakata bahasa Korea yang praktis dengan 500 kata penting, contoh kalimat yang alami, romanisasi, catatan penggunaan, latihan akhir bab, dan daftar ringkas untuk dicentang.",
         "youtubeCta": "Tonton EP.01 di YouTube",
@@ -236,6 +295,18 @@
         },
         "seoTitle": "500 Kosakata Bahasa Korea Penting — Panduan Belajar Gratis | Hangyul",
         "seoDescription": "Unduh panduan belajar gratis berisi 500 kosakata bahasa Korea penting, romanisasi, contoh kalimat alami, catatan penggunaan, latihan akhir bab, dan daftar ringkas."
+      },
+      "ep02En1000KoreanWords": {
+        "description": "Bangun kosakata bahasa Korea yang praktis dengan 1.000 kata berguna, contoh kalimat alami untuk setiap kata, romanisasi, catatan penggunaan, latihan akhir bab, dan daftar ringkas untuk dicentang.",
+        "topics": "Perkaya kosakata seputar kegiatan sehari-hari, makanan, belanja, jalan-jalan, hubungan, kesehatan, sekolah, pekerjaan, kehidupan digital, dan banyak lagi.",
+        "editionNotice": "PDF ini berbahasa Inggris. Arti kata, terjemahan contoh kalimat, dan catatan penggunaan semuanya ditulis dalam bahasa Inggris.",
+        "coverAlt": "Sampul panduan belajar Hangyul “1.000 Kosakata Bahasa Korea yang Pasti Kamu Pakai” (일상에서 꼭 쓰는 한국어 단어 1,000개), Korean Vocabulary Mastery EP02, edisi bahasa Inggris",
+        "previews": {
+          "chapter": "Contoh halaman dari Bab 1, Kegiatan Sehari-hari: setiap kata menampilkan tulisan Korea, romanisasi, kelas kata, arti bahasa Inggris, contoh kalimat, dan catatan penggunaan",
+          "review": "Contoh halaman dari Bab 2, Menggambarkan Orang dan Benda: empat kata terakhir, lalu latihan akhir bab dengan tiga jenis soal: apa artinya, bagaimana mengatakannya dalam bahasa Korea, dan isi kata yang hilang"
+        },
+        "seoTitle": "1.000 Kosakata Bahasa Korea yang Pasti Kamu Pakai — Panduan Gratis | Hangyul",
+        "seoDescription": "Unduh panduan gratis dari Hangyul berisi 1.000 kosakata bahasa Korea yang berguna, contoh kalimat untuk setiap kata, romanisasi, catatan penggunaan, dan daftar ringkas."
       }
     },
     "index": {

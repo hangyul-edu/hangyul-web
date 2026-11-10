@@ -138,8 +138,8 @@
       "youtubeCta": "Guarda su YouTube",
       "youtubeComingSoon": {
         "eyebrow": "Prossimamente",
-        "title": "La lezione video arriverà presto",
-        "body": "La lezione su YouTube di questa guida non è ancora disponibile. Puoi già scaricare la guida: il video verrà collegato qui non appena sarà pronto.",
+        "title": "Stiamo preparando la lezione video",
+        "body": "La lezione su YouTube di questa guida non è ancora collegata. Puoi già scaricare la guida: aggiungeremo il video qui non appena sarà pronto.",
         "confirm": "Ho capito",
         "close": "Chiudi"
       }
@@ -174,6 +174,30 @@
           }
         }
       },
+      "realSentences": {
+        "eyebrow": "Guida allo studio gratuita",
+        "title": "500 frasi coreane della vita reale",
+        "statItems": "{count, plural, one {frase della vita reale} other {frasi della vita reale}}",
+        "closingTitle": "Porta sempre con te le 500 frasi",
+        "closingBody": "Scarica la guida gratis e ripassa il coreano vero quando vuoi.",
+        "features": {
+          "sentences": {
+            "title": "500 frasi coreane della vita reale"
+          },
+          "conversation": {
+            "title": "Conversazioni reali",
+            "body": "Ogni frase è inserita in una breve conversazione naturale, così capisci come la usano davvero i coreani."
+          },
+          "romanization": {
+            "title": "Significato + romanizzazione + note d’uso",
+            "body": "Segui il coreano con la romanizzazione, un significato naturale in inglese e una nota concisa che spiega sfumature e uso."
+          },
+          "review": {
+            "title": "Ripassi + ripasso veloce",
+            "body": "Mettiti alla prova dopo ogni capitolo, controlla le soluzioni e alla fine ripassa di nuovo tutte le 500 frasi."
+          }
+        }
+      },
       "essentialWords": {
         "eyebrow": "Guida allo studio gratuita",
         "title": "500 parole coreane essenziali",
@@ -195,6 +219,30 @@
           "review": {
             "title": "Ripassi + prontuario",
             "body": "Mettiti alla prova dopo ogni capitolo, controlla le soluzioni e segna ciò che ricordi nel prontuario con checklist."
+          }
+        }
+      },
+      "koreanWords1000": {
+        "eyebrow": "Guida allo studio gratuita",
+        "title": "1000 parole coreane che userai davvero",
+        "statItems": "{count, plural, one {parola coreana} other {parole coreane}}",
+        "closingTitle": "Porta sempre con te le 1000 parole coreane",
+        "closingBody": "Scarica la guida gratis e arricchisci il tuo vocabolario coreano con i tuoi tempi.",
+        "features": {
+          "words": {
+            "title": "1000 parole coreane utili"
+          },
+          "sentences": {
+            "title": "Un esempio reale per ogni parola",
+            "body": "Guarda ogni parola usata in una frase coreana naturale, con romanizzazione e traduzione in inglese."
+          },
+          "romanization": {
+            "title": "Significato + consigli d’uso",
+            "body": "Per ogni parola trovi romanizzazione, categoria grammaticale e un significato naturale in inglese, con brevi note che ti aiutano a sceglierla e usarla correttamente."
+          },
+          "review": {
+            "title": "Ripassi + prontuario",
+            "body": "Ripassa ogni capitolo, controlla le risposte e segna ciò che ricordi nel prontuario finale con checklist."
           }
         }
       }
@@ -224,6 +272,17 @@
         "seoTitle": "100 frasi coreane di tutti i giorni — EP02 Guida allo studio gratuita | Hangyul",
         "seoDescription": "Scarica la guida allo studio gratuita Hangyul EP02 con altre 100 frasi coreane di tutti i giorni, romanizzazione, significati in inglese, dialoghi, ripassi per capitolo ed esercizi."
       },
+      "ep03EnStudyGuide": {
+        "description": "Esercitati con 500 frasi coreane naturali: romanizzazione, significati in inglese di tutti i giorni, conversazioni reali, note d’uso, ripassi per capitolo e un ripasso veloce di tutte le 500.",
+        "topics": "Frasi pratiche per la vita quotidiana: reazioni ed emozioni, bar e shopping, spostamenti, programmi e inviti, relazioni, viaggi, lavoro e molto altro.",
+        "coverAlt": "Copertina della guida allo studio Hangyul “500 frasi coreane della vita reale” (실생활 한국어 500문장), Korean While You Sleep EP03, edizione inglese",
+        "previews": {
+          "chapter": "Pagina di esempio del capitolo 1, Come va?: ogni frase riporta il coreano, la romanizzazione, il significato in inglese, una nota d’uso e una breve conversazione",
+          "review": "Pagina di esempio del capitolo 2, Reazioni naturali: le ultime due frasi, seguite da un ripasso del capitolo con quattro esercizi: cosa significa, come si dice in coreano, completa la conversazione e cosa diresti"
+        },
+        "seoTitle": "500 frasi coreane della vita reale — Guida allo studio gratuita | Hangyul",
+        "seoDescription": "Scarica la guida allo studio gratuita Hangyul EP03: 500 frasi coreane della vita reale con romanizzazione, significati in inglese, conversazioni e ripassi."
+      },
       "ep01En500EssentialWords": {
         "description": "Costruisci una base pratica di vocabolario coreano con 500 parole essenziali, frasi di esempio naturali, romanizzazione, note d’uso, ripassi per capitolo e un prontuario con checklist.",
         "youtubeCta": "Guarda l'EP.01 su YouTube",
@@ -236,6 +295,18 @@
         },
         "seoTitle": "500 parole coreane essenziali — Guida allo studio gratuita | Hangyul",
         "seoDescription": "Scarica gratis una guida allo studio con 500 parole coreane essenziali, romanizzazione, frasi di esempio naturali, note d’uso, ripassi per capitolo e un prontuario con checklist."
+      },
+      "ep02En1000KoreanWords": {
+        "description": "Costruisci un vocabolario coreano pratico con 1000 parole utili, una frase di esempio naturale per ogni parola, romanizzazione, note d’uso, ripassi per capitolo e un prontuario con checklist.",
+        "topics": "Amplia il tuo vocabolario: azioni quotidiane, cibo, shopping, viaggi, relazioni, salute, scuola, lavoro, vita digitale e molto altro.",
+        "editionNotice": "Questo PDF è in inglese. Significati delle parole, traduzioni degli esempi e note d’uso sono tutti scritti in inglese.",
+        "coverAlt": "Copertina della guida allo studio Hangyul “1000 parole coreane che userai davvero” (일상에서 꼭 쓰는 한국어 단어 1,000개), Korean Vocabulary Mastery EP02, edizione inglese",
+        "previews": {
+          "chapter": "Pagina di esempio del capitolo 1, Azioni quotidiane: ogni parola riporta coreano, romanizzazione, categoria grammaticale, significato in inglese, una frase di esempio e una nota d’uso",
+          "review": "Pagina di esempio del capitolo 2, Descrivere persone e cose: le ultime quattro parole, seguite da un ripasso del capitolo con tre esercizi: cosa significa, come si dice in coreano e completa con la parola mancante"
+        },
+        "seoTitle": "1000 parole coreane che userai davvero — Guida gratuita | Hangyul",
+        "seoDescription": "Scarica gratis una guida Hangyul con 1000 parole coreane utili, una frase di esempio per ogni parola, romanizzazione, note d’uso, ripassi per capitolo e checklist."
       }
     },
     "index": {

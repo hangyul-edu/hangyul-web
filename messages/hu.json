@@ -138,8 +138,8 @@
       "youtubeCta": "Nézd meg a YouTube-on",
       "youtubeComingSoon": {
         "eyebrow": "Hamarosan",
-        "title": "A videólecke hamarosan érkezik",
-        "body": "A tananyaghoz tartozó YouTube-lecke még nem érhető el. A tananyagot már most letöltheted, a videót pedig itt linkeljük, amint elkészül.",
+        "title": "A videólecke készülőben van",
+        "body": "A tananyaghoz tartozó YouTube-lecke még nincs összekapcsolva az oldallal. A tananyagot már most letöltheted, a videót pedig ide tesszük ki, amint elkészül.",
         "confirm": "Értem",
         "close": "Bezárás"
       }
@@ -174,6 +174,30 @@
           }
         }
       },
+      "realSentences": {
+        "eyebrow": "Ingyenes tananyag",
+        "title": "500 valódi koreai mondat",
+        "statItems": "{count, plural, one {valódi koreai mondat} other {valódi koreai mondat}}",
+        "closingTitle": "Legyen mindig kéznél mind az 500 mondat",
+        "closingBody": "Töltsd le ingyen a tananyagot, és ismételd az élő koreait, amikor csak szeretnéd.",
+        "features": {
+          "sentences": {
+            "title": "500 valódi koreai mondat"
+          },
+          "conversation": {
+            "title": "Valódi párbeszédek",
+            "body": "Minden mondatot egy rövid, természetes párbeszédben is láthatsz, így megérted, hogyan használják a koreaiak a valóságban."
+          },
+          "romanization": {
+            "title": "Jelentés + átírás + használati tippek",
+            "body": "Olvasd a koreai mondatokat latin betűs átírással, természetes angol jelentéssel és tömör megjegyzéssel, amely elmagyarázza az árnyalatokat és a használatot."
+          },
+          "review": {
+            "title": "Ismétlés + gyors átismétlés",
+            "body": "Minden fejezet után teszteld magad, nézd meg a megoldásokat, a végén pedig ismételd át újra mind az 500 mondatot."
+          }
+        }
+      },
       "essentialWords": {
         "eyebrow": "Ingyenes tananyag",
         "title": "500 alapvető koreai szó",
@@ -195,6 +219,30 @@
           "review": {
             "title": "Ismétlés + gyors áttekintő",
             "body": "Minden fejezet után teszteld magad, nézd meg a megoldásokat, és a gyors áttekintő listán pipáld ki, amit már tudsz."
+          }
+        }
+      },
+      "koreanWords1000": {
+        "eyebrow": "Ingyenes tananyag",
+        "title": "1000 koreai szó, amit tényleg használni fogsz",
+        "statItems": "{count, plural, one {koreai szó} other {koreai szó}}",
+        "closingTitle": "Legyen mindig kéznél mind az 1000 koreai szó",
+        "closingBody": "Töltsd le ingyen a tananyagot, és bővítsd a koreai szókincsedet a saját tempódban.",
+        "features": {
+          "words": {
+            "title": "1000 hasznos koreai szó"
+          },
+          "sentences": {
+            "title": "Valódi példa minden szóhoz",
+            "body": "Minden szót egy természetes koreai mondatban is láthatsz, átírással és angol fordítással."
+          },
+          "romanization": {
+            "title": "Jelentés + használati tippek",
+            "body": "Minden szónál ott az átírás, a szófaj és egy természetes angol jelentés, a tömör megjegyzések pedig segítenek jól megválasztani és helyesen használni."
+          },
+          "review": {
+            "title": "Ismétlés + gyors áttekintő",
+            "body": "Ismételd át az összes fejezetet, nézd meg a megoldásokat, és a záró gyors áttekintő listán pipáld ki, amit már tudsz."
           }
         }
       }
@@ -224,6 +272,17 @@
         "seoTitle": "100 hétköznapi koreai mondat – EP02 ingyenes tananyag | Hangyul",
         "seoDescription": "Töltsd le ingyen a Hangyul EP02 tananyagát: újabb 100 hétköznapi koreai mondat latin betűs átírással, angol jelentésekkel, párbeszédekkel, fejezetismétlőkkel és gyakorlással."
       },
+      "ep03EnStudyGuide": {
+        "description": "Gyakorolj 500 természetes koreai mondatot latin betűs átírással, hétköznapi angol jelentésekkel, valódi párbeszédekkel, használati megjegyzésekkel, fejezetismétlőkkel és mind az 500 mondat gyors átismétlésével.",
+        "topics": "Gyakorlati mondatok hétköznapi helyzetekre: reakciók és érzések, kávézók és vásárlás, közlekedés, tervek és meghívások, kapcsolatok, utazás, munka és még sok más.",
+        "coverAlt": "A Hangyul „500 valódi koreai mondat” (실생활 한국어 500문장) című tananyagának borítója, Korean While You Sleep EP03, angol nyelvű kiadás",
+        "previews": {
+          "chapter": "Mintaoldal az 1. fejezetből (Hétköznapi beszélgetések): minden mondatnál szerepel a koreai szöveg, a latin betűs átírás, az angol jelentés, egy használati megjegyzés és egy rövid párbeszéd",
+          "review": "Mintaoldal a 2. fejezetből (Természetes reakciók): az utolsó két mondat, utána pedig a fejezetismétlő négy feladattal: „Mit jelent?”, „Hogy mondod koreaiul?”, „Egészítsd ki a párbeszédet!” és „Mit mondanál?”"
+        },
+        "seoTitle": "500 valódi koreai mondat – ingyenes tananyag | Hangyul",
+        "seoDescription": "Töltsd le ingyen a Hangyul EP03 tananyagát: 500 valódi koreai mondat latin betűs átírással, angol jelentésekkel, párbeszédekkel, használati tippekkel és ismétléssel."
+      },
       "ep01En500EssentialWords": {
         "description": "Rakd le a gyakorlati koreai szókincs alapjait 500 alapvető szóval, természetes példamondatokkal, átírással, használati tippekkel, fejezetismétlőkkel és egy kipipálható gyors áttekintővel.",
         "youtubeCta": "Nézd meg az EP.01-et a YouTube-on",
@@ -236,6 +295,18 @@
         },
         "seoTitle": "500 alapvető koreai szó – ingyenes tananyag | Hangyul",
         "seoDescription": "Töltsd le ingyen a tananyagot: 500 alapvető koreai szó átírással, természetes példamondatokkal, használati tippekkel, fejezetismétlőkkel és gyors áttekintő listával."
+      },
+      "ep02En1000KoreanWords": {
+        "description": "Építs gyakorlati koreai szókincset 1000 hasznos szóval, minden szóhoz egy természetes példamondattal, átírással, használati tippekkel, fejezetismétlőkkel és egy kipipálható gyors áttekintővel.",
+        "topics": "Szókincs a legkülönfélébb témákban: hétköznapi tevékenységek, étel, vásárlás, utazás, kapcsolatok, egészség, iskola, munka, digitális élet és még sok más.",
+        "editionNotice": "Ez a PDF angol nyelvű. A szavak jelentése, a példák fordítása és a használati megjegyzések mind angolul szerepelnek.",
+        "coverAlt": "A Hangyul „1000 koreai szó, amit tényleg használni fogsz” (일상에서 꼭 쓰는 한국어 단어 1,000개) című tananyagának borítója, Korean Vocabulary Mastery EP02, angol nyelvű kiadás",
+        "previews": {
+          "chapter": "Mintaoldal az 1. fejezetből (Hétköznapi tevékenységek): minden szónál szerepel a koreai alak, az átírás, a szófaj, az angol jelentés, egy példamondat és egy használati megjegyzés",
+          "review": "Mintaoldal a 2. fejezetből (Emberek és dolgok leírása): az utolsó négy szó, utána pedig a fejezetismétlő három feladattal: „Mit jelent?”, „Hogy mondod koreaiul?” és „Írd be a hiányzó szót!”"
+        },
+        "seoTitle": "1000 hasznos koreai szó – ingyenes szókincsfejlesztő | Hangyul",
+        "seoDescription": "Töltsd le ingyen a Hangyul tananyagát: 1000 hasznos koreai szó, minden szóhoz példamondat, átírás, használati tippek, fejezetismétlők és kipipálható lista."
       }
     },
     "index": {

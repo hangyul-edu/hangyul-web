@@ -23,7 +23,9 @@
  *   2. 미리보기 이미지 생성:
  *        npx tsx scripts/generate-resource-previews.ts <PDF> <slug> <본문 페이지> <복습 페이지>
  *      (EP01: 3 21, EP02: 3 10 — 1장 본문 + A–D 네 문제가 다 보이는 챕터 복습,
- *       500단어 EP01: 4 65 — 1장 단어 본문 + 빠른 참고표·체크리스트)
+ *       500단어 EP01: 4 65 — 1장 단어 본문 + 빠른 참고표·체크리스트,
+ *       EP03: 3 14 — 1장 문장·대화 본문 + 2장 끝 문장과 A–D 챕터 복습,
+ *       1,000단어 EP02: 4 12 — 1장 단어 본문 + 2장 끝 단어와 A–C 챕터 복습)
  *   3. 아래 가족의 editions에 판을 추가하고, downloadResourceAssets.ts에 이미지를 등록합니다.
  *   4. messages/*.json 의 ResourceDownload.resources.<messagesKey> 에 판 문구를,
  *      (description, topics, coverAlt, previews, seoTitle, seoDescription,
@@ -167,6 +169,34 @@ export const DOWNLOAD_RESOURCE_FAMILIES = [
     },
   },
   {
+    id: "ep03-study-guide",
+    pageSlug: "500-real-korean-sentences-ep03",
+    defaultEdition: "en",
+    contentUpdatedAt: "2026-11-10",
+    formatMessagesKey: "realSentences",
+    series: "Korean While You Sleep",
+    episode: "EP03",
+    // 아직 연결된 영상이 없습니다. 영상이 나오면 { status: "available", url } 로만 바꾸면 됩니다.
+    youtube: { status: "comingSoon" },
+    // 001–500, 25개 챕터 × 20문장 (PDF 목차 기준)
+    itemCount: 500,
+    chapterCount: 25,
+    features: ["sentences", "conversation", "romanization", "review"],
+    format: "PDF",
+    editions: {
+      en: {
+        slug: "ep03-en-study-guide",
+        language: "en",
+        messagesKey: "ep03EnStudyGuide",
+        file: "EP03_EN_Study_Guide.pdf",
+        downloadFileName:
+          "Hangyul_EP03_500_Real_Korean_Sentences_Study_Guide_EN.pdf",
+        // 실제 PDF 페이지 수 (표지·뒷표지 포함, pdfinfo 기준)
+        pageCount: 177,
+      },
+    },
+  },
+  {
     id: "vocabulary-mastery-ep01",
     pageSlug: "500-essential-korean-words-ep01",
     defaultEdition: "en",
@@ -193,6 +223,33 @@ export const DOWNLOAD_RESOURCE_FAMILIES = [
           "Hangyul_EP01_500_Essential_Korean_Words_Study_Guide_EN.pdf",
         // 실제 PDF 페이지 수 (표지·뒷표지 포함, pdfinfo 기준)
         pageCount: 75,
+      },
+    },
+  },
+  {
+    id: "vocabulary-mastery-ep02",
+    pageSlug: "1000-korean-words-ep02",
+    defaultEdition: "en",
+    contentUpdatedAt: "2026-11-10",
+    formatMessagesKey: "koreanWords1000",
+    series: "Korean Vocabulary Mastery",
+    episode: "EP02",
+    // 아직 연결된 영상이 없습니다. 영상이 나오면 { status: "available", url } 로만 바꾸면 됩니다.
+    youtube: { status: "comingSoon" },
+    // 001–1000, 25개 챕터 × 40단어 (PDF 목차·빠른 참고표 기준)
+    itemCount: 1000,
+    chapterCount: 25,
+    features: ["words", "sentences", "romanization", "review"],
+    format: "PDF",
+    editions: {
+      en: {
+        slug: "ep02-en-1000-korean-words-study-guide",
+        language: "en",
+        messagesKey: "ep02En1000KoreanWords",
+        file: "EP02_EN_1000_Korean_Words_Study_Guide.pdf",
+        downloadFileName: "Hangyul_EP02_1000_Korean_Words_Study_Guide_EN.pdf",
+        // 실제 PDF 페이지 수 (표지·뒷표지 포함, pdfinfo 기준)
+        pageCount: 145,
       },
     },
   },

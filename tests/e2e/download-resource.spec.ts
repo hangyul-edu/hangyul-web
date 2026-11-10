@@ -984,11 +984,11 @@ test.describe("EP01 — refreshed source PDF", () => {
   }
 });
 
-test("resource=ep03-en-study-guide is not found and serves no PDF", async ({ page }) => {
-  const response = await page.goto("/download?resource=ep03-en-study-guide&lang=en");
+test("an unregistered resource (ep04-en-study-guide) is not found and serves no PDF", async ({ page }) => {
+  const response = await page.goto("/download?resource=ep04-en-study-guide&lang=en");
   expect(response?.status()).toBe(404);
   await expect(page.locator('a[href$=".pdf"]')).toHaveCount(0);
-  expect((await page.request.get("/download/files/ep03-en-study-guide.pdf")).status()).toBe(404);
+  expect((await page.request.get("/download/files/ep04-en-study-guide.pdf")).status()).toBe(404);
 });
 
 /* ───────────── 500 Essential Korean Words (Korean Vocabulary Mastery EP01) ───────────── */
@@ -1268,4 +1268,422 @@ test.describe("500 Essential Korean Words — responsive", () => {
     expect(Math.round(b.cover!.width)).toBe(Math.round(a.cover!.width));
     expect(Math.round(b.title!.x)).toBe(Math.round(a.title!.x));
   });
+});
+
+/* ───────── 새 가이드: EP03 500 Real Korean Sentences · EP02 1,000 Korean Words ─────────
+ * 두 자료 모두 아직 YouTube 영상이 연결되지 않았습니다 (youtube.status === "comingSoon").
+ * 같은 공유 컴포넌트를 쓰므로 같은 검증을 자료별 기대값으로 반복합니다.
+ */
+
+const comingSoon = (locale: string) =>
+  (messages(locale).common as unknown as { youtubeComingSoon: Record<string, string> })
+    .youtubeComingSoon;
+const ALL_LOCALES = fs
+  .readdirSync(path.join(process.cwd(), "messages"))
+  .filter((f) => f.endsWith(".json"))
+  .map((f) => f.replace(/\.json$/, ""));
+
+const EXISTING_SOURCE_PDFS = [
+  SOURCE_PDF,
+  EP02_SOURCE_PDF,
+  WORDS_SOURCE_PDF,
+];
+
+const NEW_GUIDES = [
+  {
+    name: "EP03 500 Real Korean Sentences",
+    slug: "ep03-en-study-guide",
+    pagePath: (locale: string) => `/${locale}/resources/500-real-korean-sentences-ep03`,
+    messagesKey: "ep03EnStudyGuide",
+    format: "realSentences",
+    sourcePdf: "src/assets/downloads/EP03_EN_Study_Guide.pdf",
+    downloadFileName: "Hangyul_EP03_500_Real_Korean_Sentences_Study_Guide_EN.pdf",
+    h1: "500 Real Korean Sentences",
+    series: "Korean While You Sleep · EP03",
+    stats: ["500", "25", "177"],
+    statLabels: ["real Korean sentences", "topic chapters", "pages"],
+    microcopy: "177 pages · PDF · No sign-up required",
+    features: [
+      "500 real Korean sentences",
+      "Real conversations",
+      "Meaning + romanization + usage notes",
+      "Reviews + quick review",
+    ],
+    closingTitle: "Keep all 500 sentences with you",
+    closingBody: "Download the guide free and review real Korean whenever you want.",
+    seoTitle: "500 Real Korean Sentences – Free Study Guide | Hangyul",
+    coverName: /korean while you sleep ep03, english edition/i,
+    notOwn: ["100 Everyday Korean Sentences", "Keep the 100 sentences with you", "43 pages", "Korean Vocabulary Mastery"],
+  },
+  {
+    name: "EP02 1,000 Korean Words You’ll Actually Use",
+    slug: "ep02-en-1000-korean-words-study-guide",
+    pagePath: (locale: string) => `/${locale}/resources/1000-korean-words-ep02`,
+    messagesKey: "ep02En1000KoreanWords",
+    format: "koreanWords1000",
+    sourcePdf: "src/assets/downloads/EP02_EN_1000_Korean_Words_Study_Guide.pdf",
+    downloadFileName: "Hangyul_EP02_1000_Korean_Words_Study_Guide_EN.pdf",
+    h1: "1,000 Korean Words You’ll Actually Use",
+    series: "Korean Vocabulary Mastery · EP02",
+    stats: ["1,000", "25", "145"],
+    statLabels: ["Korean words", "topic chapters", "pages"],
+    microcopy: "145 pages · PDF · No sign-up required",
+    features: [
+      "1,000 useful Korean words",
+      "A real example for every word",
+      "Meaning + usage guidance",
+      "Reviews + quick reference",
+    ],
+    closingTitle: "Keep all 1,000 Korean words with you",
+    closingBody: "Download the guide free and build your Korean vocabulary at your own pace.",
+    seoTitle: "1,000 Korean Words You’ll Actually Use – Free Vocabulary Guide | Hangyul",
+    coverName: /korean vocabulary mastery ep02, english edition/i,
+    notOwn: ["500 Essential Korean Words", "Keep all 500 essential words with you", "75 pages", "Korean While You Sleep"],
+  },
+] as const;
+
+for (const guide of NEW_GUIDES) {
+  const resourceLink = `/download?resource=${guide.slug}`;
+  const enLink = `${resourceLink}&lang=en`;
+  const pdfPath = `/download/files/${guide.slug}.pdf`;
+  const sourcePdf = path.join(process.cwd(), guide.sourcePdf);
+  const guideCopy = (locale: string) => messages(locale).resources[guide.messagesKey];
+  const guideFormat = (locale: string) =>
+    (messages(locale).formats as unknown as Record<string, Record<string, string>>)[guide.format];
+
+  test.describe(`${guide.name} — ${enLink}`, () => {
+    test("the public link 301s to its canonical page and renders its own identity", async ({ page }) => {
+      const raw = await rawResponse(page, `${enLink}&utm_source=youtube`);
+      expect(raw.status()).toBe(301);
+      const location = new URL(raw.headers()["location"], PROD);
+      expect(location.pathname).toBe(guide.pagePath("en"));
+      expect(location.search).toBe("?utm_source=youtube");
+
+      const response = await page.goto(enLink);
+      expect(response?.status()).toBe(200);
+      await expect(page).toHaveURL(new RegExp(`${guide.pagePath("en")}$`));
+
+      await expect(h1(page)).toHaveText(guide.h1);
+      await expect(page.getByText("Free Study Guide", { exact: true })).toBeVisible();
+      await expect(page.getByTestId("resource-series")).toHaveText(guide.series);
+      await expect(page.getByTestId("edition-badge")).toHaveText("English edition");
+      await expect(page.getByTestId("edition-notice")).toHaveCount(0);
+      await expect(page.getByText(guideCopy("en").description)).toBeVisible();
+
+      await expect(page.locator("main dd")).toHaveText([...guide.stats]);
+      await expect(page.locator("main dt")).toHaveText([...guide.statLabels]);
+      await expect(page.getByText(guide.microcopy)).toBeVisible();
+
+      for (const title of guide.features) {
+        await expect(page.getByRole("heading", { level: 3, name: title })).toBeVisible();
+      }
+      await expect(page.getByText(guideCopy("en").topics)).toBeVisible();
+      await expect(page.getByText("A look inside")).toBeVisible();
+
+      await expect(page.getByRole("heading", { name: guide.closingTitle })).toBeVisible();
+      await expect(page.getByText(guide.closingBody)).toBeVisible();
+
+      // 다른 자료의 문구가 이 자료 본문에 새지 않습니다 ("다른 무료 학습 가이드" 링크 제외).
+      const own = (await page.locator("main > section").allInnerTexts()).join("\n");
+      for (const text of guide.notOwn) expect(own).not.toContain(text);
+    });
+
+    test("has its own SEO metadata and social image", async ({ page }) => {
+      await page.goto(enLink);
+      await expect(page).toHaveTitle(guide.seoTitle);
+      await expect(page.locator('meta[name="description"]')).toHaveAttribute(
+        "content",
+        guideCopy("en").seoDescription
+      );
+      await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+        "href",
+        `${PROD}${guide.pagePath("en")}`
+      );
+      await expect(page.locator('meta[property="og:title"]')).toHaveAttribute("content", guide.seoTitle);
+      await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute("content", "summary_large_image");
+      const og = await page.locator('meta[property="og:image"]').getAttribute("content");
+      expect(og).toMatch(/\.jpg$/);
+      expect((await page.request.get(og!.replace(PROD, ""))).status()).toBe(200);
+    });
+
+    test("uses its own cover and previews, not another guide's artwork", async ({ page }) => {
+      const others: string[] = [];
+      for (const url of [
+        EN_LINK,
+        "/download?resource=ep02-en-study-guide&lang=en",
+        WORDS_EN_LINK,
+        ...NEW_GUIDES.filter((g) => g.slug !== guide.slug).map(
+          (g) => `/download?resource=${g.slug}&lang=en`
+        ),
+      ]) {
+        await page.goto(url);
+        others.push(...(await ownImageMedia(page)));
+      }
+      await page.goto(enLink);
+      const media = await ownImageMedia(page);
+      expect(media.length).toBe(3);
+      for (const src of media) {
+        expect(src).toBeTruthy();
+        expect(others).not.toContain(src);
+      }
+      await expect(page.getByRole("img", { name: guide.coverName })).toBeVisible();
+    });
+
+    for (const locale of ["ko", "ja"]) {
+      test(`${locale} UI keeps the English-edition PDF`, async ({ page }) => {
+        await page.goto(`${resourceLink}&lang=${locale}`);
+        const m = messages(locale);
+        await expect(page.locator("html")).toHaveAttribute("lang", locale);
+        await expect(page).toHaveURL(new RegExp(`${guide.pagePath(locale)}$`));
+        await expect(h1(page)).toHaveText(guideFormat(locale).title);
+        await expect(page.getByTestId("edition-badge")).toHaveText(m.editionLanguages.en.label);
+        await expect(page.getByTestId("edition-notice")).toBeVisible();
+        await expect(page.getByTestId("resource-youtube")).toHaveText(m.common.youtubeCta);
+        await expect(heroDownload(page)).toHaveAttribute("href", pdfPath);
+        await expect(heroDownload(page)).toHaveAttribute("download", guide.downloadFileName);
+        await expect(page).toHaveTitle(guideCopy(locale).seoTitle);
+      });
+    }
+  });
+
+  test.describe(`${guide.name} — YouTube is not connected yet`, () => {
+    test("the CTA is a visible button, never a link to another video", async ({ page }) => {
+      await page.goto(enLink);
+      const youtube = page.getByTestId("resource-youtube");
+      await expect(youtube).toBeVisible();
+      await expect(youtube).toHaveText("Watch on YouTube");
+      await expect(youtube).toHaveJSProperty("tagName", "BUTTON");
+      await expect(youtube).not.toHaveAttribute("href", /.*/);
+      await expect(youtube).toHaveAttribute("aria-haspopup", "dialog");
+      await expect(youtube).toHaveAttribute("data-youtube-status", "comingSoon");
+
+      // 다른 에피소드 영상·YouTube 홈으로 대신 연결하지 않습니다.
+      const main = await page.locator("main > section").evaluateAll((els) =>
+        els.map((el) => el.innerHTML).join("")
+      );
+      expect(main).not.toContain("youtube.com");
+      expect(main).not.toContain("youtu.be");
+      await expect(page.locator('main a[href="#"]')).toHaveCount(0);
+    });
+
+    test("opens an accessible coming-soon dialog and does not navigate", async ({ page, context }) => {
+      await page.goto(enLink);
+      const url = page.url();
+      let popups = 0;
+      context.on("page", () => popups++);
+      page.on("dialog", () => {
+        throw new Error("window.alert must not be used");
+      });
+
+      const trigger = page.getByTestId("resource-youtube");
+      await trigger.click();
+      const dialog = page.getByRole("dialog", { name: "The video lesson is being prepared" });
+      await expect(dialog).toBeVisible();
+      await expect(dialog).toHaveAttribute("aria-modal", "true");
+      await expect(dialog).toContainText(/coming soon/i);
+      await expect(dialog).toContainText(
+        "The YouTube lesson for this study guide isn’t connected yet. You can download the study guide now, and we’ll add the video here when it’s ready."
+      );
+      await expect(dialog.getByRole("button", { name: "Got it" })).toBeVisible();
+      await expect(dialog.getByRole("button", { name: "Close" })).toBeVisible();
+      expect(page.url()).toBe(url);
+      expect(popups).toBe(0);
+
+      expect(await page.evaluate(() => document.documentElement.style.overflow)).toBe("hidden");
+      for (let i = 0; i < 4; i++) {
+        await page.keyboard.press("Tab");
+        expect(await dialog.evaluate((el) => el.contains(document.activeElement))).toBe(true);
+      }
+      await page.keyboard.press("Escape");
+      await expect(dialog).toHaveCount(0);
+      await expect(trigger).toBeFocused();
+    });
+
+    test("closes with Got it, the X button, and a click outside", async ({ page }) => {
+      await page.goto(enLink);
+      const trigger = page.getByTestId("resource-youtube");
+      await trigger.click();
+      await comingSoonDialog(page).getByRole("button", { name: "Got it" }).click();
+      await expect(comingSoonDialog(page)).toHaveCount(0);
+
+      await trigger.click();
+      await comingSoonDialog(page).getByRole("button", { name: "Close" }).click();
+      await expect(comingSoonDialog(page)).toHaveCount(0);
+
+      await trigger.click();
+      await expect(comingSoonDialog(page)).toBeVisible();
+      await page.mouse.click(5, 5);
+      await expect(comingSoonDialog(page)).toHaveCount(0);
+    });
+
+    test("the CTA and dialog are localized in every UI language", async ({ page }) => {
+      test.slow();
+      expect(ALL_LOCALES.length).toBe(32);
+      for (const locale of ALL_LOCALES) {
+        const c = comingSoon(locale);
+        if (locale !== "en") {
+          expect(c.title, locale).not.toBe(comingSoon("en").title);
+          expect(c.body, locale).not.toBe(comingSoon("en").body);
+        }
+        await page.goto(`${resourceLink}&lang=${locale}`);
+        const trigger = page.getByTestId("resource-youtube");
+        await expect(trigger, locale).toHaveText(messages(locale).common.youtubeCta);
+        await trigger.click();
+        const dialog = page.getByRole("dialog", { name: c.title });
+        await expect(dialog, locale).toBeVisible();
+        await expect(dialog, locale).toContainText(c.body);
+        await expect(dialog.getByRole("button", { name: c.confirm }), locale).toBeVisible();
+        await expect(dialog.getByRole("button", { name: c.close }), locale).toBeVisible();
+      }
+    });
+
+    test("has no WCAG A/AA violations with the dialog open", async ({ page }) => {
+      await page.goto(enLink);
+      await page.getByTestId("resource-youtube").click();
+      await expect(comingSoonDialog(page)).toBeVisible();
+      const results = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze();
+      expect(results.violations).toEqual([]);
+    });
+  });
+
+  test.describe(`${guide.name} — PDF download`, () => {
+    test("the endpoint serves exactly the repository PDF", async ({ page }) => {
+      const response = await page.request.get(pdfPath);
+      expect(response.status()).toBe(200);
+      expect(response.headers()["content-type"]).toBe("application/pdf");
+      expect(response.headers()["content-disposition"]).toContain(
+        `filename="${guide.downloadFileName}"`
+      );
+      const body = await response.body();
+      const source = fs.readFileSync(sourcePdf);
+      expect(Number(response.headers()["content-length"])).toBe(source.byteLength);
+      expect(body.equals(source)).toBe(true);
+      expect(body.subarray(0, 5).toString()).toBe("%PDF-");
+
+      // 다른 자료의 PDF가 아닙니다.
+      for (const other of [
+        ...EXISTING_SOURCE_PDFS,
+        ...NEW_GUIDES.filter((g) => g.slug !== guide.slug).map((g) =>
+          path.join(process.cwd(), g.sourcePdf)
+        ),
+      ]) {
+        expect(body.equals(fs.readFileSync(other))).toBe(false);
+      }
+    });
+
+    test("both CTAs point at this guide's PDF", async ({ page }) => {
+      await page.goto(enLink);
+      for (const cta of [heroDownload(page), page.getByTestId("resource-download-closing")]) {
+        await expect(cta).toHaveText("Download Free PDF");
+        await expect(cta).toHaveAttribute("href", pdfPath);
+        await expect(cta).toHaveAttribute("download", guide.downloadFileName);
+      }
+    });
+
+    test("clicking the CTA downloads this guide's PDF", async ({ page, browserName }) => {
+      test.skip(browserName === "webkit", "download events are Chromium/Firefox only");
+      await page.goto(enLink);
+      const [download] = await Promise.all([
+        page.waitForEvent("download"),
+        heroDownload(page).click(),
+      ]);
+      expect(download.suggestedFilename()).toBe(guide.downloadFileName);
+      expect(fs.readFileSync(await download.path()).equals(fs.readFileSync(sourcePdf))).toBe(true);
+    });
+  });
+
+  test.describe(`${guide.name} — responsive`, () => {
+    for (const vp of [
+      { width: 360, height: 800 },
+      { width: 375, height: 812 },
+      { width: 390, height: 844 },
+      { width: 430, height: 932 },
+      { width: 1280, height: 800 },
+      { width: 1440, height: 900 },
+      { width: 1600, height: 900 },
+      { width: 1920, height: 1080 },
+    ]) {
+      test(`${vp.width}×${vp.height}: no overflow, CTA above the fold, dialog fits`, async ({ page }) => {
+        await page.setViewportSize(vp);
+        await page.goto(enLink);
+        const overflow = () =>
+          page.evaluate(
+            () => document.documentElement.scrollWidth - document.documentElement.clientWidth
+          );
+        expect(await overflow()).toBe(0);
+        await expect(h1(page)).toBeInViewport();
+        await expect(page.getByTestId("edition-badge")).toBeInViewport();
+        const box = await heroDownload(page).boundingBox();
+        expect(box!.y + box!.height).toBeLessThanOrEqual(vp.height);
+
+        // 통계 3개가 한 줄 안에 들어갑니다.
+        const stats = await page.locator("main dl > div").evaluateAll((els) =>
+          els.map((el) => el.getBoundingClientRect()).map((r) => ({ left: r.left, right: r.right }))
+        );
+        expect(stats.length).toBe(3);
+        for (const s of stats) {
+          expect(s.left).toBeGreaterThanOrEqual(0);
+          expect(s.right).toBeLessThanOrEqual(vp.width);
+        }
+
+        // 미리보기는 화면 안에 들어갑니다.
+        for (const img of await page.locator("main figure img").all()) {
+          await img.scrollIntoViewIfNeeded();
+          const r = await img.boundingBox();
+          expect(r!.x).toBeGreaterThanOrEqual(0);
+          expect(r!.x + r!.width).toBeLessThanOrEqual(vp.width);
+        }
+
+        await page.getByRole("contentinfo").scrollIntoViewIfNeeded();
+        await expect(page.getByRole("contentinfo")).toBeVisible();
+        await expect(page.getByRole("contentinfo").locator('a[href="/en/resources"]')).toBeVisible();
+
+        await page.evaluate(() => window.scrollTo(0, 0));
+        await page.getByTestId("resource-youtube").click();
+        const dialog = page.getByRole("dialog");
+        await expect(dialog).toBeInViewport({ ratio: 1 });
+        const d = await dialog.boundingBox();
+        expect(d!.x).toBeGreaterThanOrEqual(0);
+        expect(d!.x + d!.width).toBeLessThanOrEqual(vp.width);
+        expect(d!.width).toBeLessThanOrEqual(480);
+        expect(await overflow()).toBe(0);
+      });
+    }
+
+    test("shares the existing guides' layout geometry", async ({ page }) => {
+      await page.setViewportSize({ width: 1440, height: 900 });
+      const measure = async (url: string) => {
+        await page.goto(url);
+        return {
+          cover: await page.locator("main img").first().boundingBox(),
+          title: await h1(page).boundingBox(),
+          cta: await heroDownload(page).boundingBox(),
+        };
+      };
+      const a = await measure(EN_LINK);
+      const b = await measure(enLink);
+      expect(Math.round(b.cover!.x)).toBe(Math.round(a.cover!.x));
+      expect(Math.round(b.cover!.width)).toBe(Math.round(a.cover!.width));
+      expect(Math.round(b.title!.x)).toBe(Math.round(a.title!.x));
+      expect(Math.round(b.cta!.height)).toBe(Math.round(a.cta!.height));
+    });
+  });
+}
+
+test.describe("Existing guides are unchanged by the new resources", () => {
+  for (const [link, youtube, pdf, source, h1Text, dd] of [
+    [EN_LINK, YOUTUBE_URL, PDF_PATH, SOURCE_PDF, "100 Everyday Korean Sentences", ["100", "10", "43"]],
+    ["/download?resource=ep02-en-study-guide&lang=en", EP02_YOUTUBE_URL, "/download/files/ep02-en-study-guide.pdf", EP02_SOURCE_PDF, "100 Everyday Korean Sentences", ["100", "10", "43"]],
+    [WORDS_EN_LINK, WORDS_YOUTUBE_URL, WORDS_PDF_PATH, WORDS_SOURCE_PDF, "500 Essential Korean Words", ["500", "20", "75"]],
+  ] as const) {
+    test(`${link} keeps its PDF, video, title and stats`, async ({ page }) => {
+      await page.goto(link);
+      await expect(h1(page)).toHaveText(h1Text);
+      await expect(page.locator("main dd")).toHaveText([...dd]);
+      await expect(page.getByTestId("resource-youtube")).toHaveAttribute("href", youtube);
+      await expect(heroDownload(page)).toHaveAttribute("href", pdf);
+      const body = await (await page.request.get(pdf)).body();
+      expect(body.equals(fs.readFileSync(source))).toBe(true);
+    });
+  }
 });

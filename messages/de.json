@@ -138,8 +138,8 @@
       "youtubeCta": "Auf YouTube ansehen",
       "youtubeComingSoon": {
         "eyebrow": "Demnächst",
-        "title": "Die Videolektion kommt bald",
-        "body": "Die YouTube-Lektion zu diesem Lernheft ist noch nicht verfügbar. Das Lernheft kannst du schon jetzt herunterladen – das Video verlinken wir hier, sobald es fertig ist.",
+        "title": "Die Videolektion ist in Vorbereitung",
+        "body": "Die YouTube-Lektion zu diesem Lernheft ist noch nicht verknüpft. Das Lernheft kannst du schon jetzt herunterladen – das Video fügen wir hier hinzu, sobald es fertig ist.",
         "confirm": "Alles klar",
         "close": "Schließen"
       }
@@ -174,6 +174,30 @@
           }
         }
       },
+      "realSentences": {
+        "eyebrow": "Kostenloses Lernheft",
+        "title": "500 koreanische Sätze aus dem echten Leben",
+        "statItems": "{count, plural, one {Satz aus dem echten Leben} other {Sätze aus dem echten Leben}}",
+        "closingTitle": "Nimm alle 500 Sätze überallhin mit",
+        "closingBody": "Lade das Lernheft kostenlos herunter und wiederhole echtes Koreanisch, wann immer du willst.",
+        "features": {
+          "sentences": {
+            "title": "500 Sätze aus dem echten Leben"
+          },
+          "conversation": {
+            "title": "Echte Gespräche",
+            "body": "Jeder Satz steht in einem kurzen, natürlichen Dialog – so verstehst du, wie Koreaner ihn wirklich verwenden."
+          },
+          "romanization": {
+            "title": "Bedeutung + Umschrift + Hinweise",
+            "body": "Zum Koreanischen gibt es Umschrift, eine natürliche englische Bedeutung und einen kurzen Hinweis zu Nuancen und Verwendung."
+          },
+          "review": {
+            "title": "Kapitelwiederholungen + Schnellwiederholung",
+            "body": "Teste dich nach jedem Kapitel, prüfe die Lösungen und geh am Ende alle 500 Sätze noch einmal durch."
+          }
+        }
+      },
       "essentialWords": {
         "eyebrow": "Kostenloses Lernheft",
         "title": "500 wichtige koreanische Wörter",
@@ -195,6 +219,30 @@
           "review": {
             "title": "Wiederholung + Kurzübersicht",
             "body": "Teste dich nach jedem Kapitel, prüfe deine Antworten und hake in der Kurzübersicht mit Checkliste ab, was du schon kannst."
+          }
+        }
+      },
+      "koreanWords1000": {
+        "eyebrow": "Kostenloses Lernheft",
+        "title": "1.000 koreanische Wörter, die du wirklich brauchst",
+        "statItems": "{count, plural, one {koreanisches Wort} other {koreanische Wörter}}",
+        "closingTitle": "Nimm alle 1.000 Wörter überallhin mit",
+        "closingBody": "Lade das Lernheft kostenlos herunter und bau deinen koreanischen Wortschatz in deinem eigenen Tempo auf.",
+        "features": {
+          "words": {
+            "title": "1.000 nützliche koreanische Wörter"
+          },
+          "sentences": {
+            "title": "Ein echtes Beispiel zu jedem Wort",
+            "body": "Sieh jedes Wort in einem natürlichen koreanischen Satz – mit Umschrift und englischer Übersetzung."
+          },
+          "romanization": {
+            "title": "Bedeutung + Verwendungstipps",
+            "body": "Lerne zu jedem Wort Umschrift, Wortart und eine natürliche englische Bedeutung – mit kurzen Hinweisen, die dir helfen, es richtig zu wählen und zu verwenden."
+          },
+          "review": {
+            "title": "Wiederholung + Kurzübersicht",
+            "body": "Wiederhole jedes Kapitel, prüfe deine Antworten und hake in der abschließenden Kurzübersicht mit Checkliste ab, was du schon kannst."
           }
         }
       }
@@ -224,6 +272,17 @@
         "seoTitle": "100 koreanische Alltagssätze – EP02 Kostenloses Lernheft | Hangyul",
         "seoDescription": "Lade das kostenlose Hangyul-Lernheft zu EP02 herunter: 100 weitere koreanische Alltagssätze mit Umschrift, englischen Bedeutungen, Dialogen, Kapitelwiederholungen und Übungen."
       },
+      "ep03EnStudyGuide": {
+        "description": "Übe 500 natürliche koreanische Sätze – mit Umschrift, alltagsnahen englischen Bedeutungen, echten Dialogen, Verwendungshinweisen, Kapitelwiederholungen und einer Schnellwiederholung aller 500 Sätze.",
+        "topics": "Praktische Sätze für den Alltag: Reaktionen und Gefühle, Café und Shopping, unterwegs sein, Pläne und Verabredungen, Beziehungen, Reisen, Arbeit und mehr.",
+        "coverAlt": "Cover des Hangyul-Lernhefts „500 koreanische Sätze aus dem echten Leben“ (실생활 한국어 500문장), Korean While You Sleep EP03, englische Ausgabe",
+        "previews": {
+          "chapter": "Beispielseite aus Kapitel 1, Wie geht’s?: Zu jedem Satz gibt es Koreanisch, Umschrift, die englische Bedeutung, einen Verwendungshinweis und einen kurzen Dialog",
+          "review": "Beispielseite aus Kapitel 2, Natürliche Reaktionen: die letzten beiden Sätze, gefolgt von einer Kapitelwiederholung mit vier Übungen: Bedeutung erkennen, auf Koreanisch ausdrücken, Dialog vervollständigen und passende Antwort finden"
+        },
+        "seoTitle": "500 koreanische Sätze aus dem echten Leben – Kostenloses Lernheft | Hangyul",
+        "seoDescription": "Lade das kostenlose Hangyul-Lernheft zu EP03 herunter: 500 koreanische Sätze aus dem echten Leben mit Umschrift, englischen Bedeutungen, Dialogen und Übungen."
+      },
       "ep01En500EssentialWords": {
         "description": "Leg mit 500 wichtigen Wörtern ein solides Fundament für deinen koreanischen Wortschatz – mit natürlichen Beispielsätzen, Umschrift, Verwendungshinweisen, Kapitelwiederholungen und einer Kurzübersicht mit Checkliste.",
         "youtubeCta": "EP.01 auf YouTube ansehen",
@@ -236,6 +295,18 @@
         },
         "seoTitle": "500 wichtige koreanische Wörter – Kostenloses Lernheft | Hangyul",
         "seoDescription": "Lade das kostenlose Lernheft herunter: 500 wichtige koreanische Wörter mit Umschrift, natürlichen Beispielsätzen, Verwendungshinweisen, Kapitelwiederholungen und Checkliste."
+      },
+      "ep02En1000KoreanWords": {
+        "description": "Bau dir einen praktischen koreanischen Wortschatz auf – mit 1.000 nützlichen Wörtern, einem natürlichen Beispielsatz zu jedem Wort, Umschrift, Verwendungshinweisen, Kapitelwiederholungen und einer Kurzübersicht mit Checkliste.",
+        "topics": "Wortschatz für alle Lebensbereiche: alltägliche Handlungen, Essen, Einkaufen, Reisen, Beziehungen, Gesundheit, Schule, Arbeit, digitales Leben und mehr.",
+        "editionNotice": "Dieses PDF ist auf Englisch. Wortbedeutungen, Übersetzungen der Beispielsätze und Verwendungshinweise sind durchgehend auf Englisch verfasst.",
+        "coverAlt": "Cover des Hangyul-Lernhefts „1.000 koreanische Wörter, die du wirklich brauchst“ (일상에서 꼭 쓰는 한국어 단어 1,000개), Korean Vocabulary Mastery EP02, englische Ausgabe",
+        "previews": {
+          "chapter": "Beispielseite aus Kapitel 1, Alltägliche Handlungen: Zu jedem Wort gibt es Koreanisch, Umschrift, Wortart, die englische Bedeutung, einen Beispielsatz und einen Verwendungshinweis",
+          "review": "Beispielseite aus Kapitel 2, Menschen und Dinge beschreiben: die letzten vier Wörter, gefolgt von einer Kapitelwiederholung mit drei Übungen: Bedeutung erkennen, auf Koreanisch ausdrücken und das fehlende Wort ergänzen"
+        },
+        "seoTitle": "1.000 nützliche koreanische Wörter – Kostenloses Lernheft | Hangyul",
+        "seoDescription": "Lade das kostenlose Hangyul-Lernheft herunter: 1.000 nützliche koreanische Wörter mit Beispielsatz zu jedem Wort, Umschrift, Verwendungshinweisen und Checkliste."
       }
     },
     "index": {

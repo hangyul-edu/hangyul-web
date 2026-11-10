@@ -138,8 +138,8 @@
       "youtubeCta": "Watch on YouTube",
       "youtubeComingSoon": {
         "eyebrow": "Coming soon",
-        "title": "The video lesson is coming soon",
-        "body": "The YouTube lesson for this study guide isn’t available yet. You can download the study guide now, and the video will be linked here once it’s ready.",
+        "title": "The video lesson is being prepared",
+        "body": "The YouTube lesson for this study guide isn’t connected yet. You can download the study guide now, and we’ll add the video here when it’s ready.",
         "confirm": "Got it",
         "close": "Close"
       }
@@ -174,6 +174,30 @@
           }
         }
       },
+      "realSentences": {
+        "eyebrow": "Free Study Guide",
+        "title": "500 Real Korean Sentences",
+        "statItems": "{count, plural, one {real Korean sentence} other {real Korean sentences}}",
+        "closingTitle": "Keep all 500 sentences with you",
+        "closingBody": "Download the guide free and review real Korean whenever you want.",
+        "features": {
+          "sentences": {
+            "title": "500 real Korean sentences"
+          },
+          "conversation": {
+            "title": "Real conversations",
+            "body": "See every sentence inside a short, natural conversation so you can understand how Koreans actually use it."
+          },
+          "romanization": {
+            "title": "Meaning + romanization + usage notes",
+            "body": "Follow the Korean with romanization, a natural English meaning, and a concise note that explains nuance and usage."
+          },
+          "review": {
+            "title": "Reviews + quick review",
+            "body": "Test yourself after each chapter, check the answers, and review all 500 sentences again at the end."
+          }
+        }
+      },
       "essentialWords": {
         "eyebrow": "Free Study Guide",
         "title": "500 Essential Korean Words",
@@ -195,6 +219,30 @@
           "review": {
             "title": "Reviews + quick reference",
             "body": "Test yourself after every chapter, check your answers, and track what you remember with the quick-reference checklist."
+          }
+        }
+      },
+      "koreanWords1000": {
+        "eyebrow": "Free Study Guide",
+        "title": "1,000 Korean Words You’ll Actually Use",
+        "statItems": "{count, plural, one {Korean word} other {Korean words}}",
+        "closingTitle": "Keep all 1,000 Korean words with you",
+        "closingBody": "Download the guide free and build your Korean vocabulary at your own pace.",
+        "features": {
+          "words": {
+            "title": "1,000 useful Korean words"
+          },
+          "sentences": {
+            "title": "A real example for every word",
+            "body": "See every word inside a natural Korean sentence, with romanization and an English translation."
+          },
+          "romanization": {
+            "title": "Meaning + usage guidance",
+            "body": "Learn each word’s romanization, part of speech and natural English meaning, with concise notes that help you choose and use it correctly."
+          },
+          "review": {
+            "title": "Reviews + quick reference",
+            "body": "Review every chapter, check your answers, and use the final quick-reference checklist to track what you remember."
           }
         }
       }
@@ -224,6 +272,17 @@
         "seoTitle": "100 Everyday Korean Sentences EP02 – Free Study Guide | Hangyul",
         "seoDescription": "Download Hangyul’s free EP02 study guide with 100 more practical Korean sentences for cafés, shopping, getting around and plans, with romanization and reviews."
       },
+      "ep03EnStudyGuide": {
+        "description": "Practice 500 natural Korean sentences with romanization, everyday English meanings, real conversations, usage notes, chapter reviews, and a quick review of all 500.",
+        "topics": "Practical sentences for everyday situations: reactions and feelings, cafés and shopping, getting around, plans and invitations, relationships, travel, work, and more.",
+        "coverAlt": "Cover of the Hangyul study guide “500 Real Korean Sentences” (실생활 한국어 500문장), Korean While You Sleep EP03, English edition",
+        "previews": {
+          "chapter": "Sample page from Chapter 1, Everyday Check-ins: each sentence shows Korean, romanization, the English meaning, a usage note and a short conversation",
+          "review": "Sample page from Chapter 2, Natural Reactions: the last two sentences, followed by a chapter review with four exercises: what does it mean, how do you say it in Korean, complete the conversation, and what would you say"
+        },
+        "seoTitle": "500 Real Korean Sentences – Free Study Guide | Hangyul",
+        "seoDescription": "Download Hangyul’s free EP03 study guide: 500 real Korean sentences with romanization, natural English meanings, conversations, usage notes and reviews."
+      },
       "ep01En500EssentialWords": {
         "description": "Build a practical Korean vocabulary foundation with 500 essential words, natural example sentences, romanization, usage notes, chapter reviews, and a quick-reference checklist.",
         "youtubeCta": "Watch EP.01 on YouTube",
@@ -236,6 +295,18 @@
         },
         "seoTitle": "500 Essential Korean Words – Free Korean Vocabulary Guide | Hangyul",
         "seoDescription": "Download a free Hangyul study guide with 500 essential Korean words, romanization, natural example sentences, usage notes, chapter reviews, and quick reference."
+      },
+      "ep02En1000KoreanWords": {
+        "description": "Build a practical Korean vocabulary with 1,000 useful words, a natural example sentence for every word, romanization, usage notes, chapter reviews, and a quick-reference checklist.",
+        "topics": "Build vocabulary across everyday actions, food, shopping, travel, relationships, health, school, work, digital life, and more.",
+        "editionNotice": "This PDF is in English. Word meanings, example translations and usage notes are all written in English.",
+        "coverAlt": "Cover of the Hangyul study guide “1,000 Korean Words You’ll Actually Use” (일상에서 꼭 쓰는 한국어 단어 1,000개), Korean Vocabulary Mastery EP02, English edition",
+        "previews": {
+          "chapter": "Sample page from Chapter 1, Everyday Actions: each word shows Korean, romanization, part of speech, the English meaning, an example sentence and a usage note",
+          "review": "Sample page from Chapter 2, Describing People and Things: the last four words, followed by a chapter review with three exercises: what does it mean, how do you say it in Korean, and fill in the missing word"
+        },
+        "seoTitle": "1,000 Korean Words You’ll Actually Use – Free Vocabulary Guide | Hangyul",
+        "seoDescription": "Download a free Hangyul guide with 1,000 useful Korean words, an example sentence for every word, romanization, usage notes, chapter reviews and a checklist."
       }
     },
     "index": {
