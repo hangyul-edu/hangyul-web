@@ -1271,7 +1271,8 @@ test.describe("500 Essential Korean Words — responsive", () => {
 });
 
 /* ───────── 새 가이드: EP03 500 Real Korean Sentences · EP02 1,000 Korean Words ─────────
- * 두 자료 모두 아직 YouTube 영상이 연결되지 않았습니다 (youtube.status === "comingSoon").
+ * EP03은 자기 영상(EP.03)에 연결되어 있고, 1,000단어 EP02는 아직 연결된 영상이 없습니다
+ * (youtube.status === "comingSoon"). 자료별 기대값은 NEW_GUIDES의 youtubeUrl로 정합니다.
  * 같은 공유 컴포넌트를 쓰므로 같은 검증을 자료별 기대값으로 반복합니다.
  */
 
@@ -1282,6 +1283,8 @@ const ALL_LOCALES = fs
   .readdirSync(path.join(process.cwd(), "messages"))
   .filter((f) => f.endsWith(".json"))
   .map((f) => f.replace(/\.json$/, ""));
+
+const EP03_YOUTUBE_URL = "https://www.youtube.com/watch?v=nzHYfXHrYMo";
 
 const EXISTING_SOURCE_PDFS = [
   SOURCE_PDF,
@@ -1313,6 +1316,9 @@ const NEW_GUIDES = [
     closingBody: "Download the guide free and review real Korean whenever you want.",
     seoTitle: "500 Real Korean Sentences – Free Study Guide | Hangyul",
     coverName: /korean while you sleep ep03, english edition/i,
+    youtubeUrl: EP03_YOUTUBE_URL,
+    youtubeCta: "Watch EP.03 on YouTube",
+    episodeLabel: "EP.03",
     notOwn: ["100 Everyday Korean Sentences", "Keep the 100 sentences with you", "43 pages", "Korean Vocabulary Mastery"],
   },
   {
@@ -1338,6 +1344,9 @@ const NEW_GUIDES = [
     closingBody: "Download the guide free and build your Korean vocabulary at your own pace.",
     seoTitle: "1,000 Korean Words You’ll Actually Use – Free Vocabulary Guide | Hangyul",
     coverName: /korean vocabulary mastery ep02, english edition/i,
+    youtubeUrl: null,
+    youtubeCta: "Watch on YouTube",
+    episodeLabel: null,
     notOwn: ["500 Essential Korean Words", "Keep all 500 essential words with you", "75 pages", "Korean While You Sleep"],
   },
 ] as const;
@@ -1350,6 +1359,9 @@ for (const guide of NEW_GUIDES) {
   const guideCopy = (locale: string) => messages(locale).resources[guide.messagesKey];
   const guideFormat = (locale: string) =>
     (messages(locale).formats as unknown as Record<string, Record<string, string>>)[guide.format];
+  // 연결된 영상이 있으면 에피소드가 들어간 자료별 문구, 없으면 일반 문구를 씁니다.
+  const guideYoutubeCta = (locale: string) =>
+    (guideCopy(locale) as { youtubeCta?: string }).youtubeCta ?? messages(locale).common.youtubeCta;
 
   test.describe(`${guide.name} — ${enLink}`, () => {
     test("the public link 301s to its canonical page and renders its own identity", async ({ page }) => {
@@ -1438,7 +1450,7 @@ for (const guide of NEW_GUIDES) {
         await expect(h1(page)).toHaveText(guideFormat(locale).title);
         await expect(page.getByTestId("edition-badge")).toHaveText(m.editionLanguages.en.label);
         await expect(page.getByTestId("edition-notice")).toBeVisible();
-        await expect(page.getByTestId("resource-youtube")).toHaveText(m.common.youtubeCta);
+        await expect(page.getByTestId("resource-youtube")).toContainText(guideYoutubeCta(locale));
         await expect(heroDownload(page)).toHaveAttribute("href", pdfPath);
         await expect(heroDownload(page)).toHaveAttribute("download", guide.downloadFileName);
         await expect(page).toHaveTitle(guideCopy(locale).seoTitle);
@@ -1446,6 +1458,63 @@ for (const guide of NEW_GUIDES) {
     }
   });
 
+  if (guide.youtubeUrl) {
+    const youtubeUrl = guide.youtubeUrl;
+    test.describe(`${guide.name} — YouTube`, () => {
+      test("the CTA links straight to its own video in a new tab", async ({ page }) => {
+        await page.goto(enLink);
+        const youtube = page.getByTestId("resource-youtube");
+        await expect(youtube).toBeVisible();
+        await expect(youtube).toContainText(guide.youtubeCta);
+        await expect(youtube).toHaveJSProperty("tagName", "A");
+        await expect(youtube).toHaveAttribute("href", youtubeUrl);
+        await expect(youtube).toHaveAttribute("target", "_blank");
+        await expect(youtube).toHaveAttribute("rel", /noopener/);
+        await expect(youtube).not.toHaveAttribute("aria-haspopup", /.*/);
+        await expect(youtube).not.toHaveAttribute("data-youtube-status", /.*/);
+        // 다른 자료의 영상이 아닙니다.
+        for (const other of [YOUTUBE_URL, EP02_YOUTUBE_URL, WORDS_YOUTUBE_URL]) {
+          await expect(youtube).not.toHaveAttribute("href", other);
+        }
+      });
+
+      test("clicking it opens the video and never shows the coming-soon dialog", async ({ page, context }) => {
+        await context.route(/https:\/\/www\.youtube\.com\/.*/, (route) =>
+          route.fulfill({ status: 200, contentType: "text/html", body: "<title>youtube</title>" })
+        );
+        page.on("dialog", () => {
+          throw new Error("no native dialog may be shown");
+        });
+        await page.goto(enLink);
+        const url = page.url();
+        const popup = context.waitForEvent("page");
+        await page.getByTestId("resource-youtube").click();
+        const newPage = await popup;
+        await newPage.waitForLoadState("domcontentloaded");
+        expect(newPage.url()).toBe(youtubeUrl);
+        expect(page.url()).toBe(url);
+        await expect(comingSoonDialog(page)).toHaveCount(0);
+        await expect(page.getByRole("dialog")).toHaveCount(0);
+      });
+
+      test("the CTA is localized in every UI language and opens the same video", async ({ page }) => {
+        test.slow();
+        expect(ALL_LOCALES.length).toBe(32);
+        for (const locale of ALL_LOCALES) {
+          const cta = guideYoutubeCta(locale);
+          expect(cta, locale).toContain(guide.episodeLabel!);
+          expect(cta, locale).not.toBe(messages(locale).common.youtubeCta);
+          if (locale !== "en") expect(cta, locale).not.toBe(guideYoutubeCta("en"));
+
+          await page.goto(`${resourceLink}&lang=${locale}`);
+          const youtube = page.getByTestId("resource-youtube");
+          await expect(youtube, locale).toContainText(cta);
+          await expect(youtube, locale).toHaveAttribute("href", youtubeUrl);
+          await expect(youtube, locale).toHaveJSProperty("tagName", "A");
+        }
+      });
+    });
+  } else {
   test.describe(`${guide.name} — YouTube is not connected yet`, () => {
     test("the CTA is a visible button, never a link to another video", async ({ page }) => {
       await page.goto(enLink);
@@ -1545,6 +1614,7 @@ for (const guide of NEW_GUIDES) {
       expect(results.violations).toEqual([]);
     });
   });
+  }
 
   test.describe(`${guide.name} — PDF download`, () => {
     test("the endpoint serves exactly the repository PDF", async ({ page }) => {
@@ -1603,7 +1673,7 @@ for (const guide of NEW_GUIDES) {
       { width: 1600, height: 900 },
       { width: 1920, height: 1080 },
     ]) {
-      test(`${vp.width}×${vp.height}: no overflow, CTA above the fold, dialog fits`, async ({ page }) => {
+      test(`${vp.width}×${vp.height}: no overflow, CTA above the fold, YouTube CTA fits`, async ({ page }) => {
         await page.setViewportSize(vp);
         await page.goto(enLink);
         const overflow = () =>
@@ -1639,7 +1709,29 @@ for (const guide of NEW_GUIDES) {
         await expect(page.getByRole("contentinfo").locator('a[href="/en/resources"]')).toBeVisible();
 
         await page.evaluate(() => window.scrollTo(0, 0));
-        await page.getByTestId("resource-youtube").click();
+        const youtube = page.getByTestId("resource-youtube");
+        if (guide.youtubeUrl) {
+          // 연결된 영상: 링크가 화면 안에 들어가고, PDF 버튼 아래의 보조 버튼으로 남습니다.
+          await expect(youtube).toHaveAttribute("href", guide.youtubeUrl);
+          const y = await youtube.boundingBox();
+          expect(y!.x).toBeGreaterThanOrEqual(0);
+          expect(y!.x + y!.width).toBeLessThanOrEqual(vp.width);
+          expect(await youtube.evaluate((el) => el.scrollWidth - el.clientWidth)).toBeLessThanOrEqual(0);
+          if (vp.width < 600) {
+            // 같은 스크롤 위치에서 한 번에 잽니다: PDF 버튼이 위, YouTube 버튼이 그 아래이고 더 크지 않습니다.
+            const [primary, secondary] = await page.evaluate(() =>
+              ["resource-download-hero", "resource-youtube"].map((id) => {
+                const r = document.querySelector(`[data-testid="${id}"]`)!.getBoundingClientRect();
+                return { top: r.top, bottom: r.bottom, height: r.height };
+              })
+            );
+            expect(secondary.top).toBeGreaterThanOrEqual(primary.bottom);
+            expect(secondary.height).toBeLessThanOrEqual(primary.height);
+          }
+          await expect(page.getByRole("dialog")).toHaveCount(0);
+          return;
+        }
+        await youtube.click();
         const dialog = page.getByRole("dialog");
         await expect(dialog).toBeInViewport({ ratio: 1 });
         const d = await dialog.boundingBox();

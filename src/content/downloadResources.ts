@@ -176,8 +176,10 @@ export const DOWNLOAD_RESOURCE_FAMILIES = [
     formatMessagesKey: "realSentences",
     series: "Korean While You Sleep",
     episode: "EP03",
-    // 아직 연결된 영상이 없습니다. 영상이 나오면 { status: "available", url } 로만 바꾸면 됩니다.
-    youtube: { status: "comingSoon" },
+    youtube: {
+      status: "available",
+      url: "https://www.youtube.com/watch?v=nzHYfXHrYMo",
+    },
     // 001–500, 25개 챕터 × 20문장 (PDF 목차 기준)
     itemCount: 500,
     chapterCount: 25,
