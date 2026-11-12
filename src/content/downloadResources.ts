@@ -232,7 +232,7 @@ export const DOWNLOAD_RESOURCE_FAMILIES = [
     id: "vocabulary-mastery-ep02",
     pageSlug: "1000-korean-words-ep02",
     defaultEdition: "en",
-    contentUpdatedAt: "2026-11-11",
+    contentUpdatedAt: "2026-11-12",
     formatMessagesKey: "koreanWords1000",
     series: "Korean Vocabulary Mastery",
     episode: "EP02",
