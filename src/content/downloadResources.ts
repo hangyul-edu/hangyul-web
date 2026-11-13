@@ -236,8 +236,10 @@ export const DOWNLOAD_RESOURCE_FAMILIES = [
     formatMessagesKey: "koreanWords1000",
     series: "Korean Vocabulary Mastery",
     episode: "EP02",
-    // 아직 연결된 영상이 없습니다. 영상이 나오면 { status: "available", url } 로만 바꾸면 됩니다.
-    youtube: { status: "comingSoon" },
+    youtube: {
+      status: "available",
+      url: "https://www.youtube.com/watch?v=f-NGJLw-o7g",
+    },
     // 001–1000, 25개 챕터 × 40단어 (PDF 목차·빠른 참고표 기준)
     itemCount: 1000,
     chapterCount: 25,

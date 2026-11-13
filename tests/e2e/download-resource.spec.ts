@@ -1271,8 +1271,9 @@ test.describe("500 Essential Korean Words — responsive", () => {
 });
 
 /* ───────── 새 가이드: EP03 500 Real Korean Sentences · EP02 1,000 Korean Words ─────────
- * EP03은 자기 영상(EP.03)에 연결되어 있고, 1,000단어 EP02는 아직 연결된 영상이 없습니다
- * (youtube.status === "comingSoon"). 자료별 기대값은 NEW_GUIDES의 youtubeUrl로 정합니다.
+ * EP03과 1,000단어 EP02 모두 자기 영상(EP.03 / EP.02)에 연결되어 있습니다.
+ * 자료별 기대값은 NEW_GUIDES의 youtubeUrl로 정합니다. youtubeUrl이 null인 자료가 생기면
+ * (youtube.status === "comingSoon") 아래의 "not connected yet" 검증이 그 자료에 적용됩니다.
  * 같은 공유 컴포넌트를 쓰므로 같은 검증을 자료별 기대값으로 반복합니다.
  */
 
@@ -1285,6 +1286,7 @@ const ALL_LOCALES = fs
   .map((f) => f.replace(/\.json$/, ""));
 
 const EP03_YOUTUBE_URL = "https://www.youtube.com/watch?v=nzHYfXHrYMo";
+const WORDS_1000_YOUTUBE_URL = "https://www.youtube.com/watch?v=f-NGJLw-o7g";
 
 const EXISTING_SOURCE_PDFS = [
   SOURCE_PDF,
@@ -1344,9 +1346,10 @@ const NEW_GUIDES = [
     closingBody: "Download the guide free and build your Korean vocabulary at your own pace.",
     seoTitle: "1,000 Korean Words You’ll Actually Use – Free Vocabulary Guide | Hangyul",
     coverName: /korean vocabulary mastery ep02, english edition/i,
-    youtubeUrl: null,
-    youtubeCta: "Watch on YouTube",
-    episodeLabel: null,
+    // string | null 로 넓혀 둡니다: 아래 "not connected yet" 분기가 타입상 살아 있어야 합니다.
+    youtubeUrl: WORDS_1000_YOUTUBE_URL as string | null,
+    youtubeCta: "Watch EP.02 on YouTube",
+    episodeLabel: "EP.02",
     notOwn: ["500 Essential Korean Words", "Keep all 500 essential words with you", "75 pages", "Korean While You Sleep"],
   },
 ] as const;
@@ -1473,7 +1476,8 @@ for (const guide of NEW_GUIDES) {
         await expect(youtube).not.toHaveAttribute("aria-haspopup", /.*/);
         await expect(youtube).not.toHaveAttribute("data-youtube-status", /.*/);
         // 다른 자료의 영상이 아닙니다.
-        for (const other of [YOUTUBE_URL, EP02_YOUTUBE_URL, WORDS_YOUTUBE_URL]) {
+        const others = [YOUTUBE_URL, EP02_YOUTUBE_URL, WORDS_YOUTUBE_URL, EP03_YOUTUBE_URL, WORDS_1000_YOUTUBE_URL];
+        for (const other of others.filter((u) => u !== youtubeUrl)) {
           await expect(youtube).not.toHaveAttribute("href", other);
         }
       });
