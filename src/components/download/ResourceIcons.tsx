@@ -107,6 +107,14 @@ export function FeatureIcon({
           </text>
         </svg>
       );
+    case "exam":
+      // 막대그래프: 기출 문제 빈도 분석
+      return (
+        <svg {...base} width={22} height={22}>
+          <path d="M4 20h16" />
+          <path d="M7 16v-4M12 16V7M17 16v-6" />
+        </svg>
+      );
     case "review":
       return (
         <svg {...base} width={22} height={22}>

@@ -245,6 +245,32 @@
             "body": "Ismételd át az összes fejezetet, nézd meg a megoldásokat, és a záró gyors áttekintő listán pipáld ki, amit már tudsz."
           }
         }
+      },
+      "topikWords": {
+        "eyebrow": "Ingyenes tananyag",
+        "title": "TOPIK szókincs",
+        "statItems": "{count, plural, one {vizsgán előforduló szó} other {vizsgán előforduló szó}}",
+        "statChapters": "{count, plural, one {fejezet} other {fejezet}}",
+        "whatsInsideIntro": "Minden, ami ahhoz kell, hogy megtanuld és meg is jegyezd ennek a szintnek a szavait.",
+        "closingBody": "Töltsd le ingyen a tananyagot, és a saját tempódban haladj végig a fejezeteken, az ismétlőkön és az ismétlési terven.",
+        "editionNotice": "Ez a PDF angol nyelvű. A szavak jelentése, a példák fordítása és a használati megjegyzések mind angolul szerepelnek.",
+        "features": {
+          "words": {
+            "title": "Vizsgán előforduló szavak, fejezetről fejezetre"
+          },
+          "sentences": {
+            "title": "Saját példamondat minden szóhoz",
+            "body": "Minden szócikkben szerepel a koreai szó, az átírás, a szófaj és az angol jelentés, valamint egy saját példamondat fordítással, ahol pedig segít, egy rövid használati megjegyzés is."
+          },
+          "exam": {
+            "title": "Korábbi TOPIK-feladatlapokból válogatva",
+            "body": "A szavak sorrendjét 12 nyilvánosan közzétett TOPIK-vizsga (2014–2025) 2035 ellenőrzött feladata alapján állítottuk fel. A prioritásjelölések, a vizsgatippek, a gyakran összetévesztett szavak és a gyakorisági mutató megmutatják, mire érdemes figyelned."
+          },
+          "review": {
+            "title": "Aktív felidézés + időközönkénti ismétlés",
+            "body": "Minden fejezet egy ötrészes ismétlővel és önellenőrzéssel zárul. Ellenőrizd a válaszaidat a megoldókulcsban, majd ismételj az 1., 3., 7., 14. és 30. napra szóló ismétlési terv szerint."
+          }
+        }
       }
     },
     "resources": {
@@ -309,6 +335,84 @@
         },
         "seoTitle": "1000 hasznos koreai szó – ingyenes szókincsfejlesztő | Hangyul",
         "seoDescription": "Töltsd le ingyen a Hangyul tananyagát: 1000 hasznos koreai szó, minden szóhoz példamondat, átírás, használati tippek, fejezetismétlők és kipipálható lista."
+      },
+      "topikL01En": {
+        "subtitle": "1. szint · Alapok kezdőknek",
+        "description": "Kezdd 200 alapvető kezdő szóval, amelyeket korábbi TOPIK-feladatlapokból válogattunk. Nyolc rövid fejezet vezet el az olyan alapszavaktól, mint a 있다 és a 하다, a hétköznapi tevékenységeken, az időn és a családon át a vásárlásig és a kiruccanásokig, és minden szóhoz saját példamondat tartozik.",
+        "topics": "200 szó 8 fejezetben: alapszavak; hétköznapi tevékenységek; dolgok leírása; idő és napok; iskola, munka és szórakozás; emberek és család; boltok és étkezés házon kívül; helyek és kiruccanások.",
+        "closingTitle": "Legyen mindig kéznél az 1. szint mind a 200 szava",
+        "coverAlt": "A Hangyul „TOPIK szókincs – 1. szint · Alapok kezdőknek” (토픽 필수 어휘 1단계) című tananyagának borítója, TOPIK Vocabulary Mastery, angol nyelvű kiadás",
+        "previews": {
+          "chapter": "Mintaoldal az 1. fejezetből (Alapszavak): minden szónál szerepel a koreai alak, az átírás, egy prioritásjelölés, a szófaj, az angol jelentés, egy példamondat fordítással és egy használati megjegyzés",
+          "review": "Az 1. fejezet ismétlője (Alapszavak): öt feladat – „Mit jelent?”, „Mondd koreaiul!”, „Egészítsd ki a mondatot!”, „Válaszd ki a legjobb szót!” és „Párosítsd a szavakat a jelentésükkel!” –, utána pedig önellenőrzés"
+        },
+        "seoTitle": "TOPIK szókincs, 1. szint: alapok kezdőknek – ingyenes PDF | Hangyul",
+        "seoDescription": "Ingyenes Hangyul-tananyag: 200 TOPIK-szó az 1. szinthez 8 fejezetben, saját példamondatok, átírás, fejezetismétlők, ismétlési terv és gyakorisági lista."
+      },
+      "topikL02En": {
+        "subtitle": "2. szint · Gyakorlat kezdőknek",
+        "description": "Építs az alapokra 250 gyakorlati kezdő szóval, amelyeket korábbi TOPIK-feladatlapokból válogattunk. Tíz fejezet foglalkozik a köszönéssel, az idővel és a gyakorisággal, a városi közlekedéssel, az egészséggel, az évszakokkal, a hobbikkal, a vásárlással és az otthoni élettel, és minden szóhoz saját példamondat tartozik.",
+        "topics": "250 szó 10 fejezetben: köszönés és beszélgetés; mikor és milyen gyakran; közlekedés a városban; kérdőszavak és helyhatározók; család és egészség; évszakok és természet; hobbik; ruházat és vásárlás; étkezések és ízek; tanulás és otthoni élet.",
+        "closingTitle": "Legyen mindig kéznél a 2. szint mind a 250 szava",
+        "coverAlt": "A Hangyul „TOPIK szókincs – 2. szint · Gyakorlat kezdőknek” (토픽 필수 어휘 2단계) című tananyagának borítója, TOPIK Vocabulary Mastery, angol nyelvű kiadás",
+        "previews": {
+          "chapter": "Mintaoldal az 1. fejezetből (Köszönés és beszélgetés): minden szónál szerepel a koreai alak, az átírás, egy prioritásjelölés, a szófaj, az angol jelentés, egy példamondat fordítással és egy használati megjegyzés",
+          "review": "Az 1. fejezet ismétlője (Köszönés és beszélgetés): öt feladat – „Mit jelent?”, „Mondd koreaiul!”, „Egészítsd ki a mondatot!”, „Válaszd ki a legjobb szót!” és „Párosítsd a szavakat a jelentésükkel!” –, utána pedig önellenőrzés"
+        },
+        "seoTitle": "TOPIK szókincs, 2. szint: gyakorlat kezdőknek – ingyenes PDF | Hangyul",
+        "seoDescription": "Ingyenes Hangyul-tananyag: 250 TOPIK-szó a 2. szinthez 10 fejezetben, saját példamondatok, átírás, fejezetismétlők, ismétlési terv és gyakorisági lista."
+      },
+      "topikL03En": {
+        "subtitle": "3. szint · Alsó középhaladó",
+        "description": "Lépj be a középhaladó szintre 300 alsó középhaladó szóval, amelyeket korábbi TOPIK-feladatlapokból válogattunk. Tizenkét fejezet foglalkozik az okokkal és tendenciákkal, az olvasáshoz szükséges kulcskifejezésekkel, a véleménnyel, a munkával, a társadalommal, a médiával és a tudománnyal, és minden szóhoz saját példamondat tartozik.",
+        "topics": "300 szó 12 fejezetben: az okoktól, következményektől és tendenciáktól, az olvasás kulcskifejezésein, a véleményen és a kommunikáción át a gazdaságig és a munkáig, a társadalomig és a biztonságig, a médiáig és a kultúráig, valamint a tudományig és a természetig.",
+        "closingTitle": "Legyen mindig kéznél a 3. szint mind a 300 szava",
+        "coverAlt": "A Hangyul „TOPIK szókincs – 3. szint · Alsó középhaladó” (토픽 필수 어휘 3단계) című tananyagának borítója, TOPIK Vocabulary Mastery, angol nyelvű kiadás",
+        "previews": {
+          "chapter": "Mintaoldal az 1. fejezetből (Okok, következmények és tendenciák): minden szónál szerepel a koreai alak, az átírás, egy prioritásjelölés, a szófaj, az angol jelentés, egy példamondat fordítással és egy használati megjegyzés",
+          "review": "Az 1. fejezet ismétlője (Okok, következmények és tendenciák): öt feladat – „Mit jelent?”, „Mondd koreaiul!”, „Egészítsd ki a mondatot!”, „Válaszd ki a legjobb szót!” és „Párosítsd a szavakat a jelentésükkel!” –, utána pedig önellenőrzés"
+        },
+        "seoTitle": "TOPIK szókincs, 3. szint: alsó középhaladó – ingyenes PDF | Hangyul",
+        "seoDescription": "Ingyenes Hangyul-tananyag: 300 TOPIK-szó a 3. szinthez 12 fejezetben, saját példamondatok, átírás, fejezetismétlők, ismétlési terv és gyakorisági lista."
+      },
+      "topikL04En": {
+        "subtitle": "4. szint · Középhaladó",
+        "description": "Erősítsd meg a középhaladó koreai tudásodat 350 szóval, amelyeket korábbi TOPIK-feladatlapokból válogattunk. Tizennégy fejezet foglalkozik a jellemmel és a megítéléssel, a közösséggel, a médiával és a művészetekkel, a tudománnyal és az egészséggel, az érzelmekkel, a foglalkozásokkal és a gazdasággal, valamint a kötőszavakkal, és minden szóhoz saját példamondat tartozik.",
+        "topics": "350 szó 14 fejezetben: a hétköznapi teendőktől, az emberektől és a jellemtől, a megítéléstől és az értékeléstől a médián és a művészeteken, az érzelmeken és a lelki életen, a foglalkozásokon és a gazdaságon át a kötőszavakig és a mennyiségjelölő szavakig.",
+        "closingTitle": "Legyen mindig kéznél a 4. szint mind a 350 szava",
+        "coverAlt": "A Hangyul „TOPIK szókincs – 4. szint · Középhaladó” (토픽 필수 어휘 4단계) című tananyagának borítója, TOPIK Vocabulary Mastery, angol nyelvű kiadás",
+        "previews": {
+          "chapter": "Mintaoldal az 1. fejezetből (Hétköznapi teendők): minden szónál szerepel a koreai alak, az átírás, egy prioritásjelölés, a szófaj, az angol jelentés, egy példamondat fordítással és egy használati megjegyzés",
+          "review": "Az 1. fejezet ismétlője (Hétköznapi teendők): öt feladat – „Mit jelent?”, „Mondd koreaiul!”, „Egészítsd ki a mondatot!”, „Válaszd ki a legjobb szót!” és „Párosítsd a szavakat a jelentésükkel!” –, utána pedig önellenőrzés"
+        },
+        "seoTitle": "TOPIK szókincs, 4. szint: középhaladó – ingyenes PDF | Hangyul",
+        "seoDescription": "Ingyenes Hangyul-tananyag: 350 TOPIK-szó a 4. szinthez 14 fejezetben, saját példamondatok, átírás, fejezetismétlők, ismétlési terv és gyakorisági lista."
+      },
+      "topikL05En": {
+        "subtitle": "5. szint · Felső középhaladó",
+        "description": "Vágj bele a felső középhaladó szintbe 400 szóval, amelyeket korábbi TOPIK-feladatlapokból válogattunk. Tizenhat fejezet foglalkozik az érvelés felépítésével, a kormányzással és a szakpolitikával, a gazdasággal és az iparral, a médiával, a tudománnyal, a környezettel és a kulturális örökséggel, és minden szóhoz saját példamondat tartozik.",
+        "topics": "400 szó 16 fejezetben: az okoktól és megoldásoktól, az érvelés felépítésétől, a kormányzástól és a szakpolitikától a gazdaságon és az iparon, a tudományon és a technológián, a biztonságon és a környezeten át a művészetekig és az örökségig.",
+        "closingTitle": "Legyen mindig kéznél az 5. szint mind a 400 szava",
+        "coverAlt": "A Hangyul „TOPIK szókincs – 5. szint · Felső középhaladó” (토픽 필수 어휘 5단계) című tananyagának borítója, TOPIK Vocabulary Mastery, angol nyelvű kiadás",
+        "previews": {
+          "chapter": "Mintaoldal az 1. fejezetből (Okok és megoldások): minden szónál szerepel a koreai alak, az átírás, egy prioritásjelölés, a szófaj, az angol jelentés, egy példamondat fordítással és egy használati megjegyzés",
+          "review": "Az 1. fejezet ismétlője (Okok és megoldások): öt feladat – „Mit jelent?”, „Mondd koreaiul!”, „Egészítsd ki a mondatot!”, „Válaszd ki a legjobb szót!” és „Párosítsd a szavakat a jelentésükkel!” –, utána pedig önellenőrzés"
+        },
+        "seoTitle": "TOPIK szókincs, 5. szint: felső középhaladó – ingyenes PDF | Hangyul",
+        "seoDescription": "Ingyenes Hangyul-tananyag: 400 TOPIK-szó az 5. szinthez 16 fejezetben, saját példamondatok, átírás, fejezetismétlők, ismétlési terv és gyakorisági lista."
+      },
+      "topikL06En": {
+        "subtitle": "6. szint · Haladó",
+        "description": "Zárd le a sorozatot 450 haladó szóval, amelyeket korábbi TOPIK-feladatlapokból válogattunk. Tizennyolc fejezet foglalkozik a joggal és a politikával, a technológiával, a gazdasággal, a történelemmel, a karrierrel, a médiával, az irodai ügyintézéssel, valamint a logikával és a vitával, és minden szóhoz saját példamondat tartozik.",
+        "topics": "450 szó 18 fejezetben: a tudománytól és a méréstől, a jogtól és a politikától, a technológiától és a digitális élettől a történelmen és az örökségen, a karrieren és a tehetségen, az irodán és az ügyintézésen át a logikáig és a vitáig.",
+        "closingTitle": "Legyen mindig kéznél a 6. szint mind a 450 szava",
+        "coverAlt": "A Hangyul „TOPIK szókincs – 6. szint · Haladó” (토픽 필수 어휘 6단계) című tananyagának borítója, TOPIK Vocabulary Mastery, angol nyelvű kiadás",
+        "previews": {
+          "chapter": "Mintaoldal az 1. fejezetből (Tudomány és mérés): minden szónál szerepel a koreai alak, az átírás, egy prioritásjelölés, a szófaj, az angol jelentés, egy példamondat fordítással és egy használati megjegyzés",
+          "review": "Az 1. fejezet ismétlője (Tudomány és mérés): öt feladat – „Mit jelent?”, „Mondd koreaiul!”, „Egészítsd ki a mondatot!”, „Válaszd ki a legjobb szót!” és „Párosítsd a szavakat a jelentésükkel!” –, utána pedig önellenőrzés"
+        },
+        "seoTitle": "TOPIK szókincs, 6. szint: haladó – ingyenes PDF | Hangyul",
+        "seoDescription": "Ingyenes Hangyul-tananyag: 450 TOPIK-szó a 6. szinthez 18 fejezetben, saját példamondatok, átírás, fejezetismétlők, ismétlési terv és gyakorisági lista."
       }
     },
     "index": {

@@ -4,6 +4,8 @@
  *   (웹 데스크톱은 문장 줄바꿈이 과도하지 않도록 480px로 넓혀 적용, 모바일은 Figma 비율 유지)
  * - 제목 Heading 8 (Pretendard SemiBold 18 / 25.2), Gray 7 #262C31
  * - 본문 Body 6 (Pretendard Medium 15 / 22.3), Gray 5 #778088
+ *   → 웹에서는 흰 배경 대비 WCAG AA(4.5:1)를 맞추도록 한 단계 진한 #687079(5.0:1)를 씁니다.
+ *     (#778088은 4.0:1로 AA 미달)
  * - 버튼 cp_C_01_primaryBtn: radius 12px, padding 14px 10px,
  *   Body 4 (Pretendard Bold 15 / 20.3) white, 보조 #BEC5CC / 주요 #FF6700
  */
@@ -64,7 +66,7 @@
   font-size: 15px;
   font-weight: 500;
   line-height: 22.3px;
-  color: #778088;
+  color: #687079;
 }
 
 .description + .description {
@@ -132,7 +134,7 @@
   background: none;
   border: none;
   border-radius: 50%;
-  color: #778088;
+  color: #687079;
   line-height: 1;
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s;

@@ -245,6 +245,32 @@
             "body": "Ôn tập từng chương, đối chiếu đáp án và dùng bảng tra nhanh ở cuối để đánh dấu những từ bạn đã nhớ."
           }
         }
+      },
+      "topikWords": {
+        "eyebrow": "Tài liệu học miễn phí",
+        "title": "Từ vựng TOPIK thiết yếu",
+        "statItems": "{count, plural, other {từ vựng sát đề thi}}",
+        "statChapters": "{count, plural, other {bài học}}",
+        "whatsInsideIntro": "Mọi thứ bạn cần để học và ghi nhớ lâu từ vựng của cấp độ này.",
+        "closingBody": "Tải tài liệu miễn phí và học lần lượt từng bài, phần ôn tập và lịch ôn tập theo tốc độ của riêng bạn.",
+        "editionNotice": "Tệp PDF này bằng tiếng Anh. Phần nghĩa của từ, bản dịch câu ví dụ và ghi chú cách dùng đều được viết bằng tiếng Anh.",
+        "features": {
+          "words": {
+            "title": "Từ vựng trọng tâm cho kỳ thi, theo từng bài"
+          },
+          "sentences": {
+            "title": "Câu ví dụ biên soạn riêng cho từng từ",
+            "body": "Mỗi mục từ gồm từ tiếng Hàn, phiên âm, từ loại và nghĩa tiếng Anh, kèm một câu ví dụ được biên soạn riêng có bản dịch và, khi cần, một ghi chú ngắn về cách dùng."
+          },
+          "exam": {
+            "title": "Chọn lọc từ đề thi TOPIK các năm",
+            "body": "Từ vựng được xếp hạng dựa trên 2.035 câu hỏi đã được kiểm chứng từ 12 kỳ thi TOPIK đã công bố (2014–2025). Ký hiệu mức ưu tiên, nhận định về đề thi, các từ dễ nhầm lẫn và bảng tra tần suất giúp bạn biết nên tập trung vào đâu."
+          },
+          "review": {
+            "title": "Chủ động gợi nhớ + ôn tập ngắt quãng",
+            "body": "Cuối mỗi bài có phần ôn tập gồm năm phần và một bảng tự kiểm tra. Đối chiếu đáp án ở phần lời giải, rồi ôn lại theo lịch ôn tập vào Ngày 1, 3, 7, 14 và 30."
+          }
+        }
       }
     },
     "resources": {
@@ -309,6 +335,84 @@
         },
         "seoTitle": "1.000 từ tiếng Hàn bạn thực sự sẽ dùng — Tài liệu học miễn phí | Hangyul",
         "seoDescription": "Tải miễn phí tài liệu của Hangyul gồm 1.000 từ tiếng Hàn hữu ích, câu ví dụ cho từng từ, phiên âm, ghi chú cách dùng, ôn tập từng chương và bảng tra nhanh."
+      },
+      "topikL01En": {
+        "subtitle": "Cấp độ 1 · Sơ cấp thiết yếu",
+        "description": "Bắt đầu với 200 từ vựng sơ cấp thiết yếu được chọn lọc từ đề thi TOPIK các năm. Tám bài học ngắn đưa bạn từ những từ cốt lõi như 있다 và 하다 đến hoạt động hằng ngày, thời gian, gia đình, mua sắm và đi chơi, mỗi từ đều có câu ví dụ được biên soạn riêng.",
+        "topics": "200 từ trong 8 bài: từ cốt lõi, hoạt động hằng ngày, miêu tả sự vật, thời gian và ngày trong tuần, trường học, công việc và giải trí, con người và gia đình, cửa hàng và ăn uống bên ngoài, địa điểm và đi chơi.",
+        "closingTitle": "Mang trọn 200 từ của Cấp độ 1 theo bên mình",
+        "coverAlt": "Bìa tài liệu học của Hangyul “Từ vựng TOPIK thiết yếu Cấp độ 1 · Sơ cấp thiết yếu” (토픽 필수 어휘 1단계), TOPIK Vocabulary Mastery, bản tiếng Anh",
+        "previews": {
+          "chapter": "Trang mẫu từ Bài 1, Từ cốt lõi: mỗi từ gồm tiếng Hàn, phiên âm, ký hiệu mức ưu tiên, từ loại, nghĩa tiếng Anh, câu ví dụ kèm bản dịch và ghi chú cách dùng",
+          "review": "Phần ôn tập Bài 1, Từ cốt lõi: năm bài tập — từ này nghĩa là gì, nói bằng tiếng Hàn, hoàn thành câu, chọn từ phù hợp nhất và nối từ với nghĩa — tiếp theo là phần tự kiểm tra"
+        },
+        "seoTitle": "Từ vựng TOPIK thiết yếu Cấp độ 1: Sơ cấp thiết yếu — PDF miễn phí | Hangyul",
+        "seoDescription": "Tài liệu miễn phí của Hangyul: 200 từ vựng TOPIK sơ cấp thiết yếu trong 8 bài, kèm câu ví dụ riêng, phiên âm, ôn tập từng bài, lịch ôn tập ngắt quãng và bảng kiểm tần suất."
+      },
+      "topikL02En": {
+        "subtitle": "Cấp độ 2 · Sơ cấp ứng dụng",
+        "description": "Mở rộng nền tảng với 250 từ vựng sơ cấp ứng dụng được chọn lọc từ đề thi TOPIK các năm. Mười bài học bao gồm chào hỏi, thời gian và tần suất, đi lại trong thành phố, sức khỏe, các mùa, sở thích, mua sắm và sinh hoạt trong nhà, mỗi từ đều có câu ví dụ được biên soạn riêng.",
+        "topics": "250 từ trong 10 bài: chào hỏi và trò chuyện, khi nào và bao lâu một lần, đi lại trong thành phố, từ để hỏi và từ chỉ vị trí, gia đình và sức khỏe, các mùa và thiên nhiên, sở thích, quần áo và mua sắm, bữa ăn và hương vị, học tập và sinh hoạt trong nhà.",
+        "closingTitle": "Mang trọn 250 từ của Cấp độ 2 theo bên mình",
+        "coverAlt": "Bìa tài liệu học của Hangyul “Từ vựng TOPIK thiết yếu Cấp độ 2 · Sơ cấp ứng dụng” (토픽 필수 어휘 2단계), TOPIK Vocabulary Mastery, bản tiếng Anh",
+        "previews": {
+          "chapter": "Trang mẫu từ Bài 1, Chào hỏi và trò chuyện: mỗi từ gồm tiếng Hàn, phiên âm, ký hiệu mức ưu tiên, từ loại, nghĩa tiếng Anh, câu ví dụ kèm bản dịch và ghi chú cách dùng",
+          "review": "Phần ôn tập Bài 1, Chào hỏi và trò chuyện: năm bài tập — từ này nghĩa là gì, nói bằng tiếng Hàn, hoàn thành câu, chọn từ phù hợp nhất và nối từ với nghĩa — tiếp theo là phần tự kiểm tra"
+        },
+        "seoTitle": "Từ vựng TOPIK thiết yếu Cấp độ 2: Sơ cấp ứng dụng — PDF miễn phí | Hangyul",
+        "seoDescription": "Tài liệu miễn phí của Hangyul: 250 từ vựng TOPIK sơ cấp ứng dụng trong 10 bài, kèm câu ví dụ riêng, phiên âm, ôn tập từng bài, lịch ôn tập ngắt quãng và bảng kiểm tần suất."
+      },
+      "topikL03En": {
+        "subtitle": "Cấp độ 3 · Tiền trung cấp",
+        "description": "Bước vào trình độ trung cấp với 300 từ vựng tiền trung cấp được chọn lọc từ đề thi TOPIK các năm. Mười hai bài học bao gồm nguyên nhân và xu hướng, các cách diễn đạt quan trọng khi đọc hiểu, ý kiến, công việc, xã hội, truyền thông và khoa học, mỗi từ đều có câu ví dụ được biên soạn riêng.",
+        "topics": "300 từ trong 12 bài, từ nguyên nhân, kết quả và xu hướng, các cách diễn đạt quan trọng khi đọc hiểu, ý kiến và giao tiếp đến kinh tế và công việc, xã hội và an toàn, truyền thông và văn hóa, khoa học và thiên nhiên.",
+        "closingTitle": "Mang trọn 300 từ của Cấp độ 3 theo bên mình",
+        "coverAlt": "Bìa tài liệu học của Hangyul “Từ vựng TOPIK thiết yếu Cấp độ 3 · Tiền trung cấp” (토픽 필수 어휘 3단계), TOPIK Vocabulary Mastery, bản tiếng Anh",
+        "previews": {
+          "chapter": "Trang mẫu từ Bài 1, Nguyên nhân, kết quả và xu hướng: mỗi từ gồm tiếng Hàn, phiên âm, ký hiệu mức ưu tiên, từ loại, nghĩa tiếng Anh, câu ví dụ kèm bản dịch và ghi chú cách dùng",
+          "review": "Phần ôn tập Bài 1, Nguyên nhân, kết quả và xu hướng: năm bài tập — từ này nghĩa là gì, nói bằng tiếng Hàn, hoàn thành câu, chọn từ phù hợp nhất và nối từ với nghĩa — tiếp theo là phần tự kiểm tra"
+        },
+        "seoTitle": "Từ vựng TOPIK thiết yếu Cấp độ 3: Tiền trung cấp — PDF miễn phí | Hangyul",
+        "seoDescription": "Tài liệu miễn phí của Hangyul: 300 từ vựng TOPIK tiền trung cấp trong 12 bài, kèm câu ví dụ riêng, phiên âm, ôn tập từng bài, lịch ôn tập ngắt quãng và bảng kiểm tần suất."
+      },
+      "topikL04En": {
+        "subtitle": "Cấp độ 4 · Trung cấp",
+        "description": "Củng cố trình độ trung cấp với 350 từ vựng được chọn lọc từ đề thi TOPIK các năm. Mười bốn bài học bao gồm tính cách và nhận định, cộng đồng, truyền thông và nghệ thuật, khoa học và sức khỏe, cảm xúc, nghề nghiệp và kinh tế, cùng các từ nối, mỗi từ đều có câu ví dụ được biên soạn riêng.",
+        "topics": "350 từ trong 14 bài, từ việc thường ngày, con người và tính cách, nhận định và đánh giá đến truyền thông và nghệ thuật, cảm xúc và tâm lý, nghề nghiệp và kinh tế, từ nối và từ chỉ số lượng.",
+        "closingTitle": "Mang trọn 350 từ của Cấp độ 4 theo bên mình",
+        "coverAlt": "Bìa tài liệu học của Hangyul “Từ vựng TOPIK thiết yếu Cấp độ 4 · Trung cấp” (토픽 필수 어휘 4단계), TOPIK Vocabulary Mastery, bản tiếng Anh",
+        "previews": {
+          "chapter": "Trang mẫu từ Bài 1, Việc thường ngày: mỗi từ gồm tiếng Hàn, phiên âm, ký hiệu mức ưu tiên, từ loại, nghĩa tiếng Anh, câu ví dụ kèm bản dịch và ghi chú cách dùng",
+          "review": "Phần ôn tập Bài 1, Việc thường ngày: năm bài tập — từ này nghĩa là gì, nói bằng tiếng Hàn, hoàn thành câu, chọn từ phù hợp nhất và nối từ với nghĩa — tiếp theo là phần tự kiểm tra"
+        },
+        "seoTitle": "Từ vựng TOPIK thiết yếu Cấp độ 4: Trung cấp — PDF miễn phí | Hangyul",
+        "seoDescription": "Tài liệu miễn phí của Hangyul: 350 từ vựng TOPIK trung cấp trong 14 bài, kèm câu ví dụ riêng, phiên âm, ôn tập từng bài, lịch ôn tập ngắt quãng và bảng kiểm tần suất."
+      },
+      "topikL05En": {
+        "subtitle": "Cấp độ 5 · Trung cao cấp",
+        "description": "Chinh phục trình độ trung cao cấp với 400 từ vựng được chọn lọc từ đề thi TOPIK các năm. Mười sáu bài học bao gồm cách xây dựng lập luận, chính phủ và chính sách, kinh tế và công nghiệp, truyền thông, khoa học, môi trường và di sản, mỗi từ đều có câu ví dụ được biên soạn riêng.",
+        "topics": "400 từ trong 16 bài, từ nguyên nhân và giải pháp, xây dựng lập luận, chính phủ và chính sách đến kinh tế và công nghiệp, khoa học và công nghệ, an toàn và môi trường, nghệ thuật và di sản.",
+        "closingTitle": "Mang trọn 400 từ của Cấp độ 5 theo bên mình",
+        "coverAlt": "Bìa tài liệu học của Hangyul “Từ vựng TOPIK thiết yếu Cấp độ 5 · Trung cao cấp” (토픽 필수 어휘 5단계), TOPIK Vocabulary Mastery, bản tiếng Anh",
+        "previews": {
+          "chapter": "Trang mẫu từ Bài 1, Nguyên nhân và giải pháp: mỗi từ gồm tiếng Hàn, phiên âm, ký hiệu mức ưu tiên, từ loại, nghĩa tiếng Anh, câu ví dụ kèm bản dịch và ghi chú cách dùng",
+          "review": "Phần ôn tập Bài 1, Nguyên nhân và giải pháp: năm bài tập — từ này nghĩa là gì, nói bằng tiếng Hàn, hoàn thành câu, chọn từ phù hợp nhất và nối từ với nghĩa — tiếp theo là phần tự kiểm tra"
+        },
+        "seoTitle": "Từ vựng TOPIK thiết yếu Cấp độ 5: Trung cao cấp — PDF miễn phí | Hangyul",
+        "seoDescription": "Tài liệu miễn phí của Hangyul: 400 từ vựng TOPIK trung cao cấp trong 16 bài, kèm câu ví dụ riêng, phiên âm, ôn tập từng bài, lịch ôn tập ngắt quãng và bảng kiểm tần suất."
+      },
+      "topikL06En": {
+        "subtitle": "Cấp độ 6 · Cao cấp",
+        "description": "Hoàn thành bộ tài liệu với 450 từ vựng cao cấp được chọn lọc từ đề thi TOPIK các năm. Mười tám bài học bao gồm pháp luật và chính trị, công nghệ, kinh tế, lịch sử, nghề nghiệp, truyền thông, giấy tờ văn phòng, logic và tranh luận, mỗi từ đều có câu ví dụ được biên soạn riêng.",
+        "topics": "450 từ trong 18 bài, từ khoa học và đo lường, pháp luật và chính trị, công nghệ và đời sống số đến lịch sử và di sản, nghề nghiệp và nhân tài, văn phòng và giấy tờ, logic và tranh luận.",
+        "closingTitle": "Mang trọn 450 từ của Cấp độ 6 theo bên mình",
+        "coverAlt": "Bìa tài liệu học của Hangyul “Từ vựng TOPIK thiết yếu Cấp độ 6 · Cao cấp” (토픽 필수 어휘 6단계), TOPIK Vocabulary Mastery, bản tiếng Anh",
+        "previews": {
+          "chapter": "Trang mẫu từ Bài 1, Khoa học và đo lường: mỗi từ gồm tiếng Hàn, phiên âm, ký hiệu mức ưu tiên, từ loại, nghĩa tiếng Anh, câu ví dụ kèm bản dịch và ghi chú cách dùng",
+          "review": "Phần ôn tập Bài 1, Khoa học và đo lường: năm bài tập — từ này nghĩa là gì, nói bằng tiếng Hàn, hoàn thành câu, chọn từ phù hợp nhất và nối từ với nghĩa — tiếp theo là phần tự kiểm tra"
+        },
+        "seoTitle": "Từ vựng TOPIK thiết yếu Cấp độ 6: Cao cấp — PDF miễn phí | Hangyul",
+        "seoDescription": "Tài liệu miễn phí của Hangyul: 450 từ vựng TOPIK cao cấp trong 18 bài, kèm câu ví dụ riêng, phiên âm, ôn tập từng bài, lịch ôn tập ngắt quãng và bảng kiểm tần suất."
       }
     },
     "index": {

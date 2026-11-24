@@ -245,6 +245,32 @@
             "body": "I-review ang bawat kabanata, i-check ang mga sagot, at gamitin ang quick-reference checklist sa dulo para markahan ang mga natatandaan mo."
           }
         }
+      },
+      "topikWords": {
+        "eyebrow": "Libreng Study Guide",
+        "title": "Mga Salitang Korean para sa TOPIK",
+        "statItems": "{count, plural, one {salitang mahalaga sa exam} other {salitang mahalaga sa exam}}",
+        "statChapters": "{count, plural, one {yunit} other {yunit}}",
+        "whatsInsideIntro": "Lahat ng kailangan mo para matutuhan ang mga salita sa antas na ito at matandaan ang mga ito nang pangmatagalan.",
+        "closingBody": "I-download ang guide nang libre at pag-aralan ang bawat yunit, review, at review planner sa sarili mong bilis.",
+        "editionNotice": "Nasa Ingles ang PDF na ito. Nakasulat sa Ingles ang lahat ng kahulugan ng salita, salin ng mga halimbawa, at paliwanag sa paggamit.",
+        "features": {
+          "words": {
+            "title": "Mga salitang mahalaga sa exam, bawat yunit"
+          },
+          "sentences": {
+            "title": "Orihinal na halimbawa para sa bawat salita",
+            "body": "May salitang Korean, romanization, bahagi ng pananalita, at kahulugan sa Ingles ang bawat entry, kasama ang orihinal na halimbawang pangungusap at ang salin nito, at maikling paliwanag sa paggamit kapag nakakatulong."
+          },
+          "exam": {
+            "title": "Pinili mula sa mga nakaraang TOPIK exam",
+            "body": "Niraranggo ang mga salita batay sa 2,035 beripikadong tanong mula sa 12 nailathalang round ng TOPIK (2014–2025). Ipinapakita ng mga priority mark, exam insight, mga salitang madalas pagkamalian, at frequency index kung saan ka dapat tumutok."
+          },
+          "review": {
+            "title": "Pagsasanay sa pag-alala + spaced review",
+            "body": "Nagtatapos ang bawat yunit sa limang-bahaging review at self-check. I-check ang mga sagot sa answer key, saka sundin ang review planner sa Araw 1, 3, 7, 14, at 30."
+          }
+        }
       }
     },
     "resources": {
@@ -309,6 +335,84 @@
         },
         "seoTitle": "1,000 Salitang Korean na Talagang Magagamit Mo — Libreng Guide | Hangyul",
         "seoDescription": "I-download ang libreng Hangyul guide na may 1,000 kapaki-pakinabang na salitang Korean, halimbawang pangungusap sa bawat salita, romanization, chapter review, at checklist."
+      },
+      "topikL01En": {
+        "subtitle": "Antas 1 · Batayang Baguhan",
+        "description": "Magsimula sa 200 mahahalagang salitang pambaguhan na pinili mula sa mga nakaraang TOPIK exam. Dadalhin ka ng walong maiikling yunit mula sa mga pangunahing salita gaya ng 있다 at 하다 hanggang sa pang-araw-araw na gawain, oras, pamilya, pamimili, at pamamasyal, at may orihinal na halimbawa ang bawat salita.",
+        "topics": "200 salita sa 8 yunit: mga pangunahing salita, pang-araw-araw na gawain, paglalarawan ng mga bagay, oras at araw, paaralan, trabaho at libangan, mga tao at pamilya, tindahan at pagkain sa labas, at mga lugar at pamamasyal.",
+        "closingTitle": "Dalhin ang lahat ng 200 salita ng Antas 1 saan ka man magpunta",
+        "coverAlt": "Cover ng Hangyul study guide na “Mga Salitang Korean para sa TOPIK Antas 1 · Batayang Baguhan” (토픽 필수 어휘 1단계), TOPIK Vocabulary Mastery, edisyong Ingles",
+        "previews": {
+          "chapter": "Halimbawang pahina mula sa Yunit 1, Mga Pangunahing Salita: bawat salita ay may Korean, romanization, priority mark, bahagi ng pananalita, kahulugan sa Ingles, halimbawang pangungusap na may salin, at paliwanag sa paggamit",
+          "review": "Review ng Yunit 1, Mga Pangunahing Salita: limang pagsasanay — ano ang ibig sabihin, sabihin ito sa Korean, kumpletuhin ang pangungusap, piliin ang pinakaangkop na salita, at itugma ang bawat salita sa kahulugan nito — kasunod ang self-check"
+        },
+        "seoTitle": "Mga Salitang Korean para sa TOPIK Antas 1: Batayang Baguhan — Libreng PDF | Hangyul",
+        "seoDescription": "Libreng Hangyul guide: 200 salita sa TOPIK (batayang baguhan) sa 8 yunit, may orihinal na halimbawa, romanization, review sa bawat yunit, spaced review planner, at frequency checklist."
+      },
+      "topikL02En": {
+        "subtitle": "Antas 2 · Praktikal na Baguhan",
+        "description": "Palawakin ang iyong pundasyon gamit ang 250 praktikal na salitang pambaguhan na pinili mula sa mga nakaraang TOPIK exam. Saklaw ng sampung yunit ang pagbati, oras at dalas, paglibot sa lungsod, kalusugan, mga panahon, libangan, pamimili, at buhay sa bahay, at may orihinal na halimbawa ang bawat salita.",
+        "topics": "250 salita sa 10 yunit: pagbati at pakikipag-usap, kailan at gaano kadalas, paglibot sa lungsod, mga tanong at salitang pangposisyon, pamilya at kalusugan, mga panahon at kalikasan, libangan, damit at pamimili, pagkain at lasa, at pag-aaral at buhay sa bahay.",
+        "closingTitle": "Dalhin ang lahat ng 250 salita ng Antas 2 saan ka man magpunta",
+        "coverAlt": "Cover ng Hangyul study guide na “Mga Salitang Korean para sa TOPIK Antas 2 · Praktikal na Baguhan” (토픽 필수 어휘 2단계), TOPIK Vocabulary Mastery, edisyong Ingles",
+        "previews": {
+          "chapter": "Halimbawang pahina mula sa Yunit 1, Pagbati at Pakikipag-usap: bawat salita ay may Korean, romanization, priority mark, bahagi ng pananalita, kahulugan sa Ingles, halimbawang pangungusap na may salin, at paliwanag sa paggamit",
+          "review": "Review ng Yunit 1, Pagbati at Pakikipag-usap: limang pagsasanay — ano ang ibig sabihin, sabihin ito sa Korean, kumpletuhin ang pangungusap, piliin ang pinakaangkop na salita, at itugma ang bawat salita sa kahulugan nito — kasunod ang self-check"
+        },
+        "seoTitle": "Mga Salitang Korean para sa TOPIK Antas 2: Praktikal na Baguhan — Libreng PDF | Hangyul",
+        "seoDescription": "Libreng Hangyul guide: 250 salita sa TOPIK (praktikal na baguhan) sa 10 yunit, may orihinal na halimbawa, romanization, review sa bawat yunit, spaced review planner, at frequency checklist."
+      },
+      "topikL03En": {
+        "subtitle": "Antas 3 · Mababang Intermediate",
+        "description": "Umusad sa intermediate na Korean gamit ang 300 salitang pang-mababang intermediate na pinili mula sa mga nakaraang TOPIK exam. Saklaw ng labindalawang yunit ang mga sanhi at trend, mahahalagang pahayag sa pagbabasa, opinyon, trabaho, lipunan, media, at agham, at may orihinal na halimbawa ang bawat salita.",
+        "topics": "300 salita sa 12 yunit, mula sa sanhi, epekto, at trend, mahahalagang pahayag sa pagbabasa, at opinyon at komunikasyon hanggang sa ekonomiya at trabaho, lipunan at kaligtasan, media at kultura, at agham at kalikasan.",
+        "closingTitle": "Dalhin ang lahat ng 300 salita ng Antas 3 saan ka man magpunta",
+        "coverAlt": "Cover ng Hangyul study guide na “Mga Salitang Korean para sa TOPIK Antas 3 · Mababang Intermediate” (토픽 필수 어휘 3단계), TOPIK Vocabulary Mastery, edisyong Ingles",
+        "previews": {
+          "chapter": "Halimbawang pahina mula sa Yunit 1, Sanhi, Epekto, at Trend: bawat salita ay may Korean, romanization, priority mark, bahagi ng pananalita, kahulugan sa Ingles, halimbawang pangungusap na may salin, at paliwanag sa paggamit",
+          "review": "Review ng Yunit 1, Sanhi, Epekto, at Trend: limang pagsasanay — ano ang ibig sabihin, sabihin ito sa Korean, kumpletuhin ang pangungusap, piliin ang pinakaangkop na salita, at itugma ang bawat salita sa kahulugan nito — kasunod ang self-check"
+        },
+        "seoTitle": "Mga Salitang Korean para sa TOPIK Antas 3: Mababang Intermediate — Libreng PDF | Hangyul",
+        "seoDescription": "Libreng Hangyul guide: 300 salita sa TOPIK (mababang intermediate) sa 12 yunit, may orihinal na halimbawa, romanization, review sa bawat yunit, spaced review planner, at frequency checklist."
+      },
+      "topikL04En": {
+        "subtitle": "Antas 4 · Intermediate",
+        "description": "Patatagin ang iyong intermediate na Korean gamit ang 350 salitang pinili mula sa mga nakaraang TOPIK exam. Saklaw ng labing-apat na yunit ang ugali at paghuhusga, komunidad, media at sining, agham at kalusugan, damdamin, trabaho at ekonomiya, at mga salitang pang-ugnay, at may orihinal na halimbawa ang bawat salita.",
+        "topics": "350 salita sa 14 yunit, mula sa mga gawain sa araw-araw, mga tao at ugali, at paghuhusga at pagsusuri hanggang sa media at sining, damdamin at isip, trabaho at ekonomiya, at mga salitang pang-ugnay at pambilang.",
+        "closingTitle": "Dalhin ang lahat ng 350 salita ng Antas 4 saan ka man magpunta",
+        "coverAlt": "Cover ng Hangyul study guide na “Mga Salitang Korean para sa TOPIK Antas 4 · Intermediate” (토픽 필수 어휘 4단계), TOPIK Vocabulary Mastery, edisyong Ingles",
+        "previews": {
+          "chapter": "Halimbawang pahina mula sa Yunit 1, Mga Gawain sa Araw-araw: bawat salita ay may Korean, romanization, priority mark, bahagi ng pananalita, kahulugan sa Ingles, halimbawang pangungusap na may salin, at paliwanag sa paggamit",
+          "review": "Review ng Yunit 1, Mga Gawain sa Araw-araw: limang pagsasanay — ano ang ibig sabihin, sabihin ito sa Korean, kumpletuhin ang pangungusap, piliin ang pinakaangkop na salita, at itugma ang bawat salita sa kahulugan nito — kasunod ang self-check"
+        },
+        "seoTitle": "Mga Salitang Korean para sa TOPIK Antas 4: Intermediate — Libreng PDF | Hangyul",
+        "seoDescription": "Libreng Hangyul guide: 350 salita sa TOPIK (intermediate) sa 14 yunit, may orihinal na halimbawa, romanization, review sa bawat yunit, spaced review planner, at frequency checklist."
+      },
+      "topikL05En": {
+        "subtitle": "Antas 5 · Mataas na Intermediate",
+        "description": "Harapin ang mataas na intermediate na Korean gamit ang 400 salitang pinili mula sa mga nakaraang TOPIK exam. Saklaw ng labing-anim na yunit ang pagbuo ng argumento, gobyerno at patakaran, ekonomiya at industriya, media, agham, kapaligiran, at pamana, at may orihinal na halimbawa ang bawat salita.",
+        "topics": "400 salita sa 16 yunit, mula sa mga sanhi at solusyon, pagbuo ng argumento, at gobyerno at patakaran hanggang sa ekonomiya at industriya, agham at teknolohiya, kaligtasan at kapaligiran, at sining at pamana.",
+        "closingTitle": "Dalhin ang lahat ng 400 salita ng Antas 5 saan ka man magpunta",
+        "coverAlt": "Cover ng Hangyul study guide na “Mga Salitang Korean para sa TOPIK Antas 5 · Mataas na Intermediate” (토픽 필수 어휘 5단계), TOPIK Vocabulary Mastery, edisyong Ingles",
+        "previews": {
+          "chapter": "Halimbawang pahina mula sa Yunit 1, Mga Sanhi at Solusyon: bawat salita ay may Korean, romanization, priority mark, bahagi ng pananalita, kahulugan sa Ingles, halimbawang pangungusap na may salin, at paliwanag sa paggamit",
+          "review": "Review ng Yunit 1, Mga Sanhi at Solusyon: limang pagsasanay — ano ang ibig sabihin, sabihin ito sa Korean, kumpletuhin ang pangungusap, piliin ang pinakaangkop na salita, at itugma ang bawat salita sa kahulugan nito — kasunod ang self-check"
+        },
+        "seoTitle": "Mga Salitang Korean para sa TOPIK Antas 5: Mataas na Intermediate — Libreng PDF | Hangyul",
+        "seoDescription": "Libreng Hangyul guide: 400 salita sa TOPIK (mataas na intermediate) sa 16 yunit, may orihinal na halimbawa, romanization, review sa bawat yunit, spaced review planner, at frequency checklist."
+      },
+      "topikL06En": {
+        "subtitle": "Antas 6 · Advanced",
+        "description": "Tapusin ang serye gamit ang 450 advanced na salitang pinili mula sa mga nakaraang TOPIK exam. Saklaw ng labingwalong yunit ang batas at pulitika, teknolohiya, ekonomiya, kasaysayan, karera, media, mga papeles sa opisina, at lohika at debate, at may orihinal na halimbawa ang bawat salita.",
+        "topics": "450 salita sa 18 yunit, mula sa agham at pagsukat, batas at pulitika, at teknolohiya at digital na buhay hanggang sa kasaysayan at pamana, karera at talento, opisina at papeles, at lohika at debate.",
+        "closingTitle": "Dalhin ang lahat ng 450 salita ng Antas 6 saan ka man magpunta",
+        "coverAlt": "Cover ng Hangyul study guide na “Mga Salitang Korean para sa TOPIK Antas 6 · Advanced” (토픽 필수 어휘 6단계), TOPIK Vocabulary Mastery, edisyong Ingles",
+        "previews": {
+          "chapter": "Halimbawang pahina mula sa Yunit 1, Agham at Pagsukat: bawat salita ay may Korean, romanization, priority mark, bahagi ng pananalita, kahulugan sa Ingles, halimbawang pangungusap na may salin, at paliwanag sa paggamit",
+          "review": "Review ng Yunit 1, Agham at Pagsukat: limang pagsasanay — ano ang ibig sabihin, sabihin ito sa Korean, kumpletuhin ang pangungusap, piliin ang pinakaangkop na salita, at itugma ang bawat salita sa kahulugan nito — kasunod ang self-check"
+        },
+        "seoTitle": "Mga Salitang Korean para sa TOPIK Antas 6: Advanced — Libreng PDF | Hangyul",
+        "seoDescription": "Libreng Hangyul guide: 450 salita sa TOPIK (advanced) sa 18 yunit, may orihinal na halimbawa, romanization, review sa bawat yunit, spaced review planner, at frequency checklist."
       }
     },
     "index": {

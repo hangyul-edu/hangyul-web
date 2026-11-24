@@ -245,6 +245,32 @@
             "body": "Herhaal elk hoofdstuk, controleer je antwoorden en houd met de afsluitende afvinklijst bij wat je al kent."
           }
         }
+      },
+      "topikWords": {
+        "eyebrow": "Gratis studiegids",
+        "title": "Koreaanse TOPIK-woordenschat",
+        "statItems": "{count, plural, one {examenrelevant woord} other {examenrelevante woorden}}",
+        "statChapters": "{count, plural, one {les} other {lessen}}",
+        "whatsInsideIntro": "Alles wat je nodig hebt om de woorden van dit niveau te leren en te onthouden.",
+        "closingBody": "Download de studiegids gratis en werk in je eigen tempo alle lessen, herhalingen en de herhalingsplanner door.",
+        "editionNotice": "Deze PDF is in het Engels. Woordbetekenissen, vertalingen van de voorbeelden en gebruikstips zijn allemaal in het Engels geschreven.",
+        "features": {
+          "words": {
+            "title": "Examenrelevante woorden, les voor les"
+          },
+          "sentences": {
+            "title": "Een eigen voorbeeldzin bij elk woord",
+            "body": "Bij elk woord staan het Koreaanse woord, de romanisatie, de woordsoort en de Engelse betekenis, plus een zelfgeschreven voorbeeldzin met vertaling en, waar het helpt, een korte gebruikstip."
+          },
+          "exam": {
+            "title": "Gekozen uit eerdere TOPIK-examens",
+            "body": "De woorden zijn gerangschikt op basis van 2035 gecontroleerde vragen uit 12 gepubliceerde TOPIK-rondes (2014–2025). Prioriteitsmarkeringen, examentips, woorden die vaak verward worden en een frequentie-index laten zien waar je je op moet richten."
+          },
+          "review": {
+            "title": "Actief ophalen + gespreide herhaling",
+            "body": "Elke les eindigt met een herhaling in vijf delen en een zelftest. Controleer je antwoorden met de antwoordsleutel en volg daarna de herhalingsplanner voor dag 1, 3, 7, 14 en 30."
+          }
+        }
       }
     },
     "resources": {
@@ -309,6 +335,84 @@
         },
         "seoTitle": "1000 Koreaanse woorden die je echt gebruikt — Gratis studiegids | Hangyul",
         "seoDescription": "Download een gratis Hangyul-studiegids met 1000 handige Koreaanse woorden, een voorbeeldzin bij elk woord, romanisatie, gebruikstips en een afvinklijst."
+      },
+      "topikL01En": {
+        "subtitle": "Niveau 1 · Basis voor beginners",
+        "description": "Begin met 200 essentiële woorden voor beginners, gekozen uit eerdere TOPIK-examens. Acht korte lessen nemen je mee van basiswoorden als 있다 en 하다 naar alledaagse handelingen, tijd, familie, winkelen en uitstapjes, met een eigen voorbeeldzin bij elk woord.",
+        "topics": "200 woorden in 8 lessen: basiswoorden, alledaagse handelingen, dingen beschrijven, tijd en dagen, school, werk en vrije tijd, mensen en familie, winkels en uit eten, en plaatsen en uitstapjes.",
+        "closingTitle": "Houd alle 200 woorden van niveau 1 altijd bij de hand",
+        "coverAlt": "Omslag van de Hangyul-studiegids “Koreaanse TOPIK-woordenschat Niveau 1 · Basis voor beginners” (토픽 필수 어휘 1단계), TOPIK Vocabulary Mastery, Engelse editie",
+        "previews": {
+          "chapter": "Voorbeeldpagina uit les 1, Basiswoorden: bij elk woord staan het Koreaans, de romanisatie, een prioriteitsmarkering, de woordsoort, de Engelse betekenis, een voorbeeldzin met vertaling en een gebruikstip",
+          "review": "Herhaling van les 1, Basiswoorden: vijf oefeningen (wat betekent het, zeg het in het Koreaans, maak de zin af, kies het beste woord en koppel elk woord aan de betekenis), gevolgd door een zelftest"
+        },
+        "seoTitle": "TOPIK-woordenschat niveau 1: Basis voor beginners — Gratis PDF | Hangyul",
+        "seoDescription": "Gratis Hangyul-studiegids: 200 TOPIK-woorden voor beginners (basis) in 8 lessen, met eigen voorbeeldzinnen, romanisatie, herhalingen, herhalingsplanner en frequentielijst."
+      },
+      "topikL02En": {
+        "subtitle": "Niveau 2 · Praktijk voor beginners",
+        "description": "Bouw verder op de basis met 250 praktische woorden voor beginners, gekozen uit eerdere TOPIK-examens. Tien lessen behandelen begroetingen, tijd en frequentie, je weg vinden in de stad, gezondheid, seizoenen, hobby's, winkelen en het leven thuis, met een eigen voorbeeldzin bij elk woord.",
+        "topics": "250 woorden in 10 lessen: begroeten en praten, wanneer en hoe vaak, je weg vinden in de stad, vraag- en plaatswoorden, familie en gezondheid, seizoenen en natuur, hobby's, kleding en winkelen, maaltijden en smaken, en studie en het leven thuis.",
+        "closingTitle": "Houd alle 250 woorden van niveau 2 altijd bij de hand",
+        "coverAlt": "Omslag van de Hangyul-studiegids “Koreaanse TOPIK-woordenschat Niveau 2 · Praktijk voor beginners” (토픽 필수 어휘 2단계), TOPIK Vocabulary Mastery, Engelse editie",
+        "previews": {
+          "chapter": "Voorbeeldpagina uit les 1, Begroeten en praten: bij elk woord staan het Koreaans, de romanisatie, een prioriteitsmarkering, de woordsoort, de Engelse betekenis, een voorbeeldzin met vertaling en een gebruikstip",
+          "review": "Herhaling van les 1, Begroeten en praten: vijf oefeningen (wat betekent het, zeg het in het Koreaans, maak de zin af, kies het beste woord en koppel elk woord aan de betekenis), gevolgd door een zelftest"
+        },
+        "seoTitle": "TOPIK-woordenschat niveau 2: Praktijk voor beginners — Gratis PDF | Hangyul",
+        "seoDescription": "Gratis Hangyul-studiegids: 250 TOPIK-woorden voor beginners (praktijk) in 10 lessen, met eigen voorbeeldzinnen, romanisatie, herhalingen, herhalingsplanner en frequentielijst."
+      },
+      "topikL03En": {
+        "subtitle": "Niveau 3 · Laag-gemiddeld",
+        "description": "Stap over naar het gemiddelde niveau met 300 woorden op laag-gemiddeld niveau, gekozen uit eerdere TOPIK-examens. Twaalf lessen behandelen oorzaken en trends, kernuitdrukkingen voor lezen, meningen, werk, maatschappij, media en wetenschap, met een eigen voorbeeldzin bij elk woord.",
+        "topics": "300 woorden in 12 lessen, waaronder oorzaken, gevolgen en trends; kernuitdrukkingen voor lezen; meningen en communicatie; economie en werk; maatschappij en veiligheid; media en cultuur; en wetenschap en natuur.",
+        "closingTitle": "Houd alle 300 woorden van niveau 3 altijd bij de hand",
+        "coverAlt": "Omslag van de Hangyul-studiegids “Koreaanse TOPIK-woordenschat Niveau 3 · Laag-gemiddeld” (토픽 필수 어휘 3단계), TOPIK Vocabulary Mastery, Engelse editie",
+        "previews": {
+          "chapter": "Voorbeeldpagina uit les 1, Oorzaken, gevolgen en trends: bij elk woord staan het Koreaans, de romanisatie, een prioriteitsmarkering, de woordsoort, de Engelse betekenis, een voorbeeldzin met vertaling en een gebruikstip",
+          "review": "Herhaling van les 1, Oorzaken, gevolgen en trends: vijf oefeningen (wat betekent het, zeg het in het Koreaans, maak de zin af, kies het beste woord en koppel elk woord aan de betekenis), gevolgd door een zelftest"
+        },
+        "seoTitle": "TOPIK-woordenschat niveau 3: Laag-gemiddeld — Gratis PDF | Hangyul",
+        "seoDescription": "Gratis Hangyul-studiegids: 300 TOPIK-woorden op laag-gemiddeld niveau in 12 lessen, met eigen voorbeeldzinnen, romanisatie, herhalingen, herhalingsplanner en frequentielijst."
+      },
+      "topikL04En": {
+        "subtitle": "Niveau 4 · Gemiddeld",
+        "description": "Versterk je Koreaans op gemiddeld niveau met 350 woorden, gekozen uit eerdere TOPIK-examens. Veertien lessen behandelen karakter en oordeel, de samenleving om je heen, media en kunst, wetenschap en gezondheid, emoties, beroepen en economie, en verbindingswoorden, met een eigen voorbeeldzin bij elk woord.",
+        "topics": "350 woorden in 14 lessen, waaronder dagelijkse klusjes; mensen en karakter; oordelen en beoordelen; media en kunst; emoties en gemoed; beroepen en economie; en verbindings- en hoeveelheidswoorden.",
+        "closingTitle": "Houd alle 350 woorden van niveau 4 altijd bij de hand",
+        "coverAlt": "Omslag van de Hangyul-studiegids “Koreaanse TOPIK-woordenschat Niveau 4 · Gemiddeld” (토픽 필수 어휘 4단계), TOPIK Vocabulary Mastery, Engelse editie",
+        "previews": {
+          "chapter": "Voorbeeldpagina uit les 1, Dagelijkse klusjes: bij elk woord staan het Koreaans, de romanisatie, een prioriteitsmarkering, de woordsoort, de Engelse betekenis, een voorbeeldzin met vertaling en een gebruikstip",
+          "review": "Herhaling van les 1, Dagelijkse klusjes: vijf oefeningen (wat betekent het, zeg het in het Koreaans, maak de zin af, kies het beste woord en koppel elk woord aan de betekenis), gevolgd door een zelftest"
+        },
+        "seoTitle": "TOPIK-woordenschat niveau 4: Gemiddeld — Gratis PDF | Hangyul",
+        "seoDescription": "Gratis Hangyul-studiegids: 350 TOPIK-woorden op gemiddeld niveau in 14 lessen, met eigen voorbeeldzinnen, romanisatie, herhalingen, herhalingsplanner en frequentielijst."
+      },
+      "topikL05En": {
+        "subtitle": "Niveau 5 · Hoog-gemiddeld",
+        "description": "Ga aan de slag met Koreaans op hoog-gemiddeld niveau met 400 woorden, gekozen uit eerdere TOPIK-examens. Zestien lessen behandelen argumenteren, overheid en beleid, economie en industrie, media, wetenschap, milieu en erfgoed, met een eigen voorbeeldzin bij elk woord.",
+        "topics": "400 woorden in 16 lessen, waaronder oorzaken en oplossingen; een betoog opbouwen; overheid en beleid; economie en industrie; wetenschap en technologie; veiligheid en milieu; en kunst en erfgoed.",
+        "closingTitle": "Houd alle 400 woorden van niveau 5 altijd bij de hand",
+        "coverAlt": "Omslag van de Hangyul-studiegids “Koreaanse TOPIK-woordenschat Niveau 5 · Hoog-gemiddeld” (토픽 필수 어휘 5단계), TOPIK Vocabulary Mastery, Engelse editie",
+        "previews": {
+          "chapter": "Voorbeeldpagina uit les 1, Oorzaken en oplossingen: bij elk woord staan het Koreaans, de romanisatie, een prioriteitsmarkering, de woordsoort, de Engelse betekenis, een voorbeeldzin met vertaling en een gebruikstip",
+          "review": "Herhaling van les 1, Oorzaken en oplossingen: vijf oefeningen (wat betekent het, zeg het in het Koreaans, maak de zin af, kies het beste woord en koppel elk woord aan de betekenis), gevolgd door een zelftest"
+        },
+        "seoTitle": "TOPIK-woordenschat niveau 5: Hoog-gemiddeld — Gratis PDF | Hangyul",
+        "seoDescription": "Gratis Hangyul-studiegids: 400 TOPIK-woorden op hoog-gemiddeld niveau in 16 lessen, met eigen voorbeeldzinnen, romanisatie, herhalingen, herhalingsplanner en frequentielijst."
+      },
+      "topikL06En": {
+        "subtitle": "Niveau 6 · Gevorderd",
+        "description": "Rond de reeks af met 450 woorden op gevorderd niveau, gekozen uit eerdere TOPIK-examens. Achttien lessen behandelen recht en politiek, technologie, economie, geschiedenis, loopbaan, media, kantoor en administratie, en logica en debat, met een eigen voorbeeldzin bij elk woord.",
+        "topics": "450 woorden in 18 lessen, waaronder wetenschap en meten; recht en politiek; technologie en digitaal leven; geschiedenis en erfgoed; loopbaan en talent; kantoor en administratie; en logica en debat.",
+        "closingTitle": "Houd alle 450 woorden van niveau 6 altijd bij de hand",
+        "coverAlt": "Omslag van de Hangyul-studiegids “Koreaanse TOPIK-woordenschat Niveau 6 · Gevorderd” (토픽 필수 어휘 6단계), TOPIK Vocabulary Mastery, Engelse editie",
+        "previews": {
+          "chapter": "Voorbeeldpagina uit les 1, Wetenschap en meten: bij elk woord staan het Koreaans, de romanisatie, een prioriteitsmarkering, de woordsoort, de Engelse betekenis, een voorbeeldzin met vertaling en een gebruikstip",
+          "review": "Herhaling van les 1, Wetenschap en meten: vijf oefeningen (wat betekent het, zeg het in het Koreaans, maak de zin af, kies het beste woord en koppel elk woord aan de betekenis), gevolgd door een zelftest"
+        },
+        "seoTitle": "TOPIK-woordenschat niveau 6: Gevorderd — Gratis PDF | Hangyul",
+        "seoDescription": "Gratis Hangyul-studiegids: 450 TOPIK-woorden op gevorderd niveau in 18 lessen, met eigen voorbeeldzinnen, romanisatie, herhalingen, herhalingsplanner en frequentielijst."
       }
     },
     "index": {

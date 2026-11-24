@@ -292,6 +292,17 @@
   hyphens: auto;
 }
 
+/* 같은 형식 안에서 판을 구분하는 부제 (예: TOPIK "Level 1 · Essential Beginner") */
+.titleSub {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.6em;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  color: var(--text);
+}
+
 /* 시리즈·회차 + PDF 판 언어 배지 */
 .meta {
   margin-top: 12px;

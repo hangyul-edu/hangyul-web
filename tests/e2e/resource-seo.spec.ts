@@ -64,6 +64,60 @@ const GUIDES = [
     legacy: "/download?resource=ep02-en-1000-korean-words-study-guide&lang=en",
     enTitle: "1,000 Korean Words You’ll Actually Use – Free Vocabulary Guide | Hangyul",
   },
+  {
+    page: "topik-korean-words-level-1",
+    messagesKey: "topikL01En",
+    format: "topikWords",
+    episode: "Level 1",
+    pdf: "/download/files/topik-l01-study-guide.pdf",
+    legacy: "/download?resource=topik-l01-study-guide&lang=en",
+    enTitle: "TOPIK Korean Words Level 1: Essential Beginner – Free PDF | Hangyul",
+  },
+  {
+    page: "topik-korean-words-level-2",
+    messagesKey: "topikL02En",
+    format: "topikWords",
+    episode: "Level 2",
+    pdf: "/download/files/topik-l02-study-guide.pdf",
+    legacy: "/download?resource=topik-l02-study-guide&lang=en",
+    enTitle: "TOPIK Korean Words Level 2: Practical Beginner – Free PDF | Hangyul",
+  },
+  {
+    page: "topik-korean-words-level-3",
+    messagesKey: "topikL03En",
+    format: "topikWords",
+    episode: "Level 3",
+    pdf: "/download/files/topik-l03-study-guide.pdf",
+    legacy: "/download?resource=topik-l03-study-guide&lang=en",
+    enTitle: "TOPIK Korean Words Level 3: Lower-Intermediate – Free PDF | Hangyul",
+  },
+  {
+    page: "topik-korean-words-level-4",
+    messagesKey: "topikL04En",
+    format: "topikWords",
+    episode: "Level 4",
+    pdf: "/download/files/topik-l04-study-guide.pdf",
+    legacy: "/download?resource=topik-l04-study-guide&lang=en",
+    enTitle: "TOPIK Korean Words Level 4: Intermediate – Free PDF | Hangyul",
+  },
+  {
+    page: "topik-korean-words-level-5",
+    messagesKey: "topikL05En",
+    format: "topikWords",
+    episode: "Level 5",
+    pdf: "/download/files/topik-l05-study-guide.pdf",
+    legacy: "/download?resource=topik-l05-study-guide&lang=en",
+    enTitle: "TOPIK Korean Words Level 5: Upper-Intermediate – Free PDF | Hangyul",
+  },
+  {
+    page: "topik-korean-words-level-6",
+    messagesKey: "topikL06En",
+    format: "topikWords",
+    episode: "Level 6",
+    pdf: "/download/files/topik-l06-study-guide.pdf",
+    legacy: "/download?resource=topik-l06-study-guide&lang=en",
+    enTitle: "TOPIK Korean Words Level 6: Advanced – Free PDF | Hangyul",
+  },
 ] as const;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -117,7 +171,10 @@ function jsonLd(html: string): Json[] {
 }
 
 function h1s(html: string) {
-  return [...html.matchAll(/<h1[^>]*>(.*?)<\/h1>/g)].map((m) => decode(m[1]));
+  // 부제(<span>) 같은 안쪽 태그는 걷어 내고, 화면에 읽히는 제목 텍스트로 비교합니다.
+  return [...html.matchAll(/<h1[^>]*>(.*?)<\/h1>/g)].map((m) =>
+    decode(m[1].replace(/<!--.*?-->/g, "").replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim())
+  );
 }
 
 test.describe("Canonical resource pages — server-rendered SEO", () => {
@@ -144,8 +201,11 @@ test.describe("Canonical resource pages — server-rendered SEO", () => {
       expect(alternates.get("x-default")).toBe(`${PROD}${url}`);
 
       // H1은 하나, 자료 이름
+      const rd = messages("en").ResourceDownload;
       expect(h1s(html)).toEqual([
-        messages("en").ResourceDownload.formats[guide.format].title,
+        [rd.formats[guide.format].title, rd.resources[guide.messagesKey].subtitle]
+          .filter(Boolean)
+          .join(" "),
       ]);
       // 주요 본문이 JS 없이 초기 HTML에 있습니다.
       expect(html).toContain(guide.episode);
@@ -273,7 +333,11 @@ test.describe("Localized SEO", () => {
         expect(html, url).toMatch(
           new RegExp(`<html lang="${locale}" dir="${locale === "ar" ? "rtl" : "ltr"}"`)
         );
-        expect(h1s(html), url).toEqual([m.formats[guide.format].title]);
+        expect(h1s(html), url).toEqual([
+          [m.formats[guide.format].title, m.resources[guide.messagesKey].subtitle]
+            .filter(Boolean)
+            .join(" "),
+        ]);
         // 화면 언어와 관계없이 PDF는 영어판이라고 밝힙니다.
         expect(html, url).toContain(m.editionLanguages.en.label);
         // 다른 자료로 가는 내부 링크도 같은 화면 언어를 유지합니다.

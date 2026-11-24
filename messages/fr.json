@@ -245,6 +245,32 @@
             "body": "Révisez chaque chapitre, vérifiez vos réponses et suivez ce que vous avez retenu grâce à l’aide-mémoire final à cocher."
           }
         }
+      },
+      "topikWords": {
+        "eyebrow": "Guide d’étude gratuit",
+        "title": "Vocabulaire coréen du TOPIK",
+        "statItems": "{count, plural, one {mot clé pour l’examen} other {mots clés pour l’examen}}",
+        "statChapters": "{count, plural, one {unité} other {unités}}",
+        "whatsInsideIntro": "Tout ce qu’il vous faut pour apprendre les mots de ce niveau et les retenir durablement.",
+        "closingBody": "Téléchargez le guide gratuitement et avancez à votre rythme dans chaque unité, chaque révision et le planning de révisions.",
+        "editionNotice": "Ce PDF est en anglais. Les sens des mots, les traductions des exemples et les notes d’usage sont entièrement rédigés en anglais.",
+        "features": {
+          "words": {
+            "title": "Des mots clés pour l’examen, unité par unité"
+          },
+          "sentences": {
+            "title": "Un exemple original pour chaque mot",
+            "body": "Chaque entrée présente le mot coréen, sa romanisation, sa catégorie grammaticale et son sens en anglais, ainsi qu’une phrase d’exemple originale avec sa traduction et, quand c’est utile, une courte note d’usage."
+          },
+          "exam": {
+            "title": "Une sélection tirée des anciennes épreuves du TOPIK",
+            "body": "Les mots sont classés à partir de 2035 questions vérifiées issues de 12 sessions publiées du TOPIK (2014–2025). Repères de priorité, points clés de l’examen, mots souvent confondus et index de fréquence vous indiquent où concentrer vos efforts."
+          },
+          "review": {
+            "title": "Rappel actif + révisions espacées",
+            "body": "Chaque unité se termine par une révision en cinq parties et une auto-évaluation. Vérifiez vos réponses dans le corrigé, puis suivez le planning de révisions aux jours 1, 3, 7, 14 et 30."
+          }
+        }
       }
     },
     "resources": {
@@ -309,6 +335,84 @@
         },
         "seoTitle": "1 000 mots coréens que vous utiliserez vraiment — Guide gratuit | Hangyul",
         "seoDescription": "Téléchargez un guide gratuit Hangyul avec 1 000 mots coréens utiles, une phrase d’exemple pour chaque mot, la romanisation, des notes d’usage et un aide-mémoire."
+      },
+      "topikL01En": {
+        "subtitle": "Niveau 1 · Débutant essentiel",
+        "description": "Commencez avec 200 mots essentiels pour débutants, sélectionnés dans les anciennes épreuves du TOPIK. Huit unités courtes vous mènent des mots de base comme 있다 et 하다 aux actions du quotidien, au temps, à la famille, aux achats et aux sorties, avec un exemple original pour chaque mot.",
+        "topics": "200 mots en 8 unités : mots de base, actions du quotidien, décrire les choses, l’heure et les jours, école, travail et loisirs, les gens et la famille, commerces et restaurants, lieux et sorties.",
+        "closingTitle": "Gardez les 200 mots du niveau 1 toujours avec vous",
+        "coverAlt": "Couverture du guide d’étude Hangyul « Vocabulaire coréen du TOPIK Niveau 1 · Débutant essentiel » (토픽 필수 어휘 1단계), TOPIK Vocabulary Mastery, édition anglaise",
+        "previews": {
+          "chapter": "Exemple de page de l’unité 1, Mots de base : chaque mot présente le coréen, la romanisation, un repère de priorité, la catégorie grammaticale, le sens en anglais, une phrase d’exemple avec sa traduction et une note d’usage",
+          "review": "Révision de l’unité 1, Mots de base : cinq exercices (que signifie ce mot, dites-le en coréen, complétez la phrase, choisissez le mot juste et associez chaque mot à son sens), suivis d’une auto-évaluation"
+        },
+        "seoTitle": "Vocabulaire du TOPIK niveau 1 (Débutant essentiel) — PDF gratuit | Hangyul",
+        "seoDescription": "Guide gratuit Hangyul : 200 mots du TOPIK essentiels pour débutants en 8 unités, avec exemples originaux, romanisation, révisions, planning espacé et liste de fréquence."
+      },
+      "topikL02En": {
+        "subtitle": "Niveau 2 · Débutant pratique",
+        "description": "Consolidez vos bases avec 250 mots pratiques pour débutants, sélectionnés dans les anciennes épreuves du TOPIK. Dix unités abordent les salutations, le moment et la fréquence, les déplacements en ville, la santé, les saisons, les loisirs, les achats et la vie à la maison, avec un exemple original pour chaque mot.",
+        "topics": "250 mots en 10 unités : saluer et converser, quand et à quelle fréquence, se déplacer en ville, questions et mots de position, famille et santé, saisons et nature, loisirs, vêtements et achats, repas et saveurs, études et vie à la maison.",
+        "closingTitle": "Gardez les 250 mots du niveau 2 toujours avec vous",
+        "coverAlt": "Couverture du guide d’étude Hangyul « Vocabulaire coréen du TOPIK Niveau 2 · Débutant pratique » (토픽 필수 어휘 2단계), TOPIK Vocabulary Mastery, édition anglaise",
+        "previews": {
+          "chapter": "Exemple de page de l’unité 1, Saluer et converser : chaque mot présente le coréen, la romanisation, un repère de priorité, la catégorie grammaticale, le sens en anglais, une phrase d’exemple avec sa traduction et une note d’usage",
+          "review": "Révision de l’unité 1, Saluer et converser : cinq exercices (que signifie ce mot, dites-le en coréen, complétez la phrase, choisissez le mot juste et associez chaque mot à son sens), suivis d’une auto-évaluation"
+        },
+        "seoTitle": "Vocabulaire du TOPIK niveau 2 (Débutant pratique) — PDF gratuit | Hangyul",
+        "seoDescription": "Guide gratuit Hangyul : 250 mots du TOPIK pratiques pour débutants en 10 unités, avec exemples originaux, romanisation, révisions, planning espacé et liste de fréquence."
+      },
+      "topikL03En": {
+        "subtitle": "Niveau 3 · Pré-intermédiaire",
+        "description": "Entrez dans le coréen intermédiaire avec 300 mots de niveau pré-intermédiaire, sélectionnés dans les anciennes épreuves du TOPIK. Douze unités abordent les causes et les tendances, les expressions clés pour la lecture, les opinions, le travail, la société, les médias et les sciences, avec un exemple original pour chaque mot.",
+        "topics": "300 mots en 12 unités, notamment causes, effets et tendances, expressions clés pour la lecture, opinions et communication, économie et travail, société et sécurité, médias et culture, sciences et nature.",
+        "closingTitle": "Gardez les 300 mots du niveau 3 toujours avec vous",
+        "coverAlt": "Couverture du guide d’étude Hangyul « Vocabulaire coréen du TOPIK Niveau 3 · Pré-intermédiaire » (토픽 필수 어휘 3단계), TOPIK Vocabulary Mastery, édition anglaise",
+        "previews": {
+          "chapter": "Exemple de page de l’unité 1, Causes, effets et tendances : chaque mot présente le coréen, la romanisation, un repère de priorité, la catégorie grammaticale, le sens en anglais, une phrase d’exemple avec sa traduction et une note d’usage",
+          "review": "Révision de l’unité 1, Causes, effets et tendances : cinq exercices (que signifie ce mot, dites-le en coréen, complétez la phrase, choisissez le mot juste et associez chaque mot à son sens), suivis d’une auto-évaluation"
+        },
+        "seoTitle": "Vocabulaire du TOPIK niveau 3 (Pré-intermédiaire) — PDF gratuit | Hangyul",
+        "seoDescription": "Guide gratuit Hangyul : 300 mots du TOPIK de niveau pré-intermédiaire en 12 unités, avec exemples originaux, romanisation, révisions, planning espacé et liste de fréquence."
+      },
+      "topikL04En": {
+        "subtitle": "Niveau 4 · Intermédiaire",
+        "description": "Renforcez votre coréen intermédiaire avec 350 mots sélectionnés dans les anciennes épreuves du TOPIK. Quatorze unités abordent le caractère et le jugement, la vie en communauté, les médias et les arts, les sciences et la santé, les émotions, les métiers et l’économie, ainsi que les mots de liaison, avec un exemple original pour chaque mot.",
+        "topics": "350 mots en 14 unités, notamment tâches du quotidien, personnes et caractère, jugement et évaluation, médias et arts, émotions et état d’esprit, métiers et économie, mots de liaison et de quantité.",
+        "closingTitle": "Gardez les 350 mots du niveau 4 toujours avec vous",
+        "coverAlt": "Couverture du guide d’étude Hangyul « Vocabulaire coréen du TOPIK Niveau 4 · Intermédiaire » (토픽 필수 어휘 4단계), TOPIK Vocabulary Mastery, édition anglaise",
+        "previews": {
+          "chapter": "Exemple de page de l’unité 1, Tâches du quotidien : chaque mot présente le coréen, la romanisation, un repère de priorité, la catégorie grammaticale, le sens en anglais, une phrase d’exemple avec sa traduction et une note d’usage",
+          "review": "Révision de l’unité 1, Tâches du quotidien : cinq exercices (que signifie ce mot, dites-le en coréen, complétez la phrase, choisissez le mot juste et associez chaque mot à son sens), suivis d’une auto-évaluation"
+        },
+        "seoTitle": "Vocabulaire du TOPIK niveau 4 (Intermédiaire) — PDF gratuit | Hangyul",
+        "seoDescription": "Guide gratuit Hangyul : 350 mots du TOPIK de niveau intermédiaire en 14 unités, avec exemples originaux, romanisation, révisions, planning espacé et liste de fréquence."
+      },
+      "topikL05En": {
+        "subtitle": "Niveau 5 · Intermédiaire supérieur",
+        "description": "Abordez le niveau intermédiaire supérieur avec 400 mots sélectionnés dans les anciennes épreuves du TOPIK. Seize unités traitent de l’argumentation, de l’État et des politiques publiques, de l’économie et de l’industrie, des médias, des sciences, de l’environnement et du patrimoine, avec un exemple original pour chaque mot.",
+        "topics": "400 mots en 16 unités, notamment causes et solutions, construire une argumentation, État et politiques publiques, économie et industrie, sciences et technologies, sécurité et environnement, arts et patrimoine.",
+        "closingTitle": "Gardez les 400 mots du niveau 5 toujours avec vous",
+        "coverAlt": "Couverture du guide d’étude Hangyul « Vocabulaire coréen du TOPIK Niveau 5 · Intermédiaire supérieur » (토픽 필수 어휘 5단계), TOPIK Vocabulary Mastery, édition anglaise",
+        "previews": {
+          "chapter": "Exemple de page de l’unité 1, Causes et solutions : chaque mot présente le coréen, la romanisation, un repère de priorité, la catégorie grammaticale, le sens en anglais, une phrase d’exemple avec sa traduction et une note d’usage",
+          "review": "Révision de l’unité 1, Causes et solutions : cinq exercices (que signifie ce mot, dites-le en coréen, complétez la phrase, choisissez le mot juste et associez chaque mot à son sens), suivis d’une auto-évaluation"
+        },
+        "seoTitle": "Vocabulaire du TOPIK niveau 5 (Intermédiaire supérieur) — PDF gratuit | Hangyul",
+        "seoDescription": "Guide gratuit Hangyul : 400 mots du TOPIK de niveau intermédiaire supérieur en 16 unités, avec exemples originaux, romanisation, révisions, planning espacé et liste de fréquence."
+      },
+      "topikL06En": {
+        "subtitle": "Niveau 6 · Avancé",
+        "description": "Terminez la série avec 450 mots de niveau avancé, sélectionnés dans les anciennes épreuves du TOPIK. Dix-huit unités traitent du droit et de la politique, de la technologie, de l’économie, de l’histoire, des carrières, des médias, des documents administratifs, de la logique et du débat, avec un exemple original pour chaque mot.",
+        "topics": "450 mots en 18 unités, notamment sciences et mesures, droit et politique, technologie et vie numérique, histoire et patrimoine, carrières et talents, bureau et documents administratifs, logique et débat.",
+        "closingTitle": "Gardez les 450 mots du niveau 6 toujours avec vous",
+        "coverAlt": "Couverture du guide d’étude Hangyul « Vocabulaire coréen du TOPIK Niveau 6 · Avancé » (토픽 필수 어휘 6단계), TOPIK Vocabulary Mastery, édition anglaise",
+        "previews": {
+          "chapter": "Exemple de page de l’unité 1, Sciences et mesures : chaque mot présente le coréen, la romanisation, un repère de priorité, la catégorie grammaticale, le sens en anglais, une phrase d’exemple avec sa traduction et une note d’usage",
+          "review": "Révision de l’unité 1, Sciences et mesures : cinq exercices (que signifie ce mot, dites-le en coréen, complétez la phrase, choisissez le mot juste et associez chaque mot à son sens), suivis d’une auto-évaluation"
+        },
+        "seoTitle": "Vocabulaire du TOPIK niveau 6 (Avancé) — PDF gratuit | Hangyul",
+        "seoDescription": "Guide gratuit Hangyul : 450 mots du TOPIK de niveau avancé en 18 unités, avec exemples originaux, romanisation, révisions, planning espacé et liste de fréquence."
       }
     },
     "index": {

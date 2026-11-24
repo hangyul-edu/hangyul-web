@@ -1294,6 +1294,56 @@ const EXISTING_SOURCE_PDFS = [
   WORDS_SOURCE_PDF,
 ];
 
+/*
+ * TOPIK Korean Words Level 1–6 (TOPIK Vocabulary Mastery) — 영어판, 아직 연결된 영상 없음.
+ * 단어·유닛·페이지 수는 실제 PDF(목차·본문 단어 번호·물리 페이지 수)에서 확인한 값입니다.
+ */
+const TOPIK_LEVELS = [
+  { level: 1, levelName: "Essential Beginner", words: 200, units: 8, pages: 51 },
+  { level: 2, levelName: "Practical Beginner", words: 250, units: 10, pages: 58 },
+  { level: 3, levelName: "Lower-Intermediate", words: 300, units: 12, pages: 73 },
+  { level: 4, levelName: "Intermediate", words: 350, units: 14, pages: 85 },
+  { level: 5, levelName: "Upper-Intermediate", words: 400, units: 16, pages: 95 },
+  { level: 6, levelName: "Advanced", words: 450, units: 18, pages: 108 },
+] as const;
+
+const TOPIK_GUIDES = TOPIK_LEVELS.map(({ level, levelName, words, units, pages }) => ({
+  name: `TOPIK Korean Words Level ${level}`,
+  slug: `topik-l0${level}-study-guide`,
+  pagePath: (locale: string) => `/${locale}/resources/topik-korean-words-level-${level}`,
+  messagesKey: `topikL0${level}En`,
+  format: "topikWords",
+  sourcePdf: `src/assets/downloads/TOPIK_L0${level}_Study_Guide.pdf`,
+  downloadFileName: `Hangyul_TOPIK_L0${level}_Study_Guide_EN.pdf`,
+  h1: `TOPIK Korean Words Level ${level} · ${levelName}`,
+  series: `TOPIK Vocabulary Mastery · Level ${level}`,
+  stats: [String(words), String(units), String(pages)],
+  statLabels: ["exam-relevant words", "units", "pages"],
+  microcopy: `${pages} pages · PDF · No sign-up required`,
+  features: [
+    "Exam-relevant words, unit by unit",
+    "An original example for every word",
+    "Selected from past TOPIK papers",
+    "Active recall + spaced review",
+  ],
+  closingTitle: `Keep all ${words} Level ${level} words with you`,
+  closingBody:
+    "Download the guide free and work through each unit, review and planner at your own pace.",
+  seoTitle: `TOPIK Korean Words Level ${level}: ${levelName} – Free PDF | Hangyul`,
+  coverName: new RegExp(`TOPIK Korean Words Level ${level} · ${levelName}.*English edition`, "i"),
+  youtubeUrl: null as string | null,
+  youtubeCta: "Watch on YouTube",
+  episodeLabel: null as string | null,
+  // 다른 레벨·다른 시리즈의 정체성이 이 페이지 본문에 새지 않습니다.
+  notOwn: [
+    ...TOPIK_LEVELS.filter((o) => o.level !== level).map((o) => `Level ${o.level}`),
+    "100 Everyday Korean Sentences",
+    "Korean While You Sleep",
+    "Korean Vocabulary Mastery",
+    "Keep all 1,000 Korean words with you",
+  ],
+}));
+
 const NEW_GUIDES = [
   {
     name: "EP03 500 Real Korean Sentences",
@@ -1352,6 +1402,7 @@ const NEW_GUIDES = [
     episodeLabel: "EP.02",
     notOwn: ["500 Essential Korean Words", "Keep all 500 essential words with you", "75 pages", "Korean While You Sleep"],
   },
+  ...TOPIK_GUIDES,
 ] as const;
 
 for (const guide of NEW_GUIDES) {
@@ -1450,7 +1501,11 @@ for (const guide of NEW_GUIDES) {
         const m = messages(locale);
         await expect(page.locator("html")).toHaveAttribute("lang", locale);
         await expect(page).toHaveURL(new RegExp(`${guide.pagePath(locale)}$`));
-        await expect(h1(page)).toHaveText(guideFormat(locale).title);
+        // 같은 형식 안에서 판을 구분하는 부제(TOPIK의 레벨)가 있으면 제목에 함께 들어갑니다.
+        const subtitle = (guideCopy(locale) as { subtitle?: string }).subtitle;
+        await expect(h1(page)).toHaveText(
+          [guideFormat(locale).title, subtitle].filter(Boolean).join(" ")
+        );
         await expect(page.getByTestId("edition-badge")).toHaveText(m.editionLanguages.en.label);
         await expect(page.getByTestId("edition-notice")).toBeVisible();
         await expect(page.getByTestId("resource-youtube")).toContainText(guideYoutubeCta(locale));
@@ -1771,6 +1826,8 @@ test.describe("Existing guides are unchanged by the new resources", () => {
     [EN_LINK, YOUTUBE_URL, PDF_PATH, SOURCE_PDF, "100 Everyday Korean Sentences", ["100", "10", "43"]],
     ["/download?resource=ep02-en-study-guide&lang=en", EP02_YOUTUBE_URL, "/download/files/ep02-en-study-guide.pdf", EP02_SOURCE_PDF, "100 Everyday Korean Sentences", ["100", "10", "43"]],
     [WORDS_EN_LINK, WORDS_YOUTUBE_URL, WORDS_PDF_PATH, WORDS_SOURCE_PDF, "500 Essential Korean Words", ["500", "20", "75"]],
+    ["/download?resource=ep03-en-study-guide&lang=en", EP03_YOUTUBE_URL, "/download/files/ep03-en-study-guide.pdf", path.join(process.cwd(), "src/assets/downloads/EP03_EN_Study_Guide.pdf"), "500 Real Korean Sentences", ["500", "25", "178"]],
+    ["/download?resource=ep02-en-1000-korean-words-study-guide&lang=en", WORDS_1000_YOUTUBE_URL, "/download/files/ep02-en-1000-korean-words-study-guide.pdf", path.join(process.cwd(), "src/assets/downloads/EP02_EN_1000_Korean_Words_Study_Guide.pdf"), "1,000 Korean Words You’ll Actually Use", ["1,000", "25", "146"]],
   ] as const) {
     test(`${link} keeps its PDF, video, title and stats`, async ({ page }) => {
       await page.goto(link);
@@ -1782,4 +1839,37 @@ test.describe("Existing guides are unchanged by the new resources", () => {
       expect(body.equals(fs.readFileSync(source))).toBe(true);
     });
   }
+});
+
+test.describe("TOPIK Korean Words Level 1–6", () => {
+  test("every level has its own description, SEO copy and PDF", () => {
+    for (const locale of ALL_LOCALES) {
+      const r = messages(locale).resources;
+      for (const key of ["description", "topics", "seoTitle", "seoDescription", "closingTitle", "subtitle"]) {
+        const values = TOPIK_GUIDES.map((g) => r[g.messagesKey][key]);
+        expect(new Set(values).size, `${locale} ${key}`).toBe(TOPIK_GUIDES.length);
+      }
+    }
+    const hashes = TOPIK_GUIDES.map((g) => fs.readFileSync(path.join(process.cwd(), g.sourcePdf)).toString("base64"));
+    expect(new Set(hashes).size).toBe(TOPIK_GUIDES.length);
+  });
+
+  test("the resource index links all study guides, TOPIK levels in order", async ({ page }) => {
+    await page.goto("/en/resources");
+    const hrefs = await page
+      .getByTestId("guide-list-full")
+      .locator("a")
+      .evaluateAll((as) => as.map((a) => a.getAttribute("href")));
+    expect(hrefs).toEqual([
+      "/en/resources/100-everyday-korean-sentences-ep01",
+      "/en/resources/100-everyday-korean-sentences-ep02",
+      "/en/resources/500-real-korean-sentences-ep03",
+      "/en/resources/500-essential-korean-words-ep01",
+      "/en/resources/1000-korean-words-ep02",
+      ...TOPIK_GUIDES.map((g) => g.pagePath("en")),
+    ]);
+    for (const g of TOPIK_GUIDES) {
+      await expect(page.getByRole("heading", { level: 2, name: g.name, exact: true })).toBeVisible();
+    }
+  });
 });

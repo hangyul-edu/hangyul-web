@@ -245,6 +245,32 @@
             "body": "Har bir bobni takrorlang, javoblarni tekshiring va eslab qolgan soʻzlaringizni yakuniy tezkor maʼlumotnoma roʻyxatida belgilang."
           }
         }
+      },
+      "topikWords": {
+        "eyebrow": "Bepul oʻquv qoʻllanma",
+        "title": "TOPIK koreyscha soʻzlari",
+        "statItems": "{count, plural, one {imtihonga oid soʻz} other {imtihonga oid soʻz}}",
+        "statChapters": "{count, plural, one {boʻlim} other {boʻlim}}",
+        "whatsInsideIntro": "Shu darajadagi soʻzlarni oʻrganib, uzoq yodda saqlab qolish uchun kerak boʻlgan hamma narsa.",
+        "closingBody": "Qoʻllanmani bepul yuklab oling va har bir boʻlim, takrorlash va rejani oʻz surʼatingizda bajaring.",
+        "editionNotice": "Bu PDF ingliz tilida. Soʻzlarning maʼnolari, misollar tarjimasi va qoʻllanish izohlari toʻliq ingliz tilida yozilgan.",
+        "features": {
+          "words": {
+            "title": "Imtihonga oid soʻzlar, boʻlimma-boʻlim"
+          },
+          "sentences": {
+            "title": "Har bir soʻzga maxsus yozilgan misol",
+            "body": "Har bir soʻzda koreyscha yozilishi, transkripsiyasi, soʻz turkumi va inglizcha maʼnosi, shuningdek maxsus yozilgan misol gap va uning tarjimasi, kerakli joylarda esa qisqa qoʻllanish izohi bor."
+          },
+          "exam": {
+            "title": "Oʻtgan TOPIK imtihonlaridan tanlangan",
+            "body": "Soʻzlar eʼlon qilingan 12 ta TOPIK imtihonining (2014–2025) 2035 ta tekshirilgan savoli asosida saralangan. Ustuvorlik belgilari, imtihon boʻyicha maslahatlar, koʻp adashtiriladigan soʻzlar va chastota koʻrsatkichi nimaga eʼtibor qaratishni koʻrsatadi."
+          },
+          "review": {
+            "title": "Faol eslash + oraliqli takrorlash",
+            "body": "Har bir boʻlim besh qismli takrorlash va oʻzini tekshirish bilan yakunlanadi. Javoblaringizni javoblar kaliti orqali tekshiring, soʻng 1, 3, 7, 14 va 30-kunlik takrorlash rejasiga amal qiling."
+          }
+        }
       }
     },
     "resources": {
@@ -309,6 +335,84 @@
         },
         "seoTitle": "Amalda kerak boʻladigan 1000 ta koreyscha soʻz — bepul qoʻllanma | Hangyul",
         "seoDescription": "Bepul Hangyul qoʻllanmasini yuklab oling: 1000 ta foydali koreyscha soʻz, har biriga misol gap, transkripsiya, qoʻllanish izohlari, boblar boʻyicha takrorlash va roʻyxat."
+      },
+      "topikL01En": {
+        "subtitle": "1-daraja · Asosiy boshlangʻich",
+        "description": "Oʻtgan TOPIK imtihonlaridan tanlangan 200 ta asosiy boshlangʻich soʻzdan boshlang. Sakkizta qisqa boʻlim sizni 있다 va 하다 kabi asosiy soʻzlardan kundalik harakatlar, vaqt, oila, xarid va sayrlargacha olib boradi, har bir soʻzga maxsus yozilgan misol berilgan.",
+        "topics": "8 ta boʻlimda 200 ta soʻz: asosiy soʻzlar, kundalik harakatlar, narsalarni tasvirlash, vaqt va kunlar, maktab, ish va hordiq, odamlar va oila, doʻkonlar va tashqarida ovqatlanish, joylar va sayrlar.",
+        "closingTitle": "1-darajaning barcha 200 ta soʻzi doim yoningizda boʻlsin",
+        "coverAlt": "Hangyul oʻquv qoʻllanmasi muqovasi: “TOPIK koreyscha soʻzlari, 1-daraja · Asosiy boshlangʻich” (토픽 필수 어휘 1단계), TOPIK Vocabulary Mastery, ingliz tilidagi nashr",
+        "previews": {
+          "chapter": "1-boʻlimdan namuna sahifa, “Asosiy soʻzlar”: har bir soʻzda koreyscha yozilishi, transkripsiyasi, ustuvorlik belgisi, soʻz turkumi, inglizcha maʼnosi, tarjimali misol gap va qoʻllanish izohi bor",
+          "review": "1-boʻlim boʻyicha takrorlash, “Asosiy soʻzlar”: beshta mashq — bu nimani anglatadi, koreyscha ayting, gapni toʻldiring, eng mos soʻzni tanlang va har bir soʻzni maʼnosiga moslang — soʻngra oʻzini tekshirish"
+        },
+        "seoTitle": "TOPIK koreyscha soʻzlari, 1-daraja: Asosiy boshlangʻich — bepul PDF | Hangyul",
+        "seoDescription": "Bepul Hangyul qoʻllanmasi: 8 ta boʻlimda asosiy boshlangʻich 200 ta TOPIK soʻzi, maxsus misol gaplar, transkripsiya, boʻlim mashqlari, oraliqli takrorlash rejasi, chastota roʻyxati."
+      },
+      "topikL02En": {
+        "subtitle": "2-daraja · Amaliy boshlangʻich",
+        "description": "Oʻtgan TOPIK imtihonlaridan tanlangan 250 ta amaliy boshlangʻich soʻz bilan asoslaringizni mustahkamlang. Oʻnta boʻlim salomlashish, vaqt va takroriylik, shahar boʻylab qatnash, salomatlik, fasllar, qiziqishlar, xarid va uy hayotini qamrab oladi, har bir soʻzga maxsus yozilgan misol berilgan.",
+        "topics": "10 ta boʻlimda 250 ta soʻz: salomlashish va suhbat, qachon va qanchalik tez-tez, shahar boʻylab qatnash, savollar va joylashuvni bildiruvchi soʻzlar, oila va salomatlik, fasllar va tabiat, qiziqishlar, kiyim va xarid, taom va taʼmlar, oʻqish va uy hayoti.",
+        "closingTitle": "2-darajaning barcha 250 ta soʻzi doim yoningizda boʻlsin",
+        "coverAlt": "Hangyul oʻquv qoʻllanmasi muqovasi: “TOPIK koreyscha soʻzlari, 2-daraja · Amaliy boshlangʻich” (토픽 필수 어휘 2단계), TOPIK Vocabulary Mastery, ingliz tilidagi nashr",
+        "previews": {
+          "chapter": "1-boʻlimdan namuna sahifa, “Salomlashish va suhbat”: har bir soʻzda koreyscha yozilishi, transkripsiyasi, ustuvorlik belgisi, soʻz turkumi, inglizcha maʼnosi, tarjimali misol gap va qoʻllanish izohi bor",
+          "review": "1-boʻlim boʻyicha takrorlash, “Salomlashish va suhbat”: beshta mashq — bu nimani anglatadi, koreyscha ayting, gapni toʻldiring, eng mos soʻzni tanlang va har bir soʻzni maʼnosiga moslang — soʻngra oʻzini tekshirish"
+        },
+        "seoTitle": "TOPIK koreyscha soʻzlari, 2-daraja: Amaliy boshlangʻich — bepul PDF | Hangyul",
+        "seoDescription": "Bepul Hangyul qoʻllanmasi: 10 ta boʻlimda amaliy boshlangʻich 250 ta TOPIK soʻzi, maxsus misol gaplar, transkripsiya, boʻlim mashqlari, oraliqli takrorlash rejasi, chastota roʻyxati."
+      },
+      "topikL03En": {
+        "subtitle": "3-daraja · Quyi oʻrta",
+        "description": "Oʻtgan TOPIK imtihonlaridan tanlangan 300 ta quyi oʻrta darajadagi soʻz bilan oʻrta darajadagi koreys tiliga qadam qoʻying. Oʻn ikkita boʻlim sabablar va tendensiyalar, oʻqish uchun muhim iboralar, fikr-mulohazalar, ish, jamiyat, media va fanni qamrab oladi, har bir soʻzga maxsus yozilgan misol berilgan.",
+        "topics": "12 ta boʻlimda 300 ta soʻz — sabablar, oqibatlar va tendensiyalar, oʻqish uchun muhim iboralar, fikr va muloqotdan tortib iqtisod va ish, jamiyat va xavfsizlik, media va madaniyat, fan va tabiatgacha.",
+        "closingTitle": "3-darajaning barcha 300 ta soʻzi doim yoningizda boʻlsin",
+        "coverAlt": "Hangyul oʻquv qoʻllanmasi muqovasi: “TOPIK koreyscha soʻzlari, 3-daraja · Quyi oʻrta” (토픽 필수 어휘 3단계), TOPIK Vocabulary Mastery, ingliz tilidagi nashr",
+        "previews": {
+          "chapter": "1-boʻlimdan namuna sahifa, “Sabablar, oqibatlar va tendensiyalar”: har bir soʻzda koreyscha yozilishi, transkripsiyasi, ustuvorlik belgisi, soʻz turkumi, inglizcha maʼnosi, tarjimali misol gap va qoʻllanish izohi bor",
+          "review": "1-boʻlim boʻyicha takrorlash, “Sabablar, oqibatlar va tendensiyalar”: beshta mashq — bu nimani anglatadi, koreyscha ayting, gapni toʻldiring, eng mos soʻzni tanlang va har bir soʻzni maʼnosiga moslang — soʻngra oʻzini tekshirish"
+        },
+        "seoTitle": "TOPIK koreyscha soʻzlari, 3-daraja: Quyi oʻrta — bepul PDF | Hangyul",
+        "seoDescription": "Bepul Hangyul qoʻllanmasi: 12 ta boʻlimda quyi oʻrta darajadagi 300 ta TOPIK soʻzi, maxsus misol gaplar, transkripsiya, boʻlim mashqlari, oraliqli takrorlash rejasi, chastota roʻyxati."
+      },
+      "topikL04En": {
+        "subtitle": "4-daraja · Oʻrta",
+        "description": "Oʻtgan TOPIK imtihonlaridan tanlangan 350 ta soʻz bilan oʻrta darajadagi koreys tilingizni mustahkamlang. Oʻn toʻrtta boʻlim xarakter va mulohaza, jamoa, media va sanʼat, fan va salomatlik, his-tuygʻular, kasb va iqtisod hamda bogʻlovchi soʻzlarni qamrab oladi, har bir soʻzga maxsus yozilgan misol berilgan.",
+        "topics": "14 ta boʻlimda 350 ta soʻz — kundalik yumushlar, odamlar va xarakter, mulohaza va baholashdan tortib media va sanʼat, his-tuygʻular va ruhiyat, kasb va iqtisod, bogʻlovchi va miqdor soʻzlarigacha.",
+        "closingTitle": "4-darajaning barcha 350 ta soʻzi doim yoningizda boʻlsin",
+        "coverAlt": "Hangyul oʻquv qoʻllanmasi muqovasi: “TOPIK koreyscha soʻzlari, 4-daraja · Oʻrta” (토픽 필수 어휘 4단계), TOPIK Vocabulary Mastery, ingliz tilidagi nashr",
+        "previews": {
+          "chapter": "1-boʻlimdan namuna sahifa, “Kundalik yumushlar”: har bir soʻzda koreyscha yozilishi, transkripsiyasi, ustuvorlik belgisi, soʻz turkumi, inglizcha maʼnosi, tarjimali misol gap va qoʻllanish izohi bor",
+          "review": "1-boʻlim boʻyicha takrorlash, “Kundalik yumushlar”: beshta mashq — bu nimani anglatadi, koreyscha ayting, gapni toʻldiring, eng mos soʻzni tanlang va har bir soʻzni maʼnosiga moslang — soʻngra oʻzini tekshirish"
+        },
+        "seoTitle": "TOPIK koreyscha soʻzlari, 4-daraja: Oʻrta — bepul PDF | Hangyul",
+        "seoDescription": "Bepul Hangyul qoʻllanmasi: 14 ta boʻlimda oʻrta darajadagi 350 ta TOPIK soʻzi, maxsus misol gaplar, transkripsiya, boʻlim mashqlari, oraliqli takrorlash rejasi, chastota roʻyxati."
+      },
+      "topikL05En": {
+        "subtitle": "5-daraja · Yuqori oʻrta",
+        "description": "Oʻtgan TOPIK imtihonlaridan tanlangan 400 ta soʻz bilan yuqori oʻrta darajadagi koreys tilini egallang. Oʻn oltita boʻlim dalil keltirish, davlat boshqaruvi va siyosat, iqtisod va sanoat, media, fan, atrof-muhit va merosni qamrab oladi, har bir soʻzga maxsus yozilgan misol berilgan.",
+        "topics": "16 ta boʻlimda 400 ta soʻz — sabablar va yechimlar, dalil keltirish, davlat boshqaruvi va siyosatdan tortib iqtisod va sanoat, fan va texnologiya, xavfsizlik va atrof-muhit, sanʼat va merosgacha.",
+        "closingTitle": "5-darajaning barcha 400 ta soʻzi doim yoningizda boʻlsin",
+        "coverAlt": "Hangyul oʻquv qoʻllanmasi muqovasi: “TOPIK koreyscha soʻzlari, 5-daraja · Yuqori oʻrta” (토픽 필수 어휘 5단계), TOPIK Vocabulary Mastery, ingliz tilidagi nashr",
+        "previews": {
+          "chapter": "1-boʻlimdan namuna sahifa, “Sabablar va yechimlar”: har bir soʻzda koreyscha yozilishi, transkripsiyasi, ustuvorlik belgisi, soʻz turkumi, inglizcha maʼnosi, tarjimali misol gap va qoʻllanish izohi bor",
+          "review": "1-boʻlim boʻyicha takrorlash, “Sabablar va yechimlar”: beshta mashq — bu nimani anglatadi, koreyscha ayting, gapni toʻldiring, eng mos soʻzni tanlang va har bir soʻzni maʼnosiga moslang — soʻngra oʻzini tekshirish"
+        },
+        "seoTitle": "TOPIK koreyscha soʻzlari, 5-daraja: Yuqori oʻrta — bepul PDF | Hangyul",
+        "seoDescription": "Bepul Hangyul qoʻllanmasi: 16 ta boʻlimda yuqori oʻrta darajadagi 400 ta TOPIK soʻzi, maxsus misol gaplar, transkripsiya, boʻlim mashqlari, oraliqli takrorlash rejasi, chastota roʻyxati."
+      },
+      "topikL06En": {
+        "subtitle": "6-daraja · Ilgʻor",
+        "description": "Oʻtgan TOPIK imtihonlaridan tanlangan 450 ta ilgʻor darajadagi soʻz bilan turkumni yakunlang. Oʻn sakkizta boʻlim huquq va siyosat, texnologiya, iqtisod, tarix, kasbiy faoliyat, media, ofis hujjatlari hamda mantiq va munozarani qamrab oladi, har bir soʻzga maxsus yozilgan misol berilgan.",
+        "topics": "18 ta boʻlimda 450 ta soʻz — fan va oʻlchov, huquq va siyosat, texnologiya va raqamli hayotdan tortib tarix va meros, kasb va isteʼdod, ofis va hujjatlar, mantiq va munozaragacha.",
+        "closingTitle": "6-darajaning barcha 450 ta soʻzi doim yoningizda boʻlsin",
+        "coverAlt": "Hangyul oʻquv qoʻllanmasi muqovasi: “TOPIK koreyscha soʻzlari, 6-daraja · Ilgʻor” (토픽 필수 어휘 6단계), TOPIK Vocabulary Mastery, ingliz tilidagi nashr",
+        "previews": {
+          "chapter": "1-boʻlimdan namuna sahifa, “Fan va oʻlchov”: har bir soʻzda koreyscha yozilishi, transkripsiyasi, ustuvorlik belgisi, soʻz turkumi, inglizcha maʼnosi, tarjimali misol gap va qoʻllanish izohi bor",
+          "review": "1-boʻlim boʻyicha takrorlash, “Fan va oʻlchov”: beshta mashq — bu nimani anglatadi, koreyscha ayting, gapni toʻldiring, eng mos soʻzni tanlang va har bir soʻzni maʼnosiga moslang — soʻngra oʻzini tekshirish"
+        },
+        "seoTitle": "TOPIK koreyscha soʻzlari, 6-daraja: Ilgʻor — bepul PDF | Hangyul",
+        "seoDescription": "Bepul Hangyul qoʻllanmasi: 18 ta boʻlimda ilgʻor darajadagi 450 ta TOPIK soʻzi, maxsus misol gaplar, transkripsiya, boʻlim mashqlari, oraliqli takrorlash rejasi, chastota roʻyxati."
       }
     },
     "index": {

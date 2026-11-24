@@ -245,6 +245,32 @@
             "body": "Repetera varje kapitel, kolla facit och bocka av det du kan i snabböversiktens checklista på slutet."
           }
         }
+      },
+      "topikWords": {
+        "eyebrow": "Gratis studieguide",
+        "title": "Koreanska ord för TOPIK",
+        "statItems": "{count, plural, one {provrelevant ord} other {provrelevanta ord}}",
+        "statChapters": "{count, plural, one {enhet} other {enheter}}",
+        "whatsInsideIntro": "Allt du behöver för att lära dig orden på den här nivån – och komma ihåg dem.",
+        "closingBody": "Ladda ner guiden gratis och arbeta dig igenom varje enhet, repetition och repetitionsplan i din egen takt.",
+        "editionNotice": "Den här PDF:en är på engelska. Ordens betydelser, översättningarna av exemplen och användningstipsen är alla skrivna på engelska.",
+        "features": {
+          "words": {
+            "title": "Provrelevanta ord, enhet för enhet"
+          },
+          "sentences": {
+            "title": "Ett egenskrivet exempel för varje ord",
+            "body": "Varje uppslag visar det koreanska ordet, romanisering, ordklass och engelsk betydelse, plus en egenskriven exempelmening med översättning och, där det hjälper, ett kort användningstips."
+          },
+          "exam": {
+            "title": "Utvalda ur tidigare TOPIK-prov",
+            "body": "Orden är rangordnade utifrån 2035 verifierade frågor från 12 publicerade TOPIK-omgångar (2014–2025). Prioritetsmarkeringar, provinsikter, ord som ofta förväxlas och ett frekvensregister visar var du ska lägga fokus."
+          },
+          "review": {
+            "title": "Aktiv återkallning + spridd repetition",
+            "body": "Varje enhet avslutas med en repetition i fem delar och en självkontroll. Kolla svaren i facit och följ sedan repetitionsplanen för dag 1, 3, 7, 14 och 30."
+          }
+        }
       }
     },
     "resources": {
@@ -309,6 +335,84 @@
         },
         "seoTitle": "1 000 koreanska ord du faktiskt använder – Gratis studieguide | Hangyul",
         "seoDescription": "Ladda ner en gratis studieguide från Hangyul med 1 000 användbara koreanska ord, en exempelmening för varje ord, romanisering, användningstips och checklista."
+      },
+      "topikL01En": {
+        "subtitle": "Nivå 1 · Grundläggande nybörjare",
+        "description": "Börja med 200 grundläggande nybörjarord utvalda ur tidigare TOPIK-prov. 8 korta enheter tar dig från grundord som 있다 och 하다 till vardagliga handlingar, tid, familj, shopping och utflykter, med ett egenskrivet exempel för varje ord.",
+        "topics": "200 ord i 8 enheter: grundord, vardagliga handlingar, att beskriva saker, tid och dagar, skola, jobb och nöje, människor och familj, affärer och att äta ute samt platser och utflykter.",
+        "closingTitle": "Ha alla 200 ord från nivå 1 alltid med dig",
+        "coverAlt": "Omslaget till Hangyuls studieguide ”Koreanska ord för TOPIK nivå 1 · Grundläggande nybörjare” (토픽 필수 어휘 1단계), TOPIK Vocabulary Mastery, engelsk utgåva",
+        "previews": {
+          "chapter": "Exempelsida från enhet 1, Grundord: varje ord visas med koreanska, romanisering, prioritetsmarkering, ordklass, engelsk betydelse, en exempelmening med översättning och ett användningstips",
+          "review": "Repetition av enhet 1, Grundord: fem övningar – vad betyder det, säg det på koreanska, fyll i meningen, välj det bästa ordet och para ihop varje ord med dess betydelse – följda av en självkontroll"
+        },
+        "seoTitle": "Koreanska ord för TOPIK nivå 1: Grundläggande nybörjare – Gratis PDF | Hangyul",
+        "seoDescription": "Gratis studieguide från Hangyul: 200 grundläggande TOPIK-ord för nybörjare i 8 enheter med egna exempelmeningar, romanisering, repetitioner, repetitionsplan och frekvenslista."
+      },
+      "topikL02En": {
+        "subtitle": "Nivå 2 · Praktisk nybörjare",
+        "description": "Bygg vidare på grunderna med 250 praktiska nybörjarord utvalda ur tidigare TOPIK-prov. 10 enheter tar upp hälsningar, tid och frekvens, att ta sig runt i stan, hälsa, årstider, hobbyer, shopping och livet hemma, med ett egenskrivet exempel för varje ord.",
+        "topics": "250 ord i 10 enheter: hälsningar och samtal, när och hur ofta, att ta sig runt i stan, frågeord och lägesord, familj och hälsa, årstider och natur, hobbyer, kläder och shopping, måltider och smaker samt studier och livet hemma.",
+        "closingTitle": "Ha alla 250 ord från nivå 2 alltid med dig",
+        "coverAlt": "Omslaget till Hangyuls studieguide ”Koreanska ord för TOPIK nivå 2 · Praktisk nybörjare” (토픽 필수 어휘 2단계), TOPIK Vocabulary Mastery, engelsk utgåva",
+        "previews": {
+          "chapter": "Exempelsida från enhet 1, Hälsningar och samtal: varje ord visas med koreanska, romanisering, prioritetsmarkering, ordklass, engelsk betydelse, en exempelmening med översättning och ett användningstips",
+          "review": "Repetition av enhet 1, Hälsningar och samtal: fem övningar – vad betyder det, säg det på koreanska, fyll i meningen, välj det bästa ordet och para ihop varje ord med dess betydelse – följda av en självkontroll"
+        },
+        "seoTitle": "Koreanska ord för TOPIK nivå 2: Praktisk nybörjare – Gratis PDF | Hangyul",
+        "seoDescription": "Gratis studieguide från Hangyul: 250 praktiska TOPIK-ord för nybörjare i 10 enheter med egna exempelmeningar, romanisering, repetitioner, repetitionsplan och frekvenslista."
+      },
+      "topikL03En": {
+        "subtitle": "Nivå 3 · Lägre mellannivå",
+        "description": "Ta steget in i koreanska på mellannivå med 300 ord på lägre mellannivå, utvalda ur tidigare TOPIK-prov. 12 enheter tar upp orsaker och trender, nyckeluttryck för läsning, åsikter, arbete, samhälle, medier och vetenskap, med ett egenskrivet exempel för varje ord.",
+        "topics": "300 ord i 12 enheter, från orsaker, effekter och trender, nyckeluttryck för läsning samt åsikter och kommunikation till ekonomi och arbete, samhälle och säkerhet, medier och kultur samt vetenskap och natur.",
+        "closingTitle": "Ha alla 300 ord från nivå 3 alltid med dig",
+        "coverAlt": "Omslaget till Hangyuls studieguide ”Koreanska ord för TOPIK nivå 3 · Lägre mellannivå” (토픽 필수 어휘 3단계), TOPIK Vocabulary Mastery, engelsk utgåva",
+        "previews": {
+          "chapter": "Exempelsida från enhet 1, Orsaker, effekter och trender: varje ord visas med koreanska, romanisering, prioritetsmarkering, ordklass, engelsk betydelse, en exempelmening med översättning och ett användningstips",
+          "review": "Repetition av enhet 1, Orsaker, effekter och trender: fem övningar – vad betyder det, säg det på koreanska, fyll i meningen, välj det bästa ordet och para ihop varje ord med dess betydelse – följda av en självkontroll"
+        },
+        "seoTitle": "Koreanska ord för TOPIK nivå 3: Lägre mellannivå – Gratis PDF | Hangyul",
+        "seoDescription": "Gratis studieguide från Hangyul: 300 TOPIK-ord på lägre mellannivå i 12 enheter med egna exempelmeningar, romanisering, repetitioner, repetitionsplan och frekvenslista."
+      },
+      "topikL04En": {
+        "subtitle": "Nivå 4 · Mellannivå",
+        "description": "Stärk din koreanska på mellannivå med 350 ord utvalda ur tidigare TOPIK-prov. 14 enheter tar upp personlighet och omdöme, lokalsamhälle, medier och konst, vetenskap och hälsa, känslor, yrken och ekonomi samt sambandsord, med ett egenskrivet exempel för varje ord.",
+        "topics": "350 ord i 14 enheter, från vardagssysslor, människor och personlighet samt bedömning och värdering till medier och konst, känslor och sinne, yrken och ekonomi samt sambandsord och mängdord.",
+        "closingTitle": "Ha alla 350 ord från nivå 4 alltid med dig",
+        "coverAlt": "Omslaget till Hangyuls studieguide ”Koreanska ord för TOPIK nivå 4 · Mellannivå” (토픽 필수 어휘 4단계), TOPIK Vocabulary Mastery, engelsk utgåva",
+        "previews": {
+          "chapter": "Exempelsida från enhet 1, Vardagssysslor: varje ord visas med koreanska, romanisering, prioritetsmarkering, ordklass, engelsk betydelse, en exempelmening med översättning och ett användningstips",
+          "review": "Repetition av enhet 1, Vardagssysslor: fem övningar – vad betyder det, säg det på koreanska, fyll i meningen, välj det bästa ordet och para ihop varje ord med dess betydelse – följda av en självkontroll"
+        },
+        "seoTitle": "Koreanska ord för TOPIK nivå 4: Mellannivå – Gratis PDF | Hangyul",
+        "seoDescription": "Gratis studieguide från Hangyul: 350 TOPIK-ord på mellannivå i 14 enheter med egna exempelmeningar, romanisering, repetitioner, repetitionsplan och frekvenslista."
+      },
+      "topikL05En": {
+        "subtitle": "Nivå 5 · Övre mellannivå",
+        "description": "Ta dig an koreanska på övre mellannivå med 400 ord utvalda ur tidigare TOPIK-prov. 16 enheter tar upp argumentation, styre och politik, ekonomi och industri, medier, vetenskap, miljö och kulturarv, med ett egenskrivet exempel för varje ord.",
+        "topics": "400 ord i 16 enheter, från orsaker och lösningar, argumentation samt styre och politik till ekonomi och industri, vetenskap och teknik, säkerhet och miljö samt konst och kulturarv.",
+        "closingTitle": "Ha alla 400 ord från nivå 5 alltid med dig",
+        "coverAlt": "Omslaget till Hangyuls studieguide ”Koreanska ord för TOPIK nivå 5 · Övre mellannivå” (토픽 필수 어휘 5단계), TOPIK Vocabulary Mastery, engelsk utgåva",
+        "previews": {
+          "chapter": "Exempelsida från enhet 1, Orsaker och lösningar: varje ord visas med koreanska, romanisering, prioritetsmarkering, ordklass, engelsk betydelse, en exempelmening med översättning och ett användningstips",
+          "review": "Repetition av enhet 1, Orsaker och lösningar: fem övningar – vad betyder det, säg det på koreanska, fyll i meningen, välj det bästa ordet och para ihop varje ord med dess betydelse – följda av en självkontroll"
+        },
+        "seoTitle": "Koreanska ord för TOPIK nivå 5: Övre mellannivå – Gratis PDF | Hangyul",
+        "seoDescription": "Gratis studieguide från Hangyul: 400 TOPIK-ord på övre mellannivå i 16 enheter med egna exempelmeningar, romanisering, repetitioner, repetitionsplan och frekvenslista."
+      },
+      "topikL06En": {
+        "subtitle": "Nivå 6 · Avancerad",
+        "description": "Avsluta serien med 450 avancerade ord utvalda ur tidigare TOPIK-prov. 18 enheter tar upp juridik och politik, teknik, ekonomi, historia, karriär, medier, kontor och dokument samt logik och debatt, med ett egenskrivet exempel för varje ord.",
+        "topics": "450 ord i 18 enheter, från vetenskap och mätning, juridik och politik samt teknik och digitalt liv till historia och kulturarv, karriär och talang, kontor och dokument samt logik och debatt.",
+        "closingTitle": "Ha alla 450 ord från nivå 6 alltid med dig",
+        "coverAlt": "Omslaget till Hangyuls studieguide ”Koreanska ord för TOPIK nivå 6 · Avancerad” (토픽 필수 어휘 6단계), TOPIK Vocabulary Mastery, engelsk utgåva",
+        "previews": {
+          "chapter": "Exempelsida från enhet 1, Vetenskap och mätning: varje ord visas med koreanska, romanisering, prioritetsmarkering, ordklass, engelsk betydelse, en exempelmening med översättning och ett användningstips",
+          "review": "Repetition av enhet 1, Vetenskap och mätning: fem övningar – vad betyder det, säg det på koreanska, fyll i meningen, välj det bästa ordet och para ihop varje ord med dess betydelse – följda av en självkontroll"
+        },
+        "seoTitle": "Koreanska ord för TOPIK nivå 6: Avancerad – Gratis PDF | Hangyul",
+        "seoDescription": "Gratis studieguide från Hangyul: 450 avancerade TOPIK-ord i 18 enheter med egna exempelmeningar, romanisering, repetitioner, repetitionsplan och frekvenslista."
       }
     },
     "index": {

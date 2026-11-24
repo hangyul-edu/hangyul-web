@@ -245,6 +245,32 @@
             "body": "Her bölümü tekrar et, cevaplarını kontrol et ve sondaki hızlı başvuru listesinde hatırladıklarını işaretle."
           }
         }
+      },
+      "topikWords": {
+        "eyebrow": "Ücretsiz çalışma rehberi",
+        "title": "TOPIK Korece Kelimeler",
+        "statItems": "{count, plural, one {sınav odaklı kelime} other {sınav odaklı kelime}}",
+        "statChapters": "{count, plural, one {ünite} other {ünite}}",
+        "whatsInsideIntro": "Bu seviyenin kelimelerini öğrenip kalıcı hâle getirmek için ihtiyacın olan her şey.",
+        "closingBody": "Rehberi ücretsiz indir; her üniteyi, tekrarları ve tekrar planlayıcısını kendi hızında çalış.",
+        "editionNotice": "Bu PDF İngilizcedir. Kelime anlamları, örnek çevirileri ve kullanım notlarının tamamı İngilizce yazılmıştır.",
+        "features": {
+          "words": {
+            "title": "Ünite ünite sınav odaklı kelimeler"
+          },
+          "sentences": {
+            "title": "Her kelimeye özgün bir örnek",
+            "body": "Her maddede Korece kelime, okunuşu, kelime türü ve İngilizce anlamı yer alır; ayrıca çevirisiyle birlikte özgün bir örnek cümle ve gerektiğinde kısa bir kullanım notu bulunur."
+          },
+          "exam": {
+            "title": "Geçmiş TOPIK sınavlarından seçildi",
+            "body": "Kelimeler, yayımlanmış 12 TOPIK oturumundaki (2014–2025) doğrulanmış 2.035 soruya göre sıralandı. Öncelik işaretleri, sınav ipuçları, sık karıştırılan kelimeler ve sıklık dizini neye odaklanman gerektiğini gösterir."
+          },
+          "review": {
+            "title": "Aktif hatırlama + aralıklı tekrar",
+            "body": "Her ünite beş bölümlü bir tekrar ve bir öz değerlendirmeyle biter. Cevaplarını cevap anahtarından kontrol et, ardından 1., 3., 7., 14. ve 30. gün tekrar planlayıcısını takip et."
+          }
+        }
       }
     },
     "resources": {
@@ -309,6 +335,84 @@
         },
         "seoTitle": "1.000 İşe Yarar Korece Kelime — Ücretsiz Çalışma Rehberi | Hangyul",
         "seoDescription": "1.000 işe yarar Korece kelime, her kelime için örnek cümle, okunuş, kullanım notları, bölüm tekrarları ve kontrol listesi içeren ücretsiz Hangyul rehberini indir."
+      },
+      "topikL01En": {
+        "subtitle": "1. Seviye · Temel Başlangıç",
+        "description": "Geçmiş TOPIK sınavlarından seçilmiş 200 temel başlangıç kelimesiyle başla. 8 kısa ünite seni 있다 ve 하다 gibi temel kelimelerden günlük eylemlere, zamana, aileye, alışverişe ve gezmeye götürür; her kelimenin özgün bir örneği var.",
+        "topics": "8 ünitede 200 kelime: temel kelimeler, günlük eylemler, nesneleri tanımlama, zaman ve günler, okul, iş ve eğlence, insanlar ve aile, dükkânlar ve dışarıda yemek, yerler ve geziler.",
+        "closingTitle": "1. seviyenin 200 kelimesinin hepsi hep yanında olsun",
+        "coverAlt": "Hangyul çalışma rehberi “TOPIK Korece Kelimeler 1. Seviye · Temel Başlangıç” (토픽 필수 어휘 1단계) kapağı, TOPIK Vocabulary Mastery, İngilizce sürüm",
+        "previews": {
+          "chapter": "1. üniteden (Temel Kelimeler) örnek sayfa: her kelimede Korecesi, okunuşu, öncelik işareti, kelime türü, İngilizce anlamı, çevirili bir örnek cümle ve bir kullanım notu yer alıyor",
+          "review": "1. ünitenin (Temel Kelimeler) tekrarı: beş alıştırma — “Ne anlama geliyor?”, “Korecesini söyle”, “Cümleyi tamamla”, “En uygun kelimeyi seç” ve “Her kelimeyi anlamıyla eşleştir” — ardından bir öz değerlendirme"
+        },
+        "seoTitle": "TOPIK Korece Kelimeler 1. Seviye: Temel Başlangıç — Ücretsiz PDF | Hangyul",
+        "seoDescription": "Ücretsiz Hangyul rehberi: 8 ünitede 200 temel başlangıç düzeyi TOPIK kelimesi; özgün örnek cümleler, okunuş, ünite tekrarları, tekrar planlayıcısı ve sıklık listesi."
+      },
+      "topikL02En": {
+        "subtitle": "2. Seviye · Pratik Başlangıç",
+        "description": "Geçmiş TOPIK sınavlarından seçilmiş 250 pratik başlangıç kelimesiyle temelini güçlendir. 10 ünite; selamlaşma, zaman ve sıklık, şehirde ulaşım, sağlık, mevsimler, hobiler, alışveriş ve ev hayatını kapsar; her kelimenin özgün bir örneği var.",
+        "topics": "10 ünitede 250 kelime: selamlaşma ve konuşma, ne zaman ve ne sıklıkla, şehirde ulaşım, soru ve konum kelimeleri, aile ve sağlık, mevsimler ve doğa, hobiler, giyim ve alışveriş, yemekler ve tatlar, ders ve ev hayatı.",
+        "closingTitle": "2. seviyenin 250 kelimesinin hepsi hep yanında olsun",
+        "coverAlt": "Hangyul çalışma rehberi “TOPIK Korece Kelimeler 2. Seviye · Pratik Başlangıç” (토픽 필수 어휘 2단계) kapağı, TOPIK Vocabulary Mastery, İngilizce sürüm",
+        "previews": {
+          "chapter": "1. üniteden (Selamlaşma ve Konuşma) örnek sayfa: her kelimede Korecesi, okunuşu, öncelik işareti, kelime türü, İngilizce anlamı, çevirili bir örnek cümle ve bir kullanım notu yer alıyor",
+          "review": "1. ünitenin (Selamlaşma ve Konuşma) tekrarı: beş alıştırma — “Ne anlama geliyor?”, “Korecesini söyle”, “Cümleyi tamamla”, “En uygun kelimeyi seç” ve “Her kelimeyi anlamıyla eşleştir” — ardından bir öz değerlendirme"
+        },
+        "seoTitle": "TOPIK Korece Kelimeler 2. Seviye: Pratik Başlangıç — Ücretsiz PDF | Hangyul",
+        "seoDescription": "Ücretsiz Hangyul rehberi: 10 ünitede 250 pratik başlangıç düzeyi TOPIK kelimesi; özgün örnek cümleler, okunuş, ünite tekrarları, tekrar planlayıcısı ve sıklık listesi."
+      },
+      "topikL03En": {
+        "subtitle": "3. Seviye · Orta Öncesi",
+        "description": "Geçmiş TOPIK sınavlarından seçilmiş 300 orta öncesi kelimeyle orta seviye Koreceye geç. 12 ünite; nedenler ve eğilimler, okuma için anahtar ifadeler, görüşler, iş, toplum, medya ve bilimi kapsar; her kelimenin özgün bir örneği var.",
+        "topics": "12 ünitede 300 kelime: nedenler, sonuçlar ve eğilimler, okuma için anahtar ifadeler, görüşler ve iletişimden ekonomi ve iş, toplum ve güvenlik, medya ve kültür, bilim ve doğaya kadar.",
+        "closingTitle": "3. seviyenin 300 kelimesinin hepsi hep yanında olsun",
+        "coverAlt": "Hangyul çalışma rehberi “TOPIK Korece Kelimeler 3. Seviye · Orta Öncesi” (토픽 필수 어휘 3단계) kapağı, TOPIK Vocabulary Mastery, İngilizce sürüm",
+        "previews": {
+          "chapter": "1. üniteden (Nedenler, Sonuçlar ve Eğilimler) örnek sayfa: her kelimede Korecesi, okunuşu, öncelik işareti, kelime türü, İngilizce anlamı, çevirili bir örnek cümle ve bir kullanım notu yer alıyor",
+          "review": "1. ünitenin (Nedenler, Sonuçlar ve Eğilimler) tekrarı: beş alıştırma — “Ne anlama geliyor?”, “Korecesini söyle”, “Cümleyi tamamla”, “En uygun kelimeyi seç” ve “Her kelimeyi anlamıyla eşleştir” — ardından bir öz değerlendirme"
+        },
+        "seoTitle": "TOPIK Korece Kelimeler 3. Seviye: Orta Öncesi — Ücretsiz PDF | Hangyul",
+        "seoDescription": "Ücretsiz Hangyul rehberi: 12 ünitede 300 orta öncesi düzey TOPIK kelimesi; özgün örnek cümleler, okunuş, ünite tekrarları, tekrar planlayıcısı ve sıklık listesi."
+      },
+      "topikL04En": {
+        "subtitle": "4. Seviye · Orta",
+        "description": "Geçmiş TOPIK sınavlarından seçilmiş 350 kelimeyle orta seviye Koreceni pekiştir. 14 ünite; karakter ve yargı, yerel topluluk, medya ve sanat, bilim ve sağlık, duygular, meslekler ve ekonomi ile bağlayıcı ifadeleri kapsar; her kelimenin özgün bir örneği var.",
+        "topics": "14 ünitede 350 kelime: günlük işler, insanlar ve karakter, yargı ve değerlendirmeden medya ve sanat, duygular ve zihin, meslekler ve ekonomi, bağlayıcı ifadeler ve miktar kelimelerine kadar.",
+        "closingTitle": "4. seviyenin 350 kelimesinin hepsi hep yanında olsun",
+        "coverAlt": "Hangyul çalışma rehberi “TOPIK Korece Kelimeler 4. Seviye · Orta” (토픽 필수 어휘 4단계) kapağı, TOPIK Vocabulary Mastery, İngilizce sürüm",
+        "previews": {
+          "chapter": "1. üniteden (Günlük İşler) örnek sayfa: her kelimede Korecesi, okunuşu, öncelik işareti, kelime türü, İngilizce anlamı, çevirili bir örnek cümle ve bir kullanım notu yer alıyor",
+          "review": "1. ünitenin (Günlük İşler) tekrarı: beş alıştırma — “Ne anlama geliyor?”, “Korecesini söyle”, “Cümleyi tamamla”, “En uygun kelimeyi seç” ve “Her kelimeyi anlamıyla eşleştir” — ardından bir öz değerlendirme"
+        },
+        "seoTitle": "TOPIK Korece Kelimeler 4. Seviye: Orta — Ücretsiz PDF | Hangyul",
+        "seoDescription": "Ücretsiz Hangyul rehberi: 14 ünitede 350 orta düzey TOPIK kelimesi; özgün örnek cümleler, okunuş, ünite tekrarları, tekrar planlayıcısı ve sıklık listesi."
+      },
+      "topikL05En": {
+        "subtitle": "5. Seviye · Orta Üstü",
+        "description": "Geçmiş TOPIK sınavlarından seçilmiş 400 kelimeyle orta üstü Koreceye adım at. 16 ünite; argüman kurma, devlet ve politika, ekonomi ve sanayi, medya, bilim, çevre ve kültürel mirası kapsar; her kelimenin özgün bir örneği var.",
+        "topics": "16 ünitede 400 kelime: nedenler ve çözümler, argüman kurma, devlet ve politikadan ekonomi ve sanayi, bilim ve teknoloji, güvenlik ve çevre, sanat ve kültürel mirasa kadar.",
+        "closingTitle": "5. seviyenin 400 kelimesinin hepsi hep yanında olsun",
+        "coverAlt": "Hangyul çalışma rehberi “TOPIK Korece Kelimeler 5. Seviye · Orta Üstü” (토픽 필수 어휘 5단계) kapağı, TOPIK Vocabulary Mastery, İngilizce sürüm",
+        "previews": {
+          "chapter": "1. üniteden (Nedenler ve Çözümler) örnek sayfa: her kelimede Korecesi, okunuşu, öncelik işareti, kelime türü, İngilizce anlamı, çevirili bir örnek cümle ve bir kullanım notu yer alıyor",
+          "review": "1. ünitenin (Nedenler ve Çözümler) tekrarı: beş alıştırma — “Ne anlama geliyor?”, “Korecesini söyle”, “Cümleyi tamamla”, “En uygun kelimeyi seç” ve “Her kelimeyi anlamıyla eşleştir” — ardından bir öz değerlendirme"
+        },
+        "seoTitle": "TOPIK Korece Kelimeler 5. Seviye: Orta Üstü — Ücretsiz PDF | Hangyul",
+        "seoDescription": "Ücretsiz Hangyul rehberi: 16 ünitede 400 orta üstü düzey TOPIK kelimesi; özgün örnek cümleler, okunuş, ünite tekrarları, tekrar planlayıcısı ve sıklık listesi."
+      },
+      "topikL06En": {
+        "subtitle": "6. Seviye · İleri",
+        "description": "Seriyi geçmiş TOPIK sınavlarından seçilmiş 450 ileri düzey kelimeyle tamamla. 18 ünite; hukuk ve siyaset, teknoloji, ekonomi, tarih, kariyer, medya, ofis ve evrak işleri ile mantık ve tartışmayı kapsar; her kelimenin özgün bir örneği var.",
+        "topics": "18 ünitede 450 kelime: bilim ve ölçüm, hukuk ve siyaset, teknoloji ve dijital hayattan tarih ve kültürel miras, kariyer ve yetenek, ofis ve evrak işleri, mantık ve tartışmaya kadar.",
+        "closingTitle": "6. seviyenin 450 kelimesinin hepsi hep yanında olsun",
+        "coverAlt": "Hangyul çalışma rehberi “TOPIK Korece Kelimeler 6. Seviye · İleri” (토픽 필수 어휘 6단계) kapağı, TOPIK Vocabulary Mastery, İngilizce sürüm",
+        "previews": {
+          "chapter": "1. üniteden (Bilim ve Ölçüm) örnek sayfa: her kelimede Korecesi, okunuşu, öncelik işareti, kelime türü, İngilizce anlamı, çevirili bir örnek cümle ve bir kullanım notu yer alıyor",
+          "review": "1. ünitenin (Bilim ve Ölçüm) tekrarı: beş alıştırma — “Ne anlama geliyor?”, “Korecesini söyle”, “Cümleyi tamamla”, “En uygun kelimeyi seç” ve “Her kelimeyi anlamıyla eşleştir” — ardından bir öz değerlendirme"
+        },
+        "seoTitle": "TOPIK Korece Kelimeler 6. Seviye: İleri — Ücretsiz PDF | Hangyul",
+        "seoDescription": "Ücretsiz Hangyul rehberi: 18 ünitede 450 ileri düzey TOPIK kelimesi; özgün örnek cümleler, okunuş, ünite tekrarları, tekrar planlayıcısı ve sıklık listesi."
       }
     },
     "index": {

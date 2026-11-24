@@ -112,13 +112,26 @@ export default async function ResourceDownloadPage({
   const fileHref = resourceFilePath(edition.slug);
   // 연결된 영상이 이 에피소드의 영상일 때만 판 문구에 에피소드가 들어간 버튼 문구가 있습니다.
   const youtubeCta = tCopy.has("youtubeCta") ? tCopy("youtubeCta") : t("youtubeCta");
-  // 판 언어 안내·마무리 문구는 기본값을 쓰되, 자료에 맞는 문구가 있으면 그것을 씁니다.
+  /*
+   * 공통 문구는 기본값을 쓰되, 자료(판)·형식에 맞는 문구가 있으면 그것을 씁니다.
+   * 우선순위: 판 문구(resources.<messagesKey>) → 형식 문구(formats.<key>) → 공통 문구
+   */
   const editionNotice = tCopy.has("editionNotice")
     ? tCopy("editionNotice")
-    : tEdition("notice");
+    : tFormat.has("editionNotice")
+      ? tFormat("editionNotice")
+      : tEdition("notice");
+  const closingTitle = tCopy.has("closingTitle")
+    ? tCopy("closingTitle")
+    : tFormat("closingTitle");
   const closingBody = tFormat.has("closingBody")
     ? tFormat("closingBody")
     : t("closingBody");
+  const whatsInsideIntro = tFormat.has("whatsInsideIntro")
+    ? tFormat("whatsInsideIntro")
+    : t("whatsInsideIntro");
+  // 같은 형식 안에서 판마다 다른 부제 (예: "Level 1 · Essential Beginner"). 없으면 표시하지 않습니다.
+  const subtitle = tCopy.has("subtitle") ? tCopy("subtitle") : null;
   const seriesLine = [family.series, family.episode].filter(Boolean).join(" · ");
 
   /*
@@ -145,7 +158,10 @@ export default async function ResourceDownloadPage({
     },
     family.chapterCount != null && {
       value: family.chapterCount,
-      label: t("statChapters", { count: family.chapterCount }),
+      // 챕터 단위 이름이 다른 형식(예: TOPIK의 "units")은 형식 문구에 statChapters가 있습니다.
+      label: tFormat.has("statChapters")
+        ? tFormat("statChapters", { count: family.chapterCount })
+        : t("statChapters", { count: family.chapterCount }),
     },
     { value: edition.pageCount, label: t("statPages", { count: edition.pageCount }) },
   ].filter(Boolean) as { value: number; label: string }[];
@@ -196,6 +212,12 @@ export default async function ResourceDownloadPage({
             <p className={styles.eyebrow}>{tFormat("eyebrow")}</p>
             <h1 id="resource-title" className={styles.title}>
               {tFormat("title")}
+              {subtitle && (
+                <span className={styles.titleSub} data-testid="resource-subtitle">
+                  {/* 붙여 읽을 때 제목과 부제가 이어지지 않도록 공백을 둡니다. */}{" "}
+                  {subtitle}
+                </span>
+              )}
             </h1>
 
             <div className={styles.meta}>
@@ -287,7 +309,7 @@ export default async function ResourceDownloadPage({
             <h2 id="inside-title" className={styles.sectionTitle}>
               {t("whatsInside")}
             </h2>
-            <p className={styles.sectionIntro}>{t("whatsInsideIntro")}</p>
+            <p className={styles.sectionIntro}>{whatsInsideIntro}</p>
 
             <ul className={styles.features}>
               {family.features.map((feature) => (
@@ -341,7 +363,7 @@ export default async function ResourceDownloadPage({
         <div className={styles.closingInner}>
           <div className={styles.closingText}>
             <h2 id="closing-title" className={styles.closingTitle}>
-              {tFormat("closingTitle")}
+              {closingTitle}
             </h2>
             <p className={styles.closingBody}>{closingBody}</p>
           </div>

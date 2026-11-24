@@ -245,6 +245,32 @@
             "body": "Wiederhole jedes Kapitel, prüfe deine Antworten und hake in der abschließenden Kurzübersicht mit Checkliste ab, was du schon kannst."
           }
         }
+      },
+      "topikWords": {
+        "eyebrow": "Kostenloses Lernheft",
+        "title": "Koreanischer TOPIK-Wortschatz",
+        "statItems": "{count, plural, one {prüfungsrelevantes Wort} other {prüfungsrelevante Wörter}}",
+        "statChapters": "{count, plural, one {Einheit} other {Einheiten}}",
+        "whatsInsideIntro": "Alles, was du brauchst, um die Wörter dieser Stufe zu lernen und dauerhaft zu behalten.",
+        "closingBody": "Lade das Lernheft kostenlos herunter und arbeite dich in deinem eigenen Tempo durch alle Einheiten, Wiederholungen und den Wiederholungsplaner.",
+        "editionNotice": "Dieses PDF ist auf Englisch. Wortbedeutungen, Übersetzungen der Beispielsätze und Verwendungshinweise sind durchgehend auf Englisch verfasst.",
+        "features": {
+          "words": {
+            "title": "Prüfungsrelevante Wörter, Einheit für Einheit"
+          },
+          "sentences": {
+            "title": "Ein eigenes Beispiel zu jedem Wort",
+            "body": "Jeder Eintrag enthält das koreanische Wort, Umschrift, Wortart und englische Bedeutung, dazu einen eigens verfassten Beispielsatz mit Übersetzung und, wo es hilft, einen kurzen Verwendungshinweis."
+          },
+          "exam": {
+            "title": "Ausgewählt aus früheren TOPIK-Prüfungen",
+            "body": "Die Rangfolge der Wörter beruht auf 2.035 geprüften Aufgaben aus 12 veröffentlichten TOPIK-Prüfungsrunden (2014–2025). Prioritätsmarkierungen, Prüfungshinweise, leicht verwechselbare Wörter und ein Häufigkeitsregister zeigen dir, worauf du dich konzentrieren solltest."
+          },
+          "review": {
+            "title": "Aktives Abrufen + verteilte Wiederholung",
+            "body": "Jede Einheit endet mit einer fünfteiligen Wiederholung und einem Selbstcheck. Prüfe deine Antworten im Lösungsteil und folge dann dem Wiederholungsplaner für Tag 1, 3, 7, 14 und 30."
+          }
+        }
       }
     },
     "resources": {
@@ -309,6 +335,84 @@
         },
         "seoTitle": "1.000 nützliche koreanische Wörter – Kostenloses Lernheft | Hangyul",
         "seoDescription": "Lade das kostenlose Hangyul-Lernheft herunter: 1.000 nützliche koreanische Wörter mit Beispielsatz zu jedem Wort, Umschrift, Verwendungshinweisen und Checkliste."
+      },
+      "topikL01En": {
+        "subtitle": "Stufe 1 · Basiswissen für Anfänger",
+        "description": "Starte mit 200 grundlegenden Wörtern für Anfänger, ausgewählt aus früheren TOPIK-Prüfungen. Acht kurze Einheiten führen dich von Grundwörtern wie 있다 und 하다 zu alltäglichen Handlungen, Zeitangaben, Familie, Einkaufen und Ausflügen – mit einem eigenen Beispiel zu jedem Wort.",
+        "topics": "200 Wörter in 8 Einheiten: Grundwörter, alltägliche Handlungen, Dinge beschreiben, Zeit und Wochentage, Schule, Arbeit und Freizeit, Menschen und Familie, Geschäfte und Essengehen sowie Orte und Ausflüge.",
+        "closingTitle": "Nimm alle 200 Wörter der Stufe 1 überallhin mit",
+        "coverAlt": "Cover des Hangyul-Lernhefts „Koreanischer TOPIK-Wortschatz Stufe 1 · Basiswissen für Anfänger“ (토픽 필수 어휘 1단계), TOPIK Vocabulary Mastery, englische Ausgabe",
+        "previews": {
+          "chapter": "Beispielseite aus Einheit 1, Grundwörter: Zu jedem Wort gibt es Koreanisch, Umschrift, eine Prioritätsmarkierung, die Wortart, die englische Bedeutung, einen Beispielsatz mit Übersetzung und einen Verwendungshinweis",
+          "review": "Wiederholung zu Einheit 1, Grundwörter: fünf Übungen (Bedeutung erkennen, auf Koreanisch ausdrücken, den Satz ergänzen, das passende Wort wählen und Wörter ihrer Bedeutung zuordnen), gefolgt von einem Selbstcheck"
+        },
+        "seoTitle": "TOPIK-Wortschatz Stufe 1: Basiswissen für Anfänger – Kostenloses PDF | Hangyul",
+        "seoDescription": "Kostenloses Hangyul-Lernheft: 200 TOPIK-Wörter für Anfänger (Basis) in 8 Einheiten – mit Beispielsätzen, Umschrift, Wiederholungen, Lernplaner und Häufigkeitsliste."
+      },
+      "topikL02En": {
+        "subtitle": "Stufe 2 · Praxis für Anfänger",
+        "description": "Bau auf den Grundlagen auf – mit 250 praktischen Wörtern für Anfänger, ausgewählt aus früheren TOPIK-Prüfungen. Zehn Einheiten behandeln Begrüßungen, Zeit und Häufigkeit, Wege in der Stadt, Gesundheit, Jahreszeiten, Hobbys, Einkaufen und das Leben zu Hause – mit einem eigenen Beispiel zu jedem Wort.",
+        "topics": "250 Wörter in 10 Einheiten: Begrüßen und Gespräche, wann und wie oft, unterwegs in der Stadt, Fragewörter und Ortsangaben, Familie und Gesundheit, Jahreszeiten und Natur, Hobbys, Kleidung und Einkaufen, Mahlzeiten und Geschmack sowie Lernen und Leben zu Hause.",
+        "closingTitle": "Nimm alle 250 Wörter der Stufe 2 überallhin mit",
+        "coverAlt": "Cover des Hangyul-Lernhefts „Koreanischer TOPIK-Wortschatz Stufe 2 · Praxis für Anfänger“ (토픽 필수 어휘 2단계), TOPIK Vocabulary Mastery, englische Ausgabe",
+        "previews": {
+          "chapter": "Beispielseite aus Einheit 1, Begrüßen und Gespräche: Zu jedem Wort gibt es Koreanisch, Umschrift, eine Prioritätsmarkierung, die Wortart, die englische Bedeutung, einen Beispielsatz mit Übersetzung und einen Verwendungshinweis",
+          "review": "Wiederholung zu Einheit 1, Begrüßen und Gespräche: fünf Übungen (Bedeutung erkennen, auf Koreanisch ausdrücken, den Satz ergänzen, das passende Wort wählen und Wörter ihrer Bedeutung zuordnen), gefolgt von einem Selbstcheck"
+        },
+        "seoTitle": "TOPIK-Wortschatz Stufe 2: Praxis für Anfänger – Kostenloses PDF | Hangyul",
+        "seoDescription": "Kostenloses Hangyul-Lernheft: 250 TOPIK-Wörter für Anfänger (Praxis) in 10 Einheiten – mit Beispielsätzen, Umschrift, Wiederholungen, Lernplaner und Häufigkeitsliste."
+      },
+      "topikL03En": {
+        "subtitle": "Stufe 3 · Untere Mittelstufe",
+        "description": "Steig in die Mittelstufe ein – mit 300 Wörtern der unteren Mittelstufe, ausgewählt aus früheren TOPIK-Prüfungen. Zwölf Einheiten behandeln Ursachen und Entwicklungen, Schlüsselausdrücke fürs Lesen, Meinungen, Arbeit, Gesellschaft, Medien und Wissenschaft – mit einem eigenen Beispiel zu jedem Wort.",
+        "topics": "300 Wörter in 12 Einheiten, darunter Ursachen, Folgen und Entwicklungen, Schlüsselausdrücke fürs Lesen, Meinungen und Kommunikation, Wirtschaft und Arbeit, Gesellschaft und Sicherheit, Medien und Kultur sowie Wissenschaft und Natur.",
+        "closingTitle": "Nimm alle 300 Wörter der Stufe 3 überallhin mit",
+        "coverAlt": "Cover des Hangyul-Lernhefts „Koreanischer TOPIK-Wortschatz Stufe 3 · Untere Mittelstufe“ (토픽 필수 어휘 3단계), TOPIK Vocabulary Mastery, englische Ausgabe",
+        "previews": {
+          "chapter": "Beispielseite aus Einheit 1, Ursachen, Folgen und Entwicklungen: Zu jedem Wort gibt es Koreanisch, Umschrift, eine Prioritätsmarkierung, die Wortart, die englische Bedeutung, einen Beispielsatz mit Übersetzung und einen Verwendungshinweis",
+          "review": "Wiederholung zu Einheit 1, Ursachen, Folgen und Entwicklungen: fünf Übungen (Bedeutung erkennen, auf Koreanisch ausdrücken, den Satz ergänzen, das passende Wort wählen und Wörter ihrer Bedeutung zuordnen), gefolgt von einem Selbstcheck"
+        },
+        "seoTitle": "TOPIK-Wortschatz Stufe 3: Untere Mittelstufe – Kostenloses PDF | Hangyul",
+        "seoDescription": "Kostenloses Hangyul-Lernheft: 300 TOPIK-Wörter der unteren Mittelstufe in 12 Einheiten – mit Beispielsätzen, Umschrift, Wiederholungen, Lernplaner und Häufigkeitsliste."
+      },
+      "topikL04En": {
+        "subtitle": "Stufe 4 · Mittelstufe",
+        "description": "Festige dein Koreanisch auf Mittelstufenniveau – mit 350 Wörtern, ausgewählt aus früheren TOPIK-Prüfungen. Vierzehn Einheiten behandeln Charakter und Urteilen, Gemeinschaft, Medien und Kunst, Wissenschaft und Gesundheit, Gefühle, Beruf und Wirtschaft sowie verbindende Ausdrücke – mit einem eigenen Beispiel zu jedem Wort.",
+        "topics": "350 Wörter in 14 Einheiten, darunter alltägliche Erledigungen, Menschen und Charakter, Urteilen und Bewerten, Medien und Kunst, Gefühle und Psyche, Beruf und Wirtschaft sowie verbindende Ausdrücke und Mengenangaben.",
+        "closingTitle": "Nimm alle 350 Wörter der Stufe 4 überallhin mit",
+        "coverAlt": "Cover des Hangyul-Lernhefts „Koreanischer TOPIK-Wortschatz Stufe 4 · Mittelstufe“ (토픽 필수 어휘 4단계), TOPIK Vocabulary Mastery, englische Ausgabe",
+        "previews": {
+          "chapter": "Beispielseite aus Einheit 1, Alltägliche Erledigungen: Zu jedem Wort gibt es Koreanisch, Umschrift, eine Prioritätsmarkierung, die Wortart, die englische Bedeutung, einen Beispielsatz mit Übersetzung und einen Verwendungshinweis",
+          "review": "Wiederholung zu Einheit 1, Alltägliche Erledigungen: fünf Übungen (Bedeutung erkennen, auf Koreanisch ausdrücken, den Satz ergänzen, das passende Wort wählen und Wörter ihrer Bedeutung zuordnen), gefolgt von einem Selbstcheck"
+        },
+        "seoTitle": "TOPIK-Wortschatz Stufe 4: Mittelstufe – Kostenloses PDF | Hangyul",
+        "seoDescription": "Kostenloses Hangyul-Lernheft: 350 TOPIK-Wörter der Mittelstufe in 14 Einheiten – mit Beispielsätzen, Umschrift, Wiederholungen, Lernplaner und Häufigkeitsliste."
+      },
+      "topikL05En": {
+        "subtitle": "Stufe 5 · Obere Mittelstufe",
+        "description": "Nimm die obere Mittelstufe in Angriff – mit 400 Wörtern, ausgewählt aus früheren TOPIK-Prüfungen. Sechzehn Einheiten behandeln Argumentieren, Staat und Politik, Wirtschaft und Industrie, Medien, Wissenschaft, Umwelt und Kulturerbe – mit einem eigenen Beispiel zu jedem Wort.",
+        "topics": "400 Wörter in 16 Einheiten, darunter Ursachen und Lösungen, Argumentieren, Staat und Politik, Wirtschaft und Industrie, Wissenschaft und Technik, Sicherheit und Umwelt sowie Kunst und Kulturerbe.",
+        "closingTitle": "Nimm alle 400 Wörter der Stufe 5 überallhin mit",
+        "coverAlt": "Cover des Hangyul-Lernhefts „Koreanischer TOPIK-Wortschatz Stufe 5 · Obere Mittelstufe“ (토픽 필수 어휘 5단계), TOPIK Vocabulary Mastery, englische Ausgabe",
+        "previews": {
+          "chapter": "Beispielseite aus Einheit 1, Ursachen und Lösungen: Zu jedem Wort gibt es Koreanisch, Umschrift, eine Prioritätsmarkierung, die Wortart, die englische Bedeutung, einen Beispielsatz mit Übersetzung und einen Verwendungshinweis",
+          "review": "Wiederholung zu Einheit 1, Ursachen und Lösungen: fünf Übungen (Bedeutung erkennen, auf Koreanisch ausdrücken, den Satz ergänzen, das passende Wort wählen und Wörter ihrer Bedeutung zuordnen), gefolgt von einem Selbstcheck"
+        },
+        "seoTitle": "TOPIK-Wortschatz Stufe 5: Obere Mittelstufe – Kostenloses PDF | Hangyul",
+        "seoDescription": "Kostenloses Hangyul-Lernheft: 400 TOPIK-Wörter der oberen Mittelstufe in 16 Einheiten – mit Beispielsätzen, Umschrift, Wiederholungen, Lernplaner und Häufigkeitsliste."
+      },
+      "topikL06En": {
+        "subtitle": "Stufe 6 · Fortgeschritten",
+        "description": "Schließ die Reihe ab – mit 450 Wörtern für Fortgeschrittene, ausgewählt aus früheren TOPIK-Prüfungen. Achtzehn Einheiten behandeln Recht und Politik, Technik, Wirtschaft, Geschichte, Beruf und Karriere, Medien, Büro und Formulare sowie Logik und Debatte – mit einem eigenen Beispiel zu jedem Wort.",
+        "topics": "450 Wörter in 18 Einheiten, darunter Wissenschaft und Messung, Recht und Politik, Technik und digitales Leben, Geschichte und Kulturerbe, Beruf und Talent, Büro und Formulare sowie Logik und Debatte.",
+        "closingTitle": "Nimm alle 450 Wörter der Stufe 6 überallhin mit",
+        "coverAlt": "Cover des Hangyul-Lernhefts „Koreanischer TOPIK-Wortschatz Stufe 6 · Fortgeschritten“ (토픽 필수 어휘 6단계), TOPIK Vocabulary Mastery, englische Ausgabe",
+        "previews": {
+          "chapter": "Beispielseite aus Einheit 1, Wissenschaft und Messung: Zu jedem Wort gibt es Koreanisch, Umschrift, eine Prioritätsmarkierung, die Wortart, die englische Bedeutung, einen Beispielsatz mit Übersetzung und einen Verwendungshinweis",
+          "review": "Wiederholung zu Einheit 1, Wissenschaft und Messung: fünf Übungen (Bedeutung erkennen, auf Koreanisch ausdrücken, den Satz ergänzen, das passende Wort wählen und Wörter ihrer Bedeutung zuordnen), gefolgt von einem Selbstcheck"
+        },
+        "seoTitle": "TOPIK-Wortschatz Stufe 6: Fortgeschritten – Kostenloses PDF | Hangyul",
+        "seoDescription": "Kostenloses Hangyul-Lernheft: 450 TOPIK-Wörter für Fortgeschrittene in 18 Einheiten – mit Beispielsätzen, Umschrift, Wiederholungen, Lernplaner und Häufigkeitsliste."
       }
     },
     "index": {

@@ -25,11 +25,15 @@
  *      (EP01: 3 21, EP02: 3 10 — 1장 본문 + A–D 네 문제가 다 보이는 챕터 복습,
  *       500단어 EP01: 4 65 — 1장 단어 본문 + 빠른 참고표·체크리스트,
  *       EP03: 3 14 — 1장 문장·대화 본문 + 2장 끝 문장과 A–D 챕터 복습,
- *       1,000단어 EP02: 4 12 — 1장 단어 본문 + 2장 끝 단어와 A–C 챕터 복습)
+ *       1,000단어 EP02: 4 12 — 1장 단어 본문 + 2장 끝 단어와 A–C 챕터 복습,
+ *       TOPIK Level 1–6: 5 8 — 1유닛 단어 본문 + 1유닛 A–E 복습·셀프 체크)
  *   3. 아래 가족의 editions에 판을 추가하고, downloadResourceAssets.ts에 이미지를 등록합니다.
  *   4. messages/*.json 의 ResourceDownload.resources.<messagesKey> 에 판 문구를,
  *      (description, topics, coverAlt, previews, seoTitle, seoDescription,
- *       선택: youtubeCta, editionNotice — 판 언어 안내를 이 자료에 맞게 바꿀 때)
+ *       선택: youtubeCta, editionNotice — 판 언어 안내를 이 자료에 맞게 바꿀 때,
+ *             subtitle — 같은 형식 안에서 판을 구분하는 제목 아래 부제(예: TOPIK 레벨),
+ *             closingTitle — 마무리 제목을 판마다 다르게 할 때)
+ *      형식 문구의 선택 키: statChapters(챕터 대신 "유닛" 등), whatsInsideIntro, editionNotice, closingBody
  *      (처음 쓰는 판 언어라면) ResourceDownload.editionLanguages.<언어> 에 판 이름을 추가합니다.
  *      제목·What's inside 등 형식 공통 문구는 ResourceDownload.formats.<formatMessagesKey> 에 있습니다.
  *      npm run validate:i18n 이 32개 로케일 누락을 잡아 줍니다.
@@ -48,7 +52,9 @@ export type ResourceFeatureIcon =
   | "sentences"
   | "conversation"
   | "romanization"
-  | "review";
+  | "review"
+  /** 기출 문제 분석 (우선순위 표시·출제 경향·빈도 색인) */
+  | "exam";
 
 export type ResourceEdition = {
   /** URL slug (?resource=<slug>). 소문자·숫자·하이픈만 사용합니다. */
@@ -254,6 +260,174 @@ export const DOWNLOAD_RESOURCE_FAMILIES = [
         downloadFileName: "Hangyul_EP02_1000_Korean_Words_Study_Guide_EN.pdf",
         // 실제 PDF 페이지 수 (표지·뒷표지 포함, pdfinfo 기준)
         pageCount: 146,
+      },
+    },
+  },
+  {
+    // TOPIK Korean Words Level 1 · Essential Beginner (PDF 표지·메타데이터 기준)
+    id: "topik-vocabulary-mastery-level-1",
+    pageSlug: "topik-korean-words-level-1",
+    defaultEdition: "en",
+    contentUpdatedAt: "2026-11-24",
+    formatMessagesKey: "topikWords",
+    series: "TOPIK Vocabulary Mastery",
+    episode: "Level 1",
+    // 아직 연결된 영상이 없습니다. 영상이 공개되면 available + url로 바꿉니다.
+    youtube: { status: "comingSoon" },
+    // 001–200, 8개 유닛 (PDF 목차·본문 단어 번호 기준)
+    itemCount: 200,
+    chapterCount: 8,
+    features: ["words", "sentences", "exam", "review"],
+    format: "PDF",
+    editions: {
+      en: {
+        slug: "topik-l01-study-guide",
+        language: "en",
+        messagesKey: "topikL01En",
+        file: "TOPIK_L01_Study_Guide.pdf",
+        downloadFileName: "Hangyul_TOPIK_L01_Study_Guide_EN.pdf",
+        // 실제 PDF 페이지 수 (표지·마지막 페이지 포함)
+        pageCount: 51,
+      },
+    },
+  },
+  {
+    // TOPIK Korean Words Level 2 · Practical Beginner (PDF 표지·메타데이터 기준)
+    id: "topik-vocabulary-mastery-level-2",
+    pageSlug: "topik-korean-words-level-2",
+    defaultEdition: "en",
+    contentUpdatedAt: "2026-11-24",
+    formatMessagesKey: "topikWords",
+    series: "TOPIK Vocabulary Mastery",
+    episode: "Level 2",
+    // 아직 연결된 영상이 없습니다. 영상이 공개되면 available + url로 바꿉니다.
+    youtube: { status: "comingSoon" },
+    // 001–250, 10개 유닛 (PDF 목차·본문 단어 번호 기준)
+    itemCount: 250,
+    chapterCount: 10,
+    features: ["words", "sentences", "exam", "review"],
+    format: "PDF",
+    editions: {
+      en: {
+        slug: "topik-l02-study-guide",
+        language: "en",
+        messagesKey: "topikL02En",
+        file: "TOPIK_L02_Study_Guide.pdf",
+        downloadFileName: "Hangyul_TOPIK_L02_Study_Guide_EN.pdf",
+        // 실제 PDF 페이지 수 (표지·마지막 페이지 포함)
+        pageCount: 58,
+      },
+    },
+  },
+  {
+    // TOPIK Korean Words Level 3 · Lower-Intermediate (PDF 표지·메타데이터 기준)
+    id: "topik-vocabulary-mastery-level-3",
+    pageSlug: "topik-korean-words-level-3",
+    defaultEdition: "en",
+    contentUpdatedAt: "2026-11-24",
+    formatMessagesKey: "topikWords",
+    series: "TOPIK Vocabulary Mastery",
+    episode: "Level 3",
+    // 아직 연결된 영상이 없습니다. 영상이 공개되면 available + url로 바꿉니다.
+    youtube: { status: "comingSoon" },
+    // 001–300, 12개 유닛 (PDF 목차·본문 단어 번호 기준)
+    itemCount: 300,
+    chapterCount: 12,
+    features: ["words", "sentences", "exam", "review"],
+    format: "PDF",
+    editions: {
+      en: {
+        slug: "topik-l03-study-guide",
+        language: "en",
+        messagesKey: "topikL03En",
+        file: "TOPIK_L03_Study_Guide.pdf",
+        downloadFileName: "Hangyul_TOPIK_L03_Study_Guide_EN.pdf",
+        // 실제 PDF 페이지 수 (표지·마지막 페이지 포함)
+        pageCount: 73,
+      },
+    },
+  },
+  {
+    // TOPIK Korean Words Level 4 · Intermediate (PDF 표지·메타데이터 기준)
+    id: "topik-vocabulary-mastery-level-4",
+    pageSlug: "topik-korean-words-level-4",
+    defaultEdition: "en",
+    contentUpdatedAt: "2026-11-24",
+    formatMessagesKey: "topikWords",
+    series: "TOPIK Vocabulary Mastery",
+    episode: "Level 4",
+    // 아직 연결된 영상이 없습니다. 영상이 공개되면 available + url로 바꿉니다.
+    youtube: { status: "comingSoon" },
+    // 001–350, 14개 유닛 (PDF 목차·본문 단어 번호 기준)
+    itemCount: 350,
+    chapterCount: 14,
+    features: ["words", "sentences", "exam", "review"],
+    format: "PDF",
+    editions: {
+      en: {
+        slug: "topik-l04-study-guide",
+        language: "en",
+        messagesKey: "topikL04En",
+        file: "TOPIK_L04_Study_Guide.pdf",
+        downloadFileName: "Hangyul_TOPIK_L04_Study_Guide_EN.pdf",
+        // 실제 PDF 페이지 수 (표지·마지막 페이지 포함)
+        pageCount: 85,
+      },
+    },
+  },
+  {
+    // TOPIK Korean Words Level 5 · Upper-Intermediate (PDF 표지·메타데이터 기준)
+    id: "topik-vocabulary-mastery-level-5",
+    pageSlug: "topik-korean-words-level-5",
+    defaultEdition: "en",
+    contentUpdatedAt: "2026-11-24",
+    formatMessagesKey: "topikWords",
+    series: "TOPIK Vocabulary Mastery",
+    episode: "Level 5",
+    // 아직 연결된 영상이 없습니다. 영상이 공개되면 available + url로 바꿉니다.
+    youtube: { status: "comingSoon" },
+    // 001–400, 16개 유닛 (PDF 목차·본문 단어 번호 기준)
+    itemCount: 400,
+    chapterCount: 16,
+    features: ["words", "sentences", "exam", "review"],
+    format: "PDF",
+    editions: {
+      en: {
+        slug: "topik-l05-study-guide",
+        language: "en",
+        messagesKey: "topikL05En",
+        file: "TOPIK_L05_Study_Guide.pdf",
+        downloadFileName: "Hangyul_TOPIK_L05_Study_Guide_EN.pdf",
+        // 실제 PDF 페이지 수 (표지·마지막 페이지 포함)
+        pageCount: 95,
+      },
+    },
+  },
+  {
+    // TOPIK Korean Words Level 6 · Advanced (PDF 표지·메타데이터 기준)
+    id: "topik-vocabulary-mastery-level-6",
+    pageSlug: "topik-korean-words-level-6",
+    defaultEdition: "en",
+    contentUpdatedAt: "2026-11-24",
+    formatMessagesKey: "topikWords",
+    series: "TOPIK Vocabulary Mastery",
+    episode: "Level 6",
+    // 아직 연결된 영상이 없습니다. 영상이 공개되면 available + url로 바꿉니다.
+    youtube: { status: "comingSoon" },
+    // 001–450, 18개 유닛 (PDF 목차·본문 단어 번호 기준)
+    itemCount: 450,
+    chapterCount: 18,
+    features: ["words", "sentences", "exam", "review"],
+    format: "PDF",
+    editions: {
+      en: {
+        slug: "topik-l06-study-guide",
+        language: "en",
+        messagesKey: "topikL06En",
+        file: "TOPIK_L06_Study_Guide.pdf",
+        downloadFileName: "Hangyul_TOPIK_L06_Study_Guide_EN.pdf",
+        // 실제 PDF 페이지 수 (표지·마지막 페이지 포함)
+        pageCount: 108,
       },
     },
   },

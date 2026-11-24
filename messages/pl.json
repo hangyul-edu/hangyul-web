@@ -245,6 +245,32 @@
             "body": "Powtarzaj każdy rozdział, sprawdzaj odpowiedzi i zaznaczaj na końcowej liście-ściądze słowa, które już pamiętasz."
           }
         }
+      },
+      "topikWords": {
+        "eyebrow": "Darmowe materiały do nauki",
+        "title": "Słownictwo TOPIK",
+        "statItems": "{count, plural, one {słowo egzaminacyjne} few {słowa egzaminacyjne} many {słów egzaminacyjnych} other {słowa egzaminacyjnego}}",
+        "statChapters": "{count, plural, one {rozdział} few {rozdziały} many {rozdziałów} other {rozdziału}}",
+        "whatsInsideIntro": "Wszystko, czego potrzebujesz, by nauczyć się słów z tego poziomu i ich nie zapomnieć.",
+        "closingBody": "Pobierz materiały za darmo i we własnym tempie przerabiaj kolejne rozdziały, powtórki i plan powtórek.",
+        "editionNotice": "Ten plik PDF jest w języku angielskim. Znaczenia słów, tłumaczenia przykładów i wskazówki dotyczące użycia są w całości napisane po angielsku.",
+        "features": {
+          "words": {
+            "title": "Słowa egzaminacyjne, rozdział po rozdziale"
+          },
+          "sentences": {
+            "title": "Autorski przykład do każdego słowa",
+            "body": "Przy każdym haśle znajdziesz koreański zapis, latynizację, część mowy i angielskie znaczenie, a także autorskie przykładowe zdanie z tłumaczeniem i – tam, gdzie to pomaga – krótką wskazówkę dotyczącą użycia."
+          },
+          "exam": {
+            "title": "Wybrane na podstawie dawnych arkuszy TOPIK",
+            "body": "Kolejność słów ustalono na podstawie 2035 zweryfikowanych pytań z 12 opublikowanych sesji TOPIK (2014–2025). Oznaczenia priorytetu, wskazówki egzaminacyjne, często mylone słowa i indeks częstości pokażą ci, na czym się skupić."
+          },
+          "review": {
+            "title": "Aktywne przypominanie + powtórki w odstępach",
+            "body": "Każdy rozdział kończy się pięcioczęściową powtórką i samosprawdzeniem. Sprawdź odpowiedzi w kluczu, a potem powtarzaj materiał według planu: w 1., 3., 7., 14. i 30. dniu."
+          }
+        }
       }
     },
     "resources": {
@@ -309,6 +335,84 @@
         },
         "seoTitle": "1000 koreańskich słów na co dzień – Darmowe materiały | Hangyul",
         "seoDescription": "Pobierz darmowe materiały Hangyul: 1000 przydatnych koreańskich słów, przykładowe zdanie do każdego, latynizacja, wskazówki, powtórki rozdziałów i lista kontrolna."
+      },
+      "topikL01En": {
+        "subtitle": "Poziom 1 · Podstawy dla początkujących",
+        "description": "Zacznij od 200 podstawowych słów dla początkujących, wybranych na podstawie dawnych arkuszy TOPIK. Osiem krótkich rozdziałów prowadzi od najważniejszych słów, takich jak 있다 i 하다, przez codzienne czynności, czas i rodzinę, po zakupy i wyjścia, a do każdego słowa dołączono autorski przykład.",
+        "topics": "200 słów w 8 rozdziałach: podstawowe słowa; codzienne czynności; opisywanie rzeczy; czas i dni; szkoła, praca i rozrywka; ludzie i rodzina; sklepy i jedzenie na mieście; miejsca i wyjścia.",
+        "closingTitle": "Miej wszystkie 200 słów z poziomu 1 zawsze przy sobie",
+        "coverAlt": "Okładka materiałów do nauki Hangyul „Słownictwo TOPIK. Poziom 1 · Podstawy dla początkujących” (토픽 필수 어휘 1단계), TOPIK Vocabulary Mastery, wydanie angielskie",
+        "previews": {
+          "chapter": "Przykładowa strona z rozdziału 1, Podstawowe słowa: przy każdym słowie podano koreański zapis, latynizację, oznaczenie priorytetu, część mowy, angielskie znaczenie, przykładowe zdanie z tłumaczeniem i wskazówkę dotyczącą użycia",
+          "review": "Powtórka rozdziału 1, Podstawowe słowa: pięć ćwiczeń – co to znaczy, powiedz to po koreańsku, uzupełnij zdanie, wybierz najlepsze słowo i dopasuj słowa do znaczeń – a po nich samosprawdzenie"
+        },
+        "seoTitle": "Słownictwo TOPIK, poziom 1: podstawy dla początkujących – darmowy PDF | Hangyul",
+        "seoDescription": "Darmowe materiały Hangyul: 200 słów TOPIK z poziomu 1 w 8 rozdziałach, autorskie przykłady, latynizacja, powtórki rozdziałów, plan powtórek i lista częstości."
+      },
+      "topikL02En": {
+        "subtitle": "Poziom 2 · Praktyka dla początkujących",
+        "description": "Rozwiń podstawy dzięki 250 praktycznym słowom dla początkujących, wybranym na podstawie dawnych arkuszy TOPIK. Dziesięć rozdziałów obejmuje powitania, czas i częstotliwość, poruszanie się po mieście, zdrowie, pory roku, hobby, zakupy i życie domowe, a do każdego słowa dołączono autorski przykład.",
+        "topics": "250 słów w 10 rozdziałach: powitania i rozmowa; kiedy i jak często; poruszanie się po mieście; pytania i określenia położenia; rodzina i zdrowie; pory roku i przyroda; hobby; ubrania i zakupy; posiłki i smaki; nauka i życie domowe.",
+        "closingTitle": "Miej wszystkie 250 słów z poziomu 2 zawsze przy sobie",
+        "coverAlt": "Okładka materiałów do nauki Hangyul „Słownictwo TOPIK. Poziom 2 · Praktyka dla początkujących” (토픽 필수 어휘 2단계), TOPIK Vocabulary Mastery, wydanie angielskie",
+        "previews": {
+          "chapter": "Przykładowa strona z rozdziału 1, Powitania i rozmowa: przy każdym słowie podano koreański zapis, latynizację, oznaczenie priorytetu, część mowy, angielskie znaczenie, przykładowe zdanie z tłumaczeniem i wskazówkę dotyczącą użycia",
+          "review": "Powtórka rozdziału 1, Powitania i rozmowa: pięć ćwiczeń – co to znaczy, powiedz to po koreańsku, uzupełnij zdanie, wybierz najlepsze słowo i dopasuj słowa do znaczeń – a po nich samosprawdzenie"
+        },
+        "seoTitle": "Słownictwo TOPIK, poziom 2: praktyka dla początkujących – darmowy PDF | Hangyul",
+        "seoDescription": "Darmowe materiały Hangyul: 250 słów TOPIK z poziomu 2 w 10 rozdziałach, autorskie przykłady, latynizacja, powtórki rozdziałów, plan powtórek i lista częstości."
+      },
+      "topikL03En": {
+        "subtitle": "Poziom 3 · Niższy średniozaawansowany",
+        "description": "Wejdź na poziom średniozaawansowany: 300 słów na niższym poziomie średniozaawansowanym, wybranych na podstawie dawnych arkuszy TOPIK. Dwanaście rozdziałów obejmuje przyczyny i tendencje, kluczowe wyrażenia do czytania, opinie, pracę, społeczeństwo, media i naukę, a do każdego słowa dołączono autorski przykład.",
+        "topics": "300 słów w 12 rozdziałach – od przyczyn, skutków i tendencji, kluczowych wyrażeń do czytania oraz opinii i komunikacji po gospodarkę i pracę, społeczeństwo i bezpieczeństwo, media i kulturę oraz naukę i przyrodę.",
+        "closingTitle": "Miej wszystkie 300 słów z poziomu 3 zawsze przy sobie",
+        "coverAlt": "Okładka materiałów do nauki Hangyul „Słownictwo TOPIK. Poziom 3 · Niższy średniozaawansowany” (토픽 필수 어휘 3단계), TOPIK Vocabulary Mastery, wydanie angielskie",
+        "previews": {
+          "chapter": "Przykładowa strona z rozdziału 1, Przyczyny, skutki i tendencje: przy każdym słowie podano koreański zapis, latynizację, oznaczenie priorytetu, część mowy, angielskie znaczenie, przykładowe zdanie z tłumaczeniem i wskazówkę dotyczącą użycia",
+          "review": "Powtórka rozdziału 1, Przyczyny, skutki i tendencje: pięć ćwiczeń – co to znaczy, powiedz to po koreańsku, uzupełnij zdanie, wybierz najlepsze słowo i dopasuj słowa do znaczeń – a po nich samosprawdzenie"
+        },
+        "seoTitle": "Słownictwo TOPIK, poziom 3: niższy średniozaawansowany – darmowy PDF | Hangyul",
+        "seoDescription": "Darmowe materiały Hangyul: 300 słów TOPIK z poziomu 3 w 12 rozdziałach, autorskie przykłady, latynizacja, powtórki rozdziałów, plan powtórek i lista częstości."
+      },
+      "topikL04En": {
+        "subtitle": "Poziom 4 · Średniozaawansowany",
+        "description": "Wzmocnij swój średniozaawansowany koreański dzięki 350 słowom wybranym na podstawie dawnych arkuszy TOPIK. Czternaście rozdziałów obejmuje charakter i osąd, życie społeczności, media i sztukę, naukę i zdrowie, emocje, zawody i gospodarkę oraz słowa łączące, a do każdego słowa dołączono autorski przykład.",
+        "topics": "350 słów w 14 rozdziałach – od codziennych spraw, ludzi i charakteru oraz osądu i oceny po media i sztukę, emocje i psychikę, zawody i gospodarkę oraz słowa łączące i określenia ilości.",
+        "closingTitle": "Miej wszystkie 350 słów z poziomu 4 zawsze przy sobie",
+        "coverAlt": "Okładka materiałów do nauki Hangyul „Słownictwo TOPIK. Poziom 4 · Średniozaawansowany” (토픽 필수 어휘 4단계), TOPIK Vocabulary Mastery, wydanie angielskie",
+        "previews": {
+          "chapter": "Przykładowa strona z rozdziału 1, Codzienne sprawy: przy każdym słowie podano koreański zapis, latynizację, oznaczenie priorytetu, część mowy, angielskie znaczenie, przykładowe zdanie z tłumaczeniem i wskazówkę dotyczącą użycia",
+          "review": "Powtórka rozdziału 1, Codzienne sprawy: pięć ćwiczeń – co to znaczy, powiedz to po koreańsku, uzupełnij zdanie, wybierz najlepsze słowo i dopasuj słowa do znaczeń – a po nich samosprawdzenie"
+        },
+        "seoTitle": "Słownictwo TOPIK, poziom 4: średniozaawansowany – darmowy PDF | Hangyul",
+        "seoDescription": "Darmowe materiały Hangyul: 350 słów TOPIK z poziomu 4 w 14 rozdziałach, autorskie przykłady, latynizacja, powtórki rozdziałów, plan powtórek i lista częstości."
+      },
+      "topikL05En": {
+        "subtitle": "Poziom 5 · Wyższy średniozaawansowany",
+        "description": "Zmierz się z koreańskim na wyższym poziomie średniozaawansowanym: 400 słów wybranych na podstawie dawnych arkuszy TOPIK. Szesnaście rozdziałów obejmuje budowanie argumentacji, rząd i politykę publiczną, gospodarkę i przemysł, media, naukę, środowisko i dziedzictwo, a do każdego słowa dołączono autorski przykład.",
+        "topics": "400 słów w 16 rozdziałach – od przyczyn i rozwiązań, budowania argumentacji oraz rządu i polityki publicznej po gospodarkę i przemysł, naukę i technologię, bezpieczeństwo i środowisko oraz sztukę i dziedzictwo.",
+        "closingTitle": "Miej wszystkie 400 słów z poziomu 5 zawsze przy sobie",
+        "coverAlt": "Okładka materiałów do nauki Hangyul „Słownictwo TOPIK. Poziom 5 · Wyższy średniozaawansowany” (토픽 필수 어휘 5단계), TOPIK Vocabulary Mastery, wydanie angielskie",
+        "previews": {
+          "chapter": "Przykładowa strona z rozdziału 1, Przyczyny i rozwiązania: przy każdym słowie podano koreański zapis, latynizację, oznaczenie priorytetu, część mowy, angielskie znaczenie, przykładowe zdanie z tłumaczeniem i wskazówkę dotyczącą użycia",
+          "review": "Powtórka rozdziału 1, Przyczyny i rozwiązania: pięć ćwiczeń – co to znaczy, powiedz to po koreańsku, uzupełnij zdanie, wybierz najlepsze słowo i dopasuj słowa do znaczeń – a po nich samosprawdzenie"
+        },
+        "seoTitle": "Słownictwo TOPIK, poziom 5: wyższy średniozaawansowany – darmowy PDF | Hangyul",
+        "seoDescription": "Darmowe materiały Hangyul: 400 słów TOPIK z poziomu 5 w 16 rozdziałach, autorskie przykłady, latynizacja, powtórki rozdziałów, plan powtórek i lista częstości."
+      },
+      "topikL06En": {
+        "subtitle": "Poziom 6 · Zaawansowany",
+        "description": "Zakończ serię 450 słowami na poziomie zaawansowanym, wybranymi na podstawie dawnych arkuszy TOPIK. Osiemnaście rozdziałów obejmuje prawo i politykę, technologię, gospodarkę, historię, karierę, media, dokumenty biurowe oraz logikę i debatę, a do każdego słowa dołączono autorski przykład.",
+        "topics": "450 słów w 18 rozdziałach – od nauki i pomiarów, prawa i polityki oraz technologii i życia cyfrowego po historię i dziedzictwo, karierę i talenty, biuro i dokumenty oraz logikę i debatę.",
+        "closingTitle": "Miej wszystkie 450 słów z poziomu 6 zawsze przy sobie",
+        "coverAlt": "Okładka materiałów do nauki Hangyul „Słownictwo TOPIK. Poziom 6 · Zaawansowany” (토픽 필수 어휘 6단계), TOPIK Vocabulary Mastery, wydanie angielskie",
+        "previews": {
+          "chapter": "Przykładowa strona z rozdziału 1, Nauka i pomiary: przy każdym słowie podano koreański zapis, latynizację, oznaczenie priorytetu, część mowy, angielskie znaczenie, przykładowe zdanie z tłumaczeniem i wskazówkę dotyczącą użycia",
+          "review": "Powtórka rozdziału 1, Nauka i pomiary: pięć ćwiczeń – co to znaczy, powiedz to po koreańsku, uzupełnij zdanie, wybierz najlepsze słowo i dopasuj słowa do znaczeń – a po nich samosprawdzenie"
+        },
+        "seoTitle": "Słownictwo TOPIK, poziom 6: zaawansowany – darmowy PDF | Hangyul",
+        "seoDescription": "Darmowe materiały Hangyul: 450 słów TOPIK z poziomu 6 w 18 rozdziałach, autorskie przykłady, latynizacja, powtórki rozdziałów, plan powtórek i lista częstości."
       }
     },
     "index": {

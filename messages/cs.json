@@ -245,6 +245,32 @@
             "body": "Zopakujte si každou kapitolu, zkontrolujte si řešení a v závěrečném rychlém přehledu si odškrtávejte, co už umíte."
           }
         }
+      },
+      "topikWords": {
+        "eyebrow": "Studijní materiál zdarma",
+        "title": "Slovní zásoba TOPIK",
+        "statItems": "{count, plural, one {slovo ke zkoušce} few {slova ke zkoušce} many {slova ke zkoušce} other {slov ke zkoušce}}",
+        "statChapters": "{count, plural, one {kapitola} few {kapitoly} many {kapitoly} other {kapitol}}",
+        "whatsInsideIntro": "Vše, co potřebujete, abyste se slova této úrovně naučili a zapamatovali si je.",
+        "closingBody": "Stáhněte si materiál zdarma a vlastním tempem procházejte kapitoly, opakovací cvičení i plán opakování.",
+        "editionNotice": "Toto PDF je v angličtině. Významy slov, překlady příkladů i poznámky k použití jsou psané anglicky.",
+        "features": {
+          "words": {
+            "title": "Slova ke zkoušce, kapitolu po kapitole"
+          },
+          "sentences": {
+            "title": "Původní příklad ke každému slovu",
+            "body": "U každého hesla najdete korejský zápis, přepis do latinky, slovní druh a anglický význam, k tomu původní příkladovou větu s překladem, a kde to pomůže, i krátkou poznámku k použití."
+          },
+          "exam": {
+            "title": "Vybráno z dřívějších testů TOPIK",
+            "body": "Pořadí slov vychází z 2035 ověřených úloh z 12 zveřejněných kol TOPIK (2014–2025). Označení priority, postřehy ke zkoušce, často zaměňovaná slova a frekvenční rejstřík vám ukážou, na co se zaměřit."
+          },
+          "review": {
+            "title": "Aktivní vybavování + opakování v intervalech",
+            "body": "Každá kapitola končí pětidílným opakováním a sebehodnocením. Odpovědi si zkontrolujte v klíči a pak opakujte podle plánu: 1., 3., 7., 14. a 30. den."
+          }
+        }
       }
     },
     "resources": {
@@ -309,6 +335,84 @@
         },
         "seoTitle": "1000 korejských slov pro každý den – materiál zdarma | Hangyul",
         "seoDescription": "Stáhněte si zdarma materiál Hangyul: 1000 užitečných korejských slov, příkladová věta ke každému slovu, přepis do latinky, poznámky, opakování a kontrolní seznam."
+      },
+      "topikL01En": {
+        "subtitle": "Úroveň 1 · Základy pro začátečníky",
+        "description": "Začněte 200 základními slovy pro začátečníky vybranými z dřívějších testů TOPIK. Osm krátkých kapitol vás provede od nejdůležitějších slov jako 있다 a 하다 přes každodenní činnosti, čas a rodinu až po nakupování a výlety a ke každému slovu najdete původní příklad.",
+        "topics": "200 slov v 8 kapitolách: základní slova; každodenní činnosti; popis věcí; čas a dny; škola, práce a zábava; lidé a rodina; obchody a jídlo venku; místa a výlety.",
+        "closingTitle": "Mějte všech 200 slov úrovně 1 vždy po ruce",
+        "coverAlt": "Obálka studijního materiálu Hangyul „Slovní zásoba TOPIK, úroveň 1 · Základy pro začátečníky“ (토픽 필수 어휘 1단계), TOPIK Vocabulary Mastery, anglická verze",
+        "previews": {
+          "chapter": "Ukázková strana z kapitoly 1 (Základní slova): u každého slova je korejský zápis, přepis, označení priority, slovní druh, anglický význam, příkladová věta s překladem a poznámka k použití",
+          "review": "Opakování kapitoly 1 (Základní slova): pět cvičení – „Co to znamená?“, „Řekněte to korejsky“, „Doplňte větu“, „Vyberte nejvhodnější slovo“ a „Přiřaďte slova k významům“ – a po nich sebehodnocení"
+        },
+        "seoTitle": "Slovní zásoba TOPIK, úroveň 1: základy pro začátečníky – PDF zdarma | Hangyul",
+        "seoDescription": "Studijní materiál Hangyul zdarma: 200 slov TOPIK úrovně 1 v 8 kapitolách, původní příkladové věty, přepis, opakování kapitol, plán opakování a frekvenční seznam."
+      },
+      "topikL02En": {
+        "subtitle": "Úroveň 2 · Praxe pro začátečníky",
+        "description": "Rozšiřte základy o 250 praktických slov pro začátečníky vybraných z dřívějších testů TOPIK. Deset kapitol zahrnuje pozdravy, čas a četnost, pohyb po městě, zdraví, roční období, koníčky, nakupování a domácnost a ke každému slovu najdete původní příklad.",
+        "topics": "250 slov v 10 kapitolách: pozdravy a rozhovor; kdy a jak často; pohyb po městě; tázací slova a určení polohy; rodina a zdraví; roční období a příroda; koníčky; oblečení a nakupování; jídlo a chutě; studium a domácnost.",
+        "closingTitle": "Mějte všech 250 slov úrovně 2 vždy po ruce",
+        "coverAlt": "Obálka studijního materiálu Hangyul „Slovní zásoba TOPIK, úroveň 2 · Praxe pro začátečníky“ (토픽 필수 어휘 2단계), TOPIK Vocabulary Mastery, anglická verze",
+        "previews": {
+          "chapter": "Ukázková strana z kapitoly 1 (Pozdravy a rozhovor): u každého slova je korejský zápis, přepis, označení priority, slovní druh, anglický význam, příkladová věta s překladem a poznámka k použití",
+          "review": "Opakování kapitoly 1 (Pozdravy a rozhovor): pět cvičení – „Co to znamená?“, „Řekněte to korejsky“, „Doplňte větu“, „Vyberte nejvhodnější slovo“ a „Přiřaďte slova k významům“ – a po nich sebehodnocení"
+        },
+        "seoTitle": "Slovní zásoba TOPIK, úroveň 2: praxe pro začátečníky – PDF zdarma | Hangyul",
+        "seoDescription": "Studijní materiál Hangyul zdarma: 250 slov TOPIK úrovně 2 v 10 kapitolách, původní příkladové věty, přepis, opakování kapitol, plán opakování a frekvenční seznam."
+      },
+      "topikL03En": {
+        "subtitle": "Úroveň 3 · Nižší středně pokročilí",
+        "description": "Vstupte do středně pokročilé korejštiny s 300 slovy pro nižší středně pokročilé vybranými z dřívějších testů TOPIK. Dvanáct kapitol zahrnuje příčiny a trendy, klíčové výrazy pro čtení, názory, práci, společnost, média a vědu a ke každému slovu najdete původní příklad.",
+        "topics": "300 slov ve 12 kapitolách: od příčin, následků a trendů, klíčových výrazů pro čtení či názorů a komunikace až po ekonomiku a práci, společnost a bezpečnost, média a kulturu nebo vědu a přírodu.",
+        "closingTitle": "Mějte všech 300 slov úrovně 3 vždy po ruce",
+        "coverAlt": "Obálka studijního materiálu Hangyul „Slovní zásoba TOPIK, úroveň 3 · Nižší středně pokročilí“ (토픽 필수 어휘 3단계), TOPIK Vocabulary Mastery, anglická verze",
+        "previews": {
+          "chapter": "Ukázková strana z kapitoly 1 (Příčiny, následky a trendy): u každého slova je korejský zápis, přepis, označení priority, slovní druh, anglický význam, příkladová věta s překladem a poznámka k použití",
+          "review": "Opakování kapitoly 1 (Příčiny, následky a trendy): pět cvičení – „Co to znamená?“, „Řekněte to korejsky“, „Doplňte větu“, „Vyberte nejvhodnější slovo“ a „Přiřaďte slova k významům“ – a po nich sebehodnocení"
+        },
+        "seoTitle": "Slovní zásoba TOPIK, úroveň 3: nižší středně pokročilí – PDF zdarma | Hangyul",
+        "seoDescription": "Studijní materiál Hangyul zdarma: 300 slov TOPIK úrovně 3 ve 12 kapitolách, původní příkladové věty, přepis, opakování kapitol, plán opakování a frekvenční seznam."
+      },
+      "topikL04En": {
+        "subtitle": "Úroveň 4 · Středně pokročilí",
+        "description": "Upevněte svou středně pokročilou korejštinu s 350 slovy vybranými z dřívějších testů TOPIK. Čtrnáct kapitol zahrnuje povahu a úsudek, život komunity, média a umění, vědu a zdraví, emoce, profese a ekonomiku i spojovací výrazy; ke každému slovu najdete původní příklad.",
+        "topics": "350 slov ve 14 kapitolách: od každodenních úkolů, lidí a povahy či úsudku a hodnocení až po média a umění, emoce a mysl, profese a ekonomiku nebo spojovací výrazy a výrazy množství.",
+        "closingTitle": "Mějte všech 350 slov úrovně 4 vždy po ruce",
+        "coverAlt": "Obálka studijního materiálu Hangyul „Slovní zásoba TOPIK, úroveň 4 · Středně pokročilí“ (토픽 필수 어휘 4단계), TOPIK Vocabulary Mastery, anglická verze",
+        "previews": {
+          "chapter": "Ukázková strana z kapitoly 1 (Každodenní úkoly): u každého slova je korejský zápis, přepis, označení priority, slovní druh, anglický význam, příkladová věta s překladem a poznámka k použití",
+          "review": "Opakování kapitoly 1 (Každodenní úkoly): pět cvičení – „Co to znamená?“, „Řekněte to korejsky“, „Doplňte větu“, „Vyberte nejvhodnější slovo“ a „Přiřaďte slova k významům“ – a po nich sebehodnocení"
+        },
+        "seoTitle": "Slovní zásoba TOPIK, úroveň 4: středně pokročilí – PDF zdarma | Hangyul",
+        "seoDescription": "Studijní materiál Hangyul zdarma: 350 slov TOPIK úrovně 4 v 14 kapitolách, původní příkladové věty, přepis, opakování kapitol, plán opakování a frekvenční seznam."
+      },
+      "topikL05En": {
+        "subtitle": "Úroveň 5 · Vyšší středně pokročilí",
+        "description": "Pusťte se do vyšší středně pokročilé korejštiny se 400 slovy vybranými z dřívějších testů TOPIK. Šestnáct kapitol zahrnuje argumentaci, státní správu a politiku, ekonomiku a průmysl, média, vědu, životní prostředí a kulturní dědictví a ke každému slovu najdete původní příklad.",
+        "topics": "400 slov v 16 kapitolách: od příčin a řešení, argumentace či státní správy a politiky až po ekonomiku a průmysl, vědu a techniku, bezpečnost a životní prostředí nebo umění a dědictví.",
+        "closingTitle": "Mějte všech 400 slov úrovně 5 vždy po ruce",
+        "coverAlt": "Obálka studijního materiálu Hangyul „Slovní zásoba TOPIK, úroveň 5 · Vyšší středně pokročilí“ (토픽 필수 어휘 5단계), TOPIK Vocabulary Mastery, anglická verze",
+        "previews": {
+          "chapter": "Ukázková strana z kapitoly 1 (Příčiny a řešení): u každého slova je korejský zápis, přepis, označení priority, slovní druh, anglický význam, příkladová věta s překladem a poznámka k použití",
+          "review": "Opakování kapitoly 1 (Příčiny a řešení): pět cvičení – „Co to znamená?“, „Řekněte to korejsky“, „Doplňte větu“, „Vyberte nejvhodnější slovo“ a „Přiřaďte slova k významům“ – a po nich sebehodnocení"
+        },
+        "seoTitle": "Slovní zásoba TOPIK, úroveň 5: vyšší středně pokročilí – PDF zdarma | Hangyul",
+        "seoDescription": "Studijní materiál Hangyul zdarma: 400 slov TOPIK úrovně 5 v 16 kapitolách, původní příkladové věty, přepis, opakování kapitol, plán opakování a frekvenční seznam."
+      },
+      "topikL06En": {
+        "subtitle": "Úroveň 6 · Pokročilí",
+        "description": "Dokončete sérii se 450 pokročilými slovy vybranými z dřívějších testů TOPIK. Osmnáct kapitol zahrnuje právo a politiku, technologie, ekonomiku, historii, kariéru, média, kancelářskou agendu i logiku a debatu; ke každému slovu najdete původní příklad.",
+        "topics": "450 slov v 18 kapitolách: od vědy a měření, práva a politiky či technologií a digitálního života až po historii a dědictví, kariéru a talent, kancelář a administrativu nebo logiku a debatu.",
+        "closingTitle": "Mějte všech 450 slov úrovně 6 vždy po ruce",
+        "coverAlt": "Obálka studijního materiálu Hangyul „Slovní zásoba TOPIK, úroveň 6 · Pokročilí“ (토픽 필수 어휘 6단계), TOPIK Vocabulary Mastery, anglická verze",
+        "previews": {
+          "chapter": "Ukázková strana z kapitoly 1 (Věda a měření): u každého slova je korejský zápis, přepis, označení priority, slovní druh, anglický význam, příkladová věta s překladem a poznámka k použití",
+          "review": "Opakování kapitoly 1 (Věda a měření): pět cvičení – „Co to znamená?“, „Řekněte to korejsky“, „Doplňte větu“, „Vyberte nejvhodnější slovo“ a „Přiřaďte slova k významům“ – a po nich sebehodnocení"
+        },
+        "seoTitle": "Slovní zásoba TOPIK, úroveň 6: pokročilí – PDF zdarma | Hangyul",
+        "seoDescription": "Studijní materiál Hangyul zdarma: 450 slov TOPIK úrovně 6 v 18 kapitolách, původní příkladové věty, přepis, opakování kapitol, plán opakování a frekvenční seznam."
       }
     },
     "index": {

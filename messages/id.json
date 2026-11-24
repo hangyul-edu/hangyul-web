@@ -245,6 +245,32 @@
             "body": "Ulangi setiap bab, cocokkan jawabanmu, lalu pakai daftar ringkas di bagian akhir untuk menandai kata yang sudah kamu ingat."
           }
         }
+      },
+      "topikWords": {
+        "eyebrow": "Panduan Belajar Gratis",
+        "title": "Kosakata Wajib TOPIK",
+        "statItems": "{count, plural, other {kosakata penting untuk ujian}}",
+        "statChapters": "{count, plural, other {unit}}",
+        "whatsInsideIntro": "Semua yang kamu perlukan untuk mempelajari kosakata di tingkat ini dan mengingatnya dalam jangka panjang.",
+        "closingBody": "Unduh panduannya gratis, lalu kerjakan setiap unit, latihan ulang, dan jadwal pengulangan sesuai kecepatanmu sendiri.",
+        "editionNotice": "PDF ini berbahasa Inggris. Arti kata, terjemahan contoh kalimat, dan catatan penggunaan semuanya ditulis dalam bahasa Inggris.",
+        "features": {
+          "words": {
+            "title": "Kosakata penting untuk ujian, unit demi unit"
+          },
+          "sentences": {
+            "title": "Contoh kalimat orisinal untuk setiap kata",
+            "body": "Setiap entri memuat kata Korea, romanisasi, kelas kata, dan arti bahasa Inggris, ditambah contoh kalimat orisinal beserta terjemahannya serta catatan penggunaan singkat bila membantu."
+          },
+          "exam": {
+            "title": "Dipilih dari soal-soal TOPIK terdahulu",
+            "body": "Kata-kata diurutkan berdasarkan 2.035 soal terverifikasi dari 12 putaran TOPIK yang telah dipublikasikan (2014–2025). Tanda prioritas, wawasan ujian, kata yang sering tertukar, dan indeks frekuensi menunjukkan bagian yang perlu kamu fokuskan."
+          },
+          "review": {
+            "title": "Mengingat aktif + pengulangan berjarak",
+            "body": "Setiap unit diakhiri dengan latihan ulang lima bagian dan cek mandiri. Cocokkan jawabanmu dengan kunci jawaban, lalu ikuti jadwal pengulangan pada Hari 1, 3, 7, 14, dan 30."
+          }
+        }
       }
     },
     "resources": {
@@ -309,6 +335,84 @@
         },
         "seoTitle": "1.000 Kosakata Bahasa Korea yang Pasti Kamu Pakai — Panduan Gratis | Hangyul",
         "seoDescription": "Unduh panduan gratis dari Hangyul berisi 1.000 kosakata bahasa Korea yang berguna, contoh kalimat untuk setiap kata, romanisasi, catatan penggunaan, dan daftar ringkas."
+      },
+      "topikL01En": {
+        "subtitle": "Tingkat 1 · Dasar Esensial",
+        "description": "Mulailah dengan 200 kosakata dasar esensial yang dipilih dari soal-soal TOPIK terdahulu. Delapan unit singkat membawamu dari kata inti seperti 있다 dan 하다 hingga kegiatan sehari-hari, waktu, keluarga, belanja, dan jalan-jalan, dengan contoh kalimat orisinal untuk setiap kata.",
+        "topics": "200 kata dalam 8 unit: kata inti, kegiatan sehari-hari, menggambarkan sesuatu, waktu dan hari, sekolah, kerja dan hiburan, orang dan keluarga, toko dan makan di luar, serta tempat dan jalan-jalan.",
+        "closingTitle": "Bawa 200 kosakata Tingkat 1 ini ke mana pun",
+        "coverAlt": "Sampul panduan belajar Hangyul “Kosakata Wajib TOPIK Tingkat 1 · Dasar Esensial” (토픽 필수 어휘 1단계), TOPIK Vocabulary Mastery, edisi bahasa Inggris",
+        "previews": {
+          "chapter": "Contoh halaman dari Unit 1, Kata Inti: setiap kata menampilkan tulisan Korea, romanisasi, tanda prioritas, kelas kata, arti bahasa Inggris, contoh kalimat beserta terjemahan, dan catatan penggunaan",
+          "review": "Latihan ulang Unit 1, Kata Inti: lima latihan — apa artinya, ucapkan dalam bahasa Korea, lengkapi kalimat, pilih kata yang paling tepat, dan pasangkan kata dengan artinya — lalu diakhiri cek mandiri"
+        },
+        "seoTitle": "Kosakata Wajib TOPIK Tingkat 1: Dasar Esensial — PDF Gratis | Hangyul",
+        "seoDescription": "Panduan gratis Hangyul: 200 kosakata TOPIK dasar esensial dalam 8 unit, dengan contoh orisinal, romanisasi, latihan per unit, jadwal pengulangan berjarak, dan daftar frekuensi."
+      },
+      "topikL02En": {
+        "subtitle": "Tingkat 2 · Dasar Praktis",
+        "description": "Perluas dasar bahasa Koreamu dengan 250 kosakata dasar praktis yang dipilih dari soal-soal TOPIK terdahulu. Sepuluh unit membahas salam, waktu dan frekuensi, bepergian di kota, kesehatan, musim, hobi, belanja, dan kehidupan di rumah, dengan contoh kalimat orisinal untuk setiap kata.",
+        "topics": "250 kata dalam 10 unit: salam dan percakapan, kapan dan seberapa sering, bepergian di kota, kata tanya dan kata posisi, keluarga dan kesehatan, musim dan alam, hobi, pakaian dan belanja, makanan dan rasa, serta belajar dan kehidupan di rumah.",
+        "closingTitle": "Bawa 250 kosakata Tingkat 2 ini ke mana pun",
+        "coverAlt": "Sampul panduan belajar Hangyul “Kosakata Wajib TOPIK Tingkat 2 · Dasar Praktis” (토픽 필수 어휘 2단계), TOPIK Vocabulary Mastery, edisi bahasa Inggris",
+        "previews": {
+          "chapter": "Contoh halaman dari Unit 1, Salam dan Percakapan: setiap kata menampilkan tulisan Korea, romanisasi, tanda prioritas, kelas kata, arti bahasa Inggris, contoh kalimat beserta terjemahan, dan catatan penggunaan",
+          "review": "Latihan ulang Unit 1, Salam dan Percakapan: lima latihan — apa artinya, ucapkan dalam bahasa Korea, lengkapi kalimat, pilih kata yang paling tepat, dan pasangkan kata dengan artinya — lalu diakhiri cek mandiri"
+        },
+        "seoTitle": "Kosakata Wajib TOPIK Tingkat 2: Dasar Praktis — PDF Gratis | Hangyul",
+        "seoDescription": "Panduan gratis Hangyul: 250 kosakata TOPIK dasar praktis dalam 10 unit, dengan contoh orisinal, romanisasi, latihan per unit, jadwal pengulangan berjarak, dan daftar frekuensi."
+      },
+      "topikL03En": {
+        "subtitle": "Tingkat 3 · Pra-Menengah",
+        "description": "Melangkahlah ke bahasa Korea tingkat menengah dengan 300 kosakata pra-menengah yang dipilih dari soal-soal TOPIK terdahulu. Dua belas unit membahas sebab dan tren, ungkapan kunci untuk membaca, pendapat, pekerjaan, masyarakat, media, dan sains, dengan contoh kalimat orisinal untuk setiap kata.",
+        "topics": "300 kata dalam 12 unit, mulai dari sebab, akibat, dan tren, ungkapan kunci untuk membaca, serta pendapat dan komunikasi hingga ekonomi dan pekerjaan, masyarakat dan keselamatan, media dan budaya, serta sains dan alam.",
+        "closingTitle": "Bawa 300 kosakata Tingkat 3 ini ke mana pun",
+        "coverAlt": "Sampul panduan belajar Hangyul “Kosakata Wajib TOPIK Tingkat 3 · Pra-Menengah” (토픽 필수 어휘 3단계), TOPIK Vocabulary Mastery, edisi bahasa Inggris",
+        "previews": {
+          "chapter": "Contoh halaman dari Unit 1, Sebab, Akibat, dan Tren: setiap kata menampilkan tulisan Korea, romanisasi, tanda prioritas, kelas kata, arti bahasa Inggris, contoh kalimat beserta terjemahan, dan catatan penggunaan",
+          "review": "Latihan ulang Unit 1, Sebab, Akibat, dan Tren: lima latihan — apa artinya, ucapkan dalam bahasa Korea, lengkapi kalimat, pilih kata yang paling tepat, dan pasangkan kata dengan artinya — lalu diakhiri cek mandiri"
+        },
+        "seoTitle": "Kosakata Wajib TOPIK Tingkat 3: Pra-Menengah — PDF Gratis | Hangyul",
+        "seoDescription": "Panduan gratis Hangyul: 300 kosakata TOPIK pra-menengah dalam 12 unit, dengan contoh orisinal, romanisasi, latihan per unit, jadwal pengulangan berjarak, dan daftar frekuensi."
+      },
+      "topikL04En": {
+        "subtitle": "Tingkat 4 · Menengah",
+        "description": "Mantapkan bahasa Korea tingkat menengahmu dengan 350 kosakata yang dipilih dari soal-soal TOPIK terdahulu. Empat belas unit membahas karakter dan penilaian, komunitas, media dan seni, sains dan kesehatan, emosi, pekerjaan dan ekonomi, serta kata penghubung, dengan contoh kalimat orisinal untuk setiap kata.",
+        "topics": "350 kata dalam 14 unit, mulai dari urusan sehari-hari, orang dan karakter, serta penilaian dan evaluasi hingga media dan seni, emosi dan pikiran, pekerjaan dan ekonomi, serta kata penghubung dan kata jumlah.",
+        "closingTitle": "Bawa 350 kosakata Tingkat 4 ini ke mana pun",
+        "coverAlt": "Sampul panduan belajar Hangyul “Kosakata Wajib TOPIK Tingkat 4 · Menengah” (토픽 필수 어휘 4단계), TOPIK Vocabulary Mastery, edisi bahasa Inggris",
+        "previews": {
+          "chapter": "Contoh halaman dari Unit 1, Urusan Sehari-hari: setiap kata menampilkan tulisan Korea, romanisasi, tanda prioritas, kelas kata, arti bahasa Inggris, contoh kalimat beserta terjemahan, dan catatan penggunaan",
+          "review": "Latihan ulang Unit 1, Urusan Sehari-hari: lima latihan — apa artinya, ucapkan dalam bahasa Korea, lengkapi kalimat, pilih kata yang paling tepat, dan pasangkan kata dengan artinya — lalu diakhiri cek mandiri"
+        },
+        "seoTitle": "Kosakata Wajib TOPIK Tingkat 4: Menengah — PDF Gratis | Hangyul",
+        "seoDescription": "Panduan gratis Hangyul: 350 kosakata TOPIK menengah dalam 14 unit, dengan contoh orisinal, romanisasi, latihan per unit, jadwal pengulangan berjarak, dan daftar frekuensi."
+      },
+      "topikL05En": {
+        "subtitle": "Tingkat 5 · Menengah Atas",
+        "description": "Hadapi bahasa Korea tingkat menengah atas dengan 400 kosakata yang dipilih dari soal-soal TOPIK terdahulu. Enam belas unit membahas cara menyusun argumen, pemerintahan dan kebijakan, ekonomi dan industri, media, sains, lingkungan, dan warisan budaya, dengan contoh kalimat orisinal untuk setiap kata.",
+        "topics": "400 kata dalam 16 unit, mulai dari sebab dan solusi, menyusun argumen, serta pemerintahan dan kebijakan hingga ekonomi dan industri, sains dan teknologi, keselamatan dan lingkungan, serta seni dan warisan budaya.",
+        "closingTitle": "Bawa 400 kosakata Tingkat 5 ini ke mana pun",
+        "coverAlt": "Sampul panduan belajar Hangyul “Kosakata Wajib TOPIK Tingkat 5 · Menengah Atas” (토픽 필수 어휘 5단계), TOPIK Vocabulary Mastery, edisi bahasa Inggris",
+        "previews": {
+          "chapter": "Contoh halaman dari Unit 1, Sebab dan Solusi: setiap kata menampilkan tulisan Korea, romanisasi, tanda prioritas, kelas kata, arti bahasa Inggris, contoh kalimat beserta terjemahan, dan catatan penggunaan",
+          "review": "Latihan ulang Unit 1, Sebab dan Solusi: lima latihan — apa artinya, ucapkan dalam bahasa Korea, lengkapi kalimat, pilih kata yang paling tepat, dan pasangkan kata dengan artinya — lalu diakhiri cek mandiri"
+        },
+        "seoTitle": "Kosakata Wajib TOPIK Tingkat 5: Menengah Atas — PDF Gratis | Hangyul",
+        "seoDescription": "Panduan gratis Hangyul: 400 kosakata TOPIK menengah atas dalam 16 unit, dengan contoh orisinal, romanisasi, latihan per unit, jadwal pengulangan berjarak, dan daftar frekuensi."
+      },
+      "topikL06En": {
+        "subtitle": "Tingkat 6 · Mahir",
+        "description": "Tuntaskan seri ini dengan 450 kosakata tingkat mahir yang dipilih dari soal-soal TOPIK terdahulu. Delapan belas unit membahas hukum dan politik, teknologi, ekonomi, sejarah, karier, media, administrasi kantor, serta logika dan debat, dengan contoh kalimat orisinal untuk setiap kata.",
+        "topics": "450 kata dalam 18 unit, mulai dari sains dan pengukuran, hukum dan politik, serta teknologi dan kehidupan digital hingga sejarah dan warisan budaya, karier dan bakat, kantor dan administrasi, serta logika dan debat.",
+        "closingTitle": "Bawa 450 kosakata Tingkat 6 ini ke mana pun",
+        "coverAlt": "Sampul panduan belajar Hangyul “Kosakata Wajib TOPIK Tingkat 6 · Mahir” (토픽 필수 어휘 6단계), TOPIK Vocabulary Mastery, edisi bahasa Inggris",
+        "previews": {
+          "chapter": "Contoh halaman dari Unit 1, Sains dan Pengukuran: setiap kata menampilkan tulisan Korea, romanisasi, tanda prioritas, kelas kata, arti bahasa Inggris, contoh kalimat beserta terjemahan, dan catatan penggunaan",
+          "review": "Latihan ulang Unit 1, Sains dan Pengukuran: lima latihan — apa artinya, ucapkan dalam bahasa Korea, lengkapi kalimat, pilih kata yang paling tepat, dan pasangkan kata dengan artinya — lalu diakhiri cek mandiri"
+        },
+        "seoTitle": "Kosakata Wajib TOPIK Tingkat 6: Mahir — PDF Gratis | Hangyul",
+        "seoDescription": "Panduan gratis Hangyul: 450 kosakata TOPIK mahir dalam 18 unit, dengan contoh orisinal, romanisasi, latihan per unit, jadwal pengulangan berjarak, dan daftar frekuensi."
       }
     },
     "index": {

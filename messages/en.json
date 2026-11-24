@@ -245,6 +245,32 @@
             "body": "Review every chapter, check your answers, and use the final quick-reference checklist to track what you remember."
           }
         }
+      },
+      "topikWords": {
+        "eyebrow": "Free Study Guide",
+        "title": "TOPIK Korean Words",
+        "statItems": "{count, plural, one {exam-relevant word} other {exam-relevant words}}",
+        "statChapters": "{count, plural, one {unit} other {units}}",
+        "whatsInsideIntro": "Everything you need to learn this level’s words and keep them.",
+        "closingBody": "Download the guide free and work through each unit, review and planner at your own pace.",
+        "editionNotice": "This PDF is in English. Word meanings, example translations and usage notes are all written in English.",
+        "features": {
+          "words": {
+            "title": "Exam-relevant words, unit by unit"
+          },
+          "sentences": {
+            "title": "An original example for every word",
+            "body": "Each entry gives the Korean word, romanization, part of speech and English meaning, plus an original example sentence with its translation and, where it helps, a short usage note."
+          },
+          "exam": {
+            "title": "Selected from past TOPIK papers",
+            "body": "Words are ranked using 2,035 verified questions from 12 published TOPIK rounds (2014–2025). Priority marks, exam insights, commonly confused words and a frequency index show you where to focus."
+          },
+          "review": {
+            "title": "Active recall + spaced review",
+            "body": "Every unit ends with a five-part review and a self-check. Check your answers in the answer key, then follow the Day 1, 3, 7, 14 and 30 review planner."
+          }
+        }
       }
     },
     "resources": {
@@ -309,6 +335,84 @@
         },
         "seoTitle": "1,000 Korean Words You’ll Actually Use – Free Vocabulary Guide | Hangyul",
         "seoDescription": "Download a free Hangyul guide with 1,000 useful Korean words, an example sentence for every word, romanization, usage notes, chapter reviews and a checklist."
+      },
+      "topikL01En": {
+        "subtitle": "Level 1 · Essential Beginner",
+        "description": "Start with 200 essential beginner words selected from past TOPIK papers. Eight short units take you from core words like 있다 and 하다 to everyday actions, time, family, shopping and outings, with an original example for every word.",
+        "topics": "200 words in 8 units: core words, everyday actions, describing things, time and days, school, work and fun, people and family, shops and eating out, and places and outings.",
+        "closingTitle": "Keep all 200 Level 1 words with you",
+        "coverAlt": "Cover of the Hangyul study guide “TOPIK Korean Words Level 1 · Essential Beginner” (토픽 필수 어휘 1단계), TOPIK Vocabulary Mastery, English edition",
+        "previews": {
+          "chapter": "Sample page from Unit 1, Core Words: each word shows Korean, romanization, a priority mark, part of speech, the English meaning, an example sentence with translation and a usage note",
+          "review": "Unit 1 review for Core Words: five exercises — what does it mean, say it in Korean, complete the sentence, choose the best word, and match each word to its meaning — followed by a self-check"
+        },
+        "seoTitle": "TOPIK Korean Words Level 1: Essential Beginner – Free PDF | Hangyul",
+        "seoDescription": "Free Hangyul study guide with 200 essential beginner TOPIK words in 8 units: original example sentences, romanization, unit reviews, a spaced review planner and a frequency checklist."
+      },
+      "topikL02En": {
+        "subtitle": "Level 2 · Practical Beginner",
+        "description": "Build on the basics with 250 practical beginner words selected from past TOPIK papers. Ten units cover greetings, time and frequency, getting around town, health, seasons, hobbies, shopping and home life, with an original example for every word.",
+        "topics": "250 words in 10 units: greetings and talking, when and how often, getting around town, questions and position words, family and health, seasons and nature, hobbies, clothes and shopping, meals and flavors, and study and home life.",
+        "closingTitle": "Keep all 250 Level 2 words with you",
+        "coverAlt": "Cover of the Hangyul study guide “TOPIK Korean Words Level 2 · Practical Beginner” (토픽 필수 어휘 2단계), TOPIK Vocabulary Mastery, English edition",
+        "previews": {
+          "chapter": "Sample page from Unit 1, Greetings and Talking: each word shows Korean, romanization, a priority mark, part of speech, the English meaning, an example sentence with translation and a usage note",
+          "review": "Unit 1 review for Greetings and Talking: five exercises — what does it mean, say it in Korean, complete the sentence, choose the best word, and match each word to its meaning — followed by a self-check"
+        },
+        "seoTitle": "TOPIK Korean Words Level 2: Practical Beginner – Free PDF | Hangyul",
+        "seoDescription": "Free Hangyul study guide with 250 practical beginner TOPIK words in 10 units: original example sentences, romanization, unit reviews, a spaced review planner and a frequency checklist."
+      },
+      "topikL03En": {
+        "subtitle": "Level 3 · Lower-Intermediate",
+        "description": "Move into intermediate Korean with 300 lower-intermediate words selected from past TOPIK papers. Twelve units cover causes and trends, key expressions for reading, opinions, work, society, media and science, with an original example for every word.",
+        "topics": "300 words in 12 units, from causes, effects and trends, key expressions for reading, and opinions and communication to economy and work, society and safety, media and culture, and science and nature.",
+        "closingTitle": "Keep all 300 Level 3 words with you",
+        "coverAlt": "Cover of the Hangyul study guide “TOPIK Korean Words Level 3 · Lower-Intermediate” (토픽 필수 어휘 3단계), TOPIK Vocabulary Mastery, English edition",
+        "previews": {
+          "chapter": "Sample page from Unit 1, Causes, Effects and Trends: each word shows Korean, romanization, a priority mark, part of speech, the English meaning, an example sentence with translation and a usage note",
+          "review": "Unit 1 review for Causes, Effects and Trends: five exercises — what does it mean, say it in Korean, complete the sentence, choose the best word, and match each word to its meaning — followed by a self-check"
+        },
+        "seoTitle": "TOPIK Korean Words Level 3: Lower-Intermediate – Free PDF | Hangyul",
+        "seoDescription": "Free Hangyul study guide with 300 lower-intermediate TOPIK words in 12 units: original example sentences, romanization, unit reviews, a spaced review planner and a frequency checklist."
+      },
+      "topikL04En": {
+        "subtitle": "Level 4 · Intermediate",
+        "description": "Strengthen your intermediate Korean with 350 words selected from past TOPIK papers. Fourteen units cover character and judgment, community, media and the arts, science and health, emotions, jobs and the economy, and linking words, with an original example for every word.",
+        "topics": "350 words in 14 units, from everyday tasks, people and character, and judgment and evaluation to media and the arts, emotions and the mind, jobs and the economy, and linking and quantity words.",
+        "closingTitle": "Keep all 350 Level 4 words with you",
+        "coverAlt": "Cover of the Hangyul study guide “TOPIK Korean Words Level 4 · Intermediate” (토픽 필수 어휘 4단계), TOPIK Vocabulary Mastery, English edition",
+        "previews": {
+          "chapter": "Sample page from Unit 1, Everyday Tasks: each word shows Korean, romanization, a priority mark, part of speech, the English meaning, an example sentence with translation and a usage note",
+          "review": "Unit 1 review for Everyday Tasks: five exercises — what does it mean, say it in Korean, complete the sentence, choose the best word, and match each word to its meaning — followed by a self-check"
+        },
+        "seoTitle": "TOPIK Korean Words Level 4: Intermediate – Free PDF | Hangyul",
+        "seoDescription": "Free Hangyul study guide with 350 intermediate TOPIK words in 14 units: original example sentences, romanization, unit reviews, a spaced review planner and a frequency checklist."
+      },
+      "topikL05En": {
+        "subtitle": "Level 5 · Upper-Intermediate",
+        "description": "Take on upper-intermediate Korean with 400 words selected from past TOPIK papers. Sixteen units cover building an argument, government and policy, economy and industry, media, science, the environment and heritage, with an original example for every word.",
+        "topics": "400 words in 16 units, from causes and solutions, building an argument, and government and policy to economy and industry, science and technology, safety and environment, and arts and heritage.",
+        "closingTitle": "Keep all 400 Level 5 words with you",
+        "coverAlt": "Cover of the Hangyul study guide “TOPIK Korean Words Level 5 · Upper-Intermediate” (토픽 필수 어휘 5단계), TOPIK Vocabulary Mastery, English edition",
+        "previews": {
+          "chapter": "Sample page from Unit 1, Causes and Solutions: each word shows Korean, romanization, a priority mark, part of speech, the English meaning, an example sentence with translation and a usage note",
+          "review": "Unit 1 review for Causes and Solutions: five exercises — what does it mean, say it in Korean, complete the sentence, choose the best word, and match each word to its meaning — followed by a self-check"
+        },
+        "seoTitle": "TOPIK Korean Words Level 5: Upper-Intermediate – Free PDF | Hangyul",
+        "seoDescription": "Free Hangyul study guide with 400 upper-intermediate TOPIK words in 16 units: original example sentences, romanization, unit reviews, a spaced review planner and a frequency checklist."
+      },
+      "topikL06En": {
+        "subtitle": "Level 6 · Advanced",
+        "description": "Finish the series with 450 advanced words selected from past TOPIK papers. Eighteen units cover law and politics, technology, the economy, history, careers, media, office paperwork, and logic and debate, with an original example for every word.",
+        "topics": "450 words in 18 units, from science and measurement, law and politics, and technology and digital life to history and heritage, careers and talent, office and paperwork, and logic and debate.",
+        "closingTitle": "Keep all 450 Level 6 words with you",
+        "coverAlt": "Cover of the Hangyul study guide “TOPIK Korean Words Level 6 · Advanced” (토픽 필수 어휘 6단계), TOPIK Vocabulary Mastery, English edition",
+        "previews": {
+          "chapter": "Sample page from Unit 1, Science and Measurement: each word shows Korean, romanization, a priority mark, part of speech, the English meaning, an example sentence with translation and a usage note",
+          "review": "Unit 1 review for Science and Measurement: five exercises — what does it mean, say it in Korean, complete the sentence, choose the best word, and match each word to its meaning — followed by a self-check"
+        },
+        "seoTitle": "TOPIK Korean Words Level 6: Advanced – Free PDF | Hangyul",
+        "seoDescription": "Free Hangyul study guide with 450 advanced TOPIK words in 18 units: original example sentences, romanization, unit reviews, a spaced review planner and a frequency checklist."
       }
     },
     "index": {
