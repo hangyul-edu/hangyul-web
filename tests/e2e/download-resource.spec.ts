@@ -1296,7 +1296,7 @@ const EXISTING_SOURCE_PDFS = [
 
 /*
  * TOPIK Korean Words Level 1–6 (TOPIK Vocabulary Mastery) — 영어판.
- * 영상은 Level 1에만 연결되어 있고, Level 2–6은 아직 "곧 공개" 안내 모달을 엽니다.
+ * 영상은 Level 1·2에 연결되어 있고, Level 3–6은 아직 "곧 공개" 안내 모달을 엽니다.
  * 단어·유닛·페이지 수는 실제 PDF(목차·본문 단어 번호·물리 페이지 수)에서 확인한 값입니다.
  */
 const TOPIK_LEVELS = [
@@ -1309,6 +1309,8 @@ const TOPIK_LEVELS = [
 ] as const;
 
 const TOPIK_L01_YOUTUBE_URL = "https://www.youtube.com/watch?v=7e-6CLxoe64";
+const TOPIK_L02_YOUTUBE_URL = "https://www.youtube.com/watch?v=gZLwv97CbBk";
+const TOPIK_YOUTUBE_URLS: Record<number, string> = { 1: TOPIK_L01_YOUTUBE_URL, 2: TOPIK_L02_YOUTUBE_URL };
 
 const TOPIK_GUIDES = TOPIK_LEVELS.map(({ level, levelName, words, units, pages }) => ({
   name: `TOPIK Korean Words Level ${level}`,
@@ -1334,9 +1336,9 @@ const TOPIK_GUIDES = TOPIK_LEVELS.map(({ level, levelName, words, units, pages }
     "Download the guide free and work through each unit, review and planner at your own pace.",
   seoTitle: `TOPIK Korean Words Level ${level}: ${levelName} – Free PDF | Hangyul`,
   coverName: new RegExp(`TOPIK Korean Words Level ${level} · ${levelName}.*English edition`, "i"),
-  youtubeUrl: (level === 1 ? TOPIK_L01_YOUTUBE_URL : null) as string | null,
-  youtubeCta: level === 1 ? "Watch TOPIK L01 on YouTube" : "Watch on YouTube",
-  episodeLabel: (level === 1 ? "TOPIK L01" : null) as string | null,
+  youtubeUrl: (TOPIK_YOUTUBE_URLS[level] ?? null) as string | null,
+  youtubeCta: TOPIK_YOUTUBE_URLS[level] ? `Watch TOPIK L0${level} on YouTube` : "Watch on YouTube",
+  episodeLabel: (TOPIK_YOUTUBE_URLS[level] ? `TOPIK L0${level}` : null) as string | null,
   // 다른 레벨·다른 시리즈의 정체성이 이 페이지 본문에 새지 않습니다.
   notOwn: [
     ...TOPIK_LEVELS.filter((o) => o.level !== level).map((o) => `Level ${o.level}`),
@@ -1534,7 +1536,7 @@ for (const guide of NEW_GUIDES) {
         await expect(youtube).not.toHaveAttribute("aria-haspopup", /.*/);
         await expect(youtube).not.toHaveAttribute("data-youtube-status", /.*/);
         // 다른 자료의 영상이 아닙니다.
-        const others = [YOUTUBE_URL, EP02_YOUTUBE_URL, WORDS_YOUTUBE_URL, EP03_YOUTUBE_URL, WORDS_1000_YOUTUBE_URL, TOPIK_L01_YOUTUBE_URL];
+        const others = [YOUTUBE_URL, EP02_YOUTUBE_URL, WORDS_YOUTUBE_URL, EP03_YOUTUBE_URL, WORDS_1000_YOUTUBE_URL, TOPIK_L01_YOUTUBE_URL, TOPIK_L02_YOUTUBE_URL];
         for (const other of others.filter((u) => u !== youtubeUrl)) {
           await expect(youtube).not.toHaveAttribute("href", other);
         }
@@ -1877,20 +1879,26 @@ test.describe("TOPIK Korean Words Level 1–6", () => {
   });
 });
 
-test.describe("TOPIK — only Level 1 has a video", () => {
-  test("Level 1 links its own video; Levels 2–6 keep the coming-soon dialog and link no video", async ({ page }) => {
-    await page.goto("/download?resource=topik-l01-study-guide&lang=en");
-    const l1 = page.getByTestId("resource-youtube");
-    await expect(l1).toHaveText(/Watch TOPIK L01 on YouTube/);
-    await expect(l1).toHaveAttribute("href", TOPIK_L01_YOUTUBE_URL);
+test.describe("TOPIK — only Levels 1–2 have a video", () => {
+  test("Levels 1–2 link their own video; Levels 3–6 keep the coming-soon dialog and link no video", async ({ page }) => {
+    for (const [level, url] of Object.entries(TOPIK_YOUTUBE_URLS)) {
+      await page.goto(`/download?resource=topik-l0${level}-study-guide&lang=en`);
+      const youtube = page.getByTestId("resource-youtube");
+      await expect(youtube, `L0${level}`).toHaveText(new RegExp(`Watch TOPIK L0${level} on YouTube`));
+      await expect(youtube, `L0${level}`).toHaveAttribute("href", url);
+      for (const other of Object.values(TOPIK_YOUTUBE_URLS).filter((u) => u !== url)) {
+        await expect(youtube, `L0${level}`).not.toHaveAttribute("href", other);
+      }
+    }
 
-    for (const level of [2, 3, 4, 5, 6]) {
+    for (const level of [3, 4, 5, 6]) {
       await page.goto(`/download?resource=topik-l0${level}-study-guide&lang=en`);
       const youtube = page.getByTestId("resource-youtube");
       await expect(youtube, `L0${level}`).toHaveAttribute("data-youtube-status", "comingSoon");
       await expect(youtube, `L0${level}`).toHaveText("Watch on YouTube");
       const html = await page.locator("main > section").evaluateAll((els) => els.map((el) => el.innerHTML).join(""));
       expect(html, `L0${level}`).not.toContain("7e-6CLxoe64");
+      expect(html, `L0${level}`).not.toContain("gZLwv97CbBk");
     }
   });
 });

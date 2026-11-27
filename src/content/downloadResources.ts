@@ -302,8 +302,10 @@ export const DOWNLOAD_RESOURCE_FAMILIES = [
     formatMessagesKey: "topikWords",
     series: "TOPIK Vocabulary Mastery",
     episode: "Level 2",
-    // 아직 연결된 영상이 없습니다. 영상이 공개되면 available + url로 바꿉니다.
-    youtube: { status: "comingSoon" },
+    youtube: {
+      status: "available",
+      url: "https://www.youtube.com/watch?v=gZLwv97CbBk",
+    },
     // 001–250, 10개 유닛 (PDF 목차·본문 단어 번호 기준)
     itemCount: 250,
     chapterCount: 10,
